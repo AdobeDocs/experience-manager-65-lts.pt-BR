@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Crie novas instâncias de Autor do 6.5, conectadas à instância Mongo atualizada.
+1. Crie novas instâncias de Autor do 6.5.2025, conectadas à instância Mongo atualizada.
 
 1. Recrie os nós MongoDB que foram removidos do cluster.
 

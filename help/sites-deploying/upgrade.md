@@ -9,28 +9,37 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 956da2542a958ee6548ede63a7e564f5a4705552
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
-# Atualização para o Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
+# Atualização para o Adobe Experience Manager (AEM) 6.5 LTS {#upgrading-to-aem}
+
+>[!NOTE]
+>A atualização para o AEM 6.5 LTS é compatível com os últimos 6 Service packs.
 
 Esta seção aborda a atualização de uma instalação do AEM para o AEM 6.5:
 
-* [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md)
-* [Avaliando a complexidade da atualização com o Detector de padrões](/help/sites-deploying/pattern-detector.md)
-* [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
-* [Procedimento de atualização](/help/sites-deploying/upgrade-procedure.md)
-* [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md)
-* [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-* [Execução de uma atualização no local](/help/sites-deploying/in-place-upgrade.md)
-* [Verificações pós-atualização e solução de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)
-* [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md)
+<!-- Alexandru: drafting for now 
+
+* [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
+* [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
+* [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+  This was drafted before: * [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+
+<!--
+* [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md)
+* [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
+* [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
+* [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
+* [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
+
+-->
 
 Para facilitar a referência às instâncias do AEM envolvidas nesses procedimentos, os termos a seguir são usados nesses artigos:
 
@@ -39,44 +48,33 @@ Para facilitar a referência às instâncias do AEM envolvidas nesses procedimen
 
 ## O que mudou? {#what-has-changed}
 
+### Atualizações {#updates}
+
 Estas são as principais alterações observadas nas últimas versões do AEM:
 
-O AEM 6.0 apresentou o novo repositório do Jackrabbit Oak. Os Gerenciadores de Persistência foram substituídos por [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). A partir da versão 6.1, não há mais suporte para CRX2. Uma ferramenta de migração chamada crx2oak deve ser executada para migrar repositórios CRX2 de instâncias 5.6.1. Para obter mais informações, consulte [Usando a Ferramenta de Migração CRX2OAK](/help/sites-deploying/using-crx2oak.md).
+1. A camada Foundation foi atualizada para ser compatível com o Java 17 (que inclui camadas de código aberto de pacotes do Apache Sling, Apache Felix e Apache Jackrabbit Oak)
 
-Se o Assets Insights estiver sendo usado e você estiver atualizando de uma versão anterior ao AEM 6.2, os ativos devem ser migrados e ter IDs geradas por meio de um bean JMX. Para testes internos da Adobe, 125.000 ativos em um ambiente TarMK foram migrados em uma hora, mas seus resultados podem variar.
+1. O empacotamento jar do AEM 6.5 LTS agora é compatível com as especificações 5 das APIs do Jarkarta Servlet e o empacotamento war pode ser implantado em contêineres de servlet que implementam as especificações 5/6 da API do Jakarta Servlet
 
-A 6.3 introduziu um novo formato para `SegmentNodeStore`, que é a base da implementação do TarMK. Se você estiver atualizando de uma versão anterior ao AEM 6.3, será necessária uma migração de repositório como parte da atualização, envolvendo tempo de inatividade do sistema.
+1. O empacotamento do AEM 6.5 LTS uber-jar foi alterado. Consulte [Atualizando código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) para obter mais informações.
 
-O departamento de engenharia da Adobe estima que isso dure cerca de 20 minutos. A reindexação não é necessária. Além disso, uma nova versão da ferramenta crx2oak foi lançada para funcionar com o novo formato de repositório.
+### Recursos/artefatos herdados removidos {#removed-legacy-features-artifacts}
 
-**Esta migração não é necessária se estiver atualizando do AEM 6.3 para o AEM 6.5.**
+As seguintes soluções herdadas foram removidas do AEM 6.5 LTS. Para obter mais informações, consulte TBD: link para notas de versão e [Lista de Pacotes Obsoletos Desinstalados Após a Atualização](/help/sites-deploying/obsolete-bundles.md)
 
-As tarefas de manutenção pré-atualização foram otimizadas para oferecer suporte à automação.
+1. Social
+1. Commerce
+1. Screens
+1. We-retail
+1. Integração de pesquisa e promoção
 
-As opções de uso de linha de comando da ferramenta crx2oak foram alteradas para serem compatíveis com automação e mais caminhos de atualização.
+**Artefatos Removidos**
 
-As verificações pós-atualização também se tornaram amigáveis para automação.
+1. CRX-explorer
+1. Crx2oak
+1. Google guava (removido devido a vulnerabilidades de segurança)
+1. Abdera-parser (removido devido a vulnerabilidades de segurança)
+1. jdom (`org.apache.servicemix.bundles.jdom`) (removido devido a vulnerabilidades de segurança)
+1. `com.github.jknack.handlebars` (removido devido a vulnerabilidades de segurança)
 
-A coleta de lixo periódica de revisões e a coleta de lixo do armazenamento de dados agora são tarefas de manutenção de rotina que devem ser executadas periodicamente. Com a introdução do AEM 6.3, a Adobe oferece suporte e recomenda a Limpeza de revisão online. Consulte [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md) para obter informações sobre como configurar essas tarefas.
-
-Recentemente, a AEM introduz o [Detector de Padrões](/help/sites-deploying/pattern-detector.md) para avaliação da complexidade da atualização à medida que você começa a planejar a atualização. O 6.5 também tem um forte foco na [compatibilidade com versões anteriores](/help/sites-deploying/backward-compatibility.md) dos recursos. Finalmente, as práticas recomendadas para [atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md) também são adicionadas.
-
-Para obter mais detalhes sobre o que mais foi alterado nas versões recentes do AEM, consulte as notas de versão completas:
-
-* [Notas de versão mais recentes do Service Pack do Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
-
-## Visão geral da atualização {#upgrade-overview}
-
-A atualização do AEM é um processo de várias etapas, às vezes de vários meses. A estrutura a seguir foi fornecida como uma visão geral do que está incluído em um projeto de atualização e do conteúdo que foi incluído nesta documentação:
-
-![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
-
-## Fluxo de atualização {#upgrade-overview-1}
-
-O diagrama abaixo captura o fluxo geral recomendado e destaca a abordagem de atualização. Observe a referência aos novos recursos introduzidos pelo Adobe. A atualização deve começar com o Detector de Padrões (consulte [Avaliação da Complexidade da Atualização com o Detector de Padrões](/help/sites-deploying/pattern-detector.md)), que deve permitir que você decida o caminho que deseja seguir para compatibilidade com o AEM 6.4 com base nos padrões no relatório gerado.
-
-Houve um foco significativo no 6.5 para manter todos os novos recursos compatíveis com versões anteriores, mas nos casos em que você ainda vê alguns problemas de compatibilidade com versões anteriores, o modo de compatibilidade permite adiar temporariamente o desenvolvimento para manter o código personalizado compatível com o 6.5. Essa abordagem ajuda a evitar o esforço de desenvolvimento imediatamente após a atualização (consulte [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
-
-Por fim, em seu ciclo de desenvolvimento do 6.5, os recursos introduzidos nas Atualizações sustentáveis (consulte [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)) ajudam você a seguir as práticas recomendadas para tornar as atualizações futuras ainda mais eficientes e contínuas.
-
-![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+O AEM 6.5 LTS tem um forte foco na compatibilidade com versões anteriores de recursos e vem com uma ferramenta de análise. Consulte [Avaliando a Complexidade da Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md) para obter uma avaliação da complexidade à medida que você começa a planejar a atualização. Para obter mais detalhes sobre o que mais mudou, consulte as notas de versão completas aqui. A definir: link para as notas de versão do AEM 6.5 LTS
