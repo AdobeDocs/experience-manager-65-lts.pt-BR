@@ -1,0 +1,94 @@
+---
+title: Fazer logon em workflows do AEM Forms
+description: Saiba como depurar problemas de fluxo de trabalho do AEM Forms e habilitar o log de depuração para fluxos de trabalho do AEM Forms para visualizar os logs.
+contentOwner: anujkapo
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: publish
+docset: aem65
+solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: User, Developer
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 5%
+
+---
+
+# Fazer logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
+
+As etapas do Forms Workflow fornecem logs detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
+
+Por padrão, todas as informações de log estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/*.
+
+Os logs de depuração para workflows de formulários incluem:
+
+* Entrada de cada etapa do fluxo de trabalho. Por exemplo:\
+  `[DEBUG] "Executing Invoke DDX Process step"`
+
+* Saída de cada etapa do fluxo de trabalho. Por exemplo:\
+  `[DEBUG] "Successfully finished Invoke DDX Process step"`
+
+* Mensagens de invocação de serviço. Por exemplo:\
+  `[DEBUG] Invoking Adobe Sign Service for creating agreement`
+
+* Mensagens de saída do serviço. Por exemplo:\
+  `[DEBUG] Agreement created successfully with agreement id <agreement id>`
+
+* Variáveis lidas no mapa de metadados. Por exemplo:\
+  `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
+
+* Variáveis gravadas no repositório JCR. Por exemplo:
+
+  ```verilog
+     [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
+  ```
+
+* Mensagens de exceção com rastreamento de pilha completo. Por exemplo:\
+  `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
+
+* Parâmetros de metadados de etapa dinâmicos. Por exemplo:
+
+  ```verilog
+  [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
+   [DEBUG] Locale to be used for Document of Record is <locale>
+  ```
+
+O exemplo a seguir ilustra os logs da etapa Assinar documento:
+
+```verilog
+[DEBUG] Executing sign document step.
+[DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
+[DEBUG] Invoking Adobe Sign Service for creating agreement
+[DEBUG] Agreement created successfully with agreement id <agreement id>
+[DEBUG] Exception in Adobe Sign Service <complete stack trace>
+[ERROR] Exception in Adobe Sign Service
+[DEBUG] Successfully finished sign document step
+```
+
+Use os logs para avaliar se:
+
+* Você está usando uma configuração correta do Adobe Sign.
+* O Serviço do Adobe Sign é encerrado após a criação bem-sucedida de um contrato.
+* A etapa Assinar documento sai com uma mensagem de sucesso.
+
+Se houver uma exceção, você poderá exibir o rastreamento de pilha completo para avaliar a causa do erro.
+
+## Habilitar log de depuração para workflows do AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+
+Faça o seguinte para ativar o log de depuração para workflows do AEM Forms:
+
+1. Acesse o gerenciador de configurações do console da Web do AEM em:
+
+   https://&#39;[server]:[port]&#39;/system/console/configMgr
+
+1. Selecione **[!UICONTROL Sling]** > **[!UICONTROL Suporte De Log]**.
+1. Selecione **[!UICONTROL Adicionar novo Agente.]**
+1. Selecione **[!UICONTROL Depurar]** como o **[!UICONTROL Nível de Log]**.
+1. Especifique o local do arquivo de log. O local padrão para o arquivo de log é: *logs\error.log*
+1. Especifique o nome do pacote como **com.adobe.granite.workflow.core** na coluna **[!UICONTROL Logger]**.
+
+   A execução dessas etapas permite armazenar os logs de depuração do pacote **com.adobe.granite.workflow.core**. Selecione **[!UICONTROL +]** e adicione os seguintes nomes de pacote à lista:
+
+   * com.adobe.fd.workflow
+   * com.adobe.fd.workspace

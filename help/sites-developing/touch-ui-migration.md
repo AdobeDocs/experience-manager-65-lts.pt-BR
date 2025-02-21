@@ -1,0 +1,157 @@
+---
+title: Migração para a interface de toque
+description: Saiba mais sobre a migração do Adobe Experience Manager para a interface para toque e como ela afeta você.
+contentOwner: AEM Docs
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+content-type: reference
+topic-tags: introduction
+docset: aem65
+solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
+source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 3%
+
+---
+
+# Migração para a interface de toque{#migration-to-the-touch-ui}
+
+A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecida simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Esta se tornou a interface padrão no AEM com a interface herdada, orientada para desktop, chamada de *interface clássica*.
+
+Se você usa o AEM com a interface clássica, execute uma ação para migrar sua instância. Esta página serve como um trampolim, fornecendo links para recursos individuais.
+
+>[!NOTE]
+>
+>Esse projeto de migração pode ter impacto significativo na sua instância. Consulte [Gerenciamento de projetos - Práticas recomendadas](/help/managing/best-practices.md) para obter as diretrizes recomendadas.
+
+## Noções básicas {#the-basics}
+
+Ao migrar, esteja ciente das principais diferenças a seguir entre a interface clássica e a interface para toque:
+
+<table>
+ <tbody>
+  <tr>
+   <td>IU Clássica</td>
+   <td>Interface de usuário habilitada para toque</td>
+  </tr>
+  <tr>
+   <td>É descrito no repositório JCR como uma estrutura de nós. Cada nó que representa um elemento da interface do usuário é chamado de <em>widget ExtJS</em> e renderizado no lado do cliente por <code>ExtJS</code>.</td>
+   <td>Também descrito no repositório JCR como uma estrutura de nós. No entanto, nesse caso, cada nó se refere a um tipo de recurso Sling (componente Sling), responsável pela renderização. Portanto, a interface do usuário é (basicamente) renderizada no lado do servidor.</td>
+  </tr>
+  <tr>
+   <td><p><code>sling:resourceType</code></p>
+    <ul>
+     <li>não usado</li>
+    </ul> </td>
+   <td><code>sling:resourceType</code>
+    <ul>
+     <li>usado</li>
+     <li>por exemplo<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Nós de diálogo:</p>
+    <ul>
+     <li>Nome: <code>dialog</code></li>
+     <li><code>jcr:primaryType</code>: <code>cq:Dialog</code></li>
+    </ul> </td>
+   <td><p>Nós de diálogo:</p>
+    <ul>
+     <li>Nome: <code>cq:dialog</code></li>
+     <li><code>jcr:primaryType</code>: <code>nt:unstructured</code></li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Localização do JavaScript:</p>
+    <ul>
+     <li>As peças imperativas são incorporadas diretamente usando ouvintes ou gerenciadas em clientlibs.</li>
+    </ul> </td>
+   <td><p>Localização do JavaScript:</p>
+    <ul>
+     <li>Partes imperativas não podem ser incorporadas na definição do diálogo; separação de responsabilidades.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Manipulação de eventos:</p>
+    <ul>
+     <li>Os widgets de diálogo fazem referência direta ao código JavaScript.</li>
+    </ul> </td>
+   <td><p>Manipulação de eventos:</p>
+    <ul>
+     <li>A JavaScript observa eventos de diálogo.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Renderização feita pelo cliente:
+    <ul>
+     <li>O cliente cria dinamicamente os componentes da interface.</li>
+     <li>Definição de componente (Pull) de solicitações do cliente (como JSON) do servidor.</li>
+    </ul> </td>
+   <td>Renderização feita pelo servidor:
+    <ul>
+     <li>O cliente solicita páginas junto com a interface relacionada.</li>
+     <li>O servidor envia (push) a interface do usuário como documentos do HTML; usando componentes da interface do usuário Coral.<br /> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
+</table>
+
+Em outras palavras, migrar uma seção da sua interface do usuário da interface clássica para a interface de toque significa portar um *widget ExtJS* para um *componente Sling*. Para facilitar isso, a interface de toque é baseada na estrutura da interface de usuário do Granite, que já fornece alguns componentes do Sling para a interface de usuário (conhecidos como componentes da interface de usuário do Granite).
+
+Antes de começar, verifique o status e as recomendações relacionadas:
+
+* [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md)
+
+As noções básicas para o desenvolvimento da interface para toque fornecem uma base sólida:
+
+* [Conceitos da interface do usuário habilitada para toque do AEM](/help/sites-developing/touch-ui-concepts.md)
+* [Estrutura da interface do usuário habilitada para toque do AEM](/help/sites-developing/touch-ui-structure.md)
+
+## Migração da criação de página {#migrating-page-authoring}
+
+As caixas de diálogo são um fator importante ao migrar seus componentes:
+
+* [Desenvolvendo componentes do AEM](/help/sites-developing/developing-components.md) (com a interface habilitada para toque)
+* [Migração de um componente clássico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
+* [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) - para ajudá-lo a converter as caixas de diálogo dos seus componentes de interface clássica para a interface de toque
+
+   * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
+
+* [Personalizando Campos de Caixa de Diálogo na Interface para Toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
+* [Personalizando a Criação de Página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
+
+## Migração de Consoles {#migrating-consoles}
+
+Você também pode personalizar os consoles:
+
+* [Personalizando os Consoles](/help/sites-developing/customizing-consoles-touch.md) (para a interface habilitada para toque)
+
+## Considerações relacionadas {#related-considerations}
+
+Embora não esteja diretamente relacionado a uma migração para a interface de toque, há problemas relacionados que merecem ser considerados ao mesmo tempo, pois também são uma prática recomendada:
+
+* [Modelos](/help/sites-developing/templates.md) - [Modelos editáveis](/help/sites-developing/page-templates-editable.md)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
+
+>[!NOTE]
+>
+>Consulte também [Desenvolvimento - Práticas recomendadas](/help/sites-developing/best-practices.md).
+
+## Recursos adicionais {#further-resources}
+
+Para obter informações completas sobre como desenvolver o AEM, consulte a coleção de recursos em:
+
+* [Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md)
+* [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Tutoriais e vídeos do AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
+
+>[!CAUTION]
+>
+>As Ferramentas de modernização do AEM são um esforço da comunidade e não são suportadas ou garantidas pela Adobe.
