@@ -1,7 +1,7 @@
 ---
 title: Notas de versão atuais do Adobe Experience Manager 6.5 LTS
 description: Estas são as Notas de versão atuais do Adobe Experience Manager 6.5 LTS.
-source-git-commit: e062ab3ff820c85ebcbd0052c28e9e719222154f
+source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 19%
@@ -17,7 +17,7 @@ ht-degree: 19%
 |---|---|
 | Versão | 6,5 LT |
 | Tipo | Versão Principal |
-| Data de disponibilidade geral | sábado, 28 de fevereiro de 2025 |
+| Data de disponibilidade geral | sábado, 7 de março de 2025 |
 
 ## Novidades {#what-s-new}
 
