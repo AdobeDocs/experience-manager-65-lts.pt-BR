@@ -1,9 +1,9 @@
 ---
 title: Notas de versão atuais do Adobe Experience Manager 6.5 LTS
 description: Estas são as Notas de versão atuais do Adobe Experience Manager 6.5 LTS.
-source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
+source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '796'
 ht-degree: 19%
 
 ---
@@ -95,6 +95,7 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5 LTS. As ve
 | Soluções | Social/Communities não são compatíveis. | Nenhuma substituição disponível. | 6,5 LTS GA |
 | Screens | O Screens não é compatível. | Nenhuma substituição disponível. | 6,5 LTS GA |
 | Ativos | Não há suporte para `dam-pim` e `dam-rating`, pois os conjuntos são dependentes de redes sociais. | Nenhuma substituição disponível. | 6,5 LTS GA |
+| Ativos | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` foi removido. | Use a api alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` que foi adicionada. | 6,5 LTS GA |
 | Granite | O pacote `com.adobe.granite.socketio` foi removido. | Nenhuma substituição disponível. | 6,5 LTS GA |
 | Granite | Não há suporte para `com.adobe.granite.crx-explorer`. | Nenhuma substituição disponível. | 6,5 LTS GA |
 | Goiabas | Todas as dependências de guava agora são removidas no AEM e, portanto, o pacote `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` não faz parte do AEM. | Os clientes podem adicionar o guava por conta própria se dependerem dele ou substituir o código do guava por coleções do java ou outras alternativas, se possível. | 6,5 LTS GA |

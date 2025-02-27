@@ -8,10 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 11%
+source-wordcount: '100'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 11%
 * [Integração com a Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
 * [Integração com serviços de terceiros](/help/sites-administering/third-party-services.md)
 * [Analytics com provedores externos](/help/sites-administering/external-providers.md)
-* [Produtor do catálogo](/help/sites-administering/catalog-producer.md)
 * [Entender, aplicar e preparar Tags inteligentes](/help/assets/enhanced-smart-tags.md)
 
 As seguintes informações estão disponíveis sobre a integração do AEM com outros serviços da Adobe ou de terceiros:

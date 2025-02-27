@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
+source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
 workflow-type: tm+mt
-source-wordcount: '7022'
+source-wordcount: '7019'
 ht-degree: 19%
 
 ---
@@ -213,7 +213,6 @@ ht-degree: 19%
          + [Integração com o Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md)
          + [Solução de problemas de integração](/help/sites-administering/troubleshooting-integration-issues.md)
          + [Integração com o Otimizador de conteúdo BrightEdge](/help/sites-administering/brightedge.md)
-         + [Produtor do catálogo](/help/sites-administering/catalog-producer.md)
          + [Integração com o Silverpop Engage](/help/sites-administering/silverpop.md)
          + [Integração ao Adobe Campaign](/help/sites-administering/campaign.md)
          + [Integração com o ExactTarget](/help/sites-administering/exacttarget.md)
@@ -1442,7 +1441,6 @@ ht-degree: 19%
          + [Casos de uso de indexação do Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solução de problemas de índices do Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Optando Pela Coleção De Estatísticas De Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-         + [Resolução de problemas](/help/sites-deploying/troubleshooting.md)
       + Configurando o AEM {#configuring}
          + [Conceitos básicos de configuração](/help/sites-deploying/configuring.md)
          + [Logs](/help/sites-deploying/configure-logging.md)
