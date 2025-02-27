@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ Antes de iniciar a atualização, é importante seguir estas tarefas de manuten�
 * [Gerar o arquivo quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configurar a limpeza do fluxo de trabalho e do log de auditoria](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Instalar, Configurar e Executar as Tarefas de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Desativar módulos de logon personalizados](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Remover Atualizações Do Diretório /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Interromper Quaisquer Instâncias De Modo De Espera Por Frio](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Desabilitar Trabalhos Agendados Personalizados](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ Desative todos os trabalhos agendados OSGi incluídos no código do aplicativo.
 >Esta etapa só é necessária para instalações TarMK
 
 Se estiver usando TarMK, você deve executar a Limpeza de revisão offline antes da atualização. Isso torna a etapa de migração do repositório e as tarefas de atualização subsequentes muito mais rápidas e ajuda a garantir que a Limpeza de revisão online possa ser executada com êxito após a conclusão da atualização. Para obter informações sobre como executar a Limpeza de Revisão Offline, consulte [Execução da Limpeza de Revisão Offline](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+
+## Executar coleta de lixo do armazenamento de dados {#execute-datastore-garbage-collection}
+
+Depois de executar a limpeza de revisão nas instâncias do CRX3, você deve executar a Coleta de lixo do armazenamento de dados para remover os blobs não referenciados no armazenamento de dados. Para obter instruções, consulte a documentação em [Coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Girar arquivos de registro {#rotate-log-files}
 
