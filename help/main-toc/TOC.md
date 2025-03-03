@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 19%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 19%
          + [Usar a reindexação offline para reduzir o tempo de inatividade durante uma atualização](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md)
          + [Uso da Ferramenta de Migração CRX2Oak](/help/sites-deploying/using-crx2oak.md)
+         + [Migração de conteúdo do AEM 6.5 para o AEM 6.5 LTS usando a atualização do Oak](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [Verificações pós-atualização e solução de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Atualização do Forms de pesquisa personalizada](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)
          + [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Etapas de Atualização para Instalações de Servidor de Aplicativos](/help/sites-deploying/app-server-upgrade.md)
+         + [Etapas de atualização para instalações do servidor de aplicativos (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Etapas de atualização para instalações do servidor de aplicativos (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [Lista de pacotes obsoletos desinstalados após a atualização](/help/sites-deploying/obsolete-bundles.md)
       + Práticas recomendadas {#practices}
          + [Implantação de práticas recomendadas](/help/sites-deploying/best-practices.md)
