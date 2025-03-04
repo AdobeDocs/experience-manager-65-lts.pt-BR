@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -16,23 +16,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esta página descreve o procedimento de atualização do AEM 6.5 LTS. Se você tiver uma instalação implantada em um servidor de aplicativos, consulte [Etapas de Atualização para Instalações do Servidor de Aplicativos](/help/sites-deploying/app-server-upgrade.md).
+>Esta página descreve o procedimento de atualização no local do AEM 6.5 LTS. Se você tiver uma instalação implantada em um servidor de aplicativos, consulte [Etapas de Atualização para Instalações do Servidor de Aplicativos](/help/sites-deploying/app-server-upgrade.md).
 
 ## Etapas de pré-atualização {#pre-upgrade-steps}
 
-Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualizando Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos requisitos do AEM 6.5 LTS. Veja como o Analyzer pode ajudá-lo a estimar a complexidade da sua atualização. Veja também a seção Escopo e Requisitos de Atualização do [Planejando a Atualização](/help/sites-deploying/upgrade-planning.md) para obter mais informações.
+Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualizando Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos [requisitos do AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) e veja as [considerações de planejamento de atualização](/help/sites-deploying/upgrade-planning.md) e como o [Analyzer](/help/sites-deploying/pattern-detector.md) pode ajudá-lo a estimar a complexidade.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Pré-requisitos de migração {#migration-prerequisites}
 
-* **Versão mínima do Java necessária:** verifique se o JRE 17 da Oracle está instalado no sistema.
+* **Versão mínima do Java necessária:** verifique se o Java™ 17 da Oracle está instalado no sistema.
 
 ## Preparação do arquivo jar do AEM Quickstart {#prep-quickstart-file}
 
+1. Baixe o novo arquivo jar do AEM 6.5 LTS
+
+1. [Determine o comando de início de atualização correto](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. Pare a instância se ela estiver em execução
 
-1. Baixe o novo arquivo jar do AEM 6.5 LTS e use-o para substituir o antigo fora da pasta `crx-quickstart`
+1. Use o novo jar do AEM 6.5 LTS para substituir o antigo fora da pasta `crx-quickstart`
 
 1. Faça um backup do arquivo `sling.properties` (geralmente presente no `crx-quickstart/conf/`) e exclua-o
 
@@ -175,7 +179,7 @@ Agora, inicie a instância do AEM usando o novo comando determinado usando as in
 
 >[!NOTE]
 >
->O suporte para alguns argumentos do Java 8/11 foi removido no Java 17, consulte Considerações de argumentos Java para o AEM 6.5 LTS (stub de link).
+>O suporte para alguns argumentos do Java 8/11 foi removido no Java 17, consulte [Documentos do Oracle Java™ 17](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) e [Considerações sobre argumentos Java&amp;trade do AEM 6.5 LTS](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Para executar a atualização, é importante iniciar o AEM usando o arquivo jar para ativar a instância.
 
@@ -193,10 +197,10 @@ Observe que iniciar o AEM a partir do script de inicialização não iniciará a
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Modifique o comando substituindo o caminho para o jar existente ( `crx-quickstart/app/aem-quickstart*.jar` neste caso) pelo novo jar que é irmão da pasta `crx-quickstart`. Usando nosso comando anterior como exemplo, nosso comando seria:
+1. Modifique o comando substituindo o caminho para o jar existente ( `crx-quickstart/app/aem-quickstart*.jar` neste caso) pelo novo jar do AEM 6.5 LTS que é irmão da pasta `crx-quickstart`. Usando nosso comando anterior como exemplo, nosso comando seria:
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Isso garantirá que todas as configurações apropriadas de memória, modos de execução personalizados e outros parâmetros ambientais sejam aplicados para a atualização. Após a conclusão da atualização, a instância poderá ser iniciada a partir do script de inicialização em inicializações futuras.
