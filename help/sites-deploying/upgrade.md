@@ -9,10 +9,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 1%
+source-wordcount: '195'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!NOTE]
 >A atualização para o AEM 6.5 LTS é compatível com os últimos 6 Service packs.
 
-Esta seção aborda a atualização de uma instalação do AEM para o AEM 6.5:
+Esta seção aborda a atualização de uma instalação do AEM para o AEM 6.5 LTS:
 
 <!-- Alexandru: drafting for now 
 
@@ -50,31 +50,6 @@ Para facilitar a referência às instâncias do AEM envolvidas nesses procedimen
 
 ### Atualizações {#updates}
 
-Estas são as principais alterações observadas nas últimas versões do AEM:
+A camada do Foundation agora é compatível com o Java 17, incorporando os pacotes de código aberto mais recentes do Apache Sling, Felix e Jackrabbit Oak. Além disso, o pacote do uber-jar AEM 6.5 LTS foi alterado. Além disso, alguns recursos herdados foram removidos do AEM 6.5 LTS. Para obter mais informações, consulte [Notas de versão](/help/release-notes/release-notes.md#whats-new-what-s-new) e [Lista de Pacotes Obsoletos Desinstalados Após a Atualização](/help/sites-deploying/obsolete-bundles.md)
 
-1. A camada Foundation foi atualizada para ser compatível com o Java 17 (que inclui camadas de código aberto de pacotes do Apache Sling, Apache Felix e Apache Jackrabbit Oak)
-
-1. O empacotamento jar do AEM 6.5 LTS agora é compatível com as especificações 5 das APIs do Jarkarta Servlet e o empacotamento war pode ser implantado em contêineres de servlet que implementam as especificações 5/6 da API do Jakarta Servlet
-
-1. O empacotamento do AEM 6.5 LTS uber-jar foi alterado. Consulte [Atualizando código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) para obter mais informações.
-
-### Recursos/artefatos herdados removidos {#removed-legacy-features-artifacts}
-
-As seguintes soluções herdadas foram removidas do AEM 6.5 LTS. Para obter mais informações, consulte TBD: link para notas de versão e [Lista de Pacotes Obsoletos Desinstalados Após a Atualização](/help/sites-deploying/obsolete-bundles.md)
-
-1. Social
-1. Commerce
-1. Screens
-1. We-retail
-1. Integração de pesquisa e promoção
-
-**Artefatos Removidos**
-
-1. CRX-explorer
-1. Crx2oak
-1. Google guava (removido devido a vulnerabilidades de segurança)
-1. Abdera-parser (removido devido a vulnerabilidades de segurança)
-1. jdom (`org.apache.servicemix.bundles.jdom`) (removido devido a vulnerabilidades de segurança)
-1. `com.github.jknack.handlebars` (removido devido a vulnerabilidades de segurança)
-
-O AEM 6.5 LTS tem um forte foco na compatibilidade com versões anteriores de recursos e vem com uma ferramenta de análise. Consulte [Avaliando a Complexidade da Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md) para obter uma avaliação da complexidade à medida que você começa a planejar a atualização. Para obter mais detalhes sobre o que mais mudou, consulte as notas de versão completas aqui. A definir: link para as notas de versão do AEM 6.5 LTS
+O AEM 6.5 LTS tem um forte foco na compatibilidade com versões anteriores de recursos e vem com uma ferramenta de análise. Consulte [Avaliando a Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md) para obter uma avaliação da complexidade à medida que você inicia o [planejamento da atualização](/help/sites-deploying/upgrade-planning.md).
