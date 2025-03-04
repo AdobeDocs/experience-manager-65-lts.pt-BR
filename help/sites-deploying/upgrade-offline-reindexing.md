@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -179,7 +179,7 @@ Abaixo você encontrará algumas dicas úteis e instruções para solução de p
 
 ### Preparar uma Runbook e uma execução de avaliação {#prepare-a-runbook-and-trial-run}
 
-É recomendável preparar um [runbook](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) e executar algumas avaliações antes de executar a atualização em produção.
+É recomendável preparar um [runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) e executar algumas avaliações antes de executar a atualização em produção.
 
 ### Modo De Passagem De Documentos Com Indexação Offline {#doc-traversal-mode-with-offline-indexing}
 

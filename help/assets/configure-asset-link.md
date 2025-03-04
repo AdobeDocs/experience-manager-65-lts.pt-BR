@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Para configurar o Experience Manager Assets para ser usado com o Asset Link, imp
 
 1. Para mapear usuários licenciados do Creative Cloud com usuários do Experience Manager, gerencie o [controle de acesso do usuário](#user-access).
 
-1. Crie o [índice de consulta personalizado](#create-custom-index), configure as [representações FPO](/help/assets/configure-fpo-renditions.md) para o InDesign, configure a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configure a [pesquisa visual ou de semelhança](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Crie o [índice de consulta personalizado](#create-custom-index), configure as [representações FPO](/help/assets/configure-fpo-renditions.md) para o InDesign, configure a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configure a [pesquisa visual ou de semelhança](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Pré-requisitos e suporte para várias funcionalidades {#prerequisites}
 
@@ -242,7 +242,7 @@ No Experience Manager 6.4 e Experience Manager 6.5, os administradores podem con
 
 A configuração é útil para usuários e profissionais de marketing da linha de negócios, por exemplo, criar um fluxo de trabalho personalizado em algumas pastas específicas. Digamos que todos os ativos da sessão de fotos de uma agência possam ter uma marca d&#39;água ou que todos os ativos carregados por um freelancer possam ser processados para criar representações específicas.
 
-Para obter mais informações e para a configuração do Experience Manager, consulte [executar fluxo de trabalho automaticamente em ativos](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Para obter mais informações e para a configuração do Experience Manager, consulte [executar fluxo de trabalho automaticamente em ativos](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Criar um índice personalizado nas versões do Experience Manager 6.4.x {#create-custom-index}
@@ -260,7 +260,7 @@ O Experience Manager contém índices que são usados para consulta. Crie o índ
 
 ## Configurar pesquisa visual ou por semelhança {#configure-visual-similarity-search}
 
-O recurso de pesquisa visual permite pesquisar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+O recurso de pesquisa visual permite pesquisar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Gerar para representações somente de posicionamento para o Adobe InDesign {#fpo-renditions}
 

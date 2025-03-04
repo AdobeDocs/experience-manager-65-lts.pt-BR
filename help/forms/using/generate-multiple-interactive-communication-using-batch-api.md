@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Para criar a comunicação interativa a partir de registros salvos em um arquivo
    1. Especifique o **[!UICONTROL Nome]** e o **[!UICONTROL Caminho]** físico da pasta. Por exemplo, `c:\batchprocessing`.
    1. Selecione a opção **[!UICONTROL Serviço]** no campo **[!UICONTROL Processar Arquivo Usando]**.
    1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do Serviço]**.
-   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [padrão](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
+   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [padrão](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
 1. Configurar parâmetros avançados:
    1. Abra a guia **[!UICONTROL Avançado]** e adicione as seguintes propriedades personalizadas:
 
@@ -146,7 +146,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
    1. Especifique o **[!UICONTROL Nome]** e o **[!UICONTROL Caminho]** físico da pasta. Por exemplo, `c:\batchprocessing`.
    1. Selecione a opção **[!UICONTROL Serviço]** no campo **[!UICONTROL Processar Arquivo Usando]**.
    1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do Serviço]**.
-   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [padrão](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
+   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [padrão](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
 1. Configurar parâmetros avançados:
    1. Abra a guia **[!UICONTROL Avançado]** e adicione as seguintes propriedades personalizadas:
 
@@ -362,4 +362,4 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
 
 >[!NOTE]
 >
->Somente o protocolo CRX é ativado por padrão. Para habilitar outros protocolos com suporte, consulte [Configurando o serviço de preenchimento prévio usando o Gerenciador de Configurações](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Somente o protocolo CRX é ativado por padrão. Para habilitar outros protocolos com suporte, consulte [Configurando o serviço de preenchimento prévio usando o Gerenciador de Configurações](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

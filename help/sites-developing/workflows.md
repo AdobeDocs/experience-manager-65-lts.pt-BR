@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Os principais aspectos são abordados abaixo, enquanto as seguintes páginas abo
 >
 >* Participando de fluxos de trabalho, consulte [Usando Fluxos de Trabalho](/help/sites-authoring/workflows.md).
 >* Administrando fluxos de trabalho e instâncias de fluxo de trabalho, consulte [Administração de Fluxos de Trabalho](/help/sites-administering/workflows.md).
->* Para obter um Artigo completo sobre a Comunidade, consulte [Modificação de Assets digital usando fluxos de trabalho do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)
+>* Para obter um Artigo completo sobre a Comunidade, consulte [Modificação de Assets digital usando fluxos de trabalho do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
 >* Consulte o [Webinar Fale com os especialistas da AEM sobre fluxos de trabalho](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Para alterar os locais das informações, consulte [Práticas recomendadas de fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
 >

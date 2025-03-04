@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 2%
@@ -187,7 +187,7 @@ A **OU Split** cria uma divisão no fluxo de trabalho, depois da qual apenas uma
 
 >[!NOTE]
 >
->Consulte [OU Split step](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Consulte [OU Split step](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Ramificação usando OU Split](assets/variables_orsplit_new.png)
 

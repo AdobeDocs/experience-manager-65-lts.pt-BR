@@ -8,7 +8,7 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -119,7 +119,7 @@ A seção **ObservationQueueMaxLength** mostra o número de eventos na fila de o
 1. Coloque-o na pasta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM 6.x | Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)
+>Consulte [AEM 6.x | Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 A configuração padrão é 10.000, mas a maioria das implantações deve elevá-la para 20.000 ou 50.000.
 
@@ -147,7 +147,7 @@ Após a execução dos testes de desempenho na instância do autor, todos os pro
 * Verifique se há erros ou avisos no log de erros. Para obter mais informações, consulte [Log](/help/sites-deploying/configure-logging.md).
 * Monitore recursos de hardware do sistema, como utilização de memória e CPU, E/S de disco ou E/S de rede. Esses recursos geralmente são as causas dos gargalos de desempenho.
 * Otimize a arquitetura das páginas e como elas são endereçadas para minimizar o uso de parâmetros de URL para permitir o máximo de armazenamento em cache possível.
-* Siga a documentação da [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) e das [Dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html).
+* Siga a documentação da [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) e das [Dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
 
 * Se houver problemas com a edição de determinadas páginas ou componentes em instâncias de autor, use o Modo de desenvolvedor da interface para toque para inspecionar a página em questão. Isso fornece um detalhamento de cada área de conteúdo na página e seu tempo de carregamento.
 * Reduza todos os JS e CSS no site. Veja esta [postagem do blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

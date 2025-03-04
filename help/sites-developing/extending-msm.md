@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 0%
@@ -31,8 +31,8 @@ Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites
 >Esta página deve ser lida junto com o [Reutilização de Conteúdo: Gerenciador de Vários Sites](/help/sites-administering/msm.md).
 >
 >As seguintes seções de Reestruturação do repositório de sites também podem ser de interesse:
->* [Configurações de blueprint do gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Configurações de Implantação do Gerenciador de Vários Sites](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [Configurações de blueprint do gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [Configurações de Implantação do Gerenciador de Vários Sites](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

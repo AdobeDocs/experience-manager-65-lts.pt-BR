@@ -8,7 +8,7 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 6%
@@ -70,7 +70,7 @@ A imagem a seguir mostra cenários de uso do instalador de patch e completo.
 
 ![Instalador Completo e Instalador de Patch](/help/forms/using/assets/full-and-patch-installer.png)
 
-Consulte o artigo [Instruções de instalação do AEM 6.5 Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html) para instalar o Service Pack mais recente do ambiente JEE.
+Consulte o artigo [Instruções de instalação do AEM 6.5 Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) para instalar o Service Pack mais recente do ambiente JEE.
 
 <!--
 [Work in Progress]

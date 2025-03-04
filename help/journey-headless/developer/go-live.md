@@ -4,7 +4,7 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba co
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 51%
@@ -216,7 +216,7 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 ## Recursos adicionais {#additional-resources}
 
-* [Guia de Desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/the-basics.html)
+* [Guia de Desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
 
 * [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
@@ -226,7 +226,7 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
    * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurando o [Reescritor de CDN](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor de CDN*)
+   * Configurando o [Reescritor de CDN](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor de CDN*)
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -175,4 +175,4 @@ Se um usuário sem os formulários do AEM e as permissões do CQ necessárias te
 
 O CQ fornece um mecanismo para substituir o jsp do manipulador 404 padrão.
 
-Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en) na documentação do Adobe Experience Manager.
+Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) na documentação do Adobe Experience Manager.

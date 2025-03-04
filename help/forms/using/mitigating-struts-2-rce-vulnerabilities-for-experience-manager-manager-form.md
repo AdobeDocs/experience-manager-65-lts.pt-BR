@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -31,9 +31,9 @@ A tabela a seguir lista a resolução de todas as versões afetadas:
 
 | Versão | Versão atual | Ação do usuário |
 |---|---|---|
-| Experience Manager 6.5 Forms no JEE | 6.5.19.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| Experience Manager 6.5 Forms no JEE | 6.5.13.0 - 6.5.18.0 | Use um dos seguintes métodos: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Instalar o pacote de serviços mais recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Usar etapas de mitigação manual </a> |
-| Experience Manager 6.5 Forms no JEE | 6.5 - 6.5.12.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **OBSERVAÇÃO:** atualmente, o AEM Forms oferece suporte às versões 6.5.13.0 a 6.5.19.0. Se você estiver usando uma versão mais antiga, recomendamos atualizar para o 6.5.13.0 ou uma versão posterior. Para obter instruções sobre como instalar o AEM 6.5.13.0 ou versão posterior, consulte as notas de versão. |
+| Experience Manager 6.5 Forms no JEE | 6.5.19.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| Experience Manager 6.5 Forms no JEE | 6.5.13.0 - 6.5.18.0 | Use um dos seguintes métodos: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Instalar o pacote de serviços mais recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Usar etapas de mitigação manual </a> |
+| Experience Manager 6.5 Forms no JEE | 6.5 - 6.5.12.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **OBSERVAÇÃO:** atualmente, o AEM Forms oferece suporte às versões 6.5.13.0 a 6.5.19.0. Se você estiver usando uma versão mais antiga, recomendamos atualizar para o 6.5.13.0 ou uma versão posterior. Para obter instruções sobre como instalar o AEM 6.5.13.0 ou versão posterior, consulte as notas de versão. |
 
 ### Usar etapas de mitigação manual {#use-manual-mitigation-steps}
 

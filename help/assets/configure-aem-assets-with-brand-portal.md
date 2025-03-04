@@ -9,7 +9,7 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 4%
@@ -76,11 +76,11 @@ Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
 * Se você for um parceiro da Adobe, use o [Programa de Treinamento de Parceiros da Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar o AEM 6.5.
 
-Depois de baixar o AEM, para obter instruções sobre como configurar uma instância do AEM Author, consulte [implantação e manutenção](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html#default-local-install).
+Depois de baixar o AEM, para obter instruções sobre como configurar uma instância do AEM Author, consulte [implantação e manutenção](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html#default-local-install).
 
 ### Baixe e instale o Service Pack mais recente do AEM {#servicepack}
 
-Para obter instruções detalhadas, consulte as [Notas de versão do Service Pack do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html).
+Para obter instruções detalhadas, consulte as [Notas de versão do Service Pack do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Contate o Suporte ao Cliente da Adobe** se não conseguir encontrar o pacote ou o Service Pack mais recente da AEM.
 
@@ -122,11 +122,11 @@ Execute as seguintes etapas na sequência especificada para configurar o Experie
 
 #### Configurar as credenciais do OAuth no Adobe Developer Console {#config-oauth}
 
-[Configure as credenciais do OAuth no Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) e selecione a API do Brand Portal.
+[Configure as credenciais do OAuth no Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) e selecione a API do Brand Portal.
 
 #### Criar nova integração do Adobe IMS usando o OAuth {#create-ims-account-configuration}
 
-[Crie uma nova Integração do Adobe IMS usando o OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) e selecione Brand Portal no menu suspenso.
+[Crie uma nova Integração do Adobe IMS usando o OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) e selecione Brand Portal no menu suspenso.
 
 #### Configurar o serviço em nuvem {#configure-cloud-service}
 
