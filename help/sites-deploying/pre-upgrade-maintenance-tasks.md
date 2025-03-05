@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,15 @@ Antes de iniciar a atualização, é importante seguir estas tarefas de manuten�
 * [Executar limpeza de revisão offline](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Executar coleta de lixo do armazenamento de dados](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [Fazer Upgrade do Esquema de Banco de Dados, Se Necessário](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [Excluir usuários que podem dificultar a atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [Girar arquivos de registro](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Definições de índice {#index-definitions}
 
-Verifique se você instalou as definições de índice necessárias lançadas com o AEM 6.5 Service Packs fornecidos com o AEM Service Pack 22 no mínimo (Consulte as [notas de versão do Service Pack do AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/release-notes/release-notes) para obter mais informações).
+Verifique se você instalou as definições de índice necessárias lançadas com os Service Packs do AEM 6.5 fornecidos até o AEM Service Pack 22, no mínimo. (Consulte as [notas de versão do Service Pack do AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/release-notes/release-notes) para obter mais informações).
 
 ## Garantir espaço suficiente em disco {#ensure-sufficient-disk-space}
 
-Ao executar a atualização, além das atividades de atualização de conteúdo e código, uma migração de repositório deve ser executada. A migração cria uma cópia do repositório no novo formato TAR de segmento. Como resultado, é necessário espaço em disco suficiente para manter uma segunda versão do repositório, possivelmente maior.
+Ao executar a atualização, verifique se há espaço em disco suficiente.
 
 ## Fazer backup completo do AEM {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ Ao iniciar o AEM do arquivo jar, um arquivo `quickstart.properties` é gerado em
 
 As tarefas `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` exigem configurações OSGi separadas e não podem funcionar sem elas. Se eles falharem durante a execução da tarefa de pré-atualização, a falta de configurações será o motivo mais provável. Portanto, adicione configurações OSGi para essas tarefas ou remova-as completamente da lista de tarefas de otimização de pré-atualização se não quiser executá-las. A documentação para configurar tarefas de limpeza de fluxo de trabalho pode ser encontrada em [Administrando Instâncias de Fluxo de Trabalho](/help/sites-administering/workflows-administering.md) e a configuração da tarefa de manutenção de log de auditoria pode ser encontrada em [Manutenção de Log de Auditoria no AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Para limpeza de fluxo de trabalho e log de auditoria no CQ 5.6 e limpeza de log de auditoria no AEM 6.0, consulte [Limpar nós de fluxo de trabalho e auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Instalar, Configurar e Executar as Tarefas de Pré-Atualização {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ Desative todos os trabalhos agendados OSGi incluídos no código do aplicativo.
 >
 >Esta etapa só é necessária para instalações TarMK
 
-Se estiver usando TarMK, você deve executar a Limpeza de revisão offline antes da atualização. Isso torna a etapa de migração do repositório e as tarefas de atualização subsequentes muito mais rápidas e ajuda a garantir que a Limpeza de revisão online possa ser executada com êxito após a conclusão da atualização. Para obter informações sobre como executar a Limpeza de Revisão Offline, consulte [Execução da Limpeza de Revisão Offline](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Se estiver usando TarMK, você deve executar a Limpeza de revisão offline antes da atualização. Isso torna a etapa de migração do repositório e as tarefas de atualização subsequentes muito mais rápidas e ajuda a garantir que a Limpeza de revisão online possa ser executada com êxito após a conclusão da atualização. Para obter informações sobre como executar a Limpeza de Revisão Offline, consulte [Execução da Limpeza de Revisão Offline](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
 
 ## Executar coleta de lixo do armazenamento de dados {#execute-datastore-garbage-collection}
 
