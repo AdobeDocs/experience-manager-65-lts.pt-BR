@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -52,4 +52,4 @@ Para facilitar a referência às instâncias do AEM envolvidas nesses procedimen
 
 A camada do Foundation agora é compatível com o Java 17, incorporando os pacotes de código aberto mais recentes do Apache Sling, Felix e Jackrabbit Oak. Além disso, o pacote do uber-jar AEM 6.5 LTS foi alterado. Além disso, alguns recursos herdados foram removidos do AEM 6.5 LTS. Para obter mais informações, consulte [Notas de versão](/help/release-notes/release-notes.md#whats-new-what-s-new) e [Lista de Pacotes Obsoletos Desinstalados Após a Atualização](/help/sites-deploying/obsolete-bundles.md)
 
-O AEM 6.5 LTS tem um forte foco na compatibilidade com versões anteriores de recursos e vem com uma ferramenta de análise. Consulte [Avaliando a Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md) para obter uma avaliação da complexidade à medida que você inicia o [planejamento da atualização](/help/sites-deploying/upgrade-planning.md).
+O AEM 6.5 LTS tem um forte foco na compatibilidade com versões anteriores de recursos e vem com uma ferramenta de análise. Consulte [Avaliando a Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/aem-analyzer.md) para obter uma avaliação da complexidade à medida que você inicia o [planejamento da atualização](/help/sites-deploying/upgrade-planning.md).
