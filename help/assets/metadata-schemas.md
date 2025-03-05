@@ -1,16 +1,15 @@
 ---
 title: Os esquemas de metadados definem o layout da página de propriedades de metadados
 description: O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar um esquema de metadados personalizado, editar esquema de metadados e como aplicar esquema de metadados a ativos.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 8%
+source-wordcount: '3607'
+ht-degree: 7%
 
 ---
 
@@ -89,21 +88,21 @@ Você pode editar um formulário de esquema de metadados recém-adicionado ou ex
 A guia **[!UICONTROL Criar Formulário]** lista itens de formulário que você usa no formulário de esquema. A guia **[!UICONTROL Configurações]** fornece os atributos de cada item selecionado na guia **[!UICONTROL Formulário de compilação]**. A tabela a seguir lista os itens de formulário disponíveis na guia **[!UICONTROL Criar Formulário]**:
 
 | Nome do componente | Descrição |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
-| [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto de vários valores] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
-| [!UICONTROL Número] | Adiciona um componente de número. |
-| [!UICONTROL Data] | Adiciona um componente de data. |
-| [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
-| [!UICONTROL Marcas Padrão] | Adicione uma tag. |
-| [!UICONTROL Tags inteligentes] | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
-| [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
-| [!UICONTROL Ativo Referenciado Por] | Adicione este componente para visualizar a lista de ativos referenciados pelo ativo. |
-| [!UICONTROL Referenciando Ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
-| [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
-| [!UICONTROL Classificação de ativos] | Adicionar para exibir opções de classificação do ativo. |
-| [!UICONTROL Metadados contextuais] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
+|----|----|
+| **[!UICONTROL Cabeçalho da seção]** | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
+| **[!UICONTROL Texto em linha única]** | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
+| **[!UICONTROL TextoDeVáriosValores]** | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
+| **[!UICONTROL Número]** | Adiciona um componente de número. |
+| **[!UICONTROL Data]** | Adiciona um componente de data. |
+| **[!UICONTROL Lista suspensa]** | Adicione uma lista suspensa. |
+| **[!UICONTROL Marcas Padrão]** | Adicione uma tag. Talvez os administradores precisem alterar o valor do caminho. Por exemplo, `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`, se eles publicarem o formulário de esquema de metadados do Experience Manager Assets, onde o caminho não inclui informações do locatário, por exemplo, `/etc/tags/<custom_tag_namespace>`. |
+| **[!UICONTROL Tags inteligentes]** | Tags detectadas automaticamente se você tiver comprado e configurado o complemento tags inteligentes da Experience Manager Assets. |
+| **[!UICONTROL Campo oculto]** | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
+| **[!UICONTROL Ativo Referenciado Por]** | Adicione este componente para exibir uma lista de ativos referenciados pelo ativo. |
+| **[!UICONTROL Referenciando Ativo]** | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
+| **[!UICONTROL Metadados contextuais]** | Adicione para controlar a exibição de outras guias de metadados na página Propriedades dos ativos. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
