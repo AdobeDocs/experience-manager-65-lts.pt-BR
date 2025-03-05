@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 168e9f5865d20a53f9abed4bb90aceae9a1c7b6a
+source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,15 @@ ht-degree: 0%
 Ao planejar uma atualização, as seguintes áreas de uma implementação devem ser investigadas e abordadas.
 
 * [Atualizar a base de código](#upgrade-code-base)
-* [Alinhar com a estrutura do repositório 6.5](#align-repository-structure)
-* [Personalizações do AEM](#aem-customizations)
 * [Procedimento de teste](#testing-procedure)
 
 ## Visão geral {#overview}
 
-1. **AEM Analyzer** - Execute o AEM Analyzer conforme descrito no planejamento de atualização e detalhado na página [Avaliação da Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md). Você obtém um relatório do AEM Analyzer que contém mais detalhes sobre as áreas que devem ser abordadas, além das APIs/pacotes indisponíveis na versão Target do AEM. O relatório Analisador do PAEM fornece uma indicação de quaisquer incompatibilidades no código. Se não houver nenhum, sua implantação já será compatível com o LTS 6.5. Você ainda pode optar por fazer novo desenvolvimento para usar a funcionalidade LTS 6.5, mas não é necessário apenas para manter a compatibilidade.
-
-1. **Desenvolver Base de Código para 6.5 LTS**- Crie uma ramificação ou repositório dedicado para a base de código para a versão de Destino. Use as informações da Compatibilidade de pré-atualização para planejar as áreas do código a serem atualizadas.
-1. **Compilar com 6.5 LTS Uber jar**- Atualize os POMs de base de código para apontar para 6.5.2025 uber jar e compile o código em relação a ele.
-1. **Implantar no Ambiente 6.5 LTS** - Uma instância limpa do AEM 6.5 LTS (Autor + Publicação) deve ser colocada em um ambiente Dev/QA. A base de código atualizada e uma amostra representativa de conteúdo (da produção atual) devem ser implantadas.
-1. **Validação de controle de qualidade e correção de erros** - o controle de qualidade deve validar o aplicativo nas instâncias do Autor e de Publicação de 6.5.2025. Quaisquer bugs encontrados devem ser corrigidos e confirmados na base de código 6.5 LTS. Repita o Dev-Cycle conforme necessário até que todos os bugs sejam corrigidos.
+1. **AEM Analyzer** - Execute o AEM Analyzer conforme definido na página [Avaliando a Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/pattern-detector.md). Você recebe um relatório do AEM Analyzer que contém mais detalhes sobre áreas que devem ser abordadas, além das APIs/pacotes indisponíveis na versão Target do AEM. O relatório do AEM Analyzer fornece uma indicação de quaisquer incompatibilidades no código. Se não houver nenhum, sua implantação será compatível com o AEM 6.5 LTS. Você ainda pode optar por fazer novo desenvolvimento para usar o AEM 6.5 LTS, mas não precisa dele apenas para manter a compatibilidade.
+1. **Desenvolver Base de Código para 6.5 LTS**- Crie uma ramificação ou repositório dedicado para a base de código da versão do AEM de Destino. Use as informações da compatibilidade de pré-atualização para planejar as áreas do código a serem atualizadas.
+1. **Compilar com 6.5 LTS Uber jar**- Atualize os POMs de base de código para apontar para o AEM 6.5 LTS Uber jar e compilar o código em relação a ele.
+1. **Implantar no Ambiente 6.5 LTS** - Uma instância limpa do AEM 6.5 LTS (Autor + Publicação) deve ser configurada em um ambiente Dev/QA. A base de código atualizada e uma amostra representativa de conteúdo (da produção atual) devem ser implantadas.
+1. **Validação de controle de qualidade e correção de erros** - o controle de qualidade deve validar o aplicativo nas instâncias do Author e do Publish do AEM 6.5 LTS. Todos os bugs encontrados devem ser corrigidos e confirmados na base de código AEM 6.5 LTS. Repita o Dev-Cycle conforme necessário até que todos os bugs sejam corrigidos.
 
 Antes de continuar com uma atualização, você deve ter uma base de código de aplicativo estável que foi totalmente testada contra o AEM 6.5 LTS.
 
@@ -61,23 +58,22 @@ O jar do AEM Uber inclui todas as APIs do AEM como uma única dependência no `p
 >
 >Há uma pequena diferença na forma como o AEM 6.5 e o AEM 6.5 LTS Uber Jars são empacotados. Consulte a seção abaixo:
 
-**Para o AEM 6.5.x, há dois tipos de Uber Jars**
+**Uber Jars para AEM 6.5**
 
-1. `uber-jar-6.5.x.jar` - Contém todas as APIs públicas do AEM 6.5.x
-1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Inclui APIs públicas e APIs obsoletas do AEM 6.5.x.
+1. `uber-jar-6.5.x.jar` - Contém todas as APIs públicas do AEM 6.5.
+1. `uber-jar-6.5.x-apis-with-deprecations.jar` - Inclui APIs públicas e APIs obsoletas do AEM 6.5.
 
-**Uber Jars para AEM 6.5.2025.x**
+**Uber Jars para AEM 6.5 LTS**
 
-Para o AEM 6.5.2025.x, há novamente dois tipos de Uber Jars:
+Para o AEM 6.5 LTS, há novamente dois tipos de Uber Jars:
 
-1. `uber-jar-6.5.2025.x.jar` - Contém todas as APIs públicas do AEM 6.5.2025.x.
-1. `uber-jar-6.5.2025.x-deprecated.jar` - Inclui somente APIs obsoletas do AEM 6.5.2025.x
+1. `uber-jar-6.6.x-apis.jar` - Contém todas as APIs públicas do AEM 6.5 LTS.
+1. `uber-jar-6.6.x-deprecated-apis.jar` - Inclui somente APIs obsoletas do AEM 6.5 LTS.
 
-**Diferença principal: AEM 6.5.x versus AEM 6.5.2025.x Uber Jars**
+**Diferença principal: AEM 6.5 vs. AEM 6.5 LTS Uber Jars**
 
-* No AEM 6.5.x, se as APIs públicas e obsoletas forem necessárias, você pode usar incluir jar único, `uber-jar-6.5.x-apis-with-deprecations.jar` no arquivo `pom.xml`.
-* No AEM 6.5.2025.x, se você precisar de APIs públicas e obsoletas, será necessário incluir dois jars separados, `uber-jar-6.5.2025.x.jar` para APIs públicas e `uber-jar-6.5.2025.x-deprecated.jar` para APIs obsoletas.
-* No AEM 6.5.2025.x, se você precisar de APIs públicas e obsoletas, será necessário incluir dois jars separados, `uber-jar-6.5.2025.x.jar` para APIs públicas e `uber-jar-6.5.2025.x-deprecated.jar` para APIs obsoletas.
+* No AEM 6.5, se forem necessárias APIs públicas e obsoletas, você poderá usar incluir jar único, `uber-jar-6.5.x-apis-with-deprecations.jar` no arquivo `pom.xml`.
+* No AEM 6.5 LTS, se você precisar de APIs públicas e obsoletas, será necessário incluir dois jars separados, `uber-jar-6.6.x-apis.jar` para APIs públicas e `uber-jar-6.6.x-deprecated-apis.jar` para APIs obsoletas.
 
 **Coordenadas Maven para Jar de APIs obsoletos**
 
@@ -93,7 +89,7 @@ Para o AEM 6.5.2025.x, há novamente dois tipos de Uber Jars:
 
 ### Notas do desenvolvedor {#developer-notes}
 
-* O AEM 6.5.2025 não inclui a biblioteca guava do Google pronta para uso, a versão necessária pode ser instalada de acordo com o requisito.
+* O AEM 6.5 LTS não inclui a biblioteca guava da Google pronta para uso. A versão necessária pode ser instalada de acordo com o requisito.
 * O pacote XSS do Sling agora usa a biblioteca Java HTML Sanitizer, e o uso do método `XSSAPI#filterHTML()` deve ser usado para renderizar o conteúdo do HTML com segurança e não para transmitir dados para outras APIs.
 
 ## Procedimento de teste {#testing-procedure}
@@ -102,7 +98,7 @@ Um plano de teste abrangente deve ser preparado para testar as atualizações. O
 
 ### Testando o procedimento de atualização {#testing-upgrade-procedure}
 
-O procedimento de atualização descrito aqui deve ser testado em ambientes de Desenvolvimento e Controle de Qualidade, conforme documentado no seu manual de execução personalizado (consulte [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md)). O procedimento de atualização deve ser repetido até que todas as etapas sejam documentadas no livro de execução de atualização e o processo de atualização seja tranquilo
+O procedimento de atualização descrito aqui deve ser testado em ambientes de Desenvolvimento e Controle de Qualidade, conforme documentado no seu manual de execução personalizado (consulte [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md)). O procedimento de atualização deve ser repetido até que todas as etapas sejam documentadas no livro de execução de atualização e o processo de atualização seja tranquilo.
 
 ### Áreas de teste de implementação  {#implementation-test-areas-}
 
