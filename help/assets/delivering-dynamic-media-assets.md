@@ -1,18 +1,14 @@
 ---
 title: Entregar ativos do Dynamic Media
 description: Saiba como fornecer ativos do Dynamic Media, como vídeo e imagens, às suas páginas da Web.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 9%
+source-wordcount: '313'
+ht-degree: 10%
 
 ---
 
@@ -41,9 +37,7 @@ Para obter mais informações, consulte os seguintes tópicos:
 * [Vincular URLs ao seu aplicativo web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Entregar imagens otimizadas para um site responsivo](/help/assets/responsive-site.md)
 * [Entrega de conteúdo HTTP2](/help/assets/http2.md)
-* [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Usar conjuntos de regras para transformar URLs](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}
 

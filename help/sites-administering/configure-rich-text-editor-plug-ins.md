@@ -5,13 +5,13 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f185c622-1681-4221-a082-cac71d6b510b
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4381'
 ht-degree: 2%
 
 ---
-
 
 # Configurar os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
 
@@ -285,10 +285,6 @@ Em seguida, especifique os locais das folhas de estilos que você deseja referen
 ### Configurar o RTE para quebras de palavras ideais em japonês {#jpwordwrap}
 
 Os autores que usam o AEM para criar conteúdo em idioma japonês podem aplicar um estilo a caracteres para evitar quebras de linha, quando uma quebra não é necessária. Isso permite que os autores deixem as frases serem quebradas na posição desejada. O estilo dessa funcionalidade é baseado na classe CSS, que é predefinida na folha de estilos CSS.
-
->[!NOTE]
->
->Esse recurso exige pelo menos o AEM 6.5 Service Pack 1.
 
 Para criar o estilo que os autores podem aplicar ao texto em japonês, siga estas etapas:
 

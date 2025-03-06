@@ -10,7 +10,8 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
+exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -28,9 +29,9 @@ Ao planejar uma atualização, as seguintes áreas de uma implementação devem 
 
 1. **AEM Analyzer** - Execute o AEM Analyzer conforme descrito no planejamento de atualização e detalhado na página [Avaliação da Complexidade de Atualização com o AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Você obtém um relatório do AEM Analyzer que contém mais detalhes sobre as áreas que devem ser abordadas, além das APIs/pacotes indisponíveis na versão Target do AEM. O relatório do AEM Analyzer fornece uma indicação de quaisquer incompatibilidades no código. Se não houver nenhum, sua implantação já será compatível com o LTS 6.5. Você ainda pode optar por fazer novo desenvolvimento para usar a funcionalidade LTS 6.5, mas não é necessário apenas para manter a compatibilidade.
 1. **Desenvolver Base de Código para 6.5 LTS**- Crie uma ramificação ou repositório dedicado para a base de código para a versão de Destino. Use as informações da Compatibilidade de pré-atualização para planejar as áreas do código a serem atualizadas.
-1. **Compilar com 6.5 LTS Uber jar**- Atualize os POMs de base de código para apontar para 6.5.2025 uber jar e compile o código em relação a ele.
+1. **Compilar com 6.5 LTS Uber jar**- Atualize os POMs de base de código para apontar para 6.5 LTS Uber jar e compile o código em relação a ele.
 1. **Implantar no Ambiente 6.5 LTS** - Uma instância limpa do AEM 6.5 LTS (Autor + Publicação) deve ser colocada em um ambiente Dev/QA. A base de código atualizada e uma amostra representativa de conteúdo (da produção atual) devem ser implantadas.
-1. **Validação de controle de qualidade e correção de erros** - o controle de qualidade deve validar o aplicativo nas instâncias do Autor e de Publicação de 6.5.2025. Quaisquer bugs encontrados devem ser corrigidos e confirmados na base de código 6.5 LTS. Repita o Dev-Cycle conforme necessário até que todos os bugs sejam corrigidos.
+1. **Validação de controle de qualidade e correção de erros** - o controle de qualidade deve validar o aplicativo nas instâncias Autor e Publicar do 6.5 LTS. Quaisquer bugs encontrados devem ser corrigidos e confirmados na base de código 6.5 LTS. Repita o Dev-Cycle conforme necessário até que todos os bugs sejam corrigidos.
 
 Antes de continuar com uma atualização, você deve ter uma base de código de aplicativo estável que foi totalmente testada contra o AEM 6.5 LTS.
 

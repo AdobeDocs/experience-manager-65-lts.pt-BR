@@ -8,9 +8,10 @@ kt: 5826
 thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 22fcdadf-12c0-4545-a854-76345806386f
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '765'
 ht-degree: 25%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 25%
 
 O desenvolvimento de projetos do AEM Commerce com base no Commerce integration framework (CIF) para AEM segue as mesmas regras e práticas recomendadas de outros projetos do AEM. Revise estes primeiro:
 
-- [Guia do usuário para desenvolvimento no AEM 6.5](/help/sites-developing/getting-started.md)
+- [Guia do usuário para desenvolvimento no AEM](/help/sites-developing/getting-started.md)
 - [Conceitos principais do AEM](/help/sites-developing/the-basics.md)
 - [Desenvolvimento do AEM – Diretrizes e práticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md)
@@ -30,17 +31,16 @@ Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos 
 
 >[!NOTE]
 >
->As instruções a seguir ajudam a configurar um ambiente de desenvolvimento do AEM local para o AEM Commerce usando o CIF com foco no AEM 6.5). Se você estiver usando o AEM as a Cloud Service, consulte a documentação do [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=pt-BR).
+>As instruções a seguir ajudam a configurar um ambiente de desenvolvimento do AEM local para o AEM Commerce usando o CIF com foco no AEM 6.5 (LTS). Se você estiver usando o AEM as a Cloud Service, consulte a documentação do [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=pt-BR).
 
-O complemento AEM Commerce para AEM 6.5 também conhecido como. O complemento CIF também está disponível para desenvolvimento local e é fornecido como um pacote do AEM. Ele pode ser baixado do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) como um pacote de recursos.
+O complemento do AEM Commerce para AEM, conhecido como complemento do CIF, está disponível para desenvolvimento local e é fornecido como um pacote do AEM. Ele pode ser baixado do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) como um pacote de recursos.
 
 ### Software necessário
 
 Devem ser instalados:
 
-- AEM local 6.5
-- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) 7 ou posterior
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- AEM 6.5 LTS local
+- [Java 17](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 - [Nó LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
@@ -57,8 +57,6 @@ O complemento CIF pode ser baixado no [Portal de distribuição de software](htt
 ### Configuração local
 
 Para o desenvolvimento de projetos locais do CIF usando o AEM e o complemento CIF, siga estas etapas:
-
-1. Obtenha a versão AEM 6.5 e instale o AEM 6.5 Service Pack. O AEM 6.5 Service Pack 7 é necessário, no entanto, a Adobe recomenda instalar o último service pack disponível.
 
 1. Descompacte o AEM .jar para criar a pasta `crx-quickstart` e execute:
 

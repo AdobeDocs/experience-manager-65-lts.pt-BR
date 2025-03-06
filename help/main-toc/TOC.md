@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6863'
+source-wordcount: '6816'
 ht-degree: 20%
 
 ---
@@ -304,7 +304,6 @@ ht-degree: 20%
       + [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
       + [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md)
       + [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-      + [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Instalar o Feature Pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md)
       + [Trabalhar com seletores](/help/assets/working-with-selectors.md)
    + Estender o Assets {#extending}
@@ -457,7 +456,7 @@ ht-degree: 20%
    + Atualizar o AEM Forms {#upgrade-aem-forms}
       + [Caminhos de atualização disponíveis](/help/forms/using/upgrade.md)
       + Atualizar o AEM Forms no OSGi {#aem-forms-osgi-upgrade}
-         + [Atualização para formulários do AEM 6.5.2025 no OSGi](/help/forms/using/upgrade-forms-osgi.md)
+         + [Atualização para o AEM 6.5 LTS Forms no OSGi](/help/forms/using/upgrade-forms-osgi.md)
          + [Instalar pacote de compatibilidade](/help/forms/using/compatibility-package.md)
          + [Migrar ativos e documentos do AEM Forms](/help/forms/using/migration-utility.md)
       + [Atualização para formulários do AEM 6.5 no JEE](/help/forms/using/upgrade-forms-jee.md)
@@ -1077,12 +1076,8 @@ ht-degree: 20%
       + [Não é possível converter o arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Não foi possível restaurar o repositório do CRX](/help/forms/using/restore-crx-repository.md)
-      + [Erros de serviço indisponível após a instalação do service pack do AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Problema de instalação do service pack 6.5.15.0 do AEM Forms JEE no ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Processamento de documentos mesmo se o servidor do AEM Forms não estiver totalmente ativo e em execução](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
-      + [Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Falha ao fazer backup do banco de dados durante a atualização para 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [A geração PDF não imprime um grande número de PDFs no WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Como reiniciar corretamente o AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [O serviço PaperCapture não executa OCRs em PDFs](/help/forms/using/papercapture-service-resolution.md)

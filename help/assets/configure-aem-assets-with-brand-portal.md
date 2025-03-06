@@ -9,13 +9,13 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
-
 
 # Configurar o AEM Assets com o Brand Portal {#configure-integration-65}
 
@@ -68,11 +68,11 @@ Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
 [Baixe e instale o Service Pack mais recente do AEM](#servicepack)
 
-### Baixe e instale o AEM 6.5 {#aemquickstart}
+### Baixe e instale o AEM 6.5 LTS {#aemquickstart}
 
-É recomendável ter o AEM 6.5 para configurar uma instância de autor do AEM. Se você não tiver o AEM em execução, baixe-o dos seguintes locais:
+É recomendável ter o AEM 6.5 LTS para configurar uma instância de autor do AEM. Se você não tiver o AEM em execução, baixe-o dos seguintes locais:
 
-* Se você for um cliente atual do AEM, baixe o AEM 6.5 do [site de Licenciamento da Adobe](https://licensing.adobe.com).
+* Se você for um cliente atual do AEM, baixe o AEM 6.5 LTS do [site de Licenciamento da Adobe](https://licensing.adobe.com).
 
 * Se você for um parceiro da Adobe, use o [Programa de Treinamento de Parceiros da Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar o AEM 6.5.
 
@@ -80,7 +80,7 @@ Depois de baixar o AEM, para obter instruções sobre como configurar uma instâ
 
 ### Baixe e instale o Service Pack mais recente do AEM {#servicepack}
 
-Para obter instruções detalhadas, consulte as [Notas de versão do Service Pack do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Para obter instruções detalhadas, consulte as [Notas de Versão do AEM 6.5 LTS Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html) atuais.
 
 **Contate o Suporte ao Cliente da Adobe** se não conseguir encontrar o pacote ou o Service Pack mais recente da AEM.
 

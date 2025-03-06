@@ -5,7 +5,7 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 3a529a82-e2fd-423c-96c1-a5accc87775e
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -27,7 +27,7 @@ O pacote de Compatibilidade do AEMFD também permite [usar os seguintes ativos d
 
 Para obter mais informações, consulte [Compatibilidade do Assets com o AEM Forms 6.5 ao instalar o pacote de Compatibilidade](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Adicionar suporte para ativos do AEM Forms 6.5, 6.4, 6.3 e 6.2 no AEM Forms 6.5 LTS {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.2025}
+## Adicionar suporte para ativos do AEM Forms 6.5, 6.4, 6.3 e 6.2 no AEM Forms 6.5 LTS {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
