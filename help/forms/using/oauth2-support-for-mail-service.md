@@ -4,7 +4,9 @@ description: Configurar a autenticação baseada em OAuth2 para o Microsoft&reg 
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+source-git-commit: 4d44a828d0b103b09941e8a2ac0f6b3260e03c89
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%

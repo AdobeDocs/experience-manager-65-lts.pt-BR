@@ -8,7 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: f56a0c1f9bb01824d89e37835cb0856808e9e9ac
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%

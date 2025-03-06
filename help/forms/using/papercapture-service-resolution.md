@@ -4,13 +4,14 @@ description: Saiba mais sobre as etapas para resolver o problema em que o servi�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 2%
 
 ---
-
 
 # O serviço PaperCature não executa a operação de OCRs em PDFs
 

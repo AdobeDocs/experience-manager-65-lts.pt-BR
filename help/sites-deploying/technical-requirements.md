@@ -5,9 +5,10 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
+exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3064'
 ht-degree: 0%
 
 ---
@@ -149,12 +150,11 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
 | **Plataforma** | **Nível de Suporte** |
 |---|---|
-| **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[3]` |
-| Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
+| **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[2]` |
+| Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` |
 | Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
 
-1. Kernel 5 Linux® x e 6. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms são suportados apenas no CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
-1. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
+1. Kernel 5 Linux® x e 6. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®.
 1. Distribuição Linux® suportada pela Adobe Managed Services.
 
    >[!NOTE]
@@ -165,6 +165,8 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 ou posterior)
+
 
 ### Ambientes de computação virtual e em nuvem {#virtual-cloud-computing-environments}
 
@@ -180,7 +182,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) mais recente do Dispatcher. Experience Manager 6.5 exige Dispatcher versão 4.3.2 ou posterior.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 exige Dispatcher versão 4.3.2 ou posterior.
 
 Os seguintes servidores da Web são compatíveis com o uso com Dispatcher versão 4.3.2:
 
@@ -341,7 +343,7 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 
 >[!NOTE]
 >
->**O host nome do servidor deve resolver:** verifique se o host nome do servidor pode ser resolvido em um endereço IP. Se isso não for possível, adicione o nome da host totalmente qualificado e o endereço IP em **/etc/hosts**:
+>**O nome do host do servidor deve resolver:** Verifique se o nome do host do servidor pode ser resolvido como um endereço IP. Se isso não for possível, adicione o nome da host totalmente qualificado e o endereço IP em **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -355,13 +357,13 @@ Para usar Mídia dinâmica no Windows, instale o Microsoft® Visual Studio 2010,
 Para Windows x64:
 
 * Obtenha o Microsoft® Visual Studio 2010 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Obtenha o Microsoft® Visual Studio 2013 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Faça com que o Microsoft® Visual Studio 2013 fique redistribuível a [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Receba a redistribuição do Microsoft® Visual Studio 2015 à [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Para Windows x86:
 
-* Faça com que o Microsoft® Visual Studio 2010 fique redistribuível a [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Obter o Microsoft® Visual Studio 2013 redistribuível a [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* Obtenha o Microsoft® Visual Studio 2010 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Obtenha o Microsoft® Visual Studio 2013 redistribuível em [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
 * Obtenha a redistribuição do Microsoft® Visual Studio 2015 a [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
@@ -433,10 +435,12 @@ Para Windows x86:
 >Além disso,
 >
 >* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
->* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
->* A PDF Generator suporta apenas a versão de 32 bits para varejo do Microsoft® Office Professional Plus e outros softwares necessários para conversão no sistema operacional Windows.
+>* A PDF Generator suporta apenas a versão comercial de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para conversão.
+>* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
+>* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >* A PDF Generator suporta as versões de 32 e 64 bits do OpenOffice no sistema operacional Linux®.
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
+>* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
 >* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
@@ -450,22 +454,22 @@ Para Windows x86:
 * Processador 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
 * 1 GB de RAM para 32 bits ou 2 GB de RAM para SO de 64 bits
 * Espaço em disco de 16 GB para espaço em disco de 32 ou 20 GB para sistema operacional de 64 bits
-* Memória gráfica - 128 MB de GPU (recomendado de 256 MB)
-* 2.35 GB de espaço disponível em disco rígido
+* Memória gráfica - 128 MB de GPU (recomenda-se 256 MB)
+* 2,35 GB de espaço disponível em disco rígido
 * Resolução do monitor de 1024 X 768 pixels ou superior
-* Aceleração de hardware de vídeo (opcional)
+* aceleração de hardware Vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Privilégios administrativos para instalar o Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 32 bits para AEM Forms Designer de 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou superior) tempo de execução de 64 bits para AEM Forms Designer de 64 bits (para pilha OSGI e JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 64 bits para designer de AEM Forms de 64 bits (para pilha OSGI e JEE)
 
-[Instalar e configurar o AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
+[Instalar e configurar AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Requisitos para Ativos AEM XMP metadados write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP write-back é compatível e ativado para as seguintes plataformas e formatos de arquivo:
+O XMP write-back é compatível e habilitado para as seguintes plataformas e formatos de arquivo:
 
-* **Sistemas operacionais:**
+* **Sistemas Operacionais:**
 
    * Linux® (suporte para aplicativos de 32 e 32 bits em sistemas de 64 bits). Para obter as etapas para instalar bibliotecas de clientes de 32 bits, consulte [Como habilitar a extração e gravação do XMP no Red Hat® Linux® de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 

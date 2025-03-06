@@ -9,7 +9,9 @@ docset: aem65
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +20,7 @@ ht-degree: 0%
 
 # Introdução ao trabalho com o PDF Generator {#introduction-to-working-with-pdf-generator}
 
-O PDF Generator converte vários formatos de arquivo para o PDF. Também converte o PDF em outros formatos de arquivo e otimiza o tamanho dos documentos do PDF. Para obter uma lista de formatos de arquivo com suporte, consulte [Suporte de software para PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+O PDF Generator converte vários formatos de arquivo para o PDF. Também converte o PDF em outros formatos de arquivo e otimiza o tamanho dos documentos do PDF. Para obter uma lista de formatos de arquivo com suporte, consulte [Suporte de software para PDF Generator](/help/sites-deploying/technical-requirements.md)
 
 **Enviando arquivos ao PDF Generator para processamento**
 

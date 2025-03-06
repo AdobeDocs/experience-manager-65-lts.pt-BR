@@ -6,9 +6,10 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1551'
 ht-degree: 2%
 
 ---
@@ -27,9 +28,7 @@ O AEM Forms é uma plataforma poderosa de nível empresarial. O fluxo de trabalh
 
 >[!NOTE]
 >
->Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha do JEE. Veja uma [comparação](capabilities-osgi-jee-workflows.md) dos fluxos de trabalho do AEM centrados na Forms no OSGi e no Gerenciamento de processos no JEE para saber mais sobre a diferença e as semelhanças nos recursos.
->
->Após a comparação, Se você optar por instalar o recurso Gerenciamento do Processo na pilha do JEE, consulte [Instalar ou Atualizar o AEM Forms no JEE](/help/forms/using/introduction-aem-forms.md) para obter informações detalhadas sobre como instalar e configurar a pilha do JEE e os recursos de Gerenciamento do Processo.
+>Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Topologia de implantação {#deployment-topology}
 
@@ -106,9 +105,9 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
 1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
-1. Selecione o pacote e clique **[!UICONTROL em Instalar]**.
+1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) de AEM Forms.
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
 
@@ -116,15 +115,15 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    >
    > Recomenda-se usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o SDK AEM usando métodos alternativos, por exemplo, interromper processos Java, pode cliente potencial inconsistências nos AEM desenvolvimento ambiente.
 
-1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas 1 a 7 em todas as instâncias do Autor e Publish.
 
-## Configurações pós-instalação {#post-installation-configurations}
+## configurações de instalação Post {#post-installation-configurations}
 
 O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Adobe Target.
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
-#### Configurar RSA e BouncyCastle bibliotecas  {#configure-rsa-and-bouncycastle-libraries}
+#### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
 

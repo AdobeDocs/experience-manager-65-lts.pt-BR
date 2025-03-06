@@ -4,7 +4,8 @@ description: O Designer está disponível como um instalador independente e tamb
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -33,7 +34,7 @@ ht-degree: 0%
 >
 >* A versão de 64 bits do designer foi introduzida com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 >* A versão de 32 bits do designer está obsoleta desde o lançamento do [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-> * As plataformas compatíveis com o Forms Designer estão alinhadas às plataformas compatíveis com o AEM Forms. Para saber mais sobre as plataformas compatíveis com o Forms Designer, [clique aqui](/help/forms/using/aem-forms-jee-supported-platforms.md).
+> * As plataformas compatíveis com o Forms Designer estão alinhadas às plataformas compatíveis com o AEM Forms. Para saber mais sobre as plataformas compatíveis com o Forms Designer, [clique aqui](/help/sites-deploying/technical-requirements.md)
 
 Para obter mais informações sobre a instalação do Forms Designer, visite [Perguntas frequentes](#fandq).
 
@@ -118,4 +119,3 @@ Se você estiver usando um instalador independente do AEM Forms Designer, execut
       1. Abra o Designer, vá para Ajuda, clique em Sobre o designer e você verá as informações da versão do designer junto com as informações de bits. Por exemplo, você verá que 64 bits é gravado no final da versão, como mostrado aqui:
          `6.5.21.20240522.1.161 | 64 bit`
       1. Abra o Designer. No canto superior esquerdo, você verá um ícone de marca contendo informações de 64 bits com o nome do produto.
-

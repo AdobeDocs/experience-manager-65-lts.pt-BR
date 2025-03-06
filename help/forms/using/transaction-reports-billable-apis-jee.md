@@ -4,8 +4,10 @@ description: Lista de todas as APIs que são contabilizadas como transações pa
 topic-tags: forms-manager
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%

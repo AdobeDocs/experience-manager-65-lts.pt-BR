@@ -4,7 +4,9 @@ description: Usando a segurança de documentos, você pode pesquisar, exibir, ed
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+hide: true
+hidefromtoc: true
+source-git-commit: 92609575368de96d07ce7f67fef4301fa838213e
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 0%

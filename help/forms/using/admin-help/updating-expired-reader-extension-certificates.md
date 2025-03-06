@@ -4,13 +4,14 @@ description: Expiração de certificados de extensões do Reader e seu impacto
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
 
 ---
-
 
 # Expiração de certificados de extensões do Reader e seu impacto {#expiration-of-reader-extensions-certificates-and-its-impact}
 

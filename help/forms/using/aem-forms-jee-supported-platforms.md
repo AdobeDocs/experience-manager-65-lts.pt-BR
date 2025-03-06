@@ -8,13 +8,14 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3989'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
-
 
 # Plataformas compatíveis com AEM Forms no JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -486,6 +487,8 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >Além disso:
 >
 >- A PDF Generator suporta apenas a versão comercial de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para conversão.
+>- A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
+>- Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >- A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >- As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >- Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
@@ -493,7 +496,6 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >- O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
 >- Falha da PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
 >- Falha da PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
->- Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -928,4 +930,3 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     -->
-

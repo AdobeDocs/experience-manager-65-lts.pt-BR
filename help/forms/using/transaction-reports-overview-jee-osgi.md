@@ -4,10 +4,11 @@ description: Mantenha uma contagem de todos os formulários enviados, documentos
 topic-tags: forms-manager
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -23,11 +24,15 @@ O relatório de transações no AEM Forms permite monitorar todas as transaçõe
 
 Consulte o seguinte para obter instruções abrangentes sobre como ativar transações, a lista de APIs faturáveis e as implementações personalizadas do gravador, com base na sua pilha de tecnologia do AEM Forms:
 
-**Relatório de transações do AEM Forms no JEE**
+<!--
 
-* [Ativação e exibição do relatório de transações do AEM Forms no JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Lista de APIs faturáveis para o AEM Forms no JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [Registrar uma transação para APIs de componente personalizado](/help/forms/using/record-transaction-custom-component-jee.md)
+**Transaction Reporting for AEM Forms on JEE**
+
+* [Enabling and viewing transaction report for AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
+
+-->
 
 **Relatório de transações do AEM Forms no OSGi**
 

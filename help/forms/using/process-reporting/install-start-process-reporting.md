@@ -8,7 +8,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%
@@ -281,5 +283,3 @@ Para obter detalhes sobre o serviço de publicação de dados e como agendar ess
 * **[!UICONTROL Sincronizar]**: sincronize o repositório do Process Reporting inserido com o banco de dados do AEM Forms.
 * **[!UICONTROL Ajuda]**: exiba a documentação de ajuda sobre Relatórios de Processo.
 * **[!UICONTROL Logout]**: fazer logout do Relatório de Processos
-
-

@@ -8,9 +8,10 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,10 @@ Este artigo discute estratégias e práticas recomendadas que você pode impleme
 Você pode configurar e controlar a estratégia de armazenamento em cache do AEM Forms usando o componente **Configurações de Forms Móvel** no Console de Configuração da Web do AEM em:
 
 * (AEM Forms no OSGi) `https://'[server]:[port]'/system/console/configMgr`
-* (AEM Forms no JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
+
+<!--
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
+-->
 
 As opções disponíveis para armazenamento em cache são as seguintes:
 
@@ -149,22 +153,25 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
    * [diretório de instalação do AEM]\crx-repository\repository
    * [diretório de instalação do AEM]\crx-repository\launchpad
 
-* Diretório temporário do servidor de aplicativos. O local padrão é:
+<!--
 
-   * (JBoss®) [diretório de instalação do AEM]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+* Application server temporary directory. The default location is:
 
-* **(AEM Forms somente no JEE)** diretório de Armazenamento Global de Documentos (GDS). O local padrão é:
+    * (JBoss&reg;) [AEM installation directory]\jboss\standalone\tmp
+    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+    * (WebSphere&reg;) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-   * (JBoss®) [raiz do appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [raiz do appserver]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+* **(AEM Forms on JEE only)** Global Document Storage (GDS) directory. The default location is:
 
-* **(AEM Forms somente no JEE)** logs e diretório temporário do AEM Forms Server. O local padrão é:
+    * (JBoss&reg;) [appserver root]/server/'server'/svcnative/DocumentStorage
+    * (WebLogic) [appserverdomain]/'server'/adobe/LiveCycleServer/DocumentStorage
+    * (WebSphere&reg;) [appserver root]/installedApps/adobe/'server'/DocumentStorage
 
-   * Logs do servidor - [diretório de instalação do AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Diretório temporário - [Diretório de instalação do AEM Forms]\temp
+* **(AEM Forms on JEE only)** AEM Forms Server logs and temporary directory. The default location is:
+
+    * Server logs - [AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs
+    * Temp directory - [AEM Forms installation directory]\temp
+-->
 
 >[!NOTE]
 >

@@ -8,9 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ Juntamente com as opções para criar formulários, documentos e ativos relacion
 
 ### Formulários e documentos  {#forms-documents}
 
-O Forms e Documentos fornece opções para criar uma Comunicação interativa, um formulário adaptável, um fragmento de formulário adaptável e um conjunto de formulários. Somente para AEM [!DNL Forms] em JEE, Forms e Documentos fornecem uma opção para importar arquivos do armazenamento local e sincronizar ativos AEM [!DNL Forms] com o Workbench.
+O Forms e Documentos fornece opções para criar uma Comunicação interativa, um formulário adaptável, um fragmento de formulário adaptável e um conjunto de formulários. <!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 O botão Criar é o ponto inicial do processo de criação ou carregamento do ativo [!DNL Forms] do AEM. Ela fornece opções para criar:
 

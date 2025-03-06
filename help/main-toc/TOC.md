@@ -6,13 +6,12 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '7052'
-ht-degree: 19%
+source-wordcount: '6863'
+ht-degree: 20%
 
 ---
-
 
 # Documentação do Adobe Experience Manager 6.5 LTS {#content}
 
@@ -445,20 +444,7 @@ ht-degree: 19%
          + [Instalar e configurar o fluxo de trabalho centrado no Forms no OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [Instalar e configurar as Comunicações interativas](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
          + [Instalar e configurar o serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
-      + Instalar o AEM Forms no JEE {#jee-installation}
-         + [Plataformas compatíveis com o AEM Forms no JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [Instalando e implantando o AEM Forms no JEE usando o JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
-         + [Instalação e configuração do servidor do AEM Forms Document Security](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [Preparando para instalar o AEM Forms (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-         + [Instalando e implantando o Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-         + [Instalando e implantando formulários Adobe Experience Manager no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-         + [Instalando e implantando o AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-         + [Instalar o AEM Forms Workbench](/help/forms/using/install-workbench.md)
-         + [Instalar e configurar o Designer](/help/forms/using/installing-configuring-designer.md)
-         + [Preparando para Instalar o AEM Forms (Cluster de Servidores)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-         + [Configurando o Adobe Experience Manager Forms no JEE em um cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-         + [Configurando o Adobe Experience Manager Forms no JEE no Cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-         + [Configurando o Adobe Experience Manager Forms no JEE no Cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Instalar e configurar o Designer](/help/forms/using/installing-configuring-designer.md)
       + Configurar o AEM Forms {#configure-aem-forms}
          + [Ajuste de desempenho do servidor do AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurar cache de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -471,17 +457,10 @@ ht-degree: 19%
    + Atualizar o AEM Forms {#upgrade-aem-forms}
       + [Caminhos de atualização disponíveis](/help/forms/using/upgrade.md)
       + Atualizar o AEM Forms no OSGi {#aem-forms-osgi-upgrade}
-         + [Atualização para formulários do AEM 6.5 no OSGi](/help/forms/using/upgrade-forms-osgi.md)
+         + [Atualização para formulários do AEM 6.5.2025 no OSGi](/help/forms/using/upgrade-forms-osgi.md)
          + [Instalar pacote de compatibilidade](/help/forms/using/compatibility-package.md)
          + [Migrar ativos e documentos do AEM Forms](/help/forms/using/migration-utility.md)
-      + Atualizar o AEM Forms no JEE {#aem-forms-jee-upgrade}
-         + [Preparando para atualizar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-         + [Lista de verificação e planejamento de atualização do Adobe Experience Manager Forms no JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [Atualização para formulários do AEM 6.5 no JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Atualizando para Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Atualizando para AEM Forms no JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Atualizando para o Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Atualizando para Adobe Experience Manager Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
    + Gerenciar o AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms em grupos e privilégios OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Criar novas pastas para categorizar formulários](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -809,7 +788,6 @@ ht-degree: 19%
          + [Exibição e compreensão de relatórios de transações](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [Lista de APIs faturáveis para o AEM Forms no OSGi](/help/forms/using/transaction-reports-billable-apis.md)
          + [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
-      + Relatórios de Transações para o AEM Forms no JEE {#transaction-reports-jee}
          + [Ativação e visualização de relatórios de transações](/help/forms/using/transaction-report-overview-jee.md)
          + [Lista de APIs faturáveis para o AEM Forms no JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [Registrar uma transação para APIs de componente personalizado](/help/forms/using/record-transaction-custom-component-jee.md)

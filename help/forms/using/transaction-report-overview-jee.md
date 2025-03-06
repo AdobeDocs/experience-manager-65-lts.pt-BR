@@ -3,8 +3,10 @@ title: Visão geral dos relatórios de transação do AEM Forms no JEE
 description: Mantenha uma contagem de todos os formulários enviados, renderizados, documentos convertidos em um formato para outro e muito mais.
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
+source-git-commit: f56a0c1f9bb01824d89e37835cb0856808e9e9ac
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

@@ -1,30 +1,26 @@
 ---
 title: Migrar ativos e documentos do AEM Forms
-description: O utilitário de migração permite migrar ativos e documentos do Adobe Experience Manager (AEM) Forms do AEM 6.3 Forms ou versões anteriores para o AEM 6.4 Forms.
+description: O utilitário de migração permite migrar ativos e documentos do Adobe Experience Manager (AEM) Forms do AEM 6.5.22.0 Forms para o AEM 6.5 Forms LTS.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
 
 # Migrar ativos e documentos do AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-O utilitário de Migração converte os [ativos adaptáveis do Forms](../../forms/using/introduction-forms-authoring.md), as [configurações da nuvem](/help/sites-developing/extending-cloud-config.md) e os [ativos do Gerenciamento de Correspondências](/help/forms/using/cm-overview.md) do formato usado nas versões anteriores para o formato usado no Adobe Experience Manager (AEM) 6.5 Forms. Quando você executa o utilitário de migração, o seguinte é migrado:
+O utilitário de Migração converte os [ativos adaptáveis do Forms](../../forms/using/introduction-forms-authoring.md), as [configurações de nuvem](/help/sites-developing/extending-cloud-config.md) e os [ativos do Gerenciamento de Correspondências](/help/forms/using/cm-overview.md) do formato usado nas versões anteriores para o formato usado no Adobe Experience Manager (AEM) 6.5 LTS Forms. Quando você executa o utilitário de migração, o seguinte é migrado:
 
 * Componentes personalizados para formulários adaptáveis
-* Modelos adaptáveis de formulários e gerenciamento de correspondência
+* Formulários adaptáveis e modelos de gerenciamento de correspondência
 * Configurações de nuvem
-* Gerenciamento de correspondência e ativos de formulários adaptáveis
+* Gerenciamento de correspondência e ativos adaptáveis do Forms
 
 >[!NOTE]
 >
@@ -32,11 +28,11 @@ O utilitário de Migração converte os [ativos adaptáveis do Forms](../../form
 
 ## Abordagem da migração {#approach-to-migration}
 
-Você pode [atualizar](../../forms/using/upgrade.md) para a versão mais recente do AEM Forms 6.5 do AEM Forms 6.4, 6.3 ou 6.2, ou fazer uma nova instalação. Dependendo de você ter atualizado sua instalação anterior ou executado uma nova instalação, é necessário executar um dos seguintes procedimentos:
+Você pode [atualizar](../../forms/using/upgrade.md) para o [AEM Forms 6.5 LTS do AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md). Dependendo de você ter atualizado sua instalação anterior ou executado uma nova instalação, é necessário executar um dos seguintes procedimentos:
 
 **Se houver uma atualização no local**
 
-Se você tiver executado uma atualização no local, a instância atualizada já terá os ativos e os documentos. No entanto, antes de usar os ativos e documentos, você deve instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências)
+Se você executou uma [atualização no local](/help/sites-deploying/in-place-upgrade.md), a instância atualizada já tem os ativos e documentos. No entanto, antes de usar os ativos e documentos, você deve instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências).
 
 Em seguida, atualize os ativos e documentos [executando o Utilitário de migração](#runningmigrationutility).
 
@@ -61,7 +57,7 @@ Para ativos do Gerenciamento de correspondência:
 * O estado Pronto para publicar está obsoleto desde o AEM 6.1 Forms, portanto, todos os ativos no estado Pronto para publicar foram alterados para o estado Modificado.
 * Como a interface do usuário é atualizada no AEM Forms 6.3, as etapas para executar as personalizações também são diferentes. Refaça a personalização se estiver migrando de uma versão anterior à 6.3.
 * Os fragmentos de layout são movidos de `/content/apps/cm/layouts/fragmentlayouts/1001` para `/content/apps/cm/modules/fragmentlayouts`. A referência do dicionário de dados no Assets exibe o caminho do dicionário de dados em vez do nome.
-* Os espaços de tabulação usados para alinhamento em módulos de texto devem ser reajustados. Para obter mais informações, consulte [Gerenciamento de correspondência - Usando espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Os espaços de tabulação usados para alinhamento em módulos de texto devem ser reajustados. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * As configurações do compositor de ativos são alteradas para configurações do Gerenciamento de correspondência.
 * O Assets é movido para as pastas com nomes como Texto existente e Lista existente.
 

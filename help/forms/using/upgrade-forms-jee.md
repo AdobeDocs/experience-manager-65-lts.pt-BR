@@ -8,7 +8,9 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: f9ab2a68b2f7e414a936fc6f70ad1c9ebb89f398
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

@@ -8,7 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%

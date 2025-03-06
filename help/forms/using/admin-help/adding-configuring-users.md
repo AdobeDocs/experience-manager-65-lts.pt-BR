@@ -6,7 +6,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+hide: true
+hidefromtoc: true
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%

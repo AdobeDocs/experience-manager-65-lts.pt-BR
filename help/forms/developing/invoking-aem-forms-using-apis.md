@@ -8,7 +8,9 @@ topic-tags: coding, development-tools
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+source-git-commit: 3b0a102548950fd5c791a61ac9a94bf6ef2045fc
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%

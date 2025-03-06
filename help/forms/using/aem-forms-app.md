@@ -8,9 +8,10 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-O aplicativo AEM Forms permite a sincronização de formulários adaptáveis, formulários móveis e conjuntos de formulários em dispositivos móveis, com base no servidor. Você pode definir fluxos de trabalho que sejam [centrados no Forms em OSGi](/help/forms/using/aem-forms-workflow.md) ou fluxos de trabalho do Forms em JEE. Por exemplo, você executa uma empresa bancária e usa o AEM Forms para gerenciar aplicativos e comunicações de clientes. Seus clientes preenchem um formulário e o enviam para verificação. Se você habilitar o formulário em dispositivos móveis, seus clientes poderão preenchê-lo no aplicativo AEM Forms. Você também pode gerenciar o fluxo de trabalho de verificação ativando o formulário de verificação em dispositivos móveis. Seu trabalhador de campo pode transportar um dispositivo móvel para o cliente, verificar os detalhes e enviar o formulário. O aplicativo AEM Forms é sincronizado com o servidor do AEM Forms e busca os formulários habilitados para dispositivos móveis. Se o aplicativo estiver offline, ele armazenará dados localmente.
+O aplicativo AEM Forms permite a sincronização de formulários adaptáveis, formulários móveis e conjuntos de formulários em dispositivos móveis, com base no servidor. Você pode definir fluxos de trabalho que sejam [centrados no Forms no OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Por exemplo, você executa uma empresa bancária e usa o AEM Forms para gerenciar aplicativos e comunicações de clientes. Seus clientes preenchem um formulário e o enviam para verificação. Se você habilitar o formulário em dispositivos móveis, seus clientes poderão preenchê-lo no aplicativo AEM Forms. Você também pode gerenciar o fluxo de trabalho de verificação ativando o formulário de verificação em dispositivos móveis. Seu trabalhador de campo pode transportar um dispositivo móvel para o cliente, verificar os detalhes e enviar o formulário. O aplicativo AEM Forms é sincronizado com o servidor do AEM Forms e busca os formulários habilitados para dispositivos móveis. Se o aplicativo estiver offline, ele armazenará dados localmente.
 
 O código-fonte do aplicativo AEM Forms está disponível para os clientes por meio da Distribuição de software. O pacote de código-fonte na Distribuição de Software está disponível como: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -61,9 +62,13 @@ Para sincronizar o formulário no aplicativo AEM Forms:
 
 Quando o formulário é publicado, o aplicativo é sincronizado com o servidor e busca o formulário. Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e selecione **[!UICONTROL Sincronizar com o aplicativo AEM Forms]**.
 
-## Suporte a dispositivo móvel {#mobile-device-support}
+<!--
 
-Consulte [aplicativo AEM Forms (anteriormente conhecido como Workspace móvel)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Principais recursos do aplicativo AEM Forms {#key-features-of-aem-forms-app}
 
@@ -71,7 +76,7 @@ Consulte [aplicativo AEM Forms (anteriormente conhecido como Workspace móvel)](
 
 Você pode sincronizar seu aplicativo com o servidor do AEM Forms e trabalhar com formulários em seu dispositivo móvel.
 
-Com o servidor do AEM Forms Workflow, um formulário pode ser associado a um ponto inicial em um processo do Workbench e em um aplicativo da Caixa de entrada do AEM. Um aplicativo da Caixa de entrada do AEM pode ter um formulário adaptável associado a ele. Um ponto inicial pode ter um formulário adaptável, formulário HTML5 ou um conjunto de formulários associado a ele. Um ponto de partida pode ser enviado como uma tarefa ou a tarefa pode ser salva como um rascunho. Para obter mais informações sobre as diferenças entre um aplicativo da Caixa de Entrada do AEM e um ponto de partida, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Com o servidor do AEM Forms Workflow, um formulário pode ser associado a um ponto inicial em um processo do Workbench e em um aplicativo da Caixa de entrada do AEM. Um aplicativo da Caixa de entrada do AEM pode ter um formulário adaptável associado a ele. Um ponto inicial pode ter um formulário adaptável, formulário HTML5 ou um conjunto de formulários associado a ele. Um ponto de partida pode ser enviado como uma tarefa ou a tarefa pode ser salva como um rascunho. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Com o servidor do AEM Forms sem fluxo de trabalho do AEM Forms, um formulário habilitado para sincronização no aplicativo é renderizado no aplicativo do AEM Forms. Os Forms estão disponíveis na guia Forms do aplicativo e podem ser enviados ou salvos como rascunho. Formulários adaptáveis e formulários móveis são compatíveis com o aplicativo.
 
@@ -122,7 +127,7 @@ Consulte [Usar salvamento automático no aplicativo AEM Forms](/help/forms/using
 
 ## Diferenças entre a Caixa de entrada do AEM e os recursos do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usando a [Caixa de Entrada do AEM](/help/forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. No entanto, os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada do AEM funciona somente com [fluxos de trabalho centrados no Forms](/help/forms/using/aem-forms-workflow.md), enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e gerenciamento de processos. Para obter mais informações sobre as diferenças entre os recursos da Caixa de Entrada do AEM e do aplicativo AEM Forms, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usando a [Caixa de Entrada do AEM](/help/forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. No entanto, os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada do AEM funciona somente com [fluxos de trabalho centrados no Forms](/help/forms/using/aem-forms-workflow.md), enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e gerenciamento de processos. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Formulários suportados {#supported-forms}
 

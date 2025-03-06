@@ -3,8 +3,10 @@ title: Registre uma transação para API de componente personalizado para AEM Fo
 description: Saiba mais sobre como usar a API TransactionRecorder para registrar transações para o componente personalizado.
 feature: Transaction Reports
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+solution: Experience Manager, Experience Manager Forms
+hide: true
+hidefromtoc: true
+source-git-commit: f56a0c1f9bb01824d89e37835cb0856808e9e9ac
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
