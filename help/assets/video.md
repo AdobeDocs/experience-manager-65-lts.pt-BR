@@ -4,9 +4,10 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como as práticas
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3430ab95465f4f0ee40ab781989ee6cbf563de43
+exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '11126'
+source-wordcount: '10487'
 ht-degree: 1%
 
 ---
@@ -262,10 +263,6 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*Para usar o DASH em seus vídeos, o suporte técnico da Adobe precisa primeiro habilitá-lo em sua conta. Consulte [Habilitar DASH na sua conta do Dynamic Media](#enable-dash).
-
 ## Arquitetura da solução de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
 O gráfico a seguir mostra o fluxo de trabalho geral de criação de vídeos que são carregados e codificados pelo DMGateway (no modo híbrido do Dynamic Media) e disponibilizados para consumo público.
@@ -418,60 +415,6 @@ Por exemplo, suponha que a fonte de vídeo seja 1920 × 1080. Na tabela a seguir
 
 O Dynamic Media recomenda o uso de predefinições de codificação de vídeo MP4 H.264. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
 
-### Habilite o suporte a DASH, várias legendas e rastreamento de áudio na sua conta do Dynamic Media {#enable-dash}
-
-**Sobre a habilitação de DASH na sua conta**
-DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre o DASH ou o HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.
-
-Alguns dos principais benefícios da ativação do DASH em sua conta incluem:
-
-* Vídeo de fluxo DASH do pacote para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.
-* A transmissão otimizada do navegador com players do Dynamic Media alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para o HLS quando um navegador Safari é usado.
-* É possível configurar o método de transmissão preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.
-* A codificação otimizada de vídeo garante que nenhum armazenamento adicional seja usado ao ativar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.
-* Ajuda a tornar a entrega de vídeo mais acessível para os clientes.
-* Obtenha o URL de transmissão por meio de APIs também.
-
-A ativação do DASH na sua conta do requer duas etapas:
-
-* Configuração do Dynamic Media para usar DASH, o que você mesmo pode fazer facilmente.
-* Configuração do Experience Manager para usar o DASH, que é feito por meio de um caso de Suporte ao cliente da Adobe que você cria e envia.
-
-Ao criar um caso de suporte do Adobe para ativar o DASH em sua conta, o suporte a várias legendas e faixas de áudio também é ativado automaticamente. Depois de ativado, todos os vídeos recém-carregados são processados usando uma arquitetura de back-end atualizada que oferece suporte à adição de várias legendas e faixas de áudio.
-
->[!IMPORTANT]
->
->Qualquer vídeo que você tenha carregado *antes* de habilitar o suporte a várias legendas e faixas de áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/processing-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
-
-**Para habilitar DASH, várias legendas e suporte a faixas de áudio múltiplas na sua conta do Dynamic Media:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Comece com **configurando o Dynamic Media para DASH** - No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-
-1. Na página **[!UICONTROL Configuração do Console da Web do Adobe Experience Manager]**, role até o nome *Sinalizador do Recurso de Streaming Avançado de Vídeo do AEM Assets Dynamic Media*.
-
-1. À esquerda do nome, marque a caixa de seleção para ativar (ativar) DASH.
-
-1. Selecione **[!UICONTROL Salvar]**.
-
-1. Agora, use o Admin Console para iniciar a [criação de um novo caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
-1. Para criar um caso de suporte, siga as instruções enquanto garante que você forneça as seguintes informações:
-
-   * Nome do contato principal, email, telefone.
-   * Nome da sua conta do Dynamic Media.
-   * Especifique se deseja que o suporte a DASH, várias legendas e várias faixas de áudio seja habilitado na sua conta do Dynamic Media, no Experience Manager.
-
-1. O Suporte ao cliente da Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
-1. Quando a Adobe estiver pronta para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data limite para ativação.
-1. O suporte ao cliente o notifica após a conclusão.
-1. Agora, você pode executar um dos seguintes procedimentos:
-
-   * Crie sua [predefinição do visualizador de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
-   * [Adicione várias legendas e faixas de áudio](#add-msma) ao seu vídeo.
-
 ## Exibir relatórios de vídeo {#viewing-video-reports}
 
 >[!NOTE]
@@ -609,7 +552,6 @@ Antes de adicionar várias legendas e faixas de áudio ao vídeo, verifique se v
 
 * O Dynamic Media é configurado em um ambiente AEM.
 * Um [perfil de Vídeo do Dynamic Media é aplicado à pasta em que seus vídeos são assimilados](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Várias legendas e faixas de áudio estão habilitadas em sua conta do Dynamic Media](#enable-dash).
 
 Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe `.vtt`. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
 
@@ -841,10 +783,6 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 
 
 ## Adicionar legendas ocultas a um vídeo {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->A Adobe recomenda que você [habilite o recurso de várias legendas e faixas de áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e trilhas de áudio aos seus vídeos.
 
 Você pode estender o alcance de seus vídeos para mercados globais adicionando legendas ocultas a vídeos únicos ou a Conjuntos de vídeos adaptados. Ao adicionar legendas ocultas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. Legendas em idiomas estrangeiros aparecem para que pessoas de diferentes idiomas ainda possam entender a parte de áudio.
 

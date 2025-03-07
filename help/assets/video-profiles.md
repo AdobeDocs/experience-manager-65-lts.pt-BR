@@ -10,26 +10,27 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 8%
+source-wordcount: '3711'
+ht-degree: 5%
 
 ---
 
 # Perfis de vídeo {#video-profiles}
 
-O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido. As configurações desse perfil pronto para uso são otimizadas para fornecer aos clientes a melhor experiência de visualização possível. Ao codificar os vídeos de origem primária usando o perfil Codificação de vídeo adaptável, durante a reprodução o reprodutor de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão com a Internet dos clientes. Essa funcionalidade é conhecida como transmissão adaptável de taxa de bits.
+O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido. As configurações desse perfil pronto para uso são otimizadas para fornecer aos clientes a melhor experiência de visualização possível. Ao codificar os vídeos de origem primária usando o perfil Codificação de vídeo adaptável, o reprodutor de vídeo otimiza a qualidade da reprodução. Ele ajusta automaticamente o fluxo de vídeo com base na velocidade de conexão de Internet dos clientes. Essa funcionalidade é conhecida como transmissão adaptável de taxa de bits.
 
 Estes são outros fatores que determinam a qualidade dos seus vídeos:
 
 * **Resolução do vídeo de origem primária carregado**
 
-  Se o vídeo MP4 foi gravado em uma resolução mais baixa, como 240p ou 360p, ele não poderá ser transmitido em alta definição.
+  Se o vídeo MP4 for gravado em uma resolução mais baixa, como 240p ou 360p, ele não poderá ser transmitido em alta definição.
 
 * **Tamanho do player de vídeo**
 
-  Por padrão, a &quot;Largura&quot; no perfil de Codificação de vídeo adaptável está definida como &quot;Automática&quot;. Novamente, durante a reprodução, a melhor qualidade é usada com base no tamanho do reprodutor.
+  Por padrão, a &quot;Largura&quot; no perfil de Codificação de vídeo adaptável está definida como &quot;Automática&quot;. Durante a reprodução, o reprodutor de vídeo seleciona automaticamente a melhor qualidade com base em seu tamanho.
 
 Consulte [Práticas recomendadas de codificação de vídeo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -39,7 +40,7 @@ Consulte também [Práticas recomendadas para organizar sua Assets digital para 
 >
 >Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo deve passar pelo processo de codificação no Dynamic Media. No Adobe Experience Manager, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** codifica o vídeo se você tiver habilitado o Dynamic Media e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você tiver habilitado o Dynamic Media e configurado os serviços da nuvem de vídeo, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** será aplicado automaticamente ao carregar um vídeo. (Se você não estiver usando o Dynamic Media, o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** entrará em vigor.)
 >
->Os metadados são úteis ao pesquisar ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema Experience Manager e usados na interface do usuário para ajudar a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição da Lista de ativos. É possível ver as miniaturas geradas ao selecionar o ícone Representações (paleta de pintura) de um vídeo codificado.
+>Os metadados são úteis ao pesquisar ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. O sistema Experience Manager exige e os usa na interface do usuário para ajudar você a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição da Lista de ativos. É possível ver as miniaturas geradas ao selecionar o ícone Representações (paleta de pintura) de um vídeo codificado.
 
 Quando terminar de criar o perfil de vídeo, aplique-o a uma ou várias pastas. Consulte [Aplicar um perfil de vídeo a pastas](#applying-a-video-profile-to-folders).
 
@@ -98,7 +99,7 @@ A tabela a seguir identifica os perfis de codificação de práticas recomendada
 
 ## Sobre o uso de recorte inteligente em perfis de vídeo {#about-smart-crop-video}
 
-Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial do Adobe Sensei. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
+O Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial do Adobe Sensei. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -108,7 +109,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho de arquivo de 300 MB.
 
-O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com o Adobe Sensei e o recorte inteligente.
+O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, o Adobe Sensei e o recorte inteligente suportam um vídeo de 60 quadros/s somente se ele tiver pelo menos dois minutos e meio de duração.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
@@ -116,7 +117,7 @@ O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o
 >
 >Para que o recorte inteligente de vídeo funcione, é necessário incluir uma ou mais predefinições de codificação de vídeo no perfil de vídeo.
 
-Para usar o recorte inteligente para vídeo, você cria um perfil de codificação de vídeo adaptável ou progressivo. Como parte do seu perfil, use a ferramenta **[!UICONTROL Taxa de Corte Inteligente]** para selecionar taxas de aspecto predefinidas. Por exemplo, depois de definir as predefinições de codificação de vídeo, é possível adicionar uma definição de &quot;Paisagem móvel&quot; com uma proporção largura/altura de 16×9 e uma definição de &quot;Retrato móvel&quot; com uma proporção largura/altura de 9×16. Outros aspectos ou proporções de corte dentre os quais você pode escolher incluem 1×1, 4×3 e 4×5.
+Para usar um recorte inteligente para vídeo, crie um perfil de codificação de vídeo adaptável ou progressivo. Como parte do seu perfil, use a ferramenta **[!UICONTROL Taxa de Corte Inteligente]** para selecionar taxas de aspecto predefinidas. Por exemplo, depois de definir as predefinições de codificação de vídeo, é possível adicionar uma definição de &quot;Paisagem móvel&quot; com uma proporção largura/altura de 16 × 9. Você também pode adicionar uma definição de &quot;Retrato móvel&quot; com uma proporção de 9 × 16. Outros aspectos ou proporções de corte que você pode escolher incluem 1 × 1, 4 × 3 e 4 × 5.
 
 ![Editar um perfil de codificação de vídeo com recorte inteligente](assets/edit-smart-crop-video2.png)
 
@@ -132,11 +133,11 @@ Consulte também [Recorte inteligente para imagens](image-profiles.md).
 
 O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para obter a melhor experiência de visualização. Você pode usar este perfil quando carregar seus vídeos.
 
-No entanto, se esse perfil predefinido não atender às suas necessidades, você pode optar por criar seu próprio perfil de codificação de vídeo adaptável. Ao usar a configuração **[!UICONTROL Codificar para transmissão adaptável]** - como prática recomendada - todas as predefinições de codificação adicionadas ao perfil são validadas para garantir que todos os vídeos tenham a mesma proporção. Além disso, os vídeos codificados são tratados como uma taxa de multi bits definidos para transmissão.
+No entanto, se esse perfil predefinido não atender às suas necessidades, você pode optar por criar seu próprio perfil de Codificação de vídeo adaptável. Ao usar a configuração **[!UICONTROL Codificar para transmissão adaptável]** - como prática recomendada - todas as predefinições de codificação adicionadas ao perfil são validadas para garantir que todos os vídeos tenham a mesma proporção. Além disso, os vídeos codificados são tratados como uma taxa de multi bits definidos para transmissão.
 
 Ao criar o perfil de codificação de vídeo, observe que a maioria das opções de codificação é pré-preenchida com configurações padrão recomendadas para ajudar. No entanto, se você selecionar um valor diferente do padrão recomendado, poderá resultar em baixa qualidade de vídeo durante a reprodução e outros problemas de desempenho.
 
-Assim, para todas as predefinições de codificação de vídeo MP4 H.264 no perfil, os seguintes valores são validados para garantir que sejam os mesmos em todas as predefinições individuais de codificação no perfil, possibilitando o streaming da taxa de bits adaptável:
+Assim, para ativar o fluxo adaptável da taxa de bits, o sistema valida determinados valores para todas as predefinições de codificação de vídeo MP4 H.264 no perfil. Os seguintes valores devem permanecer consistentes entre as predefinições individuais de codificação no perfil:
 
 * Codec de formato de vídeo - MP4 H.264 (.mp4)
 * Codec de áudio
@@ -147,7 +148,7 @@ Assim, para todas as predefinições de codificação de vídeo MP4 H.264 no per
 * Perfil H264
 * Taxa de amostra do áudio
 
-Se os valores não forem os mesmos, você pode continuar criando o perfil como está. No entanto, a transmissão adaptável da taxa de bits não é possível. Em vez disso, os usuários experimentam transmissão com taxa de bits única. É recomendável editar as configurações de codificação para usar os mesmos valores em predefinições individuais de codificação no perfil. (O editor de perfil de vídeo/predefinição impõe a paridade das configurações de codificação de vídeo adaptável se **[!UICONTROL Codificar para transmissão adaptável]** estiver habilitado.)
+Se os valores não forem os mesmos, você pode continuar criando o perfil como está. No entanto, a transmissão adaptável da taxa de bits não é possível. Em vez disso, os usuários experimentam transmissão com taxa de bits única. A Adobe recomenda editar as configurações de codificação para usar os mesmos valores em predefinições individuais de codificação no perfil. (O editor de perfil de vídeo/predefinição impõe a paridade das configurações de codificação de vídeo adaptável se **[!UICONTROL Codificar para transmissão adaptável]** estiver habilitado.)
 
 Consulte também [Criar um perfil de codificação de vídeo para streaming progressivo](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -163,9 +164,9 @@ Para definir parâmetros de processamento avançado para outros tipos de ativos,
 1. Insira um nome e uma descrição para o perfil.
 1. Na página Criar/Editar Predefinições de Codificação de Vídeo, selecione **[!UICONTROL Adicionar Predefinição de Codificação de Vídeo]**.
 1. Na guia **[!UICONTROL Básico]**, defina as opções de vídeo e áudio.
-Selecione o ícone de informações ao lado de cada opção para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
-1. No cabeçalho Tamanho do vídeo, verifique se **[!UICONTROL Manter taxa de proporção]** está marcada.
-1. Defina a resolução do tamanho do quadro do vídeo em pixels. Use o valor **[!UICONTROL Automático]** para dimensionar automaticamente para corresponder à taxa de proporção de origem (largura e altura). Por exemplo, Automático x 480 ou 640 x Automático.
+Selecione o ícone de informações ao lado de cada opção. Você pode ler sobre descrições ou configurações recomendadas com base no codec de formato de vídeo escolhido.
+1. No cabeçalho Tamanho do vídeo, verifique se a opção **[!UICONTROL Manter taxa de proporção]** está marcada.
+1. Defina a resolução do tamanho do quadro do vídeo em pixels. Use o valor **[!UICONTROL Automático]** para dimensionar e corresponder automaticamente à taxa de proporção de origem (largura e altura). Por exemplo, Auto × 480 ou 640 × Auto.
 
 1. Siga uma das seguintes opções:
 
@@ -215,7 +216,7 @@ Para definir parâmetros de processamento avançado para outros tipos de ativos,
 1. Insira um nome e uma descrição para o perfil.
 1. Na página Criar/Editar Predefinições de Codificação de Vídeo, selecione **[!UICONTROL Adicionar Predefinição de Codificação de Vídeo]**.
 1. Na guia **[!UICONTROL Básico]**, defina as opções de vídeo e áudio.
-Selecione o ícone de informações ao lado de cada opção para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
+Selecione o ícone de informações ao lado de cada opção. Você pode ler sobre descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 1. (Opcional) No cabeçalho Tamanho do vídeo, desmarque **[!UICONTROL Manter taxa de proporção]**.
 1. Faça o seguinte:
    * No campo **[!UICONTROL Largura]**, digite **[!UICONTROL auto]**.
@@ -226,7 +227,7 @@ Para ajudá-lo a visualizar o tamanho do vídeo, selecione o ícone Informaçõe
    * Selecione a guia **[!UICONTROL Avançado]** e verifique se a caixa de seleção **[!UICONTROL Usar Valores Padrão]** está marcada (recomendado).
 
    * Desmarque a caixa de seleção **[!UICONTROL Usar Valores Padrão]** e especifique as configurações de vídeo e áudio desejadas.
-Selecione o ícone de informações ao lado de cada opção para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
+Selecione o ícone de informações ao lado de cada opção. Você pode ler sobre descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]** para salvar a predefinição.
 1. Siga uma das seguintes opções:
@@ -251,7 +252,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 ## Usar parâmetros de codificação de vídeo adicionados personalizados {#using-custom-added-video-encoding-parameters}
 
-É possível editar um perfil de codificação de vídeo existente para aproveitar os parâmetros avançados de codificação de vídeo não encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. Adicione um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
+É possível editar um perfil de codificação de vídeo existente para acessar parâmetros avançados de codificação de vídeo. Esses parâmetros não estão disponíveis na interface do usuário do ao criar ou editar um Perfil de vídeo no Experience Manager. Adicione um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
 
 **Para usar parâmetros de codificação de vídeo adicionados personalizados:**
 
@@ -280,9 +281,9 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro principal deve ser de 60 a 300.<br /> <br /> Os intervalos de quadro-chave mais baixos melhoram a busca por transmissão e o comportamento de comutação de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos com muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadro-chave menor geralmente resulta em uma qualidade geral de vídeo mais baixa em uma determinada taxa de bits.</td>
+   <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro principal deve ser de 60 a 300.<br /> <br /> Os intervalos de quadro-chave mais baixos melhoram a busca por transmissão e o comportamento de comutação de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos com alta movimentação. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadro-chave menor geralmente resulta em uma qualidade geral de vídeo mais baixa em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é 60-90. (Para usar o DASH em seus vídeos, primeiro ele deve estar ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH na sua conta</a>.)</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -300,7 +301,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>audioBitrateCustom</code></td>
    <td>Defina o valor como <code>true</code> para forçar uma taxa de bits constante para o fluxo de áudio, se suportado pelo codec de áudio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para DASH ou HLS é <code>false</code>. (Para usar o DASH em seus vídeos, primeiro ele deve estar ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH na sua conta</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para DASH ou HLS é <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -335,7 +336,7 @@ Para definir parâmetros de processamento avançado para outros tipos de ativos,
 Selecione o ícone de informações para obter uma descrição da transmissão adaptável da taxa de bits. (Se você estiver editando um perfil de vídeo progressivo, não marque essa caixa de seleção.)
 1. No cabeçalho Predefinições de codificação de vídeo, adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
-   Selecione o ícone de informações ao lado de cada opção nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]** para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
+   Selecione o ícone de informações ao lado de cada opção nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**. Você pode ler sobre descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -350,7 +351,7 @@ Selecione o ícone de informações para obter uma descrição da transmissão a
    No modo Dynamic Media - Híbrido, se uma predefinição de vídeo WebM fizer parte do perfil de vídeo, **[!UICONTROL a codificação para o fluxo adaptável]** não será possível, pois todas as predefinições devem ser MP4.
 1. No cabeçalho Predefinições de codificação de vídeo, adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
-   Selecione o ícone de informações ao lado de cada opção nas guias Básico e Avançado para obter as configurações e descrições recomendadas.
+   Selecione o ícone de informações ao lado de cada opção nas guias Básico e Avançado. Você pode ler sobre as configurações e descrições recomendadas.
 
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -367,19 +368,19 @@ Ao atribuir um perfil de vídeo a uma pasta, todas as subpastas herdam automatic
 
 Se você atribuiu um perfil de vídeo diferente a uma pasta, o novo perfil substituirá o perfil anterior. Os ativos de pasta existentes anteriormente permanecem inalterados. O novo perfil é aplicado aos ativos que são adicionados à pasta posteriormente.
 
-As pastas que têm um perfil atribuído a elas são indicadas na interface pelo aspecto do nome do perfil no nome do cartão.
+A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
-Aplique perfis de vídeo a pastas específicas ou globalmente a todos os ativos.
+Aplique Perfis de vídeo a pastas específicas ou globalmente a todos os ativos.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte [Reprocessar ativos em uma pasta depois de editar seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
 ### Aplicar um perfil de vídeo a pastas específicas {#applying-video-profiles-to-specific-folders}
 
-Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar perfis de vídeo a pastas de ambas as maneiras.
+Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar Perfis de vídeo a pastas de ambas as maneiras.
 
-As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
 
 Consulte também [Reprocessar ativos em uma pasta depois de editar seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
@@ -387,14 +388,15 @@ Consulte também [Reprocessar ativos em uma pasta depois de editar seu perfil de
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Vídeo]**.
 1. Selecione o perfil de vídeo que deseja aplicar a uma ou várias pastas.
-1. Selecione **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e selecione **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão na **[!UICONTROL Exibição de Cartão]**.
-Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
+1. Selecione **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e selecione **[!UICONTROL Aplicar]**. A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
+
+   Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Aplicar um perfil de vídeo a pastas em Propriedades {#applying-video-profiles-to-folders-from-properties}
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta à qual você deseja aplicar um perfil de vídeo.
 1. Na pasta, marque a marca de seleção para selecioná-la e selecione **[!UICONTROL Propriedades]**.
-1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione o perfil no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione o perfil no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
@@ -422,7 +424,7 @@ Você também pode exibir o arquivo `error.log` para monitorar o progresso de um
 
 Ao remover um perfil de vídeo de uma pasta, todas as subpastas herdam automaticamente a remoção do perfil da pasta principal. No entanto, qualquer processamento de arquivos que tenha ocorrido nas pastas permanece intacto.
 
-Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, nas **[!UICONTROL Configurações da pasta]**. Esta seção descreve como remover perfis de vídeo de pastas de ambas as maneiras.
+Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, nas **[!UICONTROL Configurações da pasta]**. Esta seção descreve como remover Perfis de vídeo de pastas de ambas as maneiras.
 
 ### Remover um perfil de vídeo das pastas por meio da interface do usuário Perfis {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
@@ -436,4 +438,4 @@ Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
 1. Selecione o logotipo do Experience Manager, navegue até o **[!UICONTROL Assets]** e, em seguida, acesse a pasta da qual deseja remover um perfil de vídeo.
 1. Na pasta, marque a marca de seleção e selecione **[!UICONTROL Propriedades]**.
-1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
