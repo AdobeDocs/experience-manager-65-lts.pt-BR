@@ -1,14 +1,13 @@
 ---
 title: Uso da Ferramenta de Migração CRX2Oak
 description: Saiba como usar a ferramenta de migração CRX2Oak com o Adobe Experience Manager. A ferramenta foi projetada para ajudar a migrar dados entre repositórios diferentes.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: 542967b2-e2cf-40d1-a805-456dc6e671a9
+source-git-commit: e13340d0ab84d68a2e7c676787909380d2f516a0
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%

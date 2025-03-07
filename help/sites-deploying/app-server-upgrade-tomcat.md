@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Etapas de pré-atualização {#pre-upgrade-steps}
 
-Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualizando Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos [requisitos do AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) e veja as [considerações de planejamento de atualização](/help/sites-deploying/upgrade-planning.md) e como o [Analyzer](/help/sites-deploying/pattern-detector.md) pode ajudá-lo a estimar a complexidade.
+Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualizando Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos [requisitos do AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) e veja as [considerações de planejamento de atualização](/help/sites-deploying/upgrade-planning.md) e como o [Analyzer](/help/sites-deploying/aem-analyzer.md) pode ajudá-lo a estimar a complexidade.
 
 
 ### Pré-requisitos de migração {#migration-prerequisites}
@@ -42,7 +42,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
    ```
 
 1. Configurar um servidor Tomcat compatível com AEM 6.5 LTS
-1. Revise os parâmetros de início do servidor do AEM e atualize os parâmetros de acordo com os requisitos do sistema. Consulte [Considerações sobre o Java 17](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) para obter mais informações
+1. Revise os parâmetros de início do servidor do AEM e atualize os parâmetros de acordo com os requisitos do sistema. Consulte [Considerações sobre o Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) para obter mais informações
 1. Implante o recém-baixado 6.5 LTS WAR no servidor Tomcat usando o Java 17 e inicie o servidor AEM 6.5 LTS Tomcat executando:
 
    ```

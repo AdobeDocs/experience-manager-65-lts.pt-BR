@@ -1,15 +1,13 @@
 ---
 title: Avaliando a complexidade da atualização com o Detector de padrões
 description: Saiba como usar o Detector de padrões para avaliar a complexidade da atualização.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+hide: true
+hidefromtoc: true
+exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
+source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%

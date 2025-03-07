@@ -1,16 +1,13 @@
 ---
 title: Modos de execução
 description: Saiba como ajustar a instância do AEM para fins específicos usando modos de execução.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -37,18 +34,14 @@ Os modos de execução da instalação são fornecidos prontos para uso:
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Esses são dois pares de modos de execução mutuamente exclusivos; por exemplo, você pode:
 
 * defina `author` ou `publish`, não ambos ao mesmo tempo
 
-* combinar `author` com `samplecontent` ou `nosamplecontent` (mas não com ambos)
-
 >[!CAUTION]
 >
->Ao usar um dos modos de execução acima (author, publish, samplecontent, nosamplecontent), o valor usado no momento da instalação define o modo de execução para a *duração inteira* dessa instalação.
+>Ao usar um dos modos de execução acima (autor, publicação), o valor usado no momento da instalação define o modo de execução para o *tempo de vida inteiro* dessa instalação.
 >
 >Para esses modos de execução, você *não pode* alterá-los após a instalação.
 
@@ -67,16 +60,6 @@ Você também pode criar seus próprios modos de execução personalizados. Eles
 * conforme necessário. . .
 
 Os modos de execução personalizados também podem ser selecionados em cada inicialização.
-
-## Uso de samplecontent e nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-Esses modos permitem controlar o uso de conteúdo de amostra. O conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações e assim por diante:
-
-* O modo de execução `samplecontent` instala esse conteúdo (o modo padrão).
-
-* O modo `nosamplecontent` não instala o conteúdo de exemplo.
-
-O modo de execução nosamplecontent foi projetado para instalações de produção.
 
 ## Definição das propriedades de configuração de um modo de execução {#defining-configuration-properties-for-a-run-mode}
 

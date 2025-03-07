@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: b4a1806c48ab0945f83691a597cad214c6d1b645
+source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
 workflow-type: tm+mt
-source-wordcount: '6819'
+source-wordcount: '6802'
 ht-degree: 20%
 
 ---
@@ -971,12 +971,9 @@ ht-degree: 20%
    + Referência do desenvolvedor {#developer-reference}
       + [Linguagem de Modelo do HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
       + [Plug-in do AEM para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
-      + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
-      + [Referência da API Java do AEM Forms no JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [APIs do Form Bridge para formulários HTML5](/help/forms/using/form-bridge-apis.md)
       + [Referência da API da Biblioteca JavaScript para Forms Adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [Serviço de Assembler e Referência DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
-      + [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65)
       + Programando com o AEM Forms no JEE {#programming-aem-forms-jee}
          + Introdução à programação com AEM Forms no JEE {#introduction-programming-aem-forms-jee}
             + [Introdução ao Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)

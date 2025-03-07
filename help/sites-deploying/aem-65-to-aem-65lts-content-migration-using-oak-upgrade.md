@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ A maneira mais fácil de corrigir esse problema é especificar o armazenamento d
 O aviso também pode ser ignorado, mas nesse caso, o repositório será totalmente reindexado na primeira inicialização. Pode ser um processo longo, especialmente para a grande instância. O repositório não poderá ser usado até que o processo de reindexação seja concluído. Use a opção `--skip-checkpoints` para suprimir o aviso.
 
 Você também pode reindexar offline o repositório antes de iniciar o AEM usando [reindexação offline](/help/sites-deploying/upgrade-offline-reindexing.md) para evitar a reindexação completa na primeira inicialização.
+
+Para obter mais informações sobre a ferramenta oak-upgrade e o uso avançado, consulte a [documentação oficial](https://jackrabbit.apache.org/oak/docs/migration.html).

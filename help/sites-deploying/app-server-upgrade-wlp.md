@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Antes de executar a atualização, há várias etapas que devem ser concluídas. Consulte [Atualizando Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) e [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obter mais informações. Além disso, verifique se o seu sistema atende aos [requisitos para o AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Verifique [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md) e como o [AEM Analyzer](/help/sites-deploying/pattern-detector.md) pode ajudá-lo a estimar a complexidade da atualização do AEM.
+Verifique [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md) e como o [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) pode ajudá-lo a estimar a complexidade da atualização do AEM.
 
 ### Pré-requisitos de migração {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Verifique [Planejando sua atualização](/help/sites-deploying/upgrade-planning.
    java -version
    ```
 
-1. Revise os parâmetros de início do servidor do AEM e atualize os parâmetros de acordo com suas necessidades. Consulte [Considerações sobre o Java 17](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) para obter mais informações
+1. Revise os parâmetros de início do servidor do AEM e atualize os parâmetros de acordo com suas necessidades. Consulte [Considerações sobre o Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) para obter mais informações.
 1. Baixe o novo 6.5 LTS WAR e copie-o para a pasta de recados localizada em: `/<path-to-aem-server>/dropins/`
 1. Iniciar instância do AEM: geralmente pode ser feito usando este comando:
 

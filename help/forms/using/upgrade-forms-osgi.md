@@ -6,9 +6,9 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,6 @@ Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas pa
       1. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
    1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
    1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
-   1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
    1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
       Você também pode baixar o pacote usando o link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
@@ -43,11 +42,9 @@ Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas pa
 
       Se o servidor for iniciado por meio de um script ou serviço, atualize-o de acordo para incluir os itens acima, de modo que eles também sejam efetivos após as reinicializações subsequentes.
 
-1. Reinicie a instância do AEM.
-
-   >[!NOTE]
-   >
-   > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+      >[!NOTE]
+      >
+      > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 1. Executar atividades de pós-instalação.
 
