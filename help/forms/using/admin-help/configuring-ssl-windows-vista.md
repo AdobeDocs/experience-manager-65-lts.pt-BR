@@ -10,7 +10,8 @@ feature: Document Security
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f56a0c1f9bb01824d89e37835cb0856808e9e9ac
+exl-id: ee73f6a1-712c-461f-95e8-85f8c5694293
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%

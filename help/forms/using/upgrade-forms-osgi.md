@@ -5,7 +5,8 @@ content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
-source-git-commit: 4d44a828d0b103b09941e8a2ac0f6b3260e03c89
+exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 1%

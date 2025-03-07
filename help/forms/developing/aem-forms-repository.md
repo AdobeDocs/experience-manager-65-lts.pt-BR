@@ -10,7 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
-source-git-commit: 41531d8d54ac1fbce04aa914118cf2aef73b06cb
+exl-id: 4a911fe6-2939-4c8c-b486-7575c759857d
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '9036'
 ht-degree: 0%

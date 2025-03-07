@@ -6,7 +6,8 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 3b0a102548950fd5c791a61ac9a94bf6ef2045fc
+exl-id: 558d9b27-8734-4da2-b498-5bb2361ac65b
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

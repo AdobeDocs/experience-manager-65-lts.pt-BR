@@ -6,7 +6,8 @@ feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 3b0a102548950fd5c791a61ac9a94bf6ef2045fc
+exl-id: 68935045-89b1-4219-b111-88a4600200df
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
