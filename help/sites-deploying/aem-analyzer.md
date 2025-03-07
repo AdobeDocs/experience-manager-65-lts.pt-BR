@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # Avaliação da complexidade da atualização com o AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ O tempo de expiração restante para o relatório do AEM Analyzer é mostrado no
 
 * Às vezes, a operação Remover pode exibir a notificação: *&quot;Alguns caminhos não foram removidos com êxito. Verifique os logs e tente novamente.*&quot;. No entanto, se os caminhos tiverem sido realmente removidos, você poderá ignorar essa mensagem com segurança
 * Da mesma forma, a operação Package pode falhar com o erro: *&quot;Erro ao executar a operação desejada. Verifique os logs e tente novamente.*&quot;. Isso provavelmente ocorre devido à expiração da sessão. Nesses casos, tentar novamente a operação deve resolver o problema.
-
-
-
-
-
