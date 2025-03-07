@@ -4,9 +4,10 @@ description: Uma lista de recomendações relacionadas às interfaces do usuári
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: f65f9e94-0837-48d1-a565-cfb880963790
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -92,10 +93,6 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
   </tr>
  </tbody>
 </table>
-
-### Perguntas frequentes {#faq}
-
-Consulte o artigo da Base de Dados de Conhecimento, [Perguntas frequentes sobre a criação da interface para toque](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para obter detalhes; incluindo informações sobre o agendamento de desativação da interface clássica.
 
 ### Seleção da interface do usuário {#selecting-your-ui}
 
