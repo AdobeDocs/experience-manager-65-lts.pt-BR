@@ -8,9 +8,10 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -27,15 +28,13 @@ Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servi
 As etapas de instalação dos seguintes Servidores de Aplicações são descritas:
 
 * [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 Consulte a documentação apropriada do servidor de aplicativos para obter mais informações sobre a instalação de aplicativos web, configurações do servidor e como iniciar e parar o servidor.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a [documentação do Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## Descrição geral {#general-description}
 
@@ -48,7 +47,7 @@ Se implantado, o seguinte acontece por padrão:
 * o modo de execução é `author`
 * a instância (Repositório, ambiente Felix OSGI, pacotes, etc.) está instalada em `${user.dir}/crx-quickstart`onde `${user.dir}` é o diretório de trabalho atual, este caminho para crx-quickstart é chamado `sling.home`
 
-* a raiz do contexto é o nome do arquivo war, por exemplo, `aem-6`
+* a raiz do contexto é o nome do arquivo war, por exemplo, `aem-65-lts`
 
 #### Configuração {#configuration}
 
@@ -94,7 +93,7 @@ Para fins de demonstração, pode ser apropriado instalar a instância do autor 
 
 ## Procedimentos de Instalação de Servidores de Aplicativos {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 Antes de uma implantação ler a [Descrição Geral](#general-description) acima.
 
@@ -123,66 +122,7 @@ Antes de uma implantação ler a [Descrição Geral](#general-description) acima
 
 * Iniciar o aplicativo Web do AEM
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-Antes de uma implantação ler a [Descrição Geral](#general-description) acima.
-
-**Preparar servidor JBoss®**
-
-Definir argumentos de memória no arquivo conf (por exemplo, `standalone.conf`)
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-Se você usar o verificador de implantação para instalar o aplicativo Web do AEM, talvez seja bom aumentar o `deployment-timeout,` para o que definiu um atributo `deployment-timeout` no arquivo xml da sua instância (por exemplo, `configuration/standalone.xml)`:
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**Implantar o aplicativo Web do AEM**
-
-* Faça upload da aplicação Web AEM no Console de administração JBoss®.
-
-* Habilite o aplicativo web do AEM.
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-Antes de uma implantação ler a [Descrição Geral](#general-description) acima.
-
-Usa um layout de servidor simples com apenas um servidor de administração.
-
-**Preparação do WebLogic Server**
-
-* Em `${myDomain}/config/config.xml`adicione à seção de configuração de segurança:
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` consulte em [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) para obter a posição correta (por padrão, posicioná-la no final da seção está ok)
-
-* Aumentar configurações de Memória da VM:
-
-   * abrir a pesquisa `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) de WLS_MEM_ARGS, definir, por exemplo, definir `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * reiniciar o WebLogic Server
-
-* Crie em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e, nela, uma pasta Plano
-
-**Implantar o aplicativo Web do AEM**
-
-* Baixar arquivo WAR do AEM
-* Coloque o arquivo WAR do AEM na pasta ${myDomain}/packages/cq
-* Faça suas configurações em `WEB-INF/web.xml`, se necessário (veja acima a Descrição geral)
-
-   * Descompactar `WEB-INF/web.xml` arquivo
-   * altere o parâmetro sling.run.modes para publish
-   * remova o comentário do parâmetro inicial sling.home e defina este caminho conforme necessário (consulte Descrição geral)
-   * Recompactar arquivo web.xml
-
-* Implantar o arquivo WAR do AEM como um aplicativo (para as outras configurações, use as configurações padrão)
-* A instalação pode demorar...
-* Verifique se a instalação foi concluída conforme mencionado acima na Descrição geral (por exemplo, seguido do error.log)
-* Você pode alterar a raiz do contexto na guia Configuração do aplicativo Web no WebLogic `/console`
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 Antes de uma implantação ler a [Descrição Geral](#general-description) acima.
 
@@ -246,4 +186,3 @@ Antes de uma implantação ler a [Descrição Geral](#general-description) acima
    * Renomeie o arquivo AEM war para ROOT.war se desejar implantá-lo como aplicativo web raiz. Renomeie-o para aemauthor.war se desejar que o aemauthor seja a raiz de contexto.
    * Copie-o na pasta de aplicativos da Web do Tomcat.
    * Aguarde até que o AEM seja instalado.
-

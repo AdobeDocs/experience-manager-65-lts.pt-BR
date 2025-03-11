@@ -8,9 +8,10 @@ topic-tags: deploying
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -77,18 +78,15 @@ Devido a esse fato, é recomendável dimensionar o disco pelo menos duas ou trê
 
 ## Modos De Compactação Total E Final  {#full-and-tail-compaction-modes}
 
-**O AEM 6.5** apresenta **dois novos modos** para a fase **compactação** do processo de Limpeza de Revisão Online:
+O **AEM 6.5 LTS** tem **dois modos** para a fase **compactação** do processo de Limpeza de Revisão Online:
 
-* O modo **compactação completa** reescreve todos os segmentos e arquivos tar em todo o repositório. A fase de limpeza subsequente pode remover a quantidade máxima de lixo no repositório. Como a compactação total afeta todo o repositório, ela requer uma quantidade considerável de recursos do sistema e tempo para ser concluída. A compactação completa corresponde à fase de compactação no AEM 6.3.
+* O modo **compactação completa** reescreve todos os segmentos e arquivos tar em todo o repositório. A fase de limpeza subsequente pode remover a quantidade máxima de lixo no repositório. Como a compactação total afeta todo o repositório, ela requer uma quantidade considerável de recursos do sistema e tempo para ser concluída.
 * O modo **tail compaction** substitui somente os segmentos e arquivos tar mais recentes no repositório. Os segmentos e arquivos tar mais recentes são aqueles que foram adicionados desde a última vez que a compactação completa ou traseira foi executada. A fase subsequente de limpeza só pode remover o lixo contido na parte recente do repositório. Como a compactação traseira afeta apenas uma parte do repositório, ela requer consideravelmente menos recursos do sistema e tempo para ser concluída do que a compactação completa.
 
 Estes modos de compactação constituem um compromisso entre a eficiência e o consumo de recursos: embora a compactação traseira seja menos eficaz, ela também tem menos impacto no funcionamento normal do sistema. Por outro lado, a compactação total é mais eficaz, mas tem um impacto maior na operação normal do sistema.
 
-O AEM 6.5 também apresenta um mecanismo mais eficiente de desduplicação de conteúdo durante a compactação, o que reduz ainda mais o espaço em disco do repositório.
+O AEM 6.5 LTS tem um mecanismo eficiente de desduplicação de conteúdo durante a compactação, o que reduz ainda mais o espaço em disco do repositório.
 
-Os dois gráficos abaixo apresentam resultados de testes laboratoriais internos que ilustram a redução do tempo médio de execução e o espaço médio em disco no AEM 6.5 em comparação ao AEM 6.3:
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### Como configurar a compactação completa e traseira {#how-to-configure-full-and-tail-compaction}
 
@@ -107,7 +105,7 @@ Além disso, considere que:
 Ao usar os novos modos de compactação, lembre-se do seguinte:
 
 * Você pode monitorar a atividade de entrada/saída (E/S), por exemplo: operações de E/S, CPU aguardando E/S, tamanho da fila de confirmação. Isso ajuda a determinar se o sistema está se tornando vinculado à E/S e requer upsizing.
-* O `RevisionCleanupTaskHealthCheck` indica o status de integridade geral da Limpeza de Revisão Online. Funciona da mesma forma que no AEM 6.3 e não diferencia entre compactação completa e traseira.
+* O `RevisionCleanupTaskHealthCheck` indica o status de integridade geral da Limpeza de Revisão Online.
 * As mensagens de log trazem informações relevantes sobre os modos de compactação. Por exemplo, quando a Limpeza de revisão online é iniciada, as mensagens de log correspondentes indicam o modo de compactação. Além disso, em alguns casos de exceção, o sistema reverte para a compactação completa quando foi programado para executar uma compactação traseira e as mensagens de log indicam essa alteração. As amostras de log abaixo indicam o modo de compactação e a mudança da cauda para a compactação completa:
 
 ```
@@ -122,83 +120,6 @@ TarMK GC: no base state available, running full compaction instead
 **É recomendável dimensionar o disco pelo menos duas ou três vezes maior que o tamanho do repositório estimado inicialmente.**
 
 ## Perguntas frequentes sobre limpeza de revisão online {#online-revision-cleanup-frequently-asked-questions}
-
-### Considerações sobre a atualização do AEM 6.5 {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Perguntas </td>
-   <td>Respostas</td>
-  </tr>
-  <tr>
-   <td>O que devo estar ciente ao atualizar para o AEM 6.5?</td>
-   <td><p>O formato de persistência do TarMK é alterado com o AEM 6.5. Essas alterações não exigem uma etapa de migração proativa. Os repositórios existentes passam por uma migração contínua, que é transparente para o usuário. O processo de migração é iniciado na primeira vez que o AEM 6.5 (ou ferramentas relacionadas) acessa o repositório.</p> <p><strong>Depois que a migração para o formato de persistência do AEM 6.5 é iniciada, o repositório não pode ser revertido para o formato de persistência anterior do AEM 6.3.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migrar para a TAR de segmentos do Oak {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Perguntas</strong></td>
-   <td><strong>Respostas</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Por que é necessário migrar o repositório?</strong></td>
-   <td><p>No AEM 6.3, foram necessárias alterações no formato de armazenamento, especialmente para melhorar o desempenho e a eficácia da Limpeza de revisão online. Essas alterações não são compatíveis com versões anteriores e os repositórios criados com o segmento antigo do Oak (AEM 6.2 e anterior) devem ser migrados.</p> <p>Benefícios adicionais da alteração do formato de armazenamento:</p>
-    <ul>
-     <li>Melhor escalabilidade (tamanho de segmento otimizado).</li>
-     <li><a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Coleta de Lixo do Repositório de Dados</a>.<br /> mais rápida </li>
-     <li>Trabalho de base para aprimoramentos futuros.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>O formato Tar anterior ainda é suportado?</strong></td>
-   <td>Somente a nova Tar de segmento do Oak é compatível com o AEM 6.3 ou superior.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>A migração de conteúdo é sempre obrigatória?</strong></td>
-   <td>Sim. A menos que você comece com uma nova instância, sempre será necessário migrar o conteúdo.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Posso atualizar para a versão 6.3 ou superior e fazer a migração posteriormente (por exemplo, usando outra janela de manutenção)?</strong></td>
-   <td>Não, como explicado acima, a migração de conteúdo é obrigatória.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>O tempo de inatividade pode ser evitado durante a migração?</strong></td>
-   <td>Não. Esse é um esforço único que não pode ser feito em uma instância em execução.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>O que acontece se eu executar acidentalmente no formato de repositório incorreto?</strong></td>
-   <td>Se você tentar executar o módulo oak-segment em um repositório oak-segment-tar (ou vice-versa), a inicialização falhará com uma <em>IllegalStateException</em> com a mensagem "Formato de segmento inválido". Não ocorre corrupção de dados.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Será necessário um reindexação dos índices de pesquisa?</strong></td>
-   <td>Não. A migração de oak-segment para oak-segment-tar introduz alterações no formato do contêiner. Os dados contidos não são afetados e não serão modificados.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Como calcular melhor o espaço em disco necessário durante e após a migração?</strong></td>
-   <td>A migração é equivalente a recriar o armazenamento de segmentos no novo formato. Isso pode ser usado para estimar o espaço adicional em disco necessário durante a migração. Após a migração, o armazenamento de segmentos antigo pode ser excluído para recuperar espaço.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Como estimar melhor a duração da migração?</strong></td>
-   <td>O desempenho da migração pode ser muito melhor se a <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">limpeza da revisão offline</a> for executada antes da migração. Todos os clientes são aconselhados a executá-lo como um pré-requisito do processo de atualização. Em geral, a duração da migração deve ser semelhante à duração da tarefa de limpeza de revisão offline, supondo que a tarefa de limpeza de revisão offline tenha sido executada antes da migração.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Executando a Limpeza de Revisão Online {#running-online-revision-cleanup}
 
@@ -242,11 +163,6 @@ TarMK GC: no base state available, running full compaction instead
   <tr>
    <td><strong>O Author e o Publish normalmente têm diferentes janelas de Limpeza de Revisão Online?</strong></td>
    <td>Isso depende do horário comercial e dos padrões de tráfego da presença online do cliente. As janelas de manutenção devem ser configuradas fora dos tempos de produção principais para permitir a melhor eficiência de limpeza. Para várias instâncias de publicação do AEM (farm TarMK), as janelas de manutenção para a Limpeza de revisão online devem ser escalonadas.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Há algum pré-requisito antes de executar a Limpeza de revisão on-line?</strong></td>
-   <td><p>A Limpeza de revisão online está disponível somente com o AEM 6.3 e versões posteriores. Além disso, se você estiver usando uma versão mais antiga do AEM, migre para a nova <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">TAR de segmento do Oak</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
