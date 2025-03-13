@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
+source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '801'
 ht-degree: 19%
 
 ---
@@ -42,7 +42,7 @@ O Quickstart usa o Eclipse Jetty 11.0.x como mecanismo de servlet.
 
 #### Empacotamento Uberjar {#uber-jar-packaging}
 
-* Há uma pequena diferença na embalagem do Uberjar do AEM 6.5 LTS. Para obter mais informações [consulte](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version).
+* Há uma pequena diferença na embalagem do Uberjar do AEM 6.5 LTS. Para obter mais informações, consulte [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 #### Atualizar {#upgrade}
 
