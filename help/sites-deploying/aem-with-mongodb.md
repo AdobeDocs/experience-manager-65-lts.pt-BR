@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Nesta implantação, todos os componentes são necessários para uma implementa�
 
 ### Sistemas operacionais {#operating-systems}
 
-Para obter uma lista dos sistemas operacionais compatíveis com o AEM 6, consulte a [página Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+Para obter uma lista dos sistemas operacionais compatíveis com o AEM 6.5 LTS, consulte a [página Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ### Ambientes {#environments}
 
@@ -649,7 +649,7 @@ Header set X-Content-Type-Options "nosniff"  env=jsonp_request
 Header setifempty Content-Type application/javascript env=jsonp_request
 ```
 
-#### Política de segurança de conteúdo {#content-security-policy}
+#### Política de segurança do conteúdo {#content-security-policy}
 
 As configurações padrão do Dispatcher permitem uma Política de segurança de conteúdo aberta, também conhecida como CSP. Essas configurações permitem que uma página carregue recursos de todos os domínios sujeitos às políticas padrão da sandbox do navegador.
 
