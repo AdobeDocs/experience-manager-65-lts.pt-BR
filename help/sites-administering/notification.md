@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 8ed6afaa78f8f916b15977dda339cb4a3ae934b0
+exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
-
 
 # Configuração da notificação por e-mail{#configuring-email-notification}
 
@@ -83,7 +83,7 @@ Use o procedimento a seguir para definir o nó nas pastas de origem do pacote de
 
 ## Configurar o serviço de notificação por email do fluxo de trabalho {#configuring-the-workflow-email-notification-service}
 
-Ao receber notificações por email do fluxo de trabalho, o endereço de email do remetente e o prefixo do URL do host são definidos com valores padrão. Você pode alterar esses valores configurando o **Serviço de Notificação por Email do Fluxo de Trabalho do CQ** no Console da Web. Se você fizer isso, é recomendável manter a alteração no repositório.
+Ao receber notificações por email do fluxo de trabalho, o endereço de email do remetente e o prefixo do URL do host são definidos com valores padrão. Você pode alterar esses valores configurando o **Serviço de Notificação por Email do Fluxo de Trabalho do CQ** no Console da Web. Se você fizer isso, deverá manter a alteração no repositório.
 
 A configuração padrão tem a seguinte aparência no Console da Web:
 
