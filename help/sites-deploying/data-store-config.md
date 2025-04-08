@@ -1,5 +1,5 @@
 ---
-title: Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6
+title: Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6.5 LTS
 description: Saiba como configurar armazenamentos de nós e armazenamentos de dados e como executar a coleta de lixo do armazenamento de dados.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
 
-# Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introdução {#introduction}
 
@@ -46,19 +46,10 @@ Para configurar o armazenamento de nós e o armazenamento de dados, execute esta
 
 ## Configurações do armazenamento de nós {#node-store-configurations}
 
->[!CAUTION]
->
->As versões mais recentes do Oak empregam um novo esquema de nomenclatura e formato para os arquivos de configuração OSGi. O novo esquema de nomenclatura exige que o arquivo de configuração seja nomeado como **.config** e o novo formato exige que os valores sejam digitados. Para obter detalhes, consulte [O Modelo de provisionamento do Apache Sling e Apache SlingStart - Formato de configuração padrão](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Se você atualizar de uma versão mais antiga do Oak, primeiro faça um backup da pasta `crx-quickstart/install`. Após a atualização, restaure o conteúdo da pasta para a instalação atualizada e modifique a extensão dos arquivos de configuração de **.cfg** para **.config**.
-
 ### Armazenamento de nós do segmento {#segment-node-store}
 
-O armazenamento de nós de segmento é a base da implementação TarMK da Adobe no AEM6. Ele usa o PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para configuração.
+O armazenamento de nós de segmento é a base da implementação TarMK do Adobe no AEM 6.5 LTS. Ele usa o PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para configuração.
 
->[!CAUTION]
->
->O PID para o armazenamento do nó de Segmento foi alterado de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` do AEM 6 para `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` no AEM 6.3. Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
 
 Você pode configurar as seguintes opções:
 
@@ -86,7 +77,7 @@ O armazenamento de nós de documentos é a base da implementação MongoMK do AE
 
 * `mongouri`: O [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necessário para se conectar ao Banco de Dados Mongo. O padrão é `mongodb://localhost:27017`
 
-* `db`: Nome do banco de dados Mongo. O padrão é **Oak** ``. However, new AEM 6 installations use **aem-author** ``como o nome de banco de dados padrão.
+* `db`: Nome do banco de dados Mongo. O padrão é **aem-author**.
 
 * `cache`: O tamanho do cache em MB. Isso é distribuído entre vários caches usados no DocumentNodeStore. O padrão é `256`
 
@@ -143,9 +134,9 @@ O AEM pode ser configurado para armazenar dados no S3 (Simple Storage Service, s
 
 >[!NOTE]
 >
->O AEM 6.5 é compatível com o armazenamento de dados no S3 da Amazon. No entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
+>O AEM 6.5 LTS é compatível com o armazenamento de dados no S3 da Amazon. No entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
 
-Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, baixe e instale o service pack mais recente da AEM, conforme listado na página [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md).
+Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.60.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.60.2.zip). Além disso, baixe e instale o service pack mais recente da AEM, conforme listado na página [Notas de versão do AEM 6.5 LTS](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ Após o download, você pode instalar e configurar o S3 Connector da seguinte ma
 1. Edite o arquivo e adicione as opções de configuração exigidas pela configuração.
 1. Inicie o AEM.
 
-## Atualização para uma nova versão do S3 Connector 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Atualização para uma nova versão do S3 Connector 1.60.x {#upgrading-to-a-new-version-of-the-s-connector}
 
-Para atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10.0 para 1.10.4), siga estas etapas:
+Para atualizar para uma nova versão do conector S3 1.60.x, siga estas etapas:
 
 1. Pare a instância do AEM.
 
@@ -205,7 +196,7 @@ Para atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10
    >
    >Os nomes de arquivo apresentados acima são usados apenas para fins ilustrativos.
 
-1. Baixe a versão mais recente do pacote de recursos 1.10.x do [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Baixe a versão mais recente do pacote de recursos 1.60.x da [Distribuição de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/15`.
 1. Copie os arquivos jar para **&lt;aem-install>**/crx-quickstart/install/15 na pasta de instalação do AEM.
 1. Inicie o AEM e verifique a funcionalidade do conector.
@@ -413,7 +404,7 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
 
 O AEM pode ser configurado para armazenar dados no serviço de armazenamento Azure da Microsoft®. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para configuração.
 
-Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e baixe a versão mais recente das versões 1.6.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) e baixe a versão mais recente das versões 1.9.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >

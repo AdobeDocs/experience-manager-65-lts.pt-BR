@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager com MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>A versão mínima suportada do Mongo é o Mongo 6.
 
 Este artigo tem como objetivo melhorar o conhecimento sobre as tarefas e as considerações necessárias para a implantação bem-sucedida do AEM (Adobe Experience Manager) com MongoDB.
 
@@ -74,8 +78,6 @@ Para alcançar a taxa de transferência de leitura e gravação para melhor dese
 
 ### RAM {#ram}
 
-As versões 2.6 e 3.0 do MongoDB que usam o mecanismo de armazenamento MMAP exigem que o conjunto de trabalho do banco de dados e seus índices se encaixem na RAM.
-
 A RAM insuficiente resulta em uma redução significativa do desempenho. O tamanho do conjunto de trabalho e do banco de dados é altamente dependente do aplicativo. Embora algumas estimativas possam ser feitas, a maneira mais confiável de determinar a quantidade de RAM necessária é criar o aplicativo AEM e testá-la.
 
 Para auxiliar no processo de teste de carga, a seguinte proporção de conjunto de trabalho para o tamanho total do banco de dados pode ser presumida:
@@ -85,11 +87,9 @@ Para auxiliar no processo de teste de carga, a seguinte proporção de conjunto 
 
 Essas taxas significam que para implantações de SSD são necessários 200 GB de RAM para um banco de dados de 2 TB.
 
-Embora as mesmas limitações se apliquem ao mecanismo de armazenamento WiredTiger no MongoDB 3.0, a correlação entre o conjunto de trabalho, a RAM e as falhas de página não é tão forte. O WiredTiger não usa o mapeamento de memória da mesma forma que o mecanismo de armazenamento MMAP.
-
 >[!NOTE]
 >
->A Adobe recomenda usar o mecanismo de armazenamento WiredTiger para implantações do AEM 6.1 que usam o MongoDB 3.0.
+>A Adobe recomenda usar o mecanismo de armazenamento WiredTiger para implantações AEM 6.5 LTS que usam MongoDB 6 ou superior.
 
 ### Armazenamento de dados {#data-store}
 
@@ -235,8 +235,6 @@ Recomenda-se que uma configuração de cache persistente seja ativada para impla
 
 ### Suporte a sistema operacional {#operating-system-support}
 
-O MongoDB 2.6 usa um mecanismo de armazenamento de memória mapeada que é sensível a alguns aspectos do gerenciamento de nível do sistema operacional entre a RAM e o Disco. O desempenho de consulta e leitura da instância do MongoDB depende de evitar ou eliminar operações lentas de E/S, geralmente chamadas de falhas de página. Esses problemas são falhas de página que se aplicam especificamente ao processo `mongod`. Não confunda isso com falhas de página no nível do sistema operacional.
-
 Para uma operação rápida, o banco de dados MongoDB deve acessar apenas os dados que já estão na RAM. Os dados que ele deve acessar são compostos de índices e dados. Essa coleção de índices e dados é chamada de conjunto de trabalho. Quando o conjunto de trabalho é maior que a RAM disponível, o MongoDB tem que paginar esses dados no disco, incorrendo em um custo de E/S, removendo outros dados já na memória. Se a remoção fizer com que os dados sejam recarregados do disco, as falhas de página dominarão e o desempenho será prejudicado. Quando o conjunto de trabalho é dinâmico e variável, ocorrem mais falhas de página para dar suporte às operações.
 
 O MongoDB é executado em vários sistemas operacionais, incluindo uma grande variedade de opções de Linux®, Windows e macOS. Consulte [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) para obter mais detalhes. Dependendo da sua escolha de sistema operacional, o MongoDB tem diferentes recomendações de nível de sistema operacional. Estão documentados em [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) e resumidos aqui para conveniência.
@@ -246,7 +244,6 @@ O MongoDB é executado em vários sistemas operacionais, incluindo uma grande va
 * Desative as páginas de abraços transparentes e desfragmente. Consulte [Configurações de páginas grandes transparentes](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) para obter mais informações.
 * [Ajuste as configurações de leitura antecipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) nos dispositivos que armazenam seus arquivos de banco de dados, de forma que você se ajuste ao seu caso de uso.
 
-   * Para o mecanismo de armazenamento MMAPv1, se o seu conjunto de trabalho for maior que a RAM disponível e o padrão de acesso a documentos for aleatório, considere diminuir a leitura antecipada para 32 ou 16. Avalie configurações diferentes para que você possa encontrar um valor ideal que maximize a memória residente e reduza o número de falhas da página.
    * Para o mecanismo de armazenamento WiredTiger, defina readahead como 0, independentemente do tipo de mídia de armazenamento (rotação, SSD e assim por diante). Em geral, use a configuração recomendada de leitura antecipada, a menos que os testes mostrem um benefício mensurável, repetível e confiável em um valor de leitura antecipada mais alto. O [Suporte ao MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) pode fornecer conselhos e orientação sobre configurações de leitura antecipada diferentes de zero.
 
 * Desative a ferramenta ajustada se estiver executando o RHEL 7/CentOS 7 em um ambiente virtual.
@@ -358,11 +355,13 @@ Para ajustar o tamanho do cache interno de WiredTiger, consulte [storage.wiredTi
 
 ### NUMA {#numa}
 
-NUMA (Non-Uniform Memory Access — Acesso não-uniforme à memória) permite que um kernel gerencie como a memória é mapeada para os núcleos do processador. Embora esse processo tente tornar o acesso à memória mais rápido para os núcleos, garantindo que eles possam acessar os dados necessários, o NUMA interfere no MMAP, introduzindo latência adicional, pois as leituras não podem ser previstas. Como resultado, o NUMA deve ser desabilitado para o processo `mongod` em todos os sistemas operacionais habilitados.
+NUMA (Non-Uniform Memory Access — Acesso não-uniforme à memória) permite que um kernel gerencie como a memória é mapeada para os núcleos do processador.
 
 Em essência, em uma arquitetura NUMA, a memória é conectada às CPUs e as CPUs são conectadas a um barramento. Em uma arquitetura SMP ou UMA, a memória é conectada ao barramento e compartilhada pelas CPUs. Quando um thread aloca memória em um CPU NUMA, ele aloca de acordo com uma política. O padrão é alocar memória anexada ao CPU local do thread, a menos que não haja memória livre. Nesse momento, ele usa memória de um CPU livre a um custo mais alto. Depois de alocada, a memória não se move entre as CPUs. A alocação é executada por uma política herdada do thread pai, que é o thread que iniciou o processo.
 
-Em muitos bancos de dados que veem o computador como uma arquitetura de memória uniforme de vários núcleos, esse cenário faz com que o CPU inicial fique cheio primeiro e o CPU secundário seja preenchido posteriormente. É especialmente verdadeiro se um thread central for responsável pela alocação de buffers de memória. A solução é alterar a política NUMA do thread principal usado para iniciar o processo `mongod` executando o seguinte comando:
+A execução do MongoDB em um sistema com acesso não uniforme à memória (NUMA) pode causar vários problemas operacionais, incluindo desempenho lento por períodos de tempo, incapacidade de usar toda a RAM disponível e alto uso do processo do sistema.
+
+A solução é alterar a política NUMA do thread principal usado para iniciar o processo `mongod` executando o seguinte comando:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Para obter informações genéricas sobre o desempenho do MongoDB, consulte [Ana
 Embora o MongoMK suporte o uso simultâneo de várias instâncias do AEM com um único banco de dados, as instalações simultâneas não são.
 
 Para contornar esse problema, certifique-se de executar a instalação com um único membro primeiro e adicionar os outros depois que o primeiro terminar de instalar.
-
-### Comprimento do nome da página {#page-name-length}
-
-Se o AEM estiver sendo executado em uma implantação do gerenciador de persistência MongoMK, os nomes de [ página serão limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
