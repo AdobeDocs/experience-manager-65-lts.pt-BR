@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cafc7120-114e-487a-8b81-9c695318731e
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -138,13 +139,13 @@ Em versões anteriores, as pastas da biblioteca do cliente estavam localizadas a
 >
 >Para isolar melhor o código do conteúdo e da configuração, é recomendável localizar as bibliotecas de clientes em `/apps` e expô-las via `/etc.clientlibs` usando a propriedade `allowProxy`.
 
-Para que as bibliotecas de clientes em `/apps` sejam acessíveis, um servidor proxy é usado. As ACLs ainda são impostas na pasta da biblioteca do cliente, mas o servlet permite que o conteúdo seja lido via `/etc.clientlibs/` se a propriedade `allowProxy` estiver definida como `true`.
+Para que as bibliotecas de clientes em `/apps` sejam acessíveis, um servlet proxy é usado. As ACLs ainda são impostas na pasta da biblioteca do cliente, mas o servlet permite que o conteúdo seja lido via `/etc.clientlibs/` se a propriedade `allowProxy` estiver definida como `true`.
 
 Um recurso estático só pode ser acessado por meio do proxy se estiver abaixo de um recurso abaixo da pasta da biblioteca do cliente.
 
 Como exemplo:
 
-* Você tem uma clientlib em `/apps/myproject/clientlibs/foo`
+* Você tem uma clientlib em `/apps/myprojects/clientlibs/foo`
 * Você tem uma imagem estática em `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Em seguida, você define a propriedade `allowProxy` em `foo` como verdadeira.
