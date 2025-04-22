@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 1%
 
 ---
@@ -60,18 +60,26 @@ A replicação reversa usa um agente no ambiente de publicação que faz referê
 
 ### Replicação - pronta para uso {#replication-out-of-the-box}
 
-O site de varejo na Web incluído em uma instalação padrão do AEM pode ser usado para ilustrar a replicação.
+Crie uma página seguindo [Criando e Organizando Páginas](/help/sites-authoring/managing-pages.md).
 
 Para seguir este exemplo e usar os agentes de replicação padrão, [instale o AEM](/help/sites-deploying/deploy.md) com:
 
+
 * o ambiente do Autor na porta `4502`
 * o Ambiente de publicação na porta `4503`
+
+Essa replicação é ativada no ambiente do Autor pelo:
+
+* **Agente padrão (publicação)**
+Esse agente replica o conteúdo na instância de publicação padrão.
+Detalhes disso (configuração e logs) podem ser acessados no console Ferramentas do ambiente Autor ou:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Habilitado por padrão:
 >
->* Agentes sobre Autor : Agente padrão (publicação)
+>* Agentes no Autor : Agente padrão (publicação), caso contrário, ative-o antes de continuar.
 >
 >Efetivamente desabilitado por padrão (a partir do AEM 6.1):
 >
@@ -84,19 +92,13 @@ Para seguir este exemplo e usar os agentes de replicação padrão, [instale o A
 #### Replicação (Autor para publicar) {#replication-author-to-publish}
 
 1. Acesse a página de suporte no ambiente do Autor.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Edite a página para poder adicionar um texto novo.
 1. **Ativar página** para publicar as alterações.
 1. Abra a página de suporte no Ambiente de publicação:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Agora você pode ver as alterações inseridas em Autor.
 
-Essa replicação é ativada no ambiente do Autor pelo:
-
-* **Agente padrão (publicação)**
-Esse agente replica o conteúdo na instância de publicação padrão.
-Detalhes disso (configuração e logs) podem ser acessados no console Ferramentas do ambiente Autor ou:
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agentes de replicação - prontos para uso {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Usado para replicar de Autor para Publicação.
 * Liberação do Dispatcher
 Isso é usado para gerenciar o cache do Dispatcher. Consulte [Invalidação do cache do Dispatcher do ambiente de criação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidação do cache do Dispatcher de uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
 
-* [Replicação reversa](#reverse-replication-publish-to-author)
+* [Replicação reversa](#configuring-reverse-replication)
 Usado para replicação de Publicar para Autor. A replicação reversa não é usada para recursos das Comunidades, como fóruns, blogs e comentários. Ela é efetivamente desativada, pois a caixa de saída não está ativada. O uso da replicação reversa exigiria uma configuração personalizada.
 
 * Agente estático

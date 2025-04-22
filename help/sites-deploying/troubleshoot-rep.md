@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ Há vários motivos para a replicação falhar. Este artigo explica a abordagem 
 
 **As replicações estão sendo acionadas ao clicar no botão Ativar? Caso CONTRÁRIO, faça o seguinte:**
 
-1. Acesse /crx/explorer e faça logon como administrador.
-1. Abra o &quot;Content Explorer&quot;
+1. Acesse /crx/de/index.jsp e faça logon como administrador.
 1. Consulte se um nó /bin/replicate ou /bin/replicate.json existe. Se o nó existir, exclua-o e salve.
 
 **As replicações estão sendo enfileiradas nas filas do agente de replicação?**
@@ -76,12 +75,12 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
 Às vezes, é útil definir todos os logs de replicação para serem adicionados em um arquivo de log separado no nível DEBUG. Para fazer isso:
 
 1. Acesse https://host:port/system/console/configMgr e faça logon como administrador.
-1. Localize a fábrica do Logger de Log do Apache Sling e crie uma instância clicando no botão **+** à direita da configuração de fábrica. Isso cria um novo logger de log.
+1. Localize a Configuração do Logger de Log do Apache Sling e crie uma instância clicando no botão **+** à direita da configuração de fábrica. Isso cria um novo logger de log.
 1. Defina a configuração desta forma:
 
    * Nível de log: DEBUG
-   * Caminho do arquivo de log: logs/replication.log
-   * Categorias: com.day.cq.replication
+   * Arquivo de log: logs/replication.log
+   * Logger: com.day.cq.replication
 
 1. Se você suspeitar que o problema esteja relacionado a eventos/trabalhos do sling de alguma forma, também será possível adicionar esse pacote do Java™ em categorias:org.apache.sling.event
 
