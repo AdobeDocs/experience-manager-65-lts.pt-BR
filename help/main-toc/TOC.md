@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
+source-wordcount: '6797'
 ht-degree: 20%
 
 ---
@@ -387,7 +387,7 @@ ht-degree: 20%
       + [Preparar ativos para tradução](/help/assets/preparing-assets-for-translation.md)
       + [Baixar ativos da Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Insights do Assets](/help/assets/asset-insights.md)
+      + [Insights dos ativos](/help/assets/asset-insights.md)
       + [Ativar insights de ativos por meio do DTM](/help/assets/use-dtm-for-asset-insights.md)
       + [Configurar insights de ativos](/help/assets/configure-asset-insights.md)
       + [Fazer check-in e check-out de ativos](/help/assets/check-out-and-submit-assets.md)
@@ -1432,7 +1432,6 @@ ht-degree: 20%
          + [Otimização do desempenho](/help/sites-deploying/configuring-performance.md)
          + [Guia de desempenho do Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
-         + [Configuração do console da Web](/help/sites-deploying/configuring-web-console.md)
       + Atualização para o AEM 6.5 LTS {#upgrading}
          + [Atualização para o AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md)

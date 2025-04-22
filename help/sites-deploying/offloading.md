@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2323'
 ht-degree: 1%
 
 ---
@@ -80,9 +80,9 @@ Para cada instância do cluster, você pode ver várias propriedades relacionada
 * Os tópicos de trabalho para os quais a instância está registrada para descarregamento.
 * Os tópicos de job que a instância processa.
 
-1. Usando a interface para toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Na área Operações do Granite, clique em Descarregamento de navegador.
-1. No painel de navegação, clique em Navegador de Topologia.
+1. Usando a interface para toque, clique na guia Ferramentas. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Para exibir Descarregamento, clique em Descarregamento na seção Implantação.
+1. Para exibir a Topologia, clique no bloco Topologia na seção Implantação.
 
    Os clusters que estão participando da topologia são exibidos.
 
@@ -100,7 +100,7 @@ Você também pode usar a Console da Web para exibir informações de topologia.
 Use o procedimento a seguir para abrir a página Gerenciamento de Topologia da Console Web:
 
 1. Abra o Console da Web no navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Clique em Principal > Gerenciamento de Topologia.
+1. Clique em Sling > Gerenciamento de topologia.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
