@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,6 @@ As seguintes configurações de OSGi (listadas de acordo com o pacote) são rele
 >A configuração necessária varia de projeto para projeto.
 >
 >Consulte o console da Web para obter valores usados e informações detalhadas sobre parâmetros.
-
->[!NOTE]
->
->A ferramenta de comparação da configuração do OSGi, parte das [Ferramentas do AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), pode ser usada para listar as configurações padrão do OSGi.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ As seguintes configurações de OSGi (listadas de acordo com o pacote) são rele
 
 Consulte [Log do AEM](/help/sites-deploying/configure-logging.md) e [Log do Sling](https://sling.apache.org/documentation/development/logging.html).
 
-**Pool de Threads de Evento do Apache Sling** Configurar:
+**Pool de Threads do Apache Sling** Configurar:
 
 * **Tamanho Mínimo do Pool** e **Tamanho Máximo do Pool**, o tamanho do pool usado para conter threads de evento.
 
@@ -102,7 +98,7 @@ Não desative o JSON.
 >
 >Essa configuração será definida automaticamente para instâncias de produção se você executar o AEM no [Modo de Produção Pronta](/help/sites-administering/production-ready.md).
 
-**Apache Sling JavaScript Handler** Defina as configurações para a compilação de arquivos .java como scripts (servlets).
+**Manipulador do Apache Sling Java Script** Defina as configurações para a compilação de arquivos .java como scripts (servlets).
 
 Certas configurações podem afetar o desempenho. Desative essas configurações sempre que possível, especialmente para uma instância de produção.
 
@@ -118,9 +114,9 @@ Certas configurações podem afetar o desempenho. Desative essas configurações
 
 * **Caminho de pesquisa**, lista de caminhos em que o jcrinstall procura recursos a serem instalados, juntamente com um número que indica o fator de ponderação desse caminho.
 
-**Manipulador de eventos de trabalho do Apache Sling** Configure os parâmetros que gerenciam o agendamento de trabalhos:
+**Configuração da fila do Apache Sling** Configure os parâmetros que gerenciam o agendamento de trabalhos:
 
-* **Intervalo de novas tentativas**, **Máximo de novas tentativas**, **Máximo de trabalhos paralelos**, **Tempo de espera de confirmação**, entre outros.
+* **Intervalo de novas tentativas**, **Máximo de novas tentativas**, **Máximo de trabalhos paralelos**, entre outros.
 
 * A alteração dessas configurações pode melhorar o desempenho em cenários com um alto número de trabalhos; por exemplo, uso intenso de DAM e Workflows do AEM.
 * Os valores específicos para o seu cenário devem ser estabelecidos por meio de testes.
@@ -177,7 +173,7 @@ Consulte [Log do AEM](/help/sites-deploying/configure-logging.md) e [Log do Slin
 
 * **Número de Chamadas por Solicitação** e **Profundidade da Recursão** para proteger o sistema contra recursão infinita e chamadas de script em excesso.
 
-**Serviço de tipo MIME do Apache Sling** Configurar:
+**Apache Sling Commons MIME Type Service** Configurar:
 
 * **Tipos MIME** para adicionar tipos que são exigidos pelo seu projeto ao sistema. Isso permite que uma solicitação `GET` em um arquivo defina o cabeçalho de tipo de conteúdo correto para vincular o tipo de arquivo e o aplicativo.
 
@@ -239,23 +235,11 @@ Vários parâmetros podem ser definidos, incluindo:
 * **Caminhos de Execução** - Lista os caminhos para procurar scripts executáveis. Ao configurar caminhos específicos, você pode limitar quais scripts podem ser executados. Se nenhum caminho estiver configurado, o padrão será usado ( `/` = raiz), permitindo a execução de todos os scripts.
 Se um valor de caminho configurado terminar com uma barra, a subárvore inteira será pesquisada. Sem essa barra à direita, o script só é executado se for uma correspondência exata.
 
-* **Usuário de Script** - Esta propriedade opcional pode especificar a conta de usuário do repositório usada para ler os scripts. Se nenhuma conta for especificada, o usuário `admin` será usado por padrão.
-
 * **Extensões Padrão** - A lista de extensões para as quais o comportamento padrão é usado. O último segmento de caminho do tipo de recurso pode ser usado como o nome do script.
 
 **Configuração de proxy de componentes HTTP do Apache** - A configuração de proxy de todo o código usando o cliente HTTP do Apache, usada quando um HTTP é criado. Por exemplo, sobre replicação.
 
 Ao criar uma configuração, não altere a configuração de fábrica. Em vez disso, crie uma configuração de fábrica para esse componente usando o gerenciador de configurações disponível aqui: **https://localhost:4502/system/console/configMgr/**. A configuração de proxy está disponível em **org.apache.http.proxyconfigurator.**
-
->[!NOTE]
->
->No AEM 6.0 e em versões anteriores, o proxy era configurado no Day Commons HTTP Client. A partir do AEM 6.1 e versões posteriores, a configuração de proxy foi movida para a &quot;Configuração de proxy de componentes HTTP do Apache&quot; em vez da configuração &quot;Day Commons HTTP Client&quot;.
-
-**Day CQ Antispam** Configure o serviço antisspam (Akismet) usado. Esse recurso exige que você registre o seguinte:
-
-* **Provedor**
-* **Chave de API**
-* **URL registrada**
 
 **Gerenciador de biblioteca HTML do Adobe Granite** Configure para controlar a manipulação de bibliotecas de clientes (css ou js) incluindo, por exemplo, como a estrutura subjacente é vista.
 
@@ -281,7 +265,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 >
 >Essa configuração será definida automaticamente para instâncias de produção se você executar o AEM no [Modo de Produção Pronta](/help/sites-administering/production-ready.md).
 
-Manipulador de Autenticação de Cabeçalho HTTP CQ de **Dias** Configurações do sistema para o método de autenticação básico da solicitação HTTP.
+**Manipulador de Autenticação do Cabeçalho HTTP do Adobe Granite** Configurações do sistema para o método de autenticação básico da solicitação HTTP.
 
 Ao usar [grupos de usuários fechados](/help/sites-administering/cug.md), você pode configurar, entre outros, o seguinte:
 
@@ -377,7 +361,7 @@ Os outros modos podem ser acessados do sidekick ou o sufixo `?wcmmode=disabled` 
 >
 >Essa configuração será definida automaticamente para instâncias de produção se você executar o AEM no [Modo de Produção Pronta](/help/sites-administering/production-ready.md).
 
-**Configurador do Verificador de Links CQ de Dias** Configurar:
+**Verificador de links WCM CQ do dia** Configurar:
 
 * **Lista de configurações de regravação** para especificar uma lista de locais para configurações do verificador de links baseado em conteúdo. As configurações podem ser baseadas no modo de execução. Esse fato é importante para distinguir entre ambientes de autor e publicação, pois as configurações do verificador de links podem ser diferentes.
 
@@ -427,7 +411,7 @@ Consulte [Limpeza de versão](/help/sites-deploying/version-purging.md) para obt
 
 **Serviço de notificação por email do fluxo de trabalho do CQ de dias** Defina as configurações de email para notificações enviadas por um fluxo de trabalho.
 
-**Fábrica de Analisador HTML de Reescrita CQ**
+**Fábrica do Analisador HTML de Reescrita do Adobe AEM**
 
 Controla o Analisador de HTML para o reescritor CQ.
 

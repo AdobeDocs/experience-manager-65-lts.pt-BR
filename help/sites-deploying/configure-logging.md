@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ A [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configurati
 * número de versões a manter
 * rotação de versão; tamanho máximo ou um intervalo de tempo
 * o formato a ser usado ao gravar as mensagens de log
-
->[!NOTE]
->
->Este [artigo da Base de Dados de Conhecimento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica como girar os arquivos request.log e access.log.
 
 ## Registradores e Gravadores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 

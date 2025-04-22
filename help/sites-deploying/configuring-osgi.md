@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,6 @@ Como o mesmo parâmetro de configuração está em vários lugares, o sistema:
 * filtros de acordo com o nome do serviço
 * filtros de acordo com o modo de execução
 
->[!NOTE]
->
->Leia também [como definir uma configuração baseada em repositório somente para uma instância específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Adicionar uma nova configuração ao repositório {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Para adicionar uma configuração ao repositório, você deve saber o seguinte:
 
 1. A **Identidade Persistente** (PID) do serviço.
 
-   Referencie o campo **Configurações** no console da Web. O nome é mostrado entre parênteses depois do nome do pacote (ou nas **Informações de Configuração** em direção à parte inferior da página).
+   Referencie as **Configurações** no console da Web. O nome é mostrado nas **Informações de Configuração** na parte inferior da página.
 
-   Por exemplo, crie um nó `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar o **Gerenciador de Versões do AEM WCM**.
+   Por exemplo, `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar o **Gerenciador de Versões do AEM WCM**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Para realmente adicionar a nova configuração ao repositório:
 
    >[!NOTE]
    >
-   >Ao fazer uma Configuração de Fábrica, anexe `-<identifier>` ao nome.
+   >Ao fazer uma Configuração de Fábrica, anexe `~<identifier>` ao nome.
    >
-   >Como em: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >Como em: `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >Onde `<identifier>` é substituído por texto livre que você (deve) inserir para identificar a instância (você não pode omitir essas informações); por exemplo:
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. Para cada parâmetro que você deseja configurar, crie uma propriedade neste nó:
 
@@ -310,23 +307,7 @@ A configuração com o maior número de modos de execução correspondentes é v
 
 ### Configurações padrão {#standard-configurations}
 
-A lista a seguir mostra uma pequena seleção das configurações disponíveis (em uma instalação padrão) no repositório:
-
-* Autor - Filtro WCM do AEM:
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publicar - Filtro WCM do AEM:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publicar - Estatísticas de página do AEM WCM:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->Como essas configurações residem no `/libs`, elas não devem ser editadas diretamente, mas copiadas para a área do seu aplicativo ( `/apps`) antes da personalização.
+Se qualquer configuração padrão residir em `/libs`, ela não deverá ser editada diretamente, mas copiada para sua área do aplicativo ( `/apps`) antes da personalização.
 
 Para listar todos os nós de configuração na sua instância, use a funcionalidade **Consulta** no CRXDE Lite para enviar a seguinte consulta SQL:
 
