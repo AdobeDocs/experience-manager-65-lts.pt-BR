@@ -11,18 +11,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 12%
+source-wordcount: '5052'
+ht-degree: 16%
 
 ---
 
 # Otimização do desempenho {#performance-optimization}
 
 >[!NOTE]
->
->Para obter diretrizes gerais sobre desempenho, leia a página [Diretrizes de Desempenho](/help/sites-deploying/performance-guidelines.md).
 >
 >Para obter mais informações sobre como solucionar e corrigir problemas de desempenho, consulte também a [Árvore de desempenho](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Algumas regras devem ser levadas em conta ao otimizar o desempenho:
 
 Determinados aspectos do AEM (e/ou do repositório subjacente) podem ser configurados para otimizar o desempenho. Veja a seguir possibilidades e sugestões. Certifique-se de usar a funcionalidade em questão ou de como usá-la antes de fazer alterações.
 
->[!NOTE]
->
->Consulte [Otimização de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Indexação de pesquisa {#search-indexing}
 
 A partir do AEM 6.0, o Adobe Experience Manager usa uma arquitetura de repositório baseada em Oak.
@@ -224,6 +218,7 @@ Por exemplo, quando imagens (ou ativos DAM em geral) são carregadas, os fluxos 
 
 O mecanismo de fluxo de trabalho usa as filas de trabalho do Apache Sling para manipular e agendar o processamento do item de trabalho. Os seguintes serviços de fila de trabalhos foram criados por padrão na fábrica do serviço de configuração da fila de trabalhos do Apache Sling para processar trabalhos de fluxo de trabalho:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Fila de fluxo de trabalho do Granite: a maioria das etapas do fluxo de trabalho, como aquelas que processam ativos DAM, usam o serviço Fila de fluxo de trabalho do Granite.
 * Fila de trabalho do processo externo do fluxo de trabalho do Granite: esse serviço é usado para etapas especiais do fluxo de trabalho externo que normalmente são usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de extração de mídia do InDesign é implementada como um processo externo. O mecanismo de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Uma seleção de ferramentas está disponível para ajudá-lo com a geração de
 
 * [JMeter](https://jmeter.apache.org/)
 * [Carregar Executor](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interativo Java™](https://jiprof.sourceforge.net/)
 
 Após a otimização, teste novamente para confirmar o impacto.
@@ -642,87 +636,3 @@ Para garantir que os arquivos sejam armazenados em cache corretamente, siga esta
 
 * Certifique-se de que os arquivos sempre tenham a extensão adequada.
 * Evite scripts de servidor de arquivos genéricos, que tenham URLs como `download.jsp?file=2214`. Para usar URLs contendo a especificação do arquivo, reescreva o script. Para o exemplo anterior, essa regravação é `download.2214.pdf`.
-
-## Desempenho do backup {#backup-performance}
-
-Esta seção apresenta uma série de benchmarks usados para avaliar o desempenho dos backups do AEM e os efeitos da atividade de backup no desempenho do aplicativo. Os backups do AEM apresentam uma carga significativa no sistema enquanto ele é executado, e o Adobe mede esse impacto e os efeitos das configurações de atraso de backup que tentam modular esses efeitos. O objetivo é oferecer alguns dados de referência sobre o desempenho esperado dos backups em configurações realistas e quantidades de dados de produção, e fornecer orientação sobre como estimar os tempos de backup para sistemas planejados.
-
-### Ambiente de referência {#reference-environment}
-
-#### Sistema físico {#physical-system}
-
-Os resultados relatados neste documento foram obtidos de benchmarks executados em um ambiente de referência com a seguinte configuração: Essa configuração é semelhante a um ambiente de produção típico em um data center:
-
-* HP ProLiant DL380 G6, 8 CPUs x 2,533 GHz
-* Unidades Serial Attached SCSI de 300 GB e 10.000 RPM
-* Controlador RAID de hardware; oito unidades em um storage RAID0+5
-* Imagem VMware CPU x 2 Intel Xeon® E5540 a 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Instância única do autor
-
-O subsistema de discos neste servidor é rápido, representativo de uma configuração RAID de alto desempenho que pode ser usada em um servidor de produção. O desempenho do backup pode ser sensível ao desempenho do disco, e os resultados nesse ambiente refletem o desempenho em uma configuração RAID rápida. A imagem VMWare é configurada para ter um único grande volume de disco que reside fisicamente no armazenamento de disco local, no array RAID.
-
-A configuração do AEM coloca o repositório e o armazenamento de dados no mesmo volume lógico, juntamente com o sistema operacional e o software AEM. O diretório de destino para backups também reside nesse sistema de arquivos lógico.
-
-#### Volumes de dados {#data-volumes}
-
-A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks de backup. O conteúdo inicial da linha de base é instalado primeiro e, em seguida, quantidades adicionais conhecidas de dados são adicionadas para aumentar o tamanho do conteúdo de backup. Os backups são criados em incrementos específicos para representar um grande aumento no conteúdo e o que pode ser produzido em um dia. A distribuição de conteúdo (páginas, imagens, tags) baseia-se aproximadamente na composição realista do ativo de produção. Páginas, imagens e tags são limitadas a no máximo 800 páginas secundárias. Cada página inclui componentes de título, Flash, texto/imagem, vídeo, apresentação de slides, formulário, tabela, nuvem e carrossel. As imagens são carregadas de um pool de 400 arquivos exclusivos com tamanho de 37 KB a 594 KB.
-
-| Conteúdo | Nós | Páginas | Imagens | Tags |
-|---|---|---|---|---|
-| Instalação base | 69 610 | 562 | 256 | 237 |
-| Conteúdo pequeno para backup incremental |  | +100 | +2 | +2 |
-| Grande conteúdo para backup completo |  | +10 000 | +100 | +100 |
-
-O benchmark de backup é repetido com os conjuntos de conteúdo adicionais adicionados a cada repetição.
-
-#### Cenários de benchmark {#benchmark-scenarios}
-
-Os benchmarks de backup abrangem dois cenários principais: backups quando o sistema está sob carga significativa de aplicativos e backups quando o sistema está ocioso. Embora a recomendação geral seja que os backups sejam executados quando o AEM estiver o mais ocioso possível, há situações em que é necessário que o backup seja executado quando o sistema estiver sob carga.
-
-* **Estado Ocioso** - Os backups são executados sem nenhuma outra atividade no AEM.
-* **Sob Carregamento** - Os backups são executados enquanto o sistema está sob 80% de carga de processos online. O atraso do backup variou para ver o impacto na carga.
-
-Os tempos de backup e o tamanho do backup resultante são obtidos dos logs do servidor do AEM. Normalmente, recomenda-se que os backups sejam agendados para fora do horário de expediente quando o AEM estiver ocioso, por exemplo, no meio da noite. Este cenário é representativo da abordagem recomendada.
-
-O carregamento consiste em páginas criadas, páginas excluídas, percursos e consultas com a maioria das cargas provenientes de percursos e consultas de página. Adicionar e remover muitas páginas aumenta continuamente o tamanho do espaço de trabalho e impede que os backups sejam concluídos. A distribuição de carga que o script usa é de 75% de percursos de página, 24% de consultas e 1% de criações de página (nível único sem subpáginas aninhadas). A média de pico de transações por segundo em um sistema ocioso é alcançada com quatro threads simultâneos, que são usados ao testar backups sob carga.
-
-O impacto da carga no desempenho de backup pode ser estimado pela diferença entre o desempenho com e sem essa carga de aplicativo. O impacto do backup no throughput do aplicativo é encontrado ao comparar o throughput do cenário em transações por hora com e sem um backup simultâneo em andamento e com backups em operação com diferentes configurações de &quot;atraso de backup&quot;.
-
-* **Configuração de Atraso** - Para vários cenários, a configuração de atraso de backup também variou, usando valores de 10 milissegundos (padrão), 1 milissegundo e 0 milissegundo, para explorar como essa configuração afetou o desempenho dos backups.
-* **Tipo de Backup** - Todos os backups eram backups externos do repositório feitos em um diretório de backup sem criar um zip, exceto em um caso para comparação em que o comando tar foi usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip, ou quando o backup completo anterior é um arquivo zip, o método de diretório de backup é o mais usado em situações de produção.
-
-### Resumo dos resultados {#summary-of-results}
-
-#### Tempo e throughput do backup {#backup-time-and-throughput}
-
-O principal resultado desses benchmarks é mostrar como os tempos de backup variam em função do tipo de backup e da quantidade geral de dados. O gráfico a seguir mostra o tempo de backup obtido usando a configuração de backup padrão, em função do número total de páginas.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-Os tempos de backup em uma instância ociosa são bastante consistentes, com uma média de 0,608 MB por segundo, independentemente de backups completos ou incrementais (consulte o gráfico abaixo). O tempo de backup é simplesmente uma função do volume de dados do backup. O tempo para concluir um backup completo aumenta claramente de acordo com o número total de páginas. O tempo para concluir um backup incremental também aumenta com o número total de páginas, mas em uma taxa muito menor. O tempo necessário para concluir o backup incremental é muito menor devido à quantidade relativamente pequena de dados cujo backup está sendo feito.
-
-O tamanho do backup produzido é o principal determinante do tempo necessário para concluir um backup. O gráfico a seguir mostra o tempo gasto em função do tamanho final do backup.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Este gráfico ilustra que tanto os backups incrementais quanto os completos seguem um padrão simples de tamanho e tempo que o Adobe pode medir como throughput. Os tempos de backup em uma instância ociosa são bastante consistentes, com uma média de 0,61 MB por segundo, independentemente de backups completos ou incrementais no ambiente de benchmark.
-
-#### Atraso de backup {#backup-delay}
-
-O parâmetro de atraso de backup é fornecido para limitar a extensão em que os backups podem interferir nas cargas de trabalho de produção. O parâmetro especifica um tempo de espera em milissegundos, que é alternado para a operação de backup em cada arquivo. O efeito geral depende em parte do tamanho dos arquivos afetados. A medição do desempenho do backup em MB/s oferece uma maneira razoável de comparar os efeitos do atraso no backup.
-
-* A execução simultânea de um backup com a carga normal do aplicativo tem um impacto negativo no throughput da carga normal.
-* O impacto pode ser leve (até 5%) ou significativo, causando uma queda de até 75% no throughput. Provavelmente depende mais do aplicativo.
-* O backup não é uma carga pesada sobre o CPU e, portanto, as cargas de trabalho de produção com uso intenso de CPU seriam menos afetadas pelo backup do que as que têm uso intenso de I/O.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-Para comparação, o throughput obtido usando um backup do sistema de arquivos (&quot;tar&quot;) para fazer backup dos mesmos arquivos do repositório. O desempenho do tar é comparável, mas ligeiramente superior ao do backup com atraso definido como zero. Mesmo um pequeno atraso reduz muito o throughput de backup, e o atraso padrão de 10 milissegundos resulta em um throughput bastante reduzido. Em situações em que os backups podem ser programados quando o uso geral do aplicativo for baixo ou o aplicativo puder estar ocioso, reduza o atraso abaixo do valor padrão para permitir que o backup prossiga mais rapidamente.
-
-O impacto real do throughput de aplicativos de um backup contínuo depende dos detalhes do aplicativo e da infraestrutura. A escolha do valor do atraso deve ser feita por meio da análise empírica do aplicativo, mas deve ser escolhida o menor possível, para que os backups possam ser concluídos o mais rápido possível. Como há apenas uma fraca correlação entre a escolha do valor de atraso e o impacto no throughput do aplicativo, a escolha do atraso deve favorecer tempos gerais de backup mais curtos para minimizar o impacto geral dos backups. Um backup que leva oito horas para ser concluído, mas afeta o throughput em -20%, provavelmente terá um impacto geral maior do que um backup que leva duas horas para ser concluído, mas afeta o throughput em -30%.
-
-### Referências {#references}
-
-* [Administração - Backup e restauração](/help/sites-administering/backup-and-restore.md)
-* [Gerenciamento - Capacidade e volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)

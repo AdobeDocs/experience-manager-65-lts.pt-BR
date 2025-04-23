@@ -1,5 +1,5 @@
 ---
-title: Monitoramento e manutenção de Adobe Experience Manager instância
+title: Monitoramento e manutenção da instância do Adobe Experience Manager
 description: Saiba como monitorar e manter sua instância do Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
@@ -50,10 +50,10 @@ Sua empresa provavelmente tem uma política de backup que você segue, considera
 * com que frequência as alterações são feitas no software ou nos dados.
 * volume de dados; a capacidade pode, ocasionalmente, ser um problema, assim como o tempo necessário para realizar o backup.
 * se o backup pode ser feito enquanto os usuários estão on-line e, se possível, qual é o impacto no desempenho.
-* a distribuição geográfica dos usuários; ou seja, quando é o melhor momento para fazer backup (para minimizar o impacto)?
-* sua política de recuperação de desastres? há diretrizes sobre onde os dados de backup devem ser armazenados (por exemplo, mídia externa e específica).
+* a distribuição geográfica dos usuários; ou seja, quando é a melhor hora para fazer o backup (para minimizar o impacto)?
+* seu política de recuperação de desastres; existem diretrizes sobre onde os dados de backup devem ser armazenados (por exemplo, offsite e meio específico).
 
-Geralmente, um backup completo é feito em intervalos regulares (por exemplo, diariamente, semanalmente ou mensalmente), com backups incrementais entre eles (por exemplo, a cada hora, diariamente ou semanalmente).
+Muitas vezes, uma backup completa é realizada em intervalos regulares (por exemplo, diário, semanal ou mensal), com backups incrementais entre (por exemplo, a cada hora, diariamente ou semanalmente).
 
 >[!CAUTION]
 >
@@ -61,22 +61,18 @@ Geralmente, um backup completo é feito em intervalos regulares (por exemplo, di
 >
 >Sem esse teste, o backup pode ser inútil (na pior das hipóteses).
 
->[!NOTE]
->
->Para obter mais informações sobre desempenho de backup, leia a seção [Desempenho de Backup](/help/sites-deploying/configuring-performance.md#backup-performance).
-
-### Fazendo backup da instalação do software {#backing-up-your-software-installation}
+### Backup da instalação do software {#backing-up-your-software-installation}
 
 Após a instalação ou alterações significativas na configuração, crie uma backup da instalação do software.
 
 Para fazer isso tarefa, [faça backup de toda a sua repositório](#backing-up-your-repository) e, em seguida:
 
 1. Interrupção AEM.
-1. Faça backup de todo o `<cq-installation-dir>` do seu sistema de arquivos.
+1. Anterior o todo `<cq-installation-dir>` do seu sistema de arquivos.
 
 >[!CAUTION]
 >
->Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e também devem ter backup. Consulte [Como instalar o AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos.
+>Se você estiver operando um servidor de aplicativo de terceiros, as pastas adicionais podem estar em um local diferente e também devem ser armazenadas em backup. Consulte [Como instalar o AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos.
 
 >[!CAUTION]
 >
@@ -160,7 +156,7 @@ Defina o tempo de vida máximo da versão em dias (para cada nó) que você dese
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->Os nós limpos não podem ser revertidos sem restaurar o repositório. Cuide de sua configuração sempre executando uma simulação antes da limpeza.
+>Os nós limpos não podem ser revertidos sem restaurar a repositório. Cuide da configuração sempre executando uma corrida seca antes de limpar.
 
 #### Dry Run - Análise do console {#analyzing-the-console}
 
@@ -174,7 +170,7 @@ O processo lista todos os nós que foram processados. Durante o processo, um nó
 
 * `ignore (no version)`: o nó não tem nenhuma versão e é ignorado durante o processo.
 
-* `retained`: o nó não está removido.
+* `retained`: a nó não é limpa.
 * `purged`: o nó está limpo.
 
 Além disso, o console fornece informações úteis sobre as versões:
@@ -187,9 +183,9 @@ Além disso, o console fornece informações úteis sobre as versões:
 No exemplo a seguir:
 
 * As **[!DNL Shirts]** versões são eliminadas porque a idade da versão é maior que dois dias.
-* As versões **[!DNL Tonga Fashions!]** foram removidas porque seu número de versões é superior a 5.
+* As **[!DNL Tonga Fashions!]** versões são eliminadas porque o número de versões é maior que 5.
 
-![global_version_screenshot](assets/global_version_screenshot.png)
+![global_version_captura de tela](assets/global_version_screenshot.png)
 
 ## Trabalhar com registros de auditoria e arquivos de log {#working-with-audit-records-and-log-files}
 
@@ -278,7 +274,7 @@ Os níveis de log são os seguintes:
 | 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
 |---|---|---|
 | 1 | Erro | Falha na ação. A instalação continua, mas uma parte do AEM WCM não foi instalada corretamente e não funciona. |
-| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O AEM WCM pode ou não funcionar corretamente. |
+| 2 | Aviso | A ação conseguiu, mas encontrou problemas. AEM WCM podem ou não funcionar corretamente. |
 | 3 | Informações | A ação foi bem-sucedida. |
 
 ### Criar um arquivo de log personalizado {#create-a-custom-log-file}
@@ -287,9 +283,9 @@ Os níveis de log são os seguintes:
 >
 >Ao trabalhar com o Adobe Experience Manager, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-Em determinadas circunstâncias, talvez você queira criar um arquivo de log personalizado com um nível de log diferente. No repositório, faça o seguinte:
+Em certas circunstâncias, você pode querer criar uma arquivo de log personalizada com um nível de log diferente. No repositório, faça o seguinte:
 
-1. Se não existir, crie uma pasta de configuração ( `sling:Folder`) para seu projeto `/apps/<project-name>/config`.
+1. Se não existir, crie uma pasta de configuração ( `sling:Folder`) para o seu projeto `/apps/<project-name>/config`.
 1. Em `/apps/<project-name>/config`, crie um nó para a nova [Configuração do logger de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
@@ -308,7 +304,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
 
    * Nome: `org.apache.sling.commons.log.file`
 
-     Tipo: String
+     Tipo: cadeia de caracteres
 
      Valor: especifique o Arquivo de Log; por exemplo, `logs/myLogFile.log`
 
@@ -430,9 +426,9 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >`org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log definindo:
    >
    >* um tamanho máximo de arquivo
-   >* um cronograma de hora/data
+   >* uma programação de hora/data
    >
-   >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
+   >para indicar quando um novo arquivo é criado (e o arquivo existente renomeado de acordo com o padrão de nome).
    >
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será tomado como o número de bytes ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB` ou `GB` (maiúsculas e minúsculas são ignoradas).
    >* Um cronograma de data/hora pode ser especificado como um padrão `java.util.SimpleDateFormat`. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
@@ -443,7 +439,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >
    >| `'.'yyyy-MM` | Rotação no início de cada mês |
    >|---|---|
-   >| `'.'yyyy-ww` | Rotação no primeiro dia de cada semana (depende do local). |
+   >| `'.'yyyy-ww` | A rotação no primeiro dia de cada semana (depende da localidade). |
    >| `'.'yyyy-MM-dd` | Rotação à meia-noite de cada dia. |
    >| `'.'yyyy-MM-dd-a` | Rotação à meia-noite e ao meio-dia de cada dia. |
    >| `'.'yyyy-MM-dd-HH` | Rotação na parte superior de cada hora. |
@@ -515,8 +511,8 @@ Para monitorar um agente de replicação:
 
    * Veja se o agente está ativado.
    * Visualizar o destino de qualquer replicação.
-   * Veja se a fila de replicação está ativa (ativada).
-   * Verificar se há itens na fila.
+   * Veja se o fila de replicação está ativo (ativado).
+   * Veja se há algum item no fila.
    * **Atualizar** ou **Limpar** para atualizar a exibição de entradas da fila. Isso ajuda a ver os itens que entram e saem da fila.
    * **Exibir Log** para acessar o log de quaisquer ações pelo agente de replicação.
    * **Testar Conexão** com a instância de destino.
@@ -526,9 +522,9 @@ Para monitorar um agente de replicação:
    >
    >Não use o link &quot;Testar conexão&quot; para a Caixa de saída de replicação reversa em uma instância de publicação.
    >
-   >Se um teste de replicação for executado para uma fila da Caixa de saída, quaisquer itens mais antigos que a replicação de teste serão reprocessados com cada replicação reversa.
+   >Se uma teste de replicação for executada para uma fila de Caixa de saída, todos os itens mais antigos que sejam teste replicação são reprocessados com cada replicação inversa.
    >
-   >Se esses itens existirem em uma fila, poderão ser encontrados com a seguinte consulta XPath JCR e deverão ser removidos.
+   >Se tais itens existirem em um fila, eles poderão ser encontrados com o seguinte query JCR XPath e deverão ser removidos.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -538,13 +534,13 @@ Novamente, você pode desenvolver uma solução para detectar todos os agentes d
 
 [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) é um processo interativo que recebe foco durante o desenvolvimento. Após a implantação, ela é revisada após intervalos ou eventos específicos.
 
-Métodos usados ao coletar informações para otimização também podem ser usados para monitoramento contínuo.
+Os métodos usados durante a coleta de informações para otimização também podem ser usados para monitoramento contínuo.
 
 >[!NOTE]
 >
->Também é possível verificar as [configurações específicas disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
+>Configurações específicas [disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) também podem ser verificadas.
 
-A seguir, uma lista de problemas comuns de desempenho que ocorrem, juntamente com propostas sobre como detectá-los e neutralizá-los.
+A seguir, lista questões comuns de desempenho que ocorrem, juntamente com propostas sobre como spot, e contraria.
 
 | Área | Sintoma | Para aumentar a capacidade... | Para reduzir o volume... |
 |---|---|---|---|
@@ -578,9 +574,9 @@ Todas essas informações devem ser obtidas, classificadas e analisadas antes qu
    * verifique se algo (relacionado ao sistema) foi alterado em um espaço de tempo adequado e se alguma dessas alterações pode ter afetado o desempenho
    * faça perguntas como:
 
-      * o problema ocorre somente em momentos específicos?
-      * o problema ocorre somente em páginas específicas?
-      * as outras solicitações serão afetadas?
+      * o problema só ocorre em momentos específicos?
+      * o problema só ocorre em páginas específicas?
+      * outras solicitações são afetadas?
 
    * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
 
@@ -651,11 +647,6 @@ Algumas dessas ferramentas dependem do sistema operacional.
    <td>JConsole</td>
    <td>Observe métricas e threads da JVM.</td>
    <td><p>Uso: jconsole</p> <p>Consulte <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> e <a href="#monitoring-performance-using-jconsole">Monitorando o Desempenho usando o JConsole</a>.</p> <p><strong>Observação:</strong> com o JDK 1.8, o JConsole é extensível com plug-ins; por exemplo, Superior ou TDA (Analisador de despejo de thread).</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>Observe métricas, threads, memória e criação de perfil da JVM.</td>
-   <td><p>Uso: visualvm ou visualvm<br /> </p> <p>Consulte <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> e <a href="#monitoring-performance-using-j-visualvm">Monitorando o Desempenho usando (J)VisualVM</a>.</p> <p><strong>Observação:</strong> com o JDK 1.8, o VisualVM é extensível com plug-ins. O VisualVM é descontinuado após o JDK 9. Em vez disso, use o Gravador de voo Java™.</p> </td>
   </tr>
   <tr>
    <td>treliça/esteira, lsof</td>
@@ -925,31 +916,6 @@ O comando de ferramenta `jconsole` está disponível com o JDK.
 
    Agora é possível selecionar outras opções.
 
-### Monitoramento do desempenho usando (J)VisualVM {#monitoring-performance-using-j-visualvm}
-
-Para o JDK 6-8, o comando de ferramenta `visualvm` está disponível. Depois de instalar um JDK, você pode fazer o seguinte:
-
-1. Inicie sua instância do AEM.
-
-   >[!NOTE]
-   >
-   >Se estiver usando o Java™ 5, você pode adicionar o argumento `-Dcom.sun.management.jmxremote` à linha de comando do Java™ que inicia sua JVM. O JMX é ativado por padrão com o Java™ 6.
-
-1. Execute:
-
-   * `jvisualvm`: na pasta bin do JDK 1.6 (versão testada)
-   * `visualvm`: pode ser baixado de [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (versão de borda sangrada)
-
-1. No aplicativo `Local`, clique duas vezes em `com.day.crx.quickstart.Main`. A Visão geral é exibida como o padrão:
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   Agora é possível selecionar outras opções, incluindo Monitorar:
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-Você pode usar esta ferramenta para gerar despejos de thread e despejos de cabeçote de memória. Essas informações são solicitadas com frequência pela equipe de suporte técnico.
-
 ### Coleta de informações {#information-collection}
 
 Saber o máximo possível sobre a instalação do pode ajudar a identificar o que pode ter causado uma alteração no desempenho e se essas alterações são justificadas. Colete essas métricas em intervalos regulares para que você possa ver facilmente alterações significativas.
@@ -1039,7 +1005,7 @@ Para ver quantos ativos DAM você mantém atualmente, use uma consulta de reposi
 
 #### Qual é o tamanho médio dos ativos? {#what-is-the-average-size-of-the-assets}
 
-Para determinar o tamanho total da `/var/dam` pasta:
+Para determinar o tamanho total da pasta `/var/dam`:
 
 1. Use WebDAV para mapear o repositório para o sistema de arquivos local.
 
@@ -1103,16 +1069,11 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
->* [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU em 100% {#cpu-at}
 
-Se o CPU do seu sistema estiver em execução constantemente a 100%, consulte o seguinte:
-
-* Base de conhecimento:
-
-   * [Analisar Processos Lentos e Bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+Se o CPU do seu sistema estiver em execução constantemente a 100%, verifique os registros do AEM e use ferramentas como top, htop ou jstack para identificar threads de alto nível do CPU. Analise despejos de thread para loops infinitos, threads bloqueados ou coleta de lixo em excesso.
 
 ### Memória insuficiente {#out-of-memory}
 
@@ -1137,29 +1098,26 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 
    * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gerenciador de biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtrar de depuração WCM CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Configuração e configuração [Versão limpeza](/help/sites-deploying/version-purging.md)
+* Se e como você configurou a [Limpeza de Versão](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
    * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [O diário consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
 Se você observar o desempenho da sua instância se deteriorando após cada reinicialização (às vezes, uma semana ou mais tarde), o seguinte pode ser verificado:
 
 * [Memória insuficiente](#outofmemory)
-* Base de conhecimento:
-
-   * [Sessões Não Fechadas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [Sessões não fechadas](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### Ajuste de JVM {#jvm-tuning}
 
-A Java™ Virtual Machine (JVM) melhorou em relação ao ajuste (especialmente desde o Java™ 7). Dessa forma, geralmente é adequado especificar um tamanho de JVM fixo e razoável e usar os padrões.
+A Java™ Virtual Machine (JVM) melhorou em relação ao ajuste. Dessa forma, geralmente é adequado especificar um tamanho de JVM fixo e razoável e usar os padrões.
 
 Se as configurações padrão não forem adequadas, é importante estabelecer um método para monitorar e avaliar o desempenho de GC. Faça isso antes de tentar ajustar a JVM. Esse processo pode envolver fatores de monitoramento, incluindo tamanho do heap, algoritmo e outros aspectos.
 
@@ -1190,12 +1148,6 @@ Ou JConsole:
   ```
 
 * Em seguida, conecte-se à JVM com o JConsole; consulte o seguinte:
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 Você pode ver quanta memória está sendo usada, quais algoritmos de GC estão sendo usados, quanto tempo eles levam para serem executados e qual efeito esse processo tem no desempenho do aplicativo. Sem ele, o ajuste é apenas &quot;aleatoriamente girando botões&quot;.
-
->[!NOTE]
->
->Para a VM da Oracle, também há informações em:
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
