@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ Um desligamento forçado faz com que o AEM suspenda a indexação assíncrona po
 1. Aguarde aproximadamente 45 minutos para que o AEM retome as operações normais de indexação assíncrona.
 
 ## Pool de threads sobrecarregado {#thread-pool-overloaded}
-
->[!NOTE]
->
->Para o AEM 6.1, verifique se o [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) está instalado.
 
 Em circunstâncias excepcionais, o pool de threads usado para gerenciar a indexação assíncrona pode ficar sobrecarregado. Para isolar o processo de indexação, um pool de threads pode ser configurado para impedir que outros trabalhos do AEM interfiram na capacidade da Oak de indexar conteúdo em tempo hábil. Nesses casos, faça o seguinte:
 

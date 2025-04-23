@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 A execução de Oak suporta todos os casos de uso de indexação na linha de comando sem precisar operar a partir do nível JMX. As vantagens da abordagem oak-run são:
 
-1. É um novo conjunto de ferramentas de indexação para o AEM 6.4
+1. É um novo conjunto de ferramentas de indexação desde o AEM 6.4
 1. Ele diminui o tempo para reindexação, o que afeta de maneira benéfica os tempos de reindexação em repositórios maiores
 1. Ela está reduzindo o consumo de recursos durante a reindexação no AEM, o que resulta em melhor desempenho do sistema para outras atividades do AEM
 1. A execução da Oak oferece suporte fora da banda: se as condições de produção não permitirem que você execute a reindexação em instâncias de produção, um ambiente clonado poderá ser usado para a reindexação, para evitar um impacto crítico no desempenho.
@@ -64,7 +64,7 @@ Este diagrama é uma árvore decisória para quando usar as várias abordagens d
 
 ### Pré-extração de texto para SegmentNodeStore e DocumentNodeStore {#textpre-extraction}
 
-A [pré-extração de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (um recurso existente no AEM 6.3) pode ser usada para reduzir o tempo de reindexação. A pré-extração de texto pode ser usada com todas as abordagens de reindexação.
+A [pré-extração de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (um recurso que existe desde o AEM 6.3) pode ser usada para reduzir o tempo de reindexação. A pré-extração de texto pode ser usada com todas as abordagens de reindexação.
 
 Dependendo da abordagem de indexação do `oak-run.jar`, há várias etapas em ambos os lados da etapa Executar Reindexação no diagrama abaixo.
 
