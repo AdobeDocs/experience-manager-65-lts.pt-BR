@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 0%
@@ -75,9 +75,9 @@ A legenda a seguir descreve as possíveis áreas de armadilha de desempenho com 
 
 **Sistema de Arquivos Temporário** Um sistema de arquivos local lento pode causar problemas de desempenho interativos, especialmente durante a pesquisa, pois os índices de pesquisa são armazenados no disco local. Isso também poderá causar problemas no processamento de ativos se o processo de linha de comando estiver sendo usado.
 
-**Localizador de DAM do AEM** Problemas de desempenho interativos, geralmente enfrentados em pesquisas, são causados pela alta utilização do CPU devido a muitos usuários simultâneos ou outros processos que consomem o CPU na mesma instância. Migrar de máquinas virtuais para máquinas dedicadas e garantir que nenhum outro serviço seja executado na máquina pode ajudar a melhorar o desempenho. Se a alta carga do CPU for causada pelo processamento de ativos e muitos usuários simultâneos, Day recomenda adicionar outros nós de cluster.
+**Localizador de DAM do AEM** Problemas de desempenho interativos, geralmente enfrentados em pesquisas, são causados pela alta utilização do CPU devido a muitos usuários simultâneos ou outros processos que consomem o CPU na mesma instância. Migrar de máquinas virtuais para máquinas dedicadas e garantir que nenhum outro serviço seja executado na máquina pode ajudar a melhorar o desempenho. Se a alta carga do CPU for causada pelo processamento de ativos e muitos usuários simultâneos, a Adobe recomenda adicionar outros nós de cluster.
 
-**Fluxo de trabalho do AEM DAM** Processos de fluxo de trabalho de longa duração durante a assimilação de ativos causam problemas de desempenho no processamento de ativos. Dependendo do tipo de ativos que está sendo processado, isso pode indicar a superutilização do CPU. Day recomenda que você reduza o número de outros processos em execução no sistema e aumente o número de CPUs disponíveis adicionando nós de cluster.
+**Fluxo de trabalho do AEM DAM** Processos de fluxo de trabalho de longa duração durante a assimilação de ativos causam problemas de desempenho no processamento de ativos. Dependendo do tipo de ativos que está sendo processado, isso pode indicar a superutilização do CPU. A Adobe recomenda que você reduza o número de outros processos em execução no sistema e aumente o número de CPUs disponíveis adicionando nós de cluster.
 
 **Conectividade NAS** A baixa conectividade de rede com o NAS causa problemas de desempenho interativos, pois o acesso a novos nós durante o processamento de ativos fica lento devido à latência de rede. Além disso, o throughput lento da rede afeta negativamente o throughput, mas também o desempenho do processamento de ativos, pois o carregamento e o salvamento de representações ficam lentos.
 
