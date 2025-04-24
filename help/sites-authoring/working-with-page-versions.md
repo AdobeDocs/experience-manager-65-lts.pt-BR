@@ -4,10 +4,11 @@ description: Criar, comparar e restaurar versões de uma página no Adobe Experi
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -20,6 +21,13 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
    * para desfazer uma alteração feita na página.
 * Comparar a versão atual de uma página com uma versão anterior:
    * para destacar diferenças no texto e nas imagens.
+
+>[!NOTE]
+>
+>Somente o conteúdo tem versão no repositório do AEM. Os recursos dinâmicos, como código, CSS e JavaScript, não têm controle de versão.
+>
+>* Ao visualizar versões, o conteúdo é exibido com o código atual, CSS e JavaScript do repositório.
+>* Ao restaurar versões, somente o conteúdo é restaurado e o código atual, CSS e JavaScript do repositório são aplicados a ele.
 
 ## Criar uma nova versão   {#creating-a-new-version}
 
