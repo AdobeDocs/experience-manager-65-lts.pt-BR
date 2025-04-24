@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 0%
+source-wordcount: '2961'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Para obter mais informações, consulte as [Diretrizes de dimensionamento de har
 
 ### Níveis de suporte {#support-levels}
 
-Este documento lista as plataformas de cliente e servidor compatíveis com o Adobe Experience Manager. A Adobe fornece vários níveis de suporte, tanto para configurações recomendadas quanto para outras configurações.
+Este documento lista as plataformas de cliente e servidor compatíveis com o Adobe Experience Manager. Adobe Systems fornece vários níveis de suporte, tanto para configurações recomendadas quanto para outras configurações.
 
 ### Configurações suportadas {#supported-configurations}
 
@@ -112,7 +112,7 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | MongoDB Enterprise 6.0 e 7.0 | Repositório | R: Suportado `[3, 4]` |
 | **Apache Lucene (Início rápido incorporado)** | Serviço Search | R: Suportado |
 
-1. &#39;Sistema de Arquivos&#39; inclui armazenamento em bloco compatível com POSIX. Inclui tecnologia de armazenamento em rede. Lembre-se de que o desempenho do sistema de arquivos pode variar e influencia o desempenho geral. Teste de carga do AEM com o sistema de arquivos remoto/de rede.
+1. O &quot;Arquivo System&quot; inclui blocos armazenamento compatíveis com o POSIX. Inclui tecnologia de armazenamento em rede. Lembre-se de que o desempenho do sistema de arquivos pode variar e influencia o desempenho geral. Teste de carga do AEM com o sistema de arquivos remoto/de rede.
 1. A fragmentação MongoDB não é compatível com o AEM.
 1. O WiredTiger do Mecanismo de Armazenamento MongoDB é compatível somente.
 
@@ -153,13 +153,14 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[2]` |
 | Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` |
 | Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
+| Microsoft® Windows Server 2022 | R: Suportado |
 
 1. Kernel 5 Linux® x e 6. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®.
 1. Distribuição Linux® suportada pela Adobe Managed Services.
 
    >[!NOTE]
    >
-   >Para servidores baseados em Linux (OSGI e pilha JEE), o complemento do AEM Forms requer dependências de tempo de execução como:
+   >Para servidores baseados em Linux, o complemento do AEM Forms requer dependências de tempo de execução como:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -182,7 +183,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 exige Dispatcher versão 4.3.2 ou posterior.
+A Dispatcher é o componente de armazenamento em cache e do balanceamento de carga. [Baixe a versão](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) mais recente do Dispatcher. Experience Manager 6.5 exige Dispatcher versão 4.3.2 ou posterior.
 
 Os seguintes servidores da Web são compatíveis com o uso com Dispatcher versão 4.3.2:
 
@@ -277,7 +278,7 @@ Geralmente, o suporte do navegador para sites renderizados pelo AEM Sites depend
 
 ## Notas adicionais da plataforma {#additional-platform-notes}
 
-Esta seção fornece notas especiais e informações mais detalhadas sobre a execução do Adobe Experience Manager e seus complementos.
+Esta seção fornece notas especiais e informações mais detalhadas sobre a execução de Adobe Experience Manager e seus complementos.
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
@@ -339,26 +340,26 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 >
 >A construção de vários nós pode resultar no esgotamento da memória em um ou mais nós antes que outros nós se esgotem. Quando ocorre esgotamento da memória, o kernel pode decidir eliminar processos (por exemplo, o Servidor de imagens ou o Servidor da plataforma) mesmo que haja memória disponível.
 >
->Portanto, a Adobe recomenda que, se você estiver executando um sistema desse tipo, desative o NUMA usando a opção de inicialização **numa=off** para evitar que o kernel elimine esses processos.
+>Portanto, Adobe Systems recomenda que, se você estiver executando esse sistema, desative o NUMA usando a opção **numa=off** boot para evitar que o kernel mate esses processos.
 
 >[!NOTE]
 >
->**O nome do host do servidor deve resolver:** Verifique se o nome do host do servidor pode ser resolvido como um endereço IP. Se isso não for possível, adicione o nome da host totalmente qualificado e o endereço IP em **/etc/hosts**:
+>**O host nome do servidor deve resolver:** verifique se o host nome do servidor pode ser resolvido em um endereço IP. Se isso não for possível, adicione o nome da host totalmente qualificado e o endereço IP em **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Trocar espaço igual a pelo menos o dobro da quantidade de memória física (RAM)
+* Espaço de troca igual a pelo menos o dobro da quantidade de memória física (RAM)
 
-Para usar Mídia dinâmica no Windows, instale o Microsoft® Visual Studio 2010, 2013 e 2015 redistribuído para x64 e x86.
+Para usar o Dynamic Media no Windows, instale o Microsoft® Visual Studio 2010, 2013 e 2015 redistribuível para x64 e x86.
 
 Para Windows x64:
 
 * Obtenha o Microsoft® Visual Studio 2010 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Faça com que o Microsoft® Visual Studio 2013 fique redistribuível a [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Receba a redistribuição do Microsoft® Visual Studio 2015 à [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Obtenha o Microsoft® Visual Studio 2015 redistribuível em [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Para Windows x86:
 
@@ -379,14 +380,10 @@ Para Windows x86:
  <tbody>
   <tr>
    <th><p><strong>Produto</strong></p> </th>
-   <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
+   <th><p><strong>Formatos compatíveis para conversão em PDF</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
-   <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -394,37 +391,17 @@ Para Windows x86:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (obsoleto)</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
-  </tr>
-  <tr>
    <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Projeto Microsoft® 2016 (obsoleto)<br /> </td>
-   <td>MPP</td>
+   <td>BAR</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -451,23 +428,23 @@ Para Windows x86:
 ### Requisitos para o AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
-* Processador 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
+* 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
 * 1 GB de RAM para 32 bits ou 2 GB de RAM para SO de 64 bits
-* Espaço em disco de 16 GB para espaço em disco de 32 ou 20 GB para sistema operacional de 64 bits
+* 16 GB de espaço em disco para 32 ou 20 GB de espaço em disco para SO de 64 bits
 * Memória gráfica - 128 MB de GPU (recomenda-se 256 MB)
 * 2,35 GB de espaço disponível em disco rígido
 * Resolução do monitor de 1024 X 768 pixels ou superior
-* aceleração de hardware Vídeo (opcional)
+* Aceleração de hardware de vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Privilégios administrativos para instalar o Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 32 bits para AEM Forms Designer de 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 64 bits para designer de AEM Forms de 64 bits (para pilha OSGI e JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 64 bits para AEM Forms Designer de 64 bits
 
 [Instalar e configurar AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Requisitos para Ativos AEM XMP metadados write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-O XMP write-back é compatível e habilitado para as seguintes plataformas e formatos de arquivo:
+XMP write-back é compatível e ativado para as seguintes plataformas e formatos de arquivo:
 
 * **Sistemas Operacionais:**
 
@@ -476,7 +453,7 @@ O XMP write-back é compatível e habilitado para as seguintes plataformas e for
    * Windows Server
    * macOS X (64 bits)
 
-* **Formatos de Arquivo**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
+* **Formatos** de Arquivo: JPEG, PNG, TIFF, PDF, INDD, IA e EPS.
 
 ### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
