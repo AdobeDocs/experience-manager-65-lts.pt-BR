@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '374'
+ht-degree: 5%
 
 ---
 
@@ -71,10 +71,6 @@ O [Oak](/help/sites-deploying/platform.md) é um repositório de conteúdo hier�
 </table>
 
 ## Interface {#ui}
-
-As práticas recomendadas para a interface do usuário são descritas aqui:
-
-[Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md)
 
 Atualmente, o AEM tem duas interfaces do usuário: clássica e otimizada para toque na mesma versão. Portanto, os clientes têm de tomar uma decisão sobre qual usar durante a implementação do projeto. Este documento tem como objetivo ajudar a encontrar a escolha certa.
 

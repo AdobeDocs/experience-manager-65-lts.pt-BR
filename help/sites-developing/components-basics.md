@@ -9,9 +9,10 @@ legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 0%
 
 ---
@@ -50,8 +51,6 @@ Antes de qualquer discussão séria começar sobre o desenvolvimento de componen
   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interface clássica**
 Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
-
-Consulte [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
 
 Os componentes podem ser implementados para suportar a interface habilitada para toque, a interface clássica ou ambas. Ao observar uma instância padrão, você também verá componentes prontos para uso que foram originalmente projetados para a interface clássica, para a interface habilitada para toque ou para ambas.
 

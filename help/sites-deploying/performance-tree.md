@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1075'
 ht-degree: 9%
 
 ---
@@ -154,7 +154,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 19</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR</a></td>
+   <td>Ver <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU em 100%</a></td>
   </tr>
   <tr>
    <td><strong>Etapa 20</strong></td>
@@ -288,7 +288,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapas 45<br /> e 47</strong><br /> </td>
    <td>Utilização de HTTP/2</td>
-   <td>Consulte a Sessão Gem para ver as etapas 37, 38 e 39. Além disso, confira <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">esta</a> publicação do fórum no suporte HTTP/2.<br /> </td>
+   <td>Consulte a Sessão Gem para ver as etapas 37, 38 e 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 49</strong></td>

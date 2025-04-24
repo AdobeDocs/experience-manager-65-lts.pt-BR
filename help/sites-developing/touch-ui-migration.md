@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -99,10 +100,6 @@ Ao migrar, esteja ciente das principais diferenças a seguir entre a interface c
 </table>
 
 Em outras palavras, migrar uma seção da sua interface do usuário da interface clássica para a interface de toque significa portar um *widget ExtJS* para um *componente Sling*. Para facilitar isso, a interface de toque é baseada na estrutura da interface de usuário do Granite, que já fornece alguns componentes do Sling para a interface de usuário (conhecidos como componentes da interface de usuário do Granite).
-
-Antes de começar, verifique o status e as recomendações relacionadas:
-
-* [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md)
 
 As noções básicas para o desenvolvimento da interface para toque fornecem uma base sólida:
 
