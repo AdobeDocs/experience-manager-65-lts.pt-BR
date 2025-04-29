@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 1%
 
 ---
@@ -347,8 +347,6 @@ Essas configurações são usadas para definir acionadores para replicação aut
   Quando marcado, o agente não força o controle da versão das páginas ativadas.
 
 ## Configurar os agentes de replicação {#configuring-your-replication-agents}
-
-Para obter informações sobre como conectar agentes de replicação à instância de Publicação usando MSSL, consulte [Replicação usando SSL Mútuo](/help/sites-deploying/mssl-replication.md).
 
 ### Configurar os agentes de replicação no ambiente do autor {#configuring-your-replication-agents-from-the-author-environment}
 
