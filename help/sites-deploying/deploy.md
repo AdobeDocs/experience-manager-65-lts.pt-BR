@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1376'
 ht-degree: 3%
 
 ---
@@ -38,20 +38,20 @@ Nesta página, você encontrará:
    * [Diretório de Instalação Desempacotado](#unpacked-install-directory)
    * [Iniciando e Interrompendo](#starting-and-stopping)
 
-<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
+Depois de se familiarizar com essas noções básicas, você pode encontrar informações mais avançadas e detalhadas nas seguintes subpáginas:
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md) -->
+* [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
+* [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
+* [Instalação Personalizada Independente](/help/sites-deploying/custom-standalone-install.md)
+* [Instalação do Servidor de Aplicativos](/help/sites-deploying/application-server-install.md)
+* [Início e Interrupção da Linha de Comando](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuração](/help/sites-deploying/configuring.md)
+* [Atualização para o AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
+* [Console da Web](/help/sites-deploying/web-console.md)
+* [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md)
+* [Práticas recomendadas](/help/sites-deploying/best-practices.md)
+* [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
 
 ## Conceitos básicos {#basic-concepts}
 
@@ -265,28 +265,28 @@ O AEM inicia e redireciona automaticamente o navegador da Web para a página apr
 
 ![entrar na tela](assets/screen_shot_2019-04-08at83533am.png)
 
-<!-- 
-After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-* [Authoring](/help/sites-authoring/first-steps.md)
-* [Administering](/help/sites-administering/home.md)
-* [Developing](/help/sites-developing/getting-started.md)
-* [Managing](/help/managing/best-practices.md)
+Depois de fazer logon, você terá acesso ao AEM. Para obter mais informações, dependendo da sua função, consulte o seguinte:
 
-## Advanced Deployment {#advanced-deployment}
+* [Criação  ](/help/sites-authoring/first-steps.md)
+* [Administração](/help/sites-administering/home.md)
+* [Desenvolvimento](/help/sites-developing/getting-started.md)
+* [Gerenciamento](/help/managing/best-practices.md)
 
-The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
+## Implantação avançada {#advanced-deployment}
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
- -->
+A seção acima deve fornecer uma boa compreensão das noções básicas de instalação do AEM. No entanto, a instalação de um sistema de produção completo do AEM pode envolver consideravelmente mais complexidade. Para obter uma cobertura completa da instalação avançada, consulte as seguintes subpáginas:
+
+* [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
+* [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
+* [Instalação Personalizada Independente](/help/sites-deploying/custom-standalone-install.md)
+* [Instalação do Servidor de Aplicativos](/help/sites-deploying/application-server-install.md)
+* [Início e Interrupção da Linha de Comando](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuração](/help/sites-deploying/configuring.md)
+* [Atualização para o AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
+* [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
+* [Console da Web](/help/sites-deploying/web-console.md)
+* [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md)
+* [Práticas recomendadas](/help/sites-deploying/best-practices.md)
+* [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
+
