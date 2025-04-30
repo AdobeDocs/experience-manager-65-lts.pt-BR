@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 5%
@@ -149,7 +150,7 @@ você pode usar qualquer número de curingas em uma query.
 
 >[!NOTE]
 >
->Você também pode usar a pesquisa do [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>Você também pode usar a pesquisa do [SQL2](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrando referências {#showing-references}
 

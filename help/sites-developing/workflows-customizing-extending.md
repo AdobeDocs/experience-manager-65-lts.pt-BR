@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3499'
 ht-degree: 1%
@@ -75,9 +76,9 @@ O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais
 
 Os seguintes objetos estão disponíveis (dependendo do tipo de etapa) nos scripts ECMA:
 
-* [ItemDeTrabalho](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html)
-* [WorkflowSession](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [DadosFluxoDeTrabalho](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) DadosFluxoDeTrabalho
+* [ItemDeTrabalho](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html)
+* [WorkflowSession](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [DadosFluxoDeTrabalho](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) DadosFluxoDeTrabalho
 * `args`: matriz com os argumentos do processo.
 
 * `sling`: para acessar outros serviços osgi.
@@ -256,7 +257,7 @@ Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo, adicione 
 
 Você pode usar metadados de fluxo de trabalho para manter as informações necessárias durante a vida útil do fluxo de trabalho - e entre etapas. Um requisito comum de etapas do fluxo de trabalho é criar dados persistentes para uso futuro ou recuperar os dados persistentes de etapas anteriores.
 
-Os metadados do fluxo de trabalho são armazenados em um objeto [`MetaDataMap`](#metadatamaps). A API Java fornece o método [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que forneça o objeto `MetaDataMap` apropriado. Este objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou script ECMA de um componente de etapa.
+Os metadados do fluxo de trabalho são armazenados em um objeto [`MetaDataMap`](#metadatamaps). A API Java fornece o método [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que forneça o objeto `MetaDataMap` apropriado. Este objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou script ECMA de um componente de etapa.
 
 #### Java {#java}
 
@@ -661,8 +662,8 @@ function getParticipant() {
 >
 >As seguintes etapas do processo de fluxo de trabalho aceitam pacotes de fluxo de trabalho para ativação de página em massa:
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 Você pode desenvolver etapas de fluxo de trabalho que obtêm os recursos do pacote e os processam. Os seguintes membros do pacote `com.day.cq.workflow.collection` fornecem acesso aos pacotes de fluxo de trabalho:
@@ -831,7 +832,7 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
    * `cq:icon`
 
-     Usado para especificar um [ícone Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) para a etapa.
+     Usado para especificar um [ícone Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) para a etapa.
 
    * `componentGroup`
 

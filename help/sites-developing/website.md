@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 1%
@@ -522,9 +523,9 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
    * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
-   * O [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
+   * O [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;

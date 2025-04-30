@@ -4,7 +4,8 @@ description: A segurança de aplicativos começa durante a fase de desenvolvimen
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -33,7 +34,7 @@ O mecanismo de proteção XSS fornecido pelo AEM é baseado na [Biblioteca Java�
 
 >[!NOTE]
 >
->A Adobe recomenda que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido pelo AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>A Adobe recomenda que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido pelo AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache](https://www.modsecurity.org), pode fornecer controle central e confiável sobre a segurança do ambiente de implantação e proteger contra ataques de script entre sites não detectados anteriormente.
 

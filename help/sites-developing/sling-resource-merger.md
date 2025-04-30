@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
@@ -33,7 +34,7 @@ Com o Sling Resource Merger, os recursos e/ou propriedades de sobreposição/sub
 
 >[!CAUTION]
 >
->O Sling Resource Merger e métodos relacionados só podem ser usados com o [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele só é apropriado para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
+>O Sling Resource Merger e métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html). Isso também significa que ele só é apropriado para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
 >
 >Sobreposições/substituições para outras áreas (incluindo outros aspectos de um componente habilitado para toque ou a interface clássica) envolvem copiar o nó e a estrutura apropriados do original para onde a personalização será definida.
 

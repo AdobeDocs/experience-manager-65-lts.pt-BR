@@ -5,7 +5,8 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c1f80437-275a-48b6-99b9-bec070577da0
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 23%
@@ -260,7 +261,7 @@ O uso pode ser diferente dependendo se você está usando um ambiente de autor o
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Para obter mais detalhes, consulte a [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
@@ -384,7 +385,7 @@ Retornado quando:
 
 Consulte esta página para obter referências detalhadas de API:
 
-* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
    * [Recursos disponíveis](/help/assets/mac-api-assets.md#assets)

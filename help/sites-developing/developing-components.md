@@ -10,7 +10,8 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimiz
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%
@@ -109,13 +110,13 @@ O comportamento de edição [de um componente é configurado](/help/sites-develo
 
 ## Configuração do comportamento de visualização {#configuring-the-preview-behavior}
 
-O cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo **Visualização** mesmo quando a página não é atualizada.
+O cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo **Visualização** mesmo quando a página não é atualizada.
 
 Para componentes com uma renderização sensível ao Modo WCM, eles precisam ser definidos para se atualizarem especificamente e, em seguida, confiar no valor do cookie.
 
 >[!NOTE]
 >
->Na interface habilitada para toque, somente os valores `EDIT` e `PREVIEW` são usados para o cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>Na interface habilitada para toque, somente os valores `EDIT` e `PREVIEW` são usados para o cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Criando e configurando uma caixa de diálogo {#creating-and-configuring-a-dialog}
 

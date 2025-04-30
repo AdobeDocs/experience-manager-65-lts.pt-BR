@@ -8,7 +8,8 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c044d541-24d6-4975-9b38-6a4317a16358
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 2%
@@ -268,7 +269,7 @@ Suporta extração de facetas e fornece dois buckets para ativos principais e se
 
 ### memberOf {#memberof}
 
-Localiza itens que são membros de uma [coleção de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Localiza itens que são membros de uma [coleção de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Este é um predicado somente de filtragem e não pode usar um índice de pesquisa. Não oferece suporte à extração de facetas.
 

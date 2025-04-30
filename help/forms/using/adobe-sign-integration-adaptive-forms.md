@@ -8,7 +8,8 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 1%
@@ -41,7 +42,7 @@ Você precisa do seguinte para integrar o [!DNL Adobe Sign] ao AEM [!DNL Forms]:
 
 * Uma [conta de desenvolvedor do Adobe Sign.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * Um servidor [habilitado para SSL](/help/sites-administering/ssl-by-default.md) do AEM [!DNL Forms].
-* Um [aplicativo de API do Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Um [aplicativo de API do Adobe Sign](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Credenciais (ID do Cliente e Segredo do Cliente) do aplicativo da API [!DNL Adobe Sign].
 * Ao reconfigurar, remova a configuração [!DNL Adobe Sign] existente das instâncias do autor e de publicação.
 * Use [chave de criptografia idêntica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) para as instâncias de autor e publicação.
@@ -111,7 +112,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    * widget_write
    * workflow_read
 
-   Para obter informações passo a passo sobre como definir as configurações OAuth para um aplicativo [!DNL Adobe Sign] e obter as chaves, consulte [Definir configurações oAuth para a documentação do desenvolvedor do aplicativo](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
+   Para obter informações passo a passo sobre como definir as configurações OAuth para um aplicativo [!DNL Adobe Sign] e obter as chaves, consulte [Definir configurações oAuth para a documentação do desenvolvedor do aplicativo](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
    ![Configuração do OAuth](assets/oauthconfig_new.png)
 

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -553,7 +554,7 @@ Para recursos que usam seu componente de página do aplicativo como o `sling:res
 
 ### Exemplo de implementação de PageInfoProvider {#example-pageinfoprovider-implementation}
 
-A classe Java a seguir implementa [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) e retorna a URL publicada do recurso de página atual.
+A classe Java a seguir implementa [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) e retorna a URL publicada do recurso de página atual.
 
 ```java
 package com.adobe.example;

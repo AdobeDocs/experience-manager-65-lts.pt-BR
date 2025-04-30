@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 1%
@@ -166,4 +167,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.
+Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.

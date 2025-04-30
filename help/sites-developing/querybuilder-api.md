@@ -10,7 +10,8 @@ tagskeywords: querybuilder
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -21,11 +22,11 @@ ht-degree: 0%
 
 A funcionalidade do [Construtor de consultas de compartilhamento de ativos](/help/assets/assets-finder-editor.md) é exposta por meio de uma API Java™ e uma API REST. Esta seção descreve essas APIs.
 
-O construtor de consultas do lado do servidor ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) aceita uma descrição de consulta, cria e executa uma consulta XPath, filtra opcionalmente o conjunto de resultados e também extrai facetas, se desejado.
+O construtor de consultas do lado do servidor ( [`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) aceita uma descrição de consulta, cria e executa uma consulta XPath, filtra opcionalmente o conjunto de resultados e também extrai facetas, se desejado.
 
-A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à função `jcr:contains()` no XPath.
+A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à função `jcr:contains()` no XPath.
 
-Para cada tipo de predicado, há um componente avaliador ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de facetas. É fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
+Para cada tipo de predicado, há um componente avaliador ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de facetas. É fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
 
 A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas sendo enviadas em JSON.
 
@@ -135,7 +136,7 @@ Por padrão, o Query Builder também forneceria o número de ocorrências. Depen
 
 Por exemplo, a interface pode adaptar a seguinte abordagem:
 
-* Obtenha e exiba a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou o total na resposta querybuilder.json) é menor que ou igual a 100;
+* Obtenha e exiba a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou o total na resposta querybuilder.json) é menor que ou igual a 100;
 * Defina `guessTotal` como 100 ao fazer a chamada para o Construtor de Consultas.
 
 * A resposta pode ter o seguinte resultado:
@@ -359,9 +360,9 @@ p.nodedepth=5
 
 Para obter mais predicados, consulte a [página Referência de predicado do Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
 
-Você também pode verificar o [Javadoc das `PredicateEvaluator` classes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). O Javadoc dessas classes contém a lista de propriedades que podem ser usadas.
+Você também pode verificar o [Javadoc das `PredicateEvaluator` classes](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). O Javadoc dessas classes contém a lista de propriedades que podem ser usadas.
 
-O prefixo do nome da classe (por exemplo, &quot; `similar`&quot; em [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a *propriedade principal* da classe. Essa propriedade também é o nome do predicado a ser usado na query (em minúsculas).
+O prefixo do nome da classe (por exemplo, &quot; `similar`&quot; em [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a *propriedade principal* da classe. Essa propriedade também é o nome do predicado a ser usado na query (em minúsculas).
 
 Para essas propriedades principais, você pode encurtar a consulta e usar &quot; `similar=/content/en`&quot; em vez da variante totalmente qualificada &quot; `similar.similar=/content/en`&quot;. O formulário totalmente qualificado deve ser usado para todas as propriedades não principais de uma classe.
 
@@ -437,13 +438,13 @@ As consultas podem ser armazenadas no repositório para que você possa usá-las
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Ao usar o método [`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), o `Query` fornecido é armazenado no repositório como um arquivo ou como uma propriedade de acordo com o valor do argumento `createFile`. O exemplo a seguir mostra como salvar um `Query` no caminho `/mypath/getfiles` como um arquivo:
+Ao usar o método [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), o `Query` fornecido é armazenado no repositório como um arquivo ou como uma propriedade de acordo com o valor do argumento `createFile`. O exemplo a seguir mostra como salvar um `Query` no caminho `/mypath/getfiles` como um arquivo:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Qualquer consulta armazenada anteriormente pode ser carregada do repositório usando o método [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
+Qualquer consulta armazenada anteriormente pode ser carregada do repositório usando o método [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -566,10 +567,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descrição** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder básico e API de consulta |
-| [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
-| [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
-| [com.day.cq.search.facets.buckets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Compartimentos (contidos nas facetas) |
-| [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | Avaliadores de predicado |
-| [com.day.cq.search.facets.extractors](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extratores de facetas (para avaliadores) |
-| [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | Gravador de ocorrência de resultado JSON para o servlet Querybuilder (/bin/querybuilder.json) |
+| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder básico e API de consulta |
+| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
+| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
+| [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Compartimentos (contidos nas facetas) |
+| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Avaliadores de predicado |
+| [com.day.cq.search.facets.extractors](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extratores de facetas (para avaliadores) |
+| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Gravador de ocorrência de resultado JSON para o servlet Querybuilder (/bin/querybuilder.json) |

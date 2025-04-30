@@ -7,13 +7,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: 61eadc4c005841e136d2aee11c0807c0149e1a92
+exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
 
 ---
-
 
 # Personalização e extensão de fragmentos de conteúdo{#customizing-and-extending-content-fragments}
 
@@ -243,7 +243,7 @@ Os fragmentos de conteúdo podem ser integrados a:
 
 Você pode usar a API do lado do servidor para acessar os fragmentos de conteúdo; consulte:
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ Você pode usar a API do lado do servidor para acessar os fragmentos de conteúd
 
 As três interfaces a seguir podem servir como pontos de entrada:
 
-* **Modelo de fragmento** ([ModeloDeFragmento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modelo de fragmento** ([ModeloDeFragmento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Use `FragmentTemplate.createFragment()` para criar um fragmento.
 
@@ -296,7 +296,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
       * Obter dados básicos (nome, título, descrição)
 
-* **Fragmento de Conteúdo** ([Fragmento de Conteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragmento de Conteúdo** ([Fragmento de Conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Essa interface permite trabalhar com um fragmento de conteúdo de forma abstrata.
 
@@ -328,7 +328,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
   As interfaces que representam os elementos principais de um fragmento são:
 
-   * **Elemento de Conteúdo** ([ElementoConteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento de Conteúdo** ([ElementoConteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -342,7 +342,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
       * Atalho para resolver variações (aplicar alguma lógica de fallback adicional específica de implementação se a variação especificada não estiver disponível para um elemento)
 
-   * **Variação de Conteúdo** ([VariaçãoDeConteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variação de Conteúdo** ([VariaçãoDeConteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo

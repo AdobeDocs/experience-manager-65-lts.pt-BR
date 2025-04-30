@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 1%
@@ -108,7 +109,7 @@ Ao criar páginas, o usuário geralmente deve selecionar entre os recursos (por 
 
 Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Por exemplo, se o componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) for usado para permitir que o usuário selecione o caminho para um recurso específico, os caminhos apresentados poderão ser filtrados da seguinte maneira:
 
-* Implemente o predicado personalizado implementando a interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implemente o predicado personalizado implementando a interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Especifique um nome para o predicado e consulte esse nome ao usar o `pathbrowser`.
 
 Para obter mais detalhes sobre como criar um predicado personalizado, consulte [Implementando um Avaliador de Predicado Personalizado para o Construtor de Consultas](/help/sites-developing/implementing-custom-predicate-evaluator.md).

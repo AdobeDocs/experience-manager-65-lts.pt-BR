@@ -9,13 +9,13 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 43d9effbe842c8114e31b2b27d6b9f60fc398d64
+exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 1%
 
 ---
-
 
 # Sincronização de usuário{#user-synchronization}
 
@@ -33,7 +33,7 @@ A partir do AEM 6.1, quando a sincronização de usuários é ativada, os dados 
 
 ## Distribuição Sling {#sling-distribution}
 
-Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
+Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
 
 Os benefícios da sincronização de usuários usando a distribuição Sling, em comparação à replicação tradicional, são:
 

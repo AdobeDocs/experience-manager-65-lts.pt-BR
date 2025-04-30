@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -314,7 +315,7 @@ Quando a configuração Mostrar/Ocultar é inválida, a configuração é fornec
 
 ### Desenvolvimento de scripts para uso com o Forms {#developing-scripts-for-use-with-forms}
 
-Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Você pode usar isso para ações como chamar um serviço antes que o formulário seja enviado e cancelar o serviço se ele falhar:
 

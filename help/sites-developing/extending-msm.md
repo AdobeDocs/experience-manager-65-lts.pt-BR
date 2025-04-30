@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 46300f72-730e-444c-8677-352a890e9910
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 0%
@@ -42,8 +43,8 @@ Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites
 
 O Gerenciamento de vários sites consiste nos seguintes pacotes:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Os principais objetos da API do MSM interagem da seguinte maneira (consulte também [Termos usados](/help/sites-administering/msm.md#terms-used)):
 
@@ -102,8 +103,8 @@ Os principais objetos da API do MSM interagem da seguinte maneira (consulte tamb
 
 Crie ações de sincronização personalizadas para usar com as configurações de implantação. Crie uma ação de sincronização quando as [ações instaladas](/help/sites-administering/msm-sync.md#installed-synchronization-actions) não atenderem aos seus requisitos específicos de aplicativo. Para fazer isso, crie duas classes:
 
-* Uma implementação da interface [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que executa a ação.
-* Um componente OSGI que implementa a interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e cria instâncias da classe `LiveAction`.
+* Uma implementação da interface [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que executa a ação.
+* Um componente OSGI que implementa a interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e cria instâncias da classe `LiveAction`.
 
 O `LiveActionFactory` cria instâncias da classe `LiveAction` para uma determinada configuração:
 
@@ -126,7 +127,7 @@ Use o nó de configuração `LiveAction` no repositório para armazenar informa�
 
 Por exemplo, um `LiveAction` precisa armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página do blueprint que armazena as informações. No tempo de execução, o `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
 
-O parâmetro do método [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) é um objeto `Resource`. Este objeto `Resource` representa o nó `cq:LiveSyncAction` dessa ação dinâmica na configuração de implantação. Consulte [Criando uma Configuração de Implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume, ao usar um nó de configuração, você deve adaptá-lo a um objeto `ValueMap`:
+O parâmetro do método [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) é um objeto `Resource`. Este objeto `Resource` representa o nó `cq:LiveSyncAction` dessa ação dinâmica na configuração de implantação. Consulte [Criando uma Configuração de Implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume, ao usar um nó de configuração, você deve adaptá-lo a um objeto `ValueMap`:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -144,9 +145,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Os seguintes objetos são fornecidos como parâmetros do método `execute` do objeto `LiveAction`:
 
-* Um objeto [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) que representa a origem da Live Copy.
+* Um objeto [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) que representa a origem da Live Copy.
 * Um objeto `Resource` que representa o destino da Live Copy.
-* O objeto [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) da live copy.
+* O objeto [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) da live copy.
 * O valor `autoSave` indica se `LiveAction` deve salvar as alterações feitas no repositório.
 
 * O valor de redefinição indica o modo de redefinição de implantação.
@@ -163,7 +164,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Os argumentos `Resource` podem ser objetos `null` ou `Resources` que não se adaptam a objetos `Node`, como objetos [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Os argumentos `Resource` podem ser objetos `null` ou `Resources` que não se adaptam a objetos `Node`, como objetos [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
 ## Criação de uma nova configuração de implantação {#creating-a-new-rollout-configuration}
 
