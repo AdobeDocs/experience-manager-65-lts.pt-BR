@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: afbaff634a0bc25f04e2ba4320c719d82db58c9b
+source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 65%
+source-wordcount: '2339'
+ht-degree: 64%
 
 ---
 
@@ -105,6 +105,13 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
    * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
 * **Texto multilinha**
    * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
+
+     >[!NOTE]
+     >
+     Por motivos de desempenho, não é recomendável ter mais de dez campos de Rich Text em um modelo.
+     >
+     Se necessário, é recomendável usar [fragmentos de conteúdo aninhados](#fragment-reference-nested-fragments).
+
 * **Número**
    * Adicionar um ou mais campos numéricos
 * **Booleano**
@@ -355,7 +362,7 @@ Para implementar a governança de conteúdo, você pode configurar **Políticas*
 
 >[!NOTE]
 >
-O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-authoring/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
+O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-authoring/templates.md#allowing-a-template-author) para uma página e suas filhas nas suas propriedades avançadas.
 
 Para configurar as **políticas** para **modelos de fragmento de conteúdo permitidos**:
 
