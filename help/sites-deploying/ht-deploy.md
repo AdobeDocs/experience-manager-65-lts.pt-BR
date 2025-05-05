@@ -20,7 +20,7 @@ Os tópicos a seguir descrevem como realizar tarefas específicas de implantaç�
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Como Limpar Fluxos de Trabalho e o Log de Auditoria](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Como Limpar Fluxos de Trabalho e o Log de Auditoria](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Dicas para ajustar o desempenho](/help/sites-deploying/configuring-performance.md)
 

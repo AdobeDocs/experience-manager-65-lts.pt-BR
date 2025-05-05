@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5 LTS. Para continuar usando as letras no AEM Forms 6.5 LTS, é necessário instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) mais recente.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5 LTS. Para continuar usando as letras no AEM Forms 6.5 LTS, é necessário instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) mais recente.
 
 O pacote de Compatibilidade do AEMFD também permite [usar os seguintes ativos do AEM Forms 6.5.22.0, 6.4, 6.3 e 6.2 no AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -31,9 +31,9 @@ Para obter mais informações, consulte [Compatibilidade do Assets com o AEM For
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
-Verifique se você tem o [pacote de Compatibilidade do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pré-instalado.
+Verifique se você tem o [pacote de Compatibilidade do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pré-instalado.
 
-1. Instale o [Pacote de compatibilidade](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) mais recente do AEM 6.5 LTS.
+1. Instale o [Pacote de compatibilidade](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) mais recente do AEM 6.5 LTS.
 
    Para obter mais informações sobre como carregar e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 

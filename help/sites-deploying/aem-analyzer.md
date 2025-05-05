@@ -102,7 +102,7 @@ O formato do relatório é:
 
 >[!NOTE]
 >
->Para saber mais sobre cada Categoria de Achados, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Para saber mais sobre cada Categoria de Achados, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Para entender os níveis de importância, siga a tabela abaixo:
 

@@ -32,13 +32,13 @@ Você pode [atualizar](../../forms/using/upgrade.md) para o [AEM Forms 6.5 LTS d
 
 **Se houver uma atualização no local**
 
-Se você executou uma [atualização no local](/help/sites-deploying/in-place-upgrade.md), a instância atualizada já tem os ativos e documentos. No entanto, antes de usar os ativos e documentos, você deve instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências).
+Se você executou uma [atualização no local](/help/sites-deploying/in-place-upgrade.md), a instância atualizada já tem os ativos e documentos. No entanto, antes de usar os ativos e documentos, você deve instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências).
 
 Em seguida, atualize os ativos e documentos [executando o Utilitário de migração](#runningmigrationutility).
 
 **Se houver uma instalação fora do local**
 
-Se esta for uma instalação fora do local (nova), antes de usar os ativos e documentos, instale o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências).
+Se esta for uma instalação fora do local (nova), antes de usar os ativos e documentos, instale o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) (inclui o pacote de Compatibilidade do Gerenciamento de Correspondências).
 
 Em seguida, importe o pacote de ativos (zip ou cmp) para a nova configuração e atualize os ativos e documentos [executando o Utilitário de migração](#runningmigrationutility). A Adobe recomenda criar ativos na nova configuração somente após executar o utilitário de migração.
 

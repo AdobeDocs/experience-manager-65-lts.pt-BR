@@ -65,7 +65,7 @@ Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, car
 
 Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para o Scene7. O fluxo de trabalho recomendado é o seguinte:
 
-1. No Dynamic Media Classic, [configure um carregamento e uma codificação de FTP agendados para o Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. No Dynamic Media Classic, [configure um carregamento e uma codificação de FTP agendados para o Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-files-using-via-ftp).
 1. No Experience Manager, acesse ativos de vídeo no WCM na guia **[!UICONTROL Scene7]** do Localizador de conteúdo.
 1. Crie com o componente de Vídeo **[!UICONTROL Scene7]**.
 
@@ -84,7 +84,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=pt-BR#video-presets-for-encoding-video-files).
    >
    >A Adobe recomenda que você selecione ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecione a opção **[!UICONTROL Codificação de vídeo adaptável]**.
 

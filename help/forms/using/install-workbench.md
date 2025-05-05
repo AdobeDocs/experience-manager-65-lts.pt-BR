@@ -99,7 +99,7 @@ Espaço em disco para instalação:
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_br).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 

@@ -96,7 +96,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  e clique **[!UICONTROL em Fazer upload do pacote]** para upload o pacote.
 1. Selecione o pacote e clique **[!UICONTROL em Instalar]**.
 
-   Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) de AEM Forms.
+   Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) de AEM Forms.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de interromper o AEM Forms Server, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
 

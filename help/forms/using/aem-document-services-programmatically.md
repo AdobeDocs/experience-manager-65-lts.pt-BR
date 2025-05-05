@@ -25,7 +25,7 @@ Amostras e exemplos neste documento ajudam você a entender e usar os Serviços 
 
 * Antes de usar as APIs de serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Baixe e configure o [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) com seu projeto maven do AEM. As classes de cliente necessárias para criar projetos Maven usando os Serviços de documento da AEM estão disponíveis lá.
+* Baixe e configure o [AEM Forms Client SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) com seu projeto maven do AEM. As classes de cliente necessárias para criar projetos Maven usando os Serviços de documento da AEM estão disponíveis lá.
 
 * Saiba [como criar seu projeto do AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -67,7 +67,7 @@ Você pode executar as seguintes operações usando o serviço DocAssurance:
 
 >[!NOTE]
 >
->Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Adicionar um campo de assinatura invisível {#adding-an-invisible-signature-field}
 
@@ -4462,7 +4462,7 @@ O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos
 O GeneratePDFService fornece APIs para converter vários formatos de arquivo, como .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsoleto), .jpg, .bmp, .tif, .png, .html e muitos outros formatos de arquivo para o PDF. Ela também fornece APIs para exportar o PDF para vários formatos de arquivo e otimizar PDFs. O serviço oferece suporte às seguintes APIs:
 
 * **createPDF**: converte um tipo de arquivo suportado para um documento PDF. É compatível com formatos de arquivo como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
-* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
+* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
 
 * **otimizePDF**: otimiza o documento do PDF e também converte um documento do PDF de um tipo para outro. O método aceita um documento PDF como entrada.
 * **htmlToPdf2**: converte uma página do HTML em um documento do PDF. Ele aceita o URL da página do HTML como entrada.
