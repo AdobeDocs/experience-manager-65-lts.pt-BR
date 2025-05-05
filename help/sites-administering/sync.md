@@ -303,9 +303,11 @@ Se a ID do Sling de uma instância de publicação corresponder à ID do Sling d
    * procure e exclua o arquivo chamado *sling.id.file*
 
       * por exemplo, em um sistema Linux®:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * por exemplo, em um sistema Windows:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. iniciar a instância de publicação

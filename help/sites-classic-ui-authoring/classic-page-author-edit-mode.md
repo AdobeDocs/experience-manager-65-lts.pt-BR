@@ -188,7 +188,7 @@ Opcional. O número máximo de itens que você deseja usar no Carrossel.
 
 >[!NOTE]
 >
-Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no AEM DAM.
+>Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe ativos digitais no AEM DAM.
 
 ### Gráfico {#chart}
 
@@ -223,9 +223,9 @@ A seguir, há um exemplo de dados de gráfico seguido pelo gráfico de Barras re
 
 >[!CAUTION]
 >
-A funcionalidade completa do Gerenciamento de fragmentos de conteúdo só está disponível com a interface otimizada para toque.
+>A funcionalidade completa do Gerenciamento de fragmentos de conteúdo só está disponível com a interface otimizada para toque.
 >
-O componente Fragmento de Conteúdo pode ser visto no sidekick clássico da interface do usuário, mas outras funções não estão disponíveis.
+>O componente Fragmento de Conteúdo pode ser visto no sidekick clássico da interface do usuário, mas outras funções não estão disponíveis.
 
 [Fragmentos de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) são criados e gerenciados como ativos independentes da página. Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
@@ -277,7 +277,7 @@ O aplicativo externo está integrado ao sistema de parágrafo da página do AEM;
 
 >[!NOTE]
 >
-Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo, a [Integração de Portlets](/help/sites-administering/aem-as-portal.md).
+>Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo, a [Integração de Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -331,11 +331,11 @@ Você pode arrastar e soltar uma imagem do [Localizador de Conteúdo](/help/site
 
 >[!NOTE]
 >
-O progresso do upload não pode ser monitorado com o Internet Explorer.
+>O progresso do upload não pode ser monitorado com o Internet Explorer.
 >
-Os usuários do Internet Explorer devem carregar a imagem e clicar em **Ok**. Em seguida, reabra a imagem para ver o arquivo carregado na visualização e poder executar modificações (ou seja, recortar).
+>Os usuários do Internet Explorer devem carregar a imagem e clicar em **Ok**. Em seguida, reabra a imagem para ver o arquivo carregado na visualização e poder executar modificações (ou seja, recortar).
 >
-Consulte a seção [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obter mais informações sobre os recursos do HTML5 usados pelo AEM.
+>Consulte a seção [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obter mais informações sobre os recursos do HTML5 usados pelo AEM.
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -387,7 +387,7 @@ A imagem final (com **Título** e **Descrição**) pode ser mostrada como:
 
 >[!CAUTION]
 >
-Embora o componente de Contêiner de layout esteja disponível na interface clássica, sua funcionalidade completa está disponível somente na interface habilitada para toque. Para obter detalhes, consulte [Layout responsivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+>Embora o componente de Contêiner de layout esteja disponível na interface clássica, sua funcionalidade completa está disponível somente na interface habilitada para toque. Para obter detalhes, consulte [Layout responsivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Lista {#list}
 
@@ -651,9 +651,9 @@ O componente de apresentação de slides exibe repetidamente cada um em sequênc
 
 >[!NOTE]
 >
-O componente **Tabela** é baseado no [editor de Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), assim como no componente **[Texto](#text)**.
+>O componente **Tabela** é baseado no [editor de Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), assim como no componente **[Texto](#text)**.
 >
-A Adobe recomenda que você use o componente **Tabela** para tabelas, embora eles também possam ser construídos com o componente **Texto**.
+>A Adobe recomenda que você use o componente **Tabela** para tabelas, embora eles também possam ser construídos com o componente **Texto**.
 
 O componente **Tabela** é pré-configurado para permitir que você construa, preencha e formate uma tabela. Usando a caixa de diálogo, você pode configurar a tabela e criar o conteúdo do zero ou copiando e colando uma planilha ou uma tabela de um editor externo, como Excel, OpenOffice ou Notepad.
 
@@ -686,9 +686,9 @@ Para obter mais informações sobre como aplicar tags, visite [Usando Tags](/hel
 
 >[!NOTE]
 >
-O componente **Texto** é baseado no [editor de Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), como é o componente **[Tabela](#table)**.
+>O componente **Texto** é baseado no [editor de Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), como é o componente **[Tabela](#table)**.
 >
-A Adobe recomenda que você use o componente **Tabela** para tabelas, embora eles também possam ser construídos com o componente **Texto**.
+>A Adobe recomenda que você use o componente **Tabela** para tabelas, embora eles também possam ser construídos com o componente **Texto**.
 
 O componente de Texto permite inserir um bloco de texto usando um editor WYSIWYG, com funcionalidade fornecida pelo [editor de Rich Text](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Uma seleção de ícones permite formatar o texto, incluindo características de fonte, alinhamento, links, listas e recuo.
 
@@ -798,11 +798,11 @@ Depois de colocar uma instância do componente na página, você pode configurar
 
 >[!NOTE]
 >
-Os formatos compatíveis incluem:
+>Os formatos compatíveis incluem:
 >
-* `.mp4`
-* `Ogg`
-* `FLV` (vídeo em Flash)
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (vídeo em Flash)
 >
 
 ## Colunas {#columns}
@@ -837,7 +837,7 @@ Os componentes de formulário são usados para criar formulários para os visita
 
 >[!NOTE]
 >
-Consulte a [Ajuda do AEM Forms](/help/forms/using/introduction-aem-forms.md) para obter informações sobre o AEM Forms.
+>Consulte a [Ajuda do AEM Forms](/help/forms/using/introduction-aem-forms.md) para obter informações sobre o AEM Forms.
 
 Os Forms são criados a partir de vários componentes diferentes:
 
@@ -859,7 +859,7 @@ O exemplo a seguir mostra um formulário. Ele é composto pelo componente **Form
 
 >[!NOTE]
 >
-Informações sobre desenvolvimento e personalização de formulários estão disponíveis na [página Desenvolvimento de Forms](/help/sites-developing/developing-forms.md). Essa personalização de formulário inclui a adição de ações, restrições, pré-carregamento de campos e o uso de scripts para chamar um serviço para ação, entre outros.
+>Informações sobre desenvolvimento e personalização de formulários estão disponíveis na [página Desenvolvimento de Forms](/help/sites-developing/developing-forms.md). Essa personalização de formulário inclui a adição de ações, restrições, pré-carregamento de campos e o uso de scripts para chamar um serviço para ação, entre outros.
 
 ### Configurações comuns aos (muitos) componentes de formulário {#settings-common-to-many-form-components}
 
@@ -885,7 +885,7 @@ Ao configurar qualquer um dos componentes de formulário, as seguintes guias est
 
 >[!NOTE]
 >
-Os campos que você vê variam significativamente dependendo do componente individual.
+>Os campos que você vê variam significativamente dependendo do componente individual.
 
 Essas guias fornecem os parâmetros necessários. As guias dependem do tipo de componente individual, mas podem incluir o seguinte:
 
@@ -1194,9 +1194,9 @@ Você pode especificar vários parâmetros, incluindo um título, uma descriçã
 
 >[!NOTE]
 >
-Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar a lista de grupos de caixas de seleção com valores.
+>Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar a lista de grupos de caixas de seleção com valores.
 >
-Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Detalhes do cartão de crédito {#credit-card-details}
 
@@ -1214,9 +1214,9 @@ Você pode especificar um título e itens para serem exibidos na lista. Usando o
 
 >[!NOTE]
 >
-Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar a lista suspensa com valores.
+>Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar a lista suspensa com valores.
 >
-Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Upload de arquivo {#file-upload}
 
@@ -1234,9 +1234,9 @@ Este componente permite criar um campo oculto. Esses campos ocultos podem ser us
 
 >[!NOTE]
 >
-Você também pode personalizar o formulário para mostrar ou ocultar componentes específicos do formulário de acordo com o valor de outros campos no formulário. Alterar a visibilidade de um campo de formulário é útil quando o campo é necessário somente em condições específicas.
+>Você também pode personalizar o formulário para mostrar ou ocultar componentes específicos do formulário de acordo com o valor de outros campos no formulário. Alterar a visibilidade de um campo de formulário é útil quando o campo é necessário somente em condições específicas.
 >
-Consulte [Mostrando e ocultando componentes de formulário](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>Consulte [Mostrando e ocultando componentes de formulário](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Botão de imagem {#image-button}
 
@@ -1285,9 +1285,9 @@ Você pode especificar o nome do elemento junto com um título e uma descrição
 
 >[!NOTE]
 >
-Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar o grupo de opções com valores.
+>Usando o **Caminho de Carregamento de Itens**, você pode pré-carregar o grupo de opções com valores.
 >
-Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consulte [Pré-Carregando Campos de Formulário com Vários Valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Botão Enviar {#submit-button}
 

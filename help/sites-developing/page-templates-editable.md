@@ -556,6 +556,7 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
    * Definindo a propriedade de status no nó `jcr:content`.
 
       * Por exemplo, em:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina a propriedade:
@@ -568,6 +569,7 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
 
    * [Defina os caminhos de Modelo permitidos nas **Propriedades de Página**](/help/sites-authoring/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
    * Defina a propriedade:
+
      `cq:allowedTemplates`
 No nó `jcr:content` da ramificação necessária.
 
