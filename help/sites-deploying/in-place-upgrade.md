@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 
 ## Pré-requisitos de migração {#migration-prerequisites}
 
-* **Versão mínima do Java necessária:** verifique se o Java™ 17 da Oracle está instalado no sistema.
+* **Versão mínima do Java necessária:** verifique se o Java™ 17/21 da Oracle está instalado no sistema.
 
 ## Preparação do arquivo jar do AEM Quickstart {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Agora, inicie a instância do AEM usando o novo comando determinado usando as in
 
 >[!NOTE]
 >
->O suporte para alguns argumentos do Java 8/11 foi removido no Java 17, consulte [Documentos do Oracle Java™ 17](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) e [Considerações sobre argumentos Java&amp;trade do AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>O suporte para alguns argumentos do Java 8/11 foi removido no Java 17/21, consulte [documentos do Oracle Java™ 17](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [documentos do Oracle Java™ 21](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) e [Considerações de argumentos Java&amp;trade para o AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Para executar a atualização, é importante iniciar o AEM usando o arquivo jar para ativar a instância.
 

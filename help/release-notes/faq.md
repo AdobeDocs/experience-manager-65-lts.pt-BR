@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Esta página é destinada a responder algumas perguntas frequentes sobre o AEM 6
 
 ## Por que a Adobe lançou a versão 6.5 LTS para AEM?
 
-A Adobe continua profundamente comprometida com a segurança e a estabilidade dos aplicativos que oferece. O Suporte de longo prazo do AEM 6.5 estabelece a base para atualizações futuras do AEM 6.5. Notavelmente, o AEM 6.5 LTS inclui suporte para o Oracle Java 17 e será a ramificação da AEM que receberá novos recursos e inovações da AEM.
+A Adobe continua profundamente comprometida com a segurança e a estabilidade dos aplicativos que oferece. O Suporte de longo prazo do AEM 6.5 estabelece a base para atualizações futuras do AEM 6.5. Notavelmente, o AEM 6.5 LTS inclui suporte para o Oracle Java 17 e Java 21, e será a ramificação da AEM que receberá novos recursos e inovações da AEM.
 
 ## Sou cliente local, o que acontece se eu não atualizar para o AEM 6.5 LTS?
 
-O AEM 6.5 LTS inclui atualizações importantes de segurança e estabilidade, incluindo suporte para o Oracle Java 17. Embora a Adobe continue a oferecer suporte ao AEM 6.5 pelo menos nos próximos 2 anos, recomenda-se que as organizações comecem a planejar uma atualização para o 6.5 LTS.
+O AEM 6.5 LTS inclui atualizações importantes de segurança e estabilidade, incluindo suporte para Oracle Java 17 e Java 21. Embora a Adobe continue a oferecer suporte ao AEM 6.5 pelo menos nos próximos 2 anos, recomenda-se que as organizações comecem a planejar uma atualização para o 6.5 LTS.
 
 ## Minhas personalizações e integrações existentes serão afetadas?
 
