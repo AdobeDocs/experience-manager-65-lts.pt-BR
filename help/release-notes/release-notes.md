@@ -1,14 +1,14 @@
 ---
 title: Notas de versão atuais do Adobe Experience Manager 6.5 LTS
-description: Estas são as Notas de versão atuais do Adobe Experience Manager 6.5 LTS.
+description: Encontre informações sobre a versão atual do Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 22%
+source-wordcount: '1016'
+ht-degree: 16%
 
 ---
 
@@ -32,13 +32,13 @@ A lista abaixo fornece uma visão geral, enquanto as páginas subsequentes lista
 
 A plataforma do [!DNL Adobe Experience Manager] 6.5 LTS se baseia nas versões atualizadas da estrutura baseada em OSGi (Apache Sling e Apache Felix) e do Repositório de Conteúdo Java™: Apache Jackrabbit Oak 1.68.x.
 
-O Quickstart usa o Eclipse Jetty 11.0.x como mecanismo de servlet.
+O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o Quickstart.
 
 #### Suporte para Java™  {#java-support}
 
 * Suporte para Java™ 17 e Java™ 21.
 * Para obter o desempenho ideal, substitua os valores de GC padrão por outros valores. Para obter mais informações, consulte a seção [instalar e atualizar](/help/sites-deploying/custom-standalone-install.md).
-* As atualizações de manutenção do Java™ 17 e do Java™ 21 são distribuídas pela Adobe para uso do cliente em projetos relacionados à AEM, quando não estão disponíveis publicamente na Oracle.
+* A Adobe distribui atualizações de manutenção do Java™ 17 e do Java™ 21 para uso do cliente em projetos relacionados à AEM, quando não estão disponíveis publicamente na Oracle.
 
 #### Empacotamento Uberjar {#uber-jar-packaging}
 
@@ -52,7 +52,7 @@ O Quickstart usa o Eclipse Jetty 11.0.x como mecanismo de servlet.
 
 Para obter os requisitos de instalação, consulte [instruções de instalação](/help/sites-deploying/custom-standalone-install.md).
 
-Para obter instruções detalhadas, consulte [documentação de atualização](/help/sites-deploying/upgrade.md).
+Para obter instruções detalhadas, consulte a [documentação de atualização](/help/sites-deploying/upgrade.md).
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -64,18 +64,19 @@ Encontre a matriz completa de plataformas compatíveis, incluindo o nível de su
 
 ## Recursos obsoletos e removidos {#deprecated-and-removed-features}
 
-A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
+A Adobe analisa continuamente os recursos do produto para melhorar o valor para o cliente, modernizando ou substituindo recursos mais antigos. Essas alterações são feitas com atenção especial à compatibilidade com versões anteriores.
 
 Para comunicar a remoção ou substituição iminente dos recursos do Adobe Experience Manager (AEM), as seguintes regras de aplicam:
 
 1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não estão aprimorados.
-1. A remoção de recursos obsoletos ocorre na versão principal a seguir, o mais tardar. A data de destino real para remoção será anunciada posteriormente.
+1. A remoção de recursos obsoletos ocorre na versão principal a seguir, o mais tardar. A data de destino real para remoção está planejada para ser anunciada posteriormente.
 
 Esse processo oferece ao usuário ao menos um ciclo de versão para adaptar sua implementação a uma nova versão ou sucessor de uma funcionalidade descontinuada, antes da remoção.
 
 ### Recursos obsoletos {#deprecated-features}
 
-Esta seção lista os recursos e funcionalidades marcados como obsoletos no AEM 6.5 LTS. Geralmente, os recursos planejados para remoção em uma versão futura são definidos como obsoletos primeiro, com uma alternativa fornecida.
+Esta seção lista os recursos e funcionalidades que o Adobe descontinuou no AEM 6.5 LTS. Normalmente, o Adobe descontinuará os recursos antes de removê-los em uma versão futura e fornece uma alternativa.
+
 
 Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua implementação atual, bem como a planejar a alteração de sua implementação para usar a alternativa fornecida.
 
@@ -89,9 +90,9 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5 LTS. As ve
 
 | Área | Destaque | Substituição | Versão (SP) |
 |--- |--- |--- |--- |
-| Commerce | O AEM CIF Classic não é compatível. | Você deve migrar para o [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
+| Commerce | O AEM CIF Classic não é compatível. | Migrar para o [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluções | Social/Communities não são compatíveis. | Nenhuma substituição disponível. | 6.5 LTS GA |
-| Screens | O Screens não é compatível. | Nenhuma substituição disponível. | 6.5 LTS GA |
+| Screens | Screens não são compatíveis. | Nenhuma substituição disponível. | 6.5 LTS GA |
 | Ativos | Não há suporte para `dam-pim` e `dam-rating`, pois os conjuntos são dependentes de redes sociais. | Nenhuma substituição disponível. | 6.5 LTS GA |
 | Ativos | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` foi removido. | Use a api alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` que foi adicionada. | 6.5 LTS GA |
 | Portal | O AEM Portal Diretor não é compatível. | Nenhuma substituição disponível. | 6.5 LTS GA |
@@ -106,21 +107,38 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5 LTS. As ve
 | Origem aberta | `org.apache.commons.io` pacotes foram exportados de `org.apache.commons.commons-io`. | Nenhuma alteração necessária. | 6.5 LTS GA |
 | Origem aberta | `javax.mail` pacotes estão sendo exportados do pacote `com.sun.javax.mail`. | Nenhuma alteração necessária. | 6.5 LTS GA |
 | Origem aberta | `org.apache.jackrabbit.api` pacotes agora são exportados do pacote `org.apache.jackrabbit.oak-jackrabbit-api`. | Nenhuma alteração necessária. | 6.5 LTS GA |
-| Origem aberta | Não há suporte para `com.github.jknack.handlebars` | Escolher a [versão](https://mvnrepository.com/artifact/com.github.jknack/handlebars) relevante | 6.5 LTS GA |
+| Origem aberta | Não há suporte para `com.github.jknack.handlebars` | Escolha a [versão](https://mvnrepository.com/artifact/com.github.jknack/handlebars) relevante | 6.5 LTS GA |
 
 ## Problemas conhecidos {#known-issues}
 
+### Problema com o pacote de script JSP no AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA**
+
+AEM 6.5.21, 6.5.22, 6.5.23 e AEM 6.5 LTS GA são fornecidos com o pacote `org.apache.sling.scripting.jsp:2.6.0`, que contém um problema conhecido. O problema normalmente ocorre em carga alta quando a instância do AEM lida com muitas solicitações simultâneas.
+
+Quando esse problema ocorrer, uma das seguintes exceções poderá aparecer nos logs de erros junto com referências a `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Quando esse erro ocorre, o único método de recuperação é reiniciar a instância do AEM.
+
+Entre em contato com o Suporte ao cliente da Adobe e consulte esta nota de versão para obter uma resolução.
+
 ### Falha de conexão do Dispatcher com recurso somente SSL {#ssl-only-feature}
 
-Ao ativar o recurso somente SSL em implantações do AEM, há um problema conhecido que afeta a conectividade entre as instâncias do Dispatcher e do AEM. Após habilitar esse recurso, as verificações de integridade podem falhar e a comunicação entre as instâncias do Dispatcher e do AEM pode ser interrompida.
+Ao ativar o recurso somente SSL em implantações do AEM, há um problema conhecido que afeta a conectividade entre as instâncias do Dispatcher e do AEM. Após ativar esse recurso, as verificações de integridade podem falhar e a comunicação entre as instâncias do Dispatcher e do AEM pode ser interrompida.
 
 **Impacto:**
+
 * Falhas de verificação de integridade com códigos de resposta HTTP 500
 * Tráfego interrompido entre instâncias do Dispatcher e do AEM
-* O conteúdo não pode ser distribuído corretamente pelo dispatcher
+* O conteúdo não pode ser distribuído corretamente por meio do Dispatcher
 
 **Ambientes Afetados:**
-* Implantações do AEM com configurações do dispatcher
+
+* Implantações do AEM com configurações do Dispatcher
 * Sistemas em que o recurso somente SSL foi ativado
 
 **Solução:**
@@ -131,5 +149,5 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
