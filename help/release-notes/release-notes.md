@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
+source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 16%
@@ -111,7 +111,7 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5 LTS. As ve
 
 ## Problemas conhecidos {#known-issues}
 
-### Problema com o pacote de script JSP no AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA**
+### Problema com o pacote de script JSP no AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA
 
 AEM 6.5.21, 6.5.22, 6.5.23 e AEM 6.5 LTS GA são fornecidos com o pacote `org.apache.sling.scripting.jsp:2.6.0`, que contém um problema conhecido. O problema normalmente ocorre em carga alta quando a instância do AEM lida com muitas solicitações simultâneas.
 
@@ -149,5 +149,5 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
