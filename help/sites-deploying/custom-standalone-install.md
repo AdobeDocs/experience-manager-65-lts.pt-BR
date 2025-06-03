@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,6 @@ Isso é especialmente interessante para vários casos de uso:
 * Durante o desenvolvimento, pode ser mais fácil colocar algo no sistema de arquivos.
 * Se algo der errado, o console da Web e o repositório não estarão acessíveis. Com isso, você pode colocar pacotes adicionais nesse diretório e eles devem ser instalados.
 * A pasta `crx-quickstart/install` pode ser criada antes que o início rápido seja iniciado, e pacotes adicionais podem ser colocados lá.
-
->[!NOTE]
->
->Consulte também [Como instalar pacotes do CRX automaticamente na inicialização do servidor](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) para obter exemplos.
 
 ## Instalação e inicialização do Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
