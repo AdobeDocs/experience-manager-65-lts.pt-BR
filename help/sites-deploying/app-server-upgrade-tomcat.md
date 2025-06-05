@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 ### Pré-requisitos de migração {#migration-prerequisites}
 
 * **Versão mínima exigida do Java**: verifique se você instalou o Oracle® JRE 17/21 no servidor Tomcat.
-* **Servidor Tomcat**: a versão do servidor Tomcat necessária para o 6.5 LTS é **11.0.x**.
+* **Servidor Tomcat**: as versões do servidor Tomcat para AEM 6.5 LTS com suporte são **10.0.x** e **10.1.x**.
 
 ### Execução da atualização {#performing-the-upgrade}
 
