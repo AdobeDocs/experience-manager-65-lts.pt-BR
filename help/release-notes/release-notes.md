@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
+source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 16%
+source-wordcount: '1002'
+ht-degree: 17%
 
 ---
 
@@ -122,9 +122,7 @@ Quando esse problema ocorrer, uma das seguintes exceções poderá aparecer nos 
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-Quando esse erro ocorre, o único método de recuperação é reiniciar a instância do AEM.
-
-Entre em contato com o Suporte ao cliente da Adobe e consulte esta nota de versão para obter uma resolução.
+Um hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) está disponível para resolver esse problema.
 
 ### Falha de conexão do Dispatcher com recurso somente SSL {#ssl-only-feature}
 
@@ -142,12 +140,12 @@ Ao ativar o recurso somente SSL em implantações do AEM, há um problema conhec
 * Sistemas em que o recurso somente SSL foi ativado
 
 **Solução:**
-Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da Adobe. Um hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) está disponível para resolver esse problema. Não tente ativar recursos somente SSL até aplicar o hotfix necessário.
+Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da Adobe. Um hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) está disponível para resolver esse problema. Não tente ativar recursos somente SSL até aplicar o hotfix necessário.
 
 ## Sites restritos{#restricted-sites}
 
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
