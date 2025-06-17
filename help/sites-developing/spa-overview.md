@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: b179ca99-c9c6-435a-b000-c7f3fd15cd53
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
 
 ---
+
 
 # Visão geral do editor de SPA{#spa-editor-overview}
 
@@ -39,7 +42,7 @@ Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 ## Design {#design}
 
-O componente de página para um SPA não fornece os elementos HTML de seus componentes secundários por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
+O componente de página para um SPA não fornece os elementos HTML de seus componentes filhos por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
 
 ### Gerenciamento do modelo de página {#page-model-management}
 

@@ -9,12 +9,15 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # Desenvolvimento de SPAs para o AEM{#developing-spas-for-aem}
 
@@ -63,7 +66,7 @@ Qualquer roteamento estático funciona contra o [princípio de portabilidade](/h
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Modelos de design de SPA {#spa-design-models}
 

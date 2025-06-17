@@ -4,12 +4,15 @@ description: O componente RemotePage é um componente de página personalizado p
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
 
 ---
+
 
 # O componente RemotePage {#remote-page-component}
 

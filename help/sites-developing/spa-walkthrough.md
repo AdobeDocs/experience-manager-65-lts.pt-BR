@@ -6,7 +6,9 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: cd23626858b9061228718a0455c8dd0812de92b3
+exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 65%
@@ -147,11 +149,11 @@ Experimentar como um SPA se comporta para o usuário final e, em seguida, inspec
 
    Observe a estrutura das páginas, incluindo a navegação para páginas secundárias, widget de tempo e artigos.
 
-1. Navegue até uma página secundária usando o menu e veja que a página é carregada imediatamente sem a necessidade de uma atualização.
+1. Navegue até uma página filha usando o menu e veja que a página é carregada imediatamente sem a necessidade de uma atualização.
 
    ![Etapa 2](assets/spa-walkthrough-step-1-2.png)
 
-1. Abra as ferramentas do desenvolvedor incorporadas ao seu navegador e monitore a atividade da rede à medida que navega pelas páginas secundárias.
+1. Abra as ferramentas do desenvolvedor integradas ao seu navegador e monitore a atividade da rede à medida que navega pelas páginas filhas.
 
    ![Etapa 3](assets/spa-walkthrough-step-1-3.png)
 
@@ -159,7 +161,7 @@ Experimentar como um SPA se comporta para o usuário final e, em seguida, inspec
 
    O SPA gerencia o conteúdo e o roteamento totalmente no lado do cliente.
 
-Mas se a página não é recarregada ao navegar pelas páginas secundárias, como ela é carregada?
+Mas se a página não é recarregada ao navegar pelas páginas filhas, como ela é carregada?
 
 A próxima seção, [Carregando um Aplicativo de SPA](#loading-an-spa-application), detalha os mecanismos de carregamento do SPA e como o conteúdo pode ser carregado de forma síncrona e assíncrona.
 
@@ -223,7 +225,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Usando as ferramentas de desenvolvedor incorporadas do seu navegador, inspecione o conteúdo da página. Usando a ferramenta de seleção, selecione um componente editável na página e visualize os detalhes do elemento.
+1. Usando as ferramentas de desenvolvedor integradas do seu navegador, inspecione o conteúdo da página. Usando a ferramenta de seleção, selecione um componente editável na página e visualize os detalhes do elemento.
 
    O componente tem um novo atributo de dados `data-cq-data-path`.
 
