@@ -1,15 +1,13 @@
 ---
 title: Fluxo de trabalho centrado na Forms no OSGi - Referência da etapa
 description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite criar rapidamente fluxos de trabalho baseados em formulários adaptáveis.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: publish
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '7640'
+source-wordcount: '7604'
 ht-degree: 0%
 
 ---
@@ -18,14 +16,14 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | Este artigo |
 
 Use modelos de fluxo de trabalho para converter uma lógica de negócios em um processo repetitivo automatizado. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Etapas do Forms Workflow {#forms-workflow-steps}
 
-As etapas do Forms Workflow executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem criar rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Você também pode usar as etapas do Forms Workflow para iniciar serviços de documentos, integrar com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa do [complemento do AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para usar essas etapas em um fluxo de trabalho.
+As etapas do Forms Workflow executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem criar rapidamente formulários adaptáveis com base no fluxo de trabalho centrado no Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Você também pode usar as etapas do Forms Workflow para iniciar serviços de documentos, integrar com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms.
 
 As etapas de fluxo de trabalho centradas no Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Forms Essas etapas permitem criar rapidamente um fluxo de trabalho adaptável baseado em Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls.
 
@@ -88,7 +86,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
    * **Salvar modelo de layout usando:** Salve o modelo de layout usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados Documento. O [modelo de layout](../../forms/using/layout-design-details.md) faz referência a um arquivo XDP criado com o Forms Designer. Essa opção estará disponível somente se você selecionar Interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
 
 * **Atribuído > Opções de atribuição:** especifique o método para atribuir a tarefa a um usuário. Você pode atribuir a tarefa dinamicamente a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo específico da AEM.
-* **Seletor de Participante:** a opção estará disponível quando a opção **Dinamicamente para um usuário ou grupo** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada de Participante Dinâmico do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&amp;CID=RedirectAEMCommunityKautuk)
+* **Seletor de Participante:** a opção estará disponível quando a opção **Dinamicamente para um usuário ou grupo** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo.
 
 * **Participantes:** o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está selecionada no campo **Seletor de Participantes**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 

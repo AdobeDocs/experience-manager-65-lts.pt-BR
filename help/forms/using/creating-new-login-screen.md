@@ -1,16 +1,13 @@
 ---
 title: Criar uma tela de logon
 description: Como modificar a página de logon dos módulos do LiveCycle, por exemplo, do AEM Forms workspace ou do Forms Manager.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 3%
 
 ---
@@ -292,7 +289,7 @@ css.newLoginContentArea {
 1. Adicionar novas imagens em `/apps/livecycle/core/content/login`. Para adicionar uma imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](/help/sites-administering/webdav-access.md).
 
    1. Adicione novas imagens.
 

@@ -1,16 +1,13 @@
 ---
 title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM
 description: A Caixa de entrada do AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1066'
 ht-degree: 2%
 
 ---
@@ -139,7 +136,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=pt-BR) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
+   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -149,8 +146,6 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Crie um Índice de Propriedade e defina-o como verdadeiro](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Crie um Índice de Propriedade e defina-o como verdadeiro](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Após configurar índices no CRX DE ou implantar por meio de um pacote, [reindexe o repositório](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. Depois de configurar índices no CRX DE ou implantar por meio de um pacote, reindexe o repositório.

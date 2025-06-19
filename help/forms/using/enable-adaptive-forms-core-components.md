@@ -5,9 +5,10 @@ keywords: Ativar componentes principais, componentes principais Forms adaptável
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '966'
 ht-degree: 3%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 3%
 
 Habilitar os Componentes Principais do Forms Adaptive permite começar a criar, publicar e entregar o [Forms Adaptive baseado nos Componentes Principais](create-an-adaptive-form-core-components.md) e o [Forms Adaptive Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente do AEM 6.5 Forms.
 
-Para habilitar os Componentes principais do Adaptive Forms no ambiente do AEM 6.5 Forms, configure e implante um projeto baseado no [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) (com as opções de formulários habilitadas) em todas as suas instâncias de Autor e Publicação.
+Para habilitar os Componentes principais do Adaptive Forms no ambiente do AEM 6.5 Forms, configure e implante um projeto baseado no [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview) (com as opções de formulários habilitadas) em todas as suas instâncias de Autor e Publicação.
 
 Este artigo fornece instruções detalhadas para configurar e implantar o projeto baseado no AEM Archetype 41 ou posterior no ambiente do AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para ver as versões compatíveis do **AEM 6.5** para habilitar os Componentes Principais do Forms:
 
@@ -102,11 +103,11 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 1. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
    1. Abra a [Pasta de Projeto do Arquétipo do AEM]/pom.xml para edição.
-   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=pt-BR).
+   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history).
+      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
@@ -130,7 +131,7 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 
    Depois que o Arquétipo do AEM for criado com êxito, um pacote do AEM será gerado. Você pode encontrar o pacote em [Pasta de Projeto do AEM Archetype]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
+1. Use o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
 
 >[!NOTE]
 >
@@ -145,7 +146,7 @@ Os Componentes principais são ativados para o seu ambiente. Um modelo de Formul
 
 ### Quais são os componentes principais?
 
-Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo Online (WCM) para que o AEM acelere o tempo de desenvolvimento e reduza o custo de manutenção de seus sites.
+Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo Online (WCM) para que o AEM acelere o tempo de desenvolvimento e reduza o custo de manutenção de seus sites.
 
 ### Quais são os recursos adicionados à habilitação dos componentes principais?
 

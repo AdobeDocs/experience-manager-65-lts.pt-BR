@@ -7,9 +7,10 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 425c6194-0b87-4b01-a013-f620755072b3
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
@@ -28,7 +29,7 @@ Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
 A imagem a seguir exibe o conteúdo extraído de `adobe-lc-mobileworkspace-src-<version>.zip`.

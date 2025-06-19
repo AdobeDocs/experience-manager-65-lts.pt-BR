@@ -8,9 +8,10 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 3aa4aca3-3c94-4936-ba9c-484bbb196256
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -27,9 +28,7 @@ O logotipo da organização é exibido no canto superior esquerdo do espaço de 
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
-
-   [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)
+   >Para obter mais informações, consulte [Acesso ao WebDAV](/help/sites-administering/webdav-access.md).
 
 1. Referencie a nova imagem de logotipo na folha de estilos em /apps/ws/css/newStyle.css, adicionando o estilo a seguir.
 

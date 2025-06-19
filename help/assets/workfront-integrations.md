@@ -5,10 +5,11 @@ role: Admin,Leader,Architect
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 9%
+source-wordcount: '1112'
+ht-degree: 4%
 
 ---
 
@@ -16,12 +17,12 @@ ht-degree: 9%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-O [!DNL Workfront for Experience Manager enhanced connector] permite processos de negócios aprimorados com fluxos de trabalho completos e fornece experiências personalizadas e armazenamento central completos para o cliente. A Adobe oferece um conector padrão e um conector aprimorado para integrar as duas soluções. Consulte os recursos com suporte abaixo para obter uma comparação e consulte [novidades no [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+O [!DNL Workfront for Experience Manager enhanced connector] permite processos de negócios aprimorados com fluxos de trabalho completos e fornece experiências personalizadas e armazenamento central completos para o cliente. A Adobe oferece um conector padrão e um conector aprimorado para integrar as duas soluções. Consulte os recursos com suporte abaixo para obter uma comparação e consulte [novidades no [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] permite que sua organização:
 
@@ -31,7 +32,7 @@ O [!DNL Workfront for Experience Manager enhanced connector] permite processos d
 * Defina os status do objeto do Workfront com base em condições configuráveis usando workflows do Experience Manager.
 * Publicar ativos no ambiente de publicação do Experience Manager ou no Brand Portal.
 
-Consulte o suporte à plataforma e os [pré-requisitos do conector aprimorado](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Consulte o suporte à plataforma e os [pré-requisitos do conector aprimorado](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
@@ -39,7 +40,7 @@ Consulte o suporte à plataforma e os [pré-requisitos do conector aprimorado](h
 >
 >* A Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam este conector redundante; se isso ocorrer, pode ser necessário que os clientes façam a transição do uso deste conector.
 >
->* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en).
+>* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
 >
 >* Consulte [Exame de certificação de parceiro para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte o [Guia do Exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -49,7 +50,7 @@ A seguir estão os detalhes das funcionalidades disponíveis por meio de vários
 
 | Destaque | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Nenhum conector (pronto para uso)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer Conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Nenhum Conector (pronto para uso)* |
 |----|----|----|-----|-----|
-| Métodos de implantação | Apropriado para qual oferta [!DNL Assets]. | Assets Essentials | Adobe Managed Services, no local | Serviço em nuvem |
+| Métodos de implantação | Apropriado para qual oferta [!DNL Assets]. | Assets Essentials | Adobe Managed Services, no local | Cloud Service |
 | **Geral** |
 | Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada no AEM Assets, que está vinculado como uma nova versão do documento. | ✓ | ✓ | ✓ |
 | Vincular manualmente pastas do AEM a objetos do Workfront | As pastas existentes do AEM podem ser vinculadas como uma pasta do Workfront e seus ativos secundários são vinculados como novos documentos do Workfront. | ✓ | ✓ | ✓ |

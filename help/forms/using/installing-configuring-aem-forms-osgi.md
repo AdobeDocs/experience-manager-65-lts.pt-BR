@@ -7,9 +7,10 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -114,10 +115,10 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log fique estável.
 
    >[!NOTE]

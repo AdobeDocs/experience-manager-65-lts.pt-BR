@@ -5,9 +5,10 @@ role: Admin
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 810be820-b577-4035-9fda-3d919361c58c
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1697'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] configura o conector aprimorado após instalá-lo. Para obter instruções de instalação, consulte [Instalar o conector](/help/assets/workfront-integrations.md).
@@ -27,7 +28,7 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] confi
 >
 >* A Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam este conector redundante; se isso ocorrer, pode ser necessário que os clientes façam a transição do uso deste conector.
 >
->* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en).
+>* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
 >
 >* Consulte [Exame de certificação de parceiro para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte o [Guia do Exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 

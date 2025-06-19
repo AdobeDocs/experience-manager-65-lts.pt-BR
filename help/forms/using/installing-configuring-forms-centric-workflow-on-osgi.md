@@ -7,9 +7,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-As empresas coletam e processam dados de vários formulários, sistemas de back-end e outras fontes de dados. O processamento de dados envolve procedimentos de revisão e aprovação, tarefas repetitivas e arquivamento de dados. Por exemplo, revisar um formulário e convertê-lo em documento PDF. Quando feitas manualmente, as tarefas repetitivas podem levar muito tempo e vários recursos.
+As empresas coletam e processam dados de vários formulários, sistemas back-end e outras fontes de dados. O processamento de dados envolve procedimentos de revisão e aprovação, tarefas repetitivas e arquivamento de dados. Por exemplo, revisar um formulário e convertê-lo em um documento do PDF. Quando feitas manualmente, as tarefas repetitivas podem levar muito tempo e vários recursos.
 
-Você pode usar [fluxo de Trabalho centradas Forms no OSGi](../../forms/using/aem-forms-workflow.md) para build workflows baseados em formulários adaptáveis. Essas workflows podem ajudá-lo a automatizar workflows de revisão e aprovação, processo empresarial workflows e outras tarefas repetitivas. Esses workflows também ajudam a processar documentos (criar, montar, distribuir e arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos, formulários com códigos de barras e muito mais) e usar Adobe Sign fluxo de Trabalho de assinatura com formulários e documentos.
+Você pode usar o [fluxo de trabalho centrado no Forms no OSGi](../../forms/using/aem-forms-workflow.md) para criar rapidamente fluxos de trabalho baseados em formulários adaptáveis. Esses workflows podem ajudá-lo a automatizar workflows de revisão e aprovação, workflows de processo de negócios e outras tarefas repetitivas. Esses workflows também ajudam a processar documentos (criar, montar, distribuir e arquivar documentos do PDF, adicionar assinaturas digitais para limitar o acesso a documentos, decodificar formulários com código de barras e muito mais) e usar o fluxo de trabalho de assinatura do Adobe Sign com formulários e documentos.
 
-Após a configuração, essas workflows podem ser acionadas manualmente para concluir um processo definido ou ser executada programaticamente quando os usuários enviarem um formulário ou uma comunicação interativa. O recurso está incluído no pacote AEM Forms complemento.
+Após configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executar de forma programática quando os usuários enviam um formulário ou uma comunicação interativa. O recurso está incluído no pacote complementar do AEM Forms.
 
 O AEM Forms é uma plataforma poderosa de nível empresarial. O fluxo de trabalho centrado no Forms no OSGi é apenas um dos recursos do AEM Forms. Para obter a lista completa de recursos, consulte [Introdução ao AEM Forms](introduction-aem-forms.md).
 
@@ -104,20 +104,20 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
 
    >[!NOTE]
    >
-   > Recomenda-se usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o SDK AEM usando métodos alternativos, por exemplo, interromper processos Java, pode cliente potencial inconsistências nos AEM desenvolvimento ambiente.
+   > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
-1. Repita as etapas 1 a 7 em todas as instâncias do Autor e Publish.
+1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
-## configurações de instalação Post {#post-installation-configurations}
+## Configurações pós-instalação {#post-installation-configurations}
 
 O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Adobe Target.
 

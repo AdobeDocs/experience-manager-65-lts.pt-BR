@@ -1,19 +1,20 @@
 ---
-title: Instalar e configurar comunicações interativas
-description: Instale e configure AEM Forms Comunicações interativas para criar correspondências comerciais, documentos, declarações, avisos de benefícios, marketing emails, contas e kits de boas-vindas.
+title: Instalar e configurar as Comunicações interativas
+description: Instale e configure as Comunicações interativas do AEM Forms para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
 topic-tags: installing
 docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
 
-# Instalar e configurar comunicações interativas{#install-and-configure-interactive-communications}
+# Instalar e configurar as Comunicações interativas{#install-and-configure-interactive-communications}
 
 ## Introdução {#introduction}
 
@@ -47,9 +48,9 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
 
    * **Publicar**: uma instância do AEM que fornece o conteúdo publicado ao público pela Internet ou por uma rede interna.
 
-* Os requisitos de memória são atendidos. AEM Forms pacote complementar exige:
+* Os requisitos de memória são atendidos. O pacote complementar do AEM Forms exige:
 
-   * 15 GB de espaço temporário para instalações do Microsoft® Windows.
+   * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
    * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * Requisitos adicionais para sistemas baseados em UNIX: Se você estiver usando o sistema operacional baseado em UNIX, instale os seguintes pacotes da mídia de instalação do respectivo sistema operacional.
@@ -88,17 +89,17 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
 O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote contém comunicação interativa do AEM Forms, gerenciamento de correspondência e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
 1. Abra a [Distribuição de softwares](https://experience.adobe.com/downloads). Você precisa de uma Adobe ID para fazer logon na Distribuição de softwares.
-1. Selecione **[!UICONTROL Adobe Experience Manager]** disponíveis no menu de cabeçalho.
-1. **[!UICONTROL Na seção Filtros]**:
-   1. Selecione **[!UICONTROL Forms]** no lista **[!UICONTROL suspenso Solução]** .
-   2. Selecione a versão e o tipo para o pacote. Também é possível usar a opção **[!UICONTROL Search Downloads]** para filtrar os resultados.
+1. Selecione **[!UICONTROL Adobe Experience Manager]**, disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]**:
+   1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  e clique **[!UICONTROL em Fazer upload do pacote]** para upload o pacote.
-1. Selecione o pacote e clique **[!UICONTROL em Instalar]**.
+1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote por meio do link direto listado no [artigo de lançamentos](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) de AEM Forms.
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a AEM instância. **Não reinicie imediatamente o servidor.** Antes de interromper o AEM Forms Server, aguarde até que as mensagens SERVICEEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Directory]/crx-quickstart/logs/error.arquivo de log e o log é estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
 
    >[!NOTE]
    >
@@ -145,7 +146,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 
 A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM 6.5 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de Correspondências), instale o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-O pacote de Compatibilidade AEMFD permite usar as seguintes ativos de AEM Forms 6.4, AEM 6.3 Forms e AEM Forms 6.2 no Forms 6.5 da AEM:
+O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms no AEM 6.5 Forms:
 
 * Fragmentos do documento
 * Cartas
@@ -182,7 +183,7 @@ Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Par
 
 ## Próximas etapas {#next-steps}
 
-Você configurou um ambiente para usar recursos de gerenciamento de comunicação interativa e correspondência. Agora, as etapas para usar o recurso são:
+Você configurou um ambiente para usar a comunicação interativa e os recursos de gestão de correspondência. Agora, as etapas para usar o recurso são:
 
 * [Visão geral do gerenciamento de correspondência](/help/forms/using/interactive-communications-overview.md)
 

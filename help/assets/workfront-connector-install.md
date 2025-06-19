@@ -5,21 +5,22 @@ role: Admin
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
 
-# Instalar [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# Instalar o [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] instala o conector aprimorado. Antes de instalar, verifique o suporte à plataforma e outros [pré-requisitos para o conector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] instala o conector aprimorado. Antes de instalar, verifique o suporte à plataforma e outros [pré-requisitos para o conector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
@@ -27,14 +28,14 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] insta
 >
 >* A Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam este conector redundante; se isso ocorrer, pode ser necessário que os clientes façam a transição do uso deste conector.
 >
->* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en).
+>* O Adobe oferece suporte às versões avançadas de conectores 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até o grupo `digital.hoodoo` disponível no painel esquerdo no [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
 >
 >* Consulte [Exame de certificação de parceiro para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte o [Guia do Exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Para instalar o conector, siga estas etapas:
 
 1. Baixe o conector do [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-1. [Configurar o firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
+1. [Configurar o firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
 1. Na Dispatcher, permita cabeçalhos HTTP nomeados como `authorization`, `username` e `apikey`. Permitir solicitações de `GET`, `POST` e `PUT` a `/bin/workfront-tools`.
 1. Verifique se os seguintes caminhos não existem no repositório [!DNL Experience Manager]:
 
@@ -48,7 +49,6 @@ Para instalar o conector, siga estas etapas:
 1. Crie `wf-workfront-users` no Grupo de Usuários [!DNL Experience Manager] e atribua a permissão `jcr:all` a `/content/dam`.
 1. Adicione uma propriedade personalizada à definição de índice pronta para uso para **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Execute as etapas abaixo:
    * Adicionar uma propriedade **`nt:unstructured`** chamada **`wfReferenceNumber`** a:
-
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Reindexe o `index /oak:index/ntFolderDamLucene` invertendo o sinalizador de reindexação para `true`.
 
