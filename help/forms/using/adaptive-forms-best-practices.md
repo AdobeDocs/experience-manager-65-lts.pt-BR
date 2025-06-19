@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para trabalhar com formulários adaptáveis {#best-practices-for-working-with-adaptive-forms}
 
-A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -99,9 +99,9 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
 
 ### Criação de modelos de formulário
 
-Você pode criar um formulário adaptável usando os modelos de formulário habilitados no **Navegador de Configuração**. Para habilitar os modelos de formulário, consulte [Criando Modelo de Formulário Adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Você pode criar um formulário adaptável usando os modelos de formulário habilitados no **Navegador de Configuração**. Para habilitar os modelos de formulário, consulte [Criando Modelo de Formulário Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-Os modelos de formulário também podem ser carregados de pacotes de formulários adaptáveis criados em outra máquina de criação. Os modelos de formulário são disponibilizados instalando [pacotes aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algumas das práticas recomendadas são:
+Os modelos de formulário também podem ser carregados de pacotes de formulários adaptáveis criados em outra máquina de criação. Os modelos de formulário são disponibilizados instalando [pacotes aemforms-references-*](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algumas das práticas recomendadas são:
 
 * O modo de execução **nosamplecontent** é recomendado somente para o autor e não para os nós de publicação.
 * A criação de ativos, como formulário adaptável, temas, modelos ou configurações de nuvem, é executada somente nos nós Autor, que podem ser publicados nos nós Publicar configurados.
@@ -323,7 +323,7 @@ Geralmente, é necessário mover os projetos do AEM de um ambiente para outro. A
 Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho geral são as seguintes:
 
 * Ative a compactação da biblioteca do cliente HTML para JavaScript e CSS no Felix Console.
-* Armazene em cache todas as bibliotecas de clientes em `/etc.clientlibs/fd` e quaisquer bibliotecas de clientes personalizadas adicionais no AEM Dispatcher para aumentar a capacidade de resposta e a segurança de seus formulários publicados. Para obter mais informações, consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+* Armazene em cache todas as bibliotecas de clientes em `/etc.clientlibs/fd` e quaisquer bibliotecas de clientes personalizadas adicionais no AEM Dispatcher para aumentar a capacidade de resposta e a segurança de seus formulários publicados. Para obter mais informações, consulte [Dispatcher](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher.html).
 
 * Não armazenar em cache os caminhos `/content/forms/af/` e `/content/dam/formsanddocuments/*`. para obter informações detalhadas sobre como configurar o cache de formulários adaptáveis, consulte [Armazenamento em cache de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md).
 
