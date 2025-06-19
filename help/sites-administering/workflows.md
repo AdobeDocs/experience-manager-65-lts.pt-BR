@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -54,7 +55,7 @@ Quando um modelo de fluxo de trabalho é iniciado (executado), uma instância de
 
 >[!CAUTION]
 >
->As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvendo fluxos de trabalho](/help/sites-developing/workflows.md#model) para obter mais detalhes.
+>As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvimento e extensão de Fluxos de Trabalho - Modelos](/help/sites-developing/workflows.md#model) para obter mais detalhes.
 
 As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
