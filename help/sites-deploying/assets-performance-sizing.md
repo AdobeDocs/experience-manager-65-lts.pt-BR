@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,3 @@ Os seguintes ajustes de desempenho foram usados em projetos até o momento:
 
 * Geração de representação seletiva: gere apenas as representações necessárias adicionando condições ao fluxo de trabalho de processamento de ativos, para que representações mais caras sejam geradas apenas para ativos selecionados.
 * Armazenamento de dados compartilhado entre instâncias: quando há pouco espaço em disco, isso pode reduzir consideravelmente a quantidade de espaço em disco necessária, ao custo de maiores esforços de configuração e da perda da limpeza automática do armazenamento de dados.
-
-## Leitura adicional {#further-reading}
-
-* [Analisando Processos Lentos e Bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 6%
@@ -104,7 +104,7 @@ Quando a Sincronização de Usuários é executada, ela obtém uma lista de usu�
 
 A ferramenta permite que o administrador do sistema mapeie grupos de usuários no diretório do cliente com a configuração do produto e grupos de usuários no [!DNL Admin Console]. A nova versão da UST também permite a criação dinâmica de grupos de usuários no [!DNL Admin Console].
 
-Para configurar a Sincronização de Usuários, a organização precisa criar um conjunto de credenciais da mesma forma que usaria a [[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html).
+Para configurar a Sincronização de Usuários, a organização precisa criar um conjunto de credenciais da mesma forma que usaria a [[!DNL User Management] API](https://adobe-apiplatform.github.io/user-sync.py/en/success-guide/identify_server.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

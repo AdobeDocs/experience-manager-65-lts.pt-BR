@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 3%
+source-wordcount: '1363'
+ht-degree: 4%
 
 ---
 
@@ -234,10 +234,6 @@ Se a instância tiver sido instalada da interface do usuário, uma janela do nav
 
 ![tela de inicialização](assets/screen_shot_.png)
 
->[!NOTE]
->
->Se você estiver usando symlinks, observe [problemas com symlink](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
-
 ### Iniciando e Interrompendo {#starting-and-stopping}
 
 Depois que o AEM tiver desempacotado a si mesmo e inicializado pela primeira vez, clicando duas vezes no arquivo jar no diretório de instalação simplesmente iniciará a instância, ela não a reinstalará.
@@ -268,9 +264,9 @@ O AEM inicia e redireciona automaticamente o navegador da Web para a página apr
 
 Depois de fazer logon, você terá acesso ao AEM. Para obter mais informações, dependendo da sua função, consulte o seguinte:
 
-* [Criação  ](/help/sites-authoring/first-steps.md)
+* [Criação](/help/sites-authoring/first-steps.md)
 * [Administração](/help/sites-administering/home.md)
-* [Desenvolvimento](/help/sites-developing/getting-started.md)
+* [Desenvolver](/help/sites-developing/getting-started.md)
 * [Gerenciamento](/help/managing/best-practices.md)
 
 ## Implantação avançada {#advanced-deployment}

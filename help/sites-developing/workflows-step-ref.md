@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 2%
 
 ---
@@ -188,7 +188,7 @@ A **OU Split** cria uma divisão no fluxo de trabalho, depois da qual apenas uma
 
 >[!NOTE]
 >
->Consulte [OU Split step](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Consulte [OU Split step](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![Ramificação usando OU Split](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com a carga**
 
    * Para armazenar dados do widget como uma propriedade da carga do fluxo de trabalho, use o seguinte formato para o valor da propriedade name do nó do widget:
-
      `./jcr:content/nodename`
 
    * Os dados são armazenados na propriedade `nodename` do nó de carga. Se o nó não contiver essa propriedade, a propriedade será criada.
@@ -294,7 +293,6 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com o item de trabalho**
 
    * Para armazenar dados do widget como uma propriedade dos metadados do item de trabalho, use o seguinte formato para o valor da propriedade name:
-
      `nodename`
 
    * Os dados são armazenados na propriedade `nodename` do item de trabalho `metadata`. Os dados são preservados se a caixa de diálogo for usada posteriormente com a mesma carga.
@@ -557,7 +555,8 @@ Para configurar a etapa, edite e use as seguintes guias:
 
    * **Participantes**: especifica a lista de usuários disponíveis para seleção. Para adicionar um usuário à lista, clique em **Adicionar item** e digite o caminho inicial do nó do usuário ou da ID do usuário. A ordem dos usuários não afeta a probabilidade de receber um item de trabalho.
 
-### Seletor do participante iniciador do fluxo de trabalho  {#workflow-initiator-participant-chooser}
+### Seletor do participante iniciador do fluxo de trabalho
+  {#workflow-initiator-participant-chooser}
 
 A etapa **Seletor de Participante Iniciador do Fluxo de Trabalho** é um seletor de participantes que atribui o item de trabalho gerado ao usuário que iniciou o fluxo de trabalho. Não há propriedades a serem configuradas diferentes das propriedades **Common**.
 

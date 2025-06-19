@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html).
+>A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](/help/sites-developing/access-jcr.md).
 
 ## Sessão Gem {#gem-session}
 
-O [Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos da Adobe Experience Manager oferecidos por especialistas da Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
+O [Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) é uma série de aprofundamentos técnicos da Adobe Experience Manager oferecidos por especialistas da Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
 
 >[!NOTE]
 >
->A sessão do AEM Gem [Pesquisar formulários ficou mais fácil com o AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral detalhada do construtor de consultas.
+>A sessão do AEM Gem [Pesquisar formulários ficou mais fácil com o AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de consultas.
 
 ## Exemplos de consulta {#sample-queries}
 
@@ -324,7 +324,7 @@ Separado por um espaço:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title

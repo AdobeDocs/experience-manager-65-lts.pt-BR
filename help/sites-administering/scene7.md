@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5425'
+source-wordcount: '5405'
 ht-degree: 0%
 
 ---
@@ -420,13 +421,9 @@ No entanto, se você não quiser que os ativos enviados para o Dynamic Media Cla
 Antes de enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
 1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). No caso de suporte, solicite a ativação da visualização segura para a sua conta do Dynamic Media Classic.
-1. [Configurar a visualização segura da sua conta do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR).
+1. [Configurar a visualização segura da sua conta do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Essas etapas são as mesmas que você seguiria para criar qualquer configuração de teste segura no Dynamic Media Classic.
-
->[!NOTE]
->
->Se o ambiente de instalação for um sistema operacional UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) em relação a outras opções de configuração que você deve definir.
 
 #### Limitações conhecidas para enviar ativos no estado não publicado  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -453,7 +450,7 @@ Se você usar esse recurso, observe as seguintes limitações:
 1. Selecione a guia **[!UICONTROL Avançado]**.
 1. No menu suspenso **[!UICONTROL Habilitar Modo de Exibição Seguro]**, selecione **[!UICONTROL Na Ativação de Publicação do AEM]** para enviar ativos para o Dynamic Media Classic sem publicar. (Por padrão, esse valor é definido como **[!UICONTROL Imediatamente]**, onde os ativos da Dynamic Media Classic são publicados imediatamente.)
 
-   Consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR) para obter mais informações sobre como testar ativos antes de torná-los públicos.
+   Consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) para obter mais informações sobre como testar ativos antes de torná-los públicos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -568,7 +565,7 @@ Especificamente, você configura o formato de arquivo aceito por tipo MIME na á
 
    Por exemplo, `psprocess="rasterize"&psresolution=120`.
 
-   Consulte a [API do Sistema de Produção de Imagens do Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=pt-BR) para obter mais parâmetros de trabalho de carregamento que você possa usar.
+   Consulte a [API do Sistema de Produção de Imagens do Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) para obter mais parâmetros de trabalho de carregamento que você possa usar.
 
    >[!NOTE]
    >

@@ -9,9 +9,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 60%
 
 ---
@@ -311,7 +312,7 @@ Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escop
 
 * [Noções sobre o Critério de sucesso 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Como cumprir o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/br/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Legendas (ao vivo) (1.2.4)        {#captions-live}
 
@@ -327,12 +328,11 @@ Esse critério de sucesso é idêntico às [Legendas (pré-gravadas)](#captions-
 
 Siga as orientações fornecidas para [Legendas (pré-gravadas)](#captions-pre-recorded) acima. No entanto, devido à natureza viva dos meios de comunicação social, a disposição da legenda tem de ser criada o mais rapidamente possível e em resposta ao que está a acontecer. Portanto, você deve considerar o uso de legendas em tempo real ou ferramentas de fala para texto.
 
-Instruções detalhadas estão além do escopo desse documento, mas os seguintes recursos disponibilizam informações úteis:
+As instruções detalhadas estão além do escopo deste documento, mas o recurso a seguir fornece informações úteis:
 
 * [WebAIM: legendagem em tempo real](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): as legendas podem ser geradas automaticamente usando reconhecimento de voz?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Mais informações - Legendas (ao vivo) (1.2.4)    {#more-information-captions-live}
+#### Mais informações - Legendas (ao vivo) (1.2.4)     {#more-information-captions-live}
 
 * [Noções sobre o Critério de sucesso 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Como cumprir o Critério de sucesso 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)

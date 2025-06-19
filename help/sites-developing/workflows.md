@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 3%
 
 ---
-
 
 # Desenvolvimento e extensão de workflows{#developing-and-extending-workflows}
 
@@ -39,10 +39,9 @@ Os principais aspectos são abordados abaixo, enquanto as seguintes páginas abo
 >
 >* Participando de fluxos de trabalho, consulte [Usando Fluxos de Trabalho](/help/sites-authoring/workflows.md).
 >* Administrando fluxos de trabalho e instâncias de fluxo de trabalho, consulte [Administração de Fluxos de Trabalho](/help/sites-administering/workflows.md).
->* Para obter um Artigo completo sobre a Comunidade, consulte [Modificação de Assets digital usando fluxos de trabalho do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
+>* Para obter um Artigo completo da Comunidade, consulte [Modificação da Assets digital usando fluxos de trabalho do Adobe Experience Manager.](/help/assets/assets-workflow.md).
 >* Consulte o [Webinar Fale com os especialistas da AEM sobre fluxos de trabalho](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Para alterar os locais das informações, consulte [Práticas recomendadas de fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
->
 
 ## Modelo {#model}
 
@@ -102,7 +101,7 @@ A implementação de carga referencia um recurso no repositório (por caminho, U
 
 As seguintes ações são possíveis em uma instância de workflow:
 
-* Finalizar
+* Encerrar
 * Suspender
 * Retomar
 * Reiniciar
@@ -205,7 +204,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
 
 ### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=pt-BR) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Ao criar um formulário, o envio dele pode ser facilmente associado a um modelo de fluxo de trabalho. Por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 

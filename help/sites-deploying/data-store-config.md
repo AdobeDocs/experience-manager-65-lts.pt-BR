@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 1%
@@ -436,7 +436,7 @@ Você pode usar o arquivo de configuração com as seguintes opções:
 * azureSas=&quot;&quot;: na versão 1.6.3 do conector, o suporte à Assinatura de Acesso Compartilhado (SAS) do Azure foi adicionado. **Se as credenciais SAS e de armazenamento existirem no arquivo de configuração, a SAS terá prioridade.** Para obter mais informações sobre a SAS, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: O ponto de extremidade do Azure Blob. Por exemplo, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação do Microsoft® Azure, consulte a [documentação oficial](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação do Microsoft® Azure, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: A chave de acesso de armazenamento. Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 * container=&quot;&quot;: o nome do container do Microsoft® Azure blob Storage. O container é um agrupamento de um conjunto de blobs. Para obter detalhes adicionais, leia a [documentação oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

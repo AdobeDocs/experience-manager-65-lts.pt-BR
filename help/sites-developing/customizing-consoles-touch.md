@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 >[!NOTE]
 >
->Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Para personalizar as colunas na exibição de lista:
 1. Opcionalmente:
 
    * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.

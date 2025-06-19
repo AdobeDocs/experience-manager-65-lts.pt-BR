@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -72,8 +73,6 @@ Pessoalmente, prefiro convenções de hierarquia em vez do sistema de digitaçã
 >[!CAUTION]
 >
 >A forma como um repositório de conteúdo é estruturado também pode afetar o desempenho. Para obter o melhor desempenho, o número de nós secundários anexados a nós individuais em um repositório de conteúdo não deve exceder 1.000.
->
->Ver [Quantos dados o CRX pode manipular?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Exemplo {#example-2}
 

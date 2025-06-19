@@ -1,17 +1,13 @@
 ---
 title: Conceitos básicos de configuração
 description: Saiba como configurar o Adobe Experience Manager para seus próprios requisitos específicos.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -180,11 +176,11 @@ Para obter o gerenciamento de usuários no AEM (incluindo a atribuição de dire
 
 O Dispatcher é a ferramenta de armazenamento em cache, balanceamento de carga ou ambos da Adobe Experience Manager. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
 
 ### Configuração do AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Com o lançamento dos serviços de documento da AEM e da Segurança de documentos da AEM, a AEM agora tem a capacidade de chamar os serviços de documento do LiveCycle para renderizar um formulário XFA, converter um documento para o PDF e proteger um documento por política. Consulte [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
+Com o lançamento dos serviços de documento da AEM e da Segurança de documentos da AEM, a AEM agora tem a capacidade de chamar os serviços de documento do LiveCycle para renderizar um formulário XFA, converter um documento para o PDF e proteger um documento por política.
 
 ### Descarregamento de Jobs e Administração de Topologia {#job-offloading-and-topology-administration}
 

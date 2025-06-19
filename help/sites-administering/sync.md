@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 1%
@@ -33,7 +33,7 @@ A partir do AEM 6.1, quando a sincronização de usuários é ativada, os dados 
 
 ## Distribuição Sling {#sling-distribution}
 
-Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
+Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
 
 Os benefícios da sincronização de usuários usando a distribuição Sling, em comparação à replicação tradicional, são:
 
@@ -77,7 +77,7 @@ Quando a sincronização de usuários estiver habilitada, somente os usuários e
 
 * [Atualizações da plataforma AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR)
 
-### 1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Habilitar sincronização de usuário**
 
@@ -98,7 +98,7 @@ Verificar `name`: **`socialpubsync`**
 
 ![Agente de distribuição de Apache Sling](assets/chlimage_1-20.png)
 
-### 2. Criar usuário autorizado {#createauthuser}
+### &#x200B;2. Criar usuário autorizado {#createauthuser}
 
 **Configurar permissões**
 
@@ -152,7 +152,7 @@ Consulte também:
 * [Gerenciamento de direitos de acesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Seção de Solução de Problemas [Modificar Exceção de Operação Durante o Processamento de Resposta](#modify-operation-exception-during-response-processing).
 
-### 3. Distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografada {#adobegraniteencpasswrd}
+### &#x200B;3. Distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografada {#adobegraniteencpasswrd}
 
 **Configurar permissões**
 
@@ -175,7 +175,7 @@ Verificar `property name`: **`socialpubsync-publishUser`**
 
 ![Provedor de Segredo de Transporte de Senha Criptografado](assets/chlimage_1-22.png)
 
-### 4. Apache Sling Distribution Agent - Fábrica de agentes de fila {#apache-sling-distribution-agent-queue-agents-factory}
+### &#x200B;4. Apache Sling Distribution Agent - Fábrica de agentes de fila {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Habilitar sincronização de usuário**
 
@@ -198,7 +198,7 @@ Verificar `Name`: `socialpubsync-reverse`
 
 ![Fábrica de Agentes de Fila](assets/chlimage_1-23.png)
 
-### 5. Adobe Social Sync - Diff Observer Fatory {#diffobserver}
+### &#x200B;5. Adobe Social Sync - Diff Observer Fatory {#diffobserver}
 
 **Habilitar sincronização de grupo**
 
@@ -220,7 +220,7 @@ Verificar `Name`: `socialpubsync-reverse`
 
 ![Fábrica de Observadores de Diferenças](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Acionador de distribuição do Apache Sling - Fábrica de acionadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Acionador de distribuição do Apache Sling - Fábrica de acionadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar intervalo de sondagem**
 
@@ -248,7 +248,7 @@ Por padrão, o Autor pesquisa alterações a cada 30 segundos. Para alterar esse
 
 A configuração padrão é para uma única instância de publicação. Como o motivo para habilitar a sincronização de usuários é sincronizar várias instâncias de Publicação, como em um farm de publicação, as instâncias de Publicação adicionais devem ser adicionadas ao Alocador de Agentes de Sincronização.
 
-### 7. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Adicionar instâncias de publicação:**
 
@@ -280,7 +280,7 @@ Deve haver um endpoint de importador para cada instância de publicação. Por e
 
 * selecionar `Save`
 
-### 8. ID exclusiva do Sling {#unique-sling-id}
+### &#x200B;8. ID exclusiva do Sling {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Se a ID do Sling de uma instância de publicação corresponder à ID do Sling d
    * procure e exclua o arquivo chamado *sling.id.file*
 
       * por exemplo, em um sistema Linux®:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * por exemplo, em um sistema Windows:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. iniciar a instância de publicação

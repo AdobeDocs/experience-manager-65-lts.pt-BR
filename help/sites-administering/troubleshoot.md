@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -93,7 +94,7 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR) para obter mais informações
+Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
@@ -103,7 +104,7 @@ Quando a funcionalidade é desenvolvida para o AEM WCM, as sessões JCR podem se
 * Você pode ver grande parte das entradas do CacheManager: resizeAll no arquivo de log; o seguinte número (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * Periodicamente, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
-Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de Dados de Conhecimento [Analisar sessões não fechadas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para começar a analisar sessões não fechadas, consulte o artigo da Base de Dados de Conhecimento [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Uso do console da Web do Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
