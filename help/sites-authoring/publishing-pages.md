@@ -4,12 +4,14 @@ description: Saiba como publicar páginas de conteúdo no Adobe Experience Manag
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 64%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
+
 
 # Publicar páginas {#publishing-pages}
 
@@ -24,13 +26,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
 >* **Publicar/Desfazer a publicação**
->  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
->  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
->  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
+>  >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 
 ## Privilégios Insuficientes {#insufficient-privileges}
 
@@ -107,7 +109,7 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
+>A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página filha que houver não será.
 
 #### Gerenciar publicação    {#manage-publication}
 
@@ -152,7 +154,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
 
-   * Incluir somente tarefas derivadas imediatas.
+   * Incluir somente filhos imediatas.
    * Incluir somente as páginas modificadas.
    * Incluir somente páginas já publicadas.
 
@@ -196,6 +198,10 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
+>[!TIP]
+>
+>O agendamento de conteúdo para publicação replica o conteúdo e respeita os workflows de publicação. Se quiser ocultar temporariamente o conteúdo já publicado sem desfazer a publicação, considere o [**Momento da ativação** e o **Momento da desativação** disponíveis nas propriedades da página.](/help/sites-authoring/editing-page-properties.md#on-time)
+
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
 Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação, deixando de estar disponível aos seus leitores.
@@ -236,7 +242,7 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 1. No console do Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
-1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
+1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir filhas**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
