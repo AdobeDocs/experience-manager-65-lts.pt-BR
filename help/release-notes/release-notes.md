@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1019'
 ht-degree: 17%
 
 ---
@@ -53,6 +53,10 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o Quickstart.
 Para obter os requisitos de instalação, consulte [instruções de instalação](/help/sites-deploying/custom-standalone-install.md).
 
 Para obter instruções detalhadas, consulte a [documentação de atualização](/help/sites-deploying/upgrade.md).
+
+>[!NOTE]
+>
+> Para instalações novas do AEM 6.5 LTS, as definições de índice devem ser instaladas separadamente. Para obter mais informações, consulte [isto](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -147,5 +151,5 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
