@@ -57,7 +57,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Inserir dados {#enterdata}
 
@@ -371,7 +371,7 @@ Para obter mais informações sobre suporte a script em formulários HTML5, cons
 
 Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa da carta no PDF.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para alterar o modo de visualização da correspondência, conclua as seguintes etapas:
 
