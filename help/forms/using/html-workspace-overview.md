@@ -1,16 +1,13 @@
 ---
 title: Trabalhar com o espaço de trabalho do AEM Forms
 description: Introdução ao espaço de trabalho do AEM Forms com esta visão geral rápida dos fluxos de trabalho de processo.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7374797f-4154-402b-bb59-075134763c58
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -132,8 +129,4 @@ Os materiais de entrega do espaço de trabalho do AEM Forms incluem um pacote CR
 
 Por padrão, para um novo processo, um formulário XDP é renderizado no formato PDF em um desktop e no formato HTML em um tablet. É sempre possível renderizar um formulário XDP no formato HTML. Para obter detalhes, consulte [Novos serviços de renderização e envio](/help/forms/using/new-render-submit-service.md).
 
-O recurso [Forms Móvel](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), que funciona com [perfis](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita a representação HTML de formulários XDP. Por padrão, o &quot;Renderizar novo formulário do HTML&quot; usa o perfil `default.html`, que você pode alterar. Você também pode adicionar alterações personalizadas que ocorrem antes de renderizar um formulário XDP no formato HTML.
-
-## aplicativo de espaço de trabalho do AEM Forms {#aem-forms-workspace-app}
-
-Para trabalhar em seus processos comerciais em um dispositivo móvel, você pode usar a oferta de aplicativo do espaço de trabalho do AEM Forms do AEM Forms. Para obter mais informações, consulte a [visão geral do aplicativo do AEM Forms workspace](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+O recurso [Forms Móvel](/help/forms/using/introduction.md), que funciona com [perfis](/help/forms/using/custom-profile.md), habilita a representação HTML de formulários XDP. Por padrão, o &quot;Renderizar novo formulário do HTML&quot; usa o perfil `default.html`, que você pode alterar. Você também pode adicionar alterações personalizadas que ocorrem antes de renderizar um formulário XDP no formato HTML.

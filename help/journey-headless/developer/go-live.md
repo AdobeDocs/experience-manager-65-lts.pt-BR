@@ -4,9 +4,10 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba co
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
+source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1801'
 ht-degree: 51%
 
 ---
@@ -96,7 +97,7 @@ O ambiente de desenvolvimento local é composto por três áreas principais:
 
 Depois que o ambiente de desenvolvimento local for configurado, você poderá simular o fornecimento de conteúdo para o aplicativo React implantando um servidor de nó estático localmente.
 
-Para obter uma visão mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a pré-visualização de conteúdo, consulte [Documentação de implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=pt-BR).
+Para obter uma visão mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a pré-visualização de conteúdo, consulte [Documentação de implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Preparar seu aplicativo AEM Headless para ativação {#prepare-your-aem-headless-application-for-golive}
 
@@ -143,13 +144,13 @@ A implantação para produção pode depender de você ter uma instância do AEM
 
 ## Implantar para produção usando Maven {#deploy-to-production-maven}
 
-Para uma implantação *tradicional* (não AMS) usando o Maven, consulte o [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=pt-BR#build) para obter uma visão geral.
+Para uma implantação *tradicional* (não AMS) usando o Maven, consulte o [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obter uma visão geral.
 
 ## Implantar para produção usando o Cloud Manager {#deploy-to-production-cloud-manager}
 
-Se você for um cliente do AMS usando o Cloud Manager, depois de verificar se tudo foi testado e está funcionando corretamente, poderá enviar as atualizações de código para um [repositório Git centralizado no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=pt-BR).
+Se você for um cliente do AMS usando o Cloud Manager, depois de verificar se tudo foi testado e está funcionando corretamente, poderá enviar as atualizações de código para um [repositório Git centralizado no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-Depois que as atualizações forem carregadas no Cloud Manager, implante-as no AEM usando o [pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=pt-BR).
+Depois que as atualizações forem carregadas no Cloud Manager, implante-as no AEM usando o [pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -216,7 +217,7 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 ## Recursos adicionais {#additional-resources}
 
-* [Guia de Desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
+* [Guia de desenvolvimento do AEM](/help/sites-developing/the-basics.md)
 
 * [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
@@ -224,10 +225,10 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 * Cache da CDN
 
-   * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#controlling-a-cdn-cache)
+   * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurando o [Reescritor de CDN](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor de CDN*)
+   * Configurando o [Reescritor de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*pesquisar Reescritor de CDN*)
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

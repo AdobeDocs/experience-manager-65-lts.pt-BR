@@ -2,15 +2,13 @@
 title: Como criar ou personalizar temas do Formulário adaptável?
 description: Saiba como criar ou personalizar temas para os Componentes principais do Forms adaptável usando especificações do BEM
 keywords: criar tema dos componentes principais dos formulários adaptáveis, criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, excluir um tema, criar um tema no AEM 6.5 forms
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1938'
 ht-degree: 5%
 
 ---
@@ -80,7 +78,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 * Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de compilação comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 
-* Saiba como criar uma [biblioteca do cliente no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
+* Saiba como criar uma [biblioteca do cliente no Adobe Experience Manager](/help/sites-developing/clientlibs.md). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
 
 * Instale um editor de texto simples. Por exemplo, Microsoft® Visual Studio Code. O uso de um editor de texto simples, como o Microsoft® Visual Studio Code, fornece um ambiente amigável para a edição e modificação de arquivos de tema.
 
@@ -110,7 +108,7 @@ A criação ou personalização de um tema é um processo de várias etapas. Exe
 
 Os exemplos fornecidos no documento são baseados no tema **Tela**, mas você pode clonar qualquer tema e personalizá-lo usando as mesmas instruções. Essas instruções se aplicam a qualquer tema, permitindo modificar temas de acordo com suas necessidades específicas.
 
-#### 1. Clonar o repositório Git do tema {#clone-git-repo-of-theme}
+#### &#x200B;1. Clonar o repositório Git do tema {#clone-git-repo-of-theme}
 
 Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
@@ -140,9 +138,9 @@ Execute as seguintes instruções para clonar um tema:
 
 Depois de executar o comando com êxito, você terá uma cópia local do tema disponível em sua máquina na pasta `aem-forms-theme-canvas`.
 
-#### 2. Personalizar o tema {#customize-the-theme}
+#### &#x200B;2. Personalizar o tema {#customize-the-theme}
 
-Você tem a flexibilidade de personalizar componentes individuais ou fazer alterações no nível do tema usando as variáveis globais de um tema. A modificação de variáveis globais tem um efeito em cascata em todos os componentes individuais. Por exemplo, você pode utilizar variáveis globais para alterar a cor da borda de todos os componentes em um Formulário adaptável ou aplicar uma cor de preenchimento vibrante aos botões de Chamada para ação (CTA). É possível:
+Você tem a flexibilidade de personalizar componentes individuais ou fazer alterações no nível do tema usando as variáveis globais de um tema. A modificação de variáveis globais tem um efeito em cascata em todos os componentes individuais. Por exemplo, você pode utilizar variáveis globais para alterar a cor da borda de todos os componentes em um Formulário adaptável ou aplicar uma cor de preenchimento vibrante aos botões do Call to action (CTA). É possível:
 
 * [Definir estilos de nível de tema](#theme-customization-global-level)
 
@@ -189,7 +187,7 @@ Você também tem a opção de personalizar a fonte, a cor, o tamanho e outras p
 >
 > Quando um estilo é definido no nível do tema e do componente, o estilo definido no nível do componente tem prioridade.
 
-#### 3. Prepare o tema para implantação {#generate-the-clientlib}
+#### &#x200B;3. Prepare o tema para implantação {#generate-the-clientlib}
 
 Para implantar um tema em uma instância do AEM, ele precisa ser convertido em uma Biblioteca do cliente. Siga estas etapas para converter o tema em uma biblioteca do cliente:
 
@@ -214,7 +212,7 @@ Para implantar um tema em uma instância do AEM, ele precisa ser convertido em u
 
    ![Local da Biblioteca do Cliente](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Implantar o tema em um ambiente local {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Implantar o tema em um ambiente local {#deploy-the-theme-on-a-local-environment}
 
 Para implantar o tema no ambiente de desenvolvimento ou teste local, siga estas etapas:
 
@@ -265,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Implantar um tema no ambiente de produção {#deploy-theme}
+#### &#x200B;5. Implantar um tema no ambiente de produção {#deploy-theme}
 
 Depois de testar com êxito o tema no ambiente de desenvolvimento local, você pode prosseguir para implantar o tema nos ambientes de produção, incluindo as instâncias Autor e Publicar. Siga estas etapas para implantar o tema em seus ambientes de produção:
 
@@ -343,4 +341,4 @@ Para remover temas não utilizados ou indesejados:
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)
+* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

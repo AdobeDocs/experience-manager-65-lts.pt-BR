@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites
 >[!NOTE]
 >
 >Esta página deve ser lida junto com o [Reutilização de Conteúdo: Gerenciador de Vários Sites](/help/sites-administering/msm.md).
->
->As seguintes seções de Reestruturação do repositório de sites também podem ser de interesse:
->* [Configurações de blueprint do gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Configurações de Implantação do Gerenciador de Vários Sites](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ A nova configuração de implantação está então disponível ao definir confi
 
 1. Adicione as seguintes propriedades a este nó:
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: um título de identificação que aparecerá na interface do usuário.
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: uma descrição opcional.
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valor**: o [Gatilho de Implantação](/help/sites-administering/msm-sync.md#rollout-triggers) a ser usado. Selecionar de:
       * `rollout`
@@ -689,7 +682,6 @@ Se uma propriedade de página está sujeita à implantação e, portanto, sujeit
       * **Tipo**: `String`
 
       * **Value**: contém o nome da propriedade em consideração (e é comparável ao valor da propriedade `name`; por exemplo, consulte
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Quando `cq-msm-lockable` for definido, quebrar/fechar a cadeia interagirá com o MSM da seguinte maneira:

@@ -7,9 +7,10 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb6528fd-6761-412d-8413-c72049acf91d
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 ## Criar correspondência na interface do usuário Criar correspondência {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Depois que um [modelo de correspondência for criado no Gerenciamento de Correspondências](../../forms/using/create-letter.md), o usuário final/agente/ajustador de reclamação poderá abrir a correspondência na interface do usuário Criar Correspondência e criá-la inserindo dados, configurando conteúdo e gerenciando anexos. Por fim, o ajustador de reclamações ou o agente pode gerenciar o conteúdo no modo de visualização e enviar a carta.
+Depois que um [modelo de correspondência for criado no Gerenciamento de Correspondências](/help/forms/using/create-letter.md), o usuário final/agente/ajustador de reclamação poderá abrir a correspondência na interface do usuário Criar Correspondência e criá-la inserindo dados, configurando conteúdo e gerenciando anexos. Por fim, o ajustador de reclamações ou o agente pode gerenciar o conteúdo no modo de visualização e enviar a carta.
 
 ### Visualizar uma correspondência {#preview-a-correspondence}
 
@@ -50,13 +51,13 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
 1. A visualização da correspondência HTML (visualização de formulários para dispositivos móveis) é aberta com a guia Dados em foco por padrão.
 
-   Para obter mais informações sobre formulários móveis e os recursos aos quais eles dão suporte, consulte [Diferenciação de recursos entre o Mobile Forms e o PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Para obter mais informações sobre formulários móveis e os recursos aos quais eles dão suporte, consulte [Diferenciação de recursos entre o Mobile Forms e o PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Há três guias: dados, conteúdo e anexos. Se não houver elementos de dados (variáveis de espaço reservado e campos de layout), a correspondência será aberta diretamente no com a guia Conteúdo exibida. A guia Anexos está disponível somente quando há anexos ou quando o acesso à biblioteca está ativado.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de Correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Inserir dados {#enterdata}
 
@@ -110,17 +111,13 @@ Na guia content, gerencie o conteúdo, como fragmentos de documentos e variávei
 
    >[!NOTE]
    >
-   >No entanto, a formatação do texto colado tem algumas [limitações](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >No entanto, a formatação do texto colado tem algumas limitações.
 
    Você pode recuar o texto e os números na sua carta usando a tecla Tab. Por exemplo, você pode usar a tecla Tab para alinhar várias colunas de texto em uma lista em um formato tabular.
 
    ![tabspaces](assets/tabspaces.png)
 
    Exemplo: uso da tecla Tab para alinhar várias colunas de texto em um formato tabular
-
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre como configurar o espaçamento entre guias para seus módulos de texto e letras, consulte [Mais informações sobre como usar o espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Se necessário, insira caracteres especiais na correspondência. Por exemplo, você pode usar a paleta Caracteres especiais para inserir:
 
@@ -374,7 +371,7 @@ Para obter mais informações sobre suporte a script em formulários HTML5, cons
 
 Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa da carta no PDF.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para alterar o modo de visualização da correspondência, conclua as seguintes etapas:
 

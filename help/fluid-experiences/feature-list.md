@@ -5,10 +5,11 @@ index: n
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 4%
+source-wordcount: '267'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 A Adobe Experience Manager Fluid Experience utiliza os poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo headless.
 
-O AEM Fluid Experience se diferencia do AEM clássico porque somente o caso de uso de entrega headless é abordado. A criação e a entrega de conteúdo headful e o forte suporte da AEM para casos de uso híbridos estão disponíveis com as [soluções completas para AEM Sites, Assets e Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)
+O AEM Fluid Experience se diferencia do AEM clássico porque somente o caso de uso de entrega headless é abordado. A criação e a entrega de conteúdo headful e o forte suporte da AEM para casos de uso híbridos estão disponíveis com as soluções completas do AEM Sites, Assets e Dynamic Media.
 
 As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à documentação de suporte relevante.
 
@@ -50,11 +51,11 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
 | [Modelos de conteúdo estruturado](/help/assets/content-fragments/content-fragments.md) |
-| [Serviços de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) |
+| [Serviços de conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview) |
 | [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) |
 | API HTTP para conteúdo estruturado (leitura) |
 | API HTTP para conteúdo estruturado (CRUD) |
-| [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) |
+| [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Administração e recursos de integração {#admin-and-integration-features}
@@ -83,7 +84,7 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 
 ## Saiba mais {#learn-more}
 
-* [Experiências fluídas para casos de uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=pt-BR)
-* [Serviço de Conteúdo do AEM: O Que, Por Quê e Como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR)
-* [Perguntas frequentes sobre Acesso a Terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=pt-BR)
-* [Usando APIs Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=pt-BR#sling-models)
+* [Experiências fluídas para casos de uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Serviço de Conteúdo do AEM: O Que, Por Quê e Como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Perguntas frequentes sobre Acesso a Terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Usando APIs Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
