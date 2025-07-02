@@ -1,13 +1,13 @@
 ---
 title: Modelos de ativos
 description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets]  e como usá-los para criar materiais de suporte de marketing.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
@@ -123,10 +123,8 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
-   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/br/indesign/using/graphics-links.html)).
+   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
-   >
-   >Para obter mais informações sobre como trabalhar com documentos do [!DNL InDesign], consulte as [práticas recomendadas para trabalhar com documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para gerar uma representação PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
 1. O material de apoio é criado na pasta em que você começou. Para exibir as representações, abra o material de apoio e escolha **[!UICONTROL Representações]** na lista GlobalNav.

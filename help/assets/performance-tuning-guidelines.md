@@ -6,9 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
+source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
 workflow-type: tm+mt
-source-wordcount: '2728'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
@@ -81,7 +82,7 @@ Ao fazer upload de grandes quantidades de ativos para [!DNL Adobe Experience Man
 
 Configure o tamanho do cache em buffer no Console da Web do OSGi. Em `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, defina a propriedade `cq.dam.image.cache.max.memory` em bytes. Por exemplo, 1073741824 é de 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-No Experience Manager 6.1 SP1, se estiver usando um nó `sling:osgiConfig` para configurar essa propriedade, defina o tipo de dados como Longo. Para obter mais detalhes, consulte [CQBufferedImageCache consome heap durante os uploads de ativos](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+No Experience Manager 6.1 SP1, se estiver usando um nó `sling:osgiConfig` para configurar essa propriedade, defina o tipo de dados como Longo.
 
 ### Armazenamento de dados compartilhado {#shared-data-stores}
 
@@ -242,7 +243,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte [metodologia para analisar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

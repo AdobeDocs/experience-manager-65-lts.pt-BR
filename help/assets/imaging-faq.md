@@ -8,9 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
+source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ E agora, obtenha uma melhor pontuação do Google Core Web Vital para LCP (Large
 >* Largura de banda de rede
 >* DPR (Relação de pixels do dispositivo)
 >
->Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
+>Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
 
 A Smart Imaging se beneficia do aumento de desempenho de estar totalmente integrado ao melhor serviço premium de CDN (Content Delivery Network) da Adobe. Este serviço encontra a rota de Internet ideal entre servidores, redes e pontos de correspondência. Ele encontra uma rota que tem a menor latência e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
 
@@ -47,10 +48,10 @@ Os seguintes exemplos de ativos de imagem representam a otimização da Imagem i
 
 | Imagem (URL) | Miniatura  | Tamanho (JPEG) | Tamanho (WebP) com imagem inteligente | Tamanho (AVIF) com Smart Imaging | % de redução com WebP | % de redução com AVIF |
 |---|---|---|---|---|---|---|
-| [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![imagem1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26,89% | 37,79% |
-| [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![imagem2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16,01% | 72,57% |
-| [Imagem 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![imagem3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87,1 KB | 14,47% | 60,58% |
-| [Imagem 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![imagem4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8,25% | 51,85% |
+| [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![imagem1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26,89% | 37,79% |
+| [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![imagem2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16,01% | 72,57% |
+| [Imagem 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![imagem3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87,1 KB | 14,47% | 60,58% |
+| [Imagem 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![imagem4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8,25% | 51,85% |
 
 Semelhante ao acima, a Adobe também executou um teste com um conjunto de amostras maior. O formato AVIF forneceu 20% de redução extra do tamanho em relação ao WebP, o que forneceu 27% de redução em relação ao JPEG. Tudo com a mesma qualidade visual. No total, a AVIF fornece uma redução média de até 41% no tamanho do JPEG.
 
@@ -87,7 +88,7 @@ Ativar a Conversão de Formato de Navegador anexando `bfc=on` à URL da imagem c
 
 Você pode desativar o Smart Imaging anexando `bfc=off` ao URL da imagem.
 
-Consulte também [bfc](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
+Consulte também [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
 
 ### Sobre a otimização da Relação de pixels do dispositivo (dpr) {#dpr}
 
@@ -133,7 +134,7 @@ Os valores de DPR e largura de banda da rede são baseados nos valores detectado
 * Usa a tecnologia Adobe Sensei para converter de acordo com a qualidade (`qlt`) especificada na solicitação de imagem.
 * TTL (Time To Live) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que o Smart Imaging funcionasse.
 * Anteriormente, as imagens originais e derivadas eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. Na última geração do Smart Imaging, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
-* Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot; e &quot;X-Robot&quot; como sugerido em [Adicionar um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot; e &quot;X-Robot&quot;.
 
 ## Perguntas frequentes
 
@@ -254,7 +255,7 @@ Ao criar o caso de suporte, especifique quais recursos de Imagem inteligente voc
 
       * Listar todos os domínios relevantes, como *`company.com`* ou *`mycompany.scene7.com`*
       * A Imagem inteligente é compatível com domínios genéricos e personalizados.
-      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
+      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
 
          1. Navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
          1. Procure o campo **[!UICONTROL Nome do Servidor Publicado]** para confirmar seu domínio.
@@ -335,9 +336,9 @@ Esse cabeçalho informa o seguinte:
 >**X-Adobe-Smart-Imaging = -1 com o WebP sendo entregue**
 >
 >Se o valor de `X-Adobe-Smart-Imaging` for -1 e o WebP ainda estiver sendo entregue, o Smart Imaging estará ativo. No entanto, os benefícios de tamanho não foram calculados devido ao cache desatualizado. Você pode usar `cache=update` (apenas uma vez) na URL da imagem para corrigir esse problema.
->Um exemplo de uso do modificador:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->Para invalidar todo o cache, você deve criar um caso de suporte.
+>>Um exemplo de uso do modificador:
+>>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>>Para invalidar todo o cache, você deve criar um caso de suporte.
 
 +++
 
@@ -442,4 +443,3 @@ Para invalidar todo o cache, você deve criar um caso de suporte solicitando ess
 O Smart Imaging agora oferece suporte à conversão com perdas com base no nível de qualidade. Você pode continuar usando a conversão sem perdas definindo a qualidade para 100, seja através das configurações da sua empresa, ou adicionando `qlt=100` ao caminho de URL da imagem.
 
 +++
-

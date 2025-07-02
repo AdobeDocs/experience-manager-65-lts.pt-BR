@@ -1,14 +1,14 @@
 ---
 title: Writeback XMP para representações
 description: Saiba como o recurso de writeback do XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | Este artigo |
 
 Esse recurso de write-back do XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Ao alterar os metadados de um ativo no Assets ou ao fazer upload do ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo.
 
@@ -68,8 +68,6 @@ Para que o recurso Writeback do XMP propague metadados para as miniaturas de rep
 As alterações nos metadados são propagadas para as representações representações miniatura.140.100.png e miniatura.319.319.png do ativo, e não para as outras.
 
 >[!NOTE]
->
->Para problemas de writeback XMP no Linux de 64 bits, consulte [Como habilitar o write-back XMP no RedHat Linux de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Para as plataformas compatíveis, consulte [pré-requisitos de gravação de metadados do XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

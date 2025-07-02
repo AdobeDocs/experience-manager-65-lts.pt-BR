@@ -1,19 +1,15 @@
 ---
 title: Estratégia de backup e restauração em um ambiente em cluster
 description: Se sua implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você deverá implementar uma estratégia para fazer backup desses dados, garantindo que eles permaneçam sincronizados com os dados do AEM Forms.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
    1. Faça backup de todos os arquivos de qualquer nó de cluster secundário, incluindo subdiretórios.
    1. Faça backup do repositório/ID do sistema de cada nó de cluster separadamente.
 
-   Para obter etapas detalhadas, consulte [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Para obter etapas detalhadas, consulte [Backup e restauração](/help/sites-administering/backup-and-restore.md).
 
 1. Faça backup de todos os outros dados, como fontes de clientes.
 1. Inicie o cluster novamente.
@@ -72,7 +68,7 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
    1. Faça backup de todos os arquivos de qualquer nó de cluster secundário, incluindo subdiretórios.
    1. Faça backup do repository/system.id de cada nó de cluster separadamente.
 
-   Para obter etapas detalhadas, consulte [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Para obter etapas detalhadas, consulte [Backup e restauração](/help/sites-administering/backup-and-restore.md).
 
 1. Faça backup de todos os outros dados, como fontes de clientes.
 1. Inicie o cluster novamente.
@@ -135,7 +131,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log no nó.
    1. Exclua o arquivo .lock no nó, se existir.
    1. Exclua o repository/system.id no nó, se existir.
-   1. Exclua os arquivos &ast;&ast;/listener.properties no nó, se existir.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties no nó, se existir.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]
@@ -165,7 +161,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log em todos os nós de cluster.
    1. Exclua o .lock em todos os nós de cluster, se existir.
    1. Exclua os nós de cluster repository/system.id, se existirem.
-   1. Exclua os arquivos &ast;&ast;/listener.properties em todos os nós do cluster, se existirem.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties em todos os nós do cluster, se existirem.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]
@@ -178,15 +174,15 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 
 ## Fazer backup e restaurar nó de publicação da Solução de gerenciamento de correspondência {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-O nó publicador não tem nenhuma relação primário-secundário em um ambiente clusterizado. Você pode fazer backup de qualquer nó do Editor seguindo [Backup e Restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+O nó publicador não tem nenhuma relação primário-secundário em um ambiente clusterizado. Você pode fazer backup de qualquer nó do Editor seguindo [Backup e Restauração](/help/sites-administering/backup-and-restore.md).
 
 ### Recuperar um único nó de editor {#recover-a-single-publisher-node}
 
 1. Desligue o nó que deve ser recuperado e não faça nenhuma atividade de publicação até que o nó esteja ativo novamente.
-1. Restaure o nó Publicar usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publicar usando [Restaurando o Backup](/help/sites-administering/backup-and-restore.md).
 
 ### Recuperar um cluster {#recover-a-cluster}
 
 1. Desligue o cluster.
-1. Restaure o nó Publicar usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publicar usando [Restaurando o Backup](/help/sites-administering/backup-and-restore.md).
 1. Inicie o nó primário seguido pelo nó secundário do cluster do autor.

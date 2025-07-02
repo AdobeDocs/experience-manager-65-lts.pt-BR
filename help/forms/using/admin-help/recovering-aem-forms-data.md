@@ -2,15 +2,13 @@
 title: Recuperação dos dados de formulários do AEM
 description: Este documento descreve as etapas necessárias para recuperar os dados de formulários do AEM.
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -97,7 +95,7 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
    * **Independente**
 
-     *Restaurar instâncias de criação e publicação*: se ocorrer um desastre, você poderá restaurar o repositório para o último estado de backup executando as etapas descritas em [Backup e Restauração.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Restaurar instâncias de autoria e publicação*: se ocorrer um desastre, você poderá restaurar o repositório para o último estado de backup executando as etapas descritas em [Backup e Restauração](/help/sites-administering/backup-and-restore.md).
 
      A restauração completa do nó Autor determina a restauração dos dados do Forms Manager e do AEM Forms Workspace também.
 

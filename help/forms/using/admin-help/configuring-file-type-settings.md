@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Crie ou edite uma configuração de tipo de arquivo para especificar como o apli
 
 1. Após concluir todas as seções, clique em **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar como]** e forneça um nome para a configuração.
 
-O suporte para vários tipos de arquivos pode ser personalizado. (Consulte &quot; [Adicionar suporte para formatos de arquivo nativos adicionais](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; em [Programação com formulários AEM](https://www.adobe.com/go/learn_lc_programming_11).)
+O suporte para vários tipos de arquivos pode ser personalizado.
 
 ## Alterar as configurações padrão {#change-the-default-settings}
 
@@ -128,7 +128,7 @@ As opções a seguir determinam como os arquivos de imagem são convertidos para
 
 **Usar OCR:** Especifica se o OCR (reconhecimento óptico de caracteres) deve ser aplicado à PDF. O software de OCR permite pesquisar, corrigir e copiar o texto no PDF.
 
-***observação &#x200B;**: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
+***observação **: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
 
 **Idioma de OCR Primário:** Especifica o idioma a ser usado pelo mecanismo de OCR para identificar os caracteres.
 
@@ -267,7 +267,7 @@ Para obter instruções sobre como acessar esta configuração, consulte [Criar 
 
    >[!NOTE]
    >
-   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**&#x200B;ainda serão completamente desincorporadas.*
+   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**ainda serão completamente desincorporadas.*
 
    >[!NOTE]
    >
