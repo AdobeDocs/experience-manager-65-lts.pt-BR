@@ -1,17 +1,13 @@
 ---
 title: Permitir que o AEM pesquise documentos PDF protegidos por segurança de documentos
 description: Saiba como habilitar a pesquisa nativa do AEM para executar a pesquisa de texto completo em documentos do PDF protegidos por DRM.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ A pesquisa do AEM é capaz de pesquisar e localizar ativos do AEM e executar pes
 
 * Se estiver usando o AEM Forms no OSGi:
 
-   * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
+   * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
 
    * Verifique se um AEM Forms no servidor JEE está em execução e se a segurança de documentos está instalada no AEM Forms correspondente no servidor JEE. O AEM Form no servidor JEE é necessário para indexar o documento protegido.
 
@@ -65,7 +61,7 @@ Você pode usar um dos seguintes métodos para estabelecer a conexão segura:
 
 #### Configurar o pacote Adobe LiveCycle Client SDK usando autenticação mútua {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Ative a autenticação mútua para o AEM Forms no JEE. Para obter informações detalhadas, consulte [CAC e autenticação mútua](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Ative a autenticação mútua para o AEM Forms no JEE.
 1. Abra o Console da Web do AEM. A URL é https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Localize e abra o Pacote **Adobe LiveCycle Client SDK**. Especifique o valor para as seguintes propriedades:
 

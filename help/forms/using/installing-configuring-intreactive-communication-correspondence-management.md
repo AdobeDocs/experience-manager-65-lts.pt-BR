@@ -1,15 +1,13 @@
 ---
 title: Instalar e configurar as Comunicações interativas
 description: Instale e configure as Comunicações interativas do AEM Forms para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
-topic-tags: installing
-docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
@@ -97,7 +95,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
 
@@ -144,7 +142,7 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicio
 
 #### Instalar pacote de compatibilidade {#install-compatibility-package}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM 6.5 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de Correspondências), instale o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM 6.5 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de Correspondências), instale o [pacote de Compatibilidade do AEMFD](/help/forms/using/compatibility-package.md).
 
 O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms no AEM 6.5 Forms:
 

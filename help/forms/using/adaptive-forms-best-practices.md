@@ -1,22 +1,19 @@
 ---
 title: Práticas recomendadas para trabalhar com formulários adaptáveis
 description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema AEM Forms.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
+source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5536'
+source-wordcount: '5535'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para trabalhar com formulários adaptáveis {#best-practices-for-working-with-adaptive-forms}
 
-A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -99,9 +96,9 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
 
 ### Criação de modelos de formulário
 
-Você pode criar um formulário adaptável usando os modelos de formulário habilitados no **Navegador de Configuração**. Para habilitar os modelos de formulário, consulte [Criando Modelo de Formulário Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Você pode criar um formulário adaptável usando os modelos de formulário habilitados no **Navegador de Configuração**. Para habilitar os modelos de formulário, consulte [Criando Modelo de Formulário Adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-Os modelos de formulário também podem ser carregados de pacotes de formulários adaptáveis criados em outra máquina de criação. Os modelos de formulário são disponibilizados instalando [pacotes aemforms-references-*](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algumas das práticas recomendadas são:
+Os modelos de formulário também podem ser carregados de pacotes de formulários adaptáveis criados em outra máquina de criação. Os modelos de formulário são disponibilizados instalando [pacotes aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Algumas das práticas recomendadas são:
 
 * O modo de execução **nosamplecontent** é recomendado somente para o autor e não para os nós de publicação.
 * A criação de ativos, como formulário adaptável, temas, modelos ou configurações de nuvem, é executada somente nos nós Autor, que podem ser publicados nos nós Publicar configurados.
@@ -323,13 +320,13 @@ Geralmente, é necessário mover os projetos do AEM de um ambiente para outro. A
 Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho geral são as seguintes:
 
 * Ative a compactação da biblioteca do cliente HTML para JavaScript e CSS no Felix Console.
-* Armazene em cache todas as bibliotecas de clientes em `/etc.clientlibs/fd` e quaisquer bibliotecas de clientes personalizadas adicionais no AEM Dispatcher para aumentar a capacidade de resposta e a segurança de seus formulários publicados. Para obter mais informações, consulte [Dispatcher](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher.html).
+* Armazene em cache todas as bibliotecas de clientes em `/etc.clientlibs/fd` e quaisquer bibliotecas de clientes personalizadas adicionais no AEM Dispatcher para aumentar a capacidade de resposta e a segurança de seus formulários publicados. Para obter mais informações, consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Não armazenar em cache os caminhos `/content/forms/af/` e `/content/dam/formsanddocuments/*`. para obter informações detalhadas sobre como configurar o cache de formulários adaptáveis, consulte [Armazenamento em cache de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Habilite o HTML por meio do módulo de compactação do servidor da Web. Para obter mais informações, consulte [Ajuste de desempenho do servidor AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
-* Aumente as chamadas por configuração de solicitação para formulários grandes. Consulte [Otimizando o desempenho de formulários grandes e complexos](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Criar [páginas de erro personalizadas mostradas pelo manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
+* Aumente as chamadas por configuração de solicitação para formulários grandes. Consulte [Otimizando o desempenho de formulários grandes e complexos](#optimizing-performance-of-large-and-complex-forms).
+* Criar [páginas de erro personalizadas mostradas pelo manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md).
 * Servidor AEM Forms seguro.
 
    * Use o modo de execução `nosamplecontent` para garantir que não haja conteúdo de amostra e usuários de amostra implantados no servidor de produção. Consulte [Executando o AEM no Modo Pronto para Produção](/help/sites-administering/production-ready.md).
@@ -366,11 +363,11 @@ Um dos principais desafios para as organizações é como lidar com dados de ide
 
 O Editor de regras do AEM Forms fornece uma interface visual para criar e gerenciar regras, reduzindo a necessidade de codificação extensa. Pode ser especialmente útil para usuários empresariais ou designers de formulários que podem não ter habilidades avançadas de programação, mas precisam definir e manter regras de negócios nos formulários. Aqui, discutimos alguns casos de uso nos quais o editor de regras permite:
 
-* &#x200B;<!-- Allows you --> Para definir regras de negócios para seus formulários sem a necessidade de uma programação extensa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Para implementar lógica condicional dentro de seus formulários. Isso inclui mostrar ou ocultar elementos de formulário, alterar valores de campo com base em determinadas condições ou alterar dinamicamente o comportamento dos formulários.
-* &#x200B;<!--When you want --> Para aplicar regras de validação de dados em envios de formulário, o Editor de regras pode ser usado para definir condições de validação.
-* &#x200B;<!-- When you need --> Para integrar seus formulários a fontes de dados externas (FDM) ou serviços, o Editor de regras pode ajudar a definir regras para buscar, exibir ou manipular dados durante as interações do formulário.
-* &#x200B;<!-- If you want -->Para criar formulários dinâmicos e interativos que respondam às ações do usuário, o Editor de regras permite definir regras que controlam o comportamento dos elementos de formulário em tempo real.
+* <!-- Allows you --> Para definir regras de negócios para seus formulários sem a necessidade de uma programação extensa.
+* <!-- Use the Rule Editor when you need --> Para implementar lógica condicional dentro de seus formulários. Isso inclui mostrar ou ocultar elementos de formulário, alterar valores de campo com base em determinadas condições ou alterar dinamicamente o comportamento dos formulários.
+* <!--When you want --> Para aplicar regras de validação de dados em envios de formulário, o Editor de regras pode ser usado para definir condições de validação.
+* <!-- When you need --> Para integrar seus formulários a fontes de dados externas (FDM) ou serviços, o Editor de regras pode ajudar a definir regras para buscar, exibir ou manipular dados durante as interações do formulário.
+* <!-- If you want -->Para criar formulários dinâmicos e interativos que respondam às ações do usuário, o Editor de regras permite definir regras que controlam o comportamento dos elementos de formulário em tempo real.
 
 O Editor de regras está disponível para Componentes do AEM Forms Foundation e Componentes principais.
 

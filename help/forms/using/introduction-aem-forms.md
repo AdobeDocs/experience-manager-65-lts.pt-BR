@@ -5,10 +5,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
+source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 14%
+source-wordcount: '950'
+ht-degree: 15%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Este artigo |
 
 Para obter informações sobre os recursos e aprimoramentos mais recentes do AEM Forms, consulte [Novidades no AEM Forms](../../forms/using/whats-new.md).
@@ -33,7 +33,7 @@ O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem ge
 
 >[!NOTE]
 >
->O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
+>O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](/help/sites-deploying/deploy.md), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
 ![recursos de formulários do AEM](do-not-localize/4th-draft-updated.gif)
 
@@ -96,7 +96,7 @@ Capturar dados offline e sincronizá-los na próxima vez que você voltar online
 * Conectores de gerenciamento de conteúdo corporativo (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários a sistemas corporativos
 * Os relatórios prontos para uso do HTML monitoram backlogs, filas de trabalho e Indicadores-chave de desempenho (KPIs)
-* Painéis personalizáveis para obter insights em tempo real sobre as operações de negócios
+* Painéis personalizáveis para o insight em tempo real em operações de negócios
 * API para conexão com ferramentas de relatórios de terceiros
 
 ![Terceiro rascunho](do-not-localize/3rd-draft.gif)
