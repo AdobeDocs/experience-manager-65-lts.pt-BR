@@ -123,7 +123,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
-   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/br/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
 
 1. Para gerar uma representação PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
