@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 17%
+source-wordcount: '1074'
+ht-degree: 16%
 
 ---
 
@@ -130,18 +130,21 @@ Um hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloa
 
 ### Falha de conexão do Dispatcher com recurso somente SSL {#ssl-only-feature}
 
-Ao ativar o recurso somente SSL em implantações do AEM, há um problema conhecido que afeta a conectividade entre as instâncias do Dispatcher e do AEM. Após ativar esse recurso, as verificações de integridade podem falhar e a comunicação entre as instâncias do Dispatcher e do AEM pode ser interrompida.
+Ao ativar o recurso somente SSL em implantações do AEM, há um problema conhecido que afeta a conectividade entre as instâncias do Dispatcher e do AEM. Após ativar esse recurso, as verificações de integridade podem falhar e a comunicação entre as instâncias do Dispatcher e do AEM pode ser interrompida. Esse problema ocorre especificamente quando os clientes tentam se conectar via `https + IP` do Dispatcher às instâncias do AEM e está relacionado aos problemas de validação da SNI (Server Name Indication, Indicação de nome do servidor).
 
 **Impacto:**
 
-* Falhas de verificação de integridade com códigos de resposta HTTP 500
+* Falhas de verificação de integridade com códigos de resposta HTTP 400
 * Tráfego interrompido entre instâncias do Dispatcher e do AEM
 * O conteúdo não pode ser distribuído corretamente por meio do Dispatcher
+* Falhas de conexão ao usar HTTPS com endereços IP na configuração do Dispatcher
+* HTTP 400 Erros &quot;SNI inválido&quot; ao conectar via HTTPS + IP
 
 **Ambientes Afetados:**
 
 * Implantações do AEM com configurações do Dispatcher
 * Sistemas em que o recurso somente SSL foi ativado
+* Configurações do Dispatcher usando o método de conexão `https + IP` com instâncias do AEM
 
 **Solução:**
 Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da Adobe. Um hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) está disponível para resolver esse problema. Não tente ativar recursos somente SSL até aplicar o hotfix necessário.
@@ -151,5 +154,5 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
