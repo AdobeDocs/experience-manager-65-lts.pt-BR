@@ -4,9 +4,10 @@ description: Perguntas técnicas frequentes sobre o AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 2%
 
 ---
@@ -28,6 +29,14 @@ Para obter a documentação detalhada sobre a estrutura de Verificação de inte
 ### Suporte ao console do AEM Groovy
 
 A versão do console do AEM Groovy que estava sendo usada no AEM 6.5 pode não funcionar no AEM 6.5 LTS devido à ausência de dependências de guava. A versão recém-suportada do console do AEM Groovy é [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8).
+
+### O AEM 6.5 LTS é compatível com a sincronização de usuários?
+
+Sim, o AEM 6.5 LTS é compatível com a sincronização de usuários. Não há alteração na funcionalidade de sincronização de usuários entre o AEM 6.5 e o 6.5 LTS.
+
+### O Uber JAR no Maven Central parece estar corrompido. Qual é o problema?
+
+Verifique se você está usando o Uber JAR com o classificador `apis`. Observe que a estrutura de empacotamento do Uber JAR mudou no AEM 6.5 LTS. Para obter mais informações, consulte [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ## Obtendo ajuda adicional
 
