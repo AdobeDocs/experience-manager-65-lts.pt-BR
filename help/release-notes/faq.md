@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3d0353f207aeaf39198ba55dc37cc4194f25133d
+source-git-commit: a57a71a64cd454b37087abdf01be120d20ab791c
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,3 @@ Para garantir uma transição suave, é recomendável:
 * Use a [ferramenta AEM Analyzer](/help/sites-deploying/aem-analyzer.md) para avaliar a complexidade da atualização.
 * Planeje e aloque tempo e recursos suficientes para o processo de atualização.
 * Interaja com as sessões de suporte e ativação da Adobe para obter orientação e assistência.
-
-## A sincronização de usuários é compatível com o AEM 6.5 LTS?
-
-Sim, a sincronização de usuários é compatível com o AEM 6.5 LTS.
