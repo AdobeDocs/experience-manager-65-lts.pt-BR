@@ -8,20 +8,19 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 59a79455-c108-4f4b-93c1-d8c6f23aec88
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
+
 # Criação de um modelo de página personalizado do AEM com componentes de formulário do Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
 Esta página explica como criar um modelo de página personalizado que usa componentes do [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando como o modelo do Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementado e aponta para informações importantes que você pode precisar ao criar seu próprio modelo personalizado.
-
->[!NOTE]
->
->[Amostras de email e formulário só estão disponíveis no Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de amostra do Geometrixx do Compartilhamento de pacotes.
 
 >[!CAUTION]
 >

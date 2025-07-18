@@ -8,12 +8,14 @@ topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ce6ebfff-3a1d-4c9f-aa50-23d1c3afc852
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
+
 
 # Direcionamento do seu Adobe Campaign{#targeting-your-adobe-campaign}
 
@@ -65,47 +67,3 @@ Para criar experiências para segmentos:
 1. Clique em **Editar** e abaixo de Segmentos clique em **Adicionar item**.
 1. Insira o caminho para o segmento macho, por exemplo, **/etc/segmentation/ac-segments/male** e clique em **OK**. A seguinte mensagem deve ser exibida: *A experiência está direcionada para: Masculino*
 1. Repita as etapas anteriores para criar uma experiência para todos os segmentos, por exemplo, o público-alvo feminino.
-
-## Criação de informativo com conteúdo direcionado {#creating-a-newsletter-with-targeted-content}
-
-Depois de criar segmentos, uma marca, uma campanha e uma experiência, você pode criar um informativo com conteúdo direcionado. Depois de criar a experiência, vincule as experiências aos seus segmentos.
-
->[!NOTE]
->
->[Amostras de email só estão disponíveis no Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de amostra do Geometrixx do Compartilhamento de pacotes.
-
-Para criar um informativo com conteúdo direcionado:
-
-1. Crie um boletim informativo com conteúdo direcionado: Abaixo de Campanhas por email no Geometrixx Outdoors, clique em **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
-
-   ![chlimage_1-188](assets/chlimage_1-188.png)
-
-1. No informativo, adicione um componente Texto e Personalization.
-1. Adicione texto ao componente Texto e Personalization, como &quot;Este é o padrão&quot;.
-1. Clique na seta ao lado de **Editar** e selecione **Direcionamento**.
-1. Selecione sua marca no menu suspenso Marca e selecione sua Campanha. (Esta é a marca e a campanha que você criou anteriormente).
-1. Clique em **Iniciar o direcionamento**. Os segmentos são exibidos na área Públicos. A experiência padrão é usada se nenhum dos segmentos definidos for correspondente.
-
-   >[!NOTE]
-   >
-   >Por padrão, as amostras de email incluídas no AEM usam o Adobe Campaign como mecanismo de direcionamento. Para boletins informativos personalizados, talvez seja necessário selecionar o Adobe Campaign como mecanismo de direcionamento. Ao direcionar, clique em + na barra de ferramentas, insira um título para a nova atividade e selecione **Adobe Campaign** como mecanismo de direcionamento.
-
-1. Clique em **Padrão**, em seguida, no componente Texto e Personalization adicionado e você verá o Alvo com uma seta. Clique no ícone para direcionar esse componente.
-
-   ![chlimage_1-189](assets/chlimage_1-189.png)
-
-1. Navegue até outro segmento (Masculino), clique em **Adicionar oferta** e clique no ícone de adição +. Em seguida, edite a oferta.
-1. Navegue até outro segmento (Feminino) e clique em **Adicionar oferta** e no ícone de adição +. Em seguida, edite esta oferta.
-1. Clique em **Avançar** para ver o Mapeamento e em **Avançar** para ver as Configurações, que não se aplicam ao Adobe Campaign, e clique em **Salvar**.
-
-   O AEM gera automaticamente o código de direcionamento correto para o Adobe Campaign quando o conteúdo é usado em um delivery dentro do Adobe Campaign
-
-1. No Adobe Campaign, crie sua entrega - selecione **Entrega de email com conteúdo do AEM** e selecione a conta do AEM local, conforme apropriado, e confirme suas alterações.
-
-   Na visualização HTML, as diferentes experiências dos componentes direcionados são incluídas no código de direcionamento do Adobe Campaign.
-
-   ![chlimage_1-190](assets/chlimage_1-190.png)
-
-   >[!NOTE]
-   >
-   >Se você também configurou os segmentos no Adobe Campaign, clicar em **Visualizar** mostrará as experiências de cada segmento.

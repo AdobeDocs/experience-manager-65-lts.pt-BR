@@ -1,5 +1,5 @@
 ---
-title: Criação de extensões personalizadas
+title: Extensões Adobe Campaign personalizadas
 description: Você pode chamar seu código personalizado no Adobe Campaign a partir do AEM ou do AEM para o Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,17 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7cdce721-ca00-43ac-a543-85bfad382821
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
-# Criação de extensões personalizadas{#creating-custom-extensions}
+
+# Extensões Adobe Campaign personalizadas {#creating-custom-extensions}
 
 Geralmente, ao implementar um projeto, você tem um código personalizado no AEM e no Adobe Campaign. Com a utilização da API existente, você pode chamar seu código personalizado no Adobe Campaign a partir do AEM ou do AEM para o Adobe Campaign. Este documento descreve como fazer isso.
 
@@ -33,10 +36,6 @@ Consulte [Integração do AEM com o Adobe Campaign 6.1](/help/sites-administerin
 A integração padrão entre o AEM e o Campaign é baseada em JSON e JSSP (JavaScript Server Page). Esses arquivos JSSP podem ser encontrados no console do Campaign e todos começam com **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
-
->[!NOTE]
->
->[Para ver este exemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponível em Compartilhamento de Pacotes.
 
 Neste exemplo, um novo arquivo JSSP personalizado foi criado e o chama do lado do AEM para recuperar o resultado. Ela pode ser usada, por exemplo, para recuperar dados do Adobe Campaign ou para salvar dados no Adobe Campaign.
 
@@ -165,10 +164,6 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 O AEM oferece APIs prontas para recuperar os objetos disponíveis em qualquer lugar na visualização do explorador do siteadmin.
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
-
->[!NOTE]
->
->[Para ver este exemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponível em Compartilhamento de Pacotes.
 
 Para cada nó no explorador, há uma API vinculada a ele. Por exemplo, para o nó :
 

@@ -8,9 +8,10 @@ topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ O Forms dedicado ao Adobe Campaign tem componentes específicos. Esses component
 
 >[!NOTE]
 >
->Se o modelo desejado não estiver disponível, consulte [Disponibilizando um modelo](/help/sites-authoring/adobe-campaign.md).
+>Se o modelo desejado não estiver disponível, consulte [Disponibilizando um modelo.](/help/sites-authoring/campaign.md)
 
 Esta seção só detalha links específicos para o Adobe Campaign. Para obter mais informações sobre uma visão geral de como usar formulários no Adobe Experience Manager, consulte [Componentes do modo de edição](/help/sites-authoring/default-components-foundation.md).
 
