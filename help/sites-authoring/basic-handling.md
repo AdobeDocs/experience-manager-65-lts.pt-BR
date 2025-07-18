@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9c874cabb5d966b85c11acaf761349c21ceb9fd9
+exl-id: 281c96e2-24f8-4568-add2-67972148b406
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 42%
 
 ---
@@ -399,7 +400,7 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
      ![Exibição de coluna](assets/bh-17.png)
 
-   * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
+   * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
    * Se você clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
@@ -555,15 +556,16 @@ Essas opções são acessíveis por meio da divisa ao lado do campo **Comentári
 
 ### Referências {#references}
 
-**Referências** mostra todas as conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
+**Referências** mostram conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
 
+* [Blueprints](/help/sites-administering/msm.md)
 * [Lançamentos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Cópias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referência de conteúdo:
 
-   * links de outras páginas para a página selecionada
-   * conteúdo emprestado de, concedido ou ambos à página selecionada pelo componente Referência
+   * Links diretos de outras páginas para a página selecionada
+   * Conteúdo emprestado de, concedido a ou ambos à página selecionada pelo componente Referência
 
 ![bh-28](assets/bh-28.png)
 

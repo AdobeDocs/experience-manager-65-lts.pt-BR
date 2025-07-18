@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 5%
 
 ---
@@ -156,7 +156,7 @@ você pode usar qualquer número de curingas em uma query.
 
 O AEM permite visualizar quais páginas estão vinculadas à página em que você está trabalhando no momento.
 
-Para mostrar referências diretas à página:
+Para mostrar referências de página:
 
 1. No sidekick, selecione o ícone de guia **Página**.
 
@@ -165,6 +165,10 @@ Para mostrar referências diretas à página:
 1. Selecionar **Mostrar referências...** O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+O AEM mostra todas as páginas que fazem referência direta à página selecionada, bem como qualquer referência indireta. É útil compreender todos os links que serão atualizados se você precisar mover ou excluir a página.
+
+## Ações adicionais do Sidekick {#additional-actions}
 
 Em determinadas situações, outras ações estão disponíveis no Sidekick, incluindo:
 

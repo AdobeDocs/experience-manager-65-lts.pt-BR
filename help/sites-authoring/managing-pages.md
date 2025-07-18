@@ -4,10 +4,11 @@ description: Saiba como criar e gerenciar páginas com o Adobe Experience Manage
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
@@ -285,8 +286,8 @@ Você pode copiar uma página e todas as suas subpáginas para um novo local:
    ![Colar](assets/paste-without-children.png)
 
    Você pode:
-   * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
-   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página filha serão criadas neste local.
+   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas filhas não serão copiadas.
 
    >[!NOTE]
    >
@@ -322,7 +323,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    Isso abre o assistente para mover página.
 
-1. No estágio **Renomear** do assistente, é possível:
+1. A etapa **Renomear** do assistente fornece **Informações** sobre a página, incluindo a data de criação, o caminho e o número de referências diretas. Aqui, é possível:
 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique em **Avançar** para prosseguir.
 
@@ -361,7 +362,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Esta etapa lista referências diretas e indiretas. Isso pode ser diferente do valor relatado na etapa **Renomear** do assistente, bem como das referências relatadas pelo painel de referências, que relatam apenas referências diretas por motivos de desempenho.
 
    ![caop-09](assets/caop-09.png)
 
