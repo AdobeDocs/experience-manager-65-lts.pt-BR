@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
 workflow-type: tm+mt
-source-wordcount: '5659'
+source-wordcount: '10213'
 ht-degree: 1%
 
 ---
@@ -199,9 +199,677 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 Após instalar o Acrobat, abra o Microsoft® Word. Na guia **Acrobat**, clique em **Criar PDF** e converta um arquivo .doc ou .docx disponível no computador em um Documento PDF. Se a conversão for bem-sucedida, o AEM Forms estará pronto para usar o Acrobat com o serviço PDF Generator.
+
+### Instale o Adobe Acrobat Pro DC
+
+#### Pré-requisitos
+
+Antes de instalar o Acrobat, reveja esses requisitos essenciais. Você deve ter:
+
+* Familiaridade com o [Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html)
+* Noções básicas sobre sua [arquitetura de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
+* Privilégios administrativos no Adobe Admin Console e no servidor que executa o AEM Forms.
+* Um usuário com [acesso de administrador](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) à Adobe [Admin Console](https://adminconsole.adobe.com). Geralmente, o administrador da organização já teria um usuário com acesso de administrador. Você pode assistir a este [vídeo instrutivo](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) sobre as etapas de adição de um administrador.
+* Uma conta de usuário com a função de [Administrador de Implantação](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) na Adobe Admin Console. O mesmo [vídeo de instrução](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) demonstra como adicionar um Administrador de Implantação.
+* Privilégios de administrador local na máquina que executa o AEM Forms
+* Sistema operacional Windows de 64 bits
+* Conexão estável com a Internet para ativação de licença
+<!-- Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+
+
+#### Fluxo de trabalho e linha do tempo da implementação
+
+O processo completo normalmente leva de 1 a 2 horas, dependendo do seu ambiente:
+
+| Etapa | Tempo estimado | Pré-requisitos |
+|------|----------------|---------------|
+| &#x200B;1. Criar pacote de FRL no Admin Console) | 15-20 minutos | [Acesso ao Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
+| &#x200B;2. Conceder permissões de download | 5-10 minutos | [Acesso ao Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
+| &#x200B;3. Desinstalar o Acrobat anterior | 10-15 minutos | Acesso de administrador do servidor |
+| &#x200B;4. Baixe e instale o Adobe Acrobat Pro | 10-15 minutos | Acesso de administrador do servidor |
+| &#x200B;5. Baixar e implantar o pacote de FRL | 20-30 minutos | Acesso de administrador do servidor |
+| &#x200B;6. Verificar instalação | 5-10 minutos | Acesso ao servidor |
+
+<!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
+
+**Escolher Caminho de Instalação**
+
+O processo de instalação do Adobe Acrobat Pro DC para instalação do Microsoft Office varia um pouco, dependendo do tipo de licença e do cenário de implantação. Para garantir que você siga as etapas corretas para seu ambiente específico, selecione a guia que corresponde à sua configuração:
+
+* **Tipo de Licença**: Licença de Varejo ou Volume
+* **Tipo de Implantação**: Um ou Vários Usuários
+
+Cada guia contém instruções personalizadas otimizadas para sua configuração específica, ajudando você a evitar problemas de configuração e garantir a conformidade adequada com o licenciamento.
+
+>[!BEGINTABS]
+
+>[!TAB Licença de Varejo - Único Usuário]
+
+#### Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no servidor do AEM Forms
+
+Essas etapas pressupõem que você tenha os privilégios administrativos necessários no Adobe Admin Console e no servidor que executa o AEM Forms.
+
+##### Preparar o pacote de FRL (Adobe Admin Console)
+
+Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+###### Etapa 1: fazer logon na Adobe Admin Console
+
+1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
+1. Faça logon usando uma conta com privilégios de *Administrador do Sistema*.
+1. (Opcional) Se sua organização tiver acesso a várias organizações IMS, use a opção de seleção de organização no canto superior direito do Admin Console para escolher a organização correta. Na maioria dos cenários de clientes, isso já estaria definido como o padrão de sua organização, pois os usuários normalmente têm acesso apenas à sua própria organização.
+
+###### Etapa 2: criar o pacote FRL
+
+1. No Admin Console, navegue até a guia &quot;Pacotes&quot;. Este é um pacote Adobe Admin Console, não um pacote AEM.
+1. Selecione o cartão **Licença de Recurso Restrito** e clique no botão **Introdução**. Certifique-se de selecionar o tipo de licença correto.
+1. Na tela **Criar um pacote**, defina as configurações do pacote:
+
+   | Configuração | Valor recomendado | Notas |
+   |---------|-------------------|-------|
+   | Método de ativação | Offline | Opção recomendada |
+   | Direito | Geração de PDF (PDFG) | Necessário para a funcionalidade do AEM Forms PDF Generator |
+   | Configurar plataforma | Windows de 64 bits | O Apple macOS não é compatível no momento |
+   | Ativar local | &quot;Usar idioma do SO&quot; | Configuração padrão |
+   | Idioma | Seu idioma preferido | Para interface do Acrobat |
+   | Escolher aplicativos - aplicativos disponíveis | Mantenha o Adobe Acrobat nos aplicativos disponíveis. Não Mover para o aplicativo selecionado | Você [baixaria o Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) da página da Adobe Experience League na etapa 6. |
+   | Escolher aplicativos - aplicativos selecionados | Manter apenas o arquivo de licença nos aplicativos selecionados | Configuração padrão para implantação de FRL |
+   | Plug-ins | Não fazer alterações nesta tela | |
+   | Opções | Não fazer alterações nesta tela | |
+   | Finalizar | Nome do pacote: &quot;Acrobat FRL AEM Forms&quot; | Usar um nome descritivo |
+
+1. Clique em **Criar** para criar o pacote.
+
+###### Etapa 3: fornecer permissões de download a um usuário
+
+É recomendável criar uma conta de serviço dedicada para gerenciar pacotes de FRL. Se você ainda não tiver uma conta dedicada, siga este [vídeo instrutivo](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) para saber como adicionar um novo usuário à sua organização da Adobe.
+
+Depois de ter a conta apropriada, siga estas etapas para conceder permissões de download:
+
+1. Na Admin Console, navegue até a guia **Usuários**.
+2. Localize ou crie uma conta de usuário para conceder permissões de download.
+3. Clique no nome do usuário para abrir o perfil.
+4. Clique no ícone ao lado do usuário **Editar Direitos de Administrador**.
+5. Atribua a função de **Administrador de Implantação** ao usuário. Outras funções de administrador também podem funcionar, mas Administrador de implantação é a função recomendada. Clique em **Salvar**.
+
+
+##### Implantar o pacote de FRL (AEM Forms Server)
+
+As etapas a seguir são executadas no AEM Forms Server, com direitos de *administrador local* sobre a máquina.
+
+###### Etapa 4: faça logon no servidor que executa o AEM Forms como administrador
+
+Acesse o servidor que executa o AEM Forms usando o método apropriado. Verifique se você está usando uma conta com privilégios de administrador local para acessar o servidor.
+
+###### Etapa 5: desinstalar a versão anterior do Acrobat (se houver)
+
+**Crítico:** Faça backup de todas as configurações, perfis ou configurações personalizadas do Acrobat antes de desinstalar.
+
+1. Abra o Painel de Controle do Windows.
+2. Navegue até **Configurações** e abra **Aplicativos**.
+3. Localize o **Adobe Acrobat** na lista de programas instalados
+4. Selecione **Desinstalar** e siga as instruções para remover o aplicativo. Se solicitado, reinicie o servidor
+5. Verifique se todas as versões Classic do programa estão desinstaladas. Use a [Ferramenta de Limpeza do Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) se necessário para concluir a remoção.
+
+###### Etapa 6: baixar e instalar o Adobe Acrobat Pro
+
+Após desinstalar a versão anterior, é necessário baixar e instalar uma versão compatível do Adobe Acrobat Pro:
+
+1. Vá para a [página Downloads do Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Navegue até a seção **Instalador do Acrobat Pro**.
+3. Para uso com o AEM Forms PDF Generator, baixe o instalador &quot;Para Windows (32 bits)&quot;, pois esta é a versão compatível com o AEM Forms PDF Generator.
+4. Siga as instruções de instalação na página:
+   * Extraia o arquivo zip baixado para uma pasta no seu computador
+   * Navegue até o arquivo Setup.exe (não execute o arquivo Setup.exe a partir do arquivo zip)
+   * Clique duas vezes em Setup.exe para iniciar a instalação
+   * Siga as instruções na tela para concluir a instalação
+5. Após a instalação, abra o Adobe Acrobat Pro e conclua a configuração inicial, descartando as caixas de diálogo de boas-vindas.
+6. Verifique a instalação criando uma PDF simples.
+
+###### Etapa 7: baixar o pacote FRL
+
+1. Faça logon no [Adobe Admin Console](https://adminconsole.adobe.com/) usando a *conta de usuário* à qual você forneceu permissões de download na Etapa 3.
+1. Navegue até a guia **Pacotes**.
+1. Localize o pacote de FRL que você criou na Etapa 2 (chamado &quot;Acrobat FRL AEM Forms&quot; ou o nome do pacote personalizado).
+1. Clique em **Baixar** para baixar o pacote no servidor.
+
+###### Etapa 8: implantar o pacote
+
+1. **Extrair o Pacote:** Extraia o conteúdo do arquivo ZIP baixado para um diretório no servidor (por exemplo, `C:\AcrobatFRL`). Certifique-se de que o diretório de extração seja facilmente acessível.
+
+2. **Abrir Prompt de Comando como Administrador (Windows):** Clique com o botão direito no botão Iniciar e selecione &quot;Prompt de Comando (Admin)&quot; ou &quot;Windows PowerShell (Admin)&quot;
+
+3. **Navegue até o diretório de extração:**
+
+   ```cmd
+   cd C:\AcrobatFRL
+   ```
+
+4. **Executar o Comando de Ativação:**
+
+   ```cmd
+   # Command syntax
+   adobe-licensing-toolkit.exe -p -i -f [JSON_FILE_NAME].json
+   
+   # Example with actual values
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+   > **Importante:**
+   > * Substitua `<JSON_FILE_NAME>.json` pelo nome de arquivo *exato* do arquivo JSON no pacote extraído.
+   > * O nome de arquivo JSON diferencia maiúsculas de minúsculas.
+   > * Verifique se há erros de digitação no nome do arquivo.
+
+   **Saída esperada:**
+
+   ```
+   Adobe Licensing Toolkit (1.1.0.130)
+   Operation Successfully Completed
+   ```
+
+   > ℹ️ **Observação:** o processo de ativação pode levar aproximadamente 30 segundos.
+
+5. **Noções Básicas sobre os Parâmetros de Comando:**
+
+   | Parâmetro | Descrição |
+   |-----------|-------------|
+   | `-p` | Especifica a plataforma (detecta automaticamente o sistema operacional) |
+   | `-i` | Instrui a ferramenta a instalar e ativar a licença |
+   | `-f` | Especifica o caminho para o arquivo de licença JSON |
+
+###### Etapa 9: testar o serviço PDF Generator
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Abrir a interface do administrador do AEM Forms
+2. Navegue até o serviço PDF Generator
+3. Tente converter um documento simples do Microsoft Office para o PDF
+4. Verifique se a conversão foi concluída com sucesso
+
+#### Verificar versão do Acrobat após ativação de FRL
+
+1. Abra o Adobe Acrobat Pro DC no servidor
+2. Acesse Ajuda → Sobre o Adobe Acrobat Pro DC
+3. Verifique se o número da versão corresponde à versão esperada
+4. Confirmar se o status da licença é exibido como ativado
+
+>[!TAB Licença de varejo - Vários usuários]
+
+#### Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no servidor do AEM Forms
+
+Essas etapas pressupõem que você tenha os privilégios administrativos necessários no Adobe Admin Console e no servidor que executa o AEM Forms.
+
+##### Preparar o pacote de FRL (Adobe Admin Console)
+
+Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+###### Etapa 1: fazer logon na Adobe Admin Console
+
+1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
+1. Faça logon usando uma conta com privilégios de *Administrador do Sistema*.
+1. (Opcional) Se sua organização tiver acesso a várias organizações IMS, use a opção de seleção de organização no canto superior direito do Admin Console para escolher a organização correta. Na maioria dos cenários de clientes, isso já estaria definido como o padrão de sua organização, pois os usuários normalmente têm acesso apenas à sua própria organização.
+
+###### Etapa 2: criar o pacote FRL
+
+1. No Admin Console, navegue até a guia &quot;Pacotes&quot;. Este é um pacote Adobe Admin Console, não um pacote AEM.
+1. Selecione o cartão **Licença de Recurso Restrito** e clique no botão **Introdução**. Certifique-se de selecionar o tipo de licença correto.
+1. Na tela **Criar um pacote**, defina as configurações do pacote:
+
+   | Configuração | Valor recomendado | Notas |
+   |---------|-------------------|-------|
+   | Método de ativação | Offline | Opção recomendada |
+   | Direito | Geração de PDF (PDFG) | Necessário para a funcionalidade do AEM Forms PDF Generator |
+   | Configurar plataforma | Windows de 64 bits | O Apple macOS não é compatível no momento |
+   | Ativar local | &quot;Usar idioma do SO&quot; | Configuração padrão |
+   | Idioma | Seu idioma preferido | Para interface do Acrobat |
+   | Escolher aplicativos - aplicativos disponíveis | Mantenha o Adobe Acrobat nos aplicativos disponíveis. Não Mover para o aplicativo selecionado | Você [baixaria o Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) da página da Adobe Experience League na etapa 6. |
+   | Escolher aplicativos - aplicativos selecionados | Manter apenas o arquivo de licença nos aplicativos selecionados | Configuração padrão para implantação de FRL |
+   | Plug-ins | Não fazer alterações nesta tela | |
+   | Opções | Não fazer alterações nesta tela | |
+   | Finalizar | Nome do pacote: &quot;Acrobat FRL AEM Forms&quot; | Usar um nome descritivo |
+
+1. Clique em **Criar** para criar o pacote.
+
+###### Etapa 3: fornecer permissões de download a um usuário
+
+É recomendável criar uma conta de serviço dedicada para gerenciar pacotes de FRL. Se você ainda não tiver uma conta dedicada, siga este [vídeo instrutivo](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) para saber como adicionar um novo usuário à sua organização da Adobe.
+
+Depois de ter a conta apropriada, siga estas etapas para conceder permissões de download:
+
+1. Na Admin Console, navegue até a guia **Usuários**.
+2. Localize ou crie uma conta de usuário para conceder permissões de download.
+3. Clique no nome do usuário para abrir o perfil.
+4. Clique no ícone ao lado do usuário **Editar Direitos de Administrador**.
+5. Atribua a função de **Administrador de Implantação** ao usuário. Outras funções de administrador também podem funcionar, mas Administrador de implantação é a função recomendada. Clique em **Salvar**.
+
+
+##### Implantar o pacote de FRL (AEM Forms Server)
+
+As etapas a seguir são executadas no AEM Forms Server, com direitos de *administrador local* sobre a máquina.
+
+###### Etapa 4: faça logon no servidor que executa o AEM Forms como administrador
+
+Acesse o servidor que executa o AEM Forms usando o método apropriado. Verifique se você está usando uma conta com privilégios de administrador local para acessar o servidor.
+
+###### Etapa 5: desinstalar a versão anterior do Acrobat (se houver)
+
+**Crítico:** Faça backup de todas as configurações, perfis ou configurações personalizadas do Acrobat antes de desinstalar.
+
+1. Abra o Painel de Controle do Windows.
+2. Navegue até **Configurações** e abra **Aplicativos**.
+3. Localize o **Adobe Acrobat** na lista de programas instalados
+4. Selecione **Desinstalar** e siga as instruções para remover o aplicativo. Se solicitado, reinicie o servidor
+5. Verifique se todas as versões Classic do programa estão desinstaladas. Use a [Ferramenta de Limpeza do Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) se necessário para concluir a remoção.
+
+###### Etapa 6: baixar e instalar o Adobe Acrobat Pro
+
+Após desinstalar a versão anterior, é necessário baixar e instalar uma versão compatível do Adobe Acrobat Pro:
+
+1. Vá para a [página Downloads do Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Navegue até a seção **Instalador do Acrobat Pro**.
+3. Para uso com o AEM Forms PDF Generator, baixe o instalador &quot;Para Windows (32 bits)&quot;, pois esta é a versão compatível com o AEM Forms PDF Generator.
+4. Siga as instruções de instalação na página:
+   * Extraia o arquivo zip baixado para uma pasta no seu computador
+   * Navegue até o arquivo Setup.exe (não execute o arquivo Setup.exe a partir do arquivo zip)
+   * Clique duas vezes em Setup.exe para iniciar a instalação
+   * Siga as instruções na tela para concluir a instalação
+5. Após a instalação, abra o Adobe Acrobat Pro e conclua a configuração inicial, descartando as caixas de diálogo de boas-vindas.
+6. Verifique a instalação criando uma PDF simples.
+
+###### Etapa 7: baixar o pacote FRL
+
+1. Faça logon no [Adobe Admin Console](https://adminconsole.adobe.com/) usando a *conta de usuário* à qual você forneceu permissões de download na Etapa 3.
+1. Navegue até a guia **Pacotes**.
+1. Localize o pacote de FRL que você criou na Etapa 2 (chamado &quot;Acrobat FRL AEM Forms&quot; ou o nome do pacote personalizado).
+1. Clique em **Baixar** para baixar o pacote no servidor.
+
+###### Etapa 8: implantar o pacote
+
+1. **Extrair o Pacote:** Extraia o conteúdo do arquivo ZIP baixado para um diretório no servidor (por exemplo, `C:\AcrobatFRL`). Certifique-se de que o diretório de extração seja facilmente acessível.
+
+2. **Abrir Prompt de Comando como Administrador (Windows):** Clique com o botão direito no botão Iniciar e selecione &quot;Prompt de Comando (Admin)&quot; ou &quot;Windows PowerShell (Admin)&quot;
+
+3. **Navegue até o diretório de extração:**
+
+   ```cmd
+   cd C:\AcrobatFRL
+   ```
+
+4. **Executar o Comando de Ativação:**
+
+   ```cmd
+   # Command syntax
+   adobe-licensing-toolkit.exe -p -i -f [JSON_FILE_NAME].json
+   
+   # Example with actual values
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+   > **Importante:**
+   > * Substitua `<JSON_FILE_NAME>.json` pelo nome de arquivo *exato* do arquivo JSON no pacote extraído.
+   > * O nome de arquivo JSON diferencia maiúsculas de minúsculas.
+   > * Verifique se há erros de digitação no nome do arquivo.
+
+   **Saída esperada:**
+
+   ```
+   Adobe Licensing Toolkit (1.1.0.130)
+   Operation Successfully Completed
+   ```
+
+   > ℹ️ **Observação:** o processo de ativação pode levar aproximadamente 30 segundos.
+
+5. **Noções Básicas sobre os Parâmetros de Comando:**
+
+   | Parâmetro | Descrição |
+   |-----------|-------------|
+   | `-p` | Especifica a plataforma (detecta automaticamente o sistema operacional) |
+   | `-i` | Instrui a ferramenta a instalar e ativar a licença |
+   | `-f` | Especifica o caminho para o arquivo de licença JSON |
+
+###### Etapa 9: iniciar o servidor do AEM Forms
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Inicie o servidor do AEM Forms a partir de um console de linha de comando em uma sessão de usuário interativa. (Faça logon no servidor e inicie manualmente o AEM Forms a partir da linha de comando.)
+2. Mantenha a sessão do usuário ativa após iniciar o servidor. Não saia do computador, pois isso encerra o processo do servidor. Você pode fechar com segurança a janela da Área de Trabalho Remota (RDP) sem fazer logoff; o servidor continua a ser executado enquanto a sessão permanecer ativa.
+3. Para maior confiabilidade, configure uma tarefa de inicialização ou tarefa agendada para iniciar automaticamente o servidor do AEM Forms quando o usuário fizer logon.
+
+###### Etapa 10 Testar serviço PDF Generator
+
+1. Abrir a interface do administrador do AEM Forms
+2. Navegue até o serviço PDF Generator
+3. Tente converter um documento simples do Microsoft Office para o PDF
+4. Verifique se a conversão foi concluída com sucesso
+
+#### Verificar versão do Acrobat após ativação de FRL
+
+1. Abra o Adobe Acrobat Pro DC no servidor
+2. Acesse Ajuda → Sobre o Adobe Acrobat Pro DC
+3. Verifique se o número da versão corresponde à versão esperada
+4. Confirmar se o status da licença é exibido como ativado
+
+>[!TAB Licença de Volume - Usuário Único]
+
+#### Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no servidor do AEM Forms
+
+Essas etapas pressupõem que você tenha os privilégios administrativos necessários no Adobe Admin Console e no servidor que executa o AEM Forms.
+
+##### Preparar o pacote de FRL (Adobe Admin Console)
+
+Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+###### Etapa 1: fazer logon na Adobe Admin Console
+
+1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
+1. Faça logon usando uma conta com privilégios de *Administrador do Sistema*.
+1. (Opcional) Se sua organização tiver acesso a várias organizações IMS, use a opção de seleção de organização no canto superior direito do Admin Console para escolher a organização correta. Na maioria dos cenários de clientes, isso já estaria definido como o padrão de sua organização, pois os usuários normalmente têm acesso apenas à sua própria organização.
+
+###### Etapa 2: criar o pacote FRL
+
+1. No Admin Console, navegue até a guia &quot;Pacotes&quot;. Este é um pacote Adobe Admin Console, não um pacote AEM.
+1. Selecione o cartão **Licença de Recurso Restrito** e clique no botão **Introdução**. Certifique-se de selecionar o tipo de licença correto.
+1. Na tela **Criar um pacote**, defina as configurações do pacote:
+
+   | Configuração | Valor recomendado | Notas |
+   |---------|-------------------|-------|
+   | Método de ativação | Offline | Opção recomendada |
+   | Direito | Geração de PDF (PDFG) | Necessário para a funcionalidade do AEM Forms PDF Generator |
+   | Configurar plataforma | Windows de 64 bits | O Apple macOS não é compatível no momento |
+   | Ativar local | &quot;Usar idioma do SO&quot; | Configuração padrão |
+   | Idioma | Seu idioma preferido | Para interface do Acrobat |
+   | Escolher aplicativos - aplicativos disponíveis | Mantenha o Adobe Acrobat nos aplicativos disponíveis. Não Mover para o aplicativo selecionado | Você [baixaria o Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) da página da Adobe Experience League na etapa 6. |
+   | Escolher aplicativos - aplicativos selecionados | Manter apenas o arquivo de licença nos aplicativos selecionados | Configuração padrão para implantação de FRL |
+   | Plug-ins | Não fazer alterações nesta tela | |
+   | Opções | Não fazer alterações nesta tela | |
+   | Finalizar | Nome do pacote: &quot;Acrobat FRL AEM Forms&quot; | Usar um nome descritivo |
+
+1. Clique em **Criar** para criar o pacote.
+
+###### Etapa 3: fornecer permissões de download a um usuário
+
+É recomendável criar uma conta de serviço dedicada para gerenciar pacotes de FRL. Se você ainda não tiver uma conta dedicada, siga este [vídeo instrutivo](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) para saber como adicionar um novo usuário à sua organização da Adobe.
+
+Depois de ter a conta apropriada, siga estas etapas para conceder permissões de download:
+
+1. Na Admin Console, navegue até a guia **Usuários**.
+2. Localize ou crie uma conta de usuário para conceder permissões de download.
+3. Clique no nome do usuário para abrir o perfil.
+4. Clique no ícone ao lado do usuário **Editar Direitos de Administrador**.
+5. Atribua a função de **Administrador de Implantação** ao usuário. Outras funções de administrador também podem funcionar, mas Administrador de implantação é a função recomendada. Clique em **Salvar**.
+
+
+##### Implantar o pacote de FRL (AEM Forms Server)
+
+As etapas a seguir são executadas no AEM Forms Server, com direitos de *administrador local* sobre a máquina.
+
+###### Etapa 4: faça logon no servidor que executa o AEM Forms como administrador
+
+Acesse o servidor que executa o AEM Forms usando o método apropriado. Verifique se você está usando uma conta com privilégios de administrador local para acessar o servidor.
+
+###### Etapa 5: desinstalar a versão anterior do Acrobat (se houver)
+
+**Crítico:** Faça backup de todas as configurações, perfis ou configurações personalizadas do Acrobat antes de desinstalar.
+
+1. Abra o Painel de Controle do Windows.
+2. Navegue até **Configurações** e abra **Aplicativos**.
+3. Localize o **Adobe Acrobat** na lista de programas instalados
+4. Selecione **Desinstalar** e siga as instruções para remover o aplicativo. Se solicitado, reinicie o servidor
+5. Verifique se todas as versões Classic do programa estão desinstaladas. Use a [Ferramenta de Limpeza do Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) se necessário para concluir a remoção.
+
+###### Etapa 6: baixar e instalar o Adobe Acrobat Pro
+
+Após desinstalar a versão anterior, é necessário baixar e instalar uma versão compatível do Adobe Acrobat Pro:
+
+1. Vá para a [página Downloads do Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Navegue até a seção **Instalador do Acrobat Pro**.
+3. Para uso com o AEM Forms PDF Generator, baixe o instalador &quot;Para Windows (32 bits)&quot;, pois esta é a versão compatível com o AEM Forms PDF Generator.
+4. Siga as instruções de instalação na página:
+   * Extraia o arquivo zip baixado para uma pasta no seu computador
+   * Navegue até o arquivo Setup.exe (não execute o arquivo Setup.exe a partir do arquivo zip)
+   * Clique duas vezes em Setup.exe para iniciar a instalação
+   * Siga as instruções na tela para concluir a instalação
+5. Após a instalação, abra o Adobe Acrobat Pro e conclua a configuração inicial, descartando as caixas de diálogo de boas-vindas.
+6. Verifique a instalação criando uma PDF simples.
+
+###### Etapa 7: baixar o pacote FRL
+
+1. Faça logon no [Adobe Admin Console](https://adminconsole.adobe.com/) usando a *conta de usuário* à qual você forneceu permissões de download na Etapa 3.
+1. Navegue até a guia **Pacotes**.
+1. Localize o pacote de FRL que você criou na Etapa 2 (chamado &quot;Acrobat FRL AEM Forms&quot; ou o nome do pacote personalizado).
+1. Clique em **Baixar** para baixar o pacote no servidor.
+
+###### Etapa 8: implantar o pacote
+
+1. **Extrair o Pacote:** Extraia o conteúdo do arquivo ZIP baixado para um diretório no servidor (por exemplo, `C:\AcrobatFRL`). Certifique-se de que o diretório de extração seja facilmente acessível.
+
+2. **Abrir Prompt de Comando como Administrador (Windows):** Clique com o botão direito no botão Iniciar e selecione &quot;Prompt de Comando (Admin)&quot; ou &quot;Windows PowerShell (Admin)&quot;
+
+3. **Navegue até o diretório de extração:**
+
+   ```cmd
+   cd C:\AcrobatFRL
+   ```
+
+4. **Executar o Comando de Ativação:**
+
+   ```cmd
+   # Command syntax
+   adobe-licensing-toolkit.exe -p -i -f [JSON_FILE_NAME].json
+   
+   # Example with actual values
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+   > **Importante:**
+   > * Substitua `<JSON_FILE_NAME>.json` pelo nome de arquivo *exato* do arquivo JSON no pacote extraído.
+   > * O nome de arquivo JSON diferencia maiúsculas de minúsculas.
+   > * Verifique se há erros de digitação no nome do arquivo.
+
+   **Saída esperada:**
+
+   ```
+   Adobe Licensing Toolkit (1.1.0.130)
+   Operation Successfully Completed
+   ```
+
+   > ℹ️ **Observação:** o processo de ativação pode levar aproximadamente 30 segundos.
+
+5. **Noções Básicas sobre os Parâmetros de Comando:**
+
+   | Parâmetro | Descrição |
+   |-----------|-------------|
+   | `-p` | Especifica a plataforma (detecta automaticamente o sistema operacional) |
+   | `-i` | Instrui a ferramenta a instalar e ativar a licença |
+   | `-f` | Especifica o caminho para o arquivo de licença JSON |
+
+###### Etapa 9: iniciar o servidor do AEM Forms
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Use a Área de Trabalho Remota (RDP) para fazer logon no servidor e iniciar o servidor do AEM Forms usando serviços.
+2. Use a Área de Trabalho Remota (RDP) para fazer logon no servidor e iniciar o servidor do AEM Forms usando os Serviços do Windows. Depois que o servidor estiver em execução, não feche a janela do RDP. Em vez disso, saia normalmente fazendo logoff do usuário do — isso garante que a sessão termine sem problemas enquanto o serviço continua a ser executado em segundo plano.
+
+###### Etapa 10: testar o serviço PDF Generator
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Abrir a interface do administrador do AEM Forms
+2. Navegue até o serviço PDF Generator
+3. Tente converter um documento simples do Microsoft Office para o PDF
+4. Verifique se a conversão foi concluída com sucesso
+
+###### Etapa 11: verificar a versão do Acrobat após a ativação de FRL
+
+1. Abra o Adobe Acrobat Pro DC no servidor
+2. Acesse Ajuda → Sobre o Adobe Acrobat Pro DC
+3. Verifique se o número da versão corresponde à versão esperada
+4. Confirmar se o status da licença é exibido como ativado
+
+>[!TAB Licença de Volume - Vários Usuários]
+
+#### Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no servidor do AEM Forms
+
+Essas etapas pressupõem que você tenha os privilégios administrativos necessários no Adobe Admin Console e no servidor que executa o AEM Forms.
+
+##### Preparar o pacote de FRL (Adobe Admin Console)
+
+Estas etapas devem ser executadas com acesso de *Administrador do Sistema* à Adobe Admin Console.
+
+###### Etapa 1: fazer logon na Adobe Admin Console
+
+1. Abra um navegador e navegue até a [Adobe Admin Console](https://adminconsole.adobe.com/)
+1. Faça logon usando uma conta com privilégios de *Administrador do Sistema*.
+1. (Opcional) Se sua organização tiver acesso a várias organizações IMS, use a opção de seleção de organização no canto superior direito do Admin Console para escolher a organização correta. Na maioria dos cenários de clientes, isso já estaria definido como o padrão de sua organização, pois os usuários normalmente têm acesso apenas à sua própria organização.
+
+###### Etapa 2: criar o pacote FRL
+
+1. No Admin Console, navegue até a guia &quot;Pacotes&quot;. Este é um pacote Adobe Admin Console, não um pacote AEM.
+1. Selecione o cartão **Licença de Recurso Restrito** e clique no botão **Introdução**. Certifique-se de selecionar o tipo de licença correto.
+1. Na tela **Criar um pacote**, defina as configurações do pacote:
+
+   | Configuração | Valor recomendado | Notas |
+   |---------|-------------------|-------|
+   | Método de ativação | Offline | Opção recomendada |
+   | Direito | Geração de PDF (PDFG) | Necessário para a funcionalidade do AEM Forms PDF Generator |
+   | Configurar plataforma | Windows de 64 bits | O Apple macOS não é compatível no momento |
+   | Ativar local | &quot;Usar idioma do SO&quot; | Configuração padrão |
+   | Idioma | Seu idioma preferido | Para interface do Acrobat |
+   | Escolher aplicativos - aplicativos disponíveis | Mantenha o Adobe Acrobat nos aplicativos disponíveis. Não Mover para o aplicativo selecionado | Você [baixaria o Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) da página da Adobe Experience League na etapa 6. |
+   | Escolher aplicativos - aplicativos selecionados | Manter apenas o arquivo de licença nos aplicativos selecionados | Configuração padrão para implantação de FRL |
+   | Plug-ins | Não fazer alterações nesta tela | |
+   | Opções | Não fazer alterações nesta tela | |
+   | Finalizar | Nome do pacote: &quot;Acrobat FRL AEM Forms&quot; | Usar um nome descritivo |
+
+1. Clique em **Criar** para criar o pacote.
+
+###### Etapa 3: fornecer permissões de download a um usuário
+
+É recomendável criar uma conta de serviço dedicada para gerenciar pacotes de FRL. Se você ainda não tiver uma conta dedicada, siga este [vídeo instrutivo](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) para saber como adicionar um novo usuário à sua organização da Adobe.
+
+Depois de ter a conta apropriada, siga estas etapas para conceder permissões de download:
+
+1. Na Admin Console, navegue até a guia **Usuários**.
+2. Localize ou crie uma conta de usuário para conceder permissões de download.
+3. Clique no nome do usuário para abrir o perfil.
+4. Clique no ícone ao lado do usuário **Editar Direitos de Administrador**.
+5. Atribua a função de **Administrador de Implantação** ao usuário. Outras funções de administrador também podem funcionar, mas Administrador de implantação é a função recomendada. Clique em **Salvar**.
+
+
+##### Implantar o pacote de FRL (AEM Forms Server)
+
+As etapas a seguir são executadas no AEM Forms Server, com direitos de *administrador local* sobre a máquina.
+
+###### Etapa 4: faça logon no servidor que executa o AEM Forms como administrador
+
+Acesse o servidor que executa o AEM Forms usando o método apropriado. Verifique se você está usando uma conta com privilégios de administrador local para acessar o servidor.
+
+###### Etapa 5: desinstalar a versão anterior do Acrobat (se houver)
+
+**Crítico:** Faça backup de todas as configurações, perfis ou configurações personalizadas do Acrobat antes de desinstalar.
+
+1. Abra o Painel de Controle do Windows.
+2. Navegue até **Configurações** e abra **Aplicativos**.
+3. Localize o **Adobe Acrobat** na lista de programas instalados
+4. Selecione **Desinstalar** e siga as instruções para remover o aplicativo. Se solicitado, reinicie o servidor
+5. Verifique se todas as versões Classic do programa estão desinstaladas. Use a [Ferramenta de Limpeza do Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) se necessário para concluir a remoção.
+
+###### Etapa 6: baixar e instalar o Adobe Acrobat Pro
+
+Após desinstalar a versão anterior, é necessário baixar e instalar uma versão compatível do Adobe Acrobat Pro:
+
+1. Vá para a [página Downloads do Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Navegue até a seção **Instalador do Acrobat Pro**.
+3. Para uso com o AEM Forms PDF Generator, baixe o instalador &quot;Para Windows (32 bits)&quot;, pois esta é a versão compatível com o AEM Forms PDF Generator.
+4. Siga as instruções de instalação na página:
+   * Extraia o arquivo zip baixado para uma pasta no seu computador
+   * Navegue até o arquivo Setup.exe (não execute o arquivo Setup.exe a partir do arquivo zip)
+   * Clique duas vezes em Setup.exe para iniciar a instalação
+   * Siga as instruções na tela para concluir a instalação
+5. Após a instalação, abra o Adobe Acrobat Pro e conclua a configuração inicial, descartando as caixas de diálogo de boas-vindas.
+6. Verifique a instalação criando uma PDF simples.
+
+###### Etapa 7: baixar o pacote FRL
+
+1. Faça logon no [Adobe Admin Console](https://adminconsole.adobe.com/) usando a *conta de usuário* à qual você forneceu permissões de download na Etapa 3.
+1. Navegue até a guia **Pacotes**.
+1. Localize o pacote de FRL que você criou na Etapa 2 (chamado &quot;Acrobat FRL AEM Forms&quot; ou o nome do pacote personalizado).
+1. Clique em **Baixar** para baixar o pacote no servidor.
+
+###### Etapa 8: implantar o pacote
+
+1. **Extrair o Pacote:** Extraia o conteúdo do arquivo ZIP baixado para um diretório no servidor (por exemplo, `C:\AcrobatFRL`). Certifique-se de que o diretório de extração seja facilmente acessível.
+
+2. **Abrir Prompt de Comando como Administrador (Windows):** Clique com o botão direito no botão Iniciar e selecione &quot;Prompt de Comando (Admin)&quot; ou &quot;Windows PowerShell (Admin)&quot;
+
+3. **Navegue até o diretório de extração:**
+
+   ```cmd
+   cd C:\AcrobatFRL
+   ```
+
+4. **Executar o Comando de Ativação:**
+
+   ```cmd
+   # Command syntax
+   adobe-licensing-toolkit.exe -p -i -f [JSON_FILE_NAME].json
+   
+   # Example with actual values
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+   > **Importante:**
+   > * Substitua `<JSON_FILE_NAME>.json` pelo nome de arquivo *exato* do arquivo JSON no pacote extraído.
+   > * O nome de arquivo JSON diferencia maiúsculas de minúsculas.
+   > * Verifique se há erros de digitação no nome do arquivo.
+
+   **Saída esperada:**
+
+   ```
+   Adobe Licensing Toolkit (1.1.0.130)
+   Operation Successfully Completed
+   ```
+
+   > ℹ️ **Observação:** o processo de ativação pode levar aproximadamente 30 segundos.
+
+5. **Noções Básicas sobre os Parâmetros de Comando:**
+
+   | Parâmetro | Descrição |
+   |-----------|-------------|
+   | `-p` | Especifica a plataforma (detecta automaticamente o sistema operacional) |
+   | `-i` | Instrui a ferramenta a instalar e ativar a licença |
+   | `-f` | Especifica o caminho para o arquivo de licença JSON |
+
+###### Etapa 9: iniciar o servidor do AEM Forms
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Inicie o servidor do AEM Forms a partir de um console de linha de comando em uma sessão de usuário interativa. (Faça logon no servidor e inicie manualmente o AEM Forms a partir da linha de comando.)
+2. Mantenha a sessão do usuário ativa após iniciar o servidor. Não saia do computador, pois isso encerra o processo do servidor. Você pode fechar com segurança a janela da Área de Trabalho Remota (RDP) sem fazer logoff; o servidor continua a ser executado enquanto a sessão permanecer ativa.
+3. Para maior confiabilidade, configure uma tarefa de inicialização ou tarefa agendada para iniciar automaticamente o servidor do AEM Forms quando o usuário fizer logon.
+
+###### Etapa 10: testar o serviço PDF Generator
+
+Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
+
+1. Abrir a interface do administrador do AEM Forms
+2. Navegue até o serviço PDF Generator
+3. Tente converter um documento simples do Microsoft Office para o PDF
+4. Verifique se a conversão foi concluída com sucesso
+
+#### Verificar versão do Acrobat após ativação de FRL
+
+1. Abra o Adobe Acrobat Pro DC no servidor
+2. Acesse Ajuda → Sobre o Adobe Acrobat Pro DC
+3. Verifique se o número da versão corresponde à versão esperada
+4. Confirmar se o status da licença é exibido como ativado
+
+>[!ENDTABS]
+
 
 ### Configurar variáveis de ambiente {#setup-environment-variables}
 
@@ -382,7 +1050,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interromper imediatamente o servidor.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
