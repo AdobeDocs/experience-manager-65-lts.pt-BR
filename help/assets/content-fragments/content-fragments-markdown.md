@@ -4,10 +4,11 @@ description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Ma
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 88%
+source-wordcount: '522'
+ht-degree: 86%
 
 ---
 
@@ -129,7 +130,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
@@ -165,7 +166,7 @@ Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar um trecho de código, envolva-o com aspas invertidas (&grave;). Ao contrário de um bloco de código pré-formatado, um trecho de código mostra o código dentro de um parágrafo normal.
+Para indicar um trecho de código, envolva-o com aspas invertidas (`` ` ``). Ao contrário de um bloco de código pré-formatado, um trecho de código mostra o código dentro de um parágrafo normal.
 
 Por exemplo:
 
