@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
+source-git-commit: 7f9f24f173604640b454449b389da9fcdcf7017d
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 16%
@@ -34,13 +34,13 @@ A plataforma do [!DNL Adobe Experience Manager] 6.5 LTS se baseia nas versões a
 
 O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o Quickstart.
 
-#### Suporte para Java™  {#java-support}
+#### Suporte a Java™  {#java-support}
 
 * Suporte para Java™ 17 e Java™ 21.
 * Para obter o desempenho ideal, substitua os valores de GC padrão por outros valores. Para obter mais informações, consulte a seção [instalar e atualizar](/help/sites-deploying/custom-standalone-install.md).
 * A Adobe distribui atualizações de manutenção do Java™ 17 e do Java™ 21 para uso do cliente em projetos relacionados à AEM, quando não estão disponíveis publicamente na Oracle.
 
-#### Empacotamento Uberjar {#uber-jar-packaging}
+#### Embalagem de Uberjar {#uber-jar-packaging}
 
 * Há uma pequena diferença na embalagem do Uberjar do AEM 6.5 LTS. Para obter mais informações, consulte [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -154,4 +154,4 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
