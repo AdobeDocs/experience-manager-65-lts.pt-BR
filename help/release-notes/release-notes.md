@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: 160b27c188f8bcd3f3a668b50d3a824598909688
+source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 16%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 16%
 |---|---|
 | Versão | 6,5 LT |
 | Tipo | Versão Principal |
-| Data de disponibilidade geral | 7 de março de 2025 |
+| Disponibilidade geral | 7 de março de 2025 |
 
 ## Novidades {#what-s-new}
 
@@ -154,4 +154,4 @@ Se você enfrentar esse problema, entre em contato com o Suporte ao cliente da A
 Esses sites só estão disponíveis para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
