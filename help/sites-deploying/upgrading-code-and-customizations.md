@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Antes de continuar com uma atualização, você deve ter uma base de código de 
 
 ## Atualizar a base de código {#upgrade-code-base}
 
-### Criar uma Ramificação Dedicada para o Código LTS 6.5 no Controle de Versão {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
+### Criar uma ramificação dedicada para o código LTS 6.5 no controle de versão {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 Todos os códigos e configurações necessários para a implementação do AEM devem ser gerenciados usando alguma forma de controle de versão. Uma ramificação dedicada no controle de versão deve ser criada para gerenciar todas as alterações necessárias à base de código na versão de destino do AEM. O teste iterativo da base de código em relação à versão de destino do AEM e correções de erros subsequentes é gerenciado nessa ramificação.
 
@@ -83,7 +83,7 @@ Para o AEM 6.5 LTS, há novamente dois tipos de Uber Jars:
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.6.0</version>
-    <classifier>apis</classifier>
+    <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
 ```
@@ -116,7 +116,7 @@ Abaixo estão áreas críticas de qualquer implementação do AEM que devem ser 
    <td>Testando a implementação do AEM e o código associado no nível de publicação<br /> por meio da Dispatcher. Deve incluir critérios para atualizações de página e invalidação de cache <br />.</td>
   </tr>
   <tr>
-   <td>Criação  </td>
+   <td>Criação</td>
    <td>Testar a implementação do AEM e o código associado no nível do Autor. Deve incluir página, criação de componentes e caixas de diálogo.</td>
   </tr>
   <tr>
