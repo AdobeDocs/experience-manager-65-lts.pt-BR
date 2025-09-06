@@ -459,7 +459,7 @@ Para instruções mais detalhadas, consulte a [documentação de upgrade](/help/
 
 ## Instalar e atualizar o complemento AEM Forms {#install-update-aem-forms-add-on}
 
-Para obter instruções detalhadas, consulte [Executando uma Atualização no Local](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Para obter instruções detalhadas, consulte [Executando uma Atualização no Local](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
