@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3345'
 ht-degree: 1%
 
 ---
@@ -184,19 +184,19 @@ Para atualizar para uma nova versão do conector S3 1.60.x, siga estas etapas:
 
 1. Pare a instância do AEM.
 
-1. Navegue até `<aem-install>/crx-quickstart/install/15` na pasta de instalação do AEM e faça um backup de seu conteúdo.
-1. Após o backup, exclua a versão antiga do S3 Connector e suas dependências excluindo todos os arquivos jar na pasta `<aem-install>/crx-quickstart/install/15`, por exemplo:
+1. Navegue até `<aem-install>/crx-quickstart/install` na pasta de instalação do AEM e faça um backup de todas as suas subpastas.
+1. Após o backup, exclua a versão antiga do S3 Connector e suas dependências excluindo todos os arquivos jar em todas as pastas na pasta `<aem-install>/crx-quickstart/install/`, por exemplo:
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >Os nomes de arquivo apresentados acima são usados apenas para fins ilustrativos.
 
-1. Baixe a versão mais recente do pacote de recursos 1.60.x da [Distribuição de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
-1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/15`.
-1. Copie os arquivos jar para **&lt;aem-install>**/crx-quickstart/install/15 na pasta de instalação do AEM.
+1. Baixe a versão mais recente do pacote de recursos 1.60.x do [repositório Maven.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/`.
+1. Copie todas as subpastas para **&lt;aem-install>**/crx-quickstart/install/ na pasta de instalação do AEM.
 1. Inicie o AEM e verifique a funcionalidade do conector.
 
 Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
@@ -471,7 +471,7 @@ O processo de coleta de lixo do armazenamento de dados é usado para remover qua
 
 Você pode executar a coleta de lixo do armazenamento de dados ao:
 
-1. Ir para o console JMX em *https://&lt;endereço_servidor:porta>/system/console/jmx*
+1. Ir para o console JMX em *https://&lt;endereço_servidor:port>/system/console/jmx*
 1. Pesquisando por **RepositoryManagement.** Depois de encontrar o MBean do Gerenciador do repositório, clique nele para exibir as opções disponíveis.
 1. Role até o final da página e clique no link **startDataStoreGC(boolean markOnly)**.
 1. Na caixa de diálogo a seguir, digite `false` para o parâmetro `markOnly` e clique em **Chamar**:
