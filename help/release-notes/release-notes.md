@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
-workflow-type: ht
-source-wordcount: '7223'
-ht-degree: 100%
+source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+workflow-type: tm+mt
+source-wordcount: '7103'
+ht-degree: 94%
 
 ---
 
@@ -317,7 +317,10 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 
 * Atualização do Sling ResourceAccessSecurity para a versão 1.1.2 a fim de resolver um `ClassCastException` que ocorria quando várias referências `ResourceAccessGate` inicializavam `ResourceAccessSecurityImpl`. (NPR-42750)
 * Correção de um problema na integração do Adobe Stock em que a caixa de diálogo “Licença” aparecia esmaecida. Esse problema ocorria devido à remoção de campos de entrada necessários pela função `sunt:initList`. A função foi encontrada nas bibliotecas de clientes da Coral Foundation. Atualização das bibliotecas de clientes para reter os campos necessários, permitindo a funcionalidade adequada da caixa de diálogo de licença. (NPR-42748)
-* Correção com suporte para o problema do Sling Scripting, que causava `DataTimeParseException` e `String.length()` exceções de ponteiro nulo durante a instalação do pacote. Atualização do Sling Scripting para a versão 2.8.3-1.0.10.6 para reduzir erros de instalação e melhorar a estabilidade. (NPR-42640)
+* Correção de um erro inesperado de compilação JSP com `org.apache.sling.scripting.jsp 2.6.0`. (NPR-42640)
+
+<!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
 
 <!--
 #### Translation{#foundation-translation-65-lts-sp1} -->
@@ -352,25 +355,25 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 
 * Quando um usuário exporta os dados de um PDF baseado em XFA com a exportDataAPI, o XML resultante mostra discrepâncias quando comparado com os dados do XML exportados manualmente com o Acrobat Reader. Valores de alguns campos estavam ausentes na saída em comparação com a saída gerada pelo Acrobat Reader. (LC-3922791)
 * Gerar um PDF marcado com o serviço de saída no Workbench adiciona uma tag de rótulo inesperada sob a tag de referência em um item de índice. (LC-3922756)
-* Ao nivelar PDFs dinâmicos e preenchíveis no formato PDF/A com o serviço de saída, o estado dinâmico não é preservado. Isso leva a uma perda de dados e a possíveis problemas de conformidade, especialmente quando a marcação está habilitada. (LC-3922708)
+* Ao nivelar PDFs dinâmicos e preenchíveis no formato PDF/A com o serviço de saída, o estado dinâmico não é preservado. Esse problema leva à perda de dados e a possíveis problemas de conformidade, especialmente quando a marcação está ativada. (LC-3922708)
 * Quando um usuário coloca legendas de campo com alinhamento inferior ou direito no AEM Forms Designer, a árvore de tags inclui somente a legenda sem o valor correspondente, resultando em uma marcação de acessibilidade incompleta. (LC-3922619)
 * Os códigos QR nos PDFs gerados ficam ilegíveis. O texto alternativo dos códigos QR também falha no teste de acessibilidade, afetando a compatibilidade com leitores de tela. (LC-3922551)
-* Quando um usuário renderiza uma correspondência na IU do agente, o conteúdo não é exibido corretamente devido à API FormService render(). (LC-3922461)
+* Quando um usuário renderiza uma correspondência na interface do usuário do agente, o conteúdo não é exibido corretamente devido à API FormService render(). (LC-3922461)
 * Quando um usuário tenta criar arquivos PDF/A a partir de XDPs com estilo Sunken Square no AEM Forms, isso resulta em problemas de renderização de borda. (LC-3922180)
 * O nivelamento de formulários dinâmicos vinculados a um esquema de XSD causa perda parcial de dados, pois alguns dados de formulário vinculados não são retidos no PDF final. (LC-3922008)
 * Quando um usuário tenta exportar dados de PDFs interativos com a API extractData no AEM Forms 6.5.13 e versões posteriores, isso resulta na ausência de dados em comparação com a exportação manual. (LC-3921983)
-* Os usuários enfrentam um problema de conformidade de acessibilidade no qual várias tags Link-OBJR são criadas ao converter formulários de XDP em PDFs estáticos com o AEM Forms Designer ou o serviço de saída, em vez de criar uma tag de vinculação unificada. (LC-3921977)
+* A conversão de formulários XDP em PDFs estáticos com o AEM Forms Designer ou o serviço de Saída cria várias marcas `Link-OBJR`. Os problemas causam um problema de conformidade de acessibilidade porque uma única tag de link unificada é esperada. (LC-3921977)
 
 ### Formulários adaptáveis
 
 * No AEM Forms, habilitar a opção “Permitir rich text no título” no painel de raiz faz com que a opção “Excluir título do documento de registro” em um painel aninhado oculte incorretamente o título do painel de raiz. Isso é feito no documento de registro gerado. (FORMS-19696)
-* O sistema ignora o Sling personalizado:resourceType atribuído por meio do AEM:afProperties em um esquema de JSON. O tipo de recurso personalizado é ignorado durante a renderização. (FORMS-19691)
+* O sistema ignora o `sling:resourceType` personalizado atribuído por meio de `aem:afProperties` em um esquema JSON. O tipo de recurso personalizado é ignorado durante a renderização. (FORMS-19691)
 * Quando um usuário envia um formulário adaptável com anexos pré-preenchidos por meio de URIs, o envio do formulário falha com uma NullPointerException devido à ausência de dados binários. (FORMS-19371) (FORMS-19486)
 * Quando um usuário carrega um PDF na seção “Formulários e documentos”, o recurso de linha do tempo para de funcionar. (FORMS-19407)(FORMS-19234)
-* Quando um usuário carrega arquivos com o componente de anexo de arquivo pronto para uso no AEM Forms, vulnerabilidades de segurança são identificadas. Esse problema pode levar a uma possível interceptação do processo de envio por entidades não autorizadas. (FORMS-19271)
+* Quando um usuário carrega arquivos com o componente de anexo de arquivo pronto para uso no AEM Forms, vulnerabilidades de segurança são identificadas. O problema leva à possível intercepção do processo de envio por entidades não autorizadas. (FORMS-19271)
 * Quando um usuário configura um formulário adaptável pronto para uso no AEM Forms para gerar um documento de registro automaticamente, o campo “Título” nas propriedades do documento do Acrobat Reader não exibe o título do documento captado. Por padrão, o título do formulário não é exibido no lugar do nome do arquivo. (FORMS-19263)
 * Quando um usuário abre uma comunicação interativa na IU do agente, não é possível apagar completamente os dados preenchidos previamente; após a remoção, eles são automaticamente preenchidos com os mesmos dados. (FORMS-19151)
-* Quando um usuário pré-visualiza um campo de data na IU do agente, a data é alterada inesperadamente. Esse problema ocorre devido a discrepâncias de fuso horário entre a configuração UTC da VM e a interpretação da data pelo sistema. (FORMS-19115)
+* Quando um usuário pré-visualiza um campo de data na IU do agente, a data é alterada inesperadamente. O problema ocorre devido a discrepâncias de fuso horário entre a configuração UTC da VM e a interpretação da data pelo sistema. (FORMS-19115)
 * Quando um usuário envia um formulário, os arquivos em anexo podem ser duplicados, resultando em vários uploads do mesmo arquivo. (FORMS-19045)(FORMS-19051)
 * A adição de coordenadores a conjuntos de políticas em “Segurança do documento” falha em ambientes de produção e inferiores. (FORMS-18603, FORMS-18212, FORMS-19697)
 * Quando um usuário clica no “datepicker-calendar-icon” no modo de desktop com um campo vazio, ocorre um erro devido a uma variável _$focusedDate indefinida, interrompendo os scripts personalizados associados. (FORMS-18483)(FORMS-18268)
@@ -380,28 +383,28 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 * Quando um usuário converte um arquivo de HTML em PDF com a opção WebToPDF, a seção de cabeçalho do PDF de saída não aparece, incluindo tags de metadados e título. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 * No SDK do AEM JEE Process Manager, quando um usuário chama o método retryAction(long actionOid), o sistema tenta novamente de forma incorreta a primeira ação encontrada na tabela tb_action_instance. Esse fluxo de trabalho ocorre mesmo quando um ID de ação específico é fornecido ou quando o ID é nulo, resultando em um comportamento não intencional. (FORMS-18187)
 * O usuário depara-se com problemas em que as funcionalidades de rascunho salvo e envio falham sem exibir uma mensagem de erro. (FORMS-18069)
-* A transição de componentes básicos baseados em XSD para componentes principais impede a implementação de referências entre arquivos em esquemas de JSON, afetando a migração de formulários adaptáveis. (FORMS-18065)
+* A transição de Componentes de base baseados em XSD para Componentes principais impede a implementação de referências entre arquivos em esquemas JSON, afetando a migração adaptável do Forms. (FORMS-18065)
 * Quando um usuário pré-visualiza uma correspondência na IU do agente, o campo de data mostra um valor incorreto devido a problemas de conversão de horas da IC. Essas discrepâncias surgem das diferenças de fuso horário entre o ambiente da VM e a interpretação de horas do sistema (UTC versus hora local). (FORMS-17988) (FORMS-17248)
 * Quando um usuário pré-visualiza cartas com modelos de aviso da IC no AEM Forms, os tempos de geração do PDF variam significativamente, de 1,5 segundo a mais de 10 segundos, mesmo no mesmo servidor. Essa inconsistência afeta os fluxos de trabalho críticos para a empresa. (FORMS-17951)
 * Quando um usuário vincula um objeto de assinatura à mão em um formulário adaptável a um XDP com a opção “Fontes de dados”, as alterações não podem ser salvas. Isso se deve a erros persistentes de validação da taxa de proporção, mesmo ao usar valores válidos. (FORMS-17587)
-* Quando um usuário usa um XDP específico com muitos campos ocultos para fragmentos de documento, o AEM cria nós do CRX com a propriedade CM:optional definida como falsa, o que causa falha no envio da comunicação interativa (IC, na sigla em inglês). (FORMS-17538)
+* Quando um usuário usa um XDP específico com muitos campos ocultos para fragmentos de documento, o AEM cria nós do CRX com a propriedade `cm:optional` definida como false, o que causa falha no envio da IC (Comunicação interativa). (FORMS-17538)
 * Quando um cliente pré-visualiza uma correspondência, o campo de caixa numérica não lida corretamente com valores negativos quando os limites de dígito para Lead e Frac são definidos. Esse problema ocorre devido ao uso de parseFloat, que trata o sinal de menos como parte do número. (FORMS-17451)
-* Quando uma correspondência é visualizada, o uso do curinga “*” no arquivo Adobe.json é notado, gerando receios sobre sua finalidade e possível modificação. (FORMS-17317)
+* Quando uma correspondência é visualizada, o uso do curinga &quot;*&quot; no arquivo Adobe.json é notado, gerando preocupação sobre sua finalidade e possível modificação. (FORMS-17317)
 * Quando um usuário usa um leitor de tela na conta conjunta de inscrição em um economizador de taxa fixa, os cabeçalhos são anunciados incorretamente como clicáveis, causando problemas de acessibilidade. (FORMS-17038)
 * Quando um formulário é incorporado, o iframe gerado não possui um atributo de título, resultando em um problema de conformidade de acessibilidade. (FORMS-17010)
 * Baixar um formulário por meio da IU do Forms Manager sempre inclui dependências associadas, como temas e fragmentos. (FORMS-15811)
 * Quando um usuário acessa o formulário em dispositivos móveis (iOS e Android™), os botões de avançar e voltar na primeira página estão desabilitados. No entanto, o leitor de tela não os identifica como desabilitados. (FORMS-15773)
 * Quando um usuário salva um formulário grande com fragmentos e carregamento lento habilitado, ele não recupera rascunhos, interrompendo o fluxo de trabalho. (FORMS-19890, FORMS-19808)
-* Os usuários deparavam-se com problemas ao salvar propriedades de formulários adaptáveis com base nos componentes principais. Isso ocorria porque scripts redundantes do formulário adaptável baseado no editor de componentes de base eram incluídos, causando conflitos no formulário adaptável baseado em componentes principais. editor. (FORMS-17474)
+* Os usuários deparavam-se com problemas ao salvar propriedades de formulários adaptáveis com base nos componentes principais. Esse erro ocorreu porque scripts redundantes do formulário adaptável baseado no editor de componentes de base estão incluídos, causando conflitos no formulário adaptável baseado em componentes principais. editor. (FORMS-17474)
 * Os usuários deparavam-se com problemas em que a página de assinatura da Adobe Sign GovCloud não era renderizada em um iframe. (FORMS-16803)
-* Os usuários deparavam-se com erros ao selecionar referências para fragmentos de componente principal de formulários adaptáveis (AF, na sigla em inglês). A mensagem de erro “Não é possível renderizar a referência: não é um caminho absoluto” era exibida, impedindo a renderização de referência adequada. (FORMS-19678)
+* Os usuários experimentaram erros ao selecionar referências para fragmentos de Componente principal do Adaptive Forms (AF). A mensagem de erro “Não é possível renderizar a referência: não é um caminho absoluto” era exibida, impedindo a renderização de referência adequada. (FORMS-19678)
 * Adição de compatibilidade com a conversão de vários segmentos com o Acrobat DC, permitindo que os usuários executem conversões simultâneas de documentos do Word, Excel e PowerPoint em documentos em PDF com mais eficiência. (FORMS-21310)
 * Adição do pacote `com.adobe.granite.toggle.impl.dev` ao pacote de serviços 24 do AEM, permitindo processos de desenvolvimento mais simplificados ao removê-lo do complemento de formulários. (FORMS-20139)
 * Remoção de FeatureToggleRenderConditionServlet de forms-foundation e do pacote com.adobe.granite.toggle.impl.dev do complemento de formulários. Essa atualização garante que, após a instalação do complemento de formulários, a condição de renderização seja resolvida corretamente, melhorando a funcionalidade do componente para os clientes. (FORMS-20138)
 * O desempenho ficou lento para os usuários devido a consultas de longa execução nos formulários adaptáveis. Esta atualização faz alterações retroativas na consulta para melhorar a eficiência. Os clientes agora podem criar um índice com o nome da tag aemformsAFReferences. (FORMS-21411)
-* Os usuários deparavam-se com posições de cabeçalho desalinhadas ao converter um HTML no Portable Document Format (PDF) por meio do WebtoPDF. Esse problema afetava a consistência do layout do documento e a legibilidade da saída. (FORMS-21502, FORMS-21540)
+* Os usuários deparavam-se com posições de cabeçalho desalinhadas ao converter um HTML no Portable Document Format (PDF) por meio do WebtoPDF. Esse problema afetou a consistência no layout do documento e a legibilidade da saída. (FORMS-21502, FORMS-21540)
 * Os usuários deparavam-se com falhas de validação do PDF/A-1b, apesar da verificação bem-sucedida do PreFlight. Esse problema afetava as verificações de conformidade de documentos para clientes empresariais que usavam as ferramentas de validação de PDF. (FORMS-20196)
-* Os usuários deparavam-se com strings não traduzidas na IU, causando confusão e dificuldade de entender a interface. (FORMS-6542)
+* Os usuários experimentaram strings não traduzidas na interface do usuário, causando confusão e dificuldade em entender a interface. (FORMS-6542)
 * Os usuários deparavam-se com problemas com notificações por email. A etapa de enviar fluxo de trabalho de email não enviava emails, afetando os processos de comunicação automatizada. (FORMS-17961)
 * Os usuários deparavam-se com falhas nos testes de fluxos de trabalho de formulários, o que afetava sua capacidade de concluir os processos de fluxos de trabalho com eficiência. (FORMS-16231)
 * Os usuários não conseguiam usar o recurso de linha do tempo de arquivos em PDF nos formulários do AEM. Esse problema afetava a capacidade dos usuários de rastrear alterações e revisões de documentos com eficiência. Ao carregar qualquer PDF na seção “Formulários e documentos”, na área de formulários do AEM, a exibição da linha do tempo para de funcionar. (FORMS-19408)
@@ -410,12 +413,12 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 
 ### Captcha nos formulários
 
-* Adição de compatibilidade com Hcaptcha e Turnstile para formulários adaptáveis baseados nos componentes de base. (FORMS-16562)
-* Os usuários deparavam-se com problemas de sobreposição de ícones na caixa de diálogo “Criar configuração do hCaptcha”. Ao preencher os campos obrigatórios, o ícone de informações sobrepunha-se ao ícone de erro, causando confusão durante a configuração. (FORMS-16916)
-* Os usuários deparavam-se com uma configuração incorreta coletada para o reCAPTCHA em formulários adaptáveis baseados em componentes de base. Quando o container de configuração não era selecionado para um formulário, várias configurações na pasta `conf/global` causavam o problema. (FORMS-19237)
+* Adição do suporte a `Hcaptcha` e `Turnstile` para o Forms adaptável com base em Componentes de base. (FORMS-16562)
+* Os usuários tiveram problemas de sobreposição de ícones na caixa de diálogo `Create hCaptcha Configuration`. Ao preencher os campos obrigatórios, o ícone de informações sobrepunha-se ao ícone de erro, causando confusão durante a configuração. (FORMS-16916)
+* Os usuários tiveram uma configuração incorreta sendo coletada para o reCAPTCHA no Adaptive Forms com base nos Componentes de base. Quando o container de configuração não era selecionado para um formulário, várias configurações na pasta `conf/global` causavam o problema. (FORMS-19237)
 * Os usuários deparavam-se com problemas em que o reCAPTCHA não era renderizado. Isso afetava os envios de formulários e a validação de segurança para clientes empresariais. (FORMS-17136, FORMS-19596)
 * Os usuários deparavam-se com um problema em que o tamanho da empresa do reCAPTCHA não era refletido na interface do usuário (IU). (FORMS-16574)
-* Os usuários deparavam-se com problemas com a funcionalidade ReCaptcha devido a um ResourceResolver não fechado em “ReCaptchaConfigurationServiceImpl”, causando falhas de validação intermitentes durante os envios de formulários. (FORMS-19241)
+* Os usuários tiveram problemas com a funcionalidade ReCaptcha devido a um ResourceResolver não fechado em `ReCaptchaConfigurationServiceImpl`, causando falhas de validação intermitentes durante os envios de formulários. (FORMS-19241)
 * Os usuários deparavam-se com problemas com a validação do reCAPTCHA quando os formulários eram criados no Sites. Os formulários do AEM não reconheciam o nome do formulário corretamente, causando falhas de validação. (FORMS-20486)
 * Os usuários deparavam-se com envios de formulários mesmo quando a pontuação do reCAPTCHA empresarial era 1.0, resultando em possíveis riscos de segurança. (FORMS-16766){{$include }}
 * Melhoria dos alertas do reCAPTCHA em formulários adaptáveis ao atualizar códigos de erro de envio para 400. Além disso, refinamento dos alertas de registro para distinguir entre tempos-limite, vencimentos e falhas de detecção de bots, melhorando a precisão da resolução de problemas e a capacidade de observação do sistema. (FORMS-19240)
@@ -424,7 +427,7 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 
 ### IU de gerenciamento de formulários
 
-* Os usuários deparavam-se com strings não localizadas no processo de criação Formulários > Criar pasta monitorada > Pasta monitorada. Ao criar uma pasta monitorada, strings como “Criação de pasta monitorada” e “Pasta monitorada criada com sucesso” não eram encontradas, afetando a experiência da interface do usuário. (FORMS-15234)
+* Os usuários experimentaram cadeias de caracteres não localizadas no processo de criação `Forms` > `Create Watchfolder` >` Watchfolder`. Ao criar uma pasta monitorada, cadeias de caracteres como `Watchfolder creation` e `Watchfolder created successfully` não foram encontradas, afetando a experiência da Interface do Usuário. (FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -530,18 +533,19 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
-### Problema com o pacote de script JSP no AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
 
-O AEM 6.5.21, 6.5.22, 6.5.23 e o AEM 6.5 LTS GA são fornecidos com o pacote `org.apache.sling.scripting.jsp:2.6.0`, que contém um problema conhecido. O problema normalmente ocorre com cargas altas, quando a instância do AEM trata muitas solicitações simultâneas.
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
 
-Quando esse problema ocorre, uma das seguintes exceções pode aparecer nos logs de erros, junto com referências a `org.apache.sling.scripting.jsp:2.6.0`:
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
 
 * `java.io.IOException: classFile.delete() failed`
 * `java.io.IOException: tmpFile.renameTo(classFile) failed`
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-Uma hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) está disponível para resolver esse problema.
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### Falha de conexão do Dispatcher com o recurso somente SSL (corrigido no AEM 6.5 LTS SP1 e posterior){#ssl-only-feature}
 
