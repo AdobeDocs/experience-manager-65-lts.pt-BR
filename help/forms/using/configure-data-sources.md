@@ -7,19 +7,21 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 1%
+source-wordcount: '2085'
+ht-degree: 0%
 
 ---
 
 # Configurar fontes de dados{#configure-data-sources}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Integração de dados](do-not-localize/data-integeration.png)
@@ -160,7 +162,7 @@ Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de
 
    * Especifique a duração, para a qual uma conexão HTTP persistente é mantida ativa, no campo **[!UICONTROL Keep alive]**. O valor padrão é de 15 segundos.
 
-   * No campo **[!UICONTROL Tempo limite de conexão]**, especifique a duração pela qual o servidor [!DNL Experience Manager Forms] aguarda o estabelecimento de uma conexão. O valor padrão é de 10 segundos.
+   * No campo [!DNL Experience Manager Forms]Tempo limite de conexão **[!UICONTROL , especifique a duração pela qual o servidor]** aguarda o estabelecimento de uma conexão. O valor padrão é de 10 segundos.
 
    * Especifique o período máximo de inatividade entre dois pacotes de dados no campo **[!UICONTROL Tempo limite do soquete]**. O valor padrão é de 30 segundos.
 
@@ -193,7 +195,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 >[!NOTE]
 >
 >O modelo de dados de formulário dá suporte a [OData versão 4](https://www.odata.org/documentation/).
->Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>>Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Acesse **[!UICONTROL Ferramentas > Serviços da nuvem > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 

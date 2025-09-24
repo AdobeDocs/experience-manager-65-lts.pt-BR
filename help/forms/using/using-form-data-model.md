@@ -7,19 +7,21 @@ docset: aem65
 feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
+source-wordcount: '1277'
+ht-degree: 1%
 
 ---
 
 # Usar modelo de dados de formulário{#use-form-data-model}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html).
 
 
 ![imagem-herói](do-not-localize/data-integration.png)

@@ -7,9 +7,10 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2602'
 ht-degree: 2%
 
 ---
@@ -18,10 +19,11 @@ ht-degree: 2%
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Introdução às ações de envio {#introduction-to-submit-actions}
@@ -40,7 +42,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 * Enviar e-mail
 * Enviar PDF por email
 * Chamar uma Forms Workflow
-* Enviar usando modelo de dados do formulário
+* Enviar usando modelo de dados de formulário
 * Ação de envio do portal do Forms
 * Chamar um fluxo de trabalho do AEM
 * Enviar para o Power Automate
@@ -52,7 +54,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 >[!NOTE]
 >
 >Verifique se a pasta [AEM_Installation_Diretory]\crx-quickstart\temp\datamanager\ASM
->existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
+>>existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
 
 >[!CAUTION]
 >
@@ -84,7 +86,7 @@ Use a ação **Enviar para o Ponto de Extremidade REST** para postar os dados en
 
 Para publicar dados em um servidor interno, forneça o caminho do recurso. Os dados são publicados no caminho do recurso. Por exemplo, /content/restEndPoint. Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.
 
-Para publicar dados em um servidor externo, forneça um URL. O formato do URL é https://host:port/path_to_rest_end_point. Certifique-se de configurar o caminho para lidar com a solicitação POST de forma anônima.
+Para publicar dados em um servidor externo, forneça um URL. O formato da URL é https://host:port/path_to_rest_end_point. Certifique-se de configurar o caminho para lidar com a solicitação POST de forma anônima.
 
 ![Mapeamento para valores de campo passados como parâmetros da Página de Agradecimento](assets/post-enabled-actionconfig.png)
 
@@ -123,7 +125,7 @@ A opção de envio **Enviar para o Forms Workflow** envia um xml de dados e anex
 
 Para obter informações sobre como configurar a ação de envio Enviar para o Forms Workflow, consulte [Envio e processamento de dados de formulário usando fluxos de trabalho de formulários](../../forms/using/submit-form-data-livecycle-process.md).
 
-## Enviar usando modelo de dados do formulário {#submit-using-form-data-model}
+## Enviar usando modelo de dados de formulário {#submit-using-form-data-model}
 
 As gravações de ação de envio **Enviar usando o Modelo de Dados de Formulário** enviaram dados de formulário adaptáveis para o objeto de modelo de dados especificado em um modelo de dados de formulário para sua fonte de dados. Ao configurar a ação de envio, você pode escolher um objeto de modelo de dados cujos dados enviados deseja gravar na origem de dados.
 
@@ -172,7 +174,7 @@ Após uma configuração bem-sucedida, use a ação de envio [Chamar um fluxo do
 
 >[!NOTE]
 >
->O recurso Enviar para a lista do Microsoft® SharePoint foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> O recurso Enviar para a lista do Microsoft® SharePoint foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 A ação de envio **[!UICONTROL Enviar para o SharePoint]** conecta um Formulário adaptável com um Armazenamento Microsoft® SharePoint. É possível enviar o arquivo de dados de formulário, os anexos ou o Documento de Registro para o Armazenamento do Microsoft® Sharepoint conectado.
 
@@ -198,7 +200,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
      >[!NOTE]
      >
-     >O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
+     > O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
 
 1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a mensagem `Connection Successful` é exibida.
 1. Selecione **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
@@ -217,16 +219,16 @@ Ao enviar o formulário, os dados são salvos no Armazenamento de Lista do Micro
 
 >[!NOTE]
 >
->Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
->* coluna de imagem
->* coluna de metadados
->* coluna de pessoa
->* coluna de dados externos
+> Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
+> * coluna de imagem
+> * coluna de metadados
+> * coluna de pessoa
+> * coluna de dados externos
 
 
 >[!NOTE]
 >
->Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR#deployment-process) na sua instância do Cloud Service.
+> Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na sua instância do Cloud Service.
 
 ## Revalidação do lado do servidor no formulário adaptável {#server-side-revalidation-in-adaptive-form}
 

@@ -8,19 +8,21 @@ docset: aem65
 feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 1%
+source-wordcount: '1422'
+ht-degree: 0%
 
 ---
 
 # Visão geral dos serviços de documento da AEM{#overview-of-aem-document-services}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html).
 
 
 Os Serviços de documento da AEM são um conjunto de Serviços OSGi para criar, montar e proteger Documentos do PDF. Os Serviços de documento contêm os seguintes serviços:
@@ -50,7 +52,7 @@ As quatro operações de Serviço de saída a seguir estão disponíveis para us
 * **generatePDFOutputBatch**: mescla vários modelos com vários registros de dados em uma única invocação para gerar um lote de arquivos do PDF. Também há a opção de gerar uma única PDF combinando todos os PDFs
 * **generatePrintedOutputBatch**: mescla vários modelos com vários registros de dados em uma única invocação para gerar um lote de documentos de impressão (PS,PCL,ZPL,DPL,IPL,TPCL). Há também a opção de gerar um único documento de impressão.
 
-## Serviço de Assembler {#assembler-service}
+## Serviço Assembler {#assembler-service}
 
 O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). O documento DDX fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos resultantes.
 

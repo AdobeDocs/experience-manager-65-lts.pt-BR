@@ -5,9 +5,10 @@ keywords: Adicionar uma função personalizada, usar uma função personalizada,
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3394'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,11 @@ Este artigo descreve como criar funções personalizadas com o componente princi
 Defina a [versão mais recente do formulário](https://github.com/adobe/aem-core-forms-components/tree/release/650) no ambiente do Componente principal do AEM Forms para usar os recursos mais recentes nas Funções personalizadas. </span>
 
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Este artigo |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Introdução
 
@@ -59,8 +61,8 @@ O **Name** é usado para identificar a função personalizada no editor de regra
 
 >[!NOTE]
 >`[functionName]` é o nome da função. Espaços não são permitidos.
->`<Function Name>` é o nome de exibição da função no editor de regras do Adaptive Forms.
->Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` da sintaxe.
+>>`<Function Name>` é o nome de exibição da função no editor de regras do Adaptive Forms.
+>>Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` da sintaxe.
 
 #### Parâmetro
 
@@ -354,7 +356,7 @@ OU
 
 ### Criar uma biblioteca do cliente usando o Arquétipo de projeto do AEM{#create-client-library-archetype}
 
-Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projetos AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se você tiver um projeto existente <!--and have already the project structure as shown in the image below,-->, poderá adicionar diretamente [funções personalizadas](#create-add-custom-function) ao seu projeto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -571,7 +573,7 @@ Vamos visualizar o formulário para observar como as funções personalizadas s�
 
 >[!NOTE]
 >
-> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Suporte para funções assíncronas em funções personalizadas {#support-of-async-functions}
 

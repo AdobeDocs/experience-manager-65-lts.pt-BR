@@ -8,19 +8,21 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 2%
+source-wordcount: '1973'
+ht-degree: 1%
 
 ---
 
 # Gerenciar metadados de formulário{#manage-form-metadata}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html).
 
 ## Visão geral  {#overview-nbsp}
 
@@ -298,7 +300,7 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
 
       >[!NOTE]
       >
-      >Não altere o prefixo ‘./jcr:content/metadata/&#39;, pois define o caminho onde a propriedade é armazenada.
+      >Não altere o prefixo ‘./jcr:content/metadata/&#39;, pois define o caminho onde a propriedade está armazenada.
       >
       >Além disso, o nome da propriedade deve ser exclusivo para evitar a gravação de valores para duas ou mais propriedades no mesmo local no repositório. Portanto, é recomendável alterar o valor &quot;padrão&quot;.
 

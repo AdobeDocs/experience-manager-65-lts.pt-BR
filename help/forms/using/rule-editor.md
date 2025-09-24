@@ -8,9 +8,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6615'
 ht-degree: 0%
 
 ---
@@ -19,10 +20,11 @@ ht-degree: 0%
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Visão geral {#overview}
 
@@ -71,13 +73,13 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 
 * Uma regra prática comum ao criar uma regra é pensar nela no contexto do objeto no qual você está escrevendo uma regra. Considere que deseja ocultar ou mostrar o campo B com base no valor especificado por um usuário no campo A. Nesse caso, você está avaliando uma condição no campo A e, com base no valor retornado, aciona uma ação no campo B.
 
-  Portanto, se estiver escrevendo um regra no campo B (o objeto sobre o qual você está avaliando uma condição), use a construção de ação de condição ou o tipo Quando regra. Da mesma forma, use a construção de condição de ação ou Exibir ou oculte regra tipo no campo A.
+  Portanto, se estiver gravando uma regra no campo B (o objeto no qual você está avaliando uma condição), use a construção de condição-ação ou o tipo de regra When. Da mesma forma, use a construção action-condition ou o tipo de regra Mostrar ou Ocultar no campo A.
 
-* Às vezes, você precisa executar várias ações com base em uma condição. Nesses casos, recomenda-se usar a construção de ação condicional. Nesta construção, você pode avaliar uma condição uma vez e especificar várias declarações de ação.
+* Às vezes, você precisa executar várias ações com base em uma condição. Nesses casos, é recomendável usar a construção condição-ação. Nesta construção, você pode avaliar uma condição uma vez e especificar várias instruções de ação.
 
-  Por exemplo, para ocultar campos B, C e D com base na condição que verifica o valor que uma usuário especifica no campo A, escreva uma regra com construção de ação de condição ou Quando regra tipo no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisa de três regras separadas nos campos B,  C e D, onde cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo Quando regra em um objeto em vez de Exibir ou Ocultar regra tipo em três objetos.
+  Por exemplo, para ocultar os campos B, C e D com base na condição que verifica o valor especificado por um usuário no campo A, grave uma regra com construção de condição-ação ou Quando tipo de regra no campo A e especifique ações para controlar a visibilidade dos campos B, C e D. Caso contrário, você precisará de três regras separadas nos campos B, C e D, em que cada regra verifica a condição e mostra ou oculta o respectivo campo. Neste exemplo, é mais eficiente escrever o tipo de regra Quando em um objeto do que Mostrar ou Ocultar em três objetos.
 
-* Para acionar uma ação baseada em várias condições, recomenda-se usar a construção de condições de ação. Por exemplo, para mostrar e ocultar campo A avaliando as condições nos campos B, C e D, use Exibir ou Ocultar regra tipo no campo A.
+* Para acionar uma ação com base em várias condições, é recomendável usar a construção action-condition. Por exemplo, para mostrar e ocultar o campo A avaliando as condições nos campos B, C e D, use Mostrar ou Ocultar tipo de regra no campo A.
 * Use a construção de condição-ação ou condição de ação se a regra contiver uma ação para uma condição.
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
 * A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como no preenchimento prévio do valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
@@ -116,9 +118,9 @@ Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
 `Then, do the following:`
 
-Ação 2 no objeto B;
+Ação 2 sobre o objeto B;
 E
-Ação 3 no Objeto C;
+Ação 3 sobre o objeto C;
 
 _
 
@@ -215,11 +217,11 @@ Defina o valor do Objeto A como:
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
+(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
 
 
 
-O exemplo a seguir usa o valor em `dependentid` campo como entrada e define o `Relation` valor do campo para a saída do `Relation` argumento do serviço de modelo de dados de `getDependent` formulário.
+O exemplo a seguir pega o valor no campo `dependentid` como entrada e define o valor do campo `Relation` como a saída do argumento `Relation` do serviço de modelo de dados de formulário `getDependent`.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -375,9 +377,9 @@ A guia Objetos de formulário mostra uma exibição hierárquica de todos os obj
 
 Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
 
-As Funções guia incluem um conjunto de funções integradas, como Soma de, Mín, Máx. de, Média, Número e Formulário validado. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, também é possível criar [funções personalizadas](#custom-functions) .
+A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. Entretanto, você também pode criar [funções personalizadas](#custom-functions).
 
-![As funções guia](assets/functions.png)
+![A guia Funções](assets/functions.png)
 
 >[!NOTE]
 >
@@ -548,7 +550,7 @@ Execute as seguintes etapas para escrever regras:
 
 Os usuários adicionados ao grupo forms-power-users podem usar o editor de código. O editor de regras gera automaticamente o código JavaScript para qualquer regra criada usando o editor visual. Você pode alternar do editor visual para o editor de código para exibir o código gerado. No entanto, se você modificar o código da regra no editor de código, não poderá voltar para o editor visual. Se preferir escrever regras no editor de código em vez do editor visual, você pode escrever regras novamente no editor de código. O alternador de editores de código visual ajuda você a alternar entre os dois modos.
 
-O editor de código JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+O editor de código JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Para obter mais informações sobre diretrizes para escrever regras no editor de código, consulte [Expressões de formulários adaptáveis](/help/forms/using/adaptive-form-expressions.md).
 
@@ -607,7 +609,7 @@ Mostra os parâmetros usados pela função. Uma função pode ter várias tags d
 Sintaxe: `@return {type}`
 Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
-{type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
+  {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
    1. string
    1. número
@@ -889,10 +891,10 @@ No form ordem de compra explicado no exemplo anterior, você deseja impedir que 
 
 ![exemplo-validar](assets/example-validate.png)
 
-Regra no visual editor
+Regra no editor visual
 
-A regra é exibida da seguinte maneira na editor de código.
+A regra é exibida da seguinte maneira no editor de código.
 
-![exemplo de código validado](assets/example-validate-code.png)
+![exemplo-validação-código](assets/example-validate-code.png)
 
-Regra no código editor
+Regra no editor de código

@@ -5,9 +5,10 @@ role: User, Developer
 level: Beginner, Intermediate
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1851'
 ht-degree: 4%
 
 ---
@@ -16,10 +17,11 @@ ht-degree: 4%
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html).
 
 
 ## Pré-requisitos {#prerequisites}
@@ -366,7 +368,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 
 O JavaScript é o idioma de expressão dos formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Você pode pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
 
-Use a propriedade aem:afproperties para pré-configurar expressões de formulário adaptáveis ou scripts para componentes de formulário adaptáveis. Por exemplo, quando o evento de inicialização é acionado, o código abaixo define o valor do campo de telefone e imprime um valor no log:
+Use a propriedade aem:afproperties para pré-configurar expressões de formulário adaptável ou scripts para componentes de formulário adaptáveis. Por exemplo, quando o evento de inicialização é acionado, o código abaixo define o valor do campo de telefone e imprime um valor no log:
 
 ```json
 "telephone": {
@@ -455,7 +457,7 @@ Você deve ser membro do [grupo de formulários-usuário](forms-groups-privilege
    <td> </td>
   </tr>
   <tr>
-   <td>Interruptor</td>
+   <td>Botão</td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
@@ -521,7 +523,7 @@ Você deve ser membro do [grupo de formulários-usuário](forms-groups-privilege
    <td> </td>
   </tr>
   <tr>
-   <td>Seletor de data</td>
+   <td>Seletor de datas</td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
@@ -543,7 +545,7 @@ Você deve ser membro do [grupo de formulários-usuário](forms-groups-privilege
    <td> </td>
   </tr>
   <tr>
-   <td>Anexo de arquivo</td>
+   <td>Arquivo em anexo</td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
@@ -650,7 +652,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador Numérico<br /> </li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -661,7 +663,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -672,7 +674,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -683,7 +685,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>

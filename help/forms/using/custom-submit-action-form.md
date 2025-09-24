@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 1%
+source-wordcount: '1544'
+ht-degree: 0%
 
 ---
 
 # Gravação da ação enviar personalizada para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
 
 Os formulários adaptáveis exigem ações de envio para processar dados especificados pelo usuário. A ação Enviar determina a tarefa executada nos dados enviados por meio de um formulário adaptável. O Adobe Experience Manager (AEM) inclui [ações Enviar prontas para uso](../../forms/using/configuring-submit-actions.md) que demonstram tarefas personalizadas que você pode executar usando os dados enviados pelo usuário. Por exemplo, você pode executar tarefas, como enviar emails ou armazenar dados.
 
@@ -102,7 +103,7 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
 ## Criar uma ação enviar personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém a ação Enviar armazenar conteúdo (desaprovado) pronta para uso que salva os dados no repositório do CRX. Além disso, o CQ fornece uma API de [Email](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) que pode ser usada para enviar emails. Antes de usar a API de Email, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR&wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
+Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém a ação Enviar armazenar conteúdo (desaprovado) pronta para uso que salva os dados no repositório do CRX. Além disso, o CQ fornece uma API de [Email](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) que pode ser usada para enviar emails. Antes de usar a API de Email, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e o nome store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 
@@ -116,7 +117,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
 1. **Forneça campos de configuração para solicitar ao autor a configuração de email.**
 
-   O formulário adaptável também fornece uma ação de Email que envia emails para os usuários. Personalize esta ação com base em suas necessidades. Navegue até /libs/fd/af/components/guidesubmittype/email/dialog. Copie os nós no nó cq:dialog para o nó cq:dialog da ação Enviar (/apps/custom_submit_action/store_and_email/dialog).
+   O formulário adaptável também fornece uma ação de Email que envia emails para os usuários. Personalize esta ação com base em suas necessidades. Navegue até /libs/fd/af/components/guidesubmittype/email/dialog. Copie os nós no nó cq:dialog para o nó cq:dialog da sua ação Enviar (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizando a ação de email](assets/step3.png)
 
@@ -128,7 +129,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
    * **guideDataModel** do tipo **String** e valor **xfa, xsd, basic**
 
-   * **jcr:description** do tipo **Cadeia de caracteres** e valor **Ação de Email e Armazenamento**
+   * **jcr:description** do tipo **Cadeia de caracteres** e valor **Ação de armazenamento e email**
 
 1. Abra qualquer formulário adaptável. Clique no botão **Editar** ao lado de **Iniciar** para abrir a caixa de diálogo **Editar** do contêiner de formulário adaptável. A nova ação é exibida na guia **Enviar Ações**. Selecionar a **Ação de Armazenamento e Email** exibe a configuração adicionada no nó da caixa de diálogo.
 

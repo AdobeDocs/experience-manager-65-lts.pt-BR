@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 9%
 
 ---
 
@@ -19,10 +20,11 @@ ht-degree: 2%
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html).
 
 
 Você pode usar o componente **Assinatura assinável** e o componente **Etapa de assinatura** para desenhar (Rabiscar) uma assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
@@ -32,11 +34,11 @@ Você pode usar o componente **Assinatura assinável** e o componente **Etapa de
 ## Várias opções disponíveis na Janela de assinatura
 
 * **A:** Clique no ícone **Pincel de Tinta** para desenhar sua assinatura na tela.
-* **B:** Clique no ícone **Limpar** para limpar a assinatura na tela.
-* **C:** Clique no ícone **Geolocalização** para adicionar a geolocalização junto com a assinatura.
-* **D:** Clique no ícone **Teclado** para digitar seu nome na tela.
+* **B:** clique no ícone de **Limpar** para limpar a assinatura na tela.
+* **C:** clique no ícone de **Geolocalização** para adicionar a geolocalização junto com a assinatura.
+* **D:** clique no ícone de **Teclado** para digitar o seu nome na tela.
 
-Depois de selecionar o ícone Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) na janela Assinatura Escrita, você não poderá editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
+Depois de selecionar o ícone Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) na janela Assinatura Escrita, você não poderá editar a assinatura. Caso você queira editar a assinatura, desconsidere a assinatura atual e assine novamente com a opção de pincel/teclado acima.
 
 Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png) para definir a proporção da tela Assinatura Escrita.
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
@@ -48,7 +50,7 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
 
 >[!NOTE]
 >
->As assinaturas são sempre salvas em formato PNG.
+>As assinaturas são sempre salvas no formato PNG.
 >
 
 ## Configurar um formulário adaptável para usar a assinatura escritas {#configure-an-adaptive-form-to-use-scribble-signature}

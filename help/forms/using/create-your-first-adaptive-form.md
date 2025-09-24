@@ -4,19 +4,21 @@ description: Saiba como criar formulários empresariais, interativos e responsiv
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 5%
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 # Tutorial: criar o primeiro formulário adaptável {#tutorial-create-your-first-adaptive-form}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=pt-br) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=pt-br).
 
 
 ![01-criar-primeiro-formulário-adaptável-imagem-herói](assets/01-create-first-adaptive-form-hero-image.png)
@@ -42,7 +44,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa o AEM [!DNL Forms] p
 
 ### Pré-requisitos {#prerequisite}
 
-* Configurar uma [instância do autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=pt-BR#author-and-publish-installs)
+* Configurar uma [instância do autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instale o [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados [!DNL MySQL] e usam o [!DNL Oracle's] [driver do banco de dados JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

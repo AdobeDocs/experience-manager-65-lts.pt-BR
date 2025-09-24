@@ -5,10 +5,11 @@ Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af,
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 3%
+source-wordcount: '2893'
+ht-degree: 2%
 
 ---
 
@@ -16,10 +17,11 @@ ht-degree: 3%
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Este artigo |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=pt-BR) |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=pt-BR).
 
 Com o AEM Forms, você pode incorporar facilmente formulários adaptáveis em suas páginas da Web. Isso permite que seus visitantes preencham e enviem formulários de maneira conveniente sem nunca sair da página em que estão. Ao fazer isso, eles podem se envolver facilmente com outros elementos do site enquanto interagem ativamente com o formulário.
 
@@ -69,11 +71,11 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 +++  Ativar os Componentes principais adaptáveis do Forms para o seu ambiente
 
-Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=pt-BR).
+Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
-+++
++++ 
 
-+++  Adicionar bibliotecas de clientes Forms adaptáveis à sua página do AEM Sites e componentes da página Fragmento de experiência
++++  Adicionar bibliotecas de clientes Forms adaptáveis à sua página do AEM Sites e componentes da página Fragmento de experiência 
 
 Para ativar a funcionalidade completa do componente de Contêiner adaptável do Forms, adicione as bibliotecas de clientes Customheaderlibs e Customfooterlibs à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas:
 
@@ -117,7 +119,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 
 1. Repita as etapas acima para todas as instâncias de Autor e Publicação em seu ambiente.
 
-+++
++++ 
 
 +++ Ativar contêiner adaptável do Forms
 
@@ -201,12 +203,12 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário {#configure-schema-or-data-model-for-form}
 
-Você pode usar o modelo de dados do formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
+Você pode usar o modelo de dados de formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
 
 Antes de conectar um formulário a um esquema ou modelo de dados de formulário
 
 * [Crie um esquema JSON e faça upload para o seu ambiente](adaptive-form-json-schema-form-model.md)
-* [Criar um modelo de dados do formulário](create-form-data-models.md)
+* [Criar um modelo de dados de formulário](create-form-data-models.md)
 
 Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu formulário:
 

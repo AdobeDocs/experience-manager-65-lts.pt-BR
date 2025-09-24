@@ -8,19 +8,21 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3151'
 ht-degree: 54%
 
 ---
 
 # Introdução à criação de formulários adaptáveis {#introduction-to-authoring-adaptive-forms}
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Visão geral {#overview}
@@ -151,7 +153,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
@@ -191,7 +193,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Painel</td>
-   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel principal usando o botão <span class="uicontrol">Adicionar painel secundário</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
+   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel pai usando o botão <span class="uicontrol">Adicionar painel filho</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
   </tr>
   <tr>
    <td>Caixa de senha</td>
@@ -230,7 +232,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
    <td>Permite especificar texto estático.</td>
   </tr>
   <tr>
-   <td>Botão Enviar</td>
+   <td>Botão de enviar</td>
    <td>Adiciona um botão enviar para enviar o formulário à ação de envio configurada.</td>
   </tr>
   <tr>
@@ -239,7 +241,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Alternar</td>
-   <td>Adiciona um botão que executa uma ação de alternância ou ativação/desativação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
+   <td>Adiciona um botão que executa um botão de alternância ou habilitação/desabilitação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
   </tr>
   <tr>
    <td>Tabela</td>
@@ -261,7 +263,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Caixa de texto </td>
-   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode ativar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
+   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode habilitar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
   </tr>
   <tr>
    <td>Título</td>
@@ -293,7 +295,7 @@ Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalha
 
 * Campos de formulários adaptáveis, como Caixa numérica e Email podem ser configurados para incluir tipos de entrada HTML5 especializados. Quando esses campos estão em foco em dispositivos móveis e tablets, o teclado exibe inicialmente o alfabeto, os números e os caracteres específicos que são normalmente usados para inserir informações nos campos. Isso ajuda os usuários a inserir informações rapidamente, sem precisar alternar entre conjuntos de caracteres no teclado numérico. Para permitir entrada especializada para um componente, habilite a caixa de seleção **[!UICONTROL Usar Número de Tipo de HTML]** nas propriedades do componente.
 
-* Você pode ativar um componente Caixa de texto para aceitar rich text. Para habilitar rich text para uma caixa de texto, habilite a caixa de seleção **[!UICONTROL Permitir rich text]** nas propriedades do componente.
+* Você pode habilitar um componente Caixa de texto para aceitar rich text. Para habilitar rich text para uma caixa de texto, habilite a caixa de seleção **[!UICONTROL Permitir rich text]** nas propriedades do componente.
 
 * Você pode ativar os componentes Caixa de texto, Email e Telefone para preencher automaticamente valores para campos como nome, endereço, cartão de crédito, telefone e email a partir das informações armazenadas nas configurações de preenchimento automático do navegador. Para habilitar este recurso, selecione **[!UICONTROL Habilitar Preenchimento Automático]** nas propriedades do componente e selecione um **[!UICONTROL Atributo de Preenchimento Automático]**. Quando um usuário preenche um formulário adaptável, os valores são sugeridos pelo perfil de preenchimento automático no navegador ou com base nos valores preenchidos anteriormente pelo usuário. Observe que o preenchimento automático funciona se as configurações de preenchimento automático no navegador do usuário estiverem ativadas.
 

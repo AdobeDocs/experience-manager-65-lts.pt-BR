@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 2%
+source-wordcount: '4292'
+ht-degree: 1%
 
 ---
 
@@ -16,10 +16,11 @@ ht-degree: 2%
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) |
-| AEM 6.5 | Este artigo |
+## Aplica-se a {#applies-to}
+
+Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
+
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br).
 
 
 ## Visão geral {#overview}
@@ -154,7 +155,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
   </tr>
   <tr>
    <td>Botão de redefinição</td>
-   <td>Botão Redefinir</td>
+   <td>Botão de redefinir</td>
    <td>falso</td>
    <td> </td>
   </tr>
@@ -171,7 +172,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
    <td> </td>
   </tr>
   <tr>
-   <td>Anexo de arquivo</td>
+   <td>Arquivo em anexo</td>
    <td> </td>
    <td>falso</td>
    <td>Não disponível no documento de modelo de registro. Disponível somente no documento de registro por meio de anexos.</td>
@@ -259,7 +260,7 @@ Não modifique ou remova scripts presentes no modelo base.
 >
 >Modelo de base de design usando convenções e seguindo estritamente as etapas acima.
 
-## Documento de configuração modelo de registro {#document-of-record-template-configuration}
+## Configuração do modelo de documento de registro {#document-of-record-template-configuration}
 
 Configure o documento de modelo de registro do seu formulário para permitir que os clientes baixem uma cópia impressa do formulário enviado. Um arquivo XDP serve como o documento do modelo de registro. O documento de download dos clientes do registro é formatado de acordo com o layout especificado no arquivo XDP.
 
@@ -412,7 +413,6 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 
 * **[!UICONTROL BÁSICO]**
    * **Modelo:** Você pode selecionar o modelo Padrão ou Personalizado.
-
      ![alt texto](image.png)
    * **Cor de Ênfase:** Você pode predefinir a Cor do modelo do [!UICONTROL Documento de Registro].
    * **Família da Fonte:** Selecione o tipo de fonte para os textos do [!UICONTROL Documento de Registro].
@@ -425,7 +425,6 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
       * Vertical
       * Horizontal
       * O mesmo que o formulário adaptável
-
      >[!NOTE]
      > O alinhamento vertical e horizontal é aplicável apenas a     Botão de opção e caixa de seleção
 * **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [propriedades da Página Mestra](#master-page-properties-master-page-properties)
