@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 2773e1092e63479aa135918e48dd4b01e3dad310
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '594'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ O Experience Hub apresenta um ponto de partida centralizado para o gerenciamento
 
 Assista a um rápido tour pelo espaço de trabalho recriado do AEM Experience Hub (4 minutos, 9 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471446?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,12 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![página inicial do Adobe Experience Cloud](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. No agrupamento **Acesso rápido**, clique em [**Experience Manager**](https://experience.adobe.com).
-1. Na primeira vez que você acessá-lo, na página **Diga-nos o que deseja fazer**, clique na opção desejada para que o Adobe possa ajustar sua experiência.
+1. No primeiro acesso, o sistema atribui a você a predefinição **Autor de conteúdo** (exibida próxima ao canto superior direito da página). Ele controla os widgets, itens de navegação e conteúdo que você vê.
 
-   Você pode alterar essa preferência a qualquer momento.
+   É possível alterar essa predefinição a qualquer momento.
 
-   ![A página Diga-nos o que você deseja fazer](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+   ![A lista suspensa que mostra a predefinição do Autor de Conteúdo está selecionada](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
+
 
 A página do Adobe Experience Manager foi atualizada com navegação aprimorada e widgets interativos. A coleção anterior de placas de solução forneceu acesso a ferramentas como as seguintes:
 
