@@ -21,7 +21,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=pt-BR).
 
 
 ## Pré-requisitos {#prerequisites}

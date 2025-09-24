@@ -24,7 +24,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html?lang=pt-BR).
 
 
 O Adobe Experience Manager (AEM) permite criar formulários adaptáveis fáceis de usar que oferecem experiências dinâmicas para os usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um formulário adaptável.

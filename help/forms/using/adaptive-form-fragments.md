@@ -32,7 +32,7 @@ Formulários adaptáveis fornecem um mecanismo conveniente para criar segmentos 
 
 >[!NOTE]
 >
-> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Criar um fragmento {#create-a-fragment}
 

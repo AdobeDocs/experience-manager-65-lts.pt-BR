@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration).
 
 Você pode usar as credenciais do cliente OAuth 2.0 para integrar o AEM Forms ao aplicativo do Salesforce. As credenciais do cliente OAuth 2.0 são um método padrão e seguro para a comunicação direta sem envolvimento do usuário.
 
@@ -37,7 +37,7 @@ Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente
 
 * Crie um [aplicativo conectado ao Salesforce com fluxo de credenciais de cliente OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) e um usuário somente de API para sua organização e obtenha a chave do consumidor e o segredo do consumidor para o aplicativo.
 
-* Verifique se o arquivo do Swagger está configurado corretamente para corresponder às APIs da sua organização. Como alternativa, você pode optar por [criar um arquivo do Swagger](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) do zero, personalizado para utilização em seu ambiente do AEM.
+* Verifique se o arquivo do Swagger está configurado corretamente para corresponder às APIs da sua organização. Como alternativa, você pode optar por [criar um arquivo do Swagger](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) do zero, personalizado para utilização em seu ambiente do AEM.
 >[!NOTE]
 >
 > O AEM 6.5 só oferece suporte às especificações do arquivo Swagger 2.0.

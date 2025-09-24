@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page).
 
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
@@ -166,8 +166,8 @@ Ao incorporar um formulário adaptável em uma página da Web, considere as segu
 
 * Certifique-se de que as regras de estilo definidas no CSS da página da Web não estejam em conflito com o CSS do objeto de formulário. Para evitar os conflitos, você pode reutilizar o CSS da página da Web no tema de formulário adaptável usando a biblioteca de cliente do AEM. Para obter informações sobre como usar a biblioteca do cliente em temas de formulário adaptável, consulte [Temas no AEM Forms](../../forms/using/themes.md).
 * Faça com que o container do formulário na página da Web use toda a largura da janela. Ela garante que as regras CSS configuradas para dispositivos móveis funcionem sem alterações. Se o contêiner de formulário não ocupa toda a largura da janela, você deve gravar CSS personalizado para fazer o formulário se adaptar a diferentes dispositivos móveis.
-* Use a API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
-* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
+* Use a API `[getData](https://helpx.adobe.com/br/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
+* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/br/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
 * Configure o cabeçalho access-control-origin ao enviar uma resposta de um servidor do AEM.
 
 ## Permitir que o AEM Forms forneça formulários adaptáveis a um site entre domínios {#cross-site}

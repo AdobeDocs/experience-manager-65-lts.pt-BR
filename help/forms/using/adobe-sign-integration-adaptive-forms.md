@@ -20,7 +20,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=pt-BR#adobe-acrobat-sign-for-government).
 
 [!DNL Adobe Sign] habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
 
@@ -88,7 +88,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -237,7 +237,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-BR).
 
 
 Os Serviços de documento da AEM são um conjunto de Serviços OSGi para criar, montar e proteger Documentos do PDF. Os Serviços de documento contêm os seguintes serviços:

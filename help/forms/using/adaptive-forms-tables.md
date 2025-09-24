@@ -23,7 +23,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=pt-BR).
 
 
 O uso de tabelas é uma maneira eficaz, simplificada e organizada de apresentar dados complexos. Ele ajuda os usuários a identificar informações facilmente e fornecer entradas em uma organização ordenada de linhas e colunas. A maioria dos formulários de serviços financeiros e organizações governamentais exigem grandes tabelas de dados para colocar números e realizar cálculos.
@@ -174,7 +174,7 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia de propriedades Painel da caixa de diálogo Editar componente correspondente. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layouts móveis {#mobile-layouts}
 
