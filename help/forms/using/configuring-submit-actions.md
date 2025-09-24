@@ -54,7 +54,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 >[!NOTE]
 >
 >Verifique se a pasta [AEM_Installation_Diretory]\crx-quickstart\temp\datamanager\ASM
->>existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
+>&#x200B;>existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
 
 >[!CAUTION]
 >

@@ -195,7 +195,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 >[!NOTE]
 >
 >O modelo de dados de formulário dá suporte a [OData versão 4](https://www.odata.org/documentation/).
->>Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>&#x200B;>Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Acesse **[!UICONTROL Ferramentas > Serviços da nuvem > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 

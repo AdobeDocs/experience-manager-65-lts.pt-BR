@@ -61,8 +61,8 @@ O **Name** é usado para identificar a função personalizada no editor de regra
 
 >[!NOTE]
 >`[functionName]` é o nome da função. Espaços não são permitidos.
->>`<Function Name>` é o nome de exibição da função no editor de regras do Adaptive Forms.
->>Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` da sintaxe.
+>&#x200B;>`<Function Name>` é o nome de exibição da função no editor de regras do Adaptive Forms.
+>&#x200B;>Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` da sintaxe.
 
 #### Parâmetro
 
