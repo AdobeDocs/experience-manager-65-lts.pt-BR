@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
-ht-degree: 94%
+source-wordcount: '7319'
+ht-degree: 92%
 
 ---
 
@@ -448,6 +448,43 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
+
+#### Práticas recomendadas para atualizações do Service Pack do AEM 6.5 LTS
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**Ambiente**
+Aplicável a: clientes do AEM 6.5 LTS (no local) que instalam o Service Pack 1 (SP1). O SP1 é fornecido como um JAR de início rápido.
+
+**Por que isso é importante**
+O SP1 para AEM 6.5 LTS é fornecido como um JAR de início rápido em vez de um ZIP para instalação por meio do Gerenciador de pacotes. Os clientes locais atualizam substituindo o Quickstart JAR, desempacotando-o e reiniciando. Esse método é consistente com o procedimento de atualização no local do Adobe.
+
+**Fluxo de atualização recomendado (Autor ou Publicação)**
+
+1. Verifique se a instância AEM 6.5 LTS está íntegra e acessível.
+1. Baixe o JAR de início rápido do SP1 (por exemplo, `cq-quickstart-6.6.x.jar`) da Distribuição de software.
+1. Interrompa a instância em execução.
+1. No diretório de instalação do AEM (fora de `crx-quickstart/`), substitua o JAR de início rápido anterior pelo JAR SP1.
+1. Descompacte o JAR:
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   (Ajuste sinalizadores de heap conforme necessário.)
+
+1. Renomeie o JAR desempacotado para corresponder à função e à porta, por exemplo `cq-author-4502.jar` ou `cq-publish-4503.jar`.
+1. Inicie o AEM e confirme a atualização na interface do usuário (Ajuda > Sobre) e nos logs.
+
+**Boa higiene**
+
+* Execute a atualização em ambientes inferiores/de teste antes da produção.
+* Faça backups completos e restauráveis (repositório mais qualquer armazenamento de dados externo) antes de começar.
+* Revise a orientação de atualização no local e os requisitos técnicos da Adobe (Java 17/21 recomendado para LTS).
+
+>[!NOTE]
+>
+>Os nomes de arquivo mostrados acima (por exemplo, `cq-quickstart-6.6.x.jar`) refletem a nomenclatura de artefato de Início Rápido do SP1 observada para esta versão LTS; sempre use o nome de arquivo exato que você baixar da Distribuição de Software.
 
 ## Instalar e atualizar {#install-update}
 
