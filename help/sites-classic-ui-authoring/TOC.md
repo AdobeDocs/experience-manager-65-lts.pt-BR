@@ -27,7 +27,7 @@ ht-degree: 31%
    + [Seleção da interface](/help/sites-classic-ui-authoring/author-env-select-ui.md)
    + [Pesquisar](/help/sites-classic-ui-authoring/author-env-search.md)
    + [Sua caixa de entrada](/help/sites-classic-ui-authoring/author-env-inbox.md)
-   + [Atalhos de teclado para Consoles  ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles  &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
 + Criação {#authoring}
    + [Criação de páginas](/help/sites-classic-ui-authoring/classic-page-author.md)
    + [Criação - o ambiente e as ferramentas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
@@ -37,8 +37,8 @@ ht-degree: 31%
    + [Publicar páginas](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md)
    + [Editar as propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)
-   + [Solucionar problemas do AEM durante a criação  ](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
-   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  ](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
+   + [Solucionar problemas do AEM durante a criação  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
+   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
    + [Componentes para criação de página](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
    + [Atalhos de teclado ao editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)
 + Recursos do site e da página {#siteandpage}

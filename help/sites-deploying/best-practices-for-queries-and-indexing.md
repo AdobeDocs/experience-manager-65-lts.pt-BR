@@ -364,7 +364,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 >[!NOTE]
 >
->No AEM 6.5 LTS, [oak-run.jar é o ÚNICO método ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) com suporte para reindexação em repositórios MongoMK ou RDBMK.
+>No AEM 6.5 LTS, [oak-run.jar é o ÚNICO método &#x200B;](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) com suporte para reindexação em repositórios MongoMK ou RDBMK.
 
 #### Reindexação de índices de propriedade {#re-indexing-property-indexes}
 
