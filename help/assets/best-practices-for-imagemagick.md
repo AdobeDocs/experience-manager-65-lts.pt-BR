@@ -5,7 +5,8 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Para processar arquivos grandes usando o ImageMagick, considere os requisitos de
 
 Várias versões dos arquivos de instalação do ImageMagic estão disponíveis para vários sistemas operacionais. Use a versão apropriada para seu sistema operacional.
 
-1. Baixe os [arquivos de instalação do ImageMagick](https://www.imagemagick.org/script/download.php) apropriados para o seu sistema operacional.
+1. Baixe os arquivos de instalação apropriados do ImageMagick (`https://www.imagemagick.org/script/download.php` site) para o seu sistema operacional.
 1. Para instalar o ImageMagick no disco que hospeda o servidor [!DNL Experience Manager], inicie o arquivo de instalação.
 
 1. Defina a variável de ambiente path para o diretório de instalação do ImageMagic.
@@ -81,7 +82,7 @@ Você pode configurar a etapa do processo de linha de comando para seu caso de u
 
 Há várias vulnerabilidades de segurança associadas ao uso do ImageMagick para processar imagens. Por exemplo, o processamento de imagens enviadas pelo usuário envolve o risco de execução remota de código (RCE).
 
-Além disso, vários plug-ins de processamento de imagens dependem da biblioteca ImageMagick, incluindo, mas não limitado a, a imagem do PHP, o Magick e o Clipe de Papel do Ruby e o Imagemagick do Nodejs.
+Além disso, vários plug-ins de processamento de imagens dependem da biblioteca ImageMagick, incluindo, mas não limitado ao imagick do PHP, o magick e o clipe de papel do Ruby, e o imagemagick do nodejs.
 
 Se você usa o ImageMagick ou uma biblioteca afetada, a Adobe recomenda que você reduza as vulnerabilidades conhecidas executando pelo menos uma das seguintes tarefas (mas preferencialmente ambas):
 
