@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -449,23 +449,23 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
 
-#### Práticas recomendadas para atualizações do Service Pack do AEM 6.5 LTS
+#### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Ambiente**
-Aplicável a: clientes do AEM 6.5 LTS (no local) que instalam o Service Pack 1 (SP1). O SP1 é fornecido como um JAR de início rápido.
+Aplicável a: clientes do AEM 6.5 LTS (no local) que instalam o Pacote de serviços 1 (SP1). O SP1 é entregue como um arquivo JAR de inicialização rápida.
 
-**Por que isso é importante**
-O SP1 para AEM 6.5 LTS é fornecido como um JAR de início rápido em vez de um ZIP para instalação por meio do Gerenciador de pacotes. Os clientes locais atualizam substituindo o Quickstart JAR, desempacotando-o e reiniciando. Esse método é consistente com o procedimento de atualização no local do Adobe.
+**Por que isso é importante?**
+O SP1 para AEM 6.5 LTS é fornecido como um arquivo JAR de início rápido em vez de um arquivo ZIP para instalação por meio do Gerenciador de pacotes. Clientes locais realizam a atualização por substituir o arquivo JAR de início rápido, fazer a extração do conteúdo e reiniciar. Esse método é consistente com o procedimento de atualização no local da Adobe.
 
 **Fluxo de atualização recomendado (Autor ou Publicação)**
 
 1. Verifique se a instância AEM 6.5 LTS está íntegra e acessível.
-1. Baixe o JAR de início rápido do SP1 (por exemplo, `cq-quickstart-6.6.x.jar`) da Distribuição de software.
-1. Interrompa a instância em execução.
-1. No diretório de instalação do AEM (fora de `crx-quickstart/`), substitua o JAR de início rápido anterior pelo JAR SP1.
-1. Descompacte o JAR:
+1. Baixe o arquivo JAR de início rápido do SP1 (por exemplo, `cq-quickstart-6.6.x.jar`) da Distribuição de software.
+1. Interrompa a instância de execução.
+1. No diretório de instalação do AEM (fora de `crx-quickstart/`), substitua o arquivo JAR de início rápido anterior pelo JAR do SP1.
+1. Extraia o arquivo JAR:
 
    ```java
    java -jar cq-quickstart-6.6.x.jar -unpack
@@ -473,18 +473,18 @@ O SP1 para AEM 6.5 LTS é fornecido como um JAR de início rápido em vez de um 
 
    (Ajuste sinalizadores de heap conforme necessário.)
 
-1. Renomeie o JAR desempacotado para corresponder à função e à porta, por exemplo `cq-author-4502.jar` ou `cq-publish-4503.jar`.
-1. Inicie o AEM e confirme a atualização na interface do usuário (Ajuda > Sobre) e nos logs.
+1. Renomeie o arquivo JAR extraído para corresponder à função e à porta como, por exemplo, `cq-author-4502.jar` ou `cq-publish-4503.jar`.
+1. Inicie o AEM e confirme a atualização na interface (Ajuda > Sobre) e nos logs.
 
-**Boa higiene**
+**Boas práticas para a integridade do sistema**
 
 * Execute a atualização em ambientes inferiores/de teste antes da produção.
 * Faça backups completos e restauráveis (repositório mais qualquer armazenamento de dados externo) antes de começar.
-* Revise a orientação de atualização no local e os requisitos técnicos da Adobe (Java 17/21 recomendado para LTS).
+* Revise a orientação para atualização da Adobe no local e os requisitos técnicos (Java 17/21 recomendado para LTS).
 
 >[!NOTE]
 >
->Os nomes de arquivo mostrados acima (por exemplo, `cq-quickstart-6.6.x.jar`) refletem a nomenclatura de artefato de Início Rápido do SP1 observada para esta versão LTS; sempre use o nome de arquivo exato que você baixar da Distribuição de Software.
+>Os nomes de arquivo mostrados acima (por exemplo, `cq-quickstart-6.6.x.jar`) refletem a nomenclatura de artefato de início rápido do SP1 observada para esta versão LTS. Sempre use o nome exato do arquivo que baixar da Distribuição de software.
 
 ## Instalar e atualizar {#install-update}
 
