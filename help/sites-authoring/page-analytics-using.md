@@ -1,18 +1,13 @@
 ---
 title: Visualização dos dados de análise da página para medir a eficácia do conteúdo da página
 description: Usar dados de análise de página para medir a eficácia do conteúdo da página
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
-legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
+source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 4%
 
 ---
@@ -76,7 +71,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 
 ### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console Sites para investigar mais a eficácia da página.
+Abra o [Insight de Conteúdo](/help/sites-authoring/content-insights.md) no console de Sites para investigar mais a eficácia da página.
 
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.

@@ -6,9 +6,9 @@ feature: Asset Management
 role: Leader, Architect, User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: aafd340d9ef03f9bf12ed23aad5eb03dc055af38
+source-git-commit: 6944befc6ca7367e229b3eb7b41fef9cc177a1df
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '903'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/overview) |
-| AEM 6.5 | Este artigo |
+| AEM 6.5 LTS | Este artigo |
 
 O AEM [!DNL Assets] é uma ferramenta de Gerenciamento de Ativos Digitais (DAM) que faz parte da plataforma [!DNL Experience Manager] e permite que sua empresa gerencie e distribua ativos digitais. Os usuários em uma organização podem gerenciar, armazenar e acessar vários tipos de ativos digitais, como imagens, vídeos, documentos, clipes de áudio, arquivos 3D e mídia avançada para uso na Web, em impressão e para distribuição digital.
 

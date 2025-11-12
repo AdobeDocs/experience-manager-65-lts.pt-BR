@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 62%
 
 ---
@@ -148,7 +148,7 @@ Quando você fornece uma página **Nome** ao criar uma página, o AEM [valida o 
 
 No AEM, um modelo especifica um tipo especializado de página. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
-O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
+O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas do produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
 O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem do site individual. Os campos principais são:
 
@@ -160,7 +160,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 >[!NOTE]
 >
->Se configurado na instância,[&#x200B; os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
+>Se configurado na instância,[ os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 
@@ -392,10 +392,6 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de Tr
 >[!NOTE]
 >
 >Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) no guia do usuário de Administração.
-
->[!NOTE]
->
->O processamento assíncrono de movimentação de página requer o AEM 6.5.3.0 ou superior.
 
 ### Excluir uma página {#deleting-a-page}
 

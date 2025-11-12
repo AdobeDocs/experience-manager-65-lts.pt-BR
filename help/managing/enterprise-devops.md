@@ -1,14 +1,11 @@
 ---
 title: 'DevOps empresarial '
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
+source-git-commit: db44ebd29ea80c3b95e385ace5156d028f4de122
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 72%
@@ -74,7 +71,7 @@ O ambiente de preparo deve ser um espelho do ambiente de produção, incluindo a
 
 O ambiente de produção consiste nos ambientes necessários para realmente [criar e publicar](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) sua implementação.
 
-Um ambiente de produção consiste em pelo menos uma instância de autor e uma instância de publicação:
+Um ambiente de produção consiste em pelo menos uma instância de criação e uma instância de publicação:
 
 * Uma instância de [autoria](#author) para a entrada de conteúdo.
 * Uma instância de [publicação](#publish) para o conteúdo disponibilizado para seus visitantes/usuários.
@@ -83,7 +80,7 @@ Dependendo da escala do projeto, ele geralmente consiste em várias instâncias 
 
 #### Autor {#author}
 
-As instâncias de autor geralmente estão localizadas atrás do firewall interno. Este é o ambiente em que você e seus colegas realização tarefas de autoria, como:
+As instâncias de criação geralmente estão localizadas atrás do firewall interno. Este é o ambiente em que você e seus colegas realização tarefas de autoria, como:
 
 * administrar todo o sistema
 * inserir seu conteúdo
@@ -125,7 +122,7 @@ Os Projetos AEM geralmente acionam a implantação de código:
 
 ## Transferência do conteúdo {#content-movement}
 
-O conteúdo que está sendo criado para produção deve **sempre** ser criado na instância de autor de produção.
+O conteúdo que está sendo criado para produção deve **sempre** ser criado na instância de criação de produção.
 
 O conteúdo não deve seguir o código transferido de ambientes inferiores para os superiores, pois fazer com que os autores criem conteúdo em máquinas locais ou ambientes inferiores e depois o transfiram para o ambiente de produção não é uma boa prática e provavelmente introduzirá erros e inconsistências.
 

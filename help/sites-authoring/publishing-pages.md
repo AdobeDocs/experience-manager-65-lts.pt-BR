@@ -1,13 +1,13 @@
 ---
 title: Publicação de páginas de conteúdo
-description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5.
+description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1702'
 ht-degree: 63%
 
 ---
@@ -26,13 +26,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
 >* **Publicar/Desfazer a publicação**
->  &#x200B;>  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
->  &#x200B;>  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
->  &#x200B;>  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
+>  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 
 ## Privilégios Insuficientes {#insufficient-privileges}
 
@@ -88,8 +88,8 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console do Sites, há duas opções para publicação:
 
-* [Publicação rápida   &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gerenciar publicação   &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicação rápida   ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gerenciar publicação   ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Publicação rápida    {#quick-publish}
 
@@ -188,7 +188,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    >
    >Consulte as seções [Privilégios Insuficientes](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gerenciando o Acesso aos Fluxos de Trabalho](/help/sites-administering/workflows-managing.md) e [Aplicando Fluxos de Trabalho a Páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
 
-   Os recursos são agrupados pelos workflows acionados e cada um recebe opções para:
+   Os recursos são agrupados pelos fluxos de trabalho acionados e cada um recebe opções para:
 
    * Defina o título do fluxo de trabalho.
    * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha [suporte para vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).

@@ -1,12 +1,13 @@
 ---
 title: Personalização e direcionamento de conteúdo
-description: Saiba como o Adobe Experience Manager 6.5 pode criar conteúdo personalizado.
+description: Saiba como o Adobe Experience Manager 6.5 LTS pode criar conteúdo personalizado.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
+source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '527'
 ht-degree: 36%
 
 ---
@@ -19,7 +20,7 @@ O AEM fornece uma estrutura de ferramentas para a criação de conteúdo direcio
 
 ## Modo de direcionamento {#targeting-mode}
 
-[Crie conteúdo direcionado usando o modo Direcionar do AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) O modo de direcionamento e o componente do Target fornecem ferramentas para criar conteúdo para as experiências das suas atividades de marketing.
+[Crie conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md) usando o modo Direcionamento do AEM. O modo de direcionamento e o componente do Target fornecem ferramentas para criar conteúdo para as experiências das suas atividades de marketing.
 
 ## Atividades {#activities}
 
@@ -33,11 +34,11 @@ Use o [console de Atividades](/help/sites-authoring/activitylib.md) para criar e
 
 ## Experiências {#experiences}
 
-Para cada atividade, você define uma ou mais experiências que identificam os públicos que estão sendo direcionados. O AEM permite que você controle o conteúdo que compreende cada experiência.
+Para cada atividade, você define uma ou mais experiências que identificam os públicos-alvos que estão sendo direcionados. O AEM permite que você controle o conteúdo que compreende cada experiência.
 
 Os públicos são baseados em segmentos de marketing criados no AEM ou no Adobe Target. Quando um visitante abre uma página da Web, a lógica da página determina o público-alvo ao qual ele pertence e exibe o conteúdo que você criou para esse público-alvo.
 
-Por exemplo, uma atividade define experiências para dois públicos separados: mulheres com mais de 30 anos e mulheres com menos de 30 anos. A página Feminino do site We.Retail exibe produtos diferentes para cada experiência.
+Por exemplo, uma atividade define experiências para dois públicos-alvos separados: mulheres com mais de 30 anos e mulheres com menos de 30 anos. A página Feminino do site We.Retail exibe produtos diferentes para cada experiência.
 
 Você define experiências para uma atividade. Você pode usar o [console de Atividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) ou o [modo de Direcionamento](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para adicionar experiências a uma atividade.
 
@@ -51,11 +52,11 @@ Use o [Console de ofertas](/help/sites-authoring/offerlib.md) para criar ofertas
 
 ## Mecanismo de direcionamento {#targeting-engine}
 
-O mecanismo de direcionamento é o mecanismo que orienta a lógica do conteúdo direcionado. [Atividades](/help/sites-authoring/activitylib.md) são configuradas para usar um dos dois mecanismos de segmentação disponíveis: AEM e Adobe Target.
+O mecanismo de direcionamento é o mecanismo que orienta a lógica do conteúdo direcionado. [Atividades](/help/sites-authoring/activitylib.md) são configuradas para usar um dos dois mecanismos de direcionamento disponíveis: AEM e Adobe Target.
 
 ### AEM {#aem}
 
-O AEM fornece um mecanismo de direcionamento integrado que processa solicitações de página e determina o conteúdo a ser exibido. Ao usar o mecanismo de direcionamento do AEM, você está limitado a usar segmentos criados no AEM para definir os públicos das suas experiências.
+O AEM fornece um mecanismo de direcionamento integrado que processa solicitações de página e determina o conteúdo a ser exibido. Ao usar o mecanismo de direcionamento do AEM, você está limitado a usar segmentos criados no AEM para definir os públicos-alvos das suas experiências.
 
 ### Adobe Target {#adobe-target}
 

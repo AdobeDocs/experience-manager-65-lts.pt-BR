@@ -1,18 +1,14 @@
 ---
 title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager
 description: Saiba mais sobre o suporte do Adobe Experience Manager para os vários Regulamentos de proteção e privacidade de dados. Ele inclui o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto do AEM.
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: d1297182b801ff4db163b8ae91332f5aebb94b9b
+exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 43%
+source-wordcount: '739'
+ht-degree: 41%
 
 ---
 
@@ -42,13 +38,13 @@ A Adobe está fornecendo documentação e procedimentos (com APIs, quando dispon
 
 As instâncias do Adobe Experience Manager e os aplicativos executados nelas pertencem e são operadas por clientes do Adobe.
 
-Como consequência, as regulamentações de proteção de dados, como GDPR, CCPA e outras, são em grande parte de responsabilidade dos clientes.
+Como consequência, as regulamentações de proteção de dados, como RGPD, CCPA e outras, são em grande parte de responsabilidade dos clientes.
 
 Como uma breve introdução, os regulamentos relativos à privacidade e proteção de dados incluem novas regras que devem ser seguidas pelas funções de:
 
-* Entidades de Negócios (CCPA) e/ou Controladores de Dados (GDPR)
+* Entidades de Negócios (CCPA) e/ou Controladores de Dados (RGPD)
 
-* Fornecedores de serviços (CCPA) e/ou Processadores de dados (GDPR)
+* Fornecedores de serviços (CCPA) e/ou Processadores de dados (RGPD)
 
 As principais disposições desses regulamentos são as seguintes:
 
@@ -80,7 +76,7 @@ Para o Adobe Experience Manager:
 
 A Adobe está fornecendo procedimentos para lidar com solicitações de privacidade relacionadas ao Acesso, Exclusão e Não participação no Adobe Experience Manager. Às vezes, há APIs disponíveis que podem ser chamadas de um portal desenvolvido pelo cliente ou scripts para ajudar na automação.
 
-O diagrama a seguir ilustra um fluxo de trabalho de solicitação de privacidade (ilustrado com o Adobe Experience Manager 6.5):
+O diagrama a seguir ilustra um fluxo de trabalho de solicitação de privacidade:
 
 ![Proteção e privacidade de dados](assets/data-protection-and-privacy-01.png)
 

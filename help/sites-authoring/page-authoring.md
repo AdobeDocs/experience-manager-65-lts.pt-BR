@@ -1,12 +1,13 @@
 ---
 title: Criação de páginas de conteúdo no AEM
-description: As tarefas envolvidas na criação de uma página de conteúdo no Adobe Experience Manager 6.5.
+description: As tarefas envolvidas na criação de uma página de conteúdo no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
+source-git-commit: d95f583bab511c923453a7bb4bcbb726355987b0
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---

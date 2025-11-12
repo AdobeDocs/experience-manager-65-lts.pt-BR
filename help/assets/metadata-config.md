@@ -6,9 +6,10 @@ role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1980'
 ht-degree: 4%
 
 ---
@@ -17,8 +18,8 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 LTS | Este artigo |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -117,7 +118,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/br/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -271,13 +272,13 @@ Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salv
 
 * Para importar metadados em namespaces personalizados, primeiro registre os namespaces.
 * O Seletor de propriedades exibe as propriedades que são usadas em editores de esquema e formulários de pesquisa. O Seletor de propriedades não seleciona propriedades de metadados de um ativo.
-* Você pode ter perfis de metadados pré-existentes desde antes de atualizar para o [!DNL Experience Manager] 6.5. Após a atualização, se você aplicar esse perfil na pasta [!UICONTROL Propriedades] na guia [!UICONTROL Perfis de Metadados], os campos do formulário de metadados não serão exibidos. No entanto, se você aplicar um perfil de metadados recém-criado, os campos de formulário serão exibidos, mas indisponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
+* Você pode ter perfis de metadados pré-existentes desde antes de atualizar para o [!DNL Experience Manager] 6.5 LTS. Após a atualização, se você aplicar esse perfil na pasta [!UICONTROL Propriedades] na guia [!UICONTROL Perfis de Metadados], os campos do formulário de metadados não serão exibidos. No entanto, se você aplicar um perfil de metadados recém-criado, os campos de formulário serão exibidos, mas indisponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
 
 >[!MORELIKETHIS]
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=pt-BR).
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Práticas recomendadas para organizar seus ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 >* [Writeback XMP](/help/assets/xmp-writeback.md).

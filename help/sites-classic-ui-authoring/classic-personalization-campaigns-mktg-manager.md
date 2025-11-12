@@ -1,15 +1,11 @@
 ---
 title: Trabalhar com o gerente de campanha de marketing
 description: O Gerenciador de campanha de marketing (MCM) é um console que ajuda você a gerenciar campanhas com vários canais. Com esse software de automação de marketing, você pode gerenciar todas as suas marcas, campanhas e experiências, juntamente com os segmentos, listas, clientes potenciais e relatórios relacionados.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%

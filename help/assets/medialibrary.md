@@ -1,15 +1,14 @@
 ---
 title: Use a Biblioteca de mídia para o gerenciamento básico de ativos digitais
 description: '[!DNL Experience Manager Assets] e Biblioteca de mídia para gerenciamento de ativos.'
-contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
+source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=pt-BR) |
-| AEM 6.5 | Este artigo |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 LTS | Este artigo |
 
 A plataforma [!DNL Adobe Experience Manager] fornece diferentes recursos para gerenciar ativos. A Media Library permite que os usuários façam upload de um pequeno número de ativos no repositório, pesquisem e usem esses ativos nas páginas da Web e realizem tarefas simples de gerenciamento de ativos nos ativos.
 
@@ -90,9 +89,3 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 Observe que você não pode usar marcas inteligentes, link [!DNL Asset], seletor [!DNL Asset], marcação em massa, modificar fluxos de trabalho de ativos ou a interface de usuário padrão [!DNL Adobe Experience Manager] para acessar a Biblioteca de Mídia sem a licença [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
-
->[!MORELIKETHIS]
->
->* [recursos DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/assets/assets)
->* [[!DNL Experience Manager] 6.5 Descrição do produto Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 descrição do produto no local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html)

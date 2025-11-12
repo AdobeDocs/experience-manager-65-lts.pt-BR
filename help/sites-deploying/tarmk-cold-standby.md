@@ -10,9 +10,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 A capacidade de Espera a frio do Tar Micro Kernel permite que uma ou mais instâncias de Adobe Experience Manager em espera (AEM) se conectem a uma instância primária. O processo de sincronização é apenas unidirecional, o que significa que ele só é feito das instâncias principal para as stand-by.
 
-A finalidade das instâncias em standby é garantir uma cópia de dados em tempo real do repositório mestre e garantir uma troca rápida sem perda de dados, caso o mestre não esteja disponível por algum motivo.
+A finalidade das instâncias em standby é garantir uma cópia de dados em tempo real do repositório principal e garantir uma troca rápida sem perda de dados, caso a instância principal não esteja disponível por algum motivo.
 
 O conteúdo é sincronizado linearmente entre a instância principal e as instâncias standby sem qualquer verificação de integridade para corrupção de arquivos ou repositórios. Por causa desse design, as instâncias em espera são cópias exatas da instância principal e não podem ajudar a atenuar inconsistências nas instâncias principais.
 
@@ -43,7 +43,7 @@ O conteúdo é sincronizado linearmente entre a instância principal e as instâ
 
 ## Como funciona {#how-it-works}
 
-Na instância primária do AEM, uma porta TCP é aberta e escuta as mensagens recebidas. Atualmente, há dois tipos de mensagens que os escravos enviam ao mestre:
+Na instância primária do AEM, uma porta TCP é aberta e escuta as mensagens recebidas. Atualmente, há dois tipos de mensagens que o standby envia para o principal:
 
 * uma mensagem solicitando a ID de segmento do cabeçalho atual
 * uma mensagem solicitando dados de segmento com uma ID especificada
@@ -72,7 +72,7 @@ No standby, você pode esperar um alto consumo de CPU durante o processo de sinc
 
 #### Segurança {#security}
 
-Supondo que todas as instâncias sejam executadas na mesma zona de segurança da intranet, o risco de violação de segurança é bastante reduzido. No entanto, você pode adicionar uma camada de segurança extra, habilitando conexões SSL entre os subordinados e o principal. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
+Supondo que todas as instâncias sejam executadas na mesma zona de segurança da intranet, o risco de violação de segurança é bastante reduzido. No entanto, você pode adicionar uma camada de segurança extra ativando conexões SSL entre as instâncias stand-by e principal. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
 
 Além disso, você pode especificar as instâncias em standby que têm permissão para se conectar, restringindo o endereço IP das solicitações recebidas. Isso deve ajudar a garantir que ninguém na intranet possa copiar o repositório.
 
@@ -93,7 +93,7 @@ Além disso, você pode especificar as instâncias em standby que têm permissã
 
 Para criar uma configuração de standby frio do TarMK, primeiro crie as instâncias de standby executando uma cópia do sistema de arquivos de toda a pasta de instalação do principal para um novo local. Você pode iniciar cada instância com um modo de execução que especifique sua função ( `primary` ou `standby`).
 
-Abaixo está o procedimento que deve ser seguido para criar uma configuração com uma instância mestre e uma instância standby:
+Abaixo está o procedimento que deve ser seguido para criar uma configuração com uma instância principal e uma standby:
 
 1. Instale o AEM.
 
@@ -336,7 +336,7 @@ Você pode fazer isso seguindo as etapas descritas abaixo:
 
 ## Monitoramento {#monitoring}
 
-O recurso expõe informações usando JMX ou MBeans. Dessa forma, você pode inspecionar o estado atual do standby e do master usando o [console JMX](/help/sites-administering/jmx-console.md). As informações podem ser encontradas em um MBean de `type org.apache.jackrabbit.oak:type="Standby"`chamado `Status`.
+O recurso expõe informações usando JMX ou MBeans. Dessa forma, você pode inspecionar o estado atual do standby e do primário usando o [console JMX](/help/sites-administering/jmx-console.md). As informações podem ser encontradas em um MBean de `type org.apache.jackrabbit.oak:type="Standby"`chamado `Status`.
 
 **Em Espera**
 
@@ -365,7 +365,7 @@ A observação do principal expõe algumas informações gerais por meio de um M
 
 * `Mode:` sempre mostra o valor `primary`.
 
-Além disso, é possível recuperar informações para até dez clientes (instâncias stand-by) conectados ao mestre. A ID do MBean é a UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos úteis somente leitura:
+Além disso, as informações para até dez clientes (instâncias stand-by) conectados ao principal podem ser recuperadas. A ID do MBean é a UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos úteis somente leitura:
 
 * `Name:` a ID do cliente.
 * `LastSeenTimestamp:` o carimbo de data/hora da última solicitação em uma representação textual.

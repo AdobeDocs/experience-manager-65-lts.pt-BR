@@ -1,16 +1,14 @@
 ---
 title: Práticas recomendadas de gerenciamento de SEO e URL
 description: Saiba mais sobre as práticas recomendadas e as recomendações da SEO em uma implementação do AEM.
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 65%
+source-wordcount: '3475'
+ht-degree: 66%
 
 ---
 
@@ -51,7 +49,6 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
    * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
    * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
    * Por exemplo:
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 é preferível a `mybrand.com/products/product-detail.1234.html`
 
@@ -182,7 +179,7 @@ No AEM, todas as páginas da Web são armazenadas no `/content/my-brand/my-conte
 
 Esta seção analisa as opções disponíveis no AEM para gerenciar esses URLs e apresentá-los aos usuários de maneira mais legível e fácil de usar para SEO.
 
-#### URLs personalizadas {#vanity-urls}
+#### URLs personalizados {#vanity-urls}
 
 Se um autor desejar que uma página seja acessível de um segundo local para fins promocionais, os URLs personalizados do AEM, definidos página por página, podem ser úteis. Para adicionar um URL personalizado de uma página, navegue até ele no console **Sites** e edite as propriedades da página. Na parte inferior da guia **Básico**, você verá uma seção na qual URLs personalizados podem ser adicionados. Lembre-se de que ter a página acessível por mais de um URL fragmentará o valor SEO da página. Portanto, uma tag de URL canônica deve ser adicionada à página para evitar esse problema.
 
@@ -196,7 +193,7 @@ Talvez você queira exibir nomes de página localizados para usuários de conte�
 * Seria melhor que o URL fosse:
   `www.mydomain.com/es/casa.html`.
 
-O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre os locais para manter o conteúdo sincronizado.
+O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre as localidades para manter o conteúdo sincronizado.
 
 A propriedade `sling:alias` permite ter o Adobe cake e comer também. Você pode adicionar `sling:alias` como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria o seguinte:
 
@@ -256,7 +253,6 @@ No entanto, há também uma maneira mais simples de gerenciar esse problema:
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    A Adobe recomenda que você crie os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, defina essas configurações em um nó OsgiConfignode, `config.publish` incluído na sua versão.
@@ -356,19 +352,13 @@ Disallow: /
 
 Como alternativa, em um ambiente em tempo real, você pode optar por não permitir determinados caminhos que não deseja indexar.
 
-O problema ao colocar o arquivo `robots.txt` na raiz do site é que as solicitações de liberação do Dispatcher podem limpar esse arquivo. Além disso, os mapeamentos de URL provavelmente colocam a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
+O problema ao colocar o arquivo `robots.txt` na raiz do site é que as solicitações de liberação do Dispatcher podem limpar esse arquivo. Além disso, os mapeamentos de URL provavelmente colocam a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância de criação na raiz do site e replicá-lo na instância de publicação.
 
 ### Criar um mapa de site XML no AEM {#building-an-xml-sitemap-on-aem}
 
 Os rastreadores usam mapas de site XML para entender melhor a estrutura dos sites. Embora não haja garantias de que a disponibilização de um mapa de site levará a melhores classificações de SEO, trata-se de uma prática recomendada conhecida. Você pode manter manualmente um arquivo XML no servidor da Web para usar como mapa do site. No entanto, a Adobe recomenda gerar o mapa de site de forma programática para garantir que, à medida que os autores criam conteúdo, o mapa de site reflita automaticamente suas alterações.
 
 O AEM usa o [módulo Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap) para gerar mapas de site XML, o que fornece uma grande variedade de opções para desenvolvedores e editores manterem um mapa de site XML atualizado.
-
->[!NOTE]
->
->Disponível como recurso do produto desde a Versão 6.5.11.0 do Adobe Experience Manager.
-> 
->Para versões mais antigas, você mesmo pode registrar um Sling Servlet para ouvir uma chamada `sitemap.xml`. Use o recurso fornecido por meio da API de servlet para pesquisar a página atual e seus descendentes para produzir um arquivo `sitemap.xml`.
 
 O módulo Apache Sling Sitemap distingue entre um mapa de site de nível superior e um mapa de site aninhado, ambos sendo gerados para qualquer recurso que tenha a propriedade `sling:sitemapRoot` definida como `true`. Em geral, os mapas de site são renderizados usando seletores no caminho do mapa de site de nível superior da árvore, recurso este que não possui outro ancestral raiz do mapa de site. Essa raiz do mapa de site de nível superior também expõe o índice do mapa de site, que normalmente é o que um proprietário de site configuraria no portal de configuração do mecanismo de pesquisa ou adicionaria ao `robots.txt` do site.
 

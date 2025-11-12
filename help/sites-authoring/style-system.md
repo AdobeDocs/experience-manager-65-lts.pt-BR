@@ -1,15 +1,13 @@
 ---
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1292'
 ht-degree: 83%
 
 ---
@@ -128,7 +126,7 @@ Com o componente configurado, os estilos configurados pelos autores da página s
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-A partir da versão 6.5.3.0 do AEM, uma guia Estilos opcional na Caixa de Diálogo de Edição agora está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
+Uma guia Estilos opcional na caixa de diálogo Editar agora está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
 
 A guia Editar pode ser incluída de maneira semelhante na guia Design:
 

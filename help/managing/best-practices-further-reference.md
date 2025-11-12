@@ -1,14 +1,11 @@
 ---
 title: Lista de verificação - Referência adicional
 description: Saiba mais sobre detalhes que detalham e/ou aumentam os documentos e princípios cobertos pela Lista de verificação de gerenciamento de projetos - práticas recomendadas.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
+source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 1%
@@ -574,7 +571,7 @@ Além disso, as seguintes seções são de especial interesse:
 A Adobe fornece práticas recomendadas adicionais para todas as fases e públicos-alvo:
 
 * [Implantando](/help/sites-deploying/best-practices.md)
-* [Criação  &#x200B;](/help/sites-authoring/best-practices.md)
+* [Criação](/help/sites-authoring/best-practices.md)
 * [Administração](/help/sites-administering/administer-best-practices.md)
-* [Desenvolvimento](/help/sites-developing/best-practices.md)
+* [Desenvolver](/help/sites-developing/best-practices.md)
 * [Gerenciamento de projeto](/help/managing/best-practices.md)

@@ -1,10 +1,11 @@
 ---
 title: Um guia rápido para a WCAG 2.1
 description: Um Guia rápido para as Diretrizes de acessibilidade de conteúdo da Web (WCAG) versão 2.1.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 57afd8bf-c6d6-47ab-9a30-c5830bc5ea51
+source-git-commit: 5aafd5e1ba5e2202f941975d292a3e242363601a
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 90%

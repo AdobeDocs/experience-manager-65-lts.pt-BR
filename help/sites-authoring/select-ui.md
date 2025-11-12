@@ -1,12 +1,13 @@
 ---
 title: Seleção da interface do usuário no AEM
-description: Configure qual interface você usa para trabalhar no Adobe Experience Manager 6.5.
+description: Configure qual interface você usa para trabalhar no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
+source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -26,7 +27,7 @@ Isso define a interface como o padrão ao editar páginas, embora o usuário pos
 * [Alternando para a interface clássica da sessão atual](#switching-to-classic-ui-for-the-current-session)
 Alterna para a interface clássica da sessão atual.
 
-* No caso da criação de [&#x200B; páginas, o sistema faz determinadas substituições na relação com a interface &#x200B;](#ui-overrides-for-the-editor).
+* No caso da criação de [ páginas, o sistema faz determinadas substituições na relação com a interface ](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -103,11 +104,9 @@ As configurações definidas por um usuário ou administrador do sistema podem s
 * Ao criar páginas:
 
    * O uso do editor clássico é forçado ao acessar a página usando `cf#` na URL. Por exemplo:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * O uso do editor habilitado para toque é forçado ao usar `/editor.html` na URL ou ao usar um dispositivo de toque. Por exemplo:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualquer imposição é temporária e válida somente para a sessão do navegador

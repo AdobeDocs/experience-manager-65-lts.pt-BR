@@ -1,15 +1,11 @@
 ---
 title: Participação no fluxo de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
+source-git-commit: 21c5407d1153fa23a3e8b60487eb91f1c3101337
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 73%
@@ -45,7 +41,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
    * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
 
-      * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
+      * use as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
       * clique no número real para abrir uma lista suspensa de todos os workflows aplicáveis e selecione o workflow que deseja exibir na barra de status.
 
   ![wf-59](assets/wf-59.png)

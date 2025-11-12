@@ -1,12 +1,13 @@
 ---
 title: Uso do Editor de rich text para criar conteúdo
-description: Uso do editor de rich text para criar conteúdo no Adobe Experience Manager 6.5.
+description: Utilização do editor de rich text para criar conteúdo no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
+source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 31%
 
 ---
@@ -15,8 +16,8 @@ ht-degree: 31%
 
 O Editor de Rich Text (RTE) é um elemento básico fundamental para inserir conteúdo textual no AEM. É a base de vários componentes, incluindo:
 
-* [Texto](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabela](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Texto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabela](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Edição no local {#in-place-editing}
 

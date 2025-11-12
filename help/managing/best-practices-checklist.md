@@ -1,16 +1,13 @@
 ---
 title: A Lista de Verificação
 description: As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do status atual.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
+source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -50,6 +47,6 @@ Para entregar com êxito um projeto de alta qualidade, você precisa concluir to
 
    >[!NOTE]
    >
-   >Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
+   >Não há uma relação 1:1 direta entre os documentos necessários individuais e os materiais para entrega.
 
 1. Com base nos status dos **[Documentos Necessários](/help/managing/best-practices.md#required-documents)** e **[Resultados Finais](/help/managing/best-practices.md#deliverables)**, as planilhas **[Pulsação do Projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizadas automaticamente para fornecer uma indicação atualizada do progresso e da integridade do seu projeto.

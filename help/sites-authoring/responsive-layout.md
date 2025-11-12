@@ -1,20 +1,16 @@
 ---
 title: Layout responsivo para suas páginas de conteúdo
 description: O Adobe Experience Manager permite criar um layout responsivo para suas páginas usando o componente de Contêiner de layout.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9492907f011fa58dff6bd9eeaf1ae2c6d0397700
+exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
+source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 59%
 
 ---
-
 
 # Layout responsivo{#responsive-layout}
 
@@ -203,7 +199,7 @@ O modo **Layout** pode ser iniciado de duas maneiras.
 
 * Ao usar o [modo de menu na barra de ferramentas](/help/sites-authoring/author-environment-tools.md#page-modes) e escolher o modo **Layout**
 
-   * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
+   * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Direcionamento**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
 
 * Ao [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)

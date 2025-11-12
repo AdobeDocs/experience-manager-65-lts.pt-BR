@@ -1,17 +1,13 @@
 ---
 title: Gerenciamento de projetos - Lista de verificação de práticas recomendadas
 description: O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão. As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do seu status.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist, introduction
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
+source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 0%
 
 ---
@@ -55,7 +51,7 @@ A planilha **Pulsação do projeto** fornece uma visão geral gráfica das métr
 
 ## Status por Função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e &#x200B;** Integridade&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e **Integridade**](#projectheartbeat) por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
 
 ## Fases e etapas {#phases-and-milestones}
 
@@ -65,7 +61,7 @@ Cada fase contém seus próprios marcos. Para cada [persona](#persona) (ou funç
 
 >[!NOTE]
 >
->Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
+>Não há uma relação 1:1 direta entre os documentos necessários individuais e os materiais para entrega.
 
 ### Preparação {#preparation}
 
@@ -238,7 +234,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   Antes do desenvolvimento, todos os processos de suporte necessários para implantar, liberar, testar e relatar problemas devem ser estabelecidos.
 
-  Consulte também o [Portal de Suporte do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support).
+  Consulte também o [Portal de Suporte do Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 ### Planejamento e operações de operações {#operations-planning-and-operations}
 
@@ -578,7 +574,7 @@ O líder de segurança:
 
 As listas de verificação abrangem os **Documentos Necessários** e **Entregáveis** para cada marco.
 
-* Não há relação 1:1 entre eles; por exemplo, um grupo de documentos necessários pode resultar em um único material para entrega.
+* Não há nenhuma relação 1:1 entre elas; por exemplo, um grupo de documentos necessários pode resultar em uma única entrega.
 * Um produto de uma pessoa pode ser um documento necessário para outra pessoa durante o mesmo marco.
 
 ### Documentos necessários {#required-documents}
@@ -606,7 +602,7 @@ Para obter as práticas recomendadas sobre implantação, administração, desen
 
 * Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto do AEM:
    * [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
    * [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
    * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)* [Implantação e Manutenção de Práticas Recomendadas](/help/sites-deploying/best-practices.md)
@@ -621,7 +617,7 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
    * [Segurança](/help/sites-developing/security.md)
    * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
    * [Dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Conceitos do AEM:
 
@@ -631,4 +627,4 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
 * Documentação relacionada
 
-   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=pt-BR)
+   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

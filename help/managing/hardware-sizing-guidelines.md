@@ -1,10 +1,11 @@
 ---
 title: Diretrizes de dimensionamento de hardware
 description: Essas diretrizes de dimensionamento oferecem uma aproximação dos recursos de hardware necessários para implantar um projeto AEM.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
+source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -132,7 +133,7 @@ Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do [!UICONTROL A
 >
 >Consulte também o [Guia de Desempenho do Assets](/help/sites-deploying/assets-performance-sizing.md).
 
-### Gerenciador de vários sites {#multi-site-manager}
+### Gerenciador multisite (MSM) {#multi-site-manager}
 
 O consumo de recursos ao usar o AEM MSM em um ambiente de criação depende muito dos casos de uso específicos. Os fatores básicos são:
 

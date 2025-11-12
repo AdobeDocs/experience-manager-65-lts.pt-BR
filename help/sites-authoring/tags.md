@@ -1,21 +1,16 @@
 ---
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73fe62f4-a3a6-4cfa-9b31-517653c05269
+source-git-commit: aba5065cf209caf085efe85ca7e0ca9ff1b5d9a2
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 76%
 
 ---
-
 
 # Uso de tags {#using-tags}
 
@@ -34,7 +29,7 @@ As tags são um método rápido e fácil de classificar conteúdo em um site. As
 1. **Pesquisas aprimoradas** - o componente de pesquisa padrão no AEM inclui amplamente tags criadas e tags aplicadas, às quais é possível aplicar filtros para restringir os resultados apenas àqueles que são relevantes.
 1. **Habilitação de SEO** - aplicadas como propriedades de página aparecerão automaticamente nas metatags da página, tornando-a visível para os mecanismos de pesquisa.
 1. **Sofisticação simples** - tags podem ser criadas simplesmente a partir de uma palavra e com o toque de um botão. Posteriormente, um título, uma descrição e um número ilimitado de etiquetas podem ser adicionadas para fornecer mais semântica à tag.
-1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos ativados para marcação com acesso às mesmas taxonomias.
+1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos habilitados para marcação com acesso às mesmas taxonomias.
 1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ela é igualmente eficiente ao trabalhar com informações não estruturadas, devido à pesquisa integrada de texto completo. A marcação combina os pontos fortes da estrutura e da flexibilidade.
 
 Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem mais leve e acessível oferecida pela marcação.

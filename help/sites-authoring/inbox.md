@@ -1,12 +1,13 @@
 ---
 title: Sua Caixa de entrada para gerenciar tarefas
-description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5.
+description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
+source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1156'
 ht-degree: 39%
 
 ---
@@ -41,7 +42,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde pode vi
 >* [Projetos](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projetos: trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Formulários](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}

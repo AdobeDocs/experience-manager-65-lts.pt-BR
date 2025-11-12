@@ -1,17 +1,18 @@
 ---
-title: 'Criação  '
-description: Conceitos de criação e publicação no Adobe Experience Manager 6.5.
+title: Criação
+description: Conceitos de criação e publicação no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: d1297182b801ff4db163b8ae91332f5aebb94b9b
+exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
+source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '479'
 ht-degree: 32%
 
 ---
 
-# Criação  {#authoring}
+# Criação{#authoring}
 
 ## Conceito de criação (e publicação) {#concept-of-authoring-and-publishing}
 
@@ -60,7 +61,7 @@ Além disso, há tarefas administrativas que ajudam a gerenciar o conteúdo:
 
 #### Ambiente de publicação {#publish-environment}
 
-Quando pronto, o conteúdo do site do AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
+Quando pronto, o conteúdo do site do AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público-alvo desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 

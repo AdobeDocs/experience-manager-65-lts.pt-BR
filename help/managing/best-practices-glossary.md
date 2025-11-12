@@ -1,15 +1,11 @@
 ---
 title: Glossário
 description: Este glossário lista (alfabeticamente) detalhes de todos os documentos do Material de entrega da Lista de verificação do projeto.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
+source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -63,11 +59,11 @@ Treinamento para a equipe que produzirá (criará) conteúdo para a solução. C
 
 ### Exame de certificação AEM {#aem-certification-exam}
 
-Verifique se as pessoas apropriadas estão registradas para fazer os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
+Verifique se as pessoas apropriadas estão registradas para fazer os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) relevantes.
 
 ### AEM Certified {#aem-certified}
 
-Certifique-se de que o perfil apropriado tenha passado nos [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
+Certifique-se de que o perfil apropriado tenha passado nos [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) relevantes.
 
 ### Treinamento técnico da AEM {#aem-technical-training}
 

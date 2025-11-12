@@ -1,14 +1,11 @@
 ---
 title: Noções básicas sobre segmentação ao criar uma campanha
 description: A segmentação é uma consideração importante ao criar uma campanha.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 46%
@@ -58,7 +55,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Receita
 * Tamanho da família
 * Estado civil
-* Sexo
+* Gênero
 * Local
 
 **Características derivadas** - Algumas características demográficas são difíceis de determinar sem registro, mas podem ser derivadas pela combinação de características comportamentais e demográficas.

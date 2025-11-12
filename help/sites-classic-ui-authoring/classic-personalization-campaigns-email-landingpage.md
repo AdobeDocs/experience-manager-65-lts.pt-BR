@@ -1,17 +1,13 @@
 ---
 title: Criação de uma página inicial efetiva de informativo
 description: Uma página de aterrissagem eficaz do informativo ajuda você a obter o máximo de pessoas possível para se inscrever no seu informativo (ou outra campanha de marketing por email). Você pode usar as informações coletadas nas inscrições do seu boletim informativo para obter leads.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -48,7 +44,7 @@ Para criar seu próprio formulário de informativo, consulte informações sobre
 
 Os campos ocultos no exemplo a seguir fornecem a quantidade mínima de informações (email); além disso, você pode adicionar mais campos posteriormente, mas isso afetará a taxa de conversão.
 
-O exemplo a seguir é um formulário criado em https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
+Este exemplo é um formulário criado em https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
 1. Crie o formulário.
 
