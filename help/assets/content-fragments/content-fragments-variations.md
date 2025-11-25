@@ -4,10 +4,11 @@ description: Entenda como as variações podem tornar o conteúdo headless no AE
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
+source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2350'
+ht-degree: 58%
 
 ---
 
@@ -406,6 +407,12 @@ As variações permitem selecionar o conteúdo **Principal** e alterá-lo de aco
 
 Para criar uma variação:
 
+>[!NOTE]
+>
+>As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+>
+>Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
+
 1. Abra o fragmento e verifique se o painel lateral está visível.
 1. Selecione **Variações** na barra de ícones, no painel lateral.
 1. Selecione **Criar variação**.
@@ -467,7 +474,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >
