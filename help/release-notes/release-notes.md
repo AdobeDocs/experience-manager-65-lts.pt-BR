@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 * Os usuários não conseguiam usar o recurso de linha do tempo de arquivos em PDF nos formulários do AEM. Esse problema afetava a capacidade dos usuários de rastrear alterações e revisões de documentos com eficiência. Ao carregar qualquer PDF na seção “Formulários e documentos”, na área de formulários do AEM, a exibição da linha do tempo para de funcionar. (FORMS-19408)
 * Os usuários deparam-se com uma exceção de ponteiro nulo ao interagir com OData. Isso causa interrupções nos processos de recuperação de dados. (FORMS-20348)
 * Remoção da biblioteca google.common.collect após a remoção do Guava, uma biblioteca de Java de código aberto. Essa atualização garante uma melhor compatibilidade e um melhor desempenho para clientes empresariais que usam formulários adaptáveis. (FORMS-17031)
+* Quando a Validação do lado do servidor (SSV) está habilitada, os envios de formulários podem falhar. Se você encontrar esse problema, contate o [Suporte da Adobe](https://business.adobe.com/in/support/main.html) para obter assistência. (FORMS-21966)
 
 ### Captcha nos formulários
 
