@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -23,15 +24,19 @@ A equipe do AEM na Adobe trabalhou em conjunto com o projeto de código aberto [
 
 O jar do agente incluído neste pacote é a distribuição modificada do NotSoSerial pela Adobe.
 
-NotSoSerial é uma solução em nível Java™ para um problema em nível Java™ e não é específica da AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a uma inclui na lista de permissões de estilo de firewall, ou inclui na lista de bloqueios, ou ambos. Devido ao número limitado de classes no incluo na lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
+NotSoSerial é uma solução em nível Java™ para um problema em nível Java™ e não é específica da AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a um incluir na lista de permissões incluo na lista de bloqueios de estilo firewall, ou, ou ambos. Devido ao número limitado de classes no incluo na lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
 
 Por padrão, o agente executa uma verificação de inclui na lista de bloqueios em relação às classes vulneráveis conhecidas no momento. Essa inclui na lista de bloqueios destina-se a protegê-lo da lista atual de explorações que usam esse tipo de vulnerabilidade.
 
-A inclui na lista de bloqueios e a inclui na lista de permissões podem ser configuradas seguindo as instruções na seção [Configuração do Agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) deste artigo.
+O incluo na lista de permissões e a inclui na lista de bloqueios podem ser configurados seguindo as instruções na seção [Configuração do Agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) deste artigo.
 
 O agente deve ajudar a reduzir as classes vulneráveis conhecidas mais recentes. Se o seu projeto estiver desserializando dados não confiáveis, ele ainda poderá estar vulnerável a ataques de negação de serviço, ataques de memória insuficiente e explorações desconhecidas de desserialização futuras.
 
 A Adobe oferece suporte oficial ao Java™ 6, 7 e 8. No entanto, a Adobe sabe que o NotSoSerial também é compatível com o Java™ 5.
+
+>[!WARNING]
+>
+>NotSoSerial não deve ser usado com o Java™ 17 ou superior.
 
 ## Instalar o agente {#installing-the-agent}
 
@@ -66,7 +71,7 @@ O agente NotSoSerial não está incluído na distribuição padrão do AEM para 
 
 ## Configurar o agente {#configuring-the-agent}
 
-A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui uma incluir na lista de bloqueios inclui na lista de permissões de classes vulneráveis de execução remota conhecida e um grupo de pacotes de em que a desserialização de dados confiáveis é segura.
+A configuração padrão é adequada para a maioria das instalações. Incluir na lista de bloqueios Essa configuração inclui um incluo na lista de permissões de classes vulneráveis conhecidas de execução remota e um grupo de pacotes em que a desserialização de dados confiáveis é segura.
 
 A configuração do firewall é dinâmica e pode ser alterada a qualquer momento por:
 
@@ -79,11 +84,11 @@ A configuração do firewall é dinâmica e pode ser alterada a qualquer momento
    >
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
-Essa configuração contém os registros incluir na lista de permissões, incluir na lista de bloqueios e desserializar.
+Essa configuração contém o registro de incluo na lista de permissões, de inclui na lista de bloqueios e de desserialização.
 
 **Permitir Listagem**
 
-Na seção lista de permissões, essas listagens são classes ou prefixos de pacote permitidos para desserialização. Se você estiver desserializando suas próprias classes, adicione as classes ou pacotes a este incluo na lista de permissões.
+Na seção lista de permissões, essas listagens são classes ou prefixos de pacote permitidos para desserialização. Se você estiver desserializando suas próprias classes, adicione as classes ou pacotes a esse incluo na lista de permissões.
 
 **Listagem de Bloqueios**
 
@@ -109,7 +114,7 @@ Para obter mais informações sobre como solucionar problemas com o agente, cons
 
 >[!NOTE]
 >
->Se você adicionar `org.apache.commons.collections.functors` ao arquivo de inclui na lista de permissões, a verificação de integridade sempre falhará.
+>Se você adicionar `org.apache.commons.collections.functors` ao incluo na lista de permissões, a verificação de integridade sempre falhará.
 
 ## Manipular erros com o carregamento dinâmico do agente {#handling-errors-with-dynamic-agent-loading}
 
