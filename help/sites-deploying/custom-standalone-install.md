@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ Se você estiver executando o Oracle Java 17 ou Java 21, opções adicionais dev
 * [Somente Forms] Abaixo está uma amostra para garantir que o AEM Forms funcione com o Java 17/Java21, inclua os seguintes parâmetros JVM adicionais:
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Modos de execução {#run-modes}
@@ -323,7 +323,7 @@ Embora existam muitas possibilidades para configurar o AEM WCM, determinadas aç
 
 >[!NOTE]
 >
-> Para instalações novas do AEM 6.5 LTS, as definições de índice devem ser instaladas separadamente. Para obter mais informações, consulte [isto](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Para novas instalações do AEM 6.5 LTS, as definições de índice precisam ser instaladas separadamente. Para mais informações, consulte [esta página](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Acesso ao CRXDE Lite e ao console da Web {#accessing-crxde-lite-and-the-web-console}
 
