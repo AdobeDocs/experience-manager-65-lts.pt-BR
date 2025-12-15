@@ -4,10 +4,11 @@ description: Saiba como usar o console Assets para gerenciar os fragmentos de co
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 75%
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
@@ -36,13 +37,17 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
+>Esteja ciente das [Práticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) ao trabalhar com os modelos de fragmento de conteúdo e fragmentos de conteúdo.
+
+>[!NOTE]
+>
 >Os fragmentos de conteúdo são armazenados como **Assets**, portanto, são gerenciados principalmente no console **Assets**.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
 ### Criação de um modelo de conteúdo {#creating-a-content-model}
 
-Os [modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) podem ser ativados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
+Os [modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) podem ser habilitados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
 
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
