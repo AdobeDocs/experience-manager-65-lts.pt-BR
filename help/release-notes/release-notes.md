@@ -39,7 +39,7 @@ O [!DNL Experience Manager] 6.5 LTS, SP1, inclui novos recursos, melhorias impor
 
 ### Forms
 
-O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
