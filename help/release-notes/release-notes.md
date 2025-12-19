@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
-ht-degree: 98%
+source-wordcount: '7476'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,11 @@ ht-degree: 98%
 
 O [!DNL Experience Manager] 6.5 LTS, SP1, inclui novos recursos, melhorias importantes solicitadas por clientes e correções de erros. Também inclui melhorias de desempenho, estabilidade e segurança lançadas desde a disponibilidade inicial do 6.5 LTS em março de 2025. [Instale este pacote de serviços](#install-update) no 6.5 LTS.
 
-<!-- ## Key features and enhancements -->
+## Principais recursos e melhorias
+
+### Forms
+
+O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de plataformas compatíveis. Os links do instalador estão disponíveis na página de versões do AEM Forms.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -213,10 +217,7 @@ Correção de um problema em que a sincronização de ativos do DAM remoto para 
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ Correção de um problema em que a sincronização de ativos do DAM remoto para 
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### Foundation {#foundation-65-lts-sp1}
 
@@ -605,6 +604,9 @@ Ao acessar a página Permissões em Ferramentas -> Segurança no AEM 6.5 LTS SP1
 **Solução:**
 Um hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) está disponível para resolver esse problema.
 
+### FORMS JEE
+
+* Os usuários em ambientes Linux podem encontrar falhas de script do instalador ou do Configuration Manager (LCM) devido a terminações de linha no estilo do Windows. Converta todos os arquivos .sh usando dos2unix antes de executar o instalador ou o LCM para evitar erros de execução.
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
