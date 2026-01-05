@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
+source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
 workflow-type: tm+mt
-source-wordcount: '7477'
-ht-degree: 97%
+source-wordcount: '7355'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ O [!DNL Experience Manager] 6.5 LTS, SP1, inclui novos recursos, melhorias impor
 
 ### Forms
 
-O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -319,6 +319,10 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 * Correção de um erro inesperado de compilação JSP com `org.apache.sling.scripting.jsp 2.6.0`. (NPR-42640)
 
 <!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
+
+<!--
+
 #### Translation{#foundation-translation-65-lts-sp1} -->
 
 #### Interface do usuário{#foundation-ui-65-lts-sp1}
@@ -406,7 +410,6 @@ Correção de um problema de acessibilidade em que os espaços reservados aparec
 * Os usuários não conseguiam usar o recurso de linha do tempo de arquivos em PDF nos formulários do AEM. Esse problema afetava a capacidade dos usuários de rastrear alterações e revisões de documentos com eficiência. Ao carregar qualquer PDF na seção “Formulários e documentos”, na área de formulários do AEM, a exibição da linha do tempo para de funcionar. (FORMS-19408)
 * Os usuários deparam-se com uma exceção de ponteiro nulo ao interagir com OData. Isso causa interrupções nos processos de recuperação de dados. (FORMS-20348)
 * Remoção da biblioteca google.common.collect após a remoção do Guava, uma biblioteca de Java de código aberto. Essa atualização garante uma melhor compatibilidade e um melhor desempenho para clientes empresariais que usam formulários adaptáveis. (FORMS-17031)
-* Quando a Validação do lado do servidor (SSV) está habilitada, os envios de formulários podem falhar. Se você encontrar esse problema, contate o [Suporte da Adobe](https://business.adobe.com/in/support/main.html) para obter assistência. (FORMS-21966)
 
 ### Captcha nos formulários
 
@@ -567,6 +570,19 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
+
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### Falha de conexão do Dispatcher com o recurso somente SSL (corrigido no AEM 6.5 LTS SP1 e posterior){#ssl-only-feature}
 
@@ -592,21 +608,6 @@ Ao habilitar o recurso de somente SSL em implantações do AEM, há um problema 
 
 **Solução:**
 Se você se deparar com esse problema, entre em contato com o suporte ao cliente da Adobe. Uma hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) está disponível para resolver esse problema. Não tente habilitar recursos de somente SSL até aplicar a hotfix necessária.
-
-### Página de permissões vazia na interface de segurança no AEM 6.5 LTS SP1
-
->[!NOTE]
->
-> Esse problema está presente apenas na versão AEM 6.5 LTS SP1.
-
-Ao acessar a página Permissões em Ferramentas -> Segurança no AEM 6.5 LTS SP1, fornece uma página em branco em vez de mostrar permissões para um usuário ou grupo.
-
-**Solução:**
-Um hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) está disponível para resolver esse problema.
-
-### FORMS JEE
-
-* Os usuários em ambientes Linux podem encontrar falhas de script do instalador ou do Configuration Manager (LCM) devido a terminações de linha no estilo do Windows. Converta todos os arquivos .sh usando dos2unix antes de executar o instalador ou o LCM para evitar erros de execução.
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
