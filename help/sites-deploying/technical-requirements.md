@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
+source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3232'
+ht-degree: 1%
 
 ---
 
@@ -138,7 +138,7 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 
 O Adobe Experience Manager pode ser executado como um servidor independente (o arquivo JAR de início rápido) ou como um aplicativo da Web em um servidor de aplicativos de terceiros (o arquivo WAR).
 
-A Versão mínima da API de Servlet necessária é a 3.1. Além disso, o AEM oferece suporte ao servlet Jacarta 5 para jar e o war pode ser implantado em servidores de aplicativos que implementam a API de servlet Jakarta 5/6.
+A Versão mínima da API de Servlet necessária é a 3.1. Além disso, o AEM Forms oferece suporte ao servlet Jacarta 5 para jar e o war pode ser implantado em servidores de aplicativos que implementam a API de servlet Jakarta 5/6.
 
 | Platform | Nível de compatibilidade |
 |---|---|
@@ -181,7 +181,7 @@ O Adobe Experience Manager é compatível com a execução em uma máquina virtu
 
 Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos da AEM: o Adobe Experience Manager as a Cloud Service. Consulte a [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) para obter mais detalhes.
 
-A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/br/products/experience-manager/managed-services.html?aemClk=t).
+A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 Em todos os outros casos de implantação do AEM no Azure ou no AWS, ou em qualquer outro ambiente de computação em nuvem, o suporte da Adobe está contido no ambiente de computação virtual. Esse ambiente virtual deve ser executado em conformidade com as especificações técnicas listadas nesta página. Qualquer problema relatado relacionado ao AEM em execução em qualquer um desses ambientes de nuvem deve ser reproduzível independentemente de qualquer serviço de nuvem específico do ambiente de computação em nuvem. Ou seja, a menos que o serviço em nuvem seja compatível como parte dos requisitos técnicos listados nesta página, por exemplo, armazenamento Azure Blob ou AWS S3.
 
@@ -189,7 +189,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -387,7 +387,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -413,9 +413,8 @@ Para Windows x86:
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
->* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
+>* As conversões do PDF Generator para OpenOffice são suportadas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso somente com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 11.
 
 
@@ -426,7 +425,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -454,7 +453,7 @@ Para Windows x86:
 >
 >Além disso,
 >
->* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
+>* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
 >* A PDF Generator suporta apenas a versão comercial de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para conversão.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
@@ -462,7 +461,7 @@ Para Windows x86:
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Visio 2019. Você pode continuar usando o Microsoft® Visio 2016 para converter arquivos `.VSD` e `.VSDX`.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Project 2019. Você pode continuar usando o Microsoft® Project 2016 para converter arquivos `.VSD` e `.VSDX`.
