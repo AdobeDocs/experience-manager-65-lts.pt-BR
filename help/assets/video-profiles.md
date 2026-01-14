@@ -11,7 +11,7 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 5%
@@ -99,7 +99,7 @@ A tabela a seguir identifica os perfis de codificação de práticas recomendada
 
 ## Sobre o uso de recorte inteligente em perfis de vídeo {#about-smart-crop-video}
 
-O Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial do Adobe Sensei. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
+O Corte inteligente para vídeo (um recurso opcional disponível em Perfis de vídeo) é uma ferramenta que usa o potencial da inteligência artificial do Adobe AI. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -109,7 +109,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho de arquivo de 300 MB.
 
-O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, o Adobe Sensei e o recorte inteligente suportam um vídeo de 60 quadros/s somente se ele tiver pelo menos dois minutos e meio de duração.
+A IA do Adobe é limitada a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, a IA do Adobe e o recorte inteligente oferecem suporte a um vídeo de 60 quadros/s somente se ele tiver pelo menos dois minutos e meio de duração.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
