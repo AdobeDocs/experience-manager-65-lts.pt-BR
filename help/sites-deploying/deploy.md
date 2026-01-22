@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 4%
@@ -137,7 +137,7 @@ Na seção a seguir, descrevemos a **instalação independente**. Para obter det
 
    Local de instalação do UNIX®: **/opt/aem**
 
-   Local de instalação do Windows: **`C:\Program Files\aem`**
+   Local de instalação do Windows: **`C:\aem`**
 
    Da mesma forma, é comum instalar instâncias de amostra em uma pasta logo na área de trabalho. Em qualquer caso, a Adobe se refere a esse local genericamente como:
 
