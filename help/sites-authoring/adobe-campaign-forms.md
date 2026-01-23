@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Primeiro, verifique se a conexão entre as instâncias de autor e publicação e
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. Na página, no componente **Início do Formulário**, selecione o tipo de formulário que é - **Assinar, Cancelar Assinatura,** ou **Salvar Perfil**. Você só pode ter um tipo por formulário. Agora você pode [editar o conteúdo do formulário](#editing-form-content).
+1. Na página, no componente **Início do Formulário**, selecione o tipo de formulário que é - **Assinar, Cancelar Assinatura** ou **Salvar Perfil**. Você só pode ter um tipo por formulário. Agora você pode [editar o conteúdo do formulário](#editing-form-content).
 
 ## Editar conteúdo do formulário {#editing-form-content}
 
@@ -96,7 +96,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
    * **Adobe Campaign: Assinar Serviços**: permite gerenciar as assinaturas de um destinatário no Adobe Campaign.
    * **Adobe Campaign: cancelar a assinatura dos serviços**: permite cancelar as assinaturas de um destinatário no Adobe Campaign.
 
-1. Você deve ter um componente de **Chave primária criptografada** em cada formulário. Esse componente define qual parâmetro de URL é usado para aceitar a chave primária criptografada de um perfil do Adobe Campaign. Em Componentes, selecione Adobe Campaign para que somente os componentes fiquem visíveis.
+1. Você deve ter um componente de **Chave primária criptografada** em cada formulário. Esse componente define qual parâmetro de URL é usado para aceitar a chave primária criptografada de um perfil do Adobe Campaign. Em Componentes, selecione Adobe Campaign para que somente esses componentes fiquem visíveis.
 1. Arraste o componente **Chave primária criptografada** para o formulário (em qualquer lugar) e clique no ícone **Configuração**. Na guia **Adobe Campaign**, especifique qualquer nome para o parâmetro de URL. Clique na marca de seleção para salvar as alterações.
 
    Os links gerados para este formulário precisam usar este parâmetro de URL e atribuir a ele a chave primária criptografada de um perfil do Adobe Campaign. A chave primária criptografada deve ser corretamente codificada no URL (porcentagem).
@@ -118,7 +118,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
 
    >[!CAUTION]
    >
-   >Você precisa fornecer permissões de leitura ao usuário anônimo no Cloud Service para usar formulários na publicação. No entanto, esteja ciente dos possíveis problemas de segurança no fornecimento de permissões de leitura ao usuário anônimo e certifique-se de atenuá-los, por exemplo, configurando o dispatcher.
+   >Você precisa fornecer permissões de leitura ao usuário anônimo no serviço de nuvem para usar formulários na publicação. No entanto, esteja ciente dos possíveis problemas de segurança no fornecimento de permissões de leitura ao usuário anônimo e certifique-se de atenuá-los, por exemplo, configurando o dispatcher.
 
 ## Testando um formulário {#testing-a-form}
 
@@ -126,7 +126,7 @@ Depois de criar um formulário e editar o conteúdo do formulário, você pode t
 
 >[!NOTE]
 >
->Você deve ter um componente de **Chave primária criptografada** em cada formulário. Em Componentes, selecione Adobe Campaign para que somente os componentes fiquem visíveis.
+>Você deve ter um componente de **Chave primária criptografada** em cada formulário. Em Componentes, selecione Adobe Campaign para que somente esses componentes fiquem visíveis.
 >
 >Embora neste procedimento você insira o número epk manualmente, na prática, os usuários obteriam um link para esta página (se cancelariam a inscrição, assinariam ou atualizariam seu perfil) em um boletim informativo. Com base no usuário, o epk é atualizado automaticamente.
 >

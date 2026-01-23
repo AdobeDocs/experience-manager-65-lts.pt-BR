@@ -5,7 +5,8 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 12%
@@ -22,12 +23,12 @@ As seguintes operações são registradas no fluxo de atividade:
 * Excluir
 * Download (incluindo representações)
 * Publicação
-* Desfazer publicação
+* Desfazer a publicação
 * Aprovar
 * Rejeitar
 * Mover
 
-Os logs de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de log são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados no [!DNL Experience Manager] por meio do [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou do [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=pt-BR).
+Os logs de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de log são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou ativos existentes são modificados e verificados no [!DNL Experience Manager] por meio do [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou do [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >

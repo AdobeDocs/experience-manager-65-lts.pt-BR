@@ -11,7 +11,7 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 24%
@@ -26,7 +26,7 @@ ht-degree: 24%
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) fornecem configurações avançadas para personalizar os URLs das páginas de produto e categoria. Muitas implementações personalizam esses URLs para fins de otimização de mecanismo de pesquisa (SEO). O vídeo a seguir mostra detalhes sobre como configurar o serviço `UrlProvider` e os recursos do [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar os URLs das páginas de produto e categoria.
 
->[!VIDEO](https://video.tv.adobe.com/v/38585/?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuração {#configuration}
 
@@ -105,7 +105,7 @@ O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides
 
 >[!NOTE]
 >
->Essa configuração deve ser ajustada com o domínio externo usado pelo projeto. Os Mapeamentos do Sling estão funcionando com base no nome do host e no domínio. Portanto, essa configuração é desativada por padrão e deve ser ativada antes da implantação. Para fazer isso, renomeie a pasta `hostname.adobeaemcloud.com` do Mapeamento do Sling em `ui.content/src/main/content/jcr_root/etc/map.publish/https` de acordo com o nome de domínio usado e ative essa configuração adicionando `resource.resolver.map.location="/etc/map.publish"` à configuração `JcrResourceResolver` do projeto.
+>Essa configuração deve ser ajustada com o domínio externo usado pelo projeto. Os Mapeamentos do Sling estão funcionando com base no nome do host e no domínio. Portanto, essa configuração é desabilitada por padrão e deve ser habilitada antes da implantação. Para fazer isso, renomeie a pasta `hostname.adobeaemcloud.com` do Mapeamento do Sling em `ui.content/src/main/content/jcr_root/etc/map.publish/https` de acordo com o nome de domínio usado e habilite essa configuração adicionando `resource.resolver.map.location="/etc/map.publish"` à configuração `JcrResourceResolver` do projeto.
 
 ## Recursos adicionais
 

@@ -9,7 +9,8 @@ docset: aem65
 feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -39,7 +40,7 @@ Amostra de ![360 vídeos com a estação espacial internacional flutuando no esp
 
 Você pode usar o Adobe Premier Pro para visualizar e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia quadrretangular.
 
-Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/edit-360-vr-video.html).
+Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -50,7 +51,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/e
 
 **Carregar ativos para uso com o visualizador de vídeo 360:**
 
-1. Criação de uma pasta dedicada ao seu ativo de 360 vídeos.
+1. Crie uma pasta dedicada ao seu ativo de 360 vídeos.
 1. [Aplicar um perfil de vídeo adaptável à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    A renderização de conteúdo de vídeo 360 impõe requisitos mais altos para a resolução do vídeo de origem e para a resolução de representações codificadas do que o conteúdo de vídeo padrão que não seja de 360.
@@ -120,7 +121,7 @@ Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dyn
    * Arraste o ponteiro do mouse pelo vídeo se desejar alterar o ângulo de visão da cena estática.
    * Selecione o botão **[!UICONTROL Reproduzir]** do vídeo se desejar iniciar a reprodução. Enquanto o vídeo é reproduzido, arraste o ponteiro do mouse sobre ele para alterar seu ângulo de visão.
 
-   ![Uma captura de tela da estação espacial internacional flutuando no espaço sideral com a Terra e o Sol em segundo plano &#x200B;](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela com 360 vídeos.*
+   ![Uma captura de tela da estação espacial internacional flutuando no espaço sideral com a Terra e o Sol em segundo plano ](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela com 360 vídeos.*
 
    * Na lista Visualizadores, selecione **[!UICONTROL Video360VR]**.
 

@@ -8,7 +8,7 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O percurso do foco segue o local natural do elemento da interface do usuário na
 * No editor de Recorte de imagem/Recorte inteligente, você pode fazer o seguinte:
    * Use as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
    * A primeira parada de `Tab` realça o quadro de imagem inteiro. Em seguida, é possível usar as teclas de seta no teclado para reposicionar o quadro.
-   * As próximas quatro `Tab` paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto é realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
+   * As próximas quatro `Tab` paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto fica realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
 Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única imagem](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
@@ -52,12 +52,12 @@ Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única im
 
 Todos os componentes de visualizadores do [!DNL Dynamic Media] prontos para uso oferecem suporte à acessibilidade do teclado para seus clientes.
 
-Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=pt-BR) no Guia de Referência de Visualizadores do Dynamic Media.
+Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Suporte de tecnologia assistiva em [!DNL Dynamic Media] visualizadores {#assistive-technology-support-for-dm-viewers}
 
 Todos os componentes do visualizador [!DNL Dynamic Media] oferecem suporte a funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias assistivas, como leitores de tela.
-Consulte o tópico de Ajuda **Suporte à tecnologia assistiva** em qualquer tópico de personalização do visualizador no Guia de referência do visualizador do Dynamic Media. Por exemplo, consulte o [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=pt-BR) para o visualizador de vídeo ou o [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=pt-BR#viewers-for-aem-assets-only) para o visualizador de imagem interativa.
+Consulte o tópico de Ajuda **Suporte à tecnologia assistiva** em qualquer tópico de personalização do visualizador no Guia de referência do visualizador do Dynamic Media. Por exemplo, consulte o [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o visualizador de vídeo ou o [Suporte de tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para o visualizador de imagem interativa.
 
 ## Suporte a legendas ocultas no Dynamic Media {#closed-caption-support}
 

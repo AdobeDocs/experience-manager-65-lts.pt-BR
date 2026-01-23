@@ -9,16 +9,17 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
 
 # Mapeamento de dados do componente com propriedades do Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise e armazená-los na **variável CQ** apropriada. Ao adicionar esse componente a uma estrutura, ela exibe a lista de variáveis CQ para que cada uma delas possa ser adicionada à **variável do Analytics** apropriada.
+Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise e armazená-los na **variável CQ** apropriada. Ao adicionar esse componente a uma estrutura, a estrutura exibe a lista de variáveis CQ para que você possa mapear cada uma para a **variável do Analytics** apropriada.
 
 ![aa-11](assets/aa-11.png)
 

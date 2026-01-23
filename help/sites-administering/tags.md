@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 006e91327d15dd4dd0482230d6ad8535e924698e
+exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -43,8 +44,8 @@ Alguns recursos de tags na AEM incluem:
    * Uma tag que não é uma tag container é chamada de tag folha
    * Um namespace de tag é uma tag folha ou container
 
-* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/br/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
-* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/br/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
+* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
+* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
 * Se a marcação for um aspecto importante do seu conteúdo
 
    * empacotar tags com as páginas que as usam
@@ -100,7 +101,7 @@ Selecionar um namespace ou outra tag disponibiliza as seguintes operações:
 * [Mover](#moving-tags)
 * [Mesclar](#merging-tags)
 * [Publicação](#publishing-tags)
-* [Desfazer publicação](#unpublishing-tags)
+* [Desfazer a publicação](#unpublishing-tags)
 * [Excluir](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -248,10 +249,10 @@ As permissões de tag são [&#39;seguras (por padrão)&#39;](/help/sites-adminis
    * entrar com privilégios administrativos
    * acessar o [Console de Segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * por exemplo, navegue até http://localhost:4502/useradmin
+      * por exemplo, vá até http://localhost:4502/useradmin
 
    * no painel esquerdo, selecione o grupo (ou usuário) para o qual a [permissão de leitura](/help/sites-administering/security.md#permissions) será concedida
-   * no painel direito, localize o **Caminho &#x200B;** para o namespace da tag
+   * no painel direito, localize o **Caminho **para o namespace da tag
 
       * por exemplo, `/content/cq:tags/mycommunity`
 
@@ -288,7 +289,7 @@ Depois que todas as traduções forem inseridas, selecione **Salvar** para sair 
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console de marcação, para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades de usuário.
 

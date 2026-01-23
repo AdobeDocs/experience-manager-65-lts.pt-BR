@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 2%
@@ -47,7 +48,7 @@ Para localizar o comando exato necessário para sua operação específica, é n
 
 As etapas a seguir descrevem como fazer isso usando a criação de uma nova página no navegador Chrome como exemplo.
 
-1. Prepare a ação que deseja chamar no AEM. Nesse caso, chegamos ao fim do assistente **Criar Página**, mas ainda não clicamos em **Criar**.
+1. Prepare a ação que deseja chamar no AEM. Nesse caso, prosseguimos até o final do assistente **Criar página**, mas ainda não clicamos em **Criar**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -60,7 +61,7 @@ As etapas a seguir descrevem como fazer isso usando a criação de uma nova pág
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copie o comando cURL para um editor de texto e remova todos os cabeçalhos do comando, que começam com `-H` (destacado em azul na imagem abaixo) e adicione o parâmetro de autenticação adequado, como `-u <user>:<password>`.
+1. Copie o comando cURL para um editor de texto e remova todos os cabeçalhos do comando, que começam com `-H` (destacados em azul na imagem abaixo) e adicione o parâmetro de autenticação adequado, como `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 

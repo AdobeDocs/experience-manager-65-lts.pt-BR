@@ -4,9 +4,10 @@ description: O complemento CIF estende a criação do Adobe Experience Manager c
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ A guia &quot;Assets&quot; no painel lateral do editor oferece acesso aos dados d
 
 ![Painel lateral de dados do produto](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-Analogamente aos ativos, os produtos podem ser colocados em uma página (o que cria um componente de teaser de produto como padrão) ou em componentes (atualmente compatíveis são o teaser de produto e o carrossel de produto).
+Analogamente aos ativos, os produtos podem ser arrastados e soltos em uma página (que cria um componente de teaser de produto como padrão) ou componentes (atualmente compatíveis são o teaser de produto e o carrossel de produto).
 
 ### Adição de links em campos de texto usando o RTE {#rte}
 
@@ -79,7 +80,7 @@ Isso cria um link de espaço reservado que é substituído por um link real quan
 
 ### Acesso ao conteúdo de produto associado {#associated-content}
 
-Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Esta guia permite que os autores acessem rapidamente o conteúdo do AEM que foi marcado com o produto (Consulte [enriquecer dados do produto com conteúdo do AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. Usar o conteúdo funciona exatamente como usar o conteúdo da guia &quot;Assets&quot;.
+Se o Editor Universal reconhecer 1:n produtos em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Esta guia permite que os autores acessem rapidamente o conteúdo do AEM que foi marcado com o produto (Consulte [enriquecer dados do produto com conteúdo do AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. Usar o conteúdo funciona exatamente como usar o conteúdo da guia &quot;Assets&quot;.
 
 ![Painel lateral de dados do produto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -93,7 +94,7 @@ Os componentes mostrarão um indicador visual se a data usada for preparada.
 
 ![Indicador de preparo](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## Pesquisa unificada {#omnisearch}
 
 Usar o Omnisearch é uma maneira fácil de os profissionais encontrarem dados de conteúdo e catálogo de produtos do AEM usando a pesquisa em texto completo. O Omnisearch executará a pesquisa de texto completo no AEM e no back-end de comércio para encontrar objetos de catálogo de produtos no back-end de comércio e no conteúdo do AEM. Os resultados do AEM também incluem conteúdo que foi marcado com dados de produto/categoria.
 

@@ -4,7 +4,8 @@ description: O Verificador de links ajuda a validar links internos e externos e 
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
@@ -34,7 +35,7 @@ O Verificador de links valida [links internos](#internal) e [links externos.](#e
 Links internos são links para outro conteúdo no repositório do AEM. Links internos podem ser adicionados usando o seletor de caminho do RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links internos são validados assim que o autor de conteúdo adiciona um link interno a uma página. Se o link se tornar inválido:
 
@@ -48,7 +49,7 @@ Os links internos são validados assim que o autor de conteúdo adiciona um link
 Links externos são links para conteúdo fora do repositório do AEM. Links externos podem ser adicionados usando o RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links externos são validados para sintaxe e por meio da verificação de sua disponibilidade. Essa verificação é feita de forma assíncrona em um local interno configurável. Se o Verificador de links encontrar um link externo inválido:
 

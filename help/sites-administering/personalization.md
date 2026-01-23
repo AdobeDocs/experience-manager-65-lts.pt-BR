@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -142,7 +143,7 @@ Vários componentes são fornecidos com o AEM para personalização. Alguns perm
 | Inscrição combinada | Permite que o usuário faça logon em uma conta existente ou cadastre-se em uma nova conta. |
 | Campo de endereço do Forms | Um campo complexo que permite a entrada de um endereço internacional. |
 | Início do Forms | Inicia uma definição de formulário |
-| Forms Captcha | Um campo que consiste em uma palavra alfanumérica que é atualizada automaticamente. O componente captcha protege os sites contra bots. |
+| Captcha nos formulários | Um campo que consiste em uma palavra alfanumérica que é atualizada automaticamente. O componente captcha protege os sites contra bots. |
 | Grupo de caixas de seleção Forms | Vários itens organizados em uma lista e precedidos por caixas de seleção. Os usuários podem marcar várias caixas de seleção. |
 | Lista suspensa Forms | Vários itens organizados em uma lista suspensa. A opção Multi Seletable especifica se vários elementos podem ser selecionados na lista. |
 | Fim do Forms | Finaliza a definição do formulário. |
@@ -166,4 +167,3 @@ Vários componentes são fornecidos com o AEM para personalização. Alguns perm
 | Fazer logoff | Indica o usuário que está logado no momento e fornece um link para desconectar. |
 | Nuvem de tags | Uma nuvem de tags para mostrar uma seleção de tags apresentada graficamente em seu site |
 | Teaser | Um conteúdo (geralmente uma imagem) exibido em uma página principal para &quot;provocar&quot; os usuários para acessarem o conteúdo subjacente. |
-
