@@ -4,7 +4,8 @@ description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%
@@ -37,7 +38,7 @@ Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo 
    ![Selecionar modelo de fragmento de conteúdo](assets/content-fragment-model-select.png)
 1. Forneça o **Título**, **Descrição** e **Marcas** conforme necessário e clique em **Criar**.
 
-   ![Criar fragmento do conteúdo](assets/content-fragment-create.png)
+   ![Criar fragmento de conteúdo](assets/content-fragment-create.png)
 1. Clique em **Abrir** na janela de confirmação.
 
    ![Confirmação da criação do fragmento de conteúdo](assets/content-fragment-confirmation.png)

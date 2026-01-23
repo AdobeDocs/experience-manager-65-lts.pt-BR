@@ -6,13 +6,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: b6d27aa78b195a6131b43c83dc4df74b797490fa
+exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
-
 
 # Configurar o contêiner de layout e o modo de layout{#configuring-layout-container-and-layout-mode}
 
@@ -337,7 +337,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemplo de HTML resultante]
+>[!TAB Exemplo de HTML] resultante
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

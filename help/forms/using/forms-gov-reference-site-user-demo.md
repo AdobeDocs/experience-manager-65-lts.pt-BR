@@ -6,7 +6,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a9cbab12-62a6-4779-955f-2858166945e6
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 1%
@@ -24,7 +25,7 @@ Configure o site de referência conforme descrito em [Configurar o site de refer
 * AEM Forms
 
    * Conversão automática dos formulários
-   * Criação  
+   * Criação
    * Modelos de dados de formulário/Fontes de dados
 
 * AEM Forms
@@ -80,7 +81,7 @@ Os seguintes grupos também estão incluídos:
 1. **Links**: na parte superior do menu principal do site We.Gov.
 1. **Instruções do usuário**: um conjunto de etapas numéricas a serem seguidas ao navegar pela história do usuário.
 1. **Portal do Forms**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Exibição do Mobile**:Usuário do We.Gov para replicar uma exibição do Mobile com um navegador redimensionado.
+1. **Exibição Móvel**:We.Desenvolva o usuário para replicar uma exibição móvel com um navegador redimensionado.
 1. **Exibição da Área de Trabalho**: We.gov usuário para ver a demonstração em um laptop ou área de trabalho.
 1. **Formulário pré-filtragem**: formulário na página inicial do site We.Gov.
 1. **Formulário adaptável**: formulário de aplicativo de inscrição para demonstração do We.gov.
@@ -93,7 +94,7 @@ Os seguintes grupos também estão incluídos:
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **Cliente de email**: maneira preferencial de exibir seus emails (Gmail, Outlook)
-1. **CTA**: chamada para ação
+1. **CTA**: Call to action
 1. **Navegar**: para localizar um ponto de referência específico na página do navegador.
 1. **AFC**: conversão automática de formulários
 

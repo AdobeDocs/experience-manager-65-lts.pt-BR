@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 9%
@@ -24,7 +24,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html).
 
 
 Você pode usar o componente **Assinatura assinável** e o componente **Etapa de assinatura** para desenhar (Rabiscar) uma assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
@@ -82,7 +82,7 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
 
    * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. Use [temas](../../forms/using/themes.md) e [estilos embutidos](../../forms/using/inline-style-adaptive-forms.md) em vez da Classe CSS.
 
-   Selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A Assinatura foi configurada com êxito.
+   Selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A Assinatura foi configurada com sucesso.
 
    Agora, quando você preenche um formulário, uma versão PDF do formulário adaptável é exibida e as opções para assinar o documento do PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a Assinatura Escrita](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

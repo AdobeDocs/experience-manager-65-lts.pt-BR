@@ -9,9 +9,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 1%
 
 ---
@@ -264,7 +264,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
@@ -378,7 +378,7 @@ O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
 1. Clique em **Importar**.
 
-#### Adicionando ServiceName à lista de serviços de Inclui na lista de permissões {#adding-servicename-to-the-allowlist-service-list}
+#### Adicionando ServiceName à lista Serviço de Incluo na lista de permissões {#adding-servicename-to-the-allowlist-service-list}
 
 Mencione no servidor do Experience Manager os serviços do LiveCycle que você deseja acessar o servidor do Experience Manager.
 

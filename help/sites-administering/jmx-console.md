@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4830'
+source-wordcount: '4829'
 ht-degree: 0%
 
 ---
@@ -106,7 +107,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -124,7 +125,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -143,7 +144,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -208,7 +209,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -289,7 +290,7 @@ Informações sobre o repositório do CRX
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>true indica que a observação assíncrona de alterações no repositório é suportada. O suporte à observação assíncrona permite que os aplicativos recebam e respondam a notificações sobre cada alteração à medida que elas ocorrem.</td>
+   <td>true indica que a observação assíncrona de alterações no repositório é suportada. O suporte à observação assíncrona permite que os aplicativos recebam e respondam às notificações sobre cada alteração à medida que elas ocorrem.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -690,7 +691,7 @@ Monitore os serviços para cada agente de replicação. Quando você cria um age
 * **Domínio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nome:** nenhum valor
-* **Propriedades:** {id=&quot;*Name*&quot;}, onde *Name* é o valor da propriedade Name do agente.
+* **Propriedades:** {id="*Name*"}, onde *Nome* é o valor da propriedade Name do agente.
 
 ### Atributos {#attributes-3}
 
