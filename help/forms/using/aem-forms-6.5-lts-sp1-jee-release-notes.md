@@ -4,7 +4,7 @@ description: Encontre informações sobre a versão, novidades, instruções de 
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: b172fd1c328f54e759be59d5e7fd24be6f0d59e9
+source-git-commit: 27ec3c516b0746fd7e0d82f86750fbb4ef410711
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 3%
@@ -13,7 +13,6 @@ ht-degree: 3%
 
 
 # Notas de versão do Adobe Experience Manager (AEM) Forms 6.5 LTS SP1 em JEE
-
 
 ## Informações da versão
 
@@ -68,7 +67,7 @@ Para obter mais informações, consulte **Migração do javax para o Jakarta Nam
 
 ## Atualizar
 
-Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Instalação
 
