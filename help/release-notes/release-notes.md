@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 99%
+source-wordcount: '7751'
+ht-degree: 93%
 
 ---
 
@@ -39,7 +39,91 @@ O [!DNL Experience Manager] 6.5 LTS, SP1, inclui novos recursos, melhorias impor
 
 ### Forms
 
-O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+
+#### O que está incluído no AEM Forms 6.5 LTS SP1
+
+**Atualizações de suporte do Java**
+
+O suporte para versões mais recentes do Java foi introduzido:
+
+* Java™ 17
+* Java™ 21
+
+**Atualizações de Suporte do Servidor de Aplicativos**
+
+* Foi adicionado suporte para JBoss EAP 8.
+* A estrutura de segurança herdada PicketBox foi removida.
+* Os armazenamentos de credenciais baseados em Elytron agora são compatíveis com o gerenciamento seguro de credenciais.
+
+**Configuração: Armazenamento de Credenciais (Baseado em Elytron)**
+
+O AEM Forms no JBoss EAP 8 usa o Elytron para gerenciar credenciais seguras. Os clientes devem configurar um Armazenamento de credenciais baseado no Elytron para garantir a inicialização bem-sucedida do servidor e a autenticação segura do banco de dados.
+
+Para obter detalhes sobre a configuração, consulte o guia de instalação e configuração.
+
+**Alterações de plataforma e compatibilidade**
+
+* Suporte para a especificação de servlet 5+
+* Com base na conformidade com o Jakarta EE 9
+
+**Requisito de Migração de Namespace**
+
+* Jakarta EE 9 introduz uma alteração de namespace de `javax.*` para `jakarta.*`
+* Todos os **DSCs personalizados** devem ser migrados para o namespace `jakarta.*`
+* O AEM Forms 6.5 LTS SP1 oferece suporte a **somente servidores de aplicativos baseados em Jakarta EE 9+**
+
+Para obter mais informações, consulte **Migração do javax para o Jakarta Namespace**.
+
+**Migração de javax para jakarta Namespace**
+
+#### Migração de `javax` para o Namespace `jakarta`
+
+A partir do **AEM Forms 6.5 LTS SP1**, somente os servidores de aplicativos que implementam a **API do Servlet Jakarta 5/6** têm suporte. Com **Jakarta EE 9 e posterior**, todas as APIs passaram do namespace `javax.{}` para `jakarta.`.
+
+Como resultado, **todos os DSCs personalizados devem usar o `jakarta` namespace**. Os componentes personalizados criados com as APIs do `javax.{}` são **incompatíveis** com os servidores de aplicativos com suporte.
+
+**Opções de migração para DSCs personalizados**
+
+Você pode migrar DSCs personalizados existentes usando uma das seguintes abordagens:
+
+**Opção 1: Migração de Código Source (Recomendada)**
+
+* Atualizar todas as instruções de importação de `javax.{}` para `jakarta.`
+* Reconstruir e recompilar os projetos DSC personalizados
+* Reimplante os componentes atualizados no servidor de aplicativos
+
+**Vantagens:**
+
+* Garante compatibilidade de longo prazo com o Jakarta EE 9+
+* Mais adequado para projetos mantidos ativamente
+
+**Opção 2: Migração binária usando o transformador Eclipse**
+
+* Use a ferramenta **Eclipse Transformer** para converter binários compilados (`.jar`, `.war`) de `javax` para `jakarta`
+* Não é necessária nenhuma alteração ou recompilação do código-fonte
+* Reimplantar os binários transformados no servidor de aplicativos
+
+>[!NOTE]
+>
+> A transformação binária é executada no **nível de código de bytes**.
+
+Abaixo estão exemplos comuns de alterações de namespace necessárias durante a migração:
+
+Antes (javax)    Depois (Jacarta)
+javax.servlet. **jakarta.servlet**
+javax.servlet.http. **jakarta.servlet.http.**
+
+**Mapeamentos de Importação de Exemplo**
+
+A tabela a seguir mostra as alterações comuns do namespace necessárias durante a migração de `javax` para `jakarta`:
+
+| Antes de (`javax`) | Depois de (`jakarta`) |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+Use esses mapeamentos como referência ao atualizar o código fonte DSC personalizado ou validar binários transformados.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -448,6 +532,7 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -520,14 +605,15 @@ Encontre o conjunto completo de plataformas compatíveis, incluindo em relação
 
 <!-- CARRY OVER EACH RELEASE -->
 
-A Adobe analisa continuamente os recursos do produto para melhorar o valor para o cliente, modernizando ou substituindo recursos mais antigos. Essas alterações são feitas com atenção especial à compatibilidade com versões anteriores.
+A Adobe analisa e desenvolve continuamente os recursos do produto para oferecer maior valor ao cliente, modernizando ou substituindo os recursos herdados. Essas alterações são implementadas considerando cuidadosamente a compatibilidade com versões anteriores.
 
-Para comunicar a remoção ou substituição iminente dos recursos do Adobe Experience Manager (AEM), as seguintes regras aplicam-se:
+Para garantir a transparência e permitir o planejamento adequado, o Adobe segue esse processo de desativação do Adobe Experience Manager (AEM):
 
-1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora descontinuados, os recursos continuam disponíveis, mas não são mais aprimorados.
-1. A remoção de recursos descontinuados ocorre na versão principal a seguir, no mais tardar. A data real da remoção está planejada para ser anunciada posteriormente.
+* A descontinuação é anunciada primeiro. Os recursos obsoletos continuam disponíveis, mas não são mais aprimorados.
 
-Esse processo oferece a clientes ao menos um ciclo de versão para adaptar sua implementação a uma nova versão ou sucessor de uma funcionalidade descontinuada, antes da remoção.
+* A remoção não ocorre antes da próxima versão principal. O cronograma de remoção planejado é comunicado separadamente.
+
+* Um ciclo mínimo de versão é fornecido para que os clientes façam a transição para alternativas compatíveis antes da remoção de um recurso.
 
 ### Recursos descontinuados {#deprecated-features}
 
@@ -543,6 +629,10 @@ Clientes devem analisar se usam o recurso/funcionalidade em sua implementação 
 ### Recursos removidos {#removed-features}
 
 Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 LTS. Nas versões anteriores, esses recursos estavam marcados como descontinuados.
+
+* O suporte para RDBMK para persistência de repositório do CRX foi removido.
+
+* Em ambientes em cluster, o MongoMK agora é a única opção compatível para a persistência do repositório.
 
 | Área | Destaque | Substituição | Versão (SP) |
 | --- | --- | --- | --- |
