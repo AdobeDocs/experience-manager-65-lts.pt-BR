@@ -234,7 +234,7 @@ Esta seção contém detalhes e instruções sobre a configuração do MS® Dyna
 
 1. Vá até:
 
-   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Verifique se você está acessando o servidor usando o mesmo URL de redirecionamento configurado no registro do aplicativo MS® Dynamics.
 
