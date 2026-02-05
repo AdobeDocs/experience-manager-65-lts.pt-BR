@@ -1,5 +1,5 @@
 ---
-title: Integrando Criar interface do usuário de correspondência ao portal personalizado
+title: Integração da solução Criar correspondência com seu portal personalizado
 description: Saiba como integrar criar interface do usuário de correspondência ao portal personalizado
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,22 +8,23 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
 
-# Integrando Criar interface do usuário de correspondência ao portal personalizado{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integração da solução `Create Correspondence` com seu portal personalizado{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Visão geral {#overview}
 
-Este artigo detalha como é possível integrar a opção Criar solução de correspondência ao seu ambiente.
+Este artigo detalha como você pode integrar a solução `Create Correspondence` ao seu ambiente.
 
 ## Chamada baseada em URL {#url-based-invocation}
 
-Uma maneira de chamar o aplicativo Criar correspondência de um portal personalizado é preparar o URL com os seguintes parâmetros de solicitação:
+Uma maneira de chamar o aplicativo `Create Correspondence` de um portal personalizado é preparar a URL com os seguintes parâmetros de solicitação:
 
 * o identificador do modelo de correspondência (usando o parâmetro cmLetterId).
 
@@ -38,16 +39,16 @@ Por exemplo, o portal personalizado prepararia o URL como\
 
 >[!NOTE]
 >
->Antes de chamar o aplicativo Criar correspondência, salve e faça upload dos dados para chamar a interface Criar correspondência no URL de dados fornecido. Isso pode ser feito no próprio portal personalizado ou por meio de outro processo de back-end.
+>Antes de chamar o aplicativo `Create Correspondence`, salve e carregue os dados para chamar a interface do usuário `Create Correspondence` no dataURL especificado. Esse processo pode ser feito no próprio portal personalizado ou por meio de outro processo de back-end.
 
 ## Chamada embutida baseada em dados {#inline-data-based-invocation}
 
-Outra maneira (e mais segura) de chamar o aplicativo Criar Correspondência poderia ser simplesmente acessar a URL em https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, enquanto enviava os parâmetros e dados para chamar o aplicativo Criar Correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData ), o que não era possível/ideal na abordagem anterior.
+Outra maneira mais segura de chamar o aplicativo `Create Correspondence` é acessar a URL em https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html. Execute esta URL ao enviar os parâmetros e dados para chamar o aplicativo `Create Correspondence` como uma solicitação POST, ocultando-os do usuário final. Este fluxo de trabalho também significa que agora você pode transmitir os dados XML para o aplicativo `Create Correspondence` em linha (como parte da mesma solicitação, usando o parâmetro `cmData`). Esse fluxo de trabalho não era possível ou ideal na abordagem anterior.
 
 ### Parâmetros para especificação de carta {#parameters-for-specifying-letter}
 
 | **Nome** | **Tipo** | **Descrição** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | String | O identificador para a ocorrência de carta. |
 | cmLetterId | String | O nome do modelo de Carta. |
 
@@ -65,17 +66,17 @@ A ordem dos parâmetros na tabela especifica a preferência dos parâmetros usad
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Dados XML de um arquivo de origem usando protocolos básicos como cq, ftp, http ou file.<br /> </td> 
+   <td>Dados XML de um arquivo de origem usando protocolos básicos, como cq, ftp, http ou file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>String</td> 
-   <td>Uso de dados xml disponíveis na Instância de Carta.</td> 
+   <td>Usando dados xml disponíveis na ocorrência de carta.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Booleano</td> 
-   <td>Para reutilizar os dados de teste anexados ao dicionário de dados.</td> 
+   <td>Para reutilizar os dados de teste anexados em um dicionário de dados.</td> 
   </tr>
  </tbody>
 </table>
@@ -104,4 +105,4 @@ A ordem dos parâmetros na tabela especifica a preferência dos parâmetros usad
  </tbody>
 </table>
 
-Se você estiver usando o protocolo http ou cq para cmDataURL, o URL de http/cq deverá estar acessível anonimamente.
+Se você usar o protocolo http ou cq para `cmDataURL`, a URL de `http/cq` deverá estar acessível anonimamente.
