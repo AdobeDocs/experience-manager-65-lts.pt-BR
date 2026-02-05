@@ -4,7 +4,7 @@ description: O JBoss EAP 8 usa o Elytron para habilitar a comunicação segura e
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 3%
@@ -19,6 +19,7 @@ ht-degree: 3%
 O JBoss EAP 8 usa o **Elytron** para autenticar a comunicação entre os **nós primário e secundário** em uma implantação clusterizada. Essa configuração garante o registro seguro e a comunicação de nós secundários com o controlador de domínio primário.
 
 Duas opções de configuração estão disponíveis, dependendo do ambiente e dos requisitos de segurança.
+
 
 ## Pré-requisitos
 

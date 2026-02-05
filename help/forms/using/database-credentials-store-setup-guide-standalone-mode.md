@@ -4,7 +4,7 @@ description: Localize a configuração do armazenamento de credenciais do banco 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Visão geral
 
 Este guia aborda a **configuração do armazenamento de credenciais do banco de dados** para o AEM Forms JEE no JBoss/Red Hat EAP no **modo autônomo**. Isso é necessário ao executar a instalação manual.
+
 
 **Este guia abrange:**
 

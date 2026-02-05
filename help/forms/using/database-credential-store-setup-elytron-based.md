@@ -4,7 +4,7 @@ description: O JBoss EAP 8 oferece suporte a armazenamentos de credenciais Elytr
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Configurar Repositório de Credenciais do Banco de Dados Usando Elytron
 
 O JBoss EAP 8 usa **armazenamentos de credenciais Elytron** para gerenciar com segurança senhas de bancos de dados para implantações do AEM Forms. A Adobe fornece **scripts automatizados** para simplificar a criação e a configuração do armazenamento de credenciais baseado em Elytron no modo de domínio.
+
 
 Esta instalação deve ser concluída **antes de iniciar o Controlador de Domínio JBoss**.
 
