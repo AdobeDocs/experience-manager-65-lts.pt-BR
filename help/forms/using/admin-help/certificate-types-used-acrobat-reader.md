@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -79,7 +79,7 @@ A tabela a seguir lista os perfis de certificado que você pode encontrar ao ana
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Extensões do Acrobat Reader DC, Uso interno da Adobe</p></td>
+   <td><p>Extensões do Acrobat Reader DC, Uso interno do Adobe</p></td>
    <td><p>2 anos</p></td>
    <td><p>Produção</p></td>
   </tr>
@@ -109,37 +109,37 @@ A tabela a seguir lista os perfis de certificado que você pode encontrar ao ana
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; pode ser usado por OEMs</p></td>
+   <td><p>Forms; OEMs podem usar Forms</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; pode ser usado por OEMs</p></td>
+   <td><p>Forms; OEMs podem usar o Forms.</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Somente assinatura; pode ser usado por OEMs</p></td>
+   <td><p>Somente assinatura; OEMs podem usar somente assinatura</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>Somente comentários offline; pode ser usado por OEMs</p></td>
+   <td><p>Somente comentários off-line; os OEMs podem usar comentários off-line</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>Somente comentários; pode ser usado por OEMs</p></td>
+   <td><p>Somente comentários; os OEMs podem usar somente comentários</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>Permissões completas; pode ser usado por OEMs</p></td>
+   <td><p>Permissões completas; os OEMs podem usar permissões completas</p></td>
    <td><p>Max</p></td>
    <td><p>Produção e avaliação</p></td>
   </tr>
@@ -148,17 +148,17 @@ A tabela a seguir lista os perfis de certificado que você pode encontrar ao ana
 
 ## Período de validade {#validity-period}
 
-Os certificados de avaliação são emitidos para clientes e desenvolvedores para que eles possam avaliar e desenvolver aplicativos de amostra para produtos. O período de validade destes certificados está compreendido entre 60 e 90 dias. Expiram no final do segundo mês seguinte aos dados da emissão.
+Os certificados de avaliação são emitidos para clientes e desenvolvedores para que eles possam avaliar e desenvolver aplicativos de amostra para produtos. O período de validade destes certificados está compreendido entre 60 e 90 dias. Elas expiram no final do segundo mês seguinte aos dados de ocorrência.
 
 Os certificados de integração de parceiros são emitidos para parceiros de negócios da Adobe para oferecer suporte ao desenvolvimento, à integração, à criação de protótipos e à demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
 
-Os certificados de uso interno da Adobe são usados na Adobe para oferecer suporte ao desenvolvimento, integração, protótipo e demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
+Os Certificados de uso interno da Adobe são usados na Adobe para oferecer suporte ao desenvolvimento, integração, protótipo e demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
 
-Os certificados de produção são emitidos para clientes que compraram extensões do Acrobat Reader DC. Esses certificados são válidos pelo período máximo permitido pela autoridade de certificação (CA), mostrado como *Máx* na tabela Perfis de certificado.
+Os certificados de produção são emitidos para clientes que compraram as extensões do Acrobat Reader DC. Esses certificados são válidos pelo período máximo permitido pela autoridade de certificação (CA), mostrado como *Máx* na tabela Perfis de certificado.
 
 ## Direitos de uso de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
-Ao examinar o certificado de extensões do Acrobat Reader DC no Visualizador de certificados, você pode selecionar o item de direitos de uso na guia Detalhes (se configurada) para ver uma lista discriminada dos direitos de uso do Adobe Reader que o certificado pode ativar. Os direitos de uso ativados em um determinado documento podem ser um subconjunto daqueles ativados pelo certificado.
+Ao examinar o certificado de extensões do Acrobat Reader DC no Visualizador de certificados, você pode selecionar o item de direitos de uso na guia Detalhes (se configurado). Você pode ver uma lista discriminada dos direitos de uso do Adobe Reader que o certificado pode ativar. Os direitos de uso ativados em um documento específico podem ser um subconjunto desses direitos ativados pelo certificado.
 
 Se for necessário fazer comentários on-line em um ambiente não colaborativo, entre em contato com o Suporte da Adobe para obter mais informações. A propriedade Mode corresponde ao tipo de implantação e é *produção* ou *avaliação*.
 
