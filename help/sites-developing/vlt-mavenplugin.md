@@ -22,7 +22,7 @@ O plug-in Maven do pacote de conteúdo do Adobe implanta os pacotes construídos
 >
 >Consulte também o seguinte:
 >
->* O [artigo Plug-in Maven do Pacote de conteúdo do Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools), na documentação do AEM as a Cloud Service, sobre como implantar aplicativos da AEM.
+>* O [artigo Plug-in Maven do Pacote de conteúdo do Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools), na documentação do AEM as a Cloud Service, sobre como implantar aplicativos da AEM.
 >* O artigo [Estrutura de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) na documentação do AEM as a Cloud Service sobre como estruturar projetos modernos do AEM.
 >* A documentação do [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview) para saber como iniciar um novo projeto do AEM usando o arquétipo.
 >

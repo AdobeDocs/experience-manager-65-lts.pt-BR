@@ -35,7 +35,7 @@ Primeiro, um Modelo do Sling deve ser definido para o componente.
 
 >[!NOTE]
 >
->Para obter um exemplo de uso de Modelos Sling, consulte [Desenvolvendo exportadores de modelo Sling no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
+>Para obter um exemplo de uso de Modelos Sling, consulte [Desenvolvendo exportadores de modelo Sling no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
 
 A classe de implementação do Modelo do Sling deve ser anotada com o seguinte:
 
@@ -91,8 +91,8 @@ Você pode encontrar o código desta página no GitHub
 
 ## Documentação relacionada {#related-documentation}
 
-* O [tópico Fragmentos de conteúdo no guia do usuário do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
+* O [tópico Fragmentos de conteúdo no guia do usuário do Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-64/assets/home#)
 * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
