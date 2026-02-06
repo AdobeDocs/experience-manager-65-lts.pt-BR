@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 22a779bc-efc3-416e-8f8a-8558c5db055a
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -17,15 +18,16 @@ ht-degree: 0%
 
 # Aceitação e aprovação{#acceptance-and-sign-off}
 
-Como mencionado, os [Testes de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar se:
+Como mencionado, os [Testes de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar o seguinte:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.
 
-Elas devem ser definidas pelo cliente e pelo gerente de projeto. Têm especial importância, uma vez que estão frequentemente relacionadas com a faturação final.
+O cliente e o gerente de projeto devem definir os requisitos. Cada um deles tem particular importância, uma vez que estão frequentemente relacionados com a faturação final.
 
-Por esse motivo, devem ser:
+Por esse motivo, os requisitos devem ser:
 
 * Definido o mais cedo possível.
 * Atualizado sempre que necessário.
-* Quaisquer alterações devem ser formalmente aceitas e assinadas por ambas as partes (parceiro e cliente).
+* O parceiro e o cliente devem aceitar e assinar formalmente todas as alterações.
+
