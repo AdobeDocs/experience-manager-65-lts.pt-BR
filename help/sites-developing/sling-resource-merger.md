@@ -212,7 +212,7 @@ Com a funcionalidade padrão, esses casos de uso permitem fazer o seguinte:
       * tipo: `String[]`
       * value: uma lista dos nós filhos (conforme definido em `/libs`) para ocultar/ignorar
 
-      O curinga &amp;ast; pode ser usado para ocultar ou ignorar todos os nós filhos.
+      O curinga &ast; pode ser usado para ocultar ou ignorar todos os nós filhos.
 
 * **Reordenar nós**
 
