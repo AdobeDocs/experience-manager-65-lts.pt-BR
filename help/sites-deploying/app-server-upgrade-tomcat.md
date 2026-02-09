@@ -5,18 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# Etapas de atualização para instalações do servidor de aplicativos (Tomcat) {#upgrade-steps-for-application-server-installations-tomcat}
+# Etapas de atualização para instalações do servidor de aplicativos (Tomcat - Sidegrade) {#upgrade-steps-for-application-server-installations-tomcat}
 
 >[!NOTE]
 >
->Esta página descreve o procedimento de atualização do AEM 6.5 LTS no Tomcat.
+>Esta página descreve o procedimento de atualização do AEM 6.5 para o AEM 6.5 LTS no Tomcat. Para atualizar do AEM 6.5 LTS para o AEM 6.5 LTS Servicepack [consulte isto](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
 
 ## Etapas de pré-atualização {#pre-upgrade-steps}
 
