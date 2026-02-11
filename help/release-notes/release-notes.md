@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f895a226e35b8d41b54245bdd25908f48ffc3045
+source-git-commit: e7bedb3c220fda8e2f9466cb074f17efa3b41db6
 workflow-type: tm+mt
 source-wordcount: '7751'
 ht-degree: 93%
@@ -21,7 +21,7 @@ ht-degree: 93%
 | Versão | Pacote de serviços 1 (SP1), hotfix do GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versão do pacote de serviços |
 | Data | 9 de setembro de 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de download | [Distribuição de software] (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
+| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
 
 <!-- OLD URL TO JAR
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
@@ -39,7 +39,7 @@ O [!DNL Experience Manager] 6.5 LTS, SP1, inclui novos recursos, melhorias impor
 
 ### Forms
 
-O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+O AEM 6.5 Forms LTS no JEE agora está disponível. Para obter detalhes sobre ambientes compatíveis, consulte o documento Combinações de [Plataforma Compatível](/help/forms/using/aem-forms-jee-supported-platforms.md). Os links do instalador estão disponíveis na página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 #### O que está incluído no AEM Forms 6.5 LTS SP1
 
@@ -530,7 +530,7 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
