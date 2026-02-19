@@ -7,7 +7,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -52,7 +52,7 @@ O método `invitedUser` aceita uma instância `java.util.List`, que contém ende
 >
 >Além de demonstrar como criar um manipulador para convidar usuários externos, esta seção também usa a API do AEM Forms.
 
-A implementação do manipulador convidar usuários externos contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Este método aceita um valor de string que especifica um endereço de email como um valor de parâmetro. O método `createLocalPrincipalAccount` presume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio como o que desejar; no entanto, para um aplicativo de produção, convém integrar a um domínio corporativo.
+A implementação do manipulador convidar usuários externos contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Este método aceita um valor de string que especifica um endereço de email como um valor de parâmetro. O método `createLocalPrincipalAccount` presume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio como o que quiser; no entanto, para um aplicativo de produção, você pode querer integrar a um domínio corporativo.
 
 O método `createUsers` repete todos os endereços de email e cria um objeto Usuário correspondente (um usuário local no domínio `EDC_EXTERNAL_REGISTERED`). Finalmente, o método `doEmails` é chamado. Esse método é intencionalmente deixado como um stub na amostra. Em uma implementação de produção, ela conteria a lógica do aplicativo para enviar mensagens de email de convite para os usuários recém-criados. Ele é deixado na amostra para demonstrar o fluxo lógico da aplicação de uma aplicação real.
 
@@ -93,7 +93,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
     local_user.setEmail( email_address ); 
     local_user.setEmailAliases( aliases ); 
          
-    //  You may wish to disable the local user until, for example, his registration is processed by a confirmation link 
+    //  You may want to disable the local user until, for example, his registration is processed by a confirmation link 
     //local_user.setDisabled( true ); 
  
     DirectoryManager directory_manager = new DirectoryManagerServiceClient( _factory ); 

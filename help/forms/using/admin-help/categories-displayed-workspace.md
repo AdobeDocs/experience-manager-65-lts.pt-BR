@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -39,11 +39,11 @@ Se você estiver usando o MySQL como banco de dados do AEM Forms, o Console de A
 ## Adicionar uma categoria {#add-a-category}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de categorias.
-1. Clique em Adicionar. Se desejar adicionar uma subcategoria, selecione uma categoria e clique em Adicionar.
+1. Clique em Adicionar. Se quiser adicionar uma subcategoria, selecione uma categoria e clique em Adicionar.
 1. Na caixa Nome, digite um nome para a categoria e, na caixa Descrição, digite uma descrição da categoria.
 1. Clique em Adicionar. A categoria é exibida na página Gerenciamento de categorias.
 
-   ***observação &#x200B;**: você pode adicionar até cinco níveis de hierarquia ao criar categorias.*
+   ***observação **: você pode adicionar até cinco níveis de hierarquia ao criar categorias.*
 
 ## Editar uma categoria {#edit-a-category}
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Após atribuídas, essas tarefas podem ser concluídas pelo usuário usando o Wo
 1. Selecione **Serviços** > **Forms Workflow** > **Fila Compartilhada**.
 
 1. Na guia Gerenciar acesso a um usuário, localize e selecione o usuário cuja fila você deseja compartilhar. A qualquer momento, o painel inferior direito exibe a lista de usuários com acesso à fila de usuários selecionada.
-1. No painel inferior esquerdo, localize e selecione as filas de usuários que deseja compartilhar com o usuário selecionado. Clique em Compartilhar.
+1. No painel inferior esquerdo, encontre e selecione as filas de usuários que deseja compartilhar com o usuário selecionado. Clique em Compartilhar.
 1. Clique em Salvar para concluir.
 
 ### Revogação do acesso a uma fila de usuários selecionada {#revoking_access_to_a_selected_user_queue-1}
