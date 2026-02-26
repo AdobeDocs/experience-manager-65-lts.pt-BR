@@ -8,10 +8,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -46,7 +46,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 >[!CAUTION]
 >
->Este documento usa o [aplicativo WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) somente para fins de demonstração. Não use para nenhum trabalho de projeto.
+>Este documento usa o [aplicativo WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) apenas para fins demonstrativos. Não use para nenhum trabalho de projeto.
 >
 >Qualquer projeto do AEM deve usar o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos de SPA usando o React ou o Angular e usa o SPA SDK.
 
@@ -83,23 +83,23 @@ Devido a ser mais rápido, fluido e semelhante a um aplicativo nativo, um SPA ap
 
 A ideia principal por trás de um SPA é que as chamadas e a dependência em um servidor são reduzidas para minimizar os atrasos causados pelas chamadas do servidor, de modo que o SPA se aproxime da capacidade de resposta de um aplicativo nativo.
 
-Em uma página da web tradicional e sequencial, somente os dados necessários para a página imediata são carregados. Isso significa que quando o visitante se move para outra página, o servidor é chamado para os recursos adicionais. Chamadas adicionais podem ser necessárias conforme o visitante interage com elementos na página. Essas várias chamadas podem criar uma sensação de defasagem ou atraso na página, pois ela precisa acompanhar as solicitações do visitante.
+Em uma página da web tradicional e sequencial, somente os dados necessários para a página imediata são carregados. Isso significa que quando o visitante se move para outra página, o servidor é chamado para os recursos adicionais. Pode ser necessário realizar chamadas adicionais à medida que o visitante interage com elementos na página. Essas várias chamadas podem criar uma sensação de defasagem ou atraso na página, pois ela precisa acompanhar as solicitações do visitante.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-Para uma experiência mais fluida, que se aproxima do que um visitante espera de aplicativos nativos e móveis, um SPA carrega todos os dados necessários para o visitante na primeira carga. Embora possa ser um pouco mais demorado no início, isso elimina a necessidade de chamadas de servidor adicionais.
+Para uma experiência mais fluida, que se aproxima do que um visitante espera de aplicativos móveis e nativos, um SPA carrega todos os dados necessários para o visitante na primeira carga. Embora possa ser um pouco mais demorado no início, isso elimina a necessidade de chamadas de servidor adicionais.
 
-Ao renderizar no lado do cliente, o elemento de página reage mais rápido e as interações com a página pelo visitante são imediatas. Quaisquer dados adicionais que forem necessários serão chamados de forma assíncrona para maximizar a velocidade da página.
+Ao renderizar no lado do cliente, o elemento da página reage mais rápido e as interações com a página pelo visitante são imediatas. Qualquer dado adicional que possa ser necessário é chamado de forma assíncrona para maximizar a velocidade da página.
 
 >[!NOTE]
 >
 >Para obter detalhes técnicos sobre como os SPAs funcionam no AEM, consulte o artigo [Introdução aos SPAs no AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Para obter mais informações sobre o design, a arquitetura e o fluxo de trabalho técnico do Editor de SPA, consulte o artigo [Visão geral do Editor de SPA](/help/sites-developing/spa-overview.md).
+>Para uma análise mais detalhada do design, da arquitetura e do fluxo de trabalho técnico do Editor de SPA, consulte o artigo [Visão geral do Editor de SPA](/help/sites-developing/spa-overview.md).
 
 ## Experiência de edição de conteúdo com SPA {#content-editing-experience-with-spa}
 
-Quando um SPA é criado para usar o Editor de SPA do AEM, o autor de conteúdo não percebe diferença ao editar e criar conteúdo. A funcionalidade comum do AEM pode ser utilizada e nenhuma alteração no fluxo de trabalho do autor é necessária.
+Quando um SPA é criado para usar o SPA Editor do AEM, o autor do conteúdo não percebe nenhuma diferença ao editar e criar conteúdo. A funcionalidade comum do AEM pode ser utilizada e nenhuma alteração no fluxo de trabalho do autor é necessária.
 
 1. Edite o aplicativo Projeto SPA WKND no AEM.
 
@@ -147,7 +147,7 @@ Experimentar como um SPA se comporta para o usuário final e, em seguida, inspec
 
    ![Etapa 1](assets/spa-walkthrough-step-1-1.png)
 
-   Observe a estrutura das páginas, incluindo a navegação para páginas secundárias, widget de tempo e artigos.
+   Observe a estrutura das páginas, incluindo a navegação para páginas secundárias, widget de previsão do tempo e artigos.
 
 1. Navegue até uma página filha usando o menu e veja que a página é carregada imediatamente sem a necessidade de uma atualização.
 
@@ -183,7 +183,7 @@ A próxima seção, [Carregando um Aplicativo de SPA](#loading-an-spa-applicatio
 
    ![Etapa 4](assets/spa-walkthrough-step-1-4.png)
 
-1. Alterne para a guia **Rede** das ferramentas do desenvolvedor e recarregue a página.
+1. Alterne para a guia **Rede** das ferramentas de desenvolvedor e recarregue a página.
 
    Ignorando solicitações de imagem, os principais recursos carregados para a página são a própria página, CSS, o React JavaScript, suas dependências e dados JSON para a página.
 
@@ -209,13 +209,13 @@ A próxima seção, [Carregando um Aplicativo de SPA](#loading-an-spa-applicatio
 
    ![Etapa 7](assets/spa-walkthrough-step-1-7.png)
 
-1. Para visualizar essa diferença de comportamento, recarregue a página e limpe a atividade de rede das ferramentas do desenvolvedor. Navegue para `page-1` no menu da página e veja que a única atividade de rede é uma solicitação de imagem da `page-1`. A `page-1` em si não precisa ser carregada.
+1. Para exibir essa diferença de comportamento, recarregue a página e limpe a atividade de rede das ferramentas de desenvolvedor. Navegue para `page-1` no menu da página e veja que a única atividade de rede é uma solicitação de imagem da `page-1`. A `page-1` em si não precisa ser carregada.
 
    ![Etapa 8](assets/spa-walkthrough-step-1-8.png)
 
 ### Interação com o editor de SPA {#interaction-with-the-spa-editor}
 
-Usando o aplicativo de amostra Projeto WKND SPA, fica claro como o aplicativo se comporta e é carregado quando publicado, usando serviços de conteúdo para entrega de conteúdo JSON e carregamento assíncrono de recursos.
+Usando o aplicativo de exemplo Projeto SPA WKND, fica claro como o aplicativo se comporta e é carregado quando publicado, usando serviços de conteúdo para fornecimento de conteúdo JSON e carregamento assíncrono de recursos.
 
 Além disso, para o autor de conteúdo, a criação de conteúdo no editor de SPA é realizada sem interrupções no AEM.
 
@@ -237,7 +237,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
    Esse caminho permite a recuperação e a associação do objeto de configuração de contexto de edição de cada componente.
 
-   Esse é o único atributo de marcação necessário para que o editor reconheça esse componente como editável no SPA. Com base nesse atributo, o Editor de SPA determinará qual configuração editável está associada ao componente, para que o quadro correto, a barra de ferramentas e assim por diante sejam carregados.
+   Esse é o único atributo de marcação necessário para que o editor reconheça esse componente como editável no SPA. Com base nesse atributo, o editor SPA determinará qual configuração editável está associada ao componente, de modo que o quadro, a barra de ferramentas e assim por diante corretos sejam carregados.
 
    Alguns nomes de classe específicos também são adicionados para marcar espaços reservados e para a funcionalidade de arrastar e soltar ativos.
 
@@ -252,6 +252,6 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 Agora que você entende a experiência de edição de SPA no AEM e como um SPA se relaciona ao editor de SPA, aprofunde-se ainda mais para entender como um SPA é criado.
 
-* [Introdução a SPAs no AEM](/help/sites-developing/spa-getting-started-react.md) mostra como um SPA básico é criado para funcionar com o Editor de SPA no AEM
+* [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) mostra como um SPA básico é criado para funcionar com o editor de SPA no AEM
 * A [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md) descreve como engajar desenvolvedores de front-end no desenvolvimento de um SPA para o AEM e como os SPAs interagem com a arquitetura do AEM.
