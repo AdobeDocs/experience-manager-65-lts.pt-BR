@@ -65,7 +65,7 @@ ht-degree: 20%
          + [Pesquisar](/help/sites-authoring/search.md)
          + [Configurar o ambiente da sua conta](/help/sites-authoring/user-properties.md)
          + [Sua caixa de entrada](/help/sites-authoring/inbox.md)
-         + [Atalhos de teclado para Consoles  ](/help/sites-authoring/keyboard-shortcuts.md)
+         + [Atalhos de teclado para Consoles  &#x200B;](/help/sites-authoring/keyboard-shortcuts.md)
          + [Seleção da interface](/help/sites-authoring/select-ui.md)
       + Criação {#authoring}
          + [Ambiente e ferramentas de criação](/help/sites-authoring/author-environment-tools.md)
@@ -79,12 +79,12 @@ ht-degree: 20%
          + [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)
          + [Exportar para CSV](/help/sites-authoring/csv-export.md)
          + [Componentes](/help/sites-authoring/default-components.md)
-         + [Solucionar problemas do AEM durante a criação  ](/help/sites-authoring/troubleshooting.md)
+         + [Solucionar problemas do AEM durante a criação  &#x200B;](/help/sites-authoring/troubleshooting.md)
          + [Atalhos de teclado ao editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
          + [Práticas recomendadas](/help/sites-authoring/best-practices.md)
       + Recursos do site e da página {#siteandpage}
          + [Uso de tags](/help/sites-authoring/tags.md)
-         + [Criação de modelos de páginas  ](/help/sites-authoring/templates.md)
+         + [Criação de modelos de páginas  &#x200B;](/help/sites-authoring/templates.md)
          + [Sistema de estilos](/help/sites-authoring/style-system.md)
          + [Trabalhar com versões de páginas](/help/sites-authoring/working-with-page-versions.md)
          + [Diferencial de páginas](/help/sites-authoring/page-diff.md)
@@ -345,7 +345,7 @@ ht-degree: 20%
       + [[!DNL Assets] e MediaLibrary](/help/assets/medialibrary.md)
       + [Usar o rasterizador do PDF](/help/assets/aem-pdf-rasterizer.md)
       + [Configurar restrições de upload](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integração de [!DNL Experience Manager] e  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integração de [!DNL Experience Manager] e  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrar com a  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management em ativos](/help/assets/drm.md)
       + [Use o pacote de demonstração para insights de ativos](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1491,7 +1491,7 @@ ht-degree: 20%
       + [Lista de verificação - Referência adicional](/help/managing/best-practices-further-reference.md)
    + Gerenciamento - Mais referência {#managing-further-reference}
       + [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-      + [DevOps empresarial ](/help/managing/enterprise-devops.md)
+      + [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
       + [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    + Acessibilidade {#accessibility}
       + [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
