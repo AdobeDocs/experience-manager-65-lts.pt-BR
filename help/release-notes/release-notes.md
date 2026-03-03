@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f75f02c1e10deb6eef788d6584229c045b88880d
+source-git-commit: 4d32ffe38219728b916240784aad87beb0b277b7
 workflow-type: tm+mt
 source-wordcount: '6062'
 ht-degree: 21%
@@ -42,8 +42,6 @@ O AEM 6.5 LTS SP2 agora inclui OpenAPIs para [Gerenciamento de modelos e fragmen
 <!-- UPDATE THE EACH RELEASE -->
 
 ## Correção de problemas no 6.5 LTS, pacote de serviços 2 {#fixed-issues}
-
-<!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ### [!DNL Sites]{#sites-65-LTS-SP2}
 
@@ -389,7 +387,7 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -564,5 +562,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
