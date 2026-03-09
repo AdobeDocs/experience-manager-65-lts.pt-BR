@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4d32ffe38219728b916240784aad87beb0b277b7
+source-git-commit: f4b6c695110704bdd92967ce7f256c55c1229d34
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6063'
 ht-degree: 21%
 
 ---
@@ -313,7 +313,7 @@ O AEM agora sincroniza atividades do Adobe Target mesmo quando existem datas de 
 
 #### Oak {#foundation-oak-65-lts-sp2}
 
-O AEM 6.5 LTS Service Pack 2 exige o S3 Connector 1.60.10 ou posterior. A configuração do armazenamento de dados S3 agora inclui `crossRegionAccess` e `mode` para que os administradores possam habilitar o acesso ao bucket entre regiões e alternar o armazenamento para GCP quando necessário. `s3EndPoint` agora espera uma região alinhada a `s3Region`, ou ela permanece vazia para que o driver gere o ponto de extremidade. (GRANITE-64873)
+O AEM 6.5 LTS Service Pack 2 exige o S3 Connector 1.60.10 ou posterior. A configuração do armazenamento de dados S3 agora inclui `crossRegionAccess` e `mode` para que os administradores possam habilitar o acesso ao bucket entre regiões e alternar o armazenamento para GCP quando necessário. O `s3EndPoint` agora espera uma região alinhada a `s3Region`, ou ela permanece vazia para que o driver gere o ponto de extremidade. (GRANITE-64873)
 
 
 #### Início rápido{#foundation-quickstart-65-lts-sp2}
@@ -387,7 +387,7 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -562,5 +562,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
