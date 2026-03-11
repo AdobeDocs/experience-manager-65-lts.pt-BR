@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f4b6c695110704bdd92967ce7f256c55c1229d34
+source-git-commit: c275e55834c2375fbc23d0bbc209760062e6c2bc
 workflow-type: tm+mt
-source-wordcount: '6063'
-ht-degree: 21%
+source-wordcount: '6197'
+ht-degree: 20%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 21%
 
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
+
+>[!IMPORTANT]
+>
+> **Hotfix Obrigatório** - Para evitar problemas de SNFE (SegmentNotFoundException) com compactação offline ao instalar o SP2, instale o hotfix descrito em [Problemas conhecidos - Corrupção do repositório durante a compactação online](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146).
 
 ## O que está incluído no [!DNL Adobe Experience Manager] 6.5 LTS, SP2 {#what-is-new}
 
@@ -387,7 +391,7 @@ O Eclipse Jetty 11.0.x é usado como um mecanismo de servlet para o início ráp
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -511,6 +515,20 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 ## Problemas conhecidos {#known-issues}
 
+### Corrupção do repositório durante a compactação online após a compactação offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
+
+Os usuários podem enfrentar corrupção do repositório durante a compactação online se a compactação offline tiver sido executada anteriormente no repositório JCR. Um `SegmentNotFoundException` (SNFE) pode ocorrer neste cenário e pode levar à corrupção do repositório.
+
+Para resolver o problema, instale o hotfix ( Gerenciador de pacotes. O Yiu pode obter o hotfix da [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Como o hotfix inclui um pacote de baixo nível `oak-segment-tar`, a instância é reiniciada após a instalação.
+
+Planeje o tempo de inatividade da instância ao aplicá-lo. Para compactação offline, use o [oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) correspondente, também disponível na Distribuição de software.
+
+>[!NOTE]
+>
+> * Para quaisquer operações de execução do oak, use o [oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
+>
+> * Inicie o AEM definindo a propriedade do sistema `oak.compaction.legacy=true`.
+
 ### Instale os índices Oak necessários para as APIs do Sites Headless{#site-headless-api}
 
 Algumas APIs que foram movidas para o Sites Headless exigem índices Oak adicionais para funcionalidade completa.
@@ -562,5 +580,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
