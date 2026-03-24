@@ -4,13 +4,13 @@ description: O JBoss EAP 8 oferece suporte a armazenamentos de credenciais Elytr
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Configuração do Armazenamento de Credenciais do Banco de Dados (com base no Elytron)
 
@@ -186,5 +186,5 @@ Todos os aliases fazem referência à mesma senha do banco de dados armazenada n
 
 >[!NOTE]
 >
->* Configure o armazenamento de credenciais somente no nó principal.
->* Os nós secundários usam automaticamente a configuração de domínio sincronizada a partir do nó primário.
+>* Copie o arquivo de armazenamento de credenciais (cred-store.p12) criado no principal para cada nó subordinado.
+
