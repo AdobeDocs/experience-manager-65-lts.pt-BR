@@ -4,7 +4,8 @@ description: Saiba como otimizar suas consultas do GraphQL ao filtrar, paginar e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 57%
@@ -97,7 +98,7 @@ Eles também podem ser definidos com a ferramenta de linha de comando **cURL**. 
 
 ```shell
 $ curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H 'authorization: Basic yourauthorizationcode' \
     -H "Content-Type: application/json" \
     "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
     -d \

@@ -4,7 +4,8 @@ description: Saiba como criar consultas persistentes do GraphQL no Adobe Experie
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -70,7 +71,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -116,7 +117,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -142,7 +143,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -155,7 +156,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -168,7 +169,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -277,9 +278,9 @@ Por padrão, o AEM invalidará o cache com base em uma definição de Time To Li
 
 {style="table-layout:auto"}
 
-### Instâncias do autor {#author-instances}
+### Instâncias de criação {#author-instances}
 
-Para instâncias de autor, os valores padrão são:
+Para instâncias de criação, os valores padrão são:
 
 * `max-age`  : 60
 * `s-maxage` : 60
@@ -356,7 +357,7 @@ Para gerenciar o cache globalmente, você pode [definir as configurações de OS
 
 >[!NOTE]
 >
->A configuração OSGi é adequada apenas para instâncias de publicação. A configuração existe nas instâncias do autor, mas é ignorada.
+>A configuração OSGi é adequada apenas para instâncias de publicação. A configuração existe nas instâncias de criação, mas é ignorada.
 
 ## Codificação do URL de consulta para uso por um aplicativo {#encoding-query-url}
 
