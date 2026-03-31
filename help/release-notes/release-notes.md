@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
-ht-degree: 20%
+source-wordcount: '6403'
+ht-degree: 19%
 
 ---
 
@@ -239,14 +239,18 @@ O Assets Relate agora funciona para nomes de arquivo que incluem espaços. A ló
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
 #### Forms
 
+* Nas implantações de cluster do AEM Forms 6.5 LTS no JBoss EAP 8, `domain/configuration/domain_oracle.xml` não contém mais uma marca `<security>` duplicada que causou XML inválido e impediu o controlador de domínio de iniciar. (FORMS-24687)
+* No Modo de Atualização Turnkey, a atualização da porta do banco de dados em `lc_turnkey.xml` agora é aplicada corretamente durante a atualização e não faz mais referência ao valor da porta antiga. (FORMS-24689)
+* Ao configurar o JBoss EAP 8.0 no Linux, scripts de shell modificados no Windows não causam mais erros `/bin/sh^M: bad interpreter or $'\r': command not found` devido ao fim de linha CRLF. (FORMS-24688)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -417,7 +421,7 @@ Consulte também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upg
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -541,6 +545,14 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 ## Problemas conhecidos {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690:** No Configuration Manager, a Inicialização do Banco de Dados falha durante a inicialização ao executar o AEM Forms 6.5 LTS JEE no modo Turnkey com Configuração Personalizada se nenhum módulo estiver selecionado.
+
+* **FORMS-24692:** O Serviço de Email pode falhar ao estabelecer uma conexão de soquete TLS, causando falha na entrega de emails.
+
+* **FORMS-24741:** no AEM Forms 6.5 LTS JEE no Linux, o Configuration Manager poderá falhar se OSFileSetIntendedFor não estiver definido corretamente. Atualize-o para Linux nos arquivos de configuração necessários antes de executar o Gerenciador de configurações.
+
 ### Corrupção do repositório durante a compactação online após a compactação offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 Os usuários podem enfrentar corrupção do repositório durante a compactação online se a compactação offline tiver sido executada anteriormente no repositório JCR. Um `SegmentNotFoundException` (SNFE) pode ocorrer neste cenário e pode levar à corrupção do repositório.
@@ -606,5 +618,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
