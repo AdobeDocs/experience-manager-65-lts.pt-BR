@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
+source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6983'
 ht-degree: 18%
 
 ---
@@ -286,9 +286,9 @@ O Assets Relate agora funciona para nomes de arquivo que incluem espaços. A ló
 
 * FORMS-20679: os usuários experimentaram uma vulnerabilidade de segurança no painel Adaptive Forms. Especificamente, um problema de criação de script entre sites (XSS) foi identificado no arquivo startpointcontrol.js, o que poderia potencialmente permitir a execução de scripts mal-intencionados.
 
-* FORMS-24687: nas implantações de cluster do AEM Forms 6.5 LTS no JBoss EAP 8, `domain/configuration/domain_oracle.xml` não contém mais uma marca `<security>` duplicada que causou XML inválido e impediu o controlador de domínio de iniciar.
+* FORMS-24687: nas implantações de cluster do AEM Forms 6.5 LTS no JBoss EAP 8, os arquivos domain/configuration/domain_oracle.xml, domain_mysql.xml e domain_mssql.xml não contêm mais uma tag `<security>` duplicada que causou XML inválido e impediu o controlador de domínio de iniciar.
 
-* FORMS-24689:In Modo de Atualização Turnkey, a atualização da porta do banco de dados em `lc_turnkey.xml` agora é aplicada corretamente durante a atualização e não faz mais referência ao valor de porta antigo.
+* FORMS-24689: No modo Turnkey, a atualização da porta do banco de dados agora é aplicada corretamente durante a instalação e a atualização. No modo de instalação nova, os usuários podem selecionar entre todas as portas disponíveis e, no modo de Atualização, a porta do banco de dados atualizada em lc_turnkey.xml é referenciada corretamente durante o processo de atualização.
 
 * FORMS-24688: ao configurar o JBoss EAP 8.0 no Linux, scripts de shell modificados no Windows não causam mais erros `/bin/sh^M: bad interpreter or $'\r': command not found` devido ao fim de linha CRLF.
 
@@ -463,7 +463,7 @@ Consulte também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upg
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -589,7 +589,7 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 ### AEM Forms
 
-* **FORMS-24690:** No Configuration Manager, a Inicialização do Banco de Dados pode falhar durante a inicialização no modo Personalizado do AEM Forms 6.5 LTS JEE Turnkey quando nenhum módulo ou somente componentes limitados forem selecionados. A falha se deve a uma dependência ausente (xalan-2.7.2.jar), resultando em erro. Adicionar o arquivo JAR ao adobe-livecycle-jboss.ear\lib resolve o problema.
+* **FORMS-24690:** No Configuration Manager, a Inicialização do Banco de Dados falha durante a inicialização no modo Personalizado do AEM Forms 6.5 LTS JEE Turnkey quando nenhum módulo ou somente componentes limitados são selecionados. A falha se deve a uma dependência ausente (xalan-2.7.2.jar), resultando em erro. Adicionar o arquivo JAR ao adobe-livecycle-jboss.ear\lib resolve o problema.
 
 * **FORMS-24692:** O Serviço de Email pode falhar ao estabelecer uma conexão de soquete TLS, causando falha na entrega de emails.
 
@@ -658,5 +658,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
