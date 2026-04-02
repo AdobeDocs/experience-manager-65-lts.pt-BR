@@ -5,12 +5,13 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
+source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
 workflow-type: tm+mt
-source-wordcount: '6983'
+source-wordcount: '7002'
 ht-degree: 18%
 
 ---
+
 
 # Notas de versão atuais do Adobe Experience Manager 6.5 LTS, SP2 {#release-notes}
 
@@ -43,6 +44,10 @@ O [!DNL Experience Manager] 6.5 LTS, SP2 inclui novos recursos, importantes melh
 O AEM 6.5 LTS SP2 agora inclui OpenAPIs para [Gerenciamento de modelos e fragmentos de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/) e [Inicializações](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/). Essas APIs fornecem acesso aos Fragmentos de conteúdo e inicializações para criação e programação. Eles usam as mesmas OpenAPIs modernas que o AEM as a Cloud Service.
 
 **AEM Forms**
+
+**O que está incluído no AEM Forms 6.5 LTS SP2**
+
+* Suporte para RDBMK com JBOSS EAP 8.0  foi adicionado.
 
 * Experiência do usuário aprimorada no editor visual de regras. Esta atualização inclui:
 
@@ -83,7 +88,7 @@ O AEM 6.5 LTS SP2 agora inclui OpenAPIs para [Gerenciamento de modelos e fragmen
 * Saída NVDA corrigida para o botão Editar. O NVDA agora anuncia a ação Editar, não o &quot;botão Visualizar pressionado&quot;. (SITES-25320)
 * Correção de entradas de texto da barra de ferramentas Demografia sem nome que causavam saída de leitor de tela silenciosa ou genérica. Cada entrada agora expõe um nome acessível com base em rótulo claro, o que melhora a navegação pelo teclado e a tecnologia assistiva. (SITES-25316)
 * A ordem de foco do teclado foi corrigida para a barra de ferramentas Demográfica durante a navegação da Visualização de layout. A navegação por guias agora se move diretamente do botão Demográfico para os controles da barra de ferramentas, sem pular para a barra de ferramentas secundária. (SITES-25305)
-* Correção da ordem incorreta de anúncio dos rótulos &quot;Screens Menor&quot; e &quot;Tablet&quot; na régua Editar layout. Agora, os leitores de tela anunciam esses rótulos nos marcadores de régua corretos, que correspondem ao layout da página. (SITES-25291)
+* Fixed incorrect announcement order for &quot;Smaller Screens&quot; and &quot;Tablet&quot; labels on the Edit Layout ruler. Screen readers now announce these labels at the correct ruler markers, which match the page layout. (SITES-25291)
 * Corrigido o estouro da barra de ferramentas Editar layout em 200% de zoom. O conteúdo agora permanece dentro da janela de visualização e pode ser acessado por meio da rolagem. (SITES-25288)
 * Correção da ordem de foco incorreta na sobreposição de anotações. A tabulação de teclado agora circula pelos controles de sobreposição e itens de anotação. A página principal não assume mais o foco por trás da sobreposição. (SITES-25282)
 * Manipulação de foco de popover de amostras corrigidas. A caixa de diálogo agora move o foco para um cabeçalho limpo e inicia a saída do leitor de tela nesse ponto de entrada. O NVDA não lê mais o conteúdo completo da caixa de diálogo fora de sequência. (SITES-25275)
@@ -168,7 +173,7 @@ O suporte a eventos headless não tinha eventos OSGi necessários para fragmento
 
 #### [!DNL Content Fragments] - Editor de modelos{#sites-model-editor-65-lts-sp2}
 
-* Os modelos de Fragmento de conteúdo aninhados pararam de funcionar quando a refatoração vinculou o recurso a um botão de alternância desativado. A correção restaura o suporte a modelo aninhado sem exigir alterações de alternância. Os autores podem criar e usar modelos aninhados novamente no Editor de modelos. (SITES-38681) CRÍTICO
+* Os modelos de Fragmento de conteúdo aninhados pararam de funcionar quando a refatoração vinculou o recurso a um botão de alternância desativado. A correção restaura o suporte a modelo aninhado sem exigir alterações de alternância. Os autores podem criar e usar modelos aninhados novamente no Editor de modelos. (SITES-38681) CRITICAL
 
 * O painel de filtro Modelos de fragmento de conteúdo não expõe mais as cadeias de caracteres não localizadas. O AEM agora exibe rótulos de filtro localizados e valores de status localizados em todas as localidades. (SITES-30863)
 * O Editor de modelo de fragmento de conteúdo agora renderiza cadeias de caracteres localizadas para a caixa de diálogo de aviso de bloqueio. A interface do usuário substitui mensagens em inglês não localizadas por recursos de localidade em todos os idiomas compatíveis. (SITES-28592)
@@ -214,9 +219,9 @@ Um defeito de recurso de alternância relatou incorretamente o status da API de 
 * Iniciar Edição agora mostra texto de erro localizado em vez da cadeia de caracteres `Provided path is not a launch` codificada. Agora a interface do usuário renderiza mensagens traduzidas entre idiomas quando Editar recebe um caminho de inicialização inválido. (SITES-33360)
 * O AEM 6.5 LTS agora inclui o trabalho de porta lateral do Launches OpenAPI. A atualização coloca em paridade os pacotes de APIs do Launches, os pacotes de conteúdo e os artefatos de Início rápido necessários e ativa os cenários de APIs abertas do Fragmento de conteúdo com validação de CI estável. (SITES-32050)
 * A interface do usuário do Launches agora localiza o rótulo do modelo Substituído. Os detalhes de substituição do modelo agora exibem o texto traduzido em vez de uma cadeia de caracteres somente em inglês. (SITES-29525)
-* O AEM resolveu uma chave de localização ausente em **Sites** > **Inicializações** > **Editar**. Os usuários agora veem uma mensagem de erro traduzida em vez da string bruta &quot;Não é possível atualizar a lista de origem de inicialização&quot;. (SITES-21499)
-* A interface da promoção do Launch agora exibe rótulos e ações de status localizados. A área de visualização mostra o texto traduzido para **Excluído**, **Novo** e **Exibição**, em vez de cadeias de caracteres brutas em inglês. (SITES-13540)
-* A criação de lançamentos agora mostra mensagens de erro localizadas. A interface do usuário não exibe mais cadeias de caracteres brutas em inglês, como `Unable to create launch page`, `Source root resource is not a page` ou `Mandatory parameter is missing`. (SITES-13085)
+* O AEM resolveu uma chave de localização ausente em **Sites** > **Inicializações** > **Editar**. Users now see a translated error message instead of the raw &quot;Unable to update launch source list&quot; string. (SITES-21499)
+* Launch promotion UI now displays localized status labels and actions. A área de visualização mostra o texto traduzido para **Excluído**, **Novo** e **Exibição**, em vez de cadeias de caracteres brutas em inglês. (SITES-13540)
+* A criação de lançamentos agora mostra mensagens de erro localizadas. A interface do usuário não exibe mais cadeias de caracteres em inglês brutas, como `Unable to create launch page`, `Source root resource is not a page` ou `Mandatory parameter is missing`. (SITES-13085)
 
 
 <!-- #### Link Checker{#sites-link-checker-65-lts-sp2} -->
@@ -320,8 +325,8 @@ O Assets Relate agora funciona para nomes de arquivo que incluem espaços. A ló
 * O Sling Resource Access Security agora é executado na versão 1.1.2. ResourceAccessSecurityImpl não lança mais um ClassCastException durante a inicialização quando vários serviços ResourceAccessGateHandler são registrados. A inicialização agora é concluída com confiança e evita falhas de inicialização em ambientes com vários manipuladores. (NPR-42750)
 * O Console JMX e o Console da Web agora enviam um `Content-Type: text/css header` para recursos CSS de console. A verificação MIME estrita não bloqueia mais o carregamento da folha de estilos, portanto, a interface do usuário `/system/console/jmx` é renderizada com estilo normal. (GRANITE-63677)
 * O AEM agora evita entradas de ACL duplicadas para o grupo `contributor` no `WEB-INF/resources/provisioning/model.txt` gerado. A saída WAR agora contém um bloco de ACL consistente, o que impede diferenças de permissão confusas durante a revisão. (GRANITE-63269)
-* O AEM não limpa mais as configurações de inclui na lista de bloqueios e inclui na lista de permissões do Firewall de desserialização durante as operações de atualização de pacote. A lógica de registro de filtro atualizada mantém a instância de firewall ativa alinhada à configuração salva, para que a proteção permaneça ativada sem uma reinicialização. (GRANITE-61382)
-* O Felix Web Console não lança mais erros `NullPointerException` intermitentes durante o acesso `/system/console`. A manipulação atualizada do ServiceTracker impede um estado de rastreador nulo. O logon e a navegação do console permanecem estáveis durante solicitações repetidas e validações automatizadas. (GRANITE-61042)
+* O AEM não limpa mais as configurações de inclui na lista de bloqueios e inclui na lista de permissões do Firewall de desserialização durante as operações de atualização de pacote. Updated filter registration logic keeps the active firewall instance aligned with the saved configuration, so protection stays enabled without a restart. (GRANITE-61382)
+* O Felix Web Console não lança mais erros intermitentes de `NullPointerException` durante o acesso de `/system/console`. A manipulação atualizada do ServiceTracker impede um estado de rastreador nulo. O logon e a navegação do console permanecem estáveis durante solicitações repetidas e validações automatizadas. (GRANITE-61042)
 
 <!--
 #### Campaign{#foundation-campaign-65-lts-sp2}
@@ -463,7 +468,7 @@ Consulte também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upg
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para AEM Forms 6.5 LTS SP1 em JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -658,5 +663,5 @@ Os seguintes documentos de texto listam os pacotes da OSGi e os pacotes de conte
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
