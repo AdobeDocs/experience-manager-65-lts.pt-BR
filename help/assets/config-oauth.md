@@ -126,7 +126,7 @@ Um certificado público permite autenticar seu perfil na Adobe Developer Console
 
    >[!NOTE]
    >
-   >A URL fornecida como [!UICONTROL URL de Serviço] não pode ser acessada pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro [!UICONTROL URL de Serviço]. Para obter o status geral do serviço e o agendamento de manutenção, consulte [https://status.adobe.com](https://status.adobe.com).
+   >A URL fornecida como [!UICONTROL URL de Serviço] não pode ser acessada pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro [!UICONTROL URL de Serviço]. Para obter o status geral do serviço e o agendamento de manutenção, consulte [https://status.adobe.com/pt-br](https://status.adobe.com/pt-br).
 
 1. Clique em **[!UICONTROL Baixar Certificado Público para Integração com o OAuth]** e baixe o arquivo de certificado público `AEM-SmartTags.crt`. Além disso, você não é mais obrigado a fazer upload desse certificado no console do desenvolvedor do Adobe.
 
