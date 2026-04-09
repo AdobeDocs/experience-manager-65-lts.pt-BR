@@ -1,12 +1,12 @@
 ---
 title: '[!DNL Experience Manager Assets] integração com  [!DNL Adobe Workfront]'
 description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
-role: Admin,Leader,Architect
+role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
@@ -51,7 +51,7 @@ A seguir estão os detalhes das funcionalidades disponíveis por meio de vários
 | Destaque | Descrição | [!DNL Workfront] e [!DNL Assets Essentials] *Nenhum conector (pronto para uso)* | [!DNL Workfront for Experience Manager enhanced connector] *Requer Conector* | Workfront e [!DNL Experience Manager as a Cloud Service] *Nenhum Conector (pronto para uso)* |
 |----|----|----|-----|-----|
 | Métodos de implantação | Apropriado para qual oferta [!DNL Assets]. | Assets Essentials | Adobe Managed Services, no local | Cloud Service |
-| **Geral** |
+| **Geral** | | | | |
 | Enviar arquivos digitais de [!DNL Workfront] para [!DNL Assets] | A versão mais recente de um documento WF pode ser carregada no AEM Assets, que está vinculado como uma nova versão do documento. | ✓ | ✓ | ✓ |
 | Vincular manualmente pastas do AEM a objetos do Workfront | As pastas existentes do AEM podem ser vinculadas como uma pasta do Workfront e seus ativos secundários são vinculados como novos documentos do Workfront. | ✓ | ✓ | ✓ |
 | Vincular [!DNL Assets] a objetos do Workfront | Os ativos existentes no AEM podem ser vinculados a um novo documento do Workfront ou como uma nova versão de um documento existente. | ✓ | ✓ | ✓ |
@@ -70,7 +70,7 @@ A seguir estão os detalhes das funcionalidades disponíveis por meio de vários
 | Sincronização de comentários | Sincronizar comentários automaticamente para ativos de [!DNL Workfront] a [!DNL Assets] | Não | ✓ | Não |
 | Suporte a vários ambientes Workfront conectados a um único ambiente AEM | Usuários de vários ambientes do Workfront podem se conectar a um único ambiente do AEM. | ✓ | Não | ✓ |
 | Suporte a vários ambientes AEM conectados a um único ambiente Workfront | Os usuários em um único ambiente do Workfront podem enviar ou vincular ativos entre vários ambientes do AEM. | ✓ | ✓ | ✓ |
-| **Metadados** |
+| **Metadados** | | | | |
 | Mapear metadados de ativos do Workfront para o AEM Assets | As propriedades de objetos e formulários personalizados do Workfront podem ser mapeadas para as propriedades de metadados de ativos do AEM. Os valores são enviados no upload/link inicial. | ✓ | ✓ | ✓ |
 | Criar automaticamente Forms personalizados de documentos no Workfront | Anexe formulários personalizados a documentos, tarefas e problemas do Workfront usando fluxos de trabalho do AEM. | Não | ✓ | Não |
 | Atualização automática bidirecional de metadados entre o AEM Assets e o Workfront | Atualize automaticamente os metadados entre o AEM Assets e o Workfront. O ativo deve ser enviado inicialmente do Workfront para o AEM e os metadados de ativos do Workfront devem ser mapeados para ativos do AEM para que as atualizações bidirecionais de metadados funcionem adequadamente. | Não | ✓ | Não |
@@ -79,7 +79,7 @@ A seguir estão os detalhes das funcionalidades disponíveis por meio de vários
 | Mapear metadados do Workfront para pastas do AEM Assets | Sincronizar metadados de projeto do Workfront com pastas vinculadas do AEM. | Não | ✓ | ✓ |
 | Atualizações de metadados do AEM com novas versões | Uma configuração no AEM pode ser feita para determinar se um ativo de versão recente no Workfront também envia com quaisquer alterações feitas nos metadados. | Não | ✓ | Não |
 | Atualizar automaticamente os metadados do AEM nas alterações no Forms personalizado no Workfront | O AEM permite assinar as atualizações nos formulários de documento no Workfront. Como resultado, qualquer atualização nos metadados de formulário personalizados do documento do Workfront edita os valores dos campos de metadados do AEM mapeados. | Não | ✓ | Não |
-| **Fluxos de trabalho (prontos para uso)** |
+| **Fluxos de trabalho (prontos para uso)** | | | | |
 | Criar nova versão de prova no Assets vinculado | Ao vincular um ativo no Workfront, uma prova pode ser gerada automaticamente. | Não | Personalizado | Não |
 | Definir status em objetos do Workfront | Definir status de objetos do Workfront com base em condições configuráveis usando workflows do AEM | Não | ✓ | Próximos |
 | Publicar o Assets no ambiente de publicação do AEM ou no Brand Portal | Dê aos usuários do Workfront a opção de publicar automaticamente ativos vinculados em um ambiente de publicação do AEM ou no Brand Portal. | Não | ✓ | Próximos |

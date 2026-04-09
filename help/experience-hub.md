@@ -5,9 +5,9 @@ landing-page-description: Saiba mais sobre o Adobe Experience Hub, um ponto de p
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
-role: Admin, Architect, Developer, User
+role: Admin,Developer,User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 79a9184fdae1cbb96172c6f507d0b326c7828551
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -20,7 +20,7 @@ O Experience Hub apresenta um ponto de partida centralizado para o gerenciamento
 
 Assista a um rápido tour pelo espaço de trabalho recriado do AEM Experience Hub (2 minutos, 39 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475197/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->

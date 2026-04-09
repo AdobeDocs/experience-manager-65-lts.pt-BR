@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: f4a15b51-fbb9-454f-809d-b15ed8cbdd0c
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 9%
@@ -38,7 +38,7 @@ Familiarize-se com a [estrutura de um aplicativo SPA para AEM](/help/sites-devel
 >[!CAUTION]
 >Este documento usa o [aplicativo We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) somente para fins de demonstração. Não o use para nenhum trabalho de projeto.
 >
->Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## O componente de Tempo {#the-weather-component}
 

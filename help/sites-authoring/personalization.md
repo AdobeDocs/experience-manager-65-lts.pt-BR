@@ -3,9 +3,9 @@ title: Personalização e direcionamento de conteúdo
 description: Saiba como o Adobe Experience Manager 6.5 LTS pode criar conteúdo personalizado.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 36%

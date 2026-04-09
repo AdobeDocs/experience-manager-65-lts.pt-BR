@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 4403f563-e9c7-4693-9142-45e0f587a88a
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -38,7 +38,7 @@ O `ModelRouter`, quando habilitado, encapsula as funções `pushState` e `replac
 
 ## Roteiro de Modelo Manual vs. Automático {#manual-vs-automatic-model-routing}
 
-O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas, como qualquer ferramenta automatizada, há limitações. Quando necessário, o `ModelRouter` pode ser desabilitado ou configurado para ignorar caminhos usando metapropriedades (Consulte a seção Metapropriedades do [Componente de página do SPA](/help/sites-developing/spa-page-component.md)). Os desenvolvedores de front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` carregue qualquer fragmento de modelo fornecido usando a função `getData()`.
+O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas, como qualquer ferramenta automatizada, há limitações. Quando necessário, o `ModelRouter` pode ser desabilitado ou configurado para ignorar caminhos usando metapropriedades (Consulte a seção Propriedades do Meta do [Componente de página do SPA](/help/sites-developing/spa-page-component.md) documento). Os desenvolvedores de front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` carregue qualquer fragmento de modelo fornecido usando a função `getData()`.
 
 >[!NOTE]
 >

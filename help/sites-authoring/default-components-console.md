@@ -3,8 +3,9 @@ title: Console de componentes
 description: O console Componentes permite navegar em todos os componentes definidos para a instância e visualizar as principais informações de cada componente.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: e19f9c2b-dc69-4077-a038-d8eb25a1ad6a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 43%

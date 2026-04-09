@@ -3,8 +3,9 @@ title: Desenvolvimento headless para sites do AEM 6.5
 description: Saiba como os recursos headless avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir gerenciar suas experiências centralmente e distribuí-las entre canais.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 4eb42d3a-f869-4831-9aaf-58e7272bd1fe
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 32%
@@ -52,7 +53,7 @@ O AEM 6.5 é uma ferramenta flexível para o modelo de implementação headless,
 
 Há vários recursos disponíveis para o seu para começar a usar os recursos headless do AEM. Eles são destinados a casos de uso diferentes, mas fornecem uma visão geral sólida dos recursos headless do AEM.
 
-| Recurso | Descrição | Tipo | Público | Est. Hora |
+| Recurso | Descrição | Tipo | Público-alvo | Est. Hora |
 |---|---|---|---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novatos no AEM e em tecnologias headless**: comecem aqui para obter uma introdução abrangente ao AEM e seus recursos headless, desde a teoria do headless até a inauguração do seu primeiro projeto headless. | Guia | Desenvolvedores **novatos no AEM e no headless** | 1 hora |
 | [Guia de Introdução Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuários experientes do AEM** que precisam de um breve resumo dos principais recursos headless do AEM, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores e administradores **com experiência no AEM** | 20 minutos |

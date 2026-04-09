@@ -3,8 +3,9 @@ title: Jornada do arquiteto de conteúdo do Adobe Experience Manager Headless
 description: Uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e como modelar conteúdo para seu projeto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 76%
@@ -22,7 +23,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless, como o AE
 
 ## Objetivo {#objective}
 
-* **Público**: iniciante
+* **Público-alvo**: iniciante
 * **Objetivo**: apresentar os conceitos e a terminologia relevantes para a Modelagem de conteúdo headless.
 
 ## Entregar conteúdo em pilha completa {#full-stack}
@@ -85,4 +86,4 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

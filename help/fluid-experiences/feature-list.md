@@ -1,12 +1,12 @@
 ---
 title: Lista de recursos do AEM Fluid Experiences
 description: Lista de recursos de experiências fluídas
-index: n
+index: false
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
@@ -84,7 +84,7 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 
 ## Saiba mais {#learn-more}
 
-* [Experiências fluídas para casos de uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=pt-BR)
-* [Serviço de Conteúdo do AEM: O Que, Por Quê e Como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR)
-* [Perguntas frequentes sobre Acesso a Terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=pt-BR)
-* [Usando APIs Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=pt-BR#sling-models)
+* [Experiências fluídas para casos de uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Serviço de Conteúdo do AEM: O Que, Por Quê e Como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Perguntas frequentes sobre Acesso a Terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Usando APIs Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

@@ -3,8 +3,9 @@ title: Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do 
 description: Saiba como usar a API REST do Assets do AEM para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 41%
@@ -36,7 +37,6 @@ Os arquitetos da informação devem projetar consultas para seus endpoints de ca
    * O painel esquerdo permite criar a consulta.
    * O painel direito exibe os resultados.
    * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
-
      ![Editor do GraphiQL](assets/graphiql.png)
 
 1. Supondo que o modelo criado era chamado `person` com os campos `firstName`, `lastName` e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
@@ -67,7 +67,6 @@ Os arquitetos da informação devem projetar consultas para seus endpoints de ca
    * **Documentação** na parte superior direita da página para mostrar a documentação contextual para ajudá-lo a criar suas consultas que se adaptam aos seus próprios modelos.
    * **Histórico** na barra de ferramentas superior para mostrar consultas anteriores.
    * **Salvar como** e **Salvar** para salvar suas consultas. Depois disso, você poderá listá-las e recuperá-las do painel **Consultas Persistentes** e **Publicar**.
-
      ![Documentação do GraphiQL](assets/graphiql-documentation.png)
 
 O GraphQL permite consultas estruturadas que podem direcionar não apenas conjuntos de dados específicos ou objetos de dados individuais, mas também fornecer elementos específicos dos objetos, resultados aninhados, oferecer suporte para variáveis de consulta e muito mais.

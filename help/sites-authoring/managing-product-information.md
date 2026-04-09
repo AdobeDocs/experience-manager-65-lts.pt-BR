@@ -1,5 +1,5 @@
 ---
-title: Integração do Creative Project e do PIM
+title: Integração do Projeto Creative e do PIM
 description: O Creative Project simplifica todo o fluxo de trabalho de sessão fotográfica, incluindo a geração de uma solicitação de sessão fotográfica, o upload de uma sessão fotográfica, a colaboração em uma sessão fotográfica e a embalagem de ativos aprovados
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,18 +7,18 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
 
 ---
 
+# Integração do Projeto Creative e do PIM {#creative-project-and-pim-integration}
 
-# Integração do Creative Project e do PIM {#creative-project-and-pim-integration}
-
-Se você for um profissional de marketing ou criativo, poderá usar as ferramentas do Creative Project no Adobe Experience Manager (AEM) para gerenciar fotografias de produtos relacionadas ao comércio eletrônico e processos criativos associados na organização.
+Se você for um profissional de marketing ou criativo, poderá usar as ferramentas do Projeto do Creative no Adobe Experience Manager (AEM) para gerenciar fotografias de produtos relacionadas a comércio eletrônico e processos criativos associados na organização.
 
 Você pode usar o Creative Project para simplificar as seguintes tarefas no fluxo de trabalho da sessão de fotos:
 
@@ -33,7 +33,7 @@ Você pode usar o Creative Project para simplificar as seguintes tarefas no flux
 
 ## Fluxos de trabalho de sessão fotográfica do produto  {#exploring-product-photo-shoot-workflows}
 
-O Creative Project fornece vários modelos de projeto para atender a diversos requisitos do projeto. O modelo do **Projeto de sessão fotográfica do produto** está disponível imediatamente. Esse modelo inclui fluxos de trabalho de sessão fotográfica que permitem iniciar e gerenciar solicitações de sessão fotográfica do produto. Ele também inclui uma série de tarefas que permitem obter imagens digitais para produtos por meio de processos apropriados de revisão e aprovação.
+O Creative Project fornece vários modelos de projeto para atender a diversos requisitos de projeto. O modelo do **Projeto de sessão fotográfica do produto** está disponível imediatamente. Esse modelo inclui fluxos de trabalho de sessão fotográfica que permitem iniciar e gerenciar solicitações de sessão fotográfica do produto. Ele também inclui uma série de tarefas que permitem obter imagens digitais para produtos por meio de processos apropriados de revisão e aprovação.
 
 ## Criar um projeto de sessão fotográfica do produto {#create-a-product-photo-shoot-project}
 
@@ -194,7 +194,7 @@ A tarefa **Criar Lista de Captura** permite que o proprietário do projeto selec
 
    ![Exibir lista de captura](assets/chlimage_1-148a.png)
 
-   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto &#x200B;** e **Descrição** são editáveis.
+   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto **e **Descrição** são editáveis.
 
    ![Editar lista de captura](assets/chlimage_1-149a.png)
 

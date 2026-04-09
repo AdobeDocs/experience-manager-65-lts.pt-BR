@@ -3,8 +3,9 @@ title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 86%
@@ -118,7 +119,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
 
    * [Variações: criação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Modelos de fragmento de conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
 

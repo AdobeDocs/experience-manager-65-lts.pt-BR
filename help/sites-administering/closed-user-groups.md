@@ -9,9 +9,10 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6654'
 ht-degree: 0%
 
 ---
@@ -687,7 +688,7 @@ As novas instalações do AEM usarão, por padrão, as novas implementações pa
 |---|---|
 | Caminhos com Suporte `/content` | O gerenciamento de controle de acesso para políticas CUG está habilitado. |
 | Avaliação de CUG habilitada FALSE | A avaliação de permissões está desabilitada. As políticas CUG não têm efeito. |
-| Classificação | 200 | Consulte a documentação do Oak. |
+| Classificação \|200 | Consulte a documentação do Oak. |
 
 >[!NOTE]
 >
@@ -699,7 +700,7 @@ As novas instalações do AEM usarão, por padrão, as novas implementações pa
 |---|---|
 | Caminhos com Suporte `/content` | O gerenciamento de controle de acesso para políticas CUG está habilitado abaixo dos caminhos configurados. |
 | CUG Evaluation Enabled TRUE (Avaliação de CUG ativada TRUE) | A avaliação de permissões está habilitada abaixo dos caminhos configurados. As políticas CUG entram em vigor em `Session.save()`. |
-| Classificação | 200 | Consulte a documentação do Oak. |
+| Classificação \|200 | Consulte a documentação do Oak. |
 
 | **&quot;Lista de Exclusões do Apache Jackrabbit Oak CUG&quot;** | **Explicação** |
 |---|---|
@@ -801,7 +802,7 @@ Essa mudança de propriedades residuais do JCR para uma política dedicada de co
 
 Crie políticas CUG no nó JCR definindo a subárvore para estar sujeita a acesso restrito de leitura. Essa provavelmente será uma página do AEM caso o CUG afete toda a árvore.
 
-Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringe o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
+Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringe somente o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
 
 **Avaliação de Permissão com Políticas CUG**
 
@@ -848,7 +849,7 @@ Esse cenário pode ser válido e é possível com um editor de repositório que 
 
 #### Caminhos suportados configurados {#configured-supported-paths}
 
-O tipo de mixin `granite:AuthenticationRequired` e a propriedade granite:loginPath somente serão respeitados no escopo definido pelo conjunto da opção de configuração **Caminhos com Suporte** presente no **Requisito de Autenticação do Adobe Granite e Manipulador de Caminho de Logon**. Se nenhum caminho for especificado, o recurso de requisito de autenticação será completamente desabilitado. Nesse caso, o tipo de mixin ou a propriedade têm efeito quando são adicionados ou definidos para um determinado nó JCR.
+O tipo de mixin `granite:AuthenticationRequired` e a propriedade granite:loginPath só serão respeitados no escopo definido pelo conjunto da opção de configuração **Caminhos com Suporte** presente no **Requisito de Autenticação do Adobe Granite e Manipulador de Caminho de Logon**. Se nenhum caminho for especificado, o recurso de requisito de autenticação será completamente desabilitado. Nesse caso, o tipo de mixin ou a propriedade têm efeito quando são adicionados ou definidos para um determinado nó JCR.
 
 ### Mapeamento de conteúdo JCR, serviços OSGi e configurações {#mapping-of-jcr-content-osgi-services-and-configurations}
 

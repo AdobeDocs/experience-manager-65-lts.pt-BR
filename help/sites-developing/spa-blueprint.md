@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
@@ -76,7 +76,7 @@ A estrutura de conteúdo da página é armazenada no AEM. O modelo da página é
 
 Os componentes de SPA devem estar sincronizados com o modelo de página e ser atualizados de acordo com as alterações em seu conteúdo. Um padrão que usa componentes dinâmicos deve ser usado para instanciar componentes em tempo real, seguindo a estrutura do modelo de página fornecido.
 
-### Metacampos {#meta-fields}
+### Campos do Meta {#meta-fields}
 
 O modelo de página usa o Exportador de Modelo JSON, que é baseado na API [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html). Os modelos do sling exportáveis expõem a seguinte lista de campos para permitir que as bibliotecas subjacentes interpretem o modelo de dados:
 

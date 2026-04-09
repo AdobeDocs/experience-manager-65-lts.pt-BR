@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 46f191d9-b667-44e3-83e9-7988fffb0ecf
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
@@ -388,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Check-out (co) {#checkout-co}
 
-Executa uma verificação inicial de um repositório JCR no sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para verificar um subdiretório da árvore remota. É possível especificar filtros Workspace que são copiados para o diretório META-INF.
+Executa uma verificação inicial de um repositório JCR no sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para verificar um subdiretório da árvore remota. É possível especificar filtros do Workspace que são copiados para o diretório META-INF.
 
 #### Sintaxe {#syntax-2}
 
@@ -442,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo, `[CQ520_HF_%s`\|`%s]` |
 | `-v (--verbose)` | saída detalhada |
 | `-q (--quiet)` | imprime o mínimo possível |
 | `<localPaths> [<localPaths> ...]` | caminho local |

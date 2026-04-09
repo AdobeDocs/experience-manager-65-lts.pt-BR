@@ -3,9 +3,9 @@ title: Layout responsivo para suas páginas de conteúdo
 description: O Adobe Experience Manager permite criar um layout responsivo para suas páginas usando o componente de Contêiner de layout.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 59%

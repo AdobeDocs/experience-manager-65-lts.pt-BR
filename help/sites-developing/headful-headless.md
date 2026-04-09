@@ -3,8 +3,9 @@ title: Headful e Headless no AEM
 description: Os Projetos do AEM podem ser implementados em um modelo headful ou headless, mas a escolha não precisa ser binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: ba7f8ad9-807b-48d9-a4eb-da0a60d2494a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 88%
@@ -17,7 +18,7 @@ Os projetos do Adobe Experience Manager podem ser implementados em modelos headf
 
 ## Visão geral {#overview}
 
-O AEM oferece ferramentas eficientes para gerenciar a criação de conteúdo e sua entrega em uma única plataforma. É um modelo “headful” tradicional de gestão de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham na mesma plataforma para fornecer as experiências aos consumidores de conteúdo.
+O AEM oferece ferramentas eficientes para gerenciar a criação de conteúdo e sua entrega em uma única plataforma. É um modelo “headful” tradicional de gerenciamento de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham na mesma plataforma para fornecer as experiências aos consumidores de conteúdo.
 
 O AEM também pode ser usado para simplesmente gerenciar o conteúdo, permitindo que a apresentação e a entrega do conteúdo sejam gerenciadas por outra plataforma. Esse é o modelo “headless” de gerenciamento de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham em plataformas diferentes para fornecer experiência aos consumidores de conteúdo.
 
@@ -38,8 +39,8 @@ Digamos que você tem uma loja virtual para sua empresa como SPA. Nela, você te
 * **Permite que os sistemas funcionem de forma independente.**
 * **Forneça conteúdo limitado à loja virtual do AEM via GraphQL.** O conteúdo pode ser criado por autores no AEM, mas pode ser visto apenas por meio do SPA da loja virtual.
 * **Incorpore o SPA da loja virtual no AEM.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, mas não pode ser manipulado.
-* **Incorpore o SPA da loja virtual no AEM e ative pontos editáveis.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
-* **Incorpore o SPA da loja virtual no AEM e ative zonas inteiras para edição.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
+* **Incorpore o SPA da loja virtual no AEM e habilite pontos editáveis.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
+* **Incorpore o SPA da loja virtual no AEM e habilite zonas inteiras para edição.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
 
 A próxima seção explora esses níveis de integração com mais detalhes.
 
@@ -65,7 +66,7 @@ A integração de SPA se enquadra em quatro níveis no AEM.
    * Alguns conteúdos são gerenciados no AEM e outros em um sistema externo.
    * O conteúdo pode ser visualizado em contexto no AEM.
    * Conteúdo limitado pode ser editado no AEM.
-* **Nível 3: incorporar e ativar totalmente o SPA no AEM**
+* **Nível 3: incorporar e habilitar totalmente o SPA no AEM**
    * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
    * O SPA recupera esse conteúdo por meio da [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) do AEM.
    * O conteúdo pode ser visualizado em contexto no AEM.

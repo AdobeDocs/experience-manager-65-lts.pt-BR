@@ -3,8 +3,9 @@ title: Conheça as noções básicas da modelagem de conteúdo
 description: Conheça as noções básicas da modelagem de conteúdo do seu CMS headless usando fragmentos de conteúdo.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 87%
@@ -58,7 +59,7 @@ Os modelos de fragmento de conteúdo fornecem vários mecanismos que permitem de
 Um Modelo de fragmento de conteúdo descreve uma entidade.
 
 >[!NOTE]
->A funcionalidade dos fragmentos de conteúdo deve estar ativada no navegador de configuração para que você possa criar novos modelos.
+>A funcionalidade dos fragmentos de conteúdo deve estar habilitada no navegador de configuração para que você possa criar novos modelos.
 
 >[!TIP]
 >
@@ -84,7 +85,7 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Número
 * Booleano
 * Data e hora
-* Lista discriminada
+* Enumeração
 * Tags
 * Referência de conteúdo
 * Referência de fragmento
@@ -151,7 +152,7 @@ Agora que você aprendeu o básico, o próximo passo é [Saber mais sobre como c
 
 ## Recursos adicionais {#additional-resources}
 
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
    * [Modelos de fragmento de conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
 

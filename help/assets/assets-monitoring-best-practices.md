@@ -2,12 +2,13 @@
 title: 'Práticas recomendadas para monitorar a implantação [!DNL Assets] '
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua implantação [!DNL Adobe Experience Manager] após sua implantação.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -130,7 +131,7 @@ Agentes de replicação
 Contador de sessão
 
 * MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;Estatísticas do OakRepository&quot;,type*=&quot;Estatísticas do Repositório&quot;
+* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;Estatísticas do OakRepository&quot;,type*=&quot;RepositoryStats&quot;
 * Instâncias: todos os servidores
 * Limite de alarme: quando as sessões abertas excedem a linha de base em mais de 50%.
 * Definição do alarme: As sessões podem ser abertas através de um código e nunca fechar. Isso pode acontecer lentamente com o tempo e eventualmente causar vazamentos de memória no sistema. Embora o número de sessões deva flutuar em um sistema, ele não deve aumentar continuamente.
@@ -172,7 +173,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
    * Limite de alarme: quando o status não é OK
    * Definição do alarme: uma ou mais consultas são executadas lentamente no sistema. Verifique o atributo de log para obter mais informações sobre as consultas que causaram o problema.
 
-* Grupos ativos
+* Pacotes ativos
 
    * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
@@ -193,7 +194,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
 No processo de monitoramento, se você encontrar problemas, veja a seguir algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com [!DNL Experience Manager] implantações:
 
 * Se estiver usando TarMK, execute a compactação Tar com frequência. Para obter mais detalhes, consulte [Manter o repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR).
+* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Verifique nos logs se há referências a consultas não indexadas, percursos de árvore ou percursos de índice. Isso indica consultas não indexadas ou indexadas inadequadamente. Para obter as práticas recomendadas de otimização do desempenho de consulta e indexação, consulte [Práticas recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Use o console de workflows para verificar se seus workflows funcionam conforme esperado. Se possível, condensar vários workflows em um único workflow.

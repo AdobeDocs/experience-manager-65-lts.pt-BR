@@ -8,8 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -421,7 +422,7 @@ Componentes herdados podem ser o resultado de vários cenários, incluindo:
 * [Lançamentos](/help/sites-authoring/launches.md) (quando com base na live copy).
 * Componentes específicos, como o Sistema de parágrafo herdado no Geometrixx.
 
-Você pode cancelar (e depois reativar) a herança. Dependendo do componente, isso pode estar disponível em:
+Você pode cancelar (e depois reabilitar) a herança. Dependendo do componente, isso pode estar disponível em:
 
 * **Live Copy**
 

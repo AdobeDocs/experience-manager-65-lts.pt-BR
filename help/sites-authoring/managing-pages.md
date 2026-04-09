@@ -3,9 +3,9 @@ title: Criação e organização de páginas com o AEM
 description: Saiba como criar e gerenciar páginas com o Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 62%
@@ -160,7 +160,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 >[!NOTE]
 >
->Se configurado na instância,[&#x200B; os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
+>Se configurado na instância,[ os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 
@@ -382,8 +382,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 As ações de movimentação de página são sempre processadas de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida.
 
 * O usuário deve definir quando a operação assíncrona deve ser executada
-   * **Agora** a execução do trabalho assíncrono começa imediatamente.
-   * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
+   * **Agora** a execução do processo assíncrono começa imediatamente.
+   * **Mais tarde** permite que o usuário defina quando o processo assíncrono será iniciado.
 
   ![Mover página assíncrona](assets/asynchronous-page-move.png)
 

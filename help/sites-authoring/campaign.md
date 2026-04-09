@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -197,7 +198,7 @@ Você pode visualizar como o informativo será exibido e visualizar a personaliz
 
    >[!NOTE]
    >
-   >Se você estiver usando o Adobe Campaign Standard e o modelo de exemplo, dois blocos de personalização que exibem conteúdo inicial - **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;** e **&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** - exibirão erros ao importar o conteúdo durante a entrega. Você pode ajustá-los selecionando os blocos correspondentes usando o seletor de blocos de personalização.
+   >Se você estiver usando o Adobe Campaign Standard e o modelo de amostra, dois blocos de personalização que exibem conteúdo inicial - **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;** e **&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** - gerarão erros ao importar o conteúdo durante a entrega. Você pode ajustá-los selecionando os blocos correspondentes usando o seletor de blocos de personalização.
 
 1. Para visualizar a personalização, abra o ContextHub clicando/tocando no ícone correspondente na barra de ferramentas. As tags de campo de personalização agora são substituídas pelos dados iniciais da persona selecionada. Veja como as variáveis se adaptam ao alternar perfis no ContextHub.
 
@@ -259,7 +260,7 @@ Isso permite entregar o conteúdo. Você verá se um boletim informativo está v
 
 Para vincular uma página criada no AEM com um email da Adobe Campaign:
 
-1. Crie um email com base em um template de email específico do AEM. Consulte [Criação de emails no Adobe Campaign Standard](https://helpx.adobe.com/br/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
+1. Crie um email com base em um template de email específico do AEM. Consulte [Criação de emails no Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

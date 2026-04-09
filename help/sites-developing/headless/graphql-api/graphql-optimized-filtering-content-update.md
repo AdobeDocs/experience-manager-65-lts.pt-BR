@@ -3,11 +3,12 @@ title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada do GraphQL no Adobe Experience Manager para entrega de conteúdo headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 40211033-7084-4117-a3e2-73e504283266
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 37%
+source-wordcount: '250'
+ht-degree: 38%
 
 ---
 
@@ -33,8 +34,8 @@ Para executar o procedimento, siga as etapas abaixo:
 
 1. Na caixa de diálogo do, defina esses dois parâmetros da seguinte maneira:
 
-   * **ContentFragmentMigration:Enabled** : `1`
-   * **MigraçãoDeFragmentoDeConteúdo:Impor** : `1`
+   * **MigraçãoDeFragmentoDeConteúdo:Enabled** : `1`
+   * **MigraçãoDeFragmentoDeConteúdo:Enforce** : `1`
 
 1. **Salve** as especificações - o procedimento de atualização é iniciado.
 
@@ -44,8 +45,8 @@ Para executar o procedimento, siga as etapas abaixo:
 
    Na caixa de diálogo da **Configuração do trabalho de migração de fragmento de conteúdo**, defina estes dois parâmetros da seguinte maneira:
 
-   * **ContentFragmentMigration:Enabled** : `0`
-   * **MigraçãoDeFragmentoDeConteúdo:Impor** : `0`
+   * **MigraçãoDeFragmentoDeConteúdo:Enabled** : `0`
+   * **MigraçãoDeFragmentoDeConteúdo:Enforce** : `0`
 
 ## Limitações {#limitations}
 

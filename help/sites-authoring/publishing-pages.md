@@ -3,9 +3,9 @@ title: Publicação de páginas de conteúdo
 description: Saiba como publicar páginas de conteúdo no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 63%
@@ -88,8 +88,8 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console do Sites, há duas opções para publicação:
 
-* [Publicação rápida   &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gerenciar publicação   &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicação rápida   ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gerenciar publicação   ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Publicação rápida    {#quick-publish}
 

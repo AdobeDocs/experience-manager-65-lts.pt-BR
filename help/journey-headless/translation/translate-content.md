@@ -3,8 +3,9 @@ title: Traduzir conteúdo
 description: Use o conector e as regras de tradução para traduzir o seu conteúdo headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 66%
@@ -152,7 +153,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 ### Usar um projeto de tradução criado manualmente {#using-manual-project}
 
-Ao criar manualmente um projeto de tradução, o AEM cria as tarefas necessárias, mas não seleciona automaticamente qualquer conteúdo para incluir nessas tarefas. Isso permite que o gerente do projeto de tradução tenha flexibilidade para escolher qual conteúdo traduzir.
+Ao criar manualmente um projeto de tradução, o AEM cria os processos necessários, mas não seleciona automaticamente qualquer conteúdo a ser incluído. Isso permite que o gerente do projeto de tradução tenha flexibilidade para escolher qual conteúdo traduzir.
 
 Para adicionar conteúdo a uma tarefa de tradução:
 
@@ -166,9 +167,9 @@ Para adicionar conteúdo a uma tarefa de tradução:
    ![Navegador de caminho](assets/path-browser.png)
 
 1. Clique em **Selecionar** para adicionar o conteúdo selecionado ao trabalho.
-1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar cópia de idioma**.
+1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar cópia no idioma de destino**.
 
-   ![Criar cópia de idioma](assets/translate-copy-master.png)
+   ![Criar cópia no idioma de destino](assets/translate-copy-master.png)
 
 1. O conteúdo agora está incluído na tarefa.
 

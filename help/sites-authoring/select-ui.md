@@ -3,9 +3,9 @@ title: Seleção da interface do usuário no AEM
 description: Configure qual interface você usa para trabalhar no Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: d8057cf9ee86c2ec9c1f556fa7c18f98797fe982
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Isso define a interface como o padrão ao editar páginas, embora o usuário pos
 * [Alternando para a interface clássica da sessão atual](#switching-to-classic-ui-for-the-current-session)
 Alterna para a interface clássica da sessão atual.
 
-* No caso da criação de [&#x200B; páginas, o sistema faz determinadas substituições na relação com a interface &#x200B;](#ui-overrides-for-the-editor).
+* No caso da criação de [ páginas, o sistema faz determinadas substituições na relação com a interface ](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >

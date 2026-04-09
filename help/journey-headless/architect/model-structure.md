@@ -3,8 +3,9 @@ title: Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu Headless CMS usando Modelos de fragmentos de conteúdo.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
@@ -39,7 +40,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 >See Additional Resources - Content Fragments in the Configuration Browser
 -->
 
-## Criar Modelos de fragmentos do conteúdo {#creating-content-fragment-models}
+## Criar Modelos de fragmentos de conteúdo {#creating-content-fragment-models}
 
 Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas > Assets > Modelos de fragmento de conteúdo.
 
@@ -47,7 +48,7 @@ Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutur
 
 Após selecionar isso, navegue até o local do modelo e selecione **Criar**. Aqui você pode inserir vários detalhes principais.
 
-A opção **Ativar modelo** é ativada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de Fragmentos de conteúdo) assim que você salvá-lo. Você pode desativá-la se desejar — há oportunidades depois para ativar (ou desativar) um modelo existente.
+A opção **Habilitar modelo** é habilitada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de Fragmentos de conteúdo) assim que você salvá-lo. Você pode desabilitá-la se desejar — há oportunidades depois para habilitar (ou desabilitar) um modelo existente.
 
 ![Criar Modelo de fragmento de conteúdo](/help/assets/content-fragments/assets/cfm-models-02.png)
 
@@ -87,7 +88,7 @@ Seus autores de conteúdo não veem os tipos de dados e propriedades reais usado
 
 O gerenciamento dos modelos de fragmentos de conteúdo envolve:
 
-* Ativá-los (ou desativá-los): isso os torna disponíveis para autores ao criar Fragmentos de conteúdo.
+* Habilitá-los (ou desabilitá-los): isso os torna disponíveis para autores ao criar Fragmentos de conteúdo.
 * Excluir: a exclusão sempre é necessária, mas é preciso estar ciente de excluir um modelo que já é usado para os Fragmentos de conteúdo, em particular os fragmentos que já foram publicados.
 
 ## Publicação {#publishing}
@@ -116,11 +117,11 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 
-   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Definição do Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Ativar ou desativar um Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Habilitar ou desabilitar um Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
       * [Permitir Modelos de fragmentos de conteúdo na pasta de Ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 

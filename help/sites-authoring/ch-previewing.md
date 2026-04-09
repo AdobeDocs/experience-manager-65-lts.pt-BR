@@ -7,8 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 22c0af67-719e-41da-a924-c3d18d56d970
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 24%
@@ -30,7 +31,7 @@ O ContextHub instala vários modos de interface e módulos de interface do usuá
 
 ## Revelação da barra de ferramentas do ContextHub {#revealing-the-contexthub-toolbar}
 
-A barra de ferramentas do ContextHub está disponível no modo Visualização. A barra de ferramentas está disponível somente nas instâncias do autor e somente se o administrador a tiver ativado.
+A barra de ferramentas do ContextHub está disponível no modo Visualização. A barra de ferramentas está disponível somente nas instâncias de criação e somente se o administrador a tiver habilitado.
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 

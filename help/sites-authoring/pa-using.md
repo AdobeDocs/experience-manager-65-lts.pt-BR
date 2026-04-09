@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '640'
 ht-degree: 4%
 
 ---
@@ -73,7 +74,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 
 ### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console Sites para investigar mais a eficácia da página.
+Abra o [Insight de Conteúdo](/help/sites-authoring/content-insights.md) no console de Sites para investigar mais a eficácia da página.
 
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
@@ -151,7 +152,7 @@ A caixa de diálogo **Configurações do Activity Map** fornece um intervalo de 
    * Exibição (tipo e número de links)
    * Ocultar as sobreposições para links que não receberam visitas
 
-* Em tempo real
+* Ativo
 
    * Exibir os principais (ganhadores ou perdedores)
    * Excluir % inferior

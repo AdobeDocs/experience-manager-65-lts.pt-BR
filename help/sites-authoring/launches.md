@@ -8,11 +8,11 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '896'
 ht-degree: 69%
 
 ---
@@ -25,7 +25,7 @@ Uma *Inicialização* é criada para permitir que você faça alterações na pr
 
 Você cria uma *Inicialização* e, depois de editar e atualizar as páginas da *Inicialização*, *promove* de volta para a *Source*. Você pode então ativar estas *páginas do Source* (nível superior). A promoção duplica o conteúdo do lançamento de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
 
-Por exemplo, as páginas de produtos sazonais da loja online são atualizadas trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar um lançamento das páginas da Web apropriadas. Ao longo do trimestre, as seguintes alterações são acumuladas na cópia do lançamento:
+Por exemplo, as páginas do produtos sazonais da loja online são atualizadas trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar um lançamento das páginas da Web apropriadas. Ao longo do trimestre, as seguintes alterações são acumuladas na cópia do lançamento:
 
 * Alterações nas páginas de origem que ocorrem como resultado de tarefas de manutenção normais. Essas alterações são duplicadas automaticamente nas páginas de lançamento.
 * Edições realizadas diretamente nas páginas de lançamento como preparação para o próximo trimestre.
@@ -73,7 +73,7 @@ Os lançamentos permitem:
 
    * Automaticamente - isso envolve o seguinte:
 
-      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
+      * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
 
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
       * Se o sinalizador **Pronto para Produção** estiver definido, a inicialização será promovida automaticamente para as páginas de produção na **Inicialização**(**Ao Vivo**) **data** especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\

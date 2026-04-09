@@ -8,17 +8,18 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 50f2f9f186310bcdec471ec96937110ec17aeca0
+role: User,Admin,Developer
+exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '4643'
-ht-degree: 74%
+source-wordcount: '4650'
+ht-degree: 75%
 
 ---
 
 # Criação de modelos de páginas  {#creating-page-templates}
 
-Ao criar uma página, você deve selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
+Ao criar uma página, é necessário selecionar um modelo, que é usado como base para criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
 
 Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
@@ -198,7 +199,7 @@ Para exibir e/ou editar as propriedades:
 
 >[!NOTE]
 >
->O status de um modelo (rascunho, ativado ou desativado) é exibido no console.
+>O status de um modelo (rascunho, habilitado ou desabilitado) é exibido no console.
 
 #### Imagem em miniatura do modelo {#template-thumbnail-image}
 
@@ -220,7 +221,7 @@ Para definir a miniatura do modelo:
 
 Para poder usar um modelo ao criar uma página é necessário:
 
-* [Ativar o modelo](#enablingatemplate) para disponibilizá-lo para o uso na criação de páginas.
+* [Habilitar o modelo](#enablingatemplate) para disponibilizá-lo para o uso na criação de páginas.
 * [Permitir o modelo](#allowingatemplate) para especificar as ramificações de conteúdo nas quais o modelo pode ser usado.
 
 #### Habilitar um modelo - Autor do modelo {#enabling-a-template-template-author}
@@ -237,7 +238,7 @@ Um modelo pode ser habilitado ou desabilitado para torná-lo disponível ou indi
 
 >[!NOTE]
 >
->O status de um modelo (rascunho, ativado ou desativado) é exibido no console.
+>O status de um modelo (rascunho, habilitado ou desabilitado) é exibido no console.
 
 #### Ativar um modelo - Autor {#allowing-a-template-author}
 
@@ -455,7 +456,7 @@ No modo **Estrutura** do editor de modelo:
 
   Para remover uma configuração, clique no botão **Excluir** localizado à direita da configuração.
 
-  Para remover uma configuração, clique no botão **&#x200B; Excluir &#x200B;**.
+  Para remover uma configuração, clique no botão ** Excluir **.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -473,7 +474,7 @@ No modo **Estrutura** do editor de modelo:
 
   >[!NOTE]
   >
-  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política e Propriedades (Contêiner de Layout)**
 

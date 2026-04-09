@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4923'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Este tutorial descreve como:
 1. Crie os seguintes componentes para usar em suas páginas:
 
    * Navegação superior
-   * Listar secundários
+   * Listar filhos
    * Logotipo
    * Imagem
    * Texto-imagem
@@ -329,7 +329,7 @@ Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo
 
 1. No CRXDE Lite, crie o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar &#x200B;** depois **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar **depois **Criar arquivo**.
 
    1. Na janela, digite `left.jsp` como o **Nome** e clique em **OK**.
 
@@ -694,7 +694,7 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página que
    1. Selecione o nó /content/mywebsite/en/products/product2/jcr:content.
    1. Na guia **Propriedades**, insira os seguintes valores:
 
-      * Nome: jcr:descrição
+      * Nome: jcr:description
       * Tipo: String
       * Valor: esta é uma descrição do Produto 2!.
 
@@ -1172,7 +1172,7 @@ Esta seção descreve como criar o script de imagem.
 
 1. Salve as alterações.
 
-#### Criação do nó Image cq:editConfig {#creating-the-image-cq-editconfig-node}
+#### Criando o Nó da Imagem cq:editConfig {#creating-the-image-cq-editconfig-node}
 
 O tipo de nó `cq:editConfig` permite configurar determinados comportamentos de componentes ao editar suas propriedades.
 
@@ -1191,13 +1191,13 @@ Nesta seção, você usa um nó cq:editConfig para permitir que você arraste at
 1. No nó cq:dropTargets, crie um nó da seguinte maneira:
 
    * Nome: imagem.
-   * Tipo: nt:não estruturado.
+   * Tipo: nt:unstructured.
 
 1. No CRXDE, defina as propriedades da seguinte maneira:
 
 | Nome | Tipo | Valor |
 |---|---|---|
-| Aceitar | String | image/(gif | jpeg | png) |
+| Aceitar | String | image/(gif\|jpeg\|png) |
 | grupos | String | mídia |
 | propertyName | String | ./imageReference |
 
@@ -1530,6 +1530,6 @@ Para este componente, você pode definir vários parâmetros nos modos de ediç�
    ```
 
 1. Salve as alterações.
-1. No navegador, recarregue a página **&#x200B; Produtos &#x200B;**. A página inteira se parece com o seguinte:
+1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

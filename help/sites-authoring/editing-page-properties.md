@@ -3,10 +3,10 @@ title: Editar as propriedades da página
 description: Defina as propriedades necessárias para uma página no Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 37%
@@ -81,7 +81,7 @@ Deixe esses campos (**Momento da ativação** e **Momento da desativação**) va
 >
 >Se quiser publicar conteúdo novo com todos os fluxos de trabalho associados ou remover totalmente (cancelar a publicação do conteúdo) do site, considere [gerenciar sua publicação.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### URL do Vanity {#vanity-url}
+#### URL personalizado {#vanity-url}
 
 Insira um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo.
 
@@ -89,24 +89,24 @@ Por exemplo, se a URL personalizada estiver definida como `welcome` para a pági
 
 >[!CAUTION]
 >
->URLs personalizadas:
+>URLs personalizados:
 >
 >* Deve ser única.
 >* Não é compatível com padrões de regex.
 >* Não deve ser definido como uma página existente.
 
-Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Adicionar** - Toque ou clique para adicionar uma URL personalizada.
 * **Remover** - Toque ou clique para remover uma URL personalizada.
   **Redirecionar URL personalizado** - Indica se você deseja que a página use a URL personalizado ou redirecione para a URL real da página
 
-### Avançado  {#advanced}
+### Avançado {#advanced}
 
 #### Configurações {#settings}
 
 * **Idioma** - o idioma da página
-* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
+* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia no idioma de destino
 * **Redirecionar** - indica a página de redirecionamento automático para a página atual. 
 * **Design** - Indica o [design](/help/sites-developing/designer.md) a ser usado para esta página.
 * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página
@@ -117,7 +117,7 @@ Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [
 
 #### Configuração {#configuration}
 
-* **Herdado de &lt;*caminho*>** - Habilitar/desabilitar a herança da **Configuração da Nuvem** para a página
+* **Herdado do &lt;*caminho*>** - Habilitar/desabilitar a herança da **Configuração da Nuvem** da página
 * **Configuração na nuvem** - o caminho para a configuração
 
 #### Configurações do modelo {#templates}

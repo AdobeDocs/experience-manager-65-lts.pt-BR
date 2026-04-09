@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 95cc8c29-7494-4326-934d-6def59875d71
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
@@ -137,7 +137,7 @@ Nesse caso, o componente de cartão já foi criado no projeto do AEM que contém
 
 Em seguida, é possível adicioná-lo ao SPA e recuperar o conteúdo.
 
-1. Crie um componente correspondente no SPA para isso. Verifique se os componentes secundários estão mapeados para os tipos de recursos correspondentes do AEM no projeto de SPA. Neste exemplo, usamos os mesmos componentes `AEMText` e `AEMImage` que foram detalhados [&#x200B; no caso anterior.](#component-does-not-exist)
+1. Crie um componente correspondente no SPA para isso. Verifique se os componentes secundários estão mapeados para os tipos de recursos correspondentes do AEM no projeto de SPA. Neste exemplo, usamos os mesmos componentes `AEMText` e `AEMImage` que foram detalhados [ no caso anterior.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -163,7 +163,7 @@ Em seguida, é possível adicioná-lo ao SPA e recuperar o conteúdo.
     itemPath='root/responsivegrid' />
    ```
 
-1. Adicione o componente `wknd-spa/components/imagecard` criado aos componentes permitidos para o componente de contêiner [&#x200B; no modelo de página.](/help/sites-authoring/templates.md)
+1. Adicione o componente `wknd-spa/components/imagecard` criado aos componentes permitidos para o componente de contêiner [ no modelo de página.](/help/sites-authoring/templates.md)
 
 Agora, o componente `imagecard` pode ser adicionado diretamente ao contêiner no editor do AEM.
 
@@ -181,4 +181,4 @@ Se o conteúdo existir no AEM, ele poderá ser incluído diretamente no SPA forn
 
 ![Caminho composto na estrutura do nó](assets/composite-path.png)
 
-O componente `AEMCard` é o mesmo definido [&#x200B; no caso de uso anterior.](#content-does-not-exist) Aqui o conteúdo definido no local acima no projeto do AEM está incluído no SPA.
+O componente `AEMCard` é o mesmo definido [ no caso de uso anterior.](#content-does-not-exist) Aqui o conteúdo definido no local acima no projeto do AEM está incluído no SPA.

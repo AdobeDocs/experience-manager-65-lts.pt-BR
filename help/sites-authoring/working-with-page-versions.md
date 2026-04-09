@@ -3,9 +3,9 @@ title: Trabalhar com versões de páginas de conteúdo
 description: Criar, comparar e restaurar versões de uma página no Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 62%
@@ -242,4 +242,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi criado como ferramenta para auxiliar os autores a compreender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi criado como ferramenta para auxiliar os autores a compreender e criar conteúdo. Ele não se destina a ser um log de auditoria ou a fins legais.

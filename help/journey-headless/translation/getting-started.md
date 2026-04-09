@@ -3,8 +3,9 @@ title: Introdução à tradução do AEM headless
 description: Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 85%
@@ -83,12 +84,11 @@ Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessári
 1. Navegue até **Ferramentas** > **Assets** > **Modelos de fragmentos de conteúdo**.
 1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Clique na pasta do projeto.
 1. Os modelos estão listados. Clique no modelo para ver os detalhes.
-   ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
+   ![Modelos de fragmentos de conteúdo](assets/content-fragment-models.png)
 1. O **Editor do modelo de fragmento de conteúdo** abre.
    1. A coluna esquerda contém os campos do modelo. Essa coluna nos interessa.
    1. A coluna direita contém os campos que podem ser adicionados ao modelo. Essa coluna pode ser ignorada.
-
-      ![Editor de modelos de fragmentos do conteúdo](assets/content-fragment-model-editor.png)
+      ![Editor de modelos de fragmentos de conteúdo](assets/content-fragment-model-editor.png)
 1. Clique em um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados na coluna direita.
    ![Detalhe do Editor de modelo de fragmento de conteúdo](assets/content-fragment-model-editor-detail.png)
 
@@ -195,4 +195,4 @@ Embora seja recomendável que você passe para a próxima parte da jornada de tr
 * [Gerenciamento de projetos de tradução](/help/sites-administering/tc-manage.md) - Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
 * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

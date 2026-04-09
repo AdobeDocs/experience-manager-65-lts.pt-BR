@@ -9,8 +9,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 76%
@@ -22,7 +23,7 @@ ht-degree: 76%
 É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
 * Promover somente a página atual ou todo o lançamento.
-* Promover as páginas secundárias da página atual.
+* Promover as páginas filhas da página atual.
 * Promover o lançamento completo ou somente as páginas alteradas.
 * Excluir o lançamento após promovê-lo.
 
@@ -155,6 +156,6 @@ Use modelos de fluxo de trabalho para executar o processamento em massa das pág
 
 Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configure um iniciador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
 
-Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
+Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um inicializador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![Inicializador do fluxo de trabalho](assets/chlimage_1-108.png)

@@ -3,8 +3,9 @@ title: Configurar regras de tradução
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 94534336-1e1f-40eb-8364-9358c1420616
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 68%
@@ -77,7 +78,6 @@ Na interface de usuário da **Configuração de tradução**, há várias opçõ
    1. Clique em **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
    1. Clique em **Salvar**.
-
       ![Adicionar propriedade](assets/add-property.png)
 
 Agora, você configurou as regras de tradução.

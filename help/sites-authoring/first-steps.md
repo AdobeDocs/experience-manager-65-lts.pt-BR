@@ -3,9 +3,9 @@ title: Primeiras etapas para autores ao criar conteúdo no AEM
 description: Explore os principais conceitos de criação de conteúdo no AEM 6.5 LTS. Você também encontrará informações sobre o uso de tags, modelos e outros recursos da página.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 12%
@@ -51,7 +51,7 @@ Se sua instância já tem páginas existentes ou se você mesmo criou uma nova p
 
 * [Desfazer e refazer edições de página](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando o Modo de Visualização](/help/sites-authoring/editing-content.md#preview-mode) (para ver como será sua aparência quando publicado)
-* [Bloquear uma página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear uma página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicar uma página {#publishing-a-page}
 

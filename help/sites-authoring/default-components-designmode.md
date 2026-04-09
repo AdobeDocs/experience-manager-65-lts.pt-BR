@@ -3,8 +3,9 @@ title: Configuração de componentes padrão no modo de design
 description: Configuração de componentes do Adobe Experience Manager no modo de design.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: ac26c0163309b6cb6c0cfde2098a8cc05955d03f
+role: User,Admin,Developer
+exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 10%

@@ -3,8 +3,9 @@ title: Publicar conteúdo traduzido
 description: Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atualizações de conteúdo.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,User,Leader
+exl-id: 1543c167-ca69-4481-835f-932d93850a53
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 77%
@@ -45,7 +46,7 @@ Portanto, o AEM é fisicamente separado em duas instâncias.
 1. A instância do **autor** é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
 1. A instância de **publicação** é o sistema que entrega o conteúdo para os consumidores.
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
+Depois que o conteúdo é criado na instância de criação, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
 
 ## Publicar seu conteúdo traduzido {#publishing}
 

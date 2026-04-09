@@ -3,9 +3,9 @@ title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 73fe62f4-a3a6-4cfa-9b31-517653c05269
-source-git-commit: aba5065cf209caf085efe85ca7e0ca9ff1b5d9a2
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 76%
@@ -22,9 +22,9 @@ As tags são um método rápido e fácil de classificar conteúdo em um site. As
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
 1. **Organização do conteúdo** - a marcação facilita a vida dos autores, pois eles podem organizar rapidamente o conteúdo com pouco esforço.
-1. **Organização de tags** - enquanto tags organizam conteúdo, taxonomias/espaços de nome hierárquicos organizam tags.
+1. **Organização de tags** - enquanto tags organizam conteúdo, taxonomias/namespaces hierárquicos organizam tags.
 1. **Tags profundamente organizadas** - com a capacidade de criar tags e subtags, é possível expressar sistemas taxonômicos inteiros, abrangendo termos, subtermos e seus relacionamentos. É possível criar uma segunda (ou terceira) hierarquia de conteúdo em paralelo à oficial.
-1. **Marcação controlada** - a marcação pode ser controlada com a aplicação de permissões a tags e/ou espaços de nome para controlar a criação e a aplicação de tags.
+1. **Marcação controlada** - a marcação pode ser controlada com a aplicação de permissões a tags e/ou namespaces para controlar a criação e a aplicação de tags.
 1. **Marcação flexível** - tags têm muitos nomes e faces: tags, termos de taxonomia, categorias, rótulos e muito mais. Elas são flexíveis em seu modelo de conteúdo e na maneira como podem ser usadas. Por exemplo, ao estruturar dados demográficos de direcionamento, categorizar e classificar conteúdo ou criar uma hierarquia de conteúdo secundário.
 1. **Pesquisas aprimoradas** - o componente de pesquisa padrão no AEM inclui amplamente tags criadas e tags aplicadas, às quais é possível aplicar filtros para restringir os resultados apenas àqueles que são relevantes.
 1. **Habilitação de SEO** - aplicadas como propriedades de página aparecerão automaticamente nas metatags da página, tornando-a visível para os mecanismos de pesquisa.

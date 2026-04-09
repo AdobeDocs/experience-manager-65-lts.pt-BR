@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de públicos
+title: Gerenciamento de públicos-alvos
 description: O console Públicos permite criar, organizar e gerenciar públicos para sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou do Client Context
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,15 +8,16 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 532d8289-a266-4556-ab59-855460c377cb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 63%
 
 ---
 
-# Gerenciamento de públicos{#managing-audiences}
+# Gerenciamento de públicos-alvos{#managing-audiences}
 
 O console Públicos permite criar, organizar e gerenciar públicos para sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou do Client Context:
 
@@ -50,7 +51,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
 
    >[!NOTE]
    >
-   >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público recém-criado.
+   >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público-alvo recém-criado.
 
 Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte a [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md) documentação.
 
@@ -64,7 +65,7 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 >[!NOTE]
 >
->Se você não vir **Criar público-alvo &#x200B;** no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar público-alvo **no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
@@ -72,7 +73,7 @@ Para criar um público-alvo do Adobe Target:
 
    ![captura de tela_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. No console Públicos-alvo, clique em **Criar** e **&#x200B; Criar público-alvo**.
+1. No console Públicos-alvo, clique em **Criar** e** Criar público-alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -95,7 +96,7 @@ Para criar um público-alvo do Adobe Target:
 | **Páginas do site** | Direcione visitantes que estão em uma página específica ou têm um parâmetro específico de mbox. | Consulte [Documentação das páginas do site](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=pt-BR) no Adobe Target. |
 | **Navegador** | Você pode direcionar os usuários que utilizam um determinado navegador ou determinadas opções de navegador quando visitam sua página. | Consulte [Documentação das opções do navegador](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=pt-BR) no Adobe Target. |
 | **Perfil do visitante** | Direcione visitantes que atendem a parâmetros de perfil específicos. | Consulte [Documentação do perfil do visitante](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=pt-BR) no Adobe Target. |
-| **Fontes de tráfego** | Direcione visitantes com base no mecanismo de pesquisa ou página de aterrissagem de referência para o site. | Consulte [Documentação das origens de tráfego](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=pt-BR) no Adobe Target. |
+| **Fontes de tráfego** | Direcione visitantes com base no mecanismo de pesquisa ou página de destino de referência para o site. | Consulte [Documentação das origens de tráfego](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=pt-BR) no Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 

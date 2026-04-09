@@ -4,8 +4,9 @@ description: Saiba mais sobre os procedimentos para lidar com solicitações do 
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer,Leader,User
+exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 >
 >O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR e o CCPA.
 
-O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigor em maio de 2018. Consulte a [página do GDPR no Centro de privacidade da Adobe](https://business.adobe.com/br/privacy/general-data-protection-regulation.html).
+O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigor em maio de 2018. Consulte a [página do GDPR no Centro de privacidade da Adobe](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -34,12 +35,12 @@ Para algumas plataformas de comércio, o Adobe armazena informações de perfil 
 
 ## Lidar com solicitações do GDPR para o AEM Commerce {#handling-gdpr-requests-for-aem-commerce}
 
-Para a integração do Salesforce Commerce Cloud, o AEM Commerce não armazena informações relevantes do GDPR. Encaminhe a solicitação para a [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
+Para a integração do Salesforce Commerce Cloud, a AEM Commerce não armazena informações relevantes do GDPR. Encaminhe a solicitação para a [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 
 Para as integrações hybris e HCL WebSphere® Commerce, há alguns dados no AEM. Use as [instruções do GDPR da Plataforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) e considere estas perguntas:
 
 1. **Onde meus dados são armazenados/usados?** Informações de perfil de usuário em cache, como nome, identificador de usuário de comércio, token, senha e dados de endereço, conforme mostrado no AEM.
-1. **Com quem compartilho os dados do GDPR cobertos?** As atualizações de dados relevantes ao GDPR no AEM Commerce não são armazenadas (exceto as informações de perfil relevantes, como mencionado acima), mas retornam por proxy para a plataforma de comércio.
+1. **Com quem compartilho os dados do GDPR cobertos?** As atualizações de dados relevantes ao GDPR na AEM Commerce não são armazenadas (exceto as informações de perfil relevantes, como mencionado acima), mas retornam por proxy para a plataforma de comércio.
 1. **Como excluir meus dados de usuário**? Exclua o perfil de usuário no AEM e chame a exclusão de usuário na plataforma de comércio.
 
 >[!NOTE]

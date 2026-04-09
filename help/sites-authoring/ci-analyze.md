@@ -1,6 +1,6 @@
 ---
 title: Análise do desempenho da página
-description: Use a página Content Insight para analisar o desempenho da página que você está criando
+description: Use a página Insight de conteúdo para analisar o desempenho da página que você está criando
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,8 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 075c4150-e7e2-4374-afe0-31855bffe438
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Análise do desempenho da página{#analyzing-page-performance}
 
-Abra a página [Content Insight](/help/sites-authoring/content-insights.md) para analisar o desempenho da página que você está criando. Configure o período do relatório para focalizar sua análise.
+Abra a página [Insight de Conteúdo](/help/sites-authoring/content-insights.md) para analisar o desempenho da página que você está criando. Configure o período do relatório para focalizar sua análise.
 
 ## Abrindo o Analytics e o Recommendations em uma página {#opening-analytics-and-recommendations-for-a-page}
 
@@ -40,15 +41,15 @@ Altere os seguintes aspectos relacionados ao tempo dos relatórios de análise:
 * O período no qual o relatório será gerado.
 * A granularidade dos dados.
 
-As ferramentas para alterar os aspectos relacionados ao tempo dos relatórios aparecem na parte superior da página Content Insight. ![chlimage_1-126](assets/chlimage_1-126.png)
+As ferramentas para alterar os aspectos relacionados ao tempo dos relatórios aparecem na parte superior da página Insight de conteúdo. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### Alteração do Período de Geração de Relatórios {#changing-the-reporting-period-1}
 
-Altere o período de geração de relatório da página Content Insight para focalizar sua análise da atividade da página em um período específico. Quando você altera o período do relatório, os relatórios são atualizados automaticamente. A área sombreada no período representa o período do relatório. As datas no período aumentam da esquerda para a direita.
+Altere o período de geração de relatórios da página Insight de conteúdo para focalizar sua análise da atividade da página em um período específico. Quando você altera o período do relatório, os relatórios são atualizados automaticamente. A área sombreada no período representa o período do relatório. As datas no período aumentam da esquerda para a direita.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Para alterar o período de geração de relatório de uma página de Content Insight:
+Para alterar o período de geração de relatórios de uma página do Insight de conteúdo:
 
 1. Se o período de tempo não for exibido na parte superior da página, clique no ícone Alternar período de tempo.
 

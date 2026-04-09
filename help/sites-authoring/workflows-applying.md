@@ -8,8 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 8354eccd-4f71-45bb-9bab-8f756b9ce083
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 82%
@@ -120,11 +121,11 @@ Você pode especificar detalhes:
       * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
 Uma caixa de diálogo é aberta, permitindo que você refine a seleção de acordo com:
 
-         * Incluir somente tarefas derivadas imediatas.
+         * Incluir somente filhos imediatas.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
 
-        As tarefas derivadas especificadas são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
+        Os filhos especificados são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * A opção **Remover seleção** remove o recurso do fluxo de trabalho.
 

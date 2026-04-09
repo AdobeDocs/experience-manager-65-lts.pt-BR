@@ -3,18 +3,18 @@ title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 26%
 
 ---
 
-
 # Projetos {#projects}
 
-Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que podem ser associados a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
+Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que podem ser associados a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 Como usuário, você pode:
 
@@ -139,7 +139,7 @@ O bloco **Informações do Projeto** fornece informações gerais sobre o projet
 
 ![Bloco de informações do projeto](assets/project-tile-info.png)
 
-### Tarefa de tradução {#translation-job}
+### Trabalho de tradução {#translation-job}
 
 O bloco **Trabalho de Tradução** é onde você inicia uma tradução e também onde você vê o status das suas traduções.
 
@@ -236,4 +236,4 @@ Para obter mais detalhes sobre o uso de projetos, consulte os seguintes document
 * [Gerenciamento de projetos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Trabalhar com tarefas](/help/sites-authoring/task-content.md)
 * [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md)
-* [Integração do Creative Project e do PIM](/help/sites-authoring/managing-product-information.md)
+* [Integração do Projeto Creative e do PIM](/help/sites-authoring/managing-product-information.md)

@@ -1,35 +1,36 @@
 ---
 title: Content Insight
-description: O Content Insight fornece informações sobre o desempenho da página usando a análise da Web e a recomendação de SEO
+description: O Insight de conteúdo fornece informações sobre o desempenho da página usando a análise da Web e a recomendação de SEO
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: User,Admin,Developer
+exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Content Insight{#content-insight}
 
-O Content Insight fornece informações sobre o desempenho da página usando análises da Web e recomendações de SEO. Use o Content Insight para tomar decisões sobre como modificar páginas ou saber como as alterações anteriores alteraram o desempenho. Para cada página criada, você pode abrir o Content Insight para analisar a página.
+O Insight de conteúdo fornece informações sobre o desempenho da página usando análises da Web e recomendações de SEO. Use o Insight de conteúdo para tomar decisões sobre como modificar páginas ou saber como as alterações anteriores alteraram o desempenho. Para cada página criada, você pode abrir o Insight de conteúdo para analisar a página.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-O layout da página Content Insight muda para se adequar às dimensões e à orientação da tela do dispositivo que você está usando.
+O layout da página Insight de conteúdo é alterado para se adequar às dimensões e à orientação da tela do dispositivo que você está usando.
 
 ## Dados do relatório
 
-A página Content Insight inclui relatórios que usam dados do Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
+A página Insight de conteúdo inclui relatórios que usam dados do Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
 
 * SiteCatalyst: estão disponíveis relatórios para as seguintes métricas:
 
-   * Exibições de página
+   * Visualizações da página
    * Tempo médio gasto na página
    * Fontes
 
@@ -38,13 +39,13 @@ A página Content Insight inclui relatórios que usam dados do Adobe SiteCatalys
 
 Consulte [Abrindo o Analytics e o Recommendations para uma Página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## Período do relatório
+## Período da geração de relatórios
 
 Os relatórios mostram dados de um período de tempo que você controla. Quando você ajusta o período do relatório, os relatórios são atualizados automaticamente com os dados desse período. As dicas visuais indicam o tempo em que as versões da página foram alteradas, para que você possa comparar o desempenho de cada versão.
 
 >[!NOTE]
 >
->A linha do tempo do painel Content Insight está em `GMT`.
+>A linha do tempo do painel Insight de Conteúdo está em `GMT`.
 
 Você também pode especificar a granularidade dos dados relatados, por exemplo, ver dados diários, semanais, mensais ou anuais.
 

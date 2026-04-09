@@ -3,8 +3,9 @@ title: Criação de um guia de início rápido do headless de configuração
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+role: Admin,Developer
+exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 66%
@@ -33,7 +34,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 1. Forneça um **Título** para sua configuração.
    * Um nome será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura da AEM.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
 1. Verifique as seguintes opções:
-   * **Modelos de fragmentos do conteúdo**
+   * **Modelos de fragmentos de conteúdo**
    * **Consultas persistentes de GraphQL**
 
    ![Criar configuração](assets/create-configuration.png)
@@ -44,7 +45,7 @@ Você pode criar várias configurações, se necessário. As configurações tam
 
 >[!NOTE]
 >
->Outras opções de configuração além de **Modelos de fragmento do conteúdo** e **Consultas persistentes de GraphQL** podem ser necessárias, dependendo de seus requisitos de implementação.
+>Outras opções de configuração além de **Modelos de fragmento de conteúdo** e **Consultas persistentes de GraphQL** podem ser necessárias, dependendo de seus requisitos de implementação.
 
 ## Próximas etapas {#next-steps}
 

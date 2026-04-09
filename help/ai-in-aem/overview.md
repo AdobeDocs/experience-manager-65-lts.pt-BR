@@ -2,12 +2,12 @@
 title: IA no AEM 6.5 LTS
 description: Saiba mais sobre IA no Adobe Experience Manager 6.5 LTS
 feature: Generative AI, AI Assistant, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin,Developer,User
 exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '82'
+ht-degree: 15%
 
 ---
 
@@ -21,8 +21,8 @@ O [Assistente de IA no Adobe Experience Manager](/help/ai-assistant-in-aem.md) o
 
 ## Informações adicionais {#further-information}
 
-* [Visão geral da IA do Adobe](https://www.adobe.com/ai/overview.html)
+* [Visão geral do Adobe AI](https://www.adobe.com/ai/overview.html)
 
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)

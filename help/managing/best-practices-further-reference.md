@@ -3,9 +3,9 @@ title: Lista de verificação - Referência adicional
 description: Saiba mais sobre detalhes que detalham e/ou aumentam os documentos e princípios cobertos pela Lista de verificação de gerenciamento de projetos - práticas recomendadas.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 1%

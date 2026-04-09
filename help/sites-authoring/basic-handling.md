@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 42%
@@ -143,7 +143,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://business.adobe.com/br/)
+* [Soluções](https://business.adobe.com/)
 
   ![Soluções](do-not-localize/screen_shot_2018-03-23at103552.png)
 
