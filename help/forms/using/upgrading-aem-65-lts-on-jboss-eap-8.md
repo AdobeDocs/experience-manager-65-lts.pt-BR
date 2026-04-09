@@ -22,7 +22,7 @@ Este guia fornece instruções passo a passo para atualizar uma instalação exi
 >
 >Este é um procedimento de atualização crítico. Sempre faça primeiro esse upgrade em um ambiente que não seja de produção e mantenha os backups completos.
 >
-> ** PRÉ-REQUISITOS:** É obrigatório fazer backup completo do sistema e um plano de reversão documentado antes de continuar.
+> **&#x200B; PRÉ-REQUISITOS:** É obrigatório fazer backup completo do sistema e um plano de reversão documentado antes de continuar.
 
 ## Requisitos de pré-atualização
 
