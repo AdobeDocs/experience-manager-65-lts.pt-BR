@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c04d683015576ab4aa59427f2ac1ec53fbb1d8f4
+source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
 workflow-type: tm+mt
 source-wordcount: '7427'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -450,7 +450,7 @@ Consulte também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upg
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de Atualização para o AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -618,17 +618,17 @@ Ao habilitar o recurso de somente SSL em implantações do AEM, há um problema 
 
 **Impacto**
 
-* Falhas de verificação da integridade com códigos de resposta HTTP 400
-* Tráfego interrompido entre as instâncias do Dispatcher e do AEM
-* O conteúdo não pode ser distribuído corretamente por meio do Dispatcher
-* Falhas de conexão ao usar HTTPS com endereços IP na configuração do Dispatcher
-* Erros HTTP 400 “SNI inválida” ao conectar-se via HTTPS + IP
+* Falhas de verificação de integridade com códigos de resposta HTTP 400.
+* Tráfego interrompido entre instâncias do Dispatcher e do AEM.
+* O conteúdo não pode ser distribuído corretamente por meio da Dispatcher.
+* Falhas de conexão ao usar HTTPS com endereços IP na configuração do Dispatcher.
+* HTTP 400 - Erros &quot;SNI inválido&quot; ao conectar via HTTPS + IP.
 
 **Ambientes afetados**
 
-* Implantações do AEM com configurações do Dispatcher
-* Sistemas em que o recurso de somente SSL foi habilitado
-* Configurações do Dispatcher, usando-se o método de conexão `https + IP` com instâncias do AEM
+* Implantações do AEM com configurações do Dispatcher.
+* Sistemas em que o recurso somente SSL foi ativado.
+* Configurações do Dispatcher usando o método de conexão `https + IP` com instâncias do AEM.
 
 **Solução**
 
@@ -646,5 +646,5 @@ Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de Conteúd
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
