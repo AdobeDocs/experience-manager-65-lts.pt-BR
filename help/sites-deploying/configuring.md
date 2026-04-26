@@ -5,9 +5,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Para obter o gerenciamento de usuários no AEM (incluindo a atribuição de dire
 
 O Dispatcher é a ferramenta de armazenamento em cache, balanceamento de carga ou ambos da Adobe Experience Manager. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
 
 ### Configuração do AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -202,9 +202,11 @@ O [Desempenho](/help/sites-deploying/configuring-performance.md) é a chave do s
 
 Consulte [Configuração para Desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) para obter mais detalhes.
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Armazenamento de dados compartilhado {#shared-data-store}
 

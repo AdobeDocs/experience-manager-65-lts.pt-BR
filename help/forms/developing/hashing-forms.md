@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -124,5 +124,5 @@ Recomendo que você continue explorando os dois arquivos de amostra do PDF.  Voc
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Colisão de hash](https://en.wikipedia.org/wiki/Hash_collision)
 * [Tabela de arco-íris](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Página inicial do projeto do JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* [página inicial do projeto jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* [Página inicial do projeto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
+* [Página inicial do projeto jsSHA2](https://anmar.eu.org/projects/jssha2/)

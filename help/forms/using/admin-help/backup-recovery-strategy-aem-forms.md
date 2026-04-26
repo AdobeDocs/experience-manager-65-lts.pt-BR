@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Depois de identificar como o AEM Forms é usado, determine quais arquivos devem 
 >
 >Assim como em qualquer outro aspecto da implementação de formulários AEM, sua estratégia de backup e recuperação deve ser desenvolvida e testada em um ambiente de desenvolvimento ou de preparo antes de ser usada na produção, para garantir que toda a solução funcione como esperado sem perda de dados.
 
-O Adobe Experience Manager (AEM) é parte integrante do AEM Forms. Portanto, é necessário fazer backup do AEM em sincronia com o backup do AEM Forms, pois a Solução de Gerenciamento de Correspondência e serviços, como o gerenciador de formulários, são baseados em dados armazenados na parte AEM dos formulários do AEM.Para evitar perda de dados, o backup dos dados específicos dos formulários do AEM deve ser feito de forma a garantir que o GDS e o AEM (repositório) estejam correlacionados com as referências do banco de dados.O banco de dados, o GDS, o AEM e os diretórios raiz de armazenamento de conteúdo devem ser restaurados para um computador com o mesmo nome DNS do original.
+O Adobe Experience Manager (AEM) é parte integrante do AEM Forms. Portanto, é necessário fazer backup do AEM, bem como sincronizar com o backup do AEM Forms, como a Solução de gerenciamento de correspondência, e serviços, como o gerenciador de formulários, são baseados em dados armazenados na parte AEM dos formulários do AEM.Para evitar a perda de dados, o backup dos dados específicos dos formulários do AEM deve ser feito de forma a garantir que o GDS e o AEM (repositório) estejam correlacionados com as referências do banco de dados.Os diretórios raiz do banco de dados, GDS, AEM e Armazenamento de conteúdo devem ser restaurados em um computador com o mesmo nome DNS do original.
 
 ## Tipos de backups {#types-of-backups}
 

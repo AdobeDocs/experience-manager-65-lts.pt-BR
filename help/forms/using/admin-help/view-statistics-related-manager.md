@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7c1023ac-9d52-49f8-8e92-20e2d9d7079b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
 
 # Exibir estatísticas relacionadas ao Gerenciador de Trabalho {#view-statistics-related-to-work-manager}
 
-A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Gerenciador de trabalho. Esses itens de trabalho estão em estados diferentes, dependendo de onde estão em seu processo. (Consulte [Status (somente para as categorias Padrão, Fluxo de Trabalho ou Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Você pode filtrar as informações para exibir apenas um subconjunto dos itens usando as várias opções disponíveis (por exemplo, Status ou Categoria). Você pode classificar itens de trabalho ou de trabalho resultantes (em ordem crescente ou decrescente) clicando em um dos cabeçalhos de coluna. Além disso, você pode gerenciar os itens de trabalho usando as ferramentas de operação exibidas acima da lista de itens de trabalho.
+A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Gerenciador de trabalho. Esses itens de trabalho estão em estados diferentes, dependendo de onde estão em seu processo. (Consulte [Status (somente para as categorias Padrão, Fluxo de Trabalho ou Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) É possível filtrar as informações para exibir apenas um subconjunto dos itens usando as várias opções disponíveis (por exemplo, Status ou Categoria). Você pode classificar itens de trabalho ou de trabalho resultantes (em ordem crescente ou decrescente) clicando em um dos cabeçalhos de coluna. Além disso, você pode gerenciar os itens de trabalho usando as ferramentas de operação exibidas acima da lista de itens de trabalho.
 
 ## Filtrar os itens de trabalho {#filter-the-work-items}
 
@@ -49,7 +49,7 @@ A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Ger
 
 **Concluído:** Exibe todos os itens de trabalho executados com êxito. Os itens de trabalho persistentes permanecem nesse estado e os itens não persistentes são excluídos após a conclusão dos retornos de chamada para os manipuladores de retorno de chamada. Você pode excluir esses itens usando a operação Excluir itens. (Consulte Gerenciar itens de trabalho ou processos.)
 
-**Falha:** exibe todos os itens de trabalho que não foram concluídos com êxito devido a uma condição de erro. Esses itens de trabalho podem ser repetidos algumas vezes usando a operação Repetir itens. (Consulte Gerenciar os itens de trabalho ou tarefas.) Um link Falha na coluna Status permite acessar detalhes sobre a falha.
+**Falha:** exibe todos os itens de trabalho que não foram concluídos com êxito devido a uma condição de erro. Esses itens de trabalho podem ser repetidos algumas vezes usando a operação Repetir itens. (Consulte Gerenciar itens de trabalho ou processos.) Um link Failure (Falha) na coluna Status permite acessar detalhes sobre a falha.
 
 **Desconhecido:** Exibe todos os itens de trabalho cujo status é desconhecido.
 

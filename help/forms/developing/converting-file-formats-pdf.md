@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7942'
 ht-degree: 0%
 
 ---
@@ -685,7 +685,7 @@ Um *arquivo XML de caixa de diálogo* especifica como o serviço Generate PDF re
 
 Quando o sistema ou aplicativo nativo exibe uma caixa de diálogo que não é manipulada pelo arquivo XML de script em execução no momento, o serviço Gerar PDF pesquisa os arquivos XML da caixa de diálogo nesta ordem, parando quando encontra uma correspondência:
 
-* appmon.`[appname]`.adicional.`[locale]`.xml
+* appmon.`[appname]`.additional.`[locale]`.xml
 * appmon.`[appname]`.`[locale]`.xml (Não modifique este arquivo.)
 * appmon.global.`[locale]`.xml (Não modifique este arquivo.)
 
@@ -733,7 +733,7 @@ Depois de adicionar esses arquivos XML ao arquivo adobe-appmondata.jar, você de
 1. Usando uma ferramenta como WinZip ou WinRAR, abra o arquivo adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > arquivo adobe-appmondata.jar.
 1. Adicione os arquivos XML de diálogo e script ao arquivo appmondata.jar ou modifique arquivos XML existentes nesse arquivo. (Consulte [Criando ou modificando um arquivo XML de script para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)e [Criando ou modificando um arquivo XML de caixa de diálogo adicional para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Usando uma ferramenta como WinZip ou WinRAR, abra adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. Adicione os arquivos XML de diálogo e script ao arquivo appmondata.jar ou modifique arquivos XML existentes nesse arquivo. (Consulte [Criação ou modificação de um arquivo XML de script para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)e [Criação ou modificação de um arquivo XML de caixa de diálogo adicional para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Depois de adicionar os arquivos XML ao arquivo adobe-appmondata.jar, coloque o novo arquivo adobe-appmondata.jar no arquivo adobe-generatepdf-dsc.jar.
+1. Adicione os arquivos XML de diálogo e script ao arquivo appmondata.jar ou modifique arquivos XML existentes nesse arquivo. (Consulte [Criando ou modificando um arquivo XML de script para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)e [Criando ou modificando um arquivo XML de caixa de diálogo adicional para um aplicativo nativo](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Depois de adicionar os arquivos XML ao arquivo adobe-appmondata.jar, coloque o novo arquivo adobe-appmondata.jar no arquivo adobe-generatepdf-dsc.jar.
 1. Se você tiver adicionado suporte para um formato de arquivo nativo adicional, crie uma variável de ambiente do sistema que forneça o caminho do aplicativo (Consulte [Criação de uma variável de ambiente para localizar o aplicativo nativo](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application).)
 
 **Para reimplantar o componente GeneratePDF**

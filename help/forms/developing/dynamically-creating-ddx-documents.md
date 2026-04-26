@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ Crie dinamicamente um documento DDX e desmonte um documento PDF usando a API de 
    * Crie um objeto Java `DocumentBuilder` chamando o método `newDocumentBuilder` do objeto `DocumentBuilderFactory`.
    * Chame o método `newDocument` do objeto `DocumentBuilder` para instanciar um objeto `org.w3c.dom.Document`.
    * Crie o elemento raiz do documento DDX invocando o método `createElement` do objeto `org.w3c.dom.Document`. Este método cria um objeto `Element` que representa o elemento raiz. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `setAttribute`. Finalmente, anexe o elemento ao elemento de cabeçalho chamando o método `appendChild` do elemento de cabeçalho e passe o objeto de elemento filho como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Crie o elemento `PDFsFromBookmarks` chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Defina um valor para o elemento `PDFsFromBookmarks` chamando seu método `setAttribute`. Anexe o elemento `PDFsFromBookmarks` ao elemento `DDX`, chamando o método `appendChild` do elemento DDX. Passe o objeto de elemento `PDFsFromBookmarks` como argumento. As linhas de código a seguir mostram essa lógica de aplicação:

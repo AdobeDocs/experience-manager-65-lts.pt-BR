@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ca620313-8c2c-44e6-9f29-0d91dc9f6e03
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9814'
+source-wordcount: '9975'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ Você pode usar JAX-WS para converter um serviço Forms WSDL em classes de proxy
     ant -buildfile "build.xml" wsdl
    ```
 
-   Coloque o script de construção ANT no diretório C:\Program Files\Java\jaxws-ri\bin. O script grava os arquivos JAVA no .pasta /classes. O script gera arquivos JAVA que podem chamar o serviço.
+   Coloque o script de construção ANT no diretório C:\Program Files\Java\jaxws-ri\bin. O script grava os arquivos JAVA na pasta ./classes. O script gera arquivos JAVA que podem chamar o serviço.
 
 1. Empacote os arquivos JAVA em um arquivo JAR. Se você estiver trabalhando no Eclipse, siga estas etapas:
 
@@ -536,7 +536,7 @@ Você pode gerar arquivos da biblioteca Java do Axis executando as seguintes eta
 
 1. Adicione os seguintes arquivos JAR do Axis ao caminho de classe do projeto Java:
 
-   * activation.jar
+   * ativation.jar
    * axis.jar
    * commons-codec-1.3.jar
    * commons-collections-3.1.jar

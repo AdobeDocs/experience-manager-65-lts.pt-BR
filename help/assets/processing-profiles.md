@@ -9,9 +9,10 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aa257d33-302c-4a01-be48-e4ff56700bfa
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -125,7 +126,8 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
 1. Feche a guia do navegador que mostra o modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -143,4 +145,5 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

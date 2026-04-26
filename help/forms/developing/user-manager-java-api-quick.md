@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b960ca0b-5e0f-4009-b923-e93889c3c1f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -382,7 +382,7 @@ O código de exemplo a seguir encontra um usuário local e o grupo local ao qual
 
 ## Início rápido (modo SOAP): gerenciamento de funções e permissões usando a API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-O exemplo de código a seguir atribui a função Usuário de Serviços a um principal, imprime as funções que o principal tem e subsequentemente remove a função do principal. Dois serviços são chamados para esse início rápido: o serviço DiretoryManager e o serviço AuthorizationManager.(Consulte [Gerenciamento de funções e permissões](/help/forms/developing/users.md#managing-roles-and-permissions).)
+O exemplo de código a seguir atribui a função Usuário de Serviços a um principal, imprime as funções que o principal tem e subsequentemente remove a função do principal. Dois serviços são invocados para este início rápido: o serviço DiretoryManager e o serviço AuthorizationManager. (Consulte [Gerenciamento de Funções e Permissões](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*

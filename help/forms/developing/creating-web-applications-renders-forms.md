@@ -12,9 +12,9 @@ feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Da mesma forma, se o usuário selecionar dados canadenses, o formulário retorna
 
 Esta seção usa arquivos de exemplo que podem estar no seguinte local:
 
-&lt;*diretório de instalação do Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
+&lt;*Diretório de instalação do Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
 onde &lt;*diretório de instalação*> é o caminho de instalação. Para fins do aplicativo cliente, o arquivo Dynamic.xdp da Ordem de Compra foi copiado deste local de instalação e implantado em um aplicativo do Forms chamado *Applications/FormsApplication*. O arquivo Dynamic.xdp da ordem de compra é colocado em uma pasta chamada FormsFolder. Da mesma forma, os fragmentos são colocados em uma pasta chamada Fragmentos, como mostrado na ilustração a seguir.
 

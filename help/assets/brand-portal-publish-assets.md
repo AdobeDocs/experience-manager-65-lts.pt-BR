@@ -10,10 +10,11 @@ feature: Brand Portal
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 40%
+source-wordcount: '432'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +87,6 @@ Agora, faça logon no Brand Portal para ver se os ativos publicados estão dispo
 
 1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![status do relatório gerado](assets/report-status.JPG)

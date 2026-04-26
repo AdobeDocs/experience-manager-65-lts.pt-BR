@@ -1,6 +1,6 @@
 ---
-title: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
-description: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
+title: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
+description: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
@@ -9,14 +9,14 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
 
-# Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
+# Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Os fluxos de trabalho do AEM centrados na Forms permitem que você automatize processos de negócios reais centrados na Forms. Os fluxos de trabalho consistem em uma série de etapas executadas em uma ordem especificada no modelo de fluxo de trabalho associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
 
@@ -53,7 +53,7 @@ Os locais de repositório padrão onde a carga, os rascunhos e o histórico de u
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
   <tr>
-   <td><strong>Carga útil</strong></td>
+   <td><strong>Conteúdo</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
    <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
@@ -159,5 +159,5 @@ Você deve ser um administrador do AEM para excluir dados de usuários das inst�
 Também é possível usar APIs para acessar e remover nós e propriedades. Consulte os documentos a seguir para obter mais informações.
 
 * [Como acessar programaticamente o JCR do AEM](/help/sites-developing/access-jcr.md)
-* [Removendo Nós e Propriedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Referência da API](https://helpx.adobe.com/br/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Removendo nós e propriedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Referência da API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

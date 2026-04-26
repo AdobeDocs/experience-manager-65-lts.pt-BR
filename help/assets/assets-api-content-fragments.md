@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 22%
+source-wordcount: '2064'
+ht-degree: 23%
 
 ---
 
@@ -162,8 +162,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
->* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -257,7 +257,7 @@ O conteúdo associado não está exposto no momento.
 
 O uso pode ser diferente dependendo se você está usando um ambiente de autor ou de publicação no AEM, juntamente com seu caso de uso específico.
 
-* É altamente recomendável que a criação esteja associada a uma instância de autor ([&#x200B; e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação esteja associada a uma instância de autor ([ e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
    * Armazenar e entregar a partir de uma instância de criação do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
@@ -390,7 +390,7 @@ Retornado quando:
   }
   ```
 
-## Referência da API  {#api-reference}
+## Referência da API {#api-reference}
 
 Consulte esta página para obter referências detalhadas de API:
 
@@ -404,4 +404,4 @@ Consulte esta página para obter referências detalhadas de API:
 Para obter mais informações, consulte:
 
 * [Documentação da API HTTP do Assets](/help/assets/mac-api-assets.md)
-* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

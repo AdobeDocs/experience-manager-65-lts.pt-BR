@@ -7,9 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10038'
+source-wordcount: '10234'
 ht-degree: 3%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 No [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e controlar seus ativos. O [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e controlar metadados, colaborar usando anotações e muito mais.
@@ -47,7 +48,8 @@ Não inclua caracteres especiais nas extensões dos nomes de arquivo do ativo.
 
 ## Upload de ativos {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
@@ -102,7 +104,7 @@ Para configurar a tarefa de limpeza para os trabalhos de carregamento de partes 
 
 >[!CAUTION]
 >
->O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=pt-BR) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
+>O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
 >Considerando o tempo limite de expiração de credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
@@ -177,7 +179,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas para o servidor FTP.
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=pt-BR#system-requirements-dmc-app) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e entre na sua conta.
 
    Suas credenciais e o logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -202,22 +204,22 @@ Para cancelar um trabalho de carregamento em andamento, clique em **[!UICONTROL 
 
 | Opção de upload | Subopção | Descrição |
 |---|---|---|
-| Nome da tarefa | | O nome padrão pré-preenchido no campo de texto inclui a parte inserida pelo usuário do nome e o carimbo de data e hora. Você pode usar o nome padrão ou inserir um nome de sua própria criação para esse trabalho de upload. <br>O trabalho e outros trabalhos de carregamento e publicação são registrados na página Trabalhos, onde você pode verificar o status dos trabalhos. |
+| Nome do processo | | O nome padrão pré-preenchido no campo de texto inclui a parte inserida pelo usuário do nome e o carimbo de data e hora. Você pode usar o nome padrão ou inserir um nome de sua própria criação para esse trabalho de upload. <br>O trabalho e outros trabalhos de carregamento e publicação são registrados na página Trabalhos, onde você pode verificar o status dos trabalhos. |
 | Publicar após o upload | | Publica automaticamente os ativos que você faz upload. |
 | Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão | | Selecione essa opção se desejar que os arquivos dos quais você fez upload substituam arquivos existentes com os mesmos nomes. O nome desta opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]** > **[!UICONTROL Carregar no Aplicativo]** > **[!UICONTROL Substituir Imagens]**. |
 | Descompactar arquivos zip ou tar ao fazer upload | | |
 | Opções de trabalho | | Clique em **[!UICONTROL Opções de Trabalho]** para abrir a caixa de diálogo [!UICONTROL Carregar Opções de Trabalho] e escolher as opções que afetam todo o trabalho de carregamento. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher opções padrão para carregar arquivos a partir da página Configurações Gerais do Aplicativo. Para abrir esta página, escolha **[!UICONTROL Instalação]** > **[!UICONTROL Instalação do Aplicativo]**. Selecione a opção **[!UICONTROL Opções de Carregamento Padrão]** para abrir a caixa de diálogo [!UICONTROL Opções de Carregamento do Trabalho]. |
 | | Quando | Selecione Ocasional ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir — Diariamente, Semanalmente, Mensalmente ou Personalizado — para especificar quando você deseja que o trabalho de upload do FTP se repita. Em seguida, especifique as opções de agendamento, conforme necessário. |
 | | Incluir subpastas | Faça upload de todas as subpastas contidas na pasta que você deseja fazer upload. Os nomes da pasta e suas subpastas que você carregou são inseridos automaticamente em [!DNL Experience Manager Assets]. |
-| | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você inserir 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, uma meia polegada será cortada de cada lado.<br> Para recortar automaticamente os pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixels nos campos Superior, Direito, Inferior e Esquerdo para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar Com Base Em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para cortar com base na cor, especifique 0 para cortar pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferença de cor.<br>Para cortar com base na transparência, especifique 0 para cortar os pixels somente se eles forem transparentes. Números mais próximos de 1 permitem mais transparência.</li></ul><br>Estas opções de corte não são destrutivas. |
+| | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você inserir 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, uma meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direito, Inferior e Esquerdo para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar Com Base Em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para cortar com base na cor, especifique 0 para cortar pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferença de cor.<br>Para cortar com base na transparência, especifique 0 para cortar os pixels somente se eles forem transparentes. Números mais próximos de 1 permitem mais transparência.</li></ul><br>Estas opções de corte não são destrutivas. |
 | | Opções de perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cores; não há conversão de cores. Quase todas as imagens atuais têm o perfil de cores apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cores incorporado, as cores serão convertidas no espaço de cores sRGB (azul vermelho verde padrão). sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: retém as cores originais sem nenhuma conversão de cores no ponto. Para imagens sem um perfil de cores incorporado, qualquer conversão de cores é feita usando os perfis de cores padrão definidos nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Personalizar de > para <br> Abre menus para que você possa escolher um espaço de cores para Converter de e Converter para. Essa opção avançada substitui qualquer informação de cor incorporada no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cores incorretos ou ausentes.</li></ul> |
-| | Opções de edição de imagem | É possível preservar as máscaras de recorte nas imagens e escolher um perfil de cores.<br> Consulte [Opções de configuração para edições de imagem no carregamento](#setting-image-editing-options-at-upload). |
-| | Opções de Postscript | É possível rasterizar arquivos PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definindo opções de carregamento de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opções do Photoshop | É possível criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar o nome das camadas, extrair texto e especificar como as imagens são ancoradas nos modelos.<br> Modelos não são suportados em [!DNL Experience Manager].<br> Consulte [Definindo opções de carregamento do Photoshop](#setting-photoshop-upload-options). |
-| | Opções do PDF | Você pode rasterizar os arquivos, extrair palavras e links de pesquisa, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Não há suporte para eCatalogs em [!DNL Experience Manager]. <br> Consulte [Definindo opções de carregamento do PDF](#setting-pdf-upload-options).<br>**Observação**: o número máximo de páginas para que uma PDF seja considerada para extração é 5.000 para novos carregamentos. Esse limite será alterado para 100 páginas (para todos os PDFs) em 31 de dezembro de 2022. Consulte também [limitações do Dynamic Media](/help/assets/limitations.md). |
-| | Opções do Illustrator | É possível rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e um espaço de cores.<br> Consulte [Definindo opções de carregamento de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opções de EVideo | É possível transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte [Definindo opções de carregamento de eVideo](#setting-evideo-upload-options). |
-| | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. Crie as predefinições na página Configuração do aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre como criar predefinições de conjunto de lotes.<br> Consulte [Definindo predefinições de conjunto de lotes no carregamento](#setting-batch-set-presets-at-upload). |
+| | Opções de edição de imagem | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cores.<br> Consulte [Opções de configuração para edições de imagem no carregamento](#setting-image-editing-options-at-upload). |
+| | Opções de Postscript | Você pode rasterizar arquivos PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definindo opções de carregamento de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opções do Photoshop | É possível criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Não há suporte para modelos em [!DNL Experience Manager].<br> Consulte [Definindo opções de carregamento do Photoshop](#setting-photoshop-upload-options). |
+| | Opções do PDF | Você pode rasterizar os arquivos, extrair palavras e links de pesquisa, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores. <br>Não há suporte para eCatalogs no [!DNL Experience Manager]. <br> Consulte [Definir opções de carregamento do PDF](#setting-pdf-upload-options).<br>**Observação**: o número máximo de páginas para um PDF a ser considerado para extração é 5.000 para novos carregamentos. Esse limite será alterado para 100 páginas (para todos os PDFs) em 31 de dezembro de 2022. Consulte também [limitações do Dynamic Media](/help/assets/limitations.md). |
+| | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definindo opções de carregamento de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opções de EVideo | Você pode transcodificar um arquivo de vídeo escolhendo uma Predefinição de Vídeo.<br> Consulte [Definindo opções de carregamento de eVideo](#setting-evideo-upload-options). |
+| | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. Você cria as predefinições na página Configuração do Aplicativo/Predefinições de Conjunto de Lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre como criar predefinições de conjunto de lotes.<br> Consulte [Definindo predefinições de conjunto de lotes no carregamento](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções para edições de imagem no upload {#setting-image-editing-options-at-upload}
 
@@ -429,7 +431,7 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
 
    * Número de vezes que o ativo foi visualizado ou baixado
    * Canais/dispositivos pelos quais o ativo foi usado
-   * Soluções criativas nas quais o ativo foi usado recentemente
+   * Soluções da Creative nas quais o ativo foi usado recentemente
 
    Para obter mais detalhes, consulte [Assets Insights](/help/assets/asset-insights.md).
 
@@ -882,7 +884,7 @@ Você pode criar versões em [!DNL Experience Manager] nos seguintes cenários:
 * Faça upload de um ativo com o mesmo nome de arquivo que existe no mesmo local. Pode ser um novo ativo ou uma versão modificada do mesmo ativo.
 * Edite uma imagem em [!DNL Experience Manager] e salve as alterações.
 * Editar os metadados de um ativo.
-* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#edit-assets-upload-updated-assets).
+* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Ao criar uma versão para um ativo, os metadados e as representações são salvos junto com a versão. As representações são alternativas renderizadas das mesmas imagens, por exemplo, uma representação PNG de um arquivo JPEG carregado.
 
@@ -957,4 +959,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).

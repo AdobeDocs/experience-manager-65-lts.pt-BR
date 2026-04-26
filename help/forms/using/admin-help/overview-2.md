@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8aeacdb7-68a7-476f-a725-f9ad7406cc9c
-source-git-commit: 02b9eb98d1fdf1b090166a6ae7c0a4379487d2e1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 Uma *credencial* contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um *certificado* é uma informação de chave pública que você configura para confiança. O AEM forms usa certificados e credenciais para várias finalidades:
 
 * As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Configuração de credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição do Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) O Nome Comum (CN) deve estar presente no certificado.
+* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição do Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) A Common Name (CN) deve estar presente no certificado.
 * O serviço de Assinatura acessa certificados e credenciais. Para obter detalhes sobre o Serviço de assinatura, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **Gerando uma chave de par**

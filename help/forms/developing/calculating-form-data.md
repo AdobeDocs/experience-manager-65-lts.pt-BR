@@ -12,9 +12,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -125,12 +125,12 @@ Depois de verificar se o estado de processamento associado a um formulário envi
 
 **Consulte também**
 
-[Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calcular dados do formulário usando a API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Calcular dados de formulário usando a API de serviço Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Calcular dados de formulário usando a API do serviço Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Início Rápido da API de Serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Renderizando o PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Renderização do PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Criando Aplicativos Web que Renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular dados do formulário usando a API Java {#calculate-form-data-using-the-java-api}
@@ -171,7 +171,7 @@ Calcule dados de formulário usando a API do Forms (Java):
 **Consulte também**
 
 
-[Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calcular dados do formulário usando a API do serviço Web {#calculate-form-data-using-the-web-service-api}

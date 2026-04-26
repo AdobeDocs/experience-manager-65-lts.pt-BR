@@ -1,6 +1,6 @@
 ---
-title: Registro de ponto de extremidade Java&trade; API QuickStart(SOAP)
-description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando Java&trade; API.
+title: Registro de ponto de extremidade Java&trade; API QuickStart (SOAP)
+description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando a API Java&trade;.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ac33db6b-9896-4593-9365-62dd924b6bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 O Java™ API Quick Start (SOAP) está disponível para o Registro de endpoint.
 
-[QuickStart: Adicionando um endpoint de EJB usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint EJB usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um terminal SOAP usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: adicionando um terminal SOAP usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de pasta monitorada usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de pasta monitorada usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de email usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de email usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de comunicação remota usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de comunicação remota usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint TaskManager usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint TaskManager usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: modificando um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: modificando um endpoint usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: removendo um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: removendo um endpoint usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: recuperando informações do conector de ponto de extremidade usando o Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: recuperando informações do conector de ponto de extremidade usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 

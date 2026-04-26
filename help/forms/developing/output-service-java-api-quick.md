@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ O código Java a seguir cria um documento PDF chamado *Loan.pdf*. Este documento
 
 >[!NOTE]
 >
->Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento do PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
+>Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento do PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

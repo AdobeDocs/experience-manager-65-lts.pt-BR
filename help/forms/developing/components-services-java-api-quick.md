@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 5a69b9e7-10f1-4637-9a29-228e12863333
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 0%
 O Java™ API Quick Start (SOAP) está disponível para componentes e serviços.
 
 
-[Início rápido (modo SOAP): implantação de um componente usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Início rápido (modo SOAP): implantação de um componente usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[Início rápido (modo SOAP): definição do contexto de execução de um serviço usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[Início rápido (modo SOAP): definição do contexto de execução de um serviço usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[Início rápido (modo SOAP): desativação da segurança do serviço usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[Início rápido (modo SOAP): desativação da segurança do serviço usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[Início rápido (modo SOAP): iniciar um serviço usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[Início rápido (modo SOAP): iniciar um serviço usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Início rápido (modo SOAP): Modificando valores de configuração de serviço usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Início rápido (modo SOAP): modificação dos valores de configuração de serviço usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Início rápido (modo SOAP): remoção de componentes usando o Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Início rápido (modo SOAP): remoção de componentes usando a API Java™](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.

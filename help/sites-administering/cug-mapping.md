@@ -9,9 +9,10 @@ docset: aem65
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9c1c92e094f4d49881876aad4554c783825e5c3d
+exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -90,14 +91,15 @@ Serviço para configurar a lista de exclusão de entidades que não devem ser af
 
   É possível conectar uma implementação personalizada do CugExclude se houver necessidades especiais.
 
-* Componente OSGi que implementa o LoginPathProvider que expõe um caminho de logon correspondente ao LoginSelectorHandler. Ela tem uma referência obrigatória a um RequirementHandler, usado para registrar o observador que escuta os requisitos de autenticação alterados armazenados no conteúdo por meio do tipo de mixin granite:AuthenticationRequired.
+* Componente OSGi que implementa o LoginPathProvider que expõe um caminho de logon correspondente ao LoginSelectorHandler. Ele tem uma referência obrigatória a um RequirementHandler que é usado para registrar o observador que escuta os requisitos de autenticação alterados armazenados no conteúdo por meio do tipo de mixin granite:AuthenticationRequired.
 * Componente OSGi que implementa RequirementHandler que notifica o SlingAuthenticator sobre alterações nos requisitos de autenticação.
 
   Como a política de configuração desse componente é REQUIRE, ela só será ativada se um conjunto de caminhos compatíveis for especificado.
 
   A habilitação do serviço inicia o RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

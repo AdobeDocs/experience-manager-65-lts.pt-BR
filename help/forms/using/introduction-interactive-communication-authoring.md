@@ -8,9 +8,10 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1316'
 ht-degree: 10%
 
 ---
@@ -39,9 +40,11 @@ Ao [criar ou editar uma Comunicação Interativa existente](../../forms/using/cr
 
 **A.** Navegador de canal **B.** Navegador de conteúdo **C.** Navegador de propriedades **D.** Navegador de ativos **E.** Navegador de componentes **F.** Navegador de Fontes de Dados - Modelo de Dados **G.** Navegador de Fontes de Dados - Conteúdo Principal
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 A barra lateral inclui o seguinte:
 
@@ -115,7 +118,7 @@ G. **Colar**: permite colar o componente recortado ou copiado usando as opções
 
 H. **Grupo**: permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
 
-I. **Pai**: permite selecionar o pai de um componente.
+I. **Página principal**: permite selecionar a página principal de um componente.
 
 J. **Exibir expressão SOM:** Permite exibir a [expressão SOM](../../forms/using/using-som-expressions-adaptive-forms.md) do componente.
 
@@ -123,7 +126,7 @@ K: **Agrupar objetos no Painel:** Permite agrupar os componentes em um painel pa
 
 L. **Adicionar Painel Filho** (somente para painéis): permite adicionar um painel filho ao painel.
 
-M: **Adicionar Barra de Ferramentas do Painel** (somente para painéis):Permite adicionar a Barra de Ferramentas do componente Painel. Em seguida, você poderá executar outras ações na barra de ferramentas.
+M: **Adicionar a Barra de Ferramentas do Painel** (somente para painéis):Lets você adiciona a Barra de Ferramentas do componente Painel. Em seguida, você poderá executar outras ações na barra de ferramentas.
 
 Além disso, a opção **Substituir** da barra de ferramentas permite substituir o componente existente por um componente alternativo. A opção não está disponível para o componente Painel.
 

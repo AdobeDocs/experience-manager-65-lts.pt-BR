@@ -6,10 +6,10 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 5%
+source-wordcount: '2057'
+ht-degree: 7%
 
 ---
 
@@ -95,7 +95,8 @@ Para usar um modelo de dados de formulário para criar um formulário adaptável
 
 Você pode redefinir os modelos de formulário XFA para criar formulários adaptáveis. Para redefinir objetivos, carregue e associe um modelo de formulário XFA a um formulário adaptável. Os elementos do Modelo de formulário (formulário XFA) são disponibilizados para uso no localizador de conteúdo no momento da criação do formulário adaptável. No Localizador de conteúdo, você pode arrastar e soltar os elementos do modelo de formulário no formulário.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -109,7 +110,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+-->
 
 ## Criar um formulário adaptável com base em um esquema XML ou JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -134,7 +136,7 @@ Faça o seguinte para usar o esquema XML ou JSON como modelo de formulário para
    >
    >Verifique se o nome do arquivo do esquema JSON termina com **.schema.json**. Por exemplo: mySchema.schema.json
 
-   ![Selecionando esquema XML ou JSON](assets/upload-schema.png)
+   ![Seleção de esquema XML ou JSON](assets/upload-schema.png)
    **Figura:** *Selecionando esquema XML ou JSON*
 
 1. (Somente para esquema XML) Depois de selecionar ou fazer upload de um esquema XML, especifique um elemento raiz do arquivo XSD selecionado para mapear com o formulário adaptável.
@@ -202,7 +204,7 @@ Por padrão, a opção de salvamento automático não está habilitada. Você po
 
 1. (Somente salvamento automático baseado em evento) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em evento.
 
-   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
+   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
 
 1. (Opcional) Para salvar automaticamente o conteúdo para usuários anônimos, selecione a opção **[!UICONTROL Habilitar salvamento automático para usuários anônimos]** e clique em **[!UICONTROL OK]**.
 

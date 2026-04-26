@@ -6,9 +6,9 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6494'
+source-wordcount: '6659'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Com a nova arquitetura, a Experience Manager é responsável pelos ativos de ori
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-A [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
+A [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
 
 >[!WARNING]
 >
@@ -75,17 +75,19 @@ Para migrar qualquer predefinição e configuração personalizada do visualizad
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o modo Dynamic Media - Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/br/customers/consulting-services/main.html).
+O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o modo Dynamic Media - Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
 ## Criar uma configuração de mídia dinâmica no Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!--
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration in Cloud Services:** -->
+**To create a Dynamic Media Configuration in Cloud Services:**
+-->
 
 1. No modo Autor do Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, **[!UICONTROL Criar]**.
@@ -131,7 +133,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
 
         ![Replicar metadados após a caixa de seleção de publicação do Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos *não* foram publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir esta opção aqui na **[!UICONTROL Configuração da Nuvem do Dynamic Media]** ou, se preferir, pode optar por definir esta opção no nível da pasta, nas **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se você alterar esta configuração posteriormente ou alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos carregados a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
+      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos *não* foram publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir esta opção aqui na **[!UICONTROL Configuração da Nuvem do Dynamic Media]** ou, se preferir, pode optar por definir esta opção no nível da pasta, nas **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalhar com Publicação Seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se você alterar esta configuração posteriormente ou alterá-la posteriormente no nível da pasta, essas alterações afetarão somente os novos ativos carregados a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
 
    * **[!UICONTROL Servidor de Visualização Seguro]** - permite que você especifique o caminho da URL para seu servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager).
 A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado.
@@ -141,7 +143,7 @@ A menos que você tenha uma organização especial para usar o servidor de sua p
    * **[!UICONTROL Modo de sincronização do Dynamic Media]**
       * **[!UICONTROL Habilitado por padrão]** - A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Desabilitado por padrão]** - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
-Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**&#x200B;anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
+Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Herdado]** - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração de nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.
          * **[!UICONTROL Habilitar para subpastas]** - Incluir tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
          * **[!UICONTROL Desabilitado para subpastas]** - Exclua tudo nesta subárvore da sincronização com o Dynamic Media.
@@ -157,13 +159,15 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 
 Se quiser personalizar ainda mais sua configuração, como habilitar permissões de ACL (Access Control List, Lista de Controle de Acesso), você pode, opcionalmente, concluir qualquer uma das tarefas em [(Opcional) Definir Configurações Avançadas no Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-<!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+<!--
+1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * Select the **[!UICONTROL Security]** tab.
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 Agora você concluiu a configuração básica; você está pronto para usar o modo Dynamic Media - Scene7.
 
@@ -220,7 +224,7 @@ Quando você executa o Dynamic Media - Modo Scene7 no AEM, ele encaminha atualme
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   ![13-16-08-2019](assets/2019-08-02_16-13-14.png)
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na página **[!UICONTROL Configuração do Adobe Experience Manager Web Console]**.
 
@@ -246,7 +250,7 @@ No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos
 Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos e pontos:
 
 * Você deve executar o Experience Manager 6.5 LTS no modo Dynamic Media - Scene7.
-* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/br/products/experience-manager/managed-services.html).
+* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
 * Verifique se a sua instância do Experience Manager está configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
   >[!NOTE]
@@ -401,7 +405,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   ![13-16-08-2019](assets/2019-08-02_16-13-14.png)
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
 1. Uma nova guia do navegador é aberta na página **[!UICONTROL Configuração do Adobe Experience Manager Web Console]**.
 
@@ -413,13 +417,13 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
 1. Na página **Adobe CQ Scene7 Asset MIME type Service**, selecione qualquer ícone de sinal de adição &lt;+>. O local na tabela onde você seleciona o sinal de adição para adicionar o novo tipo MIME é trivial.
 
-   ![27-08-2019-02_16-27](assets/2019-08-02_16-27-27.png)
+   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
 1. Digite `DWG=image/vnd.dwg` no campo de texto vazio que você acabou de adicionar.
 
    O exemplo `DWG=image/vnd.dwg` é somente para fins de demonstração. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
 
-   ![08-2019-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
 1. No canto inferior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -441,7 +445,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 1. Com o tipo mime `image_vnd.dwg` ainda selecionado, na guia **[!UICONTROL Propriedades]**, na linha **[!UICONTROL habilitada]**, no cabeçalho da coluna **[!UICONTROL Valor]**, selecione duas vezes o valor para abrir a lista suspensa **[!UICONTROL Valor]**.
 1. Digite `false` no campo (ou selecione **[!UICONTROL false]** na lista suspensa).
 
-   ![08-2019-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
 1. Próximo ao canto superior esquerdo da página do CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 
@@ -465,7 +469,7 @@ Dois elementos estão disponíveis para definição: Correspondência e Nome de 
 
 **Para configurar a nomeação padrão:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -499,7 +503,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 **Para criar uma Predefinição de conjunto de lotes:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -555,7 +559,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 **Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -660,9 +664,11 @@ A fila de Fluxo de trabalho de Trânsito do Granite é usada para o fluxo de tra
 
    Você pode aumentar o **[!UICONTROL Máximo de Trabalhos Paralelos]** para oferecer suporte adequado ao carregamento pesado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em determinados cenários, ou seja, uma migração inicial ou um upload em massa único, você pode usar um valor alto. No entanto, esteja ciente de que usar um valor alto (como o dobro do número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, teste e ajuste o valor com base em seu caso de uso específico.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+<!--
+By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+-->
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

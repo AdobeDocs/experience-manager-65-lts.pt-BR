@@ -6,9 +6,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1a4df932f0933e9644b40eb5d02900231b6a48c6
+exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -511,7 +512,7 @@ Recomendações para usar cores:
 * WCAG 2.0
    * 1.4.1 Utilização de cor: a cor não é utilizada como o único meio visual de transmissão de informações, indicando uma ação, solicitando uma resposta ou distinguindo um elemento visual. (Nível A)
    * 1.4.3 Contraste (Mínimo): a apresentação visual de texto e imagens de texto tem uma taxa de contraste de pelo menos 4.5:1, exceto para o seguinte: (Nível AA)
-   * 1.4.6 Contraste (Aprimorado): a apresentação visual de texto e imagens de texto tem uma relação de contraste de pelo menos 7:1, exceto para o seguinte: (Nível AAA)
+   * 1.4.6 Contraste (Aprimorado): a apresentação visual de texto e imagens de texto tem uma taxa de contraste de pelo menos 7:1, exceto para o seguinte: (Nível AAA)
 
 
 ## Fornecer células de cabeçalho para tabelas{#provide-heading-cells}
@@ -597,7 +598,7 @@ Os campos inteligentes podem ser uma maneira eficaz de facilitar o preenchimento
 
 Você pode usar a paleta Acessibilidade para atribuir funções a objetos com base na utilização do objeto. Essas funções podem ser aplicadas para criar cabeçalhos em diferentes níveis.
 
-![Especificando uma função de cabeçalho na paleta de Acessibilidade](/help/forms/using/assets/image-15.png)
+![Especificação de uma função de cabeçalho na paleta de Acessibilidade](/help/forms/using/assets/image-15.png)
 Figura 15: **Especificando uma função de cabeçalho na paleta de Acessibilidade**
 
 Siga estas etapas para criar um cabeçalho no formulário:

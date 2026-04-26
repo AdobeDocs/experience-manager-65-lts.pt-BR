@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Por exemplo, um lembrete de tarefa é configurado para ocorrer três dias úteis
 
 >[!NOTE]
 >
->Ao calcular datas e horas usando calendários comerciais, o AEM Forms usa a data e a hora do servidor em que está sendo executado e não ajusta a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5h da hora local.
+>Ao calcular datas e horas usando calendários comerciais, o AEM Forms usa a data e a hora do servidor em que está sendo executado e não ajusta a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver agendado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5:00 da manhã, horário local.:00
 
 ## Uso do calendário comercial padrão {#using-the-default-business-calendar}
 
@@ -50,7 +50,7 @@ Se alguns usuários da organização tiverem dias não úteis diferentes, você 
 
    Se você estiver usando um domínio local ou híbrido, as informações sobre os usuários serão armazenadas somente no banco de dados do Gerenciamento de usuários. Para definir a chave do calendário comercial para esses usuários, informe uma string no campo Chave do Calendário Comercial ao adicionar ou editar um usuário no Gerenciamento de Usuários. (Consulte [Adicionar e configurar usuários](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Em seguida, mapeie as chaves do calendário comercial (as cadeias de caracteres) para os calendários comerciais no fluxo de trabalho dos formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configurar diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, você pode mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configuração de diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, é possível mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. No workflow de formulários, defina um calendário para cada conjunto de usuários que compartilham os mesmos dias não úteis. (Consulte [Criar ou atualizar um calendário comercial](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. No workflow de formulários, mapeie as chaves do calendário comercial ou as associações de grupo para cada calendário. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -79,7 +79,7 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
    Se você selecionar essa opção, um evento que ocorre antes do intervalo de tempo especificado será movido para o início do intervalo de tempo, e um evento que ocorre após o intervalo de tempo será movido para a hora inicial do próximo dia útil.
 
-   Por exemplo, considere uma situação em que um usuário recebe uma tarefa às 2h de uma terça-feira e o lembrete dessa tarefa é definido como dois dias úteis. Sem horário comercial, o lembrete ocorreria às 2:00 da manhã da quinta-feira. Se o horário comercial estiver definido como 8h às 17h, o lembrete será encaminhado para 8h na quinta-feira. Sem horário comercial, se um evento de lembrete fosse criado às 18h de terça-feira, o lembrete ocorreria depois do horário comercial de quinta-feira. Com o horário comercial definido para 8:00 às 17:00, o lembrete ocorreria às 8:00 na sexta-feira.
+   Por exemplo, considere uma situação em que um usuário receba uma tarefa às 2:00 da manhã de uma terça-feira e o lembrete para essa tarefa seja definido como dois dias úteis. Sem o horário comercial, o lembrete ocorreria às 2:00 da manhã na quinta-feira. Se o horário comercial estiver definido como 8:00 às 17:00, o lembrete será enviado por push para 8:00 na quinta-feira. :00Sem horário comercial, se um evento de lembrete fosse criado às 18h00 na terça-feira, o lembrete ocorreria depois do horário comercial na quinta-feira. :00Com o horário comercial definido para as 8h00 às 17h00, o lembrete ocorreria às 8h00 da sexta-feira.:00:00:00
 
 1. No calendário à esquerda, clique duas vezes em qualquer outro dia não útil, como feriados. Não é possível selecionar dias no passado. Os dias não-úteis selecionados são exibidos em uma lista à direita, com a data aparecendo duas vezes em uma linha. Selecione a data à esquerda para digitar o nome ou a descrição do dia não útil.
 

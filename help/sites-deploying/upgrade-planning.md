@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,8 @@ O processo de atualização do AEM precisa ser cuidadosamente tratado nas fases 
 
 É importante garantir que você esteja executando um sistema operacional compatível, Java™ runtime, httpd e a versão do Dispatcher. Para obter mais informações, consulte os [requisitos técnicos do AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). A atualização desses componentes deve ser contabilizada em seu plano de atualização e deve ocorrer antes da atualização do AEM.
 
-<!-- Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
 ## Upgrade Scope and Requirements {#upgrade-scope-requirements}
 
@@ -89,13 +90,15 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
  </tbody>
 </table>
 
-It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM.
+-->
 
 ## Fases de atualização {#upgrade-phases}
 
 Muito trabalho é dedicado ao planejamento e à execução de uma atualização do AEM. Para esclarecer os diferentes esforços que entram nesse processo, a Adobe dividiu os exercícios de planejamento e execução em fases separadas. Nas seções abaixo, cada fase resulta em um material de entrega que é usado com frequência em uma fase futura da atualização.
 
-<!-- Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
 ### Planning for Author Training {#planning-for-author-training}
 
@@ -103,7 +106,8 @@ With any new release, there are potential changes to the UI and user workflows t
 
 ![unu_cropped](assets/unu_cropped.png)
 
-New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/).
+-->
 
 ### Criando um Plano de Teste {#creating-a-test-plan}
 
@@ -121,9 +125,11 @@ O [AEM Analyzer para AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) dev
 
 Embora a Adobe tenha documentado o processo de upgrade de uma instância do AEM, o layout de rede, a arquitetura de implantação e as personalizações de cada cliente exigem o ajuste e a personalização dessa abordagem. Por esse motivo, a Adobe incentiva que você revise toda a documentação fornecida e a use-a para informar um runbook específico para atualização que descreve os procedimentos específicos de atualização e reversão que você seguirá em seu ambiente.
 
-<!--Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
-![runbook-diagram](assets/runbook-diagram.png) -->
+![runbook-diagram](assets/runbook-diagram.png)
+-->
 
 A Adobe forneceu procedimentos de atualização e reversão em [Procedimento de Atualização](/help/sites-deploying/upgrade-procedure.md) e instruções passo a passo para aplicar a atualização em Execução de uma [Atualização In-loco](/help/sites-deploying/in-place-upgrade.md). Essas instruções devem ser revisadas e consideradas com a arquitetura do sistema, as personalizações e a tolerância ao tempo de inatividade para determinar os procedimentos de comutação e reversão apropriados que serão executados durante o upgrade. Quaisquer alterações na arquitetura ou nos tamanhos do servidor devem ser incluídas ao elaborar o runbook personalizado.
 
@@ -131,9 +137,11 @@ A Adobe forneceu procedimentos de atualização e reversão em [Procedimento de 
 
 O resultado dos exercícios anteriores pode ser usado para criar um plano de atualização que abranja os cronogramas esperados para seus esforços de teste ou desenvolvimento e a execução real da atualização.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![develop-project-plan](assets/develop-project-plan.png) -->
+![develop-project-plan](assets/develop-project-plan.png)
+-->
 
 Um plano de projeto abrangente deve incluir:
 
@@ -150,9 +158,11 @@ Um plano de projeto abrangente deve incluir:
 
 A Adobe forneceu procedimentos para [Atualização de Código e Personalizações](/help/sites-deploying/upgrading-code-and-customizations.md) para serem compatíveis com o AEM 6.5 LTS. À medida que esse processo iterativo é executado, as alterações devem ser feitas no runbook, conforme necessário.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![patru_cropped](assets/patru_cropped.png) -->
+![patru_cropped](assets/patru_cropped.png)
+-->
 
 O processo de desenvolvimento e teste é geralmente iterativo. À medida que são descobertos problemas que exigem ajustes no processo de atualização, adicione-os ao runbook de atualização personalizado. Após várias iterações de teste e correção, a base de código deve ser totalmente validada e pronta para implantação no ambiente de preparo.
 
@@ -160,9 +170,11 @@ O processo de desenvolvimento e teste é geralmente iterativo. À medida que sã
 
 A Adobe recomenda uma rodada final de testes depois que a base de código tiver sido certificada pela equipe de controle de qualidade da sua organização. Esta rodada de testes envolverá a validação do runbook em um ambiente de preparo, seguida por rodadas de aceitação do usuário, desempenho e testes de segurança.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![cinci_cropped](assets/cinci_cropped.png) -->
+![cinci_cropped](assets/cinci_cropped.png)
+-->
 
 Essa etapa é essencial, pois é a única vez que você pode validar as etapas no runbook em relação a um ambiente semelhante à produção. Depois que o ambiente for atualizado, é importante dar aos usuários finais algum tempo para fazer logon e passar pelas atividades que eles realizam ao usar o sistema em suas atividades diárias. Encontrar e corrigir problemas nessas áreas antes da ativação pode ajudar a evitar paralisações dispendiosas da produção.
 

@@ -5,10 +5,11 @@ topic-tags: introduction
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 8%
+source-wordcount: '2189'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +23,7 @@ Este tutorial é uma etapa da série [Criar o primeiro formulário adaptável](h
 
 ## Sobre o tutorial  {#about-the-tutorial}
 
-É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
+É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
 
 No final do tutorial, você poderá fazer o seguinte:
 
@@ -105,7 +106,7 @@ Neste tutorial, você estiliza o cabeçalho e o rodapé, os componentes de texto
 1. Selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Tema]**. A página [!UICONTROL Criar Tema] com os campos necessários para criar um tema é exibida. Os campos **[!UICONTROL Título]** e **[!UICONTROL Nome]** são obrigatórios:
 
    * **Título:** especifique um título do tema. Por exemplo, **Tema Global.** O título ajuda a identificar o tema da lista de temas.
-   * **Nome:** Especifique o nome do tema. Por exemplo, **Tema Global.** Um nó com o nome especificado é criado no repositório. Quando você começa a digitar um título, o valor do campo de nome é gerado automaticamente. É possível alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
+   * **Nome:** Especifique o nome do tema. Por exemplo, **Tema Global.** Um nó com o nome especificado será criado no repositório. Quando você começa a digitar um título, o valor do campo de nome é gerado automaticamente. É possível alterar o valor sugerido. O campo de nome pode incluir apenas caracteres alfanuméricos, hifens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
 
 1. Selecione **[!UICONTROL Criar]**. Um tema é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Selecione **[!UICONTROL Abrir]** para abrir o tema recém-criado em uma nova guia. O tema é aberto no editor de temas. Para o estilo, o editor de temas usa um formulário adaptável pronto para uso que acompanha o AEM [!DNL Forms].
 
@@ -305,7 +306,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 
    | Propriedade | Valor |
    |---|---|
-   | Flutuante | À esquerda |
+   | Flutuante | Esquerda |
    | Largura | 10% |
 
 1. Selecione a opção **[!UICONTROL Prova de endereço aprovada pelo governo]** e selecione o ícone ![aem_6_3_edit](assets/aem_6_3_edit.png). Defina as seguintes propriedades:
@@ -320,7 +321,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Dimensões e Posição</td> 
       <td>Flutuante</td> 
-      <td>À esquerda</td> 
+      <td>Esquerda</td> 
      </tr> 
      <tr> 
       <td>Dimensões e Posição</td> 
@@ -338,7 +339,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Dimensões e Posição</td> 
       <td>Altura</td> 
-      <td>40px</td> 
+      <td>40 px</td> 
      </tr> 
      <tr> 
       <td>Dimensões e Posição<br /> </td> 
@@ -410,7 +411,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
      <tr> 
       <td>Dimensões e Posição</td> 
       <td>Flutuante</td> 
-      <td>Direito</td> 
+      <td>Direita</td> 
      </tr> 
      <tr> 
       <td>Dimensões e Posição</td> 
@@ -447,7 +448,8 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -478,7 +480,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 9. Vá para a pasta `clientlibs` recém-criada e adicione as propriedades `allowProxy` e `categories`.
 10. Navegue até `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crie uma pasta css.
 11. Vá para a pasta CSS criada e crie um arquivo. Por exemplo, crie um arquivo como `fonts.css` e cole o código incorporado junto com a URL.
-    ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Salve as alterações.
 
 >[!NOTE]
@@ -514,6 +516,5 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
-
-
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+-->

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Fazer backup do banco de dados do AEM Forms, incluindo todos os logs de transaç
 
 Para obter mais informações, consulte o artigo apropriado da base de dados de conhecimento para seu banco de dados:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Backup e recuperação do Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
-* [Backup e recuperação do MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
+* [Backup e recuperação Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
+* [Backup e recuperação MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Backup e recuperação do Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
 * [Backup e recuperação do DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 

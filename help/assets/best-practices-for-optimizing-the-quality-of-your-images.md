@@ -8,9 +8,10 @@ content-type: reference
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1504'
 ht-degree: 4%
 
 ---
@@ -21,11 +22,11 @@ A otimização da qualidade da imagem pode ser um processo demorado, pois muitos
 
 O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagem do Dynamic Media para ajustar e otimizar imagens e renderizar resultados. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
 
-## Práticas recomendadas para o formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
+## Práticas recomendadas para formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
 * Se nenhum comando format for fornecido no URL, o padrão do Dynamic Media Image Delivery é JPG para entrega.
-* O JPG é compactado a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
+* A JPG compacta a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
 * O JPG usa compactação com perdas, o que significa que os elementos de imagem (pixels) são soltos durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * O JPG geralmente compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas nítidas e contraste.
 * Se as imagens contiverem transparência, use PNG, pois o JPG não oferece suporte a essa transparência.
@@ -47,8 +48,10 @@ A nitidez de imagem é o aspecto mais complexo de controlar imagens no seu site 
 
 Informe oficial de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), que também se aplica ao Experience Manager.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Com o Experience Manager, você pode ajustar a nitidez de imagens na assimilação, no delivery ou em ambos. No entanto, geralmente, ajuste a nitidez de imagens usando apenas um método ou outro, mas não ambos. A nitidez de imagens no delivery, em um URL, normalmente fornece os melhores resultados.
 
@@ -100,7 +103,7 @@ Deixe a configuração de parâmetro monocromático em 0.
 
 Como prática recomendada para a compactação JPG, use `&qlt=85,0`.
 
-## Práticas recomendadas para o dimensionamento do JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Práticas recomendadas para dimensionamento do JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize é um parâmetro útil se você quiser garantir que uma imagem não exceda um determinado tamanho para ser entregue a dispositivos que tenham memória limitada.
 
@@ -125,4 +128,4 @@ Se os resultados da nitidez ainda não forem satisfatórios, aumente o raio em i
 
 * Experimente e teste diferentes parâmetros em tempo real, diretamente em um URL.
 * Como prática recomendada, lembre-se de agrupar comandos do Servidor de imagens do Dynamic Media em uma predefinição de imagem. Uma predefinição de imagem é basicamente uma macro de comando de URL com nomes predefinidos personalizados como `$thumb_low$` e `&product_high$`. O nome da predefinição personalizada em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens no site e reduz o comprimento geral dos URLs.
-* O Experience Manager também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar nitidez às imagens na assimilação. Para casos de uso avançados em que há opções para ajustar e otimizar os resultados da renderização, o [Adobe Professional Services](https://business.adobe.com/br/customers/consulting-services/main.html) pode ajudá-lo com insights personalizados e práticas recomendadas.
+* O Experience Manager também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar nitidez às imagens na assimilação. Para casos de uso avançados em que há opções para ajustar e otimizar os resultados de renderização, o [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) pode ajudá-lo com insight personalizado e práticas recomendadas.

@@ -8,9 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5aa07827-8483-4a99-9197-a17485226a13
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
@@ -31,7 +32,7 @@ Ao criar um Conjunto de rotação ou um Conjunto de imagens, ou fazer upload de 
 | Ativo - Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
 | **Imagem** - Número de Recortes Inteligentes por imagem | 5 | 100 |
-| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
+| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Nenhuma duplicata | 20‡ |
 | **Todos os conjuntos** - Número máximo de ativos por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 | **Grupo de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 | **PDF** - Número máximo de páginas para que uma PDF seja considerada para extração |  | 100 (para todos os PDFs) |
@@ -55,8 +56,10 @@ O Dynamic Media não é compatível com as seguintes combinações de navegador 
 
 ## Fim do suporte para Secure Socket Layer 2.0 e 3.0 e Transport Layer Security 1.0 e 1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 A partir de 30 de abril de 2024, o Adobe Dynamic Media encerrará o suporte para o seguinte:
 
@@ -78,4 +81,3 @@ A partir de 30 de abril de 2024, o Adobe Dynamic Media encerrará o suporte para
    * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
    * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
    * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
-

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,17 @@ Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servi
 
 As etapas de instalação dos seguintes Servidores de Aplicações são descritas:
 
-* [WebSphere](#websphere)
+* [WebSphere® 24.0.0.7](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
 * [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Consulte a documentação apropriada do servidor de aplicativos para obter mais informações sobre a instalação de aplicativos web, configurações do servidor e como iniciar e parar o servidor.
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+-->
 
 ## Descrição geral {#general-description}
 

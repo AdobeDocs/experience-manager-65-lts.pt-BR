@@ -1,5 +1,5 @@
 ---
-title: Converter o serviço PDF Java&trade; API QuickStart (SOAP)
+title: Converter Java&trade; API QuickStart do serviço do PDF (SOAP)
 description: Saiba como o serviço Converter PDF converte documentos do PDF em arquivos PostScript ou de imagem (JPEG, JPEG 2000, PNG e TIFF).
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 0d1c08bd-70ee-4027-9209-9843e0ff9fd2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Os seguintes Quick Starts estão disponíveis para a API de serviço Converter PDF.
 
-[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java™](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java™](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 

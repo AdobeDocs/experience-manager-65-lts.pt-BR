@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3508'
 ht-degree: 1%
 
 ---
@@ -246,7 +246,7 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | uploadThreads | O número de threads de upload usados para uploads assíncronos. | 10 | Não. |
 | writeThreads | O número de threads simultâneos usados para gravação via Gerenciador de Transferência S3. | 10 | Não. |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -400,9 +400,9 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
 
 ## Armazenamento de dados Azure {#azure-data-store}
 
-O AEM pode ser configurado para armazenar dados no serviço de armazenamento Azure da Microsoft®. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para configuração.
+A AEM pode ser configurada para armazenar dados no serviço de armazenamento Azure da Microsoft®. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para configuração.
 
-Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) e baixe a versão mais recente das versões 1.9.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
+Para ativar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse a [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) e baixe a versão mais recente das versões 1.9.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >
@@ -412,7 +412,7 @@ Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
-Depois de baixado, você pode instalar e configurar o conector do Azure da seguinte maneira:
+Após o download, você pode instalar e configurar o conector do Azure da seguinte maneira:
 
 1. Extraia o conteúdo do arquivo zip do pacote de recursos para uma pasta temporária.
 
@@ -433,13 +433,13 @@ Depois de baixado, você pode instalar e configurar o conector do Azure da segui
 
 Você pode usar o arquivo de configuração com as seguintes opções:
 
-* azureSas=&quot;&quot;: na versão 1.6.3 do conector, o suporte à Assinatura de Acesso Compartilhado (SAS) do Azure foi adicionado. **Se as credenciais SAS e de armazenamento existirem no arquivo de configuração, a SAS terá prioridade.** Para obter mais informações sobre a SAS, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
+* azureSas=&quot;&quot;: na versão 1.6.3 do conector, o suporte para Azure Shared Access Signature (SAS) foi adicionado. **Se as credenciais SAS e de armazenamento existirem no arquivo de configuração, a SAS terá prioridade.** Para obter mais informações sobre a SAS, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot;: O ponto de extremidade do Azure Blob. Por exemplo, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação do Microsoft® Azure, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* AzureBlobEndpoint=&quot;&quot;: O ponto de extremidade do Azure Blob. Por exemplo, https://&lt;storage-account>.blob.core.windows.net.
+* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação da Microsoft® Azure, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: A chave de acesso de armazenamento. Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
-* container=&quot;&quot;: o nome do container do Microsoft® Azure blob Storage. O container é um agrupamento de um conjunto de blobs. Para obter detalhes adicionais, leia a [documentação oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* container=&quot;&quot;: o nome do container do Microsoft® Azure blob storage. O container é um agrupamento de um conjunto de blobs. Para obter detalhes adicionais, leia a [documentação oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot;: O número simultâneo de solicitações simultâneas por operação. O valor padrão é 1.
 * maxErrorRetry=&quot;&quot;: Número de tentativas por solicitação. O valor padrão é 3.
 * socketTimeout=&quot;&quot;: o intervalo de tempo limite, em milissegundos, usado para a solicitação. O valor padrão é 5 minutos.
@@ -471,8 +471,8 @@ O processo de coleta de lixo do armazenamento de dados é usado para remover qua
 
 Você pode executar a coleta de lixo do armazenamento de dados ao:
 
-1. Ir para o console JMX em *https://&lt;endereço_servidor:port>/system/console/jmx*
-1. Pesquisando por **RepositoryManagement.** Depois de encontrar o MBean do Gerenciador do repositório, clique nele para exibir as opções disponíveis.
+1. Ir para o console JMX em *https://&lt;serveraddress:port/system/console/jmx*
+1. Procurando **GerenciamentoRepositório.** Depois de encontrar o MBean do Repository Manager, clique nele para exibir as opções disponíveis.
 1. Role até o final da página e clique no link **startDataStoreGC(boolean markOnly)**.
 1. Na caixa de diálogo a seguir, digite `false` para o parâmetro `markOnly` e clique em **Chamar**:
 

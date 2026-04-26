@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6249'
 ht-degree: 0%
 
 ---
@@ -54,35 +54,35 @@ Crie ou edite uma configuração de tipo de arquivo para especificar como o apli
 
 1. Preencha as informações necessárias nestas seções:
 
-[Importação e exportação de arquivos de configuração do PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importação e exportação de arquivos de configuração do PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Configurações de exportação do Adobe PDF (somente Windows)](#adobe-pdf-export-settings-windows-only)
+   [Configurações de exportação do Adobe PDF (somente Windows)](#adobe-pdf-export-settings-windows-only)
 
-[Configurações do HTML para o PDF](#html-to-pdf-settings)
+   [Configurações do HTML para o PDF](#html-to-pdf-settings)
 
-[Fazer vídeos Flash nas configurações do PDF](#flash-videos-to-pdf-settings)
+   [Fazer vídeos Flash nas configurações do PDF](#flash-videos-to-pdf-settings)
 
-[Configurações de XPS para PDF](#xps-to-pdf-settings)
+   [Configurações de XPS para PDF](#xps-to-pdf-settings)
 
-[configurações do otimizador do PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [configurações do otimizador do PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Configurações do Microsoft Excel (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Configurações do Microsoft Excel (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Configurações do Microsoft PowerPoint (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Configurações do Microsoft PowerPoint (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Configurações de projeto do Microsoft (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Configurações de projeto do Microsoft (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Configurações do Microsoft Word (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Configurações do Microsoft Word (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Configurações do Microsoft Visio (somente Windows)](#visio)
+   [Configurações do Microsoft Visio (somente Windows)](#visio)
 
-[Configurações do Microsoft Publisher (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Configurações do Microsoft Publisher (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[Configurações do AutoCAD (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [Configurações do AutoCAD (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[Configurações do OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [Configurações do OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Configurações de outros aplicativos (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Configurações de outros aplicativos (somente Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Para ir para outra seção, clique no link na página da Web ou use os botões **[!UICONTROL Avançar]** ou **[!UICONTROL Anterior]**.
 
@@ -128,7 +128,7 @@ As opções a seguir determinam como os arquivos de imagem são convertidos para
 
 **Usar OCR:** Especifica se o OCR (reconhecimento óptico de caracteres) deve ser aplicado à PDF. O software de OCR permite pesquisar, corrigir e copiar o texto no PDF.
 
-***observação &#x200B;**: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
+***observação **: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
 
 **Idioma de OCR Primário:** Especifica o idioma a ser usado pelo mecanismo de OCR para identificar os caracteres.
 
@@ -267,7 +267,7 @@ Para obter instruções sobre como acessar esta configuração, consulte [Criar 
 
    >[!NOTE]
    >
-   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**&#x200B;ainda serão completamente desincorporadas.*
+   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**ainda serão completamente desincorporadas.*
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Preservar superimposição: mescla a cor do trabalho artístico transparente com
 
 A tabela a seguir mostra tipos comuns de impressoras e sua resolução medida em dpi, sua regra de tela padrão medida em linhas por polegada (lpi) e uma resolução de reamostragem para imagens medidas em pixels por polegada (ppi). Por exemplo, se você estivesse imprimindo em uma impressora a laser de 600 dpi, insira 170 para a resolução na qual as imagens serão reamostradas.
 
-**Imagens** Selecione Imagens para especificar as opções de compactação e reamostragem para imagens coloridas, em tons de cinza e monocromáticas. Talvez você queira experimentar essas opções para encontrar um equilíbrio adequado entre o tamanho do arquivo e a qualidade da imagem.A configuração de resolução para imagens coloridas e em tons de cinza deve ser de 1,5 a 2 vezes maior que a regra da tela de linha na qual o arquivo será impresso. A resolução para imagens monocromáticas deve ser a mesma do dispositivo de saída, mas salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar notavelmente a qualidade da imagem. Imagens que serão ampliadas, como mapas, podem exigir resoluções mais altas.
+**Imagens** Selecione Imagens para especificar as opções de compactação e reamostragem para imagens coloridas, em tons de cinza e monocromáticas. Você pode experimentar essas opções para encontrar um equilíbrio apropriado entre o tamanho do arquivo e a qualidade da imagem.A configuração de resolução para imagens coloridas e em tons de cinza deve ser de 1,5 a 2 vezes maior que a linha de controle da tela na qual o arquivo será impresso. A resolução para imagens monocromáticas deve ser a mesma do dispositivo de saída, mas salvar uma imagem monocromática em uma resolução superior a 1500 dpi aumenta o tamanho do arquivo sem melhorar notavelmente a qualidade da imagem. Imagens que serão ampliadas, como mapas, podem exigir resoluções mais altas.
 
 >[!NOTE]
 >
@@ -503,7 +503,7 @@ Essas opções determinam como os arquivos do Microsoft Word são convertidos. P
 
 **[!UICONTROL Habilitar Acessibilidade E Refluxo Com Adobe PDF Marcado]**: Incorpora marcas no arquivo PDF. Essa opção é selecionada por padrão.
 
-**[!UICONTROL Criar arquivo compatível com PDF/A-1a]**: se selecionado, força a configuração PDF/A-1b:2005 do RGB Adobe PDF a ser usada.
+**[!UICONTROL Criar arquivo compatível com PDF/A-1a]**: se selecionado, força a configuração de Adobe PDF do PDF/A-1b:2005 RGB a ser usada.
 
 **[!UICONTROL Executar Macros Automaticamente]**: executa todas as macros no documento do Word (como uma macro que insere a hora atual) antes de converter o documento.
 

@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b17b7c6b-e41c-457c-8f2c-872790eacd98
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '57'
 ht-degree: 0%
 
 ---
@@ -19,9 +20,10 @@ ht-degree: 0%
 
 A partir de 31 de janeiro de 2014, a plataforma de visualizador DHTML será oficialmente encerrada.
 
-Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=pt-BR) para obter os visualizadores mais recentes compatíveis.
+Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para obter os visualizadores mais recentes compatíveis.
 
-<!-- OBSOLETE CONTENT **What is the change?**
+<!--
+OBSOLETE CONTENT **What is the change?**
 
 Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
@@ -130,5 +132,5 @@ Although you can still be live in production with DHTML-based viewers, it is imp
 
 **Who do I contact for more information?**
 
-If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
- -->
+If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+-->

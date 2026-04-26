@@ -9,10 +9,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3151'
-ht-degree: 54%
+source-wordcount: '3215'
+ht-degree: 52%
 
 ---
 
@@ -22,21 +22,21 @@ ht-degree: 54%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Visão geral {#overview}
 
 Os formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. Você pode optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Escolha entre as seguintes opções para criar um formulário adaptável:
 
-* **Usar um modelo de dados de formulário**
+* **Usando um modelo de dados de formulário**
   A [integração de dados](../../forms/using/data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
-* **Usar um modelo de formulário XDP**
-Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
+* **Usando um Modelo de Formulário XDP**
+É um modelo de formulário ideal se você tiver investimentos em formulários XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
 
-* **Usar uma definição de esquema XML (XSD) ou um esquema JSON**
-Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
+* **Usando uma Definição de Esquema XML (XSD) ou um Esquema JSON**
+Os esquemas XML e JSON representam a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
 
 * **Usando nenhum ou sem um modelo de formulário**
 Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
@@ -75,9 +75,11 @@ A barra lateral permite
 
 **A.** Navegador de conteúdo **B.** Navegador de propriedades **C.** Navegador de ativos **D.** Navegador de componentes
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 A barra lateral inclui os seguintes navegadores:
 
@@ -85,7 +87,7 @@ A barra lateral inclui os seguintes navegadores:
 No navegador de conteúdo, é possível ver
 
    * **Objetos de formulário**
-Mostra a hierarquia de objetos do formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
+Mostra a hierarquia de objetos do Formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
 
    * **Objetos do modelo de dados**
 Permite ver a hierarquia do modelo de formulário.
@@ -121,7 +123,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Adiciona a validação CAPTCHA usando o serviço reCAPTCHA do Google. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Usando CAPTCHA em formulários adaptáveis</a>.</td>
+   <td>Adiciona a validação CAPTCHA usando o serviço Google reCAPTCHA. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Usando CAPTCHA em formulários adaptáveis</a>.</td>
   </tr>
   <tr>
    <td>Gráfico</td>
@@ -153,11 +155,11 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos compatíveis a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Listagem de Anexo de arquivo</td>
@@ -232,7 +234,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
    <td>Permite especificar texto estático.</td>
   </tr>
   <tr>
-   <td>Botão de enviar</td>
+   <td>Botão Enviar</td>
    <td>Adiciona um botão enviar para enviar o formulário à ação de envio configurada.</td>
   </tr>
   <tr>

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4604'
+source-wordcount: '4651'
 ht-degree: 0%
 
 ---
@@ -286,7 +286,7 @@ Os parâmetros de saída do processo do AEM Forms são desserializados em objeto
 
 Você pode invocar o processo `MyApplication/EncryptDocument` executando as seguintes etapas:
 
-1. Crie uma instância `mx:RemoteObject` por meio do ActionScript ou MXML. Consulte Criação de uma instância mx:RemoteObject.
+1. Crie uma instância `mx:RemoteObject` por meio do ActionScript ou MXML. Consulte Criando uma instância mx:RemoteObject.
 1. Configure uma instância `ChannelSet` para se comunicar com o AEM Forms e associá-la à instância `mx:RemoteObject`. Consulte Criar um canal para o AEM Forms.
 1. Chame o método `login` do ChannelSet ou o método `setCredentials` do serviço para especificar o valor do identificador do usuário e a senha. (Consulte [Usando logon único](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Preencha uma instância `mx.rpc.livecycle.DocumentReference` com um documento PDF não seguro para passar para o processo `MyApplication/EncryptDocument`. (Consulte [Passar um documento como parâmetro de entrada](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
@@ -624,7 +624,7 @@ Você pode usar o console de administração para especificar se os documentos s
 >[!NOTE]
 >
 >* Para configurar o AEM Forms para aceitar documentos não seguros, selecione a opção Permitir upload de documento não seguro de aplicativos do Flex. Em seguida, reinicie um aplicativo ou serviço para garantir que a configuração seja aplicada.
->* É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> * É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 
 ### Início Rápido: Invocar um processo de vida curta transmitindo um documento seguro usando Comunicação Remota {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

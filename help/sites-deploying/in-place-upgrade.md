@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,8 @@ Antes de executar a atualização, há várias etapas que devem ser concluídas.
 
 1. Se o sling.properties personalizado precisar ser aplicado, crie uma nova instância do AEM local e recupere o arquivo sling.properties do diretório crx-quickstart/conf. Aplique as alterações personalizadas necessárias a esse arquivo e copie-o no diretório crx-quickstart/conf da instância do AEM que está sendo atualizada. Se não houver propriedades personalizadas, esta etapa poderá ser ignorada.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 

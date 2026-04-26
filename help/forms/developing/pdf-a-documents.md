@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2382'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ O serviço DocConverter pode converter documentos do PDF em documentos PDA/A. Vo
 
 ## Conversão de documentos em documentos do PDF/A {#converting-documents-to-pdf-a-documents}
 
-Você pode usar o serviço DocConverter para converter um documento do PDF em um documento do PDF/A. Como o PDF/A é um formato de arquivamento para preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não tem conteúdo de áudio e vídeo. Antes de converter um documento do PDF em um documento do PDF PDF/A, verifique se esse não é um documento do PDF/A.
+Você pode usar o serviço DocConverter para converter um documento do PDF em um documento do PDF/A. Como o PDF/A é um formato de arquivamento para preservação de longo prazo do conteúdo do documento, todas as fontes são incorporadas e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo. Antes de converter um documento do PDF em um documento do PDF/A, verifique se esse não é um documento do PDF/A.
 
 A especificação PDF/A-1 consiste em dois níveis de conformidade, A e B. A principal diferença entre os dois diz respeito ao suporte de estrutura lógica (acessibilidade), que não é necessário para o nível de conformidade B. Independentemente do nível de conformidade, o PDF/A-1 determina que todas as fontes sejam incorporadas no documento PDF/A gerado. No momento, somente o PDF/A-1b é compatível com a validação (e conversão).
 

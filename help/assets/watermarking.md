@@ -6,9 +6,10 @@ role: User, Admin
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c8b4ff5-28ac-4655-b310-4f0b0417bd63
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 O [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital aos ativos que ajuda os usuários a verificar a autenticidade e os direitos autorais dos ativos. O [!DNL Experience Manager Assets] oferece suporte para que o texto seja usado como marca d&#39;água em arquivos PNG e JPEG.

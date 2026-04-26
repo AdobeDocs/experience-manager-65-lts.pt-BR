@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ A AEM há muito tempo usa o princípio de sobreposições e o Sling Resource Mer
 
 Para tornar mais seguro e fácil para os clientes compreenderem quais áreas de **/libs** são seguras para usar e sobrepor o conteúdo em **/libs** foi classificado com os seguintes mixins:
 
-* **Public (granite:PublicArea)** - Define um nó como público para que ele possa ser sobreposto, herdado ( `sling:resourceSuperType`) ou usado diretamente ( `sling:resourceType`). Os nós abaixo de /libs marcados como Public são seguros para atualização com a adição de um Pacote de compatibilidade. Em geral, os clientes devem usar somente nós marcados como Public.
+* **Público (granite:PublicArea)** - Define um nó como público para que ele possa ser sobreposto, herdado ( `sling:resourceSuperType`) ou usado diretamente ( `sling:resourceType`). Os nós abaixo de /libs marcados como Public são seguros para atualização com a adição de um Pacote de compatibilidade. Em geral, os clientes devem usar somente nós marcados como Public.
 
 * **Abstrato (granite:AbstractArea)** - Define um nó como abstrato. Os nós podem ser sobrepostos ou herdados ( `sling:resourceSupertype`), mas não usados diretamente ( `sling:resourceType`).
 
@@ -86,7 +86,7 @@ Os mixins aplicados no CRXDE Lite mostram nós de conteúdo e árvores marcados 
 
 O AEM 6.5 vem com uma verificação de integridade para alertar os clientes se o conteúdo sobreposto ou referenciado for usado de forma inconsistente com a classificação do conteúdo.
 
-A **&#x200B; Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
+A ** Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
 
 Isso verifica **/aplicativos** e geralmente leva alguns segundos para ser concluído.
 

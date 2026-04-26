@@ -10,9 +10,9 @@ hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7605'
+source-wordcount: '7800'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ A tabela a seguir descreve algumas abordagens possíveis para minimizar as vulne
  </tbody> 
 </table>
 
-Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Instalação {#installation}
 
@@ -264,17 +264,17 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 1. Inicie o servidor do AEM Forms.
 1. Digite o URL abaixo em um navegador para testar a alteração e garantir que ela não funcione mais.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloquear acesso remoto ao Armazenamento Confiável**
 
 O Configuration Manager permite que você faça upload de uma credencial de extensões do Acrobat Reader DC para o AEM Forms no armazenamento de confiança JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
-Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desabilitar todo o acesso anônimo não essencial**
 
-Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Alterar a senha padrão do administrador {#change-the-default-administrator-password}
 
@@ -353,7 +353,7 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
 
 Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo fornecedor do banco de dados. Você deve alocar um usuário do banco de dados com as permissões de banco de dados mínimas necessárias concedidas para uso pelo AEM Forms no JEE. Por exemplo, não use uma conta com privilégios de administrador de banco de dados.
 
-No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br).
+No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Configurando segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -395,7 +395,7 @@ No WebSphere, você pode configurar a segurança integrada somente quando usar u
 1. No painel direito, em Propriedades adicionais, clique em **Propriedades personalizadas** e em **Novo**.
 1. Na caixa **Nome**, digite `integratedSecurity` e, na caixa **Valor**, digite `true`.
 1. No computador em que o WebSphere está instalado, adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows (C:\Windows). O arquivo sqljdbc_auth.dll está no mesmo local da instalação do driver Microsoft SQL JDBC 1.2 (o padrão é *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Selecione **Iniciar** > **Painel de Controle** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;versão> - &lt;nó>) e selecione **Propriedades**.
+1. Selecione **Iniciar** > **Painel de Controle** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) e selecione **Propriedades**.
 1. Na caixa de diálogo Propriedades, clique na guia **Logon**.
 1. Selecione **Esta conta** e forneça as informações necessárias para definir a conta de logon que você deseja usar.
 1. Defina a Segurança no SQL Server do modo **Misto** para **Somente Autenticação do Windows**.
@@ -410,7 +410,7 @@ Como precaução adicional, você deve considerar o uso de ferramentas específi
 * Chave de criptografia do PIN HSM do armazenamento de confiança
 * Hashes de Senha de Usuário Local
 
-Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### Segurança LDAP {#ldap-security}
 
@@ -692,10 +692,10 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
    1. Se for POST, o Forms Server executará a verificação do cabeçalho do Referenciador.
    1. Se for GET, o Forms Server ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do Referenciador. O *CSRF_CHECK_GETS* está especificado no arquivo *web.xml* do seu aplicativo.
 
-1. O Forms Server verifica se o URI solicitado existe na inclui na lista de permissões:
+1. O Forms Server verifica se o URI solicitado existe no incluo na lista de permissões:
 
-   1. Incluir na lista de permissões Se o URI for selecionado, o servidor aceitará a solicitação.
-   1. Incluir na lista de permissões Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
+   1. Se o URI for selecionado, o servidor aceitará a solicitação.
+   1. Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
 
 1. Se houver um Referenciador na solicitação, o servidor verificará se ele é um Referenciador permitido. Se for permitido, o servidor verificará uma Exceção do referenciador:
 
@@ -711,11 +711,11 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
 O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
-Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional do Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a inclui na lista de permissões não é atualizada. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
+Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), o incluo na lista de permissões não é atualizado. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
 
 **Gerenciando a lista de Referenciadores Permitidos**
 
-Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção * [Impedindo ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* da *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista de Referenciadores permitidos.
+Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção *[Impedindo ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* da *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista de Referenciadores permitidos.
 
 **Gerenciando Exceção de Referenciador Permitido e listas de URI Permitido**
 
@@ -822,7 +822,7 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
  <thead> 
   <tr> 
    <th><p>Protocolo</p> </th> 
-   <th><p>Utilização</p> </th> 
+   <th><p>Usar</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -960,9 +960,9 @@ Para obter informações sobre as portas do WebSphere exigidas pelo AEM Forms no
 
 Referindo-se à arquitetura física descrita na seção [AEM Forms na arquitetura física JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
-Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64_br).
+Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuração do redirecionamento de SSL {#configuring-ssl-redirect}
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1582'
 ht-degree: 2%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 2%
 * Um trabalhador proxy para definir e gerenciar uma tarefa específica.
 Elas podem abranger uma grande variedade de tarefas; por exemplo, usar um [!DNL InDesign Server] para processar arquivos.
 
-Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que você criou com [!DNL Adobe InDesign], um proxy é usado. Isso usa um trabalhador proxy para se comunicar com [!DNL Adobe InDesign Server], onde [scripts](https://helpx.adobe.com/br/indesign/using/scripting.html) são executados para extrair metadados e gerar várias representações para [!DNL Experience Manager Assets]. O trabalhador proxy habilita a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e [!DNL Experience Manager] em uma configuração de nuvem.
+Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que você criou com [!DNL Adobe InDesign], um proxy é usado. Isso usa um trabalhador proxy para se comunicar com [!DNL Adobe InDesign Server], onde [scripts](https://helpx.adobe.com/indesign/using/scripting.html) são executados para extrair metadados e gerar várias representações para [!DNL Experience Manager Assets]. O trabalhador proxy habilita a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e [!DNL Experience Manager] em uma configuração de nuvem.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/br/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço oferecendo uma interface para o mecanismo [ExtendScript](https://helpx.adobe.com/br/indesign/using/scripting.html). Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -93,7 +93,7 @@ Para instalar e iniciar o [!DNL InDesign Server] para uso com [!DNL Experience M
 
 [!DNL Experience Manager Assets] tem um fluxo de trabalho pré-configurado **[!UICONTROL Ativo de atualização do DAM]**, que tem várias etapas de processo especificamente para [!DNL InDesign]:
 
-* [Extração de mídia &#x200B;](#media-extraction)
+* [Extração de mídia](#media-extraction)
 * [Extração de página](#page-extraction)
 
 Este fluxo de trabalho é configurado com valores padrão que podem ser adaptados para sua configuração nas várias instâncias do autor (este é um fluxo de trabalho padrão, portanto, mais informações estão disponíveis em [Editando um Fluxo de Trabalho](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Se estiver usando os valores padrão (incluindo a porta SOAP), nenhuma configuração será necessária.
@@ -114,7 +114,8 @@ Argumentos de extração de mídia e caminhos de script
 
 * **Scripts Estendidos**: você pode especificar diferentes combinações de scripts aqui. Se quiser que seus próprios scripts sejam executados em [!DNL InDesign Server], salve os scripts em `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -238,4 +239,4 @@ Você pode alterar as credenciais de administrador padrão (nome de usuário e s
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
+>* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

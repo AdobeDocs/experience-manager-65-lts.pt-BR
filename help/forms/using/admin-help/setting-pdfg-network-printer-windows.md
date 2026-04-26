@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6e9c42d9-fb1d-432b-95b9-6e21706b2a3e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,6 @@ Usuários que possuem as funções de Administrador do PDFG ou Usuário do PDFG 
 
 1. Em Instalação da impressora de rede PDFG, clique no link. Quando forem solicitadas informações da conta do usuário, especifique o nome de usuário e a senha usados na etapa 1 para efetuar login. Será exibida uma mensagem informando que a impressora foi instalada com êxito.
 
-   ***observação &#x200B;**: se a senha do usuário for alterada, os usuários deverão reinstalar a Impressora de Rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
+   ***observação **: se a senha do usuário for alterada, os usuários deverão reinstalar a Impressora de Rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
 
 1. Clique em OK.

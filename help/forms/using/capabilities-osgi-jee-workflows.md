@@ -8,10 +8,10 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 20%
+source-wordcount: '959'
+ht-degree: 19%
 
 ---
 
@@ -253,7 +253,7 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
    <td>Compatível</td>
   </tr>
   <tr>
-   <td>Serviço de Assembler</td>
+   <td>Serviço Assembler</td>
    <td>Compatível</td>
    <td>Compatível</td>
   </tr>
@@ -425,12 +425,12 @@ A tabela a seguir lista os recursos da Caixa de entrada do AEM e do aplicativo A
   <tr>
    <td><p>Delegar tarefas</p> </td>
    <td><p>Compatível</p> </td>
-   <td><p>Incompatível</p> </td>
+   <td><p>Não suportado</p> </td>
   </tr>
   <tr>
    <td><p>Rastreamento do histórico e do resumo das tarefas</p> </td>
    <td><p>Compatível</p> </td>
-   <td><p>Incompatível</p> </td>
+   <td><p>Não suportado</p> </td>
   </tr>
   <tr>
    <td><p>Adicionando anexos no nível da tarefa</p> </td>
@@ -450,7 +450,7 @@ A tabela a seguir lista os recursos da Caixa de entrada do AEM e do aplicativo A
   <tr>
    <td><p>Exibição da exibição de calendário</p> </td>
    <td><p>Compatível</p> </td>
-   <td><p>Incompatível</p> </td>
+   <td><p>Não suportado</p> </td>
   </tr>
   <tr>
    <td><p>Adição de comentários</p> </td>

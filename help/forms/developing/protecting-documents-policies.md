@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 0664e8f8-fad4-40e6-871e-24bba642fb4f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '15394'
+source-wordcount: '15601'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 
-* adobe-rightsmanagement-client.jar
+* adobe-rights-management-client.jar
 * namespace.jar (se o AEM Forms for implantado no JBoss)
 * jaxb-api.jar (se o AEM Forms for implantado no JBoss)
 * jaxb-impl.jar (se o AEM Forms for implantado no JBoss)

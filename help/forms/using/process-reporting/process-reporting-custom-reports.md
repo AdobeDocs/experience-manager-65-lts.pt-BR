@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 1%
+source-wordcount: '1021'
+ht-degree: 15%
 
 ---
 
@@ -29,7 +29,7 @@ Antes de adicionar um relatório personalizado, execute o seguinte procedimento 
 
 ## Uso da interface REST do QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-A interface REST do CRX QueryBuilder expõe a funcionalidade do Construtor de consultas de compartilhamento de ativos por meio de uma API Java e uma API REST. Saiba como usar a [interface REST do CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=pt-BR), antes de executar as seguintes etapas:
+A interface REST do CRX QueryBuilder expõe a funcionalidade do Construtor de consultas de compartilhamento de ativos por meio de uma API Java e uma API REST. Saiba como usar a [interface REST do CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), antes de executar as seguintes etapas:
 
 1. Navegar até a URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Crie uma consulta com base na estrutura do nó de armazenamento do Process Reporting e nas propriedades do nó.
@@ -46,7 +46,7 @@ A interface REST do CRX QueryBuilder expõe a funcionalidade do Construtor de co
 
 ## Criação de um serviço usando a API do Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-O pré-requisito para criar um serviço usando a API do Construtor de Consultas é [criar e implantar o pacote OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e [usar a API do Construtor de Consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=pt-BR).
+O pré-requisito para criar um serviço usando a API do Construtor de Consultas é [criar e implantar o pacote OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e [usar a API do Construtor de Consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crie um serviço OSGi com anotações apropriadas. Para acessar o QueryBuilder, use:
 
@@ -640,7 +640,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
    * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
    * **ícone**- Especifica a imagem que deve representar o relatório de forma visual. Você pode deixar o campo de ícone vazio.
 
-   ![Propriedades do nó &#x200B;](assets/node_properties_new.png)
+   ![Propriedades do nó ](assets/node_properties_new.png)
 
    Propriedades do nó
 

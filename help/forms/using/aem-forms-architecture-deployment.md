@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html).
 
 ## Arquitetura {#architecture}
 
@@ -58,7 +58,8 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 A interface do usuário de criação do AEM Forms não oferece suporte à criação de Documentos de registro (DOR), PDF forms e HTML5 Forms. Esses ativos são projetados usando o aplicativo Forms Designer independente e carregados individualmente no AEM Forms Manager. <!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
 
-O AEM Forms no OSGi <!--and AEM Forms on JEE both--> tem recursos de fluxo de trabalho. Você pode criar e implantar rapidamente fluxos de trabalho básicos para várias tarefas nos formulários AEM no OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
+O AEM Forms no OSGi <!--and AEM Forms on JEE both--> tem recursos de fluxo de trabalho. Você pode criar e implantar rapidamente fluxos de trabalho básicos para várias tarefas nos formulários do AEM no OSGi.
+<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
 
 ## Terminologias {#terminologies}
 
@@ -66,7 +67,7 @@ A imagem a seguir exibe várias configurações de servidor do AEM Form e seus c
 
 ![aem_forms_-_recommendations_topology](assets/aem_forms_-_recommendedtopology.png)
 
-**Autor:** uma instância do autor é um servidor do AEM Forms em execução no modo de execução padrão do Autor. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Destina-se a usuários internos, designers de comunicações interativas e de formulários e desenvolvedores. Ela permite as seguintes funcionalidades:
+**Autor:** uma instância do autor é um servidor do AEM Forms em execução no modo de execução padrão do Autor. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Destina-se a usuários internos, designers de formulários e comunicações interativas e desenvolvedores. Ela permite as seguintes funcionalidades:
 
 * **Criação e gerenciamento de formulários e comunicações interativas:** designers e desenvolvedores podem criar e editar formulários adaptáveis e comunicações interativas, carregar outros tipos de formulários criados externamente, por exemplo, formulários criados no Adobe Forms Designer, e gerenciar esses ativos usando o console do Forms Manager.
 * **Publicação de formulário e comunicação interativa:** O Assets hospedado em uma instância de autor pode ser publicado em uma instância de publicação para executar operações de tempo de execução. A publicação de ativos usa os recursos de replicação do AEM. A Adobe recomenda que um agente de replicação seja configurado em todas as instâncias de autor para enviar manualmente formulários publicados para instâncias de processamento, e outro agente de replicação seja configurado nas instâncias de processamento com o gatilho *Em Recebimento* habilitado para replicar automaticamente os formulários recebidos para publicar instâncias.

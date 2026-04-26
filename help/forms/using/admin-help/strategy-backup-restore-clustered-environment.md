@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log no nó.
    1. Exclua o arquivo .lock no nó, se existir.
    1. Exclua o repository/system.id no nó, se existir.
-   1. Exclua os arquivos &ast;&ast;/listener.properties no nó, se existir.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties no nó, se existir.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log em todos os nós de cluster.
    1. Exclua o .lock em todos os nós de cluster, se existir.
    1. Exclua os nós de cluster repository/system.id, se existirem.
-   1. Exclua os arquivos &ast;&ast;/listener.properties em todos os nós do cluster, se existirem.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties em todos os nós do cluster, se existirem.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]

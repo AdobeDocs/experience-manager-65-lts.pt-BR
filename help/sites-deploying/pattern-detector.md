@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Você pode usar vários métodos para verificar a saída do Detector de padrões
    ![screenshot-2018-2-5detector-padrão](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Por meio de uma interface JSON reativa baseada em texto ou regular**
-* **Por meio de uma interface de linhas JSON reativa, &#x200B;** que gera um documento JSON separado em cada linha.
+* **Por meio de uma interface de linhas JSON reativa, **que gera um documento JSON separado em cada linha.
 
 Ambos os métodos são detalhados abaixo:
 
@@ -111,7 +111,7 @@ Com a saída:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_br"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ Atualmente, o Detector de padrões permite verificar o seguinte:
 * Sobreutilizações de tipos e supertipos de recursos do Sling (com sobreposições de conteúdo de caminho de pesquisa)
 * definições de índices do Oak (compatibilidade)
 * Pacotes VLT (uso excessivo)
-* rep:Compatibilidade de nós de usuário (no contexto da configuração do OAuth)
+* Compatibilidade de nós rep:User (no contexto da configuração OAuth)
 
 >[!NOTE]
 >

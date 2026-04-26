@@ -1,5 +1,5 @@
 ---
-title: Serviço de Assembler Java&trade; API QuickStart(SOAP)
+title: Serviço do Assembler Java&trade; API QuickStart (SOAP)
 description: Saiba como Montar, Desmontar e criar dinamicamente um documento do PDF usando o serviço do Assembler Java&trade; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ O exemplo de código Java a seguir mescla dois documentos de origem do PDF chama
 
 ## Início rápido (modo SOAP): desmontagem de um documento PDF usando a API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerResultPDF.pdf*. Observe que o nome do documento DDX é *shell_disassemble.xml*. Cada documento do PDF desmontado é nomeado como `ResultPDF[Number].pdf`. Ou seja, o primeiro documento PDF desmontado é nomeado como *ResultPDF1.pdf.* Para obter informações sobre o documento DDX *shell_disassemble.xml* usado neste exemplo de código, consulte [Desmontando Documentos do PDF de Forma Programática](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerResultPDF.pdf*. Observe que o nome do documento DDX é *shell_disassemble.xml*. Cada documento do PDF desmontado é nomeado como `ResultPDF[Number].pdf`. Ou seja, o primeiro documento PDF desmontado é denominado *ResultPDF1.pdf.* Para obter informações sobre o documento DDX *shell_disassemble.xml* usado neste exemplo de código, consulte [Desmontando Documentos do PDF de Forma Programática](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*

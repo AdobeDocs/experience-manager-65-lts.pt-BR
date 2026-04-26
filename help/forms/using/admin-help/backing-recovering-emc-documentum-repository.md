@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 054d31c3-bd58-4596-8c06-4909d75e9569
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '792'
+ht-degree: 1%
 
 ---
 
@@ -199,15 +199,15 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
 
    * Backup completo do banco de dados (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U` `[username]` `-P`*[senha ]*`-l full`*&lt;nome_do_banco_de_dados>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[senha ]*`-l full`*&lt;database_name>*
 
    * Backup incremental do banco de dados (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;nome_do_banco_de_dados>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Backup de log do banco de dados (nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;nome_do_banco_de_dados>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nome_do_banco_de_dados>*
 
      Em que:
 

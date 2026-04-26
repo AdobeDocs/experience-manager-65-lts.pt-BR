@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 >O AEM Forms no JEE não é compatível com a configuração do SSO usando Kerberos/SPNEGO em vários ambientes de domínio filho.
 
 1. Decida qual domínio usar para habilitar o SSO. O AEM Forms Server e os usuários devem fazer parte do mesmo domínio do Windows ou domínio confiável.
-1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar SPNEGO, verifique se as senhas de cada um desses usuários são diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
+1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar o SPNEGO, certifique-se de que as senhas de cada um desses usuários sejam diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
 1. Mapeie o nome da entidade de serviço. (Consulte [Mapear um SPN (Nome da Entidade de Serviço)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure o controlador de domínio. (Consulte [Evitar falhas de verificação de integridade Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Adicione ou edite um domínio corporativo conforme descrito em [Adicionando domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Editando e convertendo domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Ao criar ou editar o domínio enterprise, execute estas tarefas:

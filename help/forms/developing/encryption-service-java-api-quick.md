@@ -1,5 +1,5 @@
 ---
-title: Serviço de criptografia Java&trade; API QuickStart(SOAP)
+title: Serviço de criptografia Java&trade; API QuickStart (SOAP)
 description: Saiba como criptografar, remover a criptografia baseada em senha/certificado, desbloquear e determinar o tipo de criptografia para documentos do PDF usando a API Java&trade; no modo SOAP.
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,26 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4ad47959-fe48-4cff-9a54-9a9749cf3d6f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
 # Início rápido da API Java™ do serviço de criptografia (SOAP) {#encryption-service-java-api-quickstart-soap}
 
-[Início rápido (modo SOAP): criptografia de um documento PDF usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): criptografia de um documento PDF usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): remoção da criptografia baseada em senha usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Início rápido (modo SOAP): remoção da criptografia baseada em senha usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Início rápido (modo SOAP): criptografar um documento do PDF com um certificado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Início rápido (modo SOAP): criptografia de um documento PDF com um certificado usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Início rápido (modo SOAP): remoção da criptografia baseada em certificado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Início rápido (modo SOAP): remoção da criptografia baseada em certificado usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Início rápido (modo SOAP): desbloquear um documento PDF criptografado usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): desbloquear um documento PDF criptografado usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): determinação do tipo de criptografia usando o Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Início rápido (modo SOAP): determinação do tipo de criptografia usando a API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 

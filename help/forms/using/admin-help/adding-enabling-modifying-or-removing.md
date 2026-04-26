@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Os pontos de extremidade podem ser adicionados somente a serviços. Um ponto de 
 1. Na lista da guia Pontos de extremidade, selecione o tipo de ponto de extremidade a ser adicionado e clique em Adicionar.
 1. Dependendo do tipo de endpoint, defina configurações adicionais de endpoint.
 
-[Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Configurar pontos de extremidade do Gerenciador de tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [Configurar pontos de extremidade do Gerenciador de tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Clique em Adicionar.
 

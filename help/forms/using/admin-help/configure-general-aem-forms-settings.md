@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1801'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Para obter informações adicionais sobre o diretório GDS, consulte [Preparando
 
 **Local do diretório Fontes do Cliente** *ndash; Digite o caminho para um diretório que contenha fontes adicionais que você deseja usar.
 
-***observação &#x200B;**: as fontes são selecionadas do cache de fontes do sistema Windows e é necessário reiniciar o sistema para atualizar o cache. Depois de especificar o diretório de fontes do Cliente, reinicie o sistema no qual o AEM Forms está instalado.*
+***observação **: as fontes são selecionadas do cache de fontes do sistema Windows e é necessário reiniciar o sistema para atualizar o cache. Depois de especificar o diretório de fontes do Cliente, reinicie o sistema no qual o AEM Forms está instalado.*
 
 **Local do diretório de Fontes do Sistema** *ndash; Digite o caminho para o diretório de fontes fornecido pelo sistema operacional. É possível adicionar vários diretórios, separados por ponto-e-vírgula **;**.
 

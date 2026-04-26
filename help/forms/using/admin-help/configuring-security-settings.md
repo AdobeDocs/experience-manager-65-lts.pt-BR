@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Verifique se o nível de compatibilidade é consistente com o nível de compatib
 **Criptografar Todo o Conteúdo do Documento:** Criptografa o documento e os metadados do documento. Quando essa opção é selecionada, os mecanismos de pesquisa não podem acessar os metadados do documento.
 
 **Criptografar Todo O Conteúdo Do Documento Exceto Os Metadados (Acrobat
-Compatível com 6 e posterior):** criptografa o conteúdo de um documento, mas ainda permite que os mecanismos de pesquisa acessem os metadados do documento. Essa opção está disponível somente quando a opção Compatibilidade está definida como Acrobat 6.0 ou posterior, Acrobat 7.0 ou posterior, ou Acrobat 9.0 ou posterior.
+Compatível com 6 e posterior):** criptografa o conteúdo de um documento, mas ainda permite que mecanismos de pesquisa acessem os metadados do documento. Essa opção está disponível somente quando a opção Compatibilidade está definida como Acrobat 6.0 ou posterior, Acrobat 7.0 ou posterior, ou Acrobat 9.0 ou posterior.
 
 **Criptografar Somente Anexos De Arquivo (Acrobat 7 E Posterior
 Compatível):** Os usuários podem abrir o documento sem uma senha, mas devem digitar uma senha para abrir anexos de arquivo. Essa opção está disponível somente quando a opção Compatibilidade está definida como Acrobat 7.0 ou posterior, ou Acrobat 9.0 ou posterior.
@@ -90,7 +90,7 @@ Essas configurações definem a segurança de senha:
 Essas opções configuram as permissões:
 
 **Usar Uma Senha Para Restringir A Impressão E A Edição De
-O documento e suas configurações de segurança:** Habilita restrições de permissões.
+O Documento e suas Configurações de Segurança:** Habilita restrições de permissões.
 
 **Senha de Permissões:** Impede que os usuários imprimam e editem. Os usuários não podem alterar essas configurações de segurança, a menos que digitem a senha especificada. Não é possível usar a mesma senha usada para a Senha para abrir o documento. Ao definir uma senha de permissões, somente as pessoas que digitarem essa senha poderão alterar as configurações de segurança. Se o documento do PDF tiver os dois tipos de senha, qualquer uma delas o abrirá. No entanto, um usuário só pode definir ou alterar os recursos restritos com a senha de permissões. Se o documento do PDF tiver somente a senha de permissão ou se um usuário abrir o documento usando a senha de abertura do documento, o prompt de senha será exibido quando o usuário tentar alterar as configurações de segurança.
 
@@ -114,17 +114,17 @@ O documento e suas configurações de segurança:** Habilita restrições de per
 Campos:** Permite que os usuários preencham formulários e adicionem assinaturas digitais. No entanto, os usuários não podem adicionar comentários ou criar campos de formulário. Essa opção só estará disponível se um nível de criptografia alto (Acrobat 5.0, 6.0, 7.0 ou 9.0) for selecionado.
 
 **Comentar, Preencher Campos De Formulário E Assinar Itens Existentes
-Campos de assinatura:** Permite que os usuários preencham formulários e adicionem assinaturas digitais e comentários.
+Campos de Assinatura:** Permite que os usuários preencham formulários e adicionem assinaturas digitais e comentários.
 
 **Layout Da Página, Retoque, Preenchimento De Campos De Formulário E Assinatura
-Campos de assinatura existentes:** permite que os usuários insiram, girem ou excluam páginas e criem marcadores ou imagens em miniatura, preencham formulários e adicionem assinaturas digitais. Essa opção não permite que os usuários criem campos de formulário. Essa opção só estará disponível se um nível de criptografia baixo (Acrobat 3.0) for selecionado.
+Campos de Assinatura Existentes:** Permite que os usuários insiram, girem ou excluam páginas e criem marcadores ou imagens em miniatura, preencham formulários e adicionem assinaturas digitais. Essa opção não permite que os usuários criem campos de formulário. Essa opção só estará disponível se um nível de criptografia baixo (Acrobat 3.0) for selecionado.
 
 **Qualquer Página Exceto a Extração:** Permite que os usuários alterem o documento usando qualquer método na Lista de permissões Alterações, exceto remover páginas.
 
 **Habilitar Cópia de Texto, Imagens e Outro Conteúdo:** Permite que os usuários selecionem e copiem o conteúdo do documento PDF. Ele também permite que os utilitários que precisam de acesso ao conteúdo de um arquivo do PDF, como o Acrobat Catalog, acessem esse conteúdo. Essa opção só estará disponível se um nível de criptografia alto for selecionado.
 
 **Habilitar O Acesso Ao Texto De Dispositivos Screen Reader Para O
-Deficientes Visuais:** permite que os usuários com deficiências visuais leiam o documento usando leitores de tela. No entanto, os usuários não podem copiar ou extrair o conteúdo do documento. Essa opção só estará disponível se um nível de criptografia alto for selecionado.
+Deficientes Visuais:** permite que usuários com deficiências visuais leiam o documento usando leitores de tela. No entanto, os usuários não podem copiar ou extrair o conteúdo do documento. Essa opção só estará disponível se um nível de criptografia alto for selecionado.
 
 ## Excluir uma configuração de segurança {#delete-a-security-setting}
 

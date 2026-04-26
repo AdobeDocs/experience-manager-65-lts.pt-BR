@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5313'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Cada atualização no repositório cria uma revisão de conteúdo. Como resultad
 
 Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de revisão online foi introduzida. Comparada à Limpeza de revisão offline, em que a instância do AEM precisa ser desligada, a Limpeza de revisão online pode ser executada enquanto a instância do AEM está online. A Limpeza de revisão online está ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
-**Observação**: [Consulte o Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=pt-BR) para obter uma introdução e saber como usar a Limpeza de Revisão Online.
+**Observação**: [Consulte o Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para obter uma introdução e saber como usar a Limpeza de Revisão Online.
 
 O processo de limpeza de revisão consiste em três fases: **estimativa**, **compactação** e **limpeza**. A estimativa determina se a próxima fase (compactação) será executada ou não com base na quantidade de lixo que pode ser coletada. Durante a fase de compactação, os segmentos e arquivos tar são regravados, eliminando qualquer conteúdo não utilizado. A fase de limpeza remove os segmentos antigos, incluindo qualquer lixo que eles possam conter. O modo offline geralmente pode recuperar mais espaço porque o modo online deve levar em conta o conjunto de trabalho do AEM que impede que segmentos adicionais sejam coletados.
 
@@ -38,7 +38,7 @@ Você também pode ler a [documentação oficial do Oak](https://jackrabbit.apac
 
 ### Quando usar a Limpeza de revisão online em vez da Limpeza de revisão offline? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**A Limpeza de Revisão Online é a maneira recomendada de executar a limpeza de revisão.** A limpeza da Revisão Offline deve ser usada somente em uma base excepcional; por exemplo, antes de migrar para o novo formato de armazenamento ou se você for solicitado pelo Atendimento ao Cliente da Adobe a fazê-lo.
+**A Limpeza de Revisão Online é a maneira recomendada de executar a limpeza de revisão.** A limpeza de Revisão offline deve ser usada somente em uma base excepcional - por exemplo, antes de migrar para o novo formato de armazenamento ou se você for solicitado pelo Atendimento ao cliente da Adobe a fazê-lo.
 
 ## Como executar a limpeza de revisão online {#how-to-run-online-revision-cleanup}
 
@@ -313,7 +313,7 @@ TarMK GC: no base state available, running full compaction instead
       </ul> </li>
      <li>Espaço em disco obtido pela limpeza da revisão
       <ul>
-       <li>O espaço é recuperado somente quando a fase de limpeza é concluída. A conclusão da fase de limpeza é marcada pela mensagem de log "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". O tamanho da limpeza da postagem é {} ({} bytes) e o espaço recuperado é {} ({} bytes). O peso/profundidade do mapa de compactação é {}/{} ({} bytes/{}).".</li>
+       <li>O espaço é recuperado somente quando a fase de limpeza é concluída. A conclusão da fase de limpeza é marcada pela mensagem de log "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". O tamanho da limpeza da publicação é {} ({} bytes) e o espaço recuperado é {} ({} bytes). O peso/profundidade do mapa de compactação é {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Ocorreu um problema durante a limpeza da revisão
       <ul>
@@ -409,7 +409,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>Um aplicativo que contorna os mecanismos de acesso recomendados (como Sling e a API JCR) e usa uma API/SPI de nível inferior para acessar o repositório e, em seguida, excede o tempo de retenção de um segmento. Ou seja, ela mantém uma referência a uma entidade por mais tempo do que o tempo de retenção permitido pela Limpeza de revisão online (24 horas por padrão). Esse caso é transitório e não resulta na corrupção dos dados. Para recuperar, a ferramenta oak-run deve ser usada para confirmar a natureza transitória da exceção (a verificação oak-run não deve relatar erros). Para fazer isso, a instância deve ser colocada offline e reiniciada posteriormente.</li>
      <li>Um evento externo causou a corrupção dos dados no disco. Isso pode ser uma falha de disco, falta de espaço em disco ou uma modificação acidental dos arquivos de dados necessários. Nesse caso, a instância deve ser colocada offline e reparada usando a verificação oak-run. Para obter mais detalhes sobre como executar a verificação oak-run, leia a seguinte <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentação do Apache</a>.</li>
-     <li>Resolva todas as outras ocorrências por meio do <a href="https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support" target="_blank">Atendimento ao cliente da Adobe</a>.</li>
+     <li>Resolva todas as outras ocorrências por meio do <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Atendimento ao cliente da Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -420,7 +420,8 @@ TarMK GC: no base state available, running full compaction instead
 
 O error.log será detalhado se houver incidentes durante o processo de limpeza de revisão online. A matriz a seguir tem como objetivo explicar as mensagens mais comuns e fornecer possíveis soluções:
 
-<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!--
+| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -428,7 +429,8 @@ O error.log será detalhado se houver incidentes durante o processo de limpeza d
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message does not mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+-->
 
 <table style="table-layout:auto">
  <tbody>
@@ -529,7 +531,7 @@ A ferramenta oak-run apresenta vários recursos que visam aumentar o desempenho 
 
 A lista inclui vários parâmetros de linha de comando, conforme descrito abaixo:
 
-* **-mmap.** Você pode definir como verdadeiro ou falso. Se definido como verdadeiro, o acesso com mapeamento de memória será usado. Se definido como falso, o acesso a arquivos será usado. Se não especificado, o acesso mapeado à memória é usado em sistemas de 64 bits e o acesso a arquivos é usado em sistemas de 32 bits. No Windows, o acesso regular a arquivos é sempre aplicado e essa opção é ignorada. **Este parâmetro substituiu o parâmetro -Dtar.memoryMapped.**
+* **-mmap.** Você pode definir isso como verdadeiro ou falso. Se definido como verdadeiro, o acesso com mapeamento de memória será usado. Se definido como falso, o acesso a arquivos será usado. Se não especificado, o acesso mapeado à memória é usado em sistemas de 64 bits e o acesso a arquivos é usado em sistemas de 32 bits. No Windows, o acesso regular a arquivos é sempre aplicado e essa opção é ignorada. **Este parâmetro substituiu o parâmetro -Dtar.memoryMapped.**
 
 * **-Dupdate.limit**. Define o limite para a liberação de uma transação temporária para o disco. O valor padrão é 10000.
 
@@ -537,9 +539,9 @@ A lista inclui vários parâmetros de linha de comando, conforme descrito abaixo
 
 * **-Dcompaction-progress-log**. O número de nós compactados registrados. O valor padrão é 150000, o que significa que os primeiros 150000 nós compactados são registrados durante a operação. Use isso com o próximo parâmetro documentado abaixo.
 
-* **-Dtar.PersistCompactionMap.** Defina este parâmetro como true para usar espaço em disco, em vez de memória heap para persistência do mapa de compactação. Requer a ferramenta oak-run **versões 1.4** e superior. Para obter mais detalhes, consulte a pergunta 3 na seção [Perguntas frequentes sobre limpeza de revisão offline](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parâmetro foi removido na versão 1.6 do Oak e não tem efeito.**
+* **-Dtar.PersistCompactionMap.** Defina esse parâmetro como true para usar espaço em disco em vez de memória heap para persistência do mapa de compactação. Requer a ferramenta oak-run **versões 1.4** e superior. Para obter mais detalhes, consulte a pergunta 3 na seção [Perguntas frequentes sobre limpeza de revisão offline](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parâmetro foi removido na versão 1.6 do Oak e não tem efeito.**
 
-* **—forçar.** Forçar compactação e ignorar uma versão de repositório de segmentos não correspondente.
+* **—força.** Forçar compactação e ignorar uma versão não correspondente do armazenamento de segmentos.
 
 >[!CAUTION]
 >
@@ -555,7 +557,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Além dos métodos apresentados acima, você também pode acionar o mecanismo de limpeza de revisão usando o console JMX da seguinte maneira:
 
-1. Abra o Console JMX acessando [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Abra o Console JMX em [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Clique no **RevisionGarbageCollection** MBean.
 1. Na próxima janela, clique em **startRevisionGC()** e em **Invoke** para iniciar o trabalho de Coleta de Lixo de Revisão.
 

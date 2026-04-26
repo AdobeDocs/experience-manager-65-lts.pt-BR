@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Os serviços do Process Reporting publicam dados do banco de dados do AEM Forms 
 
 Essa operação pode consumir muitos recursos e afetar o desempenho dos servidores da AEM Forms. É recomendável agendar isso fora dos intervalos de tempo ocupados do AEM Forms Server.
 
-Por padrão, a publicação de dados está programada para ser executada todos os dias às 2:00.
+Por padrão, a publicação de dados está programada para ser executada todos os dias às 2:00 horas.
 
 Para alterar a programação de publicação, execute as seguintes etapas:
 

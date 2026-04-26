@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e9e0371-018a-496f-aad4-04ff21391d51
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -109,4 +109,4 @@ O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo
 Esse mecanismo não oferece suporte à criação online de perfis HSM ou verificações de status. No entanto, há duas maneiras de criar perfis HSM e executar verificações de status:
 
 * Crie uma credencial de cliente do AEM Forms transmitindo-a ao Certificado do signatário. Siga as etapas em [Configurando o suporte HSM para o AEM Forms ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para o AEM Forms de uma versão anterior do AEM Forms, faça alterações no cliente, pois a credencial continha informações de certificado e serviço da Web.
-* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregou apenas o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção facilmente sem fazer alterações no cliente, mesmo se tiver atualizado para o AEM Forms de uma versão anterior do AEM Forms. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.
+* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregava somente o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção facilmente sem fazer alterações no cliente, mesmo se tiver atualizado para o AEM Forms de uma versão anterior do AEM Forms. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.

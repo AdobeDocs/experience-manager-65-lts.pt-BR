@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
 1. Em Sincronizar Expressão Cron do Terminador de Sincronização, insira uma expressão cron que represente o intervalo em que o Gerenciamento de Usuários tenta novamente sincronizações com falha. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
-   O padrão é 0 0/13 &ast; ? &ast; , que significa que a verificação ocorre a cada 13 minutos.
+   O padrão é 0 0/13 &amp;ast; ? &amp;ast; , que significa que a verificação ocorre a cada 13 minutos.
 
 ## Sincronizar diretórios manualmente {#manually-synchronize-directories}
 
@@ -93,7 +93,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. Agendar sincronização:
 
    * Para ativar a sincronização automática diariamente, em Scheduler, selecione Ocorre. Selecione Diariamente na lista e digite a hora no formato de 24 horas na caixa correspondente. Quando você salva suas configurações, esse valor é convertido em uma expressão CRON, que é exibida na caixa Expressão CRON.
-   * Para agendar a sincronização em um dia da semana ou mês específico ou em um mês específico, selecione Expressão Cron e digite a expressão apropriada na caixa. Por exemplo, sincronize à 1h30 da última sexta-feira do mês.
+   * Para agendar a sincronização em um dia da semana ou mês específico ou em um mês específico, selecione Expressão Cron e digite a expressão apropriada na caixa. Por exemplo, sincronize às 1:30 da manhã na última sexta-feira do mês.
 
 O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 

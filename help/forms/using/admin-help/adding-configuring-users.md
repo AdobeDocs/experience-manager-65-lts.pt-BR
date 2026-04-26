@@ -7,9 +7,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ Se um usuário sem os formulários do AEM e as permissões do CQ necessárias te
 * Solução de gerenciamento de correspondência
 * AEM forms Workspace
 
-  ***observação &#x200B;**: o Flex Workspace está obsoleto para a versão do AEM Forms.*
+  ***observação **: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 * gerenciador de formulários
 * Relatório de processo

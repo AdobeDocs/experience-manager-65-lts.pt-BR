@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3174'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>Plataforma</strong></p> </th>
    <th><p><strong>Nível de compatibilidade</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Platform</strong></p> </td>
+   <td><p><strong>Plataforma</strong></p> </td>
    <td><p><strong> Descrição</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
  <tbody>
   <tr>
    <th>Banco de dados </th>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>Plataforma</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Platform</strong></p> </td>
+   <td><p><strong> Plataforma</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
    <td><p><strong>Definições de patch compatíveis</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Platform</strong></p> </th>
+   <th><p><strong> Plataforma</strong></p> </th>
    <th><p><strong>Nível de suporte</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -347,11 +347,11 @@ Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM
   </tr>
   <tr>
    <td> Cliente do gerenciador de conteúdo IBM®</td>
-   <td>8,7 </td>
+   <td>8.7 </td>
   </tr>
   <tr>
    <td> Cliente do gerenciador de conteúdo IBM® (obsoleto)</td>
-   <td>8,5 </td>
+   <td>8.5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
    <td>2019<br /> </td>
@@ -377,7 +377,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -407,8 +407,10 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >- Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
 >- O serviço PDF Generator não oferece suporte ao Microsoft® Windows 11
 
-<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
+<!--
+Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+-->
 
 ### Exceções ao suporte de acessibilidade {#exceptions-to-accessibility-support}
 
@@ -454,8 +456,8 @@ Os seguintes subsistemas do AEM Forms não são compatíveis com [508](https://w
 
 Para requisitos adicionais, consulte:
 
-- [Requisitos do sistema para um AEM Forms de servidor único na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_br)
-- [Requisitos do sistema para um AEM Forms clusterizado na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_br)
+- [Requisitos de sistema para um AEM Forms de servidor único na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [Requisitos de sistema para um AEM Forms em cluster na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat e Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -484,7 +486,7 @@ Para requisitos adicionais, consulte:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>Plataforma</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -622,7 +624,7 @@ Atualizações de suporte, patches e fix packs do AEM Forms no JEE sobre a vers�
 
 ## Política de suporte a patches de terceiros {#third-party-patch-support-policy}
 
-Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; dos respectivos documentos do produto. Acesse toda a documentação de [https://adobe.com/go/learn_aemforms_documentation_65_br](https://adobe.com/go/learn_aemforms_documentation_65_br).
+Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; dos respectivos documentos do produto. Acesse toda a documentação de [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65).
 
 A AEM Forms nas plataformas de referência de terceiros do JEE especifica o nível de patch específico da infraestrutura de terceiros que estava em vigor durante o desenvolvimento e o lançamento do AEM Forms no JEE e a partir do nível mínimo de patch/service pack da infraestrutura compatível com essa versão do AEM Forms no JEE.
 
@@ -652,7 +654,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -735,7 +737,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -804,7 +806,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/br/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

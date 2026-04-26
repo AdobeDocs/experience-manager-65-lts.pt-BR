@@ -1,6 +1,6 @@
 ---
 title: Renderização do Forms como HTML
-description: Use o serviço Forms para renderizar formulários como HTML em resposta a uma solicitação HTTP de um navegador da Web. Você pode usar a API do Java&trade; e a API de serviço da Web para renderizar formulários como HTML.
+description: Use o serviço Forms para renderizar formulários como HTML em resposta a uma solicitação HTTP de um navegador da Web. Você pode usar a API Java&trade; e a API de serviço da Web para renderizar formulários como HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4149'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Você deve mover explicitamente de um painel para outro usando os métodos `xfa.
 
 **`.fsc-ds-popup-bg`**: Esta propriedade da folha de estilos não está sendo usada.
 
-**.`fsc-ds-popup-btn`**: Esta propriedade da folha de estilos não está sendo usada.
+**.`fsc-ds-popup-btn`**: esta propriedade de folha de estilos não está sendo usada.
 
 ## Execução de scripts {#running-scripts}
 
@@ -89,9 +89,9 @@ Você pode criar formulários que se movem entre páginas (painéis) chamando os
 
 É recomendável não atribuir às variáveis de script e aos campos de formulário os mesmos nomes, como item. Alguns navegadores da Web, como o Internet Explorer, podem não inicializar uma variável com o mesmo nome de um campo de formulário que resulta na ocorrência de um erro de script. É uma boa prática fornecer nomes diferentes para campos de formulário e variáveis de script.
 
-Ao renderizar formulários do HTML que contêm a funcionalidade de navegação de página e scripts de formulário (por exemplo, suponha que um script recupere dados de campo de um banco de dados sempre que o formulário for renderizado), verifique se o script de formulário está no formato:calcular evento em vez de no formulário:readyevent.
+Ao renderizar formulários HTML que contêm a funcionalidade de navegação de página e scripts de formulário (por exemplo, suponha que um script recupere dados de campo de um banco de dados sempre que o formulário for renderizado), verifique se o script de formulário está no evento form:calculate em vez do formulário:readyevent.
 
-Os scripts de formulário que estão no evento form:ready são executados apenas uma vez durante a renderização inicial do formulário e não são executados para recuperações de páginas subsequentes. Por outro lado, o evento form:calculate é executado para cada navegação de página em que o formulário é renderizado.
+Os scripts de formulário que estão no evento de formulário :ready são executados apenas uma vez durante a renderização inicial do formulário e não são executados para recuperações de páginas subsequentes. Por outro lado, o evento de formulário :calculate é executado para cada navegação de página em que o formulário é renderizado.
 
 >[!NOTE]
 >
@@ -284,7 +284,7 @@ Renderize um formulário do HTML usando a API do Forms (Java):
 
    >[!NOTE]
    >
-   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
+   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da Raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário do HTML
 
@@ -342,7 +342,7 @@ Renderize um formulário do HTML usando a API do Forms (serviço da Web):
 
    >[!NOTE]
    >
-   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
+   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da Raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário do HTML
 

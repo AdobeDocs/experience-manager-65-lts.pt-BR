@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f1b39e7-5de5-4b54-b622-61774ce839db
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ A SAML (Security Assertion Markup Language) é uma das opções que você pode s
 Para obter uma explicação sobre SAML, consulte [Visão Geral Técnica da SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurações do Provedor de serviço SAML.
-1. Na caixa ID da entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários do AEM. Você também especifica essa ID exclusiva ao configurar seu IDP (por exemplo, `um.lc.com`.) Também é possível usar a URL usada para acessar formulários do AEM (por exemplo, `https://AEMformsserver`).
+1. Na caixa ID da entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários do AEM. Você também especifica esse identificador exclusivo ao configurar seu IDP (por exemplo, `um.lc.com`.) Você também pode usar a URL usada para acessar formulários do AEM (por exemplo, `https://AEMformsserver`).
 1. Na caixa URL Base do Provedor de Serviços, digite a URL base do seu Forms Server (por exemplo, `https://AEMformsserver:8080`).
 1. (Opcional) Para permitir que o AEM Forms envie solicitações de autenticação assinadas ao IDP, execute as seguintes tarefas:
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7478'
 ht-degree: 0%
 
 ---
@@ -95,19 +95,19 @@ As configurações do PDF determinam com precisão como os arquivos são convert
 1. Clique em Novo ou clique no nome de uma configuração existente.
 1. Na página Nova/Editar configuração do Adobe PDF, preencha as informações necessárias nestas seções:
 
-[Opções gerais](configuring-pdf-settings.md#general-options)
+   [Opções gerais](configuring-pdf-settings.md#general-options)
 
-[Opções de imagens](configuring-pdf-settings.md#images-options)
+   [Opções de imagens](configuring-pdf-settings.md#images-options)
 
-[Opções de fontes](configuring-pdf-settings.md#fonts-options)
+   [Opções de fontes](configuring-pdf-settings.md#fonts-options)
 
-[Opções de cores](configuring-pdf-settings.md#color-options)
+   [Opções de cores](configuring-pdf-settings.md#color-options)
 
-[Opções avançadas](configuring-pdf-settings.md#advanced-options)
+   [Opções avançadas](configuring-pdf-settings.md#advanced-options)
 
-[Opções de conformidade e emissão de relatórios de padrões](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Opções de conformidade e emissão de relatórios de padrões](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Opções de exibição inicial](configuring-pdf-settings.md#initial-view-options)
+   [Opções de exibição inicial](configuring-pdf-settings.md#initial-view-options)
 
    Para ir para outra seção, clique no link na página da Web ou use os botões Next e Previous.
 
@@ -411,7 +411,7 @@ Ao trabalhar com as opções Avançadas, é útil compreender o idioma do PostSc
 * redução da resolução e codificação de imagens amostradas
 * incorporação de fontes Type 1 e instâncias de fontes Type 1 Multiple Master
 
-**Permitir XObjects do PostScript PostScript:** os XObjects armazenam informações que aparecem em muitas páginas do mesmo arquivo, como informações de imagem de plano de fundo ou de cabeçalho e rodapé. O uso de PostScript XObjects pode resultar em uma impressão mais rápida, mas requer mais memória de impressora. Para impedir a criação de PostScript XObjects, desmarque essa opção se criar arquivos PDF compatíveis com o Acrobat 5 (PDF 1.4) ou posterior.
+**Permitir XObjects do PostScript:** os XObjects armazenam informações que aparecem em muitas páginas do mesmo arquivo, como informações de imagem de plano de fundo ou de cabeçalho e rodapé. O uso de PostScript XObjects pode resultar em uma impressão mais rápida, mas requer mais memória de impressora. Para impedir a criação de PostScript XObjects, desmarque essa opção se criar arquivos PDF compatíveis com o Acrobat 5 (PDF 1.4) ou posterior.
 
 **Converter gradientes em sombras suaves:** converte mesclagens em sombras suaves para o Acrobat 4 e posterior, tornando os arquivos PDF menores e melhorando potencialmente a qualidade da saída final. O PDF Generator converte gradientes do Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress e Microsoft PowerPoint.
 

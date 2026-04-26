@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Se você estiver usando o MySQL como banco de dados do AEM Forms, o Console de A
 1. Na caixa Nome, digite um nome para a categoria e, na caixa Descrição, digite uma descrição da categoria.
 1. Clique em Adicionar. A categoria é exibida na página Gerenciamento de categorias.
 
-   ***observação &#x200B;**: você pode adicionar até cinco níveis de hierarquia ao criar categorias.*
+   ***observação **: você pode adicionar até cinco níveis de hierarquia ao criar categorias.*
 
 ## Editar uma categoria {#edit-a-category}
 

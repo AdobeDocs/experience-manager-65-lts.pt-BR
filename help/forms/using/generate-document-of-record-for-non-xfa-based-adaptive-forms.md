@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4292'
-ht-degree: 1%
+source-wordcount: '4354'
+ht-degree: 2%
 
 ---
 
@@ -392,7 +392,7 @@ O documento de configurações de registro de um componente está disponível em
    * **[!UICONTROL Colocar]** > **[!UICONTROL Na página]** > Nome da página mestra: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
    * **[!UICONTROL Inserir]** > **[!UICONTROL Início da Próxima Página]**: coloca o painel no topo da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
    * **[!UICONTROL Local]** > **[!UICONTROL Início da Página]** > Nome da página mestra: coloca o painel na parte superior da página quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
-* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é colocado. Os seguintes campos estão disponíveis na seção **[!UICONTROL Depois]**:
+* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é colocado.Os seguintes campos estão disponíveis na seção **[!UICONTROL Após]**:
    * **[!UICONTROL Depois]** > **[!UICONTROL Continuar Preenchendo Pai]**: continua mesclando dados para todos os objetos restantes a serem preenchidos no painel pai.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a próxima área de conteúdo]**: começa a preencher a próxima área de conteúdo depois de posicionar o painel.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada após posicionar o painel.
@@ -519,12 +519,14 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
-  
 -->
 
 ### Usar um arquivo XCI personalizado no ambiente de desenvolvimento do Forms local
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
-1. Abra o gerenciador de configurações <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Abra o gerenciador de configurações <!--Cloud Service SDK-->.
+
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+
 1. Localize e abra a configuração **[!UICONTROL Forms adaptável e Canal da Web de comunicação interativa]**.
 1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.

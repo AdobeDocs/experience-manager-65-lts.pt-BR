@@ -10,10 +10,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3e804a65-156c-40b5-b707-8f20f84a58e5
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3884'
-ht-degree: 0%
+source-wordcount: '4060'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ Execute as seguintes etapas para criar um formulário adaptável habilitado para
 
    * Selecione a opção **[!UICONTROL Gerar documento de registro]**. Se você usar um formulário adaptável com a opção Documento de registro ativada, o documento enviado para assinatura exibirá todos os campos do formulário adaptável.
 
-1. Selecione **[!UICONTROL Criar.]** Um formulário adaptável habilitado para assinatura é criado, que pode ser usado para adicionar [!DNL Adobe Sign] campos.
+1. Selecione **[!UICONTROL Criar.]** Um formulário adaptável habilitado para assinatura é criado, e pode ser usado para adicionar [!DNL Adobe Sign] campos.
 
 #### Editar um formulário adaptável para [!DNL Adobe Sign] {#editafsign}
 
@@ -141,7 +141,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
 
 1. Selecione o ícone do **[!UICONTROL Campo do Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png). Ele exibe opções para selecionar e adicionar [!DNL Adobe Sign] campos.
 
-   Expanda o campo suspenso **[!UICONTROL Tipo]** para selecionar um campo [!DNL Adobe Sign] e selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para adicionar o campo selecionado ao bloco [!DNL Adobe Sign]. O campo suspenso **[!UICONTROL Tipo]** inclui os tipos de campo Assinatura, Informações do signatário e Dados. A integração [!DNL Adobe Sign] com o AEM [!DNL Forms] oferece suporte aos campos listados somente na caixa suspensa [!UICONTROL Tipo]. Para obter informações detalhadas sobre [!DNL Adobe Sign] campos, consulte [documentação do Adobe Sign](https://helpx.adobe.com/br/sign/help/field-types.html).
+   Expanda o campo suspenso **[!UICONTROL Tipo]** para selecionar um campo [!DNL Adobe Sign] e selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para adicionar o campo selecionado ao bloco [!DNL Adobe Sign]. O campo suspenso **[!UICONTROL Tipo]** inclui os tipos de campo Assinatura, Informações do signatário e Dados. A integração [!DNL Adobe Sign] com o AEM [!DNL Forms] oferece suporte aos campos listados somente na caixa suspensa [!UICONTROL Tipo]. Para obter informações detalhadas sobre [!DNL Adobe Sign] campos, consulte [documentação do Adobe Sign](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
 
    Se você selecionar **[!UICONTROL Assinatura digital]** na lista suspensa, poderá aplicar assinaturas digitais ao formulário adaptável:
 
-   * Online usando assinaturas em nuvem para assinar com uma [ID digital](https://helpx.adobe.com/br/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança.
+   * Online usando assinaturas em nuvem para assinar com uma [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança.
    * Localmente, baixando o documento com o Adobe Acrobat ou o Reader usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
 ### Habilitar [!DNL Adobe Sign] para um formulário adaptável {#enableadobsignforanadaptiveform}
@@ -199,7 +199,7 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    * **[!UICONTROL Título]:** especifique um título para identificar exclusivamente um signatário.
 
-   * **[!UICONTROL O signatário e a pessoa que preenche o formulário são a mesma pessoa?]:** Selecione **Sim**, se o preenchimento do formulário e o primeiro signatário forem a mesma pessoa. Se a opção estiver definida como **Não**, não use o componente de etapa de assinatura no formulário adaptável. Se o formulário contiver um componente Etapa de assinatura, o campo será automaticamente definido como Sim.
+   * **[!UICONTROL O signatário e a pessoa que preenche o formulário são a mesma pessoa?]:** Selecione **Sim**, se o preenchedor do formulário e o primeiro assinante forem a mesma pessoa. Se a opção estiver definida como **Não**, não use o componente de etapa de assinatura no formulário adaptável. Se o formulário contiver um componente Etapa de assinatura, o campo será automaticamente definido como Sim.
 
    * **[!UICONTROL Endereço de email do signatário]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário do AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (se houver um único signatário) não é idêntico à conta do [!DNL Adobe Sign] usada para configurar os serviços em nuvem da AEM.
 
@@ -223,9 +223,10 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
 Depois de adicionar [!DNL Adobe Sign] campos a um formulário adaptável, habilitar [!DNL Adobe Sign] no contêiner de formulário, selecionar [!DNL Adobe Sign] Cloud Service e adicionar [!DNL Adobe Sign] signatários, selecione uma ação de envio apropriada para o formulário adaptável. Para obter informações detalhadas sobre ações de envio de formulários adaptáveis, consulte [Configurar a ação Enviar](../../forms/using/configuring-submit-actions.md).
 
-Além disso, um formulário adaptável habilitado para [!DNL Adobe Sign] é enviado somente depois que todos os signatários assinarem o formulário. Você pode encontrar o formulário parcialmente assinado na seção Pending Sign do portal de formulários. O Serviço de Configuração [!DNL Adobe Sign] continua sondando o servidor [!DNL Adobe Sign] em [intervalos regulares](../../forms/using/adobe-sign-integration-adaptive-forms.md) para verificar o status das assinaturas. Se todos os signatários concluírem a assinatura do formulário, o serviço de ação de envio será iniciado e o formulário será enviado. Se você estiver usando uma ação de envio personalizada e o formulário usar [!DNL Adobe Sign], atualize sua ação de envio personalizada para usar o serviço de ação de envio.
+Além disso, um formulário adaptável habilitado para [!DNL Adobe Sign] é enviado somente depois que todos os signatários assinarem o formulário. Você pode encontrar o formulário parcialmente assinado na seção Pending Sign do portal de formulários. [!DNL Adobe Sign] O Serviço de Configuração continua sondando o servidor [!DNL Adobe Sign] em [intervalos regulares](../../forms/using/adobe-sign-integration-adaptive-forms.md) para verificar o status das assinaturas. Se todos os signatários concluírem a assinatura do formulário, o serviço de ação de envio será iniciado e o formulário será enviado. Se você estiver usando uma ação de envio personalizada e o formulário usar [!DNL Adobe Sign], atualize sua ação de envio personalizada para usar o serviço de ação de envio.
 
-<!-- Remove when forms portal goes live
+<!--
+Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
@@ -259,7 +260,7 @@ Depois de [editar as propriedades do formulário adaptável para o Adobe sign](.
 
    Aplique assinaturas digitais ao formulário adaptável usando:
 
-   * Assinaturas na nuvem: assine com uma [ID digital](https://helpx.adobe.com/br/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança. A opção Assinatura na nuvem não está disponível para o Adobe Acrobat Sign Solutions para o governo.
+   * Assinaturas na nuvem: assine com uma [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança. A opção Assinatura na nuvem não está disponível para o Adobe Acrobat Sign Solutions para o governo.
 
    * Adobe Acrobat ou Reader: baixe e abra o documento com o Adobe Acrobat ou Reader para assinar usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
@@ -306,7 +307,7 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
 
    >[!NOTE]
    >
-   >* Ao arrastar e soltar o componente **[!UICONTROL Etapa de assinatura]** no formulário, o **[!UICONTROL Signatário e a pessoa que preenche o formulário são a mesma pessoa?A opção]** é automaticamente definida como **Sim**. É necessário manter o formulário funcionando.
+   >* Ao arrastar e soltar o componente **[!UICONTROL Etapa de assinatura]** no formulário, o **[!UICONTROL Signatário e a pessoa que preenche o formulário são a mesma pessoa?]** é automaticamente definida para **Sim**. É necessário manter o formulário funcionando.
    >* Use o componente Etapa de resumo após o componente Etapa de assinatura para obter a melhor experiência. A etapa Resumo envia o formulário automática e imediatamente após você concluir a assinatura de um formulário no componente Etapa de assinatura. Se você não usar a etapa de resumo, um envio automático será acionado somente após o intervalo definido com o [Serviço de Configuração do Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
    >
    >Algumas práticas recomendadas são:
@@ -333,7 +334,7 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode visu
 **Ans:** O formulário adaptável criado com o modelo avançado está configurado para usar [!DNL Adobe Sign]. Para resolver o erro, crie e selecione uma configuração de nuvem [!DNL Adobe Sign] e configure um signatário [!DNL Adobe Sign] para o formulário adaptável.
 
 **P:** Posso usar [!DNL Adobe Sign] marcas de texto em um componente de texto estático de um formulário adaptável?
-**Ans:** Sim, você pode usar marcas de texto em um componente de texto para adicionar campos [!DNL Adobe Sign] a um [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente opção de documento de registro gerado automaticamente) formulário adaptável habilitado. Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte [Documentação do Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html). Observe também que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as marcas de texto para criar apenas os campos aceitos pelo [Bloco do Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Ans:** Sim, você pode usar marcas de texto em um componente de texto para adicionar campos [!DNL Adobe Sign] a um [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente opção de documento de registro gerado automaticamente) formulário adaptável habilitado. Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte [Documentação do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html). Observe também que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as marcas de texto para criar apenas os campos aceitos pelo [Bloco do Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 **Q:** O AEM [!DNL Forms] fornece o [!UICONTROL bloco do Adobe Sign] e os componentes da etapa de assinatura. Eles podem ser usados simultaneamente em um formulário adaptável?
 **Ans:** Você pode usar ambos os componentes simultaneamente em um formulário. Estas são algumas recomendações para usar esses componentes:
@@ -371,4 +372,4 @@ Quando [!DNL Adobe Sign] é configurado para um formulário adaptável, o fluxo 
 
 * [Integração do Adobe Sign ao AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Práticas recomendadas para usar o Adobe Sign com formulários adaptáveis](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
-* [Usando o Adobe Sign com o AEM Forms (Vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Uso do Adobe Sign com o AEM Forms (Vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,8 @@ Quando seu template estiver configurado, disponibilize-o:
 
 O modelo consiste em uma estrutura de nó, pois usa a [estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Cada nó tem uma propriedade `type` que define uma ação específica no processo de criação do arquivo zip.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Os seguintes nós podem ser usados para criar um template de exportação:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Para atender a alguns requisitos específicos, implemente um [manipulador de atualização personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportar programaticamente uma página {#programmatically-exporting-a-page}

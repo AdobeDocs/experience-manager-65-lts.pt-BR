@@ -1,5 +1,5 @@
 ---
-title: Serviço DocConverter Java&trade; API QuickStart(SOAP)
+title: Serviço DocConverter Java&trade; API QuickStart (SOAP)
 description: Saiba como converter um documento em um documento PDF/A e gerenciar a conformidade usando o Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b42303c4-e328-4c57-8ff5-9f214b6c3acd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 O Java™ API Quick Start (SOAP) está disponível para o serviço DocConverter.
 
-[Início rápido (modo SOAP): determinação da conformidade com o PDF/A usando o Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Início rápido (modo SOAP): determinação da conformidade com o PDF/A usando a API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão de um documento em um documento PDF/A usando o Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento em um documento PDF/A usando a API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 

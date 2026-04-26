@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10836'
+source-wordcount: '10923'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Você pode usar a página Gerenciamento de serviços para definir as configuraç
 
 ## Configurações do serviço de Fluxo de Trabalho de Auditoria {#audit-workflow-service-settings}
 
-O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do Forms Server, você pode limitar a quantidade de dados de gravação de processos armazenados. Você pode configurar as seguintes propriedades do serviço de Fluxo de Trabalho de Auditoria ( `AuditWorkflowService`):
+O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do Forms Server, você pode limitar a quantidade de dados de gravação de processo armazenados. Você pode configurar as seguintes propriedades do serviço de Fluxo de Trabalho de Auditoria ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** O número máximo de gravações armazenadas. Quando o número máximo é armazenado, a gravação mais antiga é removida do sistema de arquivos quando uma nova gravação é criada. Essa propriedade é útil se você tende a criar muitas gravações e deseja remover gravações antigas automaticamente. O valor padrão é 50.
 
@@ -76,11 +76,11 @@ As configurações a seguir estão disponíveis para o serviço de formulários 
 
 O serviço Central Migration Bridge ( `CentralMigrationBridge`) invoca um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Bridge de migração central permitem reutilizar os seguintes ativos centrais em formulários do AEM:
 
-* design do modelo (&ast;.ifd)
-* modelos de saída (&ast;.mdf)
-* arquivos de dados (&ast;.dat)
-* arquivos preâmbulo (&ast;.pre)
-* arquivos de definição de dados (&ast;.tdf)
+* design do modelo (&amp;ast;.ifd)
+* modelos de saída (&amp;ast;.mdf)
+* arquivos de dados (&amp;ast;.dat)
+* arquivos preâmbulo (&amp;ast;.pre)
+* arquivos de definição de dados (&amp;ast;.tdf)
 
 A configuração a seguir está disponível para o serviço Central Migration Bridge.
 
@@ -271,7 +271,7 @@ As configurações a seguir estão disponíveis para o serviço Gerar PDF.
 **Habilitar conversões do AutoCAD com base em Acrobat (somente Windows):** Quando esta configuração é verdadeira, o serviço Gerar PDF usa o Acrobat para todas as conversões de DWG em PDF. Essa configuração é útil somente se o AutoCAD não estiver instalado no servidor ou se o mecanismo de conversão do AutoCAD não puder converter arquivos com êxito.
 
 **Expressões Regulares Para Descobrir Especiais Proibidos
-Caracteres no Nome de Usuário (Somente Windows):** Especifica caracteres que interferem nas operações de Export PDF e Otimizar PDF quando os caracteres aparecem no nome de um usuário.
+Caracteres no Nome de Usuário (Somente Windows):** Especifica os caracteres que interferem nas operações de Export PDF e Otimizar PDF quando os caracteres aparecem no nome de um usuário.
 
 **Tamanho do Pool de ImageToPDF:** O tamanho do pool do conversor de Imagem para PDF padrão (Java puro) no serviço Gerar PDF. Essa configuração controla o máximo de conversões simultâneas de Imagem para PDF que o serviço de Geração de PDF pode executar. O valor padrão dessa configuração (recomendada para sistemas com um único processador) é 3, que pode ser aumentado em sistemas com vários processadores.
 
@@ -576,7 +576,7 @@ Durante a Assinatura/Certificação:** Especifica se uma operação de assinatur
 **Tamanho Máximo das Informações de Arquivamento de Revogação:** O tamanho máximo das informações de arquivamento de revogação, em quilobytes. O AEM Forms tenta armazenar o máximo possível de informações de revogação, sem exceder o limite. O valor padrão é 10 KB.
 
 **Assinaturas De Suporte Criadas De Compilações De Pré-Lançamento De
-Produtos do Adobe:** quando essa opção é selecionada, a assinatura criada usando a versão de pré-lançamento dos produtos da Adobe será validada corretamente. O valor padrão é false.
+Produtos do Adobe:** Quando essa opção é selecionada, a assinatura criada usando a versão de pré-lançamento dos produtos da Adobe é validada corretamente. O valor padrão é false.
 
 **Opção de Tempo de Verificação:** Especifica o tempo de verificação de um certificado de signatário. O valor default é Horário de Segurança Mais Horário Atual.
 
@@ -698,7 +698,7 @@ Validação de Assinaturas:** Quando esta opção é selecionada, as informaçõ
 
 ## Configurações do serviço de pasta monitorada {#watched-folder-service-settings}
 
-O serviço Pasta Monitorada ( `WatchedFolder`) configura atributos que são comuns para todos os pontos de extremidade de pasta monitorada. Também fornece valores padrão para endpoints de pastas monitoradas. (Consulte [Configuração de pontos de extremidade de pastas monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Ele não é invocado por aplicativos clientes externos nem usado em processos criados no Workbench.
+O serviço Pasta Monitorada ( `WatchedFolder`) configura atributos que são comuns para todos os pontos de extremidade de pasta monitorada. Também fornece valores padrão para endpoints de pastas monitoradas. (Consulte [Configurando pontos de extremidade de pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Ele não é chamado por aplicativos clientes externos nem usado em processos criados no Workbench.
 
 As configurações a seguir estão disponíveis para o serviço Pasta monitorada.
 

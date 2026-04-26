@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6236'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ Para gerenciar de forma programática usuários, grupos e domínios usando o (Ja
 
 1. Crie um cliente DiretoryManagerService.
 
-   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão. Para obter informações, consulte [Definindo propriedades de conexão &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão. Para obter informações, consulte [Definindo propriedades de conexão ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Chame as operações de usuário ou grupo apropriadas.
 

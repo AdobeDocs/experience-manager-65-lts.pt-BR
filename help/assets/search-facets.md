@@ -6,9 +6,10 @@ role: Admin, Developer
 feature: Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2645d78b-e678-4ade-b707-5301cc2b3e75
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2437'
 ht-degree: 15%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 15%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Uma implantação de toda a empresa do [!DNL Adobe Experience Manager Assets] tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser trabalhoso e demorado se você usar apenas os recursos de pesquisa genéricos do [!DNL Experience Manager].
@@ -148,7 +149,7 @@ O predicado Tag permite realizar pesquisas por ativos com base em tags. Por padr
 1. Clique no logotipo [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
 1. Na página Pesquisar Forms, selecione **[!UICONTROL Painel de pesquisa do administrador do Assets]** e clique em **[!UICONTROL Editar]** ![ícone de edição](assets/do-not-localize/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste o **[!UICONTROL Predicado de tags]** da guia Selecionar predicado para o painel principal.
-1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base no qual a pesquisa deve ser executada no campo de propriedade, por exemplo, *jcr:content/metadata/cq:tags*. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
+1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base no qual a pesquisa deve ser realizada no campo de propriedade, por exemplo, *jcr:content/metadata/cq:tags*. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
 1. Configure a propriedade Root tags path desse predicado para preencher várias tags na lista Tags.
 1. Selecione a opção **[!UICONTROL Mostrar correspondência de todas as tags]** para procurar ativos que incluem todas as tags especificadas.
 
@@ -164,7 +165,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
 
 | Nome do predicado | Descrição | Propriedades |
 |---|---|---|
-| [!UICONTROL Texto completo] | Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com o operador jcr:contains. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo. | <ul><li>Rótulo</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
+| [!UICONTROL Texto completo] | Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Está mapeado com o operador jcr:contains. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo. | <ul><li>Rótulo</li><li>Espaço reservado</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Navegador de caminhos] | Pesquisar predicado para pesquisar ativos em pastas e subpastas em um caminho raiz pré-configurado | <ul><li>Espaço reservado</li><li>Caminho raiz</li><li>Descrição</li></ul> |
 | [!UICONTROL Caminho] | Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções. | <ul><li>Rótulo</li><li>Caminho</li><li>Descrição</li></ul> |
 | [!UICONTROL Status de publicação] | Pesquisar predicado para pesquisar ativos com base no status de publicação | <ul><li>Rótulo</li><li>Nome da propriedade</li><li>Descrição</li></ul> |

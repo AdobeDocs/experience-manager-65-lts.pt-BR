@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 62d31b00-be95-4502-9e97-3ce563192de2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
  </thead>
  <tbody>
   <tr>
-   <td><p>adobe.healthmonitor.enabled</p></td>
+   <td><p>adobe.health.monitor.enabled</p></td>
    <td><p>Ativar ou desativar thread do Monitor de Integridade</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
@@ -42,7 +42,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
    <td><p>verdadeiro</p></td>
   </tr>
   <tr>
-   <td><p>adobe.healthmonitor.refresh-interval</p></td>
+   <td><p>adobe.health.monitor.refresh-interval</p></td>
    <td><p>O intervalo em milissegundos após o qual o thread do Monitor de Integridade coleta as estatísticas</p></td>
    <td><p>10 minutos (600.000 milissegundos)</p></td>
   </tr>
@@ -57,7 +57,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
    <td><p>600000</p></td>
   </tr>
   <tr>
-   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
+   <td><p>adobe.workmanager.health.monitor.enabled</p></td>
    <td><p>Essa propriedade ativa ou desativa a coleta de estatísticas do Work Manager, como contagem de itens de trabalho ou de jobs.</p></td>
    <td><p>verdadeiro</p></td>
   </tr>

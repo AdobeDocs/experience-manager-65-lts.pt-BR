@@ -6,9 +6,10 @@ role: User
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5466'
+source-wordcount: '5596'
 ht-degree: 7%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 7%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 O formato de vídeo é uma parte essencial dos ativos digitais de uma organização. O [!DNL Adobe Experience Manager] oferece ofertas e recursos completos para gerenciar todo o ciclo de vida dos ativos de vídeo após sua criação.
@@ -43,7 +44,7 @@ Por padrão, o [!DNL Assets] não permite carregar nenhum ativo com mais de 2 GB
 Além da configuração do [!DNL Assets], altere as seguintes configurações para carregar ativos grandes:
 
 * Aumente o tempo de expiração do token. Consulte o [!UICONTROL Servlet CSRF do Adobe Granite] no Console da Web em `https://[aem_server]:[port]/system/console/configMgr`. Para obter mais informações, consulte [Proteção CSRF](/help/sites-developing/csrf-protection.md).
-* Aumente o `receiveTimeout` na configuração do Dispatcher. Para obter mais informações, consulte [Configuração do Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#renders-options).
+* Aumente o `receiveTimeout` na configuração do Dispatcher. Para obter mais informações, consulte [Configuração do Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
@@ -153,11 +154,11 @@ Para definir as configurações da Google Cloud:
 
 1. Na página **[!UICONTROL Adicionar credenciais ao projeto]**, etapa 1, faça o seguinte:
 
-   * Na **[!UICONTROL Qual API você está usando?Na lista suspensa]**, selecione **[!UICONTROL API de Dados do YouTube v3]**.
+   * Na **[!UICONTROL Qual API você está usando?]** selecione **[!UICONTROL API de Dados do YouTube v3]**.
 
-   * No **[!UICONTROL De onde você está chamando a API?na lista suspensa]**, selecione **[!UICONTROL Servidor Web (por exemplo, node.js, Tomcat)]**
+   * No **[!UICONTROL De onde você está chamando a API?]** selecione **[!UICONTROL Servidor Web (por exemplo, node.js, Tomcat)]**
 
-   * No **[!UICONTROL Que dados você está acessando?]**, selecione **[!UICONTROL Dados do usuário]**.
+   * No **[!UICONTROL Que dados você está acessando?]** selecione **[!UICONTROL Dados do usuário]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -438,7 +439,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar]**.
 1. Na barra de ferramentas, clique em **[!UICONTROL Publicação rápida]**.
 
-   Consulte também [Uso do Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=pt-BR).
+   Consulte também [Uso do Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Como opção, verifique o vídeo publicado no canal do YouTube.
 
@@ -488,7 +489,7 @@ Ao cancelar a publicação de um ativo de vídeo no Experience Manager, o vídeo
 
 1. Navegue até os ativos de vídeo que deseja cancelar a publicação do seu canal do YouTube.
 1. Em um modo de seleção de ativo, selecione um ou mais ativos de vídeo publicados.
-1. Na barra de ferramentas, clique em **[!UICONTROL Gerenciar Publicação]**. Selecione o ícone de três pontos (. . .) na barra de ferramentas, para que **[!UICONTROL Gerenciar Publicação]** seja aberto.
+1. Na barra de ferramentas, clique em **[!UICONTROL Gerenciar Publicação]**. Selecione o ícone de três pontos (. . .) na barra de ferramentas para que **[!UICONTROL Gerenciar Publicação]** seja aberto.
 1. Na página Gerenciar publicação, selecione **[!UICONTROL Cancelar publicação]**.
 1. No canto superior direito da página, selecione **[!UICONTROL Avançar]**.
 1. No canto superior direito da página, selecione **[!UICONTROL Cancelar publicação]**.
@@ -543,7 +544,7 @@ Ao fazer upload de um novo vídeo para uma pasta que tenha a codificação de v�
 
    Na área Instâncias de fluxo de trabalho, também é possível suspender, encerrar ou renomear fluxos de trabalho. Consulte [Administrando fluxos de trabalho](/help/sites-administering/workflows-administering.md) para obter mais informações.
 
-1. Em tarefas com falha, consulte Falhas de fluxo de trabalho, disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Falhas]**. A **[!UICONTROL Falha do fluxo de trabalho]** lista todas as atividades do fluxo de trabalho com falha.
+1. Em processos com falha, consulte Falhas de fluxo de trabalho, disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Falhas]**. A **[!UICONTROL Falha do fluxo de trabalho]** lista todas as atividades do fluxo de trabalho com falha.
 
    >[!NOTE]
    >

@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10247'
+source-wordcount: '10681'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 Após instalar o Acrobat, abra o Microsoft® Word. Na guia **Acrobat**, clique em **Criar PDF** e converta um arquivo .doc ou .docx disponível no computador em um Documento PDF. Se a conversão for bem-sucedida, o AEM Forms estará pronto para usar o Acrobat com o serviço PDF Generator.
 
@@ -217,8 +217,10 @@ Antes de instalar o Acrobat, reveja esses requisitos essenciais. Você deve ter:
 * Privilégios de administrador local na máquina que executa o AEM Forms
 * Sistema operacional Windows de 64 bits
 * Conexão estável com a Internet para ativação de licença
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+-->
 
 
 #### Fluxo de trabalho e linha do tempo da implementação
@@ -231,7 +233,7 @@ O processo completo normalmente leva de 1 a 2 horas, dependendo do seu ambiente:
 | &#x200B;2. Conceder permissões de download | 5-10 minutos | [Acesso ao Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
 | &#x200B;3. Desinstalar o Acrobat anterior | 10-15 minutos | Acesso de administrador do servidor |
 | &#x200B;4. Baixe e instale o Adobe Acrobat Pro | 10-15 minutos | Acesso de administrador do servidor |
-| &#x200B;5. Baixar e implantar o pacote de FRL | 20-30 minutos | Acesso de administrador do servidor |
+| &#x200B;5. Baixar e implantar pacote de FRL | 20-30 minutos | Acesso de administrador do servidor |
 | &#x200B;6. Verificar instalação | 5-10 minutos | Acesso ao servidor |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
@@ -998,7 +1000,7 @@ Você pode permitir que um usuário não administrador use o serviço do PDF Gen
 
    1. A Microsoft® recomenda fazer backup do registro antes de modificá-lo. Para obter etapas detalhadas, consulte [Como fazer backup e restaurar o Registro no Windows](https://support.microsoft.com/en-us/help/322756).
    1. Abra o editor de Registro do Microsoft® Windows. Para abrir o editor de registro, vá para Iniciar > Executar, digite regedit e clique em OK.
-   1. Navegue até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
+   1. Vá até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
    1. Verifique se o valor de **EnableLUA** está definido como 0 (zero). Se o valor não for 0, altere o valor para 0. Feche o editor de Registro.
 
 1. Reinicie o computador.
@@ -1056,9 +1058,9 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interromper imediatamente o servidor.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
@@ -1121,7 +1123,7 @@ Uma conta de usuário local é necessária para executar o serviço PDF Generato
    <td>Valor padrão</td>
   </tr>
   <tr>
-   <td>Tempo limite da conversão do servidor</td>
+   <td>Tempo-limite da conversão do servidor</td>
    <td>Uma conversão PDFG permanece ativa pelo número de segundos definidos no tempo limite de Conversão do servidor</td>
    <td>270 segundos<br /> </td>
   </tr>
@@ -1231,11 +1233,11 @@ O serviço do Assembler depende do serviço Reader Extensions, do serviço Signa
   </tr>
   <tr>
    <td>Serviço do Forms</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
+   <td>com.adobe.livecycle.adobe-lc-forms-rosck-connector<br /> </td>
   </tr>
   <tr>
    <td>Serviço de saída</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-rosck-connector</td>
   </tr>
  </tbody>
 </table>
@@ -1284,7 +1286,7 @@ A [Ferramenta de Preparação do Sistema](#srt-configuration) verifica se o comp
    >
    >* Se a Ferramenta de preparação do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api do diretório `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para o diretório `[Acrobat_root]\Acrobat\plug_ins`.
 
-1. Navegue até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
+1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
 
 ### Configuração de opções para a ferramenta SRT {#srt-configuration}
 
@@ -1362,7 +1364,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 
-+++HTML para problemas de conversão do PDF
++++Problemas de conversão do HTML para o PDF
 
 * Verifique se os diretórios de fontes foram adicionados na interface de configuração do PDF Generator.
 
@@ -1431,9 +1433,9 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 
-+++Várias falhas de conversão de usuário
++++Falhas de conversão de vários usuários
 
-* Verifique os logs do servidor para verificar se a conversão está falhando para um usuário específico.(O Process Explorer pode ajudar você a verificar o processo em execução para usuários diferentes)
+* Verifique os logs do servidor para verificar se a conversão está falhando para um usuário específico. (O Process Explorer pode ajudar você a verificar o processo em execução para usuários diferentes)
 
 * Verifique se o usuário configurado para o PDF Generator tem direitos de administrador local.
 
@@ -1445,7 +1447,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 
-+++Licença do Adobe Acrobat instalada no AEM Forms Server expira
++++A licença do Adobe Acrobat instalada no AEM Forms Server expira
 
 * Se você tiver uma licença existente do Adobe Acrobat e ela tiver expirado, [Baixe a versão mais recente do Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html) e migre seu número de série. Antes de [migrar seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4d35b174-40e5-4d2a-89ad-c3891f206e7e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em
 
 ## Início rápido (modo SOAP): modificação de um campo de assinatura usando a API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de Assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF passado para o serviço de Assinatura.) (Consulte [Modificação de Campos de Assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de Assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF passado para o serviço de Assinatura.) (Consulte [Modificação De Campos De Assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*

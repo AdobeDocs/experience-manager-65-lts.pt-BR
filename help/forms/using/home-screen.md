@@ -8,9 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b8e413e0-1387-46c7-891a-85d5fc61288b
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -27,9 +28,11 @@ A figura a seguir é anotada com chamadas para os componentes essenciais na tela
 
 ![tela inicial do aplicativo Forms](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **Botão Menu**: selecione o botão **Menu** para navegar até Tarefas, Forms, Caixa de Saída e Configurações. Se o aplicativo AEM Forms estiver conectado a um servidor AEM Forms JEE, você poderá ver a opção Tarefas. A opção Tarefas também armazena os rascunhos criados das tarefas em um processo. Para servidores OSGi da AEM Forms, a opção Tasks fica oculta. A caixa de saída armazena os formulários e rascunhos salvos antes de sincronizar com o servidor. Todos os formulários e rascunhos salvos na Caixa de Saída são carregados no AEM Forms Server quando o aplicativo está [sincronizado com o servidor](../../forms/using/sync-app.md). Para obter informações sobre Configurações, consulte [Atualizar Configurações Gerais](../../forms/using/update-general-settings.md).
 1. **Tarefa ou Formulário**: selecione a tarefa ou o formulário listado com o qual deseja trabalhar.

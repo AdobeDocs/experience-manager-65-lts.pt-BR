@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 00f52303-66c3-4865-a74b-eda0e6949193
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Por exemplo, considere um cenário em que você esteja conectado ao console de a
 
 **Referenciador:** O endereço da página de origem da qual uma solicitação está vindo. Por exemplo, uma página da Web em site1.com contém um link para site2.com. Clicar no link publica uma solicitação em site2.com. O referenciador desta solicitação é site1.com porque a solicitação é feita de uma página cuja origem é site1.com.
 
-incluir na lista de permissões **URIs minuciados:** URIs identificam recursos no Forms Server que estão sendo solicitados, por exemplo, /adi ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo a partir de sites externos. Incluir na lista de permissões Esses recursos são considerados URIs classificados. O Forms incluir na lista de permissões Server nunca executa uma verificação de referenciador a partir de URIs.
+**URIs minuciados:** URIs identificam recursos no Forms Server que estão sendo solicitados, por exemplo, /adi ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo a partir de sites externos. Esses recursos são considerados URIs classificados. O Forms Server nunca executa uma verificação de referenciador a partir de URIs.
 
 **Referenciador nulo:** Quando você abre uma nova janela ou guia do navegador, digita um endereço e pressiona Enter, o referenciador é nulo. A solicitação é totalmente nova e não se origina de uma página da Web pai; portanto, não há referenciador para a solicitação. O servidor do Forms pode receber um referenciador nulo de:
 
@@ -51,10 +51,10 @@ O AEM Forms fornece filtragem de referenciador, que pode ajudar a impedir ataque
    * Se for POST, o Forms Server executará a verificação do cabeçalho do referenciador.
    * Se for GET, o Forms Server ignorará a verificação do referenciador, a menos que CSRF_CHECK_GETS esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do referenciador. CSRF_CHECK_GETS é especificado no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; no [Guia de Proteção e Segurança](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
-1. O servidor do Forms incluir na lista de permissões verifica se o URI solicitado é:
+1. O servidor do Forms verifica se o URI solicitado é:
 
-   * Incluir na lista de permissões Se o URI for atualizado, o servidor transmitirá a solicitação.
-   * Incluir na lista de permissões Se o URI solicitado não for reconhecido, o servidor recuperará o referenciador da solicitação.
+   * Se o URI for atualizado, o servidor transmitirá a solicitação.
+   * Se o URI solicitado não for reconhecido, o servidor recuperará o referenciador da solicitação.
 
 1. Se houver um referenciador na solicitação, o servidor verificará se ele é um referenciador permitido. Se for permitido, o servidor verificará se há uma exceção do referenciador:
 

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 63bf92c4-c70f-47d1-9ddf-9a32de4d49bf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ O caminho para um recurso no repositório do AEM Forms é:
 
 >[!NOTE]
 >
->Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+>Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Início rápido (modo SOAP): criação de uma pasta usando a API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

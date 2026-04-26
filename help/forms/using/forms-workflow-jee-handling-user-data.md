@@ -9,9 +9,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar
 * Usar pasta monitorada
 * Usar email
 
-Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
@@ -129,7 +129,7 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
 1. Crie uma instância do cliente `ProcessManager` público ( `com.adobe.idp.workflow.client.ProcessManager`) usando uma instância `ServiceClientFactory` com as configurações de conexão corretas.
 
-   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/br/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Verifique o status da instância do workflow. Se o status for diferente de 2 (CONCLUÍDO) ou 4 (ENCERRADO), encerre a instância primeiro chamando o seguinte método:
 

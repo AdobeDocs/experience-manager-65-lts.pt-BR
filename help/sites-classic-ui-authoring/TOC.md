@@ -8,10 +8,10 @@ breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 31%
+source-wordcount: '262'
+ht-degree: 33%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 31%
    + [Seleção da interface](/help/sites-classic-ui-authoring/author-env-select-ui.md)
    + [Pesquisar](/help/sites-classic-ui-authoring/author-env-search.md)
    + [Sua caixa de entrada](/help/sites-classic-ui-authoring/author-env-inbox.md)
-   + [Atalhos de teclado para Consoles  &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
 + Criação {#authoring}
    + [Criação de páginas](/help/sites-classic-ui-authoring/classic-page-author.md)
    + [Criação - o ambiente e as ferramentas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
@@ -37,8 +37,8 @@ ht-degree: 31%
    + [Publicar páginas](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md)
    + [Editar as propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)
-   + [Solucionar problemas do AEM durante a criação  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
-   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
+   + [Solucionar problemas do AEM durante a criação](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
+   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
    + [Componentes para criação de página](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
    + [Atalhos de teclado ao editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)
 + Recursos do site e da página {#siteandpage}
@@ -49,15 +49,15 @@ ht-degree: 31%
    + [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
    + [Configuração de componentes no modo de design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md)
    + [Componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)
-+ Fluxos de trabalho {#workflows}
++ Fluxos de trabalhos {#workflows}
    + [Participar de fluxos de trabalho](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
    + [Trabalhar com fluxos de trabalho](/help/sites-classic-ui-authoring/classic-workflows.md)
    + [Aplicação de fluxos de trabalho a páginas](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
-+ Inicializações {#launches}
++ Lançamentos {#launches}
    + [Lançamentos](/help/sites-classic-ui-authoring/classic-launches.md)
    + [Criação de Lançamentos](/help/sites-classic-ui-authoring/classic-launches-creating.md)
    + [Edição de Lançamentos](/help/sites-classic-ui-authoring/classic-launches-editing.md)
-   + [Promoção de inicializações](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
+   + [Promoção de Lançamentos](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
 + Personalização {#personalization}
    + [Noções sobre segmentação](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
    + [Gerenciamento de campanhas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
@@ -77,7 +77,7 @@ ht-degree: 31%
    + [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Direcionamento do seu Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [Criação do Adobe Campaign Forms no AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ Criação de Assets na interface clássica {#assets}
++ Criação do Assets na interface clássica {#assets}
    + [Trabalhar com ativos](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [Entrega do Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [Adição do Dynamic Media Assets a páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)

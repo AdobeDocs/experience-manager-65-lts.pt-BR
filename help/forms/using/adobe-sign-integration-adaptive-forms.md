@@ -5,9 +5,9 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=pt-BR#adobe-acrobat-sign-for-government).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government).
 
 [!DNL Adobe Sign] habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
 
@@ -88,7 +88,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL  Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -129,7 +129,8 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    >[!NOTE]
    >
-   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard. -->
+   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
+-->
 
 1. Volte para a página **[!UICONTROL Criar configuração do Adobe Sign]**. Na guia **[!UICONTROL Configurações]**, especifique a **ID do Cliente** (também conhecida como ID do Aplicativo) e o **Segredo do Cliente**. Use a [ID do Cliente e o Segredo do Cliente do aplicativo Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) criados para o AEM Forms.
 
@@ -142,7 +143,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 1. Toque em **[!UICONTROL Criar]** para criar a configuração [!DNL Adobe Sign].
 1. Abra o Console da Web do AEM. A URL é `https://'[server]:[port]'/system/console/configMgr`
 1. Abra o **[!UICONTROL Serviço de Configuração Comum do Forms].**
-1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].A instância do Autor** está configurada para usar [!DNL Adobe Sign].
+1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].** A instância do autor está configurada para usar [!DNL Adobe Sign].
 1. Publique a configuração.
 1. Use a [replicação](/help/sites-deploying/replication.md) para criar configuração idêntica nas instâncias de publicação correspondentes.
 
@@ -237,7 +238,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL  Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -256,7 +257,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 1. Selecione **[!UICONTROL Criar]** para criar a configuração.
 1. Abra o Console da Web do AEM. A URL é `https://'[server]:[port]'/system/console/configMgr`
 1. Abra o **[!UICONTROL Serviço de Configuração Comum do Forms].**
-1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].A instância do Autor** está configurada para usar [!DNL Adobe Sign].
+1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].** A instância do autor está configurada para usar [!DNL Adobe Sign].
 
 1. Publique a configuração.
 1. Use a [replicação](/help/sites-deploying/replication.md) para criar configuração idêntica nas instâncias de publicação correspondentes.
@@ -281,4 +282,4 @@ O intervalo padrão para sincronizar o status de [!DNL Adobe Sign] foi alterado.
 
 * [Uso do Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md)
 * [Adobe Sign com fluxos de trabalho centrados em formulários](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
-* [Usando o Adobe Sign com o AEM Forms (Vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Uso do Adobe Sign com o AEM Forms (Vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

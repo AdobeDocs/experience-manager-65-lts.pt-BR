@@ -7,10 +7,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 2%
+source-wordcount: '1627'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,8 @@ O AEM Forms é uma plataforma poderosa de nível empresarial. O fluxo de trabalh
 
 >[!NOTE]
 >
->Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
+>Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.
+><!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.-->><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Topologia de implantação {#deployment-topology}
 
@@ -107,9 +108,9 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
 
    >[!NOTE]
    >
@@ -143,16 +144,16 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicionar o pacote ao arquivo de inclui na lista de permissões:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote ao incluo na lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. A URL padrão é https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Pesquise e abra a **Configuração do Firewall de Desserialização**.
-1. Adicione o pacote **sun.util.calendar** ao campo **incluir na lista de permissões**. Clique em Salvar.
+1. Adicione o pacote **sun.util.calendar** ao campo **incluo na lista de permissões**. Clique em Salvar.
 1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publicação.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 
-#### Configurar Dispatcher {#configure-dispatcher}
+#### Configurar o Dispatcher {#configure-dispatcher}
 
 O Dispatcher é uma ferramenta de balanceamento de carga e cache para o AEM. O AEM Dispatcher também ajuda a proteger o servidor AEM contra ataques. Você pode aumentar a segurança da sua instância do AEM usando o Dispatcher em conjunto com um servidor Web de classe empresarial. Se você usa o [Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html), execute as seguintes configurações para o AEM Forms:
 

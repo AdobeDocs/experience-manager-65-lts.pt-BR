@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 5%
+source-wordcount: '1046'
+ht-degree: 6%
 
 ---
 
 # Integrar o AEM Forms com os protocolos de servidor de email do Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-Para permitir que as organizações cumpram com os requisitos de segurança de e-mail, a AEM Forms oferece suporte ao OAuth 2.0 para integração com os protocolos de servidor de e-mail do Microsoft® Office 365. Você pode usar o serviço de autenticação OAuth 2.0 do Azure Ative Diretory (Azure AD) para se conectar a vários protocolos, como IMAP, POP ou SMTP, e acessar dados de email para usuários do Office 365. Abaixo estão as instruções passo a passo para configurar os protocolos de servidor de email do Microsoft® Office 365 para autenticação através do serviço OAuth 2.0:
+Para permitir que as organizações cumpram com os requisitos de segurança de e-mail, a AEM Forms oferece suporte ao OAuth 2.0 para integração com os protocolos de servidor de e-mail do Microsoft® Office 365. Você pode usar o serviço de autenticação OAuth 2.0 do Azure Ative Diretory (Azure AD) para se conectar a vários protocolos, como IMAP, POP ou SMTP, e acessar dados de email de usuários do Office 365. Abaixo estão as instruções passo a passo para configurar os protocolos de servidor de email do Microsoft® Office 365 para autenticação através do serviço OAuth 2.0:
 
 1. Faça logon em [https://portal.azure.com/](https://portal.azure.com/) e pesquise por **Azure Ative Diretory** na barra de pesquisa e clique no resultado.
 Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -26,11 +26,11 @@ Como alternativa, você pode navegar diretamente para [https://portal.azure.com/
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**.
    ![Conta com Suporte](/help/forms/using/assets/azure_suuportedaccountype.png)
-No caso acima, a opção **Contas em qualquer diretório organizacional (Qualquer diretório do Azure AD - Multilocatário) e contas pessoais da Microsoft® (por exemplo, Skype, Xbox)** está selecionada.
+No caso acima, a opção **Contas em qualquer diretório organizacional (Qualquer diretório Azure AD - Multilocatário) e contas pessoais Microsoft® (por exemplo, Skype, Xbox)** está selecionada.
 
    >[!NOTE]
    >
-   > * Para **Contas em qualquer diretório organizacional (Qualquer diretório do Azure AD - Multilocatário)**, a Adobe recomenda que você use uma conta corporativa em vez de uma conta de email pessoal.
+   > * Para contas do **em qualquer aplicativo de diretório organizacional (Qualquer diretório do Azure AD - Multilocatário)**, a Adobe recomenda o uso de uma conta corporativa em vez de uma conta de email pessoal.
    > * O aplicativo **Somente contas pessoais Microsoft®** não é suportado.
    > * A Adobe recomenda que você use o aplicativo **Conta pessoal e de vários locatários da Microsoft®**.
 
@@ -118,7 +118,7 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
    > Para habilitar o serviço de autenticação oAuth 2.0, é obrigatório marcar **Se o servidor SMTP requer autenticação (Autenticação SMTP)**.
 
 1. Definir **Configurações de Autenticação 2.0** como `True`.
-1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal do Azure.
+1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal Azure.
 1. Copie o valor do **Token de Atualização** gerado.
 1. Faça logon no **Workbench** e pesquise o **Email 1.0** no **Seletor de atividades**.
 1. Três opções estão disponíveis no Email 1.0 como:
@@ -145,7 +145,7 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
 
 1. Ir para **Página Inicial** > **Serviços** > **Fluxo de Trabalho do Formulário** > **Configurações do Servidor** > **Configurações de Email**
 1. Para habilitar notificações de tarefas oAuth, marque a caixa de seleção **Habilitar oAuth**.
-1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal do Azure.
+1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal Azure.
 1. Copie o valor do **Token de Atualização** gerado.
 1. Clique em **Salvar** para salvar os detalhes.
 
@@ -153,13 +153,13 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
 
    >[!NOTE]
    >
-   > Para saber mais informações relacionadas às notificações de tarefas, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=pt-BR#create-an-email-endpoint-for-the-complete-task-service).
+   > Para saber mais informações relacionadas às notificações de tarefas, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar o terminal de email {#configure_email_endpoint}
 
 1. Ir para **Página Inicial** > **Serviços** > **Aplicativos e Serviços** > **Gerenciamento de Ponto de Extremidade**
 1. Para configurar o ponto de extremidade de email, defina **oAuth 2.0 Configurações de Autenticação** como `True`.
-1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal do Azure.
+1. Copie os valores de **ID do Cliente** e **Segredo do Cliente** do Portal Azure.
 1. Copie o valor do **Token de Atualização** gerado.
 1. Clique em **Salvar** para salvar os detalhes.
 
@@ -167,7 +167,7 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
 
    >[!NOTE]
    >
-   > Para saber mais sobre como configurar pontos de extremidade de email, clique em [Configurar um ponto de extremidade de email](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=pt-BR).
+   > Para saber mais sobre como configurar pontos de extremidade de email, clique em [Configurar um ponto de extremidade de email](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Resolução de problemas {#troubleshooting}
 
