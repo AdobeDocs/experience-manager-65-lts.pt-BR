@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
-source-wordcount: '7427'
-ht-degree: 100%
+source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+workflow-type: tm+mt
+source-wordcount: '7603'
+ht-degree: 97%
 
 ---
 
@@ -452,7 +452,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -573,7 +573,6 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 | Fonte aberta | Os pacotes `org.apache.jackrabbit.api` agora são exportados do pacote `org.apache.jackrabbit.oak-jackrabbit-api`. | Nenhuma alteração necessária. | 6.5 LTS GA |
 | Fonte aberta | `com.github.jknack.handlebars` não é compatível. | Escolha a [versão](https://mvnrepository.com/artifact/com.github.jknack/handlebars) adequada | 6.5 LTS GA |
 
-
 ## Problemas conhecidos {#known-issues}
 
 ### AEM Forms
@@ -596,6 +595,18 @@ Planeje o tempo de inatividade da instância ao aplicá-la. Para compactação o
 > * Para qualquer operação `oak-run`, use o [`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Inicie o AEM definindo a propriedade do sistema `oak.compaction.legacy=true`.
+
+### Comentários JSON não são mais compatíveis com Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
+
+Esse problema afeta os desenvolvedores e administradores de pacotes OSGi que implantam pacotes que usam `Sling-Initial-Content` com arquivos JSON.
+
+A partir do AEM 6.5 LTS SP2, os arquivos JSON usados em pacotes `Sling-Initial-Content` não aceitam mais comentários (`//` ou `/* */`). As versões anteriores do AEM aceitaram comentários porque o provedor `javax.json` foi tolerante com relação a isso. O AEM 6.5 LTS SP2 atualizou o `org.apache.sling.jcr.contentloader` para a versão 2.6.0, que alterou o analisador JSON para `jakarta.json`. Embora a [especificação JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) não defina a sintaxe para comentários, versões anteriores do AEM as aceitaram devido à clemência do provedor `javax.json`. O provedor `jakarta.json` não oferece essa extensão.
+
+A falha é silenciosa: os nós de conteúdo não são carregados na ativação do pacote sem erros exibidos no instalador. Se o conteúdo estiver ausente inesperadamente após a atualização para o SP2, verifique se há erros de análise JSON nos registros do instalador OSGi. Para identificar os pacotes afetados, pesquise por `//` ou `/* */` dentro dos arquivos JSON listados em `Sling-Initial-Content` cabeçalhos de manifesto.
+
+>[!CAUTION]
+>
+> Remova todos os comentários dos arquivos JSON em seus pacotes `Sling-Initial-Content` para evitar falhas de carregamento de conteúdo após a atualização para o AEM 6.5 LTS SP2.
 
 ### Instale os índices Oak necessários para as APIs do Sites Headless{#site-headless-api}
 
@@ -648,5 +659,5 @@ Os documentos de texto a seguir listam os pacotes OSGi e os pacotes de conteúdo
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
