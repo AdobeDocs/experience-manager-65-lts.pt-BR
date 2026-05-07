@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -43,7 +42,7 @@ O usuário não pode executar operações como Enviar PDF por email ou Incluir a
 
 1. Instalar o `java.mail-1.5.jar` obtido da etapa 3. Esta etapa reinicia as propriedades sling da implantação do JEE. Aguarde os pacotes instalados em `http://<server name>:<port>/lc/system/console/bundles` para mostrar o Status como **Ativo**.
 
-   >Caso o status ainda seja **InActive**, reinicie   **JBoss®** do **Console de Serviços**.
+   >Caso o status ainda seja **InActive**, reinicie o **JBoss®** no **Console de Serviços**.
 
 
 1. Instale o arquivo `javax.mail-1.5.6.redhat-1.jar` baixado usando a etapa 5.
