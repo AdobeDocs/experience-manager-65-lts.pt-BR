@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
 hide: true
-hidefromtoc: true
 exl-id: f9b01de7-1de5-43aa-bcc3-b15719bfa5c0
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
@@ -26,7 +25,7 @@ ht-degree: 1%
 
 Se os usuários da instalação do AEM Forms usarem a funcionalidade de captura de dados do Content Services (Obsoleto), será recomendável criar uma função com acesso somente leitura para esses usuários.
 
-***Observação &#x200B;**: o Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto Adobe](https://helpx.adobe.com/br/support/programs/eol-matrix.html).*
+***Observação **: o Adobe® LiveCycle® Content Services ES (obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto Adobe](https://helpx.adobe.com/br/support/programs/eol-matrix.html).*
 
 A captura de dados exige que você atribua uma função de usuário para acessar SampleReaderExtensionsCredential. Você pode atribuir a função Administrador Confiável padrão. No entanto, considere que essa função oferece privilégios gerais de administrador de usuários não administrativos que controlam as configurações de Confiança da PKI e gerenciam Credenciais da PKI, o que pode comprometer a segurança da instalação dos AEM Forms em um ambiente de produção. Recomenda-se que o administrador do sistema do AEM Forms crie uma função que conceda somente leitura ao Armazenamento de confiança e atribua essa nova função a usuários não administradores que usam captura de dados.
 

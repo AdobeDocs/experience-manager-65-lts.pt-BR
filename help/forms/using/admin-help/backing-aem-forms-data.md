@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Além disso, observe as seguintes diretrizes para o processo de backup/restaura�
 
 * Faça backup do diretório GDS usando um sistema operacional disponível ou um utilitário de backup de terceiros. (Consulte [Local do GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Faça backup do diretório raiz de armazenamento de conteúdo usando um sistema operacional disponível ou um backup e utilitário de terceiros. (Consulte [Local raiz do armazenamento de conteúdo (ambiente independente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Local raiz do armazenamento de conteúdo (ambiente em cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Fazer backup   instâncias de criação e publicação ( crx - backup do repositório).
+* Faça backup das instâncias do autor e de publicação ( crx - backup do repositório).
 
   Para fazer backup do ambiente da Solução de gerenciamento de correspondência, execute as etapas nas instâncias de criação e publicação conforme descrito em [Backup e restauração](/help/sites-administering/backup-and-restore.md).
 

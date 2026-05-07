@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -71,17 +70,17 @@ A maioria das inicializações rápidas em *Programação com AEM Forms em JEE* 
 
 [Início Rápido (modo SOAP): Passar um documento no Repositório AEM Forms para o serviço de Saída usando a API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (chama o serviço de Repositório e Saída)
 
-[Início rápido (modo SOAP): criando um documento PDF com base em fragmentos usando a API Java™ &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (invoca o serviço de Assembler e Saída)
+[Início rápido (modo SOAP): criando um documento PDF com base em fragmentos usando a API Java™ ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (invoca o serviço de Assembler e Saída)
 
-[Início Rápido (modo SOAP): Criando Documentos PDF com dados XML enviados usando a API Java™ &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (invoca o serviço Forms, Output e Document Management)
+[Início Rápido (modo SOAP): Criando Documentos PDF com dados XML enviados usando a API Java™ ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (invoca o serviço Forms, Output e Document Management)
 
-[Início Rápido (modo SOAP): Passar documentos para o Serviço Forms usando a API Java™ &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (chama o serviço Forms e Gerenciamento de Documentos)
+[Início Rápido (modo SOAP): Passar documentos para o Serviço Forms usando a API Java™ ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (chama o serviço Forms e Gerenciamento de Documentos)
 
-[Início rápido (modo SOAP): assinando digitalmente um formulário baseado em XFA usando a API do Java™ &#x200B;](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (invoca o serviço Forms e Signature)
+[Início rápido (modo SOAP): assinando digitalmente um formulário baseado em XFA usando a API do Java™ ](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (invoca o serviço Forms e Signature)
 
-[Início Rápido (modo SOAP): Gerenciamento de funções e permissões usando a API Java™ &#x200B;](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (invoca o DiretoryManager e o serviço AuthorizationManager )
+[Início Rápido (modo SOAP): Gerenciamento de funções e permissões usando a API Java™ ](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (invoca o DiretoryManager e o serviço AuthorizationManager )
 
-[Início Rápido (modo SOAP): Passar documentos para o Serviço de Saída usando a API Java™ &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (chamar o serviço de Gerenciamento de Documentos e Saídas)
+[Início Rápido (modo SOAP): Passar documentos para o Serviço de Saída usando a API Java™ ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (chamar o serviço de Gerenciamento de Documentos e Saídas)
 
 >[!NOTE]
 >

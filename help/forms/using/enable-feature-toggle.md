@@ -3,10 +3,10 @@ title: Ativar a alternância de recursos para integrar os recursos de pré-lanç
 description: O Feature Toggle é uma funcionalidade do AEM que permite aos administradores ativar novos recursos em um ambiente de tempo de execução.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---

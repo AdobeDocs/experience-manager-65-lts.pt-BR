@@ -6,11 +6,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 hide: true
-hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7800'
 ht-degree: 1%
@@ -108,7 +107,7 @@ A tabela a seguir descreve algumas abordagens possíveis para minimizar as vulne
  </tbody> 
 </table>
 
-Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Instalação {#installation}
 
@@ -264,17 +263,17 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 1. Inicie o servidor do AEM Forms.
 1. Digite o URL abaixo em um navegador para testar a alteração e garantir que ela não funcione mais.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloquear acesso remoto ao Armazenamento Confiável**
 
 O Configuration Manager permite que você faça upload de uma credencial de extensões do Acrobat Reader DC para o AEM Forms no armazenamento de confiança JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
-Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desabilitar todo o acesso anônimo não essencial**
 
-Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Alterar a senha padrão do administrador {#change-the-default-administrator-password}
 
@@ -353,7 +352,7 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
 
 Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo fornecedor do banco de dados. Você deve alocar um usuário do banco de dados com as permissões de banco de dados mínimas necessárias concedidas para uso pelo AEM Forms no JEE. Por exemplo, não use uma conta com privilégios de administrador de banco de dados.
 
-No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br).
+No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Configurando segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -410,7 +409,7 @@ Como precaução adicional, você deve considerar o uso de ferramentas específi
 * Chave de criptografia do PIN HSM do armazenamento de confiança
 * Hashes de Senha de Usuário Local
 
-Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### Segurança LDAP {#ldap-security}
 
@@ -960,9 +959,9 @@ Para obter informações sobre as portas do WebSphere exigidas pelo AEM Forms no
 
 Referindo-se à arquitetura física descrita na seção [AEM Forms na arquitetura física JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
-Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64_br).
+Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuração do redirecionamento de SSL {#configuring-ssl-redirect}
 

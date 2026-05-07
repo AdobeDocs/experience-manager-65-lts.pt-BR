@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -69,7 +68,7 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 1. Em Segurança administrativa, selecione **Funções administrativas de usuário**.
 1. Clique em Adicionar e faça o seguinte:
 
-   1. Digite **&ast;** na caixa de pesquisa e clique em pesquisar.
+   1. Digite **&amp;ast;** na caixa de pesquisa e clique em pesquisar.
    1. Clique em **Administrador** em Funções.
    1. Adicione o usuário recém-criado à função Mapeado para e mapeie-o para Administrador.
 

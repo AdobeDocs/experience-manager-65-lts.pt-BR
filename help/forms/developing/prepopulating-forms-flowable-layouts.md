@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 0%
@@ -104,7 +103,7 @@ O diagrama a seguir mostra um exemplo de um form de ordem de compra. As informa�
 
 ### Considerações de design do formulário {#form-design-considerations}
 
-O Forms com layouts fluíveis é baseado em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design do formulário. Por exemplo, no formulário de ordem de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criação de um formulário de ordem de compra que tenha um layout que possa fluir](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_br).
+O Forms com layouts fluíveis é baseado em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design do formulário. Por exemplo, no formulário de ordem de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criação de um formulário de ordem de compra que tenha um layout que possa fluir](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Entender subgrupos de dados {#understanding-data-subgroups}
 
