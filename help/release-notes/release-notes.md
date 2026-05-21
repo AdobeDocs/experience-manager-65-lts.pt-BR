@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
 source-wordcount: '7695'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -454,7 +454,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -610,9 +610,9 @@ Instale o hotfix de [Distribuição de Software](https://experience.adobe.com/#/
 
 Esse problema afeta os desenvolvedores e administradores de pacotes OSGi que implantam pacotes que usam `Sling-Initial-Content` com arquivos JSON.
 
-A partir do AEM 6.5 LTS SP2, os arquivos JSON usados em pacotes `Sling-Initial-Content` não aceitam mais comentários (`//` ou `/* */`). As versões anteriores do AEM aceitaram comentários porque o provedor `javax.json` foi tolerante com relação a isso. O AEM 6.5 LTS SP2 atualizou o `org.apache.sling.jcr.contentloader` para a versão 2.6.0, que alterou o analisador JSON para `jakarta.json`. Embora a [especificação JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) não defina a sintaxe para comentários, versões anteriores do AEM as aceitaram devido à clemência do provedor `javax.json`. O provedor `jakarta.json` não oferece essa extensão.
+A partir do AEM 6.5 LTS SP2, os arquivos JSON usados em pacotes `Sling-Initial-Content` não aceitam mais comentários (`//` ou `/* */`). As versões anteriores do AEM aceitaram comentários porque o provedor `javax.json` foi tolerante com relação a isso. O AEM 6.5 LTS SP2 atualizou o `org.apache.sling.jcr.contentloader` para a versão 2.6.0, que alterou o analisador JSON para `jakarta.json`. Embora a [especificação JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) não defina a sintaxe para comentários, versões anteriores do AEM as aceitaram devido à tolerância do provedor `javax.json`. O provedor `jakarta.json` não oferece essa extensão.
 
-A falha é silenciosa: os nós de conteúdo não são carregados na ativação do pacote sem erros exibidos no instalador. Se o conteúdo estiver ausente inesperadamente após a atualização para o SP2, verifique se há erros de análise JSON nos registros do instalador OSGi. Para identificar os pacotes afetados, pesquise por `//` ou `/* */` dentro dos arquivos JSON listados em `Sling-Initial-Content` cabeçalhos de manifesto.
+A falha é silenciosa: os nós de conteúdo não são carregados na ativação do pacote sem erros exibidos no instalador. Se o conteúdo estiver ausente inesperadamente após a atualização para o SP2, verifique se há erros de análise JSON nos logs do instalador OSGi. Para identificar os pacotes afetados, pesquise por `//` ou `/* */` dentro dos arquivos JSON listados nos cabeçalhos de manifesto `Sling-Initial-Content`.
 
 >[!CAUTION]
 >
@@ -669,5 +669,5 @@ Os documentos de texto a seguir listam os pacotes OSGi e os pacotes de conteúdo
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
