@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
+source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7679'
 ht-degree: 97%
 
 ---
@@ -659,10 +659,10 @@ Se você se deparar com esse problema, entre em contato com o suporte ao cliente
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
-Os documentos de texto a seguir listam os pacotes OSGi e os pacotes de conteúdo incluídos nesta versão [!DNL Experience Manager] 6.5 LTS, Pacote de serviços 2: <!-- UPDATE FOR EACH NEW RELEASE -->
+Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes OSGi e os pacotes de conteúdo incluídos nesta versão do Experience Manager 6.5 LTS Service Pack:
 
-* [Lista de pacotes OSGi incluídos no Experience Manager 6.5 LTS, Pacote de serviços 2](/help/release-notes/assets/65lts_sp2_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de pacotes de conteúdo incluídos no Experience Manager 6.5 LTS, Pacote de serviços 2](/help/release-notes/assets/65lts_sp2_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Pacotes OSGi](/help/release-notes/assets/65lts_sp2_bundles.zip)
+* [Pacotes de conteúdo](/help/release-notes/assets/65lts_sp2_packages.zip)
 
 ## Sites restritos{#restricted-sites}
 
