@@ -4,7 +4,7 @@ description: Saiba como definir e implantar namespaces personalizados para o AEM
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 8%
@@ -29,11 +29,11 @@ Os namespaces podem ser usados para denotar o escopo e a intenção de uma propr
 
 Os namespaces personalizados são gerenciados nos scripts [Inicialização do Repositório do Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e implantados como configurações de OSGi no pacote de configuração do seu projeto (por exemplo, `ui.config`).
 
-## Recursos
+## Recursos {#resources}
 
 + [Documentação de inicialização do repositório Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## Código
+## Código {#code}
 
 O código a seguir é usado para configurar um namespace `wknd`.
 

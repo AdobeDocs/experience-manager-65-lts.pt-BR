@@ -1,24 +1,20 @@
 ---
 title: Atalhos de teclado para os consoles no AEM
 description: Economize tempo ao criar usando esses atalhos de teclado.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 2e9786117c4a8b3026f7f3109b5a49ce188b119a
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 48%
+source-wordcount: '386'
+ht-degree: 45%
 
 ---
 
-# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
+# Atalhos de teclado para Consoles{#keyboard-shortcuts-for-consoles}
 
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso dos consoles, outros para [edição de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -40,7 +36,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Scree
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-authoring/basic-handling.md#rail-selector) que deseja exibir |
-|  | ``` ` ``` | Ocultar painel |
+|  | `` ` `` | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
 |  | `m` | Mover |
