@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
+source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1615'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas pa
 
       Você também pode baixar o pacote usando o link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-      Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interromper imediatamente o servidor.** Antes de interromper o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log e o log fique estável. Observe também que alguns pacotes podem permanecer no estado instalado. Você pode ignorar com segurança o estado desses pacotes.
+      Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de interromper o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo &lt;crx-repository>/error.log e o log fique estável. Observe também que alguns pacotes podem permanecer no estado instalado. Você pode ignorar com segurança o estado desses pacotes.
 
 
       **Reinicie a instância do AEM com os seguintes parâmetros de linha de comando JVM adicionais**:
@@ -133,7 +133,7 @@ Antes de iniciar o processo de implantação, verifique se seu ambiente atende a
 2. Anote este caminho de diretório como `<JBOSS_HOME>` para uso neste guia.
 
    **Exemplo:**\
-   ```C:\jboss-eap-8.0```
+   `C:\jboss-eap-8.0`
 
 ### Etapa 2: Preparar o arquivo WAR do AEM
 
@@ -287,7 +287,7 @@ Após concluir todas as alterações de configuração, reempacote o arquivo WAR
    ```
 
    **Exemplo:**
-   ```C:\jboss-eap-8.0\standalone\deployments```
+   `C:\jboss-eap-8.0\standalone\deployments`
 
 #### Definir configurações de JVM (opcional, mas recomendado)
 
@@ -318,7 +318,7 @@ Antes de iniciar o JBoss, defina as configurações de memória JVM:
    ```
 
    **Exemplo:**
-   ```cmd cd C:\jboss-eap-8.0\bin```
+   `cmd cd C:\jboss-eap-8.0\bin`
 
 1. Inicie o servidor JBoss:
 
@@ -343,7 +343,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 Quando a implantação for concluída e o AEM for totalmente iniciado:
 
 **URL do Autor do AEM:**
-```http://<server-ip>:8080/cq-quickstart```
+`http://<server-ip>:8080/cq-quickstart`
 
 **Credenciais Padrão:**
 
@@ -363,7 +363,7 @@ Quando a implantação for concluída e o AEM for totalmente iniciado:
 | O AEM não é iniciado após a implantação | Verificar logs JBoss em `<JBOSS_HOME>\standalone\log\server.log` |
 | Não é possível acessar o AEM no navegador | Verifique se as configurações do firewall permitem a porta 8080 |
 
-#### Arquivos de registro
+#### Arquivos de log
 
 * **Log do JBoss Server:** `<JBOSS_HOME>\standalone\log\server.log`
 * **Log de Erros do AEM:** Disponível pelo Console da Web da AEM após inicialização em\
@@ -396,7 +396,7 @@ Para ambientes de produção:
 
 * [Documentação do JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
 * [Documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
-* [Guia de Instalação e Implantação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR)
+* [Guia de instalação e implantação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR)
 
 ### Informações do documento
 
