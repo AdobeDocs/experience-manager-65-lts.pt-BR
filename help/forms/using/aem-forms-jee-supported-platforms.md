@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3156'
 ht-degree: 1%
 
 ---
@@ -81,9 +81,9 @@ A Adobe recomenda essas configurações e fornece suporte total ou restrito como
 >[!NOTE]
 >
 >Para ajudar os clientes da AEM Forms a reduzir o custo de propriedade, simplificar a arquitetura de implantação e modernizar a pilha de desenvolvimento, a plataforma corporativa da Adobe Experience Manager está se afastando das implantações baseadas em servidor de aplicativos em favor das implantações independentes baseadas em OSGi. A Adobe continua a oferecer suporte à pilha do AEM Forms JEE com uma matriz reduzida de componentes de infraestrutura.
->Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em torno do Adaptive Forms responsivo para comunicações móveis, comunicações interativas de vários canais e integrações de dados de back-end usando o Modelo de dados de formulário.
+>Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em relação ao Adaptive Forms responsivo para comunicações interativas em vários canais, móveis e integrações de dados de back-end usando o Modelo de dados de formulário.
 >
->A Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses cenários, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forzms e usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
+>A Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses cenários, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forms e estiver usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
 
 ### Máquinas virtuais Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -92,7 +92,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Nível de compatibilidade</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Plataforma</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> Descrição</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
  <tbody>
   <tr>
    <th>Banco de dados </th>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Plataforma</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
    <td><p><strong>Definições de patch compatíveis</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Plataforma</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Nível de suporte</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -272,6 +272,11 @@ Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 de 64 bits</p> </td>
+   <td>E: A expectativa é funcionar</td>
+   <td><p>Service pack e atualizações críticas</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 de 64 bits</p> </td>
    <td>E: A expectativa é funcionar</td>
    <td><p>Service pack e atualizações críticas</p> </td>
   </tr>
@@ -486,11 +491,15 @@ Para requisitos adicionais, consulte:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>Versão de 32 bits ou 64 bits</p> <p> </p> </td>
+   <td>Service packs e atualizações críticas</td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 (Enterprise, Pro, Basic)</p> <p>Versão de 64 bits</p> <p> </p> </td>
    <td>Service packs e atualizações críticas</td>
   </tr>
   <tr>
