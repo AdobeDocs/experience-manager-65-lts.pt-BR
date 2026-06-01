@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3156'
 ht-degree: 1%
 
 ---
@@ -81,9 +81,9 @@ A Adobe recomenda essas configurações e fornece suporte total ou restrito como
 >[!NOTE]
 >
 >Para ajudar os clientes da AEM Forms a reduzir o custo de propriedade, simplificar a arquitetura de implantação e modernizar a pilha de desenvolvimento, a plataforma corporativa da Adobe Experience Manager está se afastando das implantações baseadas em servidor de aplicativos em favor das implantações independentes baseadas em OSGi. A Adobe continua a oferecer suporte à pilha do AEM Forms JEE com uma matriz reduzida de componentes de infraestrutura.
->Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em torno do Adaptive Forms responsivo para comunicações móveis, comunicações interativas de vários canais e integrações de dados de back-end usando o Modelo de dados de formulário.
+>Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em relação ao Adaptive Forms responsivo para comunicações interativas em vários canais, móveis e integrações de dados de back-end usando o Modelo de dados de formulário.
 >
->A Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses cenários, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forzms e usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
+>A Adobe reconhece que os usuários existentes devem continuar a implantar o AEM Forms na pilha do JEE. Nesses cenários, o Adobe exige a implantação do AEM Forms JEE em uma infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forms e estiver usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte da Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
 
 ### Máquinas virtuais Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -92,7 +92,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Nível de compatibilidade</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Plataforma</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> Descrição</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
  <tbody>
   <tr>
    <th>Banco de dados </th>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Plataforma</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Nível de compatibilidade</strong></p> </td>
    <td><p><strong>Definições de patch compatíveis</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Plataforma</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Nível de suporte</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
@@ -272,6 +272,11 @@ Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 de 64 bits</p> </td>
+   <td>E: A expectativa é funcionar</td>
+   <td><p>Service pack e atualizações críticas</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 de 64 bits</p> </td>
    <td>E: A expectativa é funcionar</td>
    <td><p>Service pack e atualizações críticas</p> </td>
   </tr>
@@ -377,7 +382,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -456,8 +461,8 @@ Os seguintes subsistemas do AEM Forms não são compatíveis com [508](https://w
 
 Para requisitos adicionais, consulte:
 
-- [Requisitos de sistema para um AEM Forms de servidor único na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_br)
-- [Requisitos de sistema para um AEM Forms em cluster na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_br)
+- [Requisitos de sistema para um AEM Forms de servidor único na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [Requisitos de sistema para um AEM Forms em cluster na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat e Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -486,11 +491,15 @@ Para requisitos adicionais, consulte:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plataforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>Versão de 32 bits ou 64 bits</p> <p> </p> </td>
+   <td>Service packs e atualizações críticas</td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 (Enterprise, Pro, Basic)</p> <p>Versão de 64 bits</p> <p> </p> </td>
    <td>Service packs e atualizações críticas</td>
   </tr>
   <tr>
@@ -624,7 +633,7 @@ Atualizações de suporte, patches e fix packs do AEM Forms no JEE sobre a vers�
 
 ## Política de suporte a patches de terceiros {#third-party-patch-support-policy}
 
-Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; dos respectivos documentos do produto. Acesse toda a documentação de [https://adobe.com/go/learn_aemforms_documentation_65_br](https://adobe.com/go/learn_aemforms_documentation_65_br).
+Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; dos respectivos documentos do produto. Acesse toda a documentação de [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65).
 
 A AEM Forms nas plataformas de referência de terceiros do JEE especifica o nível de patch específico da infraestrutura de terceiros que estava em vigor durante o desenvolvimento e o lançamento do AEM Forms no JEE e a partir do nível mínimo de patch/service pack da infraestrutura compatível com essa versão do AEM Forms no JEE.
 
@@ -654,7 +663,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -737,7 +746,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -806,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/br/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
