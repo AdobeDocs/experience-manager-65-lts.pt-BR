@@ -363,7 +363,7 @@ A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualiza
 * **Quebra de página**: na visualização do PDF, você pode visualizar exatamente como as quebras de página na correspondência afetam sua saída.
 * **Visualização final**: na visualização do PDF, você pode visualizar a formatação e a aparência exatas da letra, pois ela aparecerá na saída.
 
-Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/pt_BR/livecycle/11.0/ScriptingSupport/index.html).
 
 Para obter mais informações sobre suporte a script em formulários HTML5, consulte [Suporte a script para formulários HTML5](/help/forms/using/scripting-support.md).
 

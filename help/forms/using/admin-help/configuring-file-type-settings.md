@@ -621,7 +621,7 @@ Você também pode especificar como os formulários são enviados. As opções s
 
 ## Outras configurações do aplicativo (somente Windows) {#other-applications-settings-windows-only}
 
-Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/pt_BR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker da Adobe: `pmd, pm6, p65, pm`
