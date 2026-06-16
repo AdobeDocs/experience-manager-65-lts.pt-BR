@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
+source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3167'
 ht-degree: 1%
 
 ---
@@ -214,6 +214,11 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
    <td><p>JBoss® Enterprise Application Platform (EAP) 8.0.6 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Suportado</p> </td>
    <td><p>Patches e patches cumulativos para a versão de EAP compatível</p> </td>
+  </tr>
+  <tr>
+   <td><p>Perfil do WebSphere® Liberty (WLP)</p> </td>
+   <td><p>A: Suportado</p> </td>
+   <td><p>Service pack e atualizações críticas</p> </td>
   </tr>
  </tbody>
 </table>
