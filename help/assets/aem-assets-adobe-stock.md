@@ -7,10 +7,10 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 62ca090edf7c6200eadf27bb4edbd9c03e34de76
 workflow-type: tm+mt
-source-wordcount: '2239'
-ht-degree: 2%
+source-wordcount: '2166'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 LTS | Este artigo |
 
 <!--
@@ -41,7 +41,7 @@ A oferta [!DNL Adobe Stock] para corporações, por padrão, inclui direitos de 
 
 As organizações podem integrar seu plano corporativo [!DNL Adobe Stock] ao [!DNL Experience Manager Assets] para garantir que os ativos licenciados estejam amplamente disponíveis para seus projetos criativos e de marketing, com os poderosos recursos de gerenciamento de ativos do [!DNL Experience Manager]. Os usuários do [!DNL Experience Manager] podem rapidamente encontrar, visualizar e licenciar os ativos do Adobe Stock que são salvos no [!DNL Experience Manager], sem sair da interface do [!DNL Experience Manager].
 
-## Pré-requisitos para integrar [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## Pré-requisitos para integrar [!DNL Experience Manager] e [!DNL Adobe Stock]
 
 O [!DNL Experience Manager Assets] fornece aos usuários a capacidade de pesquisar, visualizar, salvar e licenciar ativos do [!DNL Adobe Stock] diretamente do [!DNL Experience Manager].
 
@@ -65,7 +65,7 @@ Old content
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
 
-## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock]
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
 
@@ -105,7 +105,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Como desenvolvedor, execute as etapas a seguir para integrar o [!DNL Adobe Experience Manager] e o [!DNL Adobe Stock].
 
 1. [Configurar um programa em [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Adicionar configuração na instância do autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Adicionar configuração na instância do autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar um programa em [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -185,7 +185,7 @@ To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the follo
    In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
@@ -399,7 +399,7 @@ A tabela a seguir explica como as permissões de usuário funcionam ao acessar o
 | admin | N/A | Todos | N/A | Sim | Sim |
 | test-doc1 | Usuário do DAM | /conf/global /settings/stock/cloud-config | Sim | Sim | Sim |
 | test-doc1 | Usuário do DAM | /conf/global /settings/stock/cloud-config | Não | Erro: falha ao carregar dados | Não |
-| test-doc1 | Usuário do DAM | **permitir**: /conf/global /settings/stock     **negar**: /cloud-config | A configuração do Stock não está visível | Sim | Não |
+| test-doc1 | Usuário do DAM | **permitir**: /conf/global /settings/stock **negar**: /cloud-config | A configuração do Stock não está visível | Sim | Não |
 
 ## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
@@ -467,15 +467,15 @@ Os usuários podem ver as propriedades de ativos licenciados e não licenciados.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=pt-BR)
->* [[!DNL Adobe Stock] ajuda do plano da empresa](https://helpx.adobe.com/br/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/br/stock/faq.html)
+>* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ajuda do plano da empresa](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--
 old content
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
