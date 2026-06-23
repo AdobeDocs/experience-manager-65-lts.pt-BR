@@ -6,9 +6,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0360a8eb-d4ff-4225-9be3-fa375b5da971
+source-git-commit: b1edea6e0bc6fe2bad0d3e04390742a04cc3ca18
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## O que é difícil dia 2 {#what-is-tough-day}
 
-&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=pt-BR) para uma apresentação do aplicativo.
+&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste.
 
 >[!CAUTION]
 >
@@ -362,7 +363,7 @@ Atualmente, o Dia difícil 2 relata nove métricas de teste que você pode avali
 | StdDev&#42; | O desvio padrão. |
 | 90p&#42; | 90 por cento. |
 | 99p&#42; | 99 por cento. |
-| 99,9p&#42; | 99,9 por cento. |
+| 99.9p&#42; | 99,9 por cento. |
 | Taxa de transferência real&#42; | Número de execuções dividido pelo tempo de execução decorrido. |
 
 Essas métricas são gravadas com a ajuda de editores que podem ser adicionados com o parâmetro `add` (de forma semelhante à adição de testes). Atualmente, há duas opções:
