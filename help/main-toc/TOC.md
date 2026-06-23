@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7709'
 ht-degree: 20%
 
 ---
@@ -220,7 +220,7 @@ ht-degree: 20%
          + [Integração ao Adobe Campaign](/help/sites-administering/campaign.md)
          + [Integração com o ExactTarget](/help/sites-administering/exacttarget.md)
          + [Analytics com provedores externos](/help/sites-administering/external-providers.md)
-         + [Integração com o Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
+         + [Integração com a Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configuração manual da integração com o Adobe Target](/help/sites-administering/target-configuring.md)
          + [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md)
          + [Classificações do Adobe](/help/sites-administering/adobeanalytics-classifications.md)
@@ -721,7 +721,7 @@ ht-degree: 20%
       + [Condição em linha e repetição em comunicações interativas e cartas](/help/forms/using/cm-inline-condition.md)
       + [Fragmentos do documento](/help/forms/using/lists.md)
       + [Propriedades de configuração do gerenciamento de correspondência](/help/forms/using/cm-configuration-properties.md)
-   + Integrar o AEM Forms às soluções da Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
+   + Integrar o AEM Forms com as soluções da Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
       + [Criar experiências direcionadas no AEM Forms](/help/forms/using/experience-targeting-forms.md)
       + [Medir e melhorar a eficácia e a conversão de formulários](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [Analytics usando a estrutura do Cloud Service](/help/forms/using/configure-analytics-forms-documents.md)
@@ -1096,6 +1096,7 @@ ht-degree: 20%
       + {hide-from-toc}[Falha do serviço PaperCapture ao executar OCRs em PDFs](/help/forms/using/papercapture-service-resolution.md)
       + [Falha na execução do script no AEM Forms 6.5 LTS com JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [Não é possível iniciar o controlador de domínio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [Mitigação de VULN-36128 e VULN-36120 para AEM Forms no JEE 6.5 LTS SP2](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + Documentação herdada {#legacy-documentation}
       + {hide-from-toc}[Usando o serviço de execução de script no AEM Forms no JEE Workbench para compilar dados XML](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Compactando e descompactando arquivos usando um AEM Forms no DSC Personalizado JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)

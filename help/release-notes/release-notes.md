@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
+source-git-commit: d2484f59e701a30a9b8f62ab308b7e5993c53694
 workflow-type: tm+mt
-source-wordcount: '7683'
+source-wordcount: '7743'
 ht-degree: 96%
 
 ---
@@ -262,10 +262,6 @@ O Assets Relacionar agora funciona para nomes de arquivo que incluem espaços. A
 * No vídeo do Dynamic Media, foi adicionado suporte para selecionar árabe na lista suspensa de idioma Legendas e faixas de áudio, permitindo que os autores gerenciem legendas em árabes diretamente no AEM. (Assets‑61771)
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
-
-<!--
-#### Forms Designer
--->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -583,6 +579,7 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 * No Configuration Manager, a inicialização do banco de dados falha durante o bootstrap no AEM Forms 6.5 LTS JEE Turnkey no modo personalizado quando nenhum módulo ou apenas componentes limitados são selecionados. A falha se deve a uma dependência ausente (xalan-2.7.2.jar), resultando em um erro. Adicionar o arquivo JAR ao adobe-livecycle-jboss.ear\lib resolve o problema. (FORMS-24690)
 * Em implantações do Forms JEE LTS Service Pack 2 em execução no WebSphere® Liberty Profile, a funcionalidade de email pode falhar. Ao tentar usar recursos de email, o servidor registra um erro: `Could not convert socket to TLS`. (FORMS-24692)
+* No Forms JEE LTS em execução no JBoss®, a funcionalidade relacionada ao email pode falhar. Ao tentar usar recursos de email, o servidor registra um erro: `Error IMAPProvider not a subtype`. Instale o hotfix da [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear) para resolver esse problema. (FORMS-24892)
 
 ### Corrupção do repositório durante a compactação online após a compactação offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
