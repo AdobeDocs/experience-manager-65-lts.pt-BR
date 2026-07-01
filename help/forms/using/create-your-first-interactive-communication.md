@@ -7,9 +7,10 @@ topic-tags: interactive-communications, introduction
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 247ea068-6564-4b62-8449-a8800548106f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 * Dados condicionais
 * Imagens
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Etapa 2: Criar modelo de dados de formulário {#step-create-form-data-model}
 
@@ -86,7 +87,7 @@ Um modelo de dados de formulário permite conectar uma Comunicação interativa 
 * Editar dados de amostra
 * Testar o modelo de dados do formulário e os serviços configurados com dados de teste
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Etapa 3: Criar fragmentos de documento {#step-create-document-fragments}
 
@@ -100,7 +101,7 @@ Os fragmentos de documento são componentes reutilizáveis de uma correspondênc
 * Criar variáveis
 * Criar e aplicar regras
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Etapa 4: criar modelos {#step-create-templates}
 
@@ -118,7 +119,7 @@ Os modelos para o canal da Web são criados no AEM. Os autores e administradores
 * Fazer upload dos modelos XDP para o servidor do AEM Forms
 * Criar e habilitar modelos para o canal da Web
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Etapa 5: Criar uma comunicação interativa {#step-create-an-interactive-communication}
 
@@ -137,7 +138,7 @@ As Comunicações interativas podem ser fornecidas por meio de dois canais: Impr
 * Criar um gráfico na versão da Web da Comunicação Interativa
 * Criar hiperlinks na versão da Web da comunicação interativa
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## Etapa 6: publicar a comunicação interativa {#step-publish-your-interactive-communication}
 
