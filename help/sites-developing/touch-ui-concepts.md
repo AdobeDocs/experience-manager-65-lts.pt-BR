@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2207'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ A interface do Granite:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Componentes de base da interface do Granite](#granite-ui-foundation-components)
+* [Componentes do Granite UI Foundation](#granite-ui-foundation-components)
 Essa biblioteca de componentes de base pode ser usada ou estendida por outras bibliotecas.
 * [Componentes de administração da interface de usuário do Granite](#granite-ui-administration-components)
 
@@ -240,14 +241,14 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo de nó** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}

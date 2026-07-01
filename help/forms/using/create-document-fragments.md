@@ -7,9 +7,10 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 3%
 
 ---
@@ -163,7 +164,7 @@ Para criar variáveis para campos com a interface do usuário do agente como fon
    ![Texto estático de detalhes do cliente](assets/customer_details_static_text_new.png)
 
 1. Coloque o cursor próximo ao campo **Número de celular** e clique duas vezes na propriedade **customer** > **mobilenum**.
-1. Coloque o cursor ao lado do campo **Número de Contato Alternativo** e clique duas vezes na propriedade **&#x200B; customer** > **alternatemobilenumber**.
+1. Coloque o cursor ao lado do campo **Número de Contato Alternativo** e clique duas vezes na propriedade **customer** > **alternatemobilenumber**.
 1. Coloque o cursor ao lado do campo **Número do Relacionamento** e clique duas vezes na propriedade **customer** > **relationship number**.
 1. Selecione a guia **Variáveis**, coloque o cursor ao lado do campo **Local de Fornecimento** e clique duas vezes na variável **Placesupply**.
 1. Coloque o cursor próximo ao campo **Código do estado** e clique duas vezes na variável **Código do estado**.

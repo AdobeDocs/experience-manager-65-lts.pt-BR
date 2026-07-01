@@ -6,9 +6,10 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
@@ -158,7 +159,7 @@ Analise cada letra para descobrir as várias partes que compõem a letra. O espe
 
 * As condições sob as quais os usuários empresariais, como ajustadores de sinistros ou trabalhadores de processos, modificam o conteúdo ou partes na carta.
 * Os cenários são narrativas que descrevem a experiência do usuário, os requisitos e os benefícios de usar a solução Letters.
-* Os cenários também fornecem:Os conjuntos de habilidades e as ferramentas necessárias para o projeto.
+* Os cenários também fornecem:The conjuntos de habilidades e ferramentas necessários para o seu projeto.
 * Práticas recomendadas para planejar sua implementação do. &quot;Visão geral da implementação de alto nível.
 
 ## Benefícios da execução da análise {#benefits-of-performing-the-analysis}
