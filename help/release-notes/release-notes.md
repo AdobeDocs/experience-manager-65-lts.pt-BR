@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7770'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ O suporte a eventos headless não tinha eventos OSGi necessários para fragmento
 
 * O RTE do fragmento de conteúdo apresentou problemas visuais e de layout após alterações recentes no estilo da interface do usuário. O Pacote de serviços 2 refina o estilo do RTE para que a barra de ferramentas e a área editável sejam renderizadas corretamente e permaneçam legíveis. O Editor de fragmento de conteúdo agora se alinha à aparência e ao comportamento do Editor de páginas. (SITES-38684)
 * A remoção de escopos IMS do Seletor de ativos Polaris interrompeu a integração do Fragmento de conteúdo com o ponto de acesso de entrega. Os autores detectam falhas ao abrir o seletor de ativos remoto e selecionar ativos. A atualização adiciona novamente os escopos IMS necessários e restaura o acesso estável da camada de entrega. (SITES-35837)
-* O painel Conteúdo associado não renderiza mais um espaço reservado &quot;indefinido&quot; codificado. O Editor de fragmento de conteúdo agora resolve esse texto por meio de recursos de localização, para que os editores vejam o texto da interface traduzido. (SITES-33675)
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* O painel Conteúdo associado não renderiza mais um espaço reservado &quot;indefinido&quot; codificado. O Editor de fragmento de conteúdo agora resolve esse texto por meio de recursos de localização, para que os editores vejam o texto da interface do usuário traduzido. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * O Editor de fragmento de conteúdo agora exibe um rótulo de guia Geral traduzido nas localidades. O editor substitui o texto de guia não localizado e remove as IDs internas dos títulos das guias. (SITES-30715)
 * O Editor de fragmento de conteúdo agora exibe nomes traduzidos para os tipos de ativos permitidos. A lista do seletor não mescla mais strings internas e rótulos somente em inglês quando os autores configuram restrições de referência de conteúdo. (SITES-29699)
 
@@ -540,6 +539,7 @@ Os clientes são aconselhados a analisar se usam o recurso/funcionalidade em sua
 
 | Área | Destaque | Substituição | Versão (SP) |
 | --- | --- | --- | --- |
+| Sites | Resumo do texto do fragmento de conteúdo | Não há nenhuma substituição disponível. | |
 | Início rápido | APIs do Mongo | As APIs do Mongo agora estão obsoletas e devem ser removidas em versões futuras. | 6.5 TS SP2 |
 | Sites | Suporte a Fragmento de conteúdo na API REST do AEM Assets | O AEM 6.5 LTS SP2 fornece OpenAPIs modernas para gerenciamento de fragmentos de conteúdo e modelos. Portanto, os pontos de acesso mais antigos de suporte a fragmentos de conteúdo na API REST do AEM Assets agora estão obsoletos.<br>A Adobe pretende manter esses pontos de acesso mais antigos disponíveis até que seja feito um anúncio de fim de vida útil. A Adobe não planeja melhorias adicionais para os pontos de acesso obsoletos. | 6.5 LTS SP2 |
 | Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Os editores recomendados para gerenciar conteúdo headless no AEM são:<br>- [O Editor Universal](/help/sites-developing/universal-editor/introduction.md) para edição visual.<br>- [O Editor de Fragmentos de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulários. | 6.5 LTS GA |
