@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2082'
 ht-degree: 7%
 
 ---
-
 
 # Configuração de formulários de pesquisa{#configuring-search-forms}
 
@@ -332,10 +332,10 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >[!NOTE]
 >
 >* Os predicados de pesquisa comuns são definidos em:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+
 >
 >* Os predicados de pesquisa relacionados somente ao siteadmin (interface clássica) estão localizados em:
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+
 >   * Eles estão obsoletos e só estão disponíveis para compatibilidade com versões anteriores.
 >
 >Essas informações são somente para referência. Não alterar `/libs`.
@@ -384,7 +384,7 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Caminho do nó de opções**
+* Caminho do nó **Opções**
 Efetivamente igual ao **Caminho de opções**, somente isso está no campo de predicado comum, o outro é específico para ativos.
 
 * **Seleção única**
@@ -393,7 +393,7 @@ Se marcadas, as opções são renderizadas como caixas de seleção que permitem
 * **Nomes de propriedades de publicação e Live Copy**
 Os rótulos das caixas de seleção Publicar e Live Copy para o predicado específico do Sites.
 
-* O &ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
+* O &amp;ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
 
 ## Configuração do Forms de pesquisa {#configuring-your-search-forms}
 
@@ -552,7 +552,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
   </tr>
   <tr>
    <td>Visualização</td>
-   <td>Permissões de leitura, gravação e exclusão no nó <code>/var/dam/content</code>.<br /> permissões de Leitura e Gravação no nó <code>/apps</code>.</td>
+   <td>Permissões de Leitura, Gravação e Exclusão no nó <code>/var/dam/content</code>.<br /> Permissões de leitura e gravação no nó <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>
