@@ -9,10 +9,11 @@ docset: aem65
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 25%
+source-wordcount: '2681'
+ht-degree: 26%
 
 ---
 
@@ -49,7 +50,7 @@ Cada configuração de implantação usa um acionador de implantação que ocasi
 
 ### Configurações de implantação instaladas {#installed-rollout-configurations}
 
-A tabela a seguir lista as configurações de implantação instaladas com o AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implantação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implantação instaladas com o AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -169,7 +170,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Na live copy, essa ação de sincronização atualiza referências como links.<br /> Ele procura caminhos nas páginas da live copy que apontam para um recurso dentro do blueprint. Quando encontrado, ele atualiza o caminho para apontar para o recurso relacionado dentro da live copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de Atualização de Referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
+   <td><p>Na live copy, esta ação de sincronização atualiza referências como links.<br /> Ela procura caminhos nas páginas de live copy que apontam para um recurso dentro do blueprint. Quando encontrado, ele atualiza o caminho para apontar para o recurso relacionado dentro da live copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de Atualização de Referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -228,8 +229,7 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Cria ou atualiza recursos de Produto em um catálogo. Esta ação deve ser usada em uma das seguintes situações:
-    <ul>
+   <td>Cria ou atualiza recursos de Produto em um catálogo. Esta ação deve ser usada em uma das seguintes situações:<ul>
      <li>Geração ou implantação de um catálogo (ou seção de catálogo)</li>
      <li>Um usuário restaura a herança da sincronização de um componente de produto.</li>
     </ul> </td>
@@ -291,7 +291,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
    <td>Uma expressão regular que corresponde aos tipos de nó que serão excluídos da ação de sincronização.</td>
   </tr>
   <tr>
-   <td><p>Itens de parágrafo excluídos</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
+   <td><p>Itens de parágrafo excluídos</p> <p>cq.wcm.msm.action.excludedparágrafos</p> </td>
    <td>Uma expressão regular que corresponde aos itens de parágrafo que serão excluídos da ação de sincronização.</td>
   </tr>
   <tr>
@@ -299,7 +299,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
    <td>Uma expressão regular que corresponde às propriedades de página que serão excluídas da ação de sincronização.</td>
   </tr>
   <tr>
-   <td><p>Tipos de nó Mixin ignorados</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
+   <td><p>Tipos de nó Mixin ignorados</p> <p>cq.wcm.msm.action.ignoreMixin</p> </td>
    <td>Disponível somente para Ação de atualização de conteúdo MSM CQ. Uma expressão regular que corresponde aos nomes dos tipos de nó mixin que serão excluídos da ação de sincronização.</td>
   </tr>
  </tbody>
@@ -371,7 +371,7 @@ Por exemplo, um blueprint usa o site de referência We.Retail como conteúdo de 
 
 ### Definir as configurações de implementação de uma página de Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-Defina uma página de live copy com as configurações de implantação a serem usadas quando a página de origem for implantada. As páginas secundárias herdam a configuração por padrão. Ao definir a configuração de implantação a ser usada, você substituirá a configuração que a página de live copy herdará da página principal.
+Defina uma página de live copy com as configurações de implantação a serem usadas quando a página de origem for implantada. As páginas filhas herdam a configuração por padrão. Ao definir a configuração de implantação a ser usada, você substituirá a configuração que a página de live copy herdará da página principal.
 
 Você também pode definir as configurações de implantação para uma página de live copy ao [criar a live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 
@@ -409,7 +409,7 @@ As páginas secundárias da página do blueprint herdam a configuração. Ao def
 
 Especifique uma configuração de implantação a ser usada como padrão do sistema. Para especificar o padrão, configure o serviço OSGi:
 
-* **Gerente de relacionamento dinâmico do WCM CQ do dia**
+* Gerente de relacionamento dinâmico do WCM CQ de **dias**
 o PID do serviço é `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure o serviço usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [nó de repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
