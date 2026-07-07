@@ -10,9 +10,10 @@ role: User, Admin
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -204,7 +205,7 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
  </tbody>
 </table>
 
-## Espectadores {#viewers}
+## Visualizadores {#viewers}
 
 Se tiver problemas com visualizadores, consulte as seguintes orientações para solução de problemas.
 
@@ -254,8 +255,7 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Procure o pacote do visualizador na lista; ele começa com `cq-dam-scene7-viewers-content`.
 1. Selecione **Reinstalar**.
 1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração do Dynamic Media - S7.
-1. Não fazer alterações, selecione **Salvar**.
-Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
+1. Não fazer alterações, selecione **Salvar**.Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
 
 ### Problema: a Visualização da imagem não está sendo carregada na criação das predefinições do visualizador {#image-preview-not-loading}
 

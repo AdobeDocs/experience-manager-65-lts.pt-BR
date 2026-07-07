@@ -7,7 +7,7 @@ role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
 source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2482'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 * **Objetos do modelo de dados**: as propriedades de dados usam uma fonte de dados back-end.
 * **Conteúdo baseado em regras**: partes do conteúdo em um texto que são exibidas ou ficam ocultas com base em uma regra. Uma regra também pode ser baseada nas propriedades e variáveis do modelo de dados de formulário.
 * **Variáveis**: no fragmento de documento de texto, as variáveis não estão associadas a uma fonte de dados de back-end. O agente preenche/seleciona valores nas variáveis ou vincula as variáveis às fontes de dados ao preparar a comunicação interativa para enviá-la a um processo de publicação.
-* **Repetir**: você pode ter informações dinâmicas em sua Comunicação Interativa, como transações em um demonstrativo de cartão de crédito, cujo número de ocorrências pode continuar mudando com cada Comunicação Interativa gerada. Usando a repetição, é possível formatar e estruturar essas informações dinâmicas. Para obter mais informações, consulte [Condição embutida e repetir](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Repetir**: você pode ter informações dinâmicas em sua Comunicação Interativa, como transações em um demonstrativo de cartão de crédito, cujo número de ocorrências pode continuar mudando com cada Comunicação Interativa gerada. Usando a repetição, é possível formatar e estruturar essas informações dinâmicas. Para obter mais informações, consulte [Condição embutida e repetir](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Criar texto {#createtext}
 
@@ -45,7 +45,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 
 1. Digite o texto e use as seguintes opções para formatar, condicionar e inserir propriedades e variáveis do modelo de dados de formulário no texto:
 
-   * [Modelo de dados do formulário](#formdatamodel)
+   * [Modelo de dados de formulário](#formdatamodel)
    * [Variáveis](#variables)
    * [Editor de regras](#rules)
    * [Opções de formatação](#formatting)

@@ -8,9 +8,10 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b48ceb2a-9e5b-4df7-9a3e-2ed7e3849041
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -43,7 +44,7 @@ Para associar processos de publicação a cartas ou comunicações interativas, 
 1. Especifique o nome de usuário e a senha.
 1. Verifique se sun.util.calendar foi adicionado à Configuração do firewall de desserialização.
 
-   Incluir na lista de permissões Acesse Configuração do firewall de desserialização e, em classes ➡ de prefixos de pacote, adicione sun.util.calendar.
+   Acesse Configuração do firewall de desserialização e, em classes ➡ de prefixos de pacote, adicione sun.util.calendar.
 
 1. Agora seus servidores estão mapeados e os processos de publicação no AEM Forms no JEE estão disponíveis na interface do usuário do AEM ao criar cartas.
 

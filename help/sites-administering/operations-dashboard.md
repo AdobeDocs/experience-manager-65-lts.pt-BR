@@ -9,9 +9,10 @@ docset: aem65
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6018'
 ht-degree: 2%
 
 ---
@@ -262,8 +263,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td>
     <div>
       O Sling Jobs verifica o número de trabalhos em fila no JobManager, compara-o com o
-     Limite de <code>maxNumQueueJobs</code> e:
-    </div>
+     Limite de <code>maxNumQueueJobs</code> e:</div>
     <ul>
      <li>retorna uma Critical se mais de <code>maxNumQueueJobs</code> estiverem na fila</li>
      <li>retorna Crítico se houver jobs ativos de longa duração com mais de 1 hora</li>
@@ -296,10 +296,10 @@ A função de uma Verificação de integridade composta é agregar várias Verif
   </tr>
   <tr>
    <td>Verificações de segurança</td>
-   <td><p>A verificação de segurança é um composto que agrega os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais solucionam problemas diferentes da lista de verificação de segurança disponível na página <a href="/help/sites-administering/security-checklist.md">Lista de verificação de segurança.</a> A verificação é útil como um teste de fumaça de segurança quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitycheck,type=HealthCheck</a></p> </td>
+   <td><p>A verificação de segurança é um composto que agrega os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais abordam diferentes preocupações da lista de verificação de segurança disponível na <a href="/help/sites-administering/security-checklist.md">página de documentação da Lista de Verificação de Segurança.</a> A verificação é útil como um teste de fumaça de segurança quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitycheck,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
-   <td>Grupos ativos</td>
+   <td>Pacotes ativos</td>
    <td><p>Grupos ativos verifica o estado de todos os pacotes e:</p>
     <ul>
      <li>retorna o status Aviso se qualquer um dos pacotes não estiver ativo ou (iniciando, com ativação lenta)</li>
@@ -451,7 +451,7 @@ Marcar a caixa **Incluir tempo de execução** antes de executar a consulta tamb
 
 A finalidade do Gerenciador de índice é facilitar o gerenciamento de índice, como manter índices ou exibir seu status.
 
-Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico &#x200B;** na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
+Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
 
 Ele também pode ser acessado diretamente nesta URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -494,7 +494,7 @@ As seguintes tarefas estão disponíveis no Painel de operações:
 1. A tarefa de manutenção **Limpeza de Projeto**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 1. A tarefa de manutenção **Limpeza de tarefas ad-hoc**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 
-O tempo padrão para a janela de manutenção diária é de 2h às 5h. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 aos sábados.
+O tempo padrão para a janela de manutenção diária é de 2:00 às 5:00. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 da manhã aos sábados.
 
 Você também pode configurar os horários pressionando o ícone de engrenagem em qualquer uma das duas placas de manutenção:
 
@@ -621,7 +621,7 @@ As tarefas de manutenção personalizadas podem ser implementadas como serviços
    <td>Obrigatório</td>
   </tr>
   <tr>
-   <td>job.topics</td>
+   <td>tarefa.tópicos</td>
    <td>Um tópico exclusivo da tarefa de manutenção.<br /> A manipulação de trabalhos do Apache Sling inicia um trabalho com exatamente este tópico para executar a tarefa de manutenção e, conforme a tarefa é registrada para este tópico, ela é executada.<br /> O tópico deve começar com <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obrigatório</td>
@@ -659,7 +659,7 @@ O **Painel de Visão Geral do Sistema** exibe uma visão geral de alto nível da
 
 >[!NOTE]
 >
->Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/35618?captions=por_br) para obter uma introdução ao Painel de Visão Geral do Sistema.
+>Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/21340) para obter uma introdução ao Painel de Visão Geral do Sistema.
 
 ### Como Acessar {#how-to-access}
 
@@ -688,7 +688,7 @@ Você também pode baixar um arquivo `JSON` resumindo as informações do painel
      <li>uma lista de verificações com status Crítico</li>
      <li>uma lista de verificações com status de Aviso</li>
     </ul> </td>
-   <td>Indicado visualmente:<br />
+   <td>Indicado visualmente:
     <ul>
      <li>uma tag vermelha para verificações críticas</li>
      <li>uma tag laranja para verificações de Aviso</li>

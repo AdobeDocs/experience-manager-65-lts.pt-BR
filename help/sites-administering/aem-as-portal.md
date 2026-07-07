@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: cf067a359d9f1fbe46e1614d91ce55bf3ee5bf18
+exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6113'
 ht-degree: 0%
 
 ---
@@ -112,7 +113,7 @@ O portlet pode ser configurado com as seguintes preferências:
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>O seletor que é anexado a cada URL. Por padrão, este é o <strong>portlet</strong>. Portanto, todas as solicitações para páginas html usam urls terminando em <strong>.portlet.html.</strong> Isso permite o uso de scripts personalizados dentro do AEM para renderização de portlet.</td>
+   <td>O seletor que é anexado a cada URL. Por padrão, este é o <strong>portlet</strong>. Portanto, todas as solicitações para páginas html usam urls terminando em <strong>.portlet.html.</strong> Isso permite o uso de scripts personalizados no AEM para renderização de portlet.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -170,8 +171,7 @@ Você pode implantar este pacote em tempo de execução ou adicioná-lo ao aplic
 Depois que o cache é implantado, o portlet armazena em cache o conteúdo da instância de publicação. O cache do portlet pode ser invalidado com uma liberação do dispatcher do AEM. Para configurar o portlet para usar seu próprio cache:
 
 1. Configure um agente de replicação no autor que se destina ao servidor do portal.
-1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080 &#x200B;** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.
-   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
+1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
 
 #### Liberando o cache pelo Agente de Replicação {#flushing-the-cache-via-replication-agent}
 
@@ -214,7 +214,7 @@ Para configurar um agente de replicação para o portal:
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. No campo **Método HTTP**, digite **GET**.
-1. No campo **HTTP Headers**, clique em **+** para adicionar uma nova entrada e digite **Path: {path}**.
+1. No campo **HTTP Headers**, clique em **+** para adicionar uma nova entrada e digite **Path:{path}**.
 1. Se necessário, clique na guia **Proxy** e insira informações de proxy para o agente.
 1. Clique em **OK** para salvar as alterações.
 1. Para testar a conexão, clique no link **Testar Conexão**. Uma mensagem de log é exibida indicando se o teste de replicação foi bem-sucedido. Por exemplo:
@@ -388,7 +388,7 @@ Para abrir a página de administração do site ou editar uma página do portlet
    </LoginModule>
    ```
 
-1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação do PIN CQ** no menu suspenso.
+1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação de PIN CQ** no menu suspenso.
 1. Edite o parâmetro **Caminho Raiz da URL** para conter apenas o valor único **/**.
 
 ### Privilégios {#privileges}
@@ -397,8 +397,8 @@ Algumas funções do portlet são protegidas por privilégios. O usuário atual 
 
 * &quot;toolbar&quot; : este é o privilégio geral para ver/usar a barra de ferramentas no portlet.
 * &quot;prefs&quot; : se o usuário tiver esse privilégio, ele poderá ver/alterar as preferências do portlet.
-* &quot;cq-author:edit&quot; : com esse privilégio, o usuário pode chamar a exibição de edição do conteúdo.
-* &quot;cq-author:preview&quot; : Com esse privilégio, o usuário pode ver a visualização.
+* &quot;cq-author:edit&quot;: com esse privilégio, o usuário pode invocar o modo de edição do conteúdo.
+* &quot;cq-author:preview&quot;: com esse privilégio, o usuário pode ver a visualização.
 * &quot;cq-author:siteadmin&quot; : com esse privilégio, o usuário pode abrir o siteadmin no AEM.
 
 A melhor abordagem para gerenciar os privilégios é usar funções de portal e atribuir funções a esses privilégios. Isso pode ser feito por meio de uma configuração OSGi. O &quot;Gerenciador de privilégios do Day Portal Diretor&quot; pode ser configurado com um conjunto de funções para cada privilégio. Se o usuário tiver uma das atribuições, ele terá o privilégio correspondente.
@@ -609,7 +609,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
 
 Os serviços a seguir têm uma implementação padrão no portlet de conteúdo (com uma interface Java correspondente). Para personalizar, um pacote contendo a nova implementação do serviço precisa ser implantado no aplicativo do portlet.
 
-Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação **&#x200B; 0** e o portlet usa o serviço com a classificação mais alta.
+Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação** 0** e o portlet usa o serviço com a classificação mais alta.
 
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|

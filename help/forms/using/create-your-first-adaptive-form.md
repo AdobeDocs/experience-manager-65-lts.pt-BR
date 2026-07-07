@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 4%
+source-wordcount: '1007'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +44,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa o AEM [!DNL Forms] p
 
 ### Pré-requisitos {#prerequisite}
 
-* Configurar uma [instância do autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=pt-BR#author-and-publish-installs)
+* Configurar uma [instância do autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instale o [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados [!DNL MySQL] e usam o [!DNL Oracle's] [driver do banco de dados JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

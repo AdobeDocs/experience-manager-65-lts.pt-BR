@@ -7,7 +7,7 @@ role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,7 @@ Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm 
 
 #### Como habilitar a distribuição sem binários? {#how-do-i-enable-binary-less-distribution}
 
-Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.
-Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
+Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
 
 #### Como ativar permissões ao criar uma Cópia de idioma para autores de conteúdo no AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -49,8 +48,7 @@ Para obter detalhes, consulte os recursos adicionais abaixo:
 
 #### Como auditar recursos do AEM, como tentativas de logon e ACL ou alterações de permissão? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-A AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.
-Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
+A AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Como habilitar o SSL por padrão? {#how-to-enable-ssl-by-default}
 
@@ -88,8 +86,7 @@ Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de e
 
 Ao criar uma cópia de idioma por meio da interface para toque (**Referências** > **Atualizar cópia de idioma**), uma nova pasta do DAM é criada no novo idioma e os ativos são referenciados a partir daí.
 
-Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.
-Para o AEM 6.4, **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
+Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.Para o AEM 6.4, **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
 
 #### Como desabilitar um componente do AEM que causa crescimento exponencial para o AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
