@@ -7,7 +7,7 @@ role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
 source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2482'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 
 1. Digite o texto e use as seguintes opções para formatar, condicionar e inserir propriedades e variáveis do modelo de dados de formulário no texto:
 
-   * [Modelo de dados do formulário](#formdatamodel)
+   * [Modelo de dados de formulário](#formdatamodel)
    * [Variáveis](#variables)
    * [Editor de regras](#rules)
    * [Opções de formatação](#formatting)

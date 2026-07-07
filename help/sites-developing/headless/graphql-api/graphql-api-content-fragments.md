@@ -4,10 +4,11 @@ description: Saiba como usar fragmentos de conteúdo no Adobe Experience Manager
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4984'
-ht-degree: 50%
+source-wordcount: '5154'
+ht-degree: 51%
 
 ---
 
@@ -60,7 +61,7 @@ Para obter mais informações sobre a API do GraphQL, consulte as seguintes seç
 
    * [Introdução ao GraphQL](https://graphql.org/learn)
 
-   * [A especificação GraphQL](https://spec.graphql.org/)
+   * [A especificação do GraphQL](https://spec.graphql.org/)
 
 * Em [graphql.com](https://graphql.com):
 
@@ -259,7 +260,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Booleano |  `Boolean` |  Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
 | Data e hora | `Calendar` |  Usado para exibir data e hora em um formato ISO 8086. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
 | Enumeração |  `String` |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
-|  Tags |  `[String]` |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
+|  Tags |  `[String]` |  Usado para exibir uma lista de strings que representam tags usadas no AEM |
 | Referência de conteúdo |  `String` |  Usado para exibir o caminho para outro ativo no AEM |
 | Referência do fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Multicampo, com um tipo referenciado: `[Model]` - Matriz do tipo `Model`, referenciado diretamente da matriz <br><br>Multicampo, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciado da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
@@ -356,8 +357,7 @@ Para consultar metadados:
 
 >[!NOTE]
 >
->**Diferença entre metadados normais e de matriz**
->Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>**Diferença entre metadados normais e de matrizLembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você recebe uma matriz de todos os metadados armazenados no repositório como um `String`. E se você chamar `stringArrayMetadata`, receberá uma matriz de todos os metadados armazenados no repositório como `String[]`.
 
@@ -705,9 +705,7 @@ query {
 
 O tipo de consulta `...Paginated` reutiliza a maioria dos recursos do tipo de consulta `...List` (filtragem, classificação), mas, em vez de usar os argumentos `offset`/`limit`, ele usa os argumentos `first`/`after`, definidos pela [Especificação de conexões do cursor GraphQL](https://relay.dev/graphql/connections.htm). Você pode encontrar uma introdução mais simplificada na [Introdução ao GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: os primeiros `n` itens a serem retornados.
-O padrão é `50`.
-O máximo é `100`.
+* `first`: os primeiros `n` itens a serem retornados.O padrão é `50`.O máximo é `100`.
 * `after`: o cursor que determina o início da página solicitada. O item representado pelo cursor não está incluído no conjunto de resultados. O cursor de um item é determinado pelo campo `cursor` da estrutura `edges`.
 
 Por exemplo, exibe uma página de resultados contendo até cinco aventuras, começando pelo item de cursor especificado na lista de resultados *completa*:
@@ -1075,8 +1073,7 @@ Você também precisa estar ciente de:
    * Por exemplo:
 
       * Quando dois (ou mais) fragmentos com modelos diferentes (por exemplo, `M1`, `M2`) são usados como possíveis referências (Referência de conteúdo ou Referência de fragmento) de outro fragmento; por exemplo, `Fragment1` `MultiField/List`
-      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.
-Para ilustrar:
+      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.Para ilustrar:
          * `M1.Title` como `Text`
          * `M2.Title` como `Text/MultiField`
       * Um erro de conflito de campo ocorrerá se a consulta GraphQL contiver o campo `Title`.
@@ -1091,8 +1088,8 @@ Perguntas que surgiram:
 
 1. **P**: “*Qual a diferença entre a API GraphQL do AEM e a API do Construtor de consultas?*”
 
-   * **R**: “*A API GraphQL do AEM oferece controle total sobre a saída em JSON e é um padrão do setor para consulta de conteúdo.
-No futuro, a AEM planeja investir na API GraphQL do AEM.*&quot;
+   * **A**:
+&quot;*A API do GraphQL do AEM oferece controle total sobre a saída em JSON e é um padrão do setor para consulta de conteúdo.No futuro, a AEM planeja investir na API GraphQL do AEM.*&quot;
 
 ## Tutorial - Introdução ao AEM Headless e GraphQL {#tutorial}
 

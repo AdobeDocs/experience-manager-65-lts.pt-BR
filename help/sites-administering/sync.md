@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 2%
 
 ---
 
@@ -75,7 +75,7 @@ Quando a sincronização de usuários estiver habilitada, somente os usuários e
 
 1. Verifique se o código mais recente está instalado:
 
-* [Atualizações da plataforma AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR)
+* [Atualizações de plataforma do AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR)
 
 ### &#x200B;1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -198,7 +198,7 @@ Verificar `Name`: `socialpubsync-reverse`
 
 ![Fábrica de Agentes de Fila](assets/chlimage_1-23.png)
 
-### &#x200B;5. Adobe Social Sync - Diff Observer Fatory {#diffobserver}
+### &#x200B;5. Adobe Social Sync - Fábrica de observadores de comparação {#diffobserver}
 
 **Habilitar sincronização de grupo**
 
@@ -266,7 +266,7 @@ Verificar `Name`: `socialpubsync`
 
 ![Fábrica de Agentes de Sincronização](assets/chlimage_1-25.png)
 
-* **Pontos de Extremidade do Exportador**
+* **Endpoints do exportador**
 Deve haver um endpoint exportador para cada instância de publicação. Por exemplo, se houver duas instâncias de Publicação, localhost:4503 e 4504, deverá haver duas entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
@@ -303,11 +303,9 @@ Se a ID do Sling de uma instância de publicação corresponder à ID do Sling d
    * procure e exclua o arquivo chamado *sling.id.file*
 
       * por exemplo, em um sistema Linux®:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * por exemplo, em um sistema Windows:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. iniciar a instância de publicação
@@ -421,7 +419,7 @@ Está incluído na lista um URL para cada instância de publicação que executa
 
 ### Configuração adicionada incorretamente {#configuration-improperly-added}
 
-Quando a sincronização de usuários falha ao funcionar, o problema mais comum é que configurações adicionais foram *adicionadas*. Em vez disso, a configuração padrão *existente *deveria ter sido *editada*.
+Quando a sincronização de usuários falha ao funcionar, o problema mais comum é que configurações adicionais foram *adicionadas*. Em vez disso, a configuração padrão *existente* deveria ter sido *editada*.
 
 Veja a seguir como as configurações padrão editadas devem aparecer no Console da Web. Se mais de uma instância for exibida, a configuração adicionada deverá ser removida.
 

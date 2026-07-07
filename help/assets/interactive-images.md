@@ -9,9 +9,10 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: e4be0056-1e19-41a8-8d8c-be65999b562d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4435'
 ht-degree: 1%
 
 ---
@@ -44,14 +45,11 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 Etapas de imagens interativas:
 
-1. **(Opcional) Identificar variáveis de ponto de acesso** - Se você usa o Experience Manager Assets e o Dynamic Media de forma independente, comece identificando variáveis dinâmicas usadas na implementação do Quickview existente. Em seguida, você pode inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
-No entanto, se você usar o Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce ou ambos, essa etapa não será necessária.
+1. **(Opcional) Identificar variáveis de ponto de acesso** - Se você usa o Experience Manager Assets e o Dynamic Media de forma independente, comece identificando variáveis dinâmicas usadas na implementação do Quickview existente. Em seguida, você pode inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables).No entanto, se você usar o Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce ou ambos, essa etapa não será necessária.
 
-1. **(Opcional) Criar uma predefinição do visualizador de Imagem Interativa** - Personalize a imagem gráfica usada para representar pontos de acesso. Criar sua própria predefinição do visualizador de imagens interativas não é necessário se você pretende usar a predefinição pronta para uso do visualizador de imagens interativas chamada `Shoppable_Banner`.
-Consulte [(Opcional) Criar uma predefinição do visualizador de Imagem Interativa](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(Opcional) Criar uma predefinição do visualizador de Imagem Interativa** - Personalize a imagem gráfica usada para representar pontos de acesso. Criar sua própria predefinição do visualizador de imagens interativas não é necessário se você pretende usar a predefinição pronta para uso do visualizador de imagens interativas chamada `Shoppable_Banner`.Consulte [(Opcional) Criar uma predefinição do visualizador de Imagem Interativa](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Carregar um banner de imagem** - Carregar banners de imagem que você deseja tornar interativos.
-Consulte [Carregar um banner de imagem](#uploading-an-image-banner).
+1. **Carregar um banner de imagem** - Carregar banners de imagem que você deseja tornar interativos.Consulte [Carregar um banner de imagem](#uploading-an-image-banner).
 
 1. **Adicionar pontos de acesso a um banner de imagem** - Adicione um ou mais pontos de acesso a um banner de imagem e associe cada um a uma ação, como um hiperlink, uma Quickview ou um Fragmento de experiência. Após adicionar pontos de acesso, você concluirá esta tarefa publicando a imagem interativa.
 
@@ -97,11 +95,9 @@ A abordagem então é visitar diferentes áreas do site existente onde o recurso
 
 Normalmente, não há necessidade de usar ferramentas de depuração especializadas. Navegadores da Web modernos possuem inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
-* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.
-Em uma Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.
+* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.Em uma Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.
 
-* No Firefox, você pode ativar o plug-in do Firebug pressionando F12 e usar a guia Net, ou usar a ferramenta Inspetor integrada e a guia Rede.
-Em uma Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Inspetor.
+* No Firefox, você pode ativar o plug-in do Firebug pressionando F12 e usar a guia Net, ou usar a ferramenta Inspetor integrada e a guia Rede.Em uma Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Inspetor.
 
 Quando o monitoramento de rede estiver ativado no navegador, acione o Quickview na página.
 
@@ -268,7 +264,7 @@ Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-intera
 1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]**.
 
    1. Próximo ao canto superior esquerdo da página Gerenciamento de pontos de acesso, selecione **[!UICONTROL Ponto de acesso]**.
-   1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
+   1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de acesso para ajustar sua localização.
    1. Adicione pontos de acesso extras, conforme necessário, repetindo as etapas a e b.
    1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e **[!UICONTROL Excluir]** (ícone de lixeira) no cabeçalho **[!UICONTROL Pontos de acesso]**.
 
@@ -295,8 +291,7 @@ Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-intera
 
    * Selecione **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para poder retornar à página Gerenciamento de pontos de acesso.
-Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para poder retornar à página Gerenciamento de pontos de acesso.Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência como deseja que ele apareça no banner.
 
@@ -321,10 +316,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
 Você pode usar a Visualização para ver uma representação de como sua imagem interativa aparece para os clientes e testar os pontos de acesso da imagem para garantir que eles estejam se comportando conforme esperado.
 
-Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.
-Consulte [Incorporar o Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).
-Consulte [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
-Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.Consulte [Incorporar o Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).Consulte [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Para visualizar imagens interativas:**
 
@@ -345,11 +337,9 @@ Se você for um cliente do Experience Manager Sites, poderá adicionar a imagem 
 
 Se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente a imagem interativa ao seu site, conforme descrito nesta seção.
 
-1. Copie o código incorporado da imagem interativa publicada.
-Consulte [Incorporar o Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).
+1. Copie o código incorporado da imagem interativa publicada.Consulte [Incorporar o Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).
 
-1. Adicione o código incorporado copiado no local desejado na página da Web.
-O código incorporado copiado é definido para um ambiente responsivo, de modo que se ajuste automaticamente à área atribuída.
+1. Adicione o código incorporado copiado no local desejado na página da Web.O código incorporado copiado é definido para um ambiente responsivo, de modo que se ajuste automaticamente à área atribuída.
 
 **Exemplo**
 

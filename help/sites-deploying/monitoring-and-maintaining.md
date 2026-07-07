@@ -12,7 +12,7 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
+source-wordcount: '5803'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Sua empresa provavelmente tem uma política de backup que você segue, considera
 * com que frequência as alterações são feitas no software ou nos dados.
 * volume de dados; a capacidade pode, ocasionalmente, ser um problema, assim como o tempo necessário para realizar o backup.
 * se o backup pode ser feito enquanto os usuários estão on-line e, se possível, qual é o impacto no desempenho.
-* a distribuição geográfica dos usuários; ou seja, quando é a melhor hora para fazer o backup (para minimizar o impacto)?
-* seu política de recuperação de desastres; existem diretrizes sobre onde os dados de backup devem ser armazenados (por exemplo, offsite e meio específico).
+* a distribuição geográfica dos usuários; ou seja, quando é o melhor momento para fazer backup (para minimizar o impacto)?
+* sua política de recuperação de desastres? há diretrizes sobre onde os dados de backup devem ser armazenados (por exemplo, mídia externa e específica).
 
-Muitas vezes, uma backup completa é realizada em intervalos regulares (por exemplo, diário, semanal ou mensal), com backups incrementais entre (por exemplo, a cada hora, diariamente ou semanalmente).
+Geralmente, um backup completo é feito em intervalos regulares (por exemplo, diariamente, semanalmente ou mensalmente), com backups incrementais entre eles (por exemplo, a cada hora, diariamente ou semanalmente).
 
 >[!CAUTION]
 >
@@ -59,18 +59,18 @@ Muitas vezes, uma backup completa é realizada em intervalos regulares (por exem
 >
 >Sem esse teste, o backup pode ser inútil (na pior das hipóteses).
 
-### Backup da instalação do software {#backing-up-your-software-installation}
+### Fazendo backup da instalação do software {#backing-up-your-software-installation}
 
-Após a instalação ou alterações significativas na configuração, crie uma backup da instalação do software.
+Após a instalação ou após alterações significativas na configuração, crie um backup da instalação do software.
 
-Para fazer isso tarefa, [faça backup de toda a sua repositório](#backing-up-your-repository) e, em seguida:
+Para realizar esta tarefa, [faça backup de todo o repositório](#backing-up-your-repository) e, em seguida:
 
-1. Interrupção AEM.
-1. Anterior o todo `<cq-installation-dir>` do seu sistema de arquivos.
+1. Pare o AEM.
+1. Faça backup de todo o `<cq-installation-dir>` do seu sistema de arquivos.
 
 >[!CAUTION]
 >
->Se você estiver operando um servidor de aplicativo de terceiros, as pastas adicionais podem estar em um local diferente e também devem ser armazenadas em backup. Consulte [Como instalar o AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos.
+>Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e também devem ter backup. Consulte [Como instalar o AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos.
 
 >[!CAUTION]
 >
@@ -154,7 +154,7 @@ Defina o tempo de vida máximo da versão em dias (para cada nó) que você dese
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->Os nós limpos não podem ser revertidos sem restaurar a repositório. Cuide da configuração sempre executando uma corrida seca antes de limpar.
+>Os nós limpos não podem ser revertidos sem restaurar o repositório. Cuide de sua configuração sempre executando uma simulação antes da limpeza.
 
 #### Dry Run - Análise do console {#analyzing-the-console}
 
@@ -168,22 +168,22 @@ O processo lista todos os nós que foram processados. Durante o processo, um nó
 
 * `ignore (no version)`: o nó não tem nenhuma versão e é ignorado durante o processo.
 
-* `retained`: a nó não é limpa.
+* `retained`: o nó não está removido.
 * `purged`: o nó está limpo.
 
 Além disso, o console fornece informações úteis sobre as versões:
 
 * `V 1.0`: o número da versão.
-* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser eliminada.
+* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser removida.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: a data da versão.
 
-No exemplo a seguir:
+No próximo exemplo:
 
-* As **[!DNL Shirts]** versões são eliminadas porque a idade da versão é maior que dois dias.
-* As **[!DNL Tonga Fashions!]** versões são eliminadas porque o número de versões é maior que 5.
+* As versões **[!DNL Shirts]** foram removidas porque sua idade da versão é superior a dois dias.
+* As versões **[!DNL Tonga Fashions!]** foram removidas porque seu número de versões é superior a 5.
 
-![global_version_captura de tela](assets/global_version_screenshot.png)
+![global_version_screenshot](assets/global_version_screenshot.png)
 
 ## Trabalhar com registros de auditoria e arquivos de log {#working-with-audit-records-and-log-files}
 
@@ -272,7 +272,7 @@ Os níveis de log são os seguintes:
 | 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
 |---|---|---|
 | 1 | Erro | Falha na ação. A instalação continua, mas uma parte do AEM WCM não foi instalada corretamente e não funciona. |
-| 2 | Aviso | A ação conseguiu, mas encontrou problemas. AEM WCM podem ou não funcionar corretamente. |
+| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O AEM WCM pode ou não funcionar corretamente. |
 | 3 | Informações | A ação foi bem-sucedida. |
 
 ### Criar um arquivo de log personalizado {#create-a-custom-log-file}
@@ -281,9 +281,9 @@ Os níveis de log são os seguintes:
 >
 >Ao trabalhar com o Adobe Experience Manager, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-Em certas circunstâncias, você pode querer criar uma arquivo de log personalizada com um nível de log diferente. No repositório, faça o seguinte:
+Em determinadas circunstâncias, talvez você queira criar um arquivo de log personalizado com um nível de log diferente. No repositório, faça o seguinte:
 
-1. Se não existir, crie uma pasta de configuração ( `sling:Folder`) para o seu projeto `/apps/<project-name>/config`.
+1. Se não existir, crie uma pasta de configuração ( `sling:Folder`) para seu projeto `/apps/<project-name>/config`.
 1. Em `/apps/<project-name>/config`, crie um nó para a nova [Configuração do logger de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
@@ -296,13 +296,13 @@ Em certas circunstâncias, você pode querer criar uma arquivo de log personaliz
 
    >[!NOTE]
    >
-   >Apesar de não ser um requisito técnico, é aconselhável tornar-se `<identifier>` único.
+   >Embora não seja um requisito técnico, é aconselhável tornar `<identifier>` exclusivo.
 
-1. Defina as seguintes propriedades nesta nó:
+1. Defina as seguintes propriedades nesse nó:
 
    * Nome: `org.apache.sling.commons.log.file`
 
-     Tipo: cadeia de caracteres
+     Tipo: String
 
      Valor: especifique o Arquivo de Log; por exemplo, `logs/myLogFile.log`
 
@@ -336,13 +336,13 @@ Em certas circunstâncias, você pode querer criar uma arquivo de log personaliz
    >
    >`org.apache.sling.commons.log.pattern` dá suporte a até seis argumentos.
    >
-   >{0} O carimbo de data/hora do tipo `java.util.Date`
+   >`java.util.Date` O carimbo de data/hora do tipo {0}
    >
    >{1} o marcador de log
    >
    >{2} o nome do thread atual
    >
-   >{3} o nome do agente de log
+   >{3} o nome do agente
    >
    >{4} o nível de log
    >
@@ -424,20 +424,20 @@ Em certas circunstâncias, você pode querer criar uma arquivo de log personaliz
    >`org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log definindo:
    >
    >* um tamanho máximo de arquivo
-   >* uma programação de hora/data
+   >* um cronograma de hora/data
    >
-   >para indicar quando um novo arquivo é criado (e o arquivo existente renomeado de acordo com o padrão de nome).
+   >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
    >
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será tomado como o número de bytes ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB` ou `GB` (maiúsculas e minúsculas são ignoradas).
    >* Um cronograma de data/hora pode ser especificado como um padrão `java.util.SimpleDateFormat`. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
-   >O padrão é &#39;.&#39;dd/MM/aaaa (para rotação diária de log).
+   >O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
    >
-   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando ocorre a primeira mensagem de log após essa data), .. /logs/error.log é renomeado para .. /logs/error.log.2010-01-20. O registro para 21 de janeiro é resultado de (novo e vazio). /logs/error.log até que seja sobrescrito na próxima alteração do dia.
+   >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. Os registros de 21 de janeiro são enviados para (um novo e vazio) ../logs/error.log até serem transferidos na próxima alteração do dia.
    >
    >| `'.'yyyy-MM` | Rotação no início de cada mês |
    >|---|---|
-   >| `'.'yyyy-ww` | A rotação no primeiro dia de cada semana (depende da localidade). |
+   >| `'.'yyyy-ww` | Rotação no primeiro dia de cada semana (depende do local). |
    >| `'.'yyyy-MM-dd` | Rotação à meia-noite de cada dia. |
    >| `'.'yyyy-MM-dd-a` | Rotação à meia-noite e ao meio-dia de cada dia. |
    >| `'.'yyyy-MM-dd-HH` | Rotação na parte superior de cada hora. |
@@ -509,8 +509,8 @@ Para monitorar um agente de replicação:
 
    * Veja se o agente está ativado.
    * Visualizar o destino de qualquer replicação.
-   * Veja se o fila de replicação está ativo (ativado).
-   * Veja se há algum item no fila.
+   * Veja se a fila de replicação está ativa (ativada).
+   * Verificar se há itens na fila.
    * **Atualizar** ou **Limpar** para atualizar a exibição de entradas da fila. Isso ajuda a ver os itens que entram e saem da fila.
    * **Exibir Log** para acessar o log de quaisquer ações pelo agente de replicação.
    * **Testar Conexão** com a instância de destino.
@@ -520,9 +520,9 @@ Para monitorar um agente de replicação:
    >
    >Não use o link &quot;Testar conexão&quot; para a Caixa de saída de replicação reversa em uma instância de publicação.
    >
-   >Se uma teste de replicação for executada para uma fila de Caixa de saída, todos os itens mais antigos que sejam teste replicação são reprocessados com cada replicação inversa.
+   >Se um teste de replicação for executado para uma fila da Caixa de saída, quaisquer itens mais antigos que a replicação de teste serão reprocessados com cada replicação reversa.
    >
-   >Se tais itens existirem em um fila, eles poderão ser encontrados com o seguinte query JCR XPath e deverão ser removidos.
+   >Se esses itens existirem em uma fila, poderão ser encontrados com a seguinte consulta XPath JCR e deverão ser removidos.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -532,13 +532,13 @@ Novamente, você pode desenvolver uma solução para detectar todos os agentes d
 
 [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) é um processo interativo que recebe foco durante o desenvolvimento. Após a implantação, ela é revisada após intervalos ou eventos específicos.
 
-Os métodos usados durante a coleta de informações para otimização também podem ser usados para monitoramento contínuo.
+Métodos usados ao coletar informações para otimização também podem ser usados para monitoramento contínuo.
 
 >[!NOTE]
 >
->Configurações específicas [disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) também podem ser verificadas.
+>Também é possível verificar as [configurações específicas disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
-A seguir, lista questões comuns de desempenho que ocorrem, juntamente com propostas sobre como spot, e contraria.
+A seguir, uma lista de problemas comuns de desempenho que ocorrem, juntamente com propostas sobre como detectá-los e neutralizá-los.
 
 | Área | Sintoma | Para aumentar a capacidade... | Para reduzir o volume... |
 |---|---|---|---|
@@ -572,9 +572,9 @@ Todas essas informações devem ser obtidas, classificadas e analisadas antes qu
    * verifique se algo (relacionado ao sistema) foi alterado em um espaço de tempo adequado e se alguma dessas alterações pode ter afetado o desempenho
    * faça perguntas como:
 
-      * o problema só ocorre em momentos específicos?
-      * o problema só ocorre em páginas específicas?
-      * outras solicitações são afetadas?
+      * o problema ocorre somente em momentos específicos?
+      * o problema ocorre somente em páginas específicas?
+      * as outras solicitações serão afetadas?
 
    * colete o máximo de informações possível para comparar com seu conhecimento do sistema em circunstâncias normais:
 
@@ -587,7 +587,7 @@ Algumas dessas ferramentas dependem do sistema operacional.
 <table>
  <tbody>
   <tr>
-   <td>Ferramenta </td>
+   <td>Ferramenta</td>
    <td>Usado para analisar...</td>
    <td>Uso / Mais informações...</td>
   </tr>
@@ -686,7 +686,7 @@ O log de solicitação registra cada solicitação feita, juntamente com a respo
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Ao totalizar todas as entradas do GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
+Ao totalizar todas as entradas GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
 
 #### Monitoramento dos tempos de resposta com o request.log {#monitoring-response-times-with-the-request-log}
 
@@ -760,7 +760,7 @@ Testes devem ser feitos para determinar quantos usuários simultâneos o sistema
 ### Usar rlog.jar para encontrar solicitações com tempos de longa duração {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 O AEM inclui várias ferramentas auxiliares no seguinte:
-`<cq-installation-dir>/crx-quickstart/opt/helpers`
+
 
 Uma dessas ferramentas, `rlog.jar`, pode ser usada para classificar rapidamente `request.log` de modo que as solicitações sejam exibidas por duração, do mais longo ao menor tempo.
 

@@ -8,10 +8,11 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f1141b8c-12a2-44a0-8c15-b614398b5174
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 2%
 
 ---
 
@@ -73,4 +74,4 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
 Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou o documento do desenvolvedor Página [Modelos - Editáveis](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvendo componentes principais](https://helpx.adobe.com/br/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.
+Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvendo componentes principais](https://helpx.adobe.com/br/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.

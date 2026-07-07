@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: de5cc19f-f3dc-42d5-877d-c15bd00487d7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 0%
+source-wordcount: '996'
+ht-degree: 2%
 
 ---
 
@@ -40,8 +41,7 @@ Quando o formulário adaptável é publicado como uma página do AEM, a página 
 1. Faça logon na instância de autor do AEM [!DNL Forms] e localize o formulário adaptável delivery-address-add-update-form na interface do usuário do AEM [!DNL Forms].
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
 1. Selecione o formulário adaptável delivery-address-add-update-form e selecione **[!UICONTROL Publicar]**. Uma caixa de diálogo contendo ativos relacionados ao formulário adaptável é exibida. Selecione **[!UICONTROL Publicar]**. O formulário adaptável é publicado e uma caixa de diálogo de sucesso é exibida.
-1. Abra o formulário na instância de publicação. O formulário está disponível para o usuário final preencher e enviar.
-   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
+1. Abra o formulário na instância de publicação. O formulário está disponível para o usuário final preencher e enviar.   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## Incorporar o formulário adaptável em uma página do AEM Sites {#embed-the-adaptive-form-in-an-aem-sites-page}
 

@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 047437c4-f642-4b77-b5e8-ab2aa34a83e5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '499'
 ht-degree: 7%
 
 ---
-
 
 # Visão geral das comunicações interativas {#interactive-communications-overview}
 
@@ -103,7 +103,7 @@ A comunicação interativa é a abordagem padrão e recomendada para criar comun
    <td>Nenhuma interface para a criação de expressão condicional</td>
   </tr>
   <tr>
-   <td>Criação  </td>
+   <td>Criação</td>
    <td>Interface de arrastar e soltar para construir canais de impressão e da Web</td>
    <td>Nenhum mecanismo de arrastar e soltar </td>
   </tr>
