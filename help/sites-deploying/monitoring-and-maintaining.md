@@ -224,13 +224,13 @@ As ações de moderação são registradas aqui.
    * `error.log`
 Mensagens de erro (de vários níveis de gravidade) são registradas aqui.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=pt-BR)
 Este log só será usado se [!DNL Dynamic Media] estiver habilitado. Ele fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
 
    * `request.log`
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=pt-BR)
 Este log só será usado se [!DNL Dynamic Media] estiver habilitado. O log de acesso s7registra cada solicitação feita a [!DNL Dynamic Media] até `/is/image` e `/is/content`.
 
    * `stderr.log`
@@ -1064,9 +1064,9 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >
 >Consulte também os seguintes artigos para obter mais informações:
 >
->* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR)
+>* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
+>* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=pt-BR)
 >
 
 ### CPU em 100% {#cpu-at}
@@ -1086,7 +1086,7 @@ Nesses casos, verifique:
 * As configurações JVM usadas para [iniciar o AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conhecimento:
 
-   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+   * [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1104,7 +1104,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Se e como você configurou a [Limpeza de Versão](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
-   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [Muitos Arquivos Abertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR)
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
