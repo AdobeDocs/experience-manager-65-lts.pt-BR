@@ -44,7 +44,7 @@ Antes de qualquer discussão séria começar sobre o desenvolvimento de componen
 
 * **Interface do usuário habilitada para toque
   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface de usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface de usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* Interface clássica do ****
+* Interface clássica do **&#x200B;**
 Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
 
 Os componentes podem ser implementados para suportar a interface habilitada para toque, a interface clássica ou ambas. Ao observar uma instância padrão, você também verá componentes prontos para uso que foram originalmente projetados para a interface clássica, para a interface habilitada para toque ou para ambas.
@@ -592,7 +592,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no** CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
+* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no **&#x200B; CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
