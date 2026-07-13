@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -189,7 +190,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos de fragmentos do conteúdo<br /> </td>
+   <td>Modelos de fragmentos de conteúdo<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -372,7 +373,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td>Configurações de Contexto de Cliente<br /> </td>
-   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e do Experience Cloud são mantidas aqui.<br /> </td>
+   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e da Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
    <td>Configurações de Cloud Services<br /> </td>
@@ -431,7 +432,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
    <td>O AEM fornece uma variedade de relatórios personalizados, permitindo que você crie relatórios personalizados ou desenvolva os seus próprios.</td>
   </tr>
   <tr>
-   <td>Scaffolding da página padrão </td>
+   <td>Scaffolding da página padrão</td>
    <td>Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.</td>
   </tr>
   <tr>

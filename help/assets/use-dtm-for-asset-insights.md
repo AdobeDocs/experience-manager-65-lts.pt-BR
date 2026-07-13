@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5c0bb817-28d5-47d4-bc4c-47aaa76a8421
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ O Adobe Dynamic Tag Management é uma ferramenta que ativa suas ferramentas de m
 
 >[!CAUTION]
 >
->O Adobe DTM foi descontinuado em favor do [!DNL Adobe Experience Platform] e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda que você [use [!DNL Adobe Experience Platform] para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=pt-BR).
+>O Adobe DTM foi descontinuado em favor do [!DNL Adobe Experience Platform] e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda que você [use [!DNL Adobe Experience Platform] para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Execute essas etapas para ativar o Assets Insights por meio do DTM.
 
@@ -32,7 +33,7 @@ Execute essas etapas para ativar o Assets Insights por meio do DTM.
 
    * Selecione a guia **[!UICONTROL Propriedades da Web]** e clique em **[!UICONTROL Adicionar Propriedade]**.
 
-   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar Propriedade]**. Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
+   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar Propriedade]**. Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 

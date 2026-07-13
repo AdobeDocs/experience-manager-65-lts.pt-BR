@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ O Adobe Analytics usa a propriedade `s.pageName` para identificar páginas de ma
 
 * Crie o componente de página para que ele inclua a variável CQ que você mapeia para a propriedade `s.pageName`. (Consulte [Implementação do Adobe Analytics Tracking para componentes personalizados](/help/sites-developing/extending-analytics-components.md).)
 
-Para expor os dados de relatório do Analytics no console Sites e no Content Insight, o AEM exige o valor da propriedade `s.pageName` para cada página. A API Java do AEM Analytics define a interface `AnalyticsPageNameProvider` que você implementa para fornecer ao console de Sites e aos Insights de Conteúdo o valor da propriedade `s.pageName`. Seu serviço `AnaltyicsPageNameProvider` resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente com o uso do JavaScript no cliente para fins de rastreamento.
+Para expor os dados de relatório do Analytics no console de Sites e no Insight de conteúdo, o AEM exige o valor da propriedade `s.pageName` para cada página. A API Java do AEM Analytics define a interface `AnalyticsPageNameProvider` que você implementa para fornecer ao console de Sites e aos Insights de Conteúdo o valor da propriedade `s.pageName`. Seu serviço `AnaltyicsPageNameProvider` resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente com o uso do JavaScript no cliente para fins de rastreamento.
 
 ## O Serviço do provedor de nome de página padrão do Analytics {#the-default-analytics-page-name-provider-service}
 
@@ -41,7 +42,7 @@ O serviço `DefaultPageNameProvider` determina quais dessas variáveis do CQ sã
 
 * `pagedata.navTitle`: O serviço usa `page.getNavigationTitle()`
 
-O objeto `page` é o objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/br/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) da página.
+O objeto `page` é o objeto Java [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) da página.
 
 Se você não mapear uma variável CQ para a propriedade `s.pageName` na estrutura, o valor para `s.pageName` será gerado a partir do caminho da página. Por exemplo, a página com o caminho `/content/geometrixx/en` usa o valor `content:geometrixx:en` para `s.pageName`.
 
@@ -74,7 +75,7 @@ Por exemplo, um componente de página personalizado pode incluir uma propriedade
 
 ### Implementação de um serviço de provedor de nome de página do Analytics {#implementing-an-analytics-page-name-provider-service}
 
-Implemente a interface `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como um serviço OSGi para personalizar a lógica que recupera o valor da propriedade `s.pageName`. A análise de página do Sites e o Content Insight usam o serviço para recuperar dados de relatório do Analytics.
+Implemente a interface `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como um serviço OSGi para personalizar a lógica que recupera o valor da propriedade `s.pageName`. A análise de página Sites e o Insight de conteúdo usam o serviço para recuperar dados de relatório do Analytics.
 
 A interface do AnalyticsPageNameProvider define dois métodos que devem ser implementados:
 
