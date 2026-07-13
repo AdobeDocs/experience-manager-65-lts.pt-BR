@@ -4,9 +4,10 @@ description: O AEM Forms integra-se ao Adobe Analytics para capturar e rastrear 
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -43,11 +44,11 @@ A figura a seguir ilustra as ações que você precisa executar antes de exibir 
 
 ![Visão geral do Analytics](/help/forms/using/assets/analyticsworkflow.png)
 
-## 1. Configurar [!DNL Adobe Analytics] {#Configure-adobe-analytics}
+## &#x200B;1. Configurar o [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
 Antes de configurar [!DNL Adobe Analytics], crie:
 
-* Uma Adobe ID para fazer logon no [Adobe Experience Cloud](https://experience.adobe.com/#/home).
+* Uma Adobe ID para fazer logon na [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 * Um [conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 
@@ -55,7 +56,7 @@ Antes de configurar [!DNL Adobe Analytics], crie:
 
 Execute as seguintes etapas para configurar o AEM Forms e as extensões do [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/analytics/overview):
 
-1. Faça logon no Adobe Experience Cloud e selecione um nome apropriado para a empresa.
+1. Faça logon na Adobe Experience Cloud e selecione um nome apropriado para a empresa.
 
 1. Selecione **[!UICONTROL Iniciar/Coleção de Dados]** e **[!UICONTROL Ir para Iniciar/Coleção de Dados]**.
 
@@ -163,8 +164,7 @@ Execute as seguintes etapas para criar regras com base na extensão **[!UICONTRO
 
 1. Na seção **[!UICONTROL Actions]**, selecione + e especifique **[!UICONTROL Adobe Analytics]** como o nome da Extensão.
 
-1. Selecione **[!UICONTROL Limpar Variáveis]** como o Tipo de Ação. Selecione **[!UICONTROL Manter alterações]**. Depois de executar essas etapas, a seção **[!UICONTROL Ações]** é exibida como:
-   ![Configuração de ações](/help/forms/using/assets/actions-config.png)
+1. Selecione **[!UICONTROL Limpar Variáveis]** como o Tipo de Ação. Selecione **[!UICONTROL Manter alterações]**. Depois de executar essas etapas, a seção **[!UICONTROL Ações]** é exibida como:   ![Configuração de ações](/help/forms/using/assets/actions-config.png)
 
    Personalize a seção **[!UICONTROL Ações]** de acordo com suas necessidades. Por exemplo, você pode definir duas etapas **Enviar Beacon** em um fluxo de Ações para enviar dados para [!DNL Adobe Analytics] e tratá-los como uma exibição de página em uma etapa e enviar dados para [!DNL Adobe Analytics] e não tratá-los como uma exibição de página na segunda etapa.
 
@@ -195,7 +195,7 @@ Execute as seguintes etapas para publicar a configuração:
 
 ![Fluxo de publicação](/help/forms/using/assets/publish-flow.png)
 
-## 2. Configurar o AEM Forms {#configure-aem-forms}
+## &#x200B;2. Configurar AEM Forms {#configure-aem-forms}
 
 Antes de criar a configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a Solução da nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
@@ -271,7 +271,7 @@ Para mapear o evento para um evento de captura personalizado em [!DNL Adobe Anal
 
 1. Selecione **Manter Alterações** e execute o restante das ações especificadas em [Configurar Regras](#configure-rules).
 
-## 3. Configurar e exibir relatórios em [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
+## &#x200B;3. Configurar e exibir relatórios em [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
 Depois de configurar um formulário adaptável para enviar dados do evento para o [!DNL Adobe Analytics], você pode começar a exibir relatórios em [!DNL Adobe Analytics]:
 
