@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html).
 
 ![integração de dados](assets/data-integeration.png)
 
@@ -50,7 +50,7 @@ Antes de começar a instalar e configurar o Microsoft Dynamics, verifique se voc
    * Microsoft Dynamics 365 no local
    * Microsoft Dynamics 2016 no local
 
-* [Aplicativo registrado para o serviço online do Microsoft Dynamics com o Ative Diretory do Microsoft Azure](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados ao [configurar o serviço em nuvem para seu serviço Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Registrou o aplicativo para o serviço online do Microsoft Dynamics com o Microsoft Azure Ative Diretory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados ao [configurar o serviço em nuvem para seu serviço Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Definir URL de resposta para o aplicativo Microsoft Dynamics registrado {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -60,11 +60,11 @@ Faça o seguinte para definir o URL de resposta para o aplicativo Microsoft Dyna
 >
 >Use esse procedimento somente ao integrar o AEM Forms ao servidor on-line do Microsoft Dynamics.
 
-1. Vá para a conta do Ative Diretory do Microsoft Azure e adicione a seguinte URL de configuração do serviço de nuvem nas configurações de **URLs de resposta** para seu aplicativo registrado:
+1. Vá para a conta do Microsoft Azure Ative Diretory e adicione a seguinte URL de configuração do serviço de nuvem nas configurações de **URLs de resposta** para seu aplicativo registrado:
 
    `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-   ![Diretório do Azure](assets/azure_directory_new.png)
+   ![Diretório Azure](assets/azure_directory_new.png)
 
 1. Salve a configuração.
 
