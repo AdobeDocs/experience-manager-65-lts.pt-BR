@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 2%
+source-wordcount: '2970'
+ht-degree: 4%
 
 ---
 
@@ -71,7 +71,7 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 +++  Ativar os Componentes principais adaptáveis do Forms para o seu ambiente
 
-Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=pt-BR).
+Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++ 
 
@@ -203,7 +203,7 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário {#configure-schema-or-data-model-for-form}
 
-Você pode usar o modelo de dados de formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
+Você pode usar o modelo de dados de formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Também é possível conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido.
 
 Antes de conectar um formulário a um esquema ou modelo de dados de formulário
 

@@ -8,10 +8,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5e7165e5-b2bf-4716-82d3-de02f669cd6e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
+source-wordcount: '1613'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +53,7 @@ Se você estiver configurando um destino pela primeira vez, clique em **Configur
 1. Especifique os detalhes da conta do Target, como código do cliente, email e senha.
 1. Selecione **Rest** na lista suspensa Tipo de API.
 
-1. Clique em **Conectar-se ao Adobe Target** para poder inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e em **OK** na caixa de diálogo. A conta do Target está configurada.
+1. Clique em **Conectar-se ao Adobe Target** para poder inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo. A conta do Target está configurada.
 
 1. Crie uma estrutura Target conforme descrito em [Adicionar uma estrutura](/help/sites-administering/target.md).
 
@@ -108,7 +109,7 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
 1. Clique na ferramenta **Selecionar** na barra de ferramentas e selecione o formulário adaptável.
 1. Clique em **Mais** na barra de ferramentas e selecione **Configurar teste A/B**. A página Configurar teste A/B é aberta.
 
-[&#128279;](assets/ab-test-configure-1.png)
+[![Página de configuração de teste A/B para formulários adaptáveis](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Especifique um **Nome da atividade** para o teste A/B.
 
@@ -125,7 +126,7 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
    * Descrição, rótulo e texto de ajuda de um campo
    * Scripts que não afetam ou interrompem o fluxo de envio
    * Validações (cliente e servidor)
-   * Tema para experiência B. (Você pode selecionar um tema alternativo para a experiência B)
+   * Tema para a experiência B. (Você pode selecionar um tema alternativo para a experiência B)
 
 1. Vá para a interface do Forms e Documentos, selecione o formulário adaptável, clique em **Mais** e selecione **Iniciar teste A/B**.
 
@@ -152,7 +153,7 @@ Para exibir e analisar o relatório de teste A/B:
 
 1. Selecione o formulário adaptável, clique em **Mais** e em **Relatório de Teste A/B**. O relatório é exibido.
 
-[&#128279;](assets/ab-test-report-3.png)
+[![Relatório de teste A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analise o relatório e veja se você tem pontos de dados suficientes para declarar uma das experiências de melhor desempenho como vencedora. Você pode optar por continuar com o mesmo teste A/B por mais tempo ou declarar um vencedor e terminar o teste A/B.
 1. Para declarar um vencedor e finalizar o teste A/B, clique no botão **Encerrar teste A/B** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme a finalização do teste A/B.

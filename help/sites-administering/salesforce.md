@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 68003650-76d7-40b3-860b-70454c13211e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1594'
 ht-degree: 0%
 
 ---
-
 
 # Integração com o Salesforce {#integrating-with-salesforce}
 
@@ -46,7 +46,7 @@ Para configurar o AEM para integração com o Salesforce:
 
 >[!CAUTION]
 >
->Instale o pacote de integração [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) antes de continuar com o procedimento. Para obter mais detalhes sobre como trabalhar com pacotes, consulte a página [Como trabalhar com pacotes](/help/sites-administering/package-manager.md#package-share).
+>Instale o pacote de integração [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) antes de continuar com o procedimento. Para obter mais detalhes sobre como trabalhar com pacotes, consulte a página [Como trabalhar com pacotes](/help/sites-administering/package-manager.md#package-share).
 
 1. No AEM, navegue até **Cloud Services**. Em Serviços de Terceiros, clique em **Configurar Agora** no **Salesforce**.
 
@@ -214,7 +214,7 @@ Você pode carregar dados do usuário do Salesforce no Client Context para usar 
 
 Você pode criar um segmento que use dados do Salesforce Client Context Store. Para fazer isso:
 
-1. Navegue até a segmentação no AEM, acessando **Ferramentas** > **Segmentação** ou [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Navegue até a segmentação no AEM em **Ferramentas** > **Segmentação** ou em [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
 1. Crie ou atualize um segmento para incluir dados do Salesforce. Para obter mais informações, consulte [Segmentação](/help/sites-administering/campaign-segmentation.md).
 
 ## Pesquisar clientes em potencial {#searching-leads}
@@ -227,7 +227,7 @@ O AEM vem com um componente de Pesquisa de amostra que pesquisa clientes potenci
 
 Para usar este componente:
 
-1. Navegue até a página onde deseja usar essa configuração. Abra as propriedades da página e selecione **Cloud Services.** Clique em **Adicionar Serviços** e selecione **Salesforce** e a configuração apropriada e clique em **OK**.
+1. Navegue até a página onde deseja usar essa configuração. Abra as propriedades da página e selecione **Cloud Services.** Clique em **Adicionar Serviços**, selecione **Salesforce** e a configuração apropriada e clique em **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

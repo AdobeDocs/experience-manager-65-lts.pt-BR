@@ -7,9 +7,10 @@ topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1859'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,10 @@ Execute as seguintes etapas para criar uma pasta monitorada:
    * **Excluir Arquivos do Palco com Tempo Limite Limitado**: se habilitado, o mecanismo **Arquivos do Palco com Tempo Limite Após** será ativado somente quando a limitação estiver ativada para a pasta monitorada.
    * **Verificar a Pasta de Entrada a Cada:** Especifique o intervalo de tempo, em segundos, para verificar a pasta monitorada em busca de entradas. A menos que a configuração de Aceleração esteja ativada, o Intervalo de Sondagem deve ser maior que o tempo médio para processar um trabalho; caso contrário, o sistema pode ficar sobrecarregado. O valor do intervalo deve ser maior ou igual a um.
    * **Excluir Padrão de Arquivo**: especifique uma lista de padrões delimitada por ponto-e-vírgula (;) que uma pasta monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com o padrão especificado não é examinado para processamento. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Incluir Padrão de Arquivo**: especifique uma lista de padrões delimitada por ponto-e-vírgula (;) que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão do arquivo de inclusão for input&ast;, todos os arquivos e pastas que corresponderem a input&ast; serão selecionados. O valor padrão é &ast; e indica todos os arquivos e pastas. Para obter mais informações sobre padrões de arquivo, consulte [Sobre Padrões de Arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Incluir Padrão de Arquivo**: especifique uma lista de padrões delimitada por ponto-e-vírgula (;) que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão de arquivo de inclusão for input&amp;ast;, todos os arquivos e pastas que corresponderem a input&amp;ast; serão selecionados. O valor padrão é &amp;ast; e indica todos os arquivos e pastas. Para obter mais informações sobre padrões de arquivo, consulte [Sobre Padrões de Arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Tempo de Espera**: especifique o tempo, em milissegundos, a ser aguardado antes de examinar uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0.
 
-     Essa configuração é útil para garantir que todo o conteúdo do arquivo ou pasta seja copiado para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&ast;60 &ast;1000 milissegundos. Esse intervalo impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
+     Essa configuração é útil para garantir que todo o conteúdo do arquivo ou pasta seja copiado para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e ele levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Esse intervalo impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
 
    * **Excluir os Resultados Anteriores a:** Especifique o tempo, em número de dias, a ser aguardado antes de excluir os Arquivos e as pastas anteriores ao valor especificado. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
    * **Nome da Pasta de Resultado:** Especifique o nome da pasta para armazenar os resultados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Você pode usar um caminho absoluto ou relativo com os seguintes padrões de arquivo:
@@ -117,5 +118,5 @@ Além de alterar o nome da pasta monitorada, você pode modificar todas as propr
 
 1. Selecione o ícone **Adobe Experience Manager** no canto superior esquerdo da tela.
 1. Selecione **Ferramentas** > **Forms** > **Configurar Pasta Monitorada.** Uma lista de pastas monitoradas já configuradas é exibida.
-1. No lado esquerdo da tela Pasta monitorada, selecione a pasta monitorada e selecione **Editar.** Uma lista de campos necessários para criar a pasta monitorada é exibida. Os campos listados na Guia **Básico** são obrigatórios. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão. Você pode modificar essas propriedades de acordo com seus requisitos.
+1. No lado esquerdo da tela Pasta monitorada, selecione a watchfolder e selecione **Editar.** Uma lista de campos necessários para criar a pasta monitorada é exibida. Os campos listados na Guia **Básico** são obrigatórios. A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão. Você pode modificar essas propriedades de acordo com seus requisitos.
 1. Depois de modificar as propriedades, selecione **Atualizar**. As propriedades modificadas são salvas.

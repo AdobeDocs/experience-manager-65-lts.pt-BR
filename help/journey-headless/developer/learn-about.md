@@ -4,9 +4,10 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba ma
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 39e05b80-a11b-41ff-8157-dc74f071c514
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 82%
 
 ---
@@ -90,7 +91,7 @@ Independentemente da API escolhida, ao definir um sistema headless com base em A
 
 Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, sua entrega do CMS o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você forneceu. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
 
-A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público, se isso for necessário.
+A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público-alvo, se isso for necessário.
 
 ## Desafios organizacionais {#organization}
 
