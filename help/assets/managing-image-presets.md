@@ -11,9 +11,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3792'
+source-wordcount: '3996'
 ht-degree: 7%
 
 ---
@@ -297,7 +298,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 * **[!UICONTROL Formato]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos seus requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
-* **[!UICONTROL Ativar nitidez simples]** - Não selecione **[!UICONTROL Ativar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
+* **[!UICONTROL Habilitar nitidez simples]** - Não selecione **[!UICONTROL Habilitar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
 
 * **[!UICONTROL Nitidez: Modo De Reamostragem]** - Selecione **[!UICONTROL Sharp2]**.
 
@@ -327,7 +328,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     <div>
       Escolhendo
      <strong>GIF</strong> ou
-     O <strong>GIF com alfa</strong> fornece estes dados adicionais
+     O <strong>GIF com alfa</strong> fornece estes adicionais
      <strong>Opções de Quantização de Cores do GIF</strong>:
     </div>
     <ul>

@@ -9,10 +9,11 @@ docset: aem65
 role: User, Admin
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d3699ddf-2a6e-4837-a98b-61b565de3d76
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 6%
+source-wordcount: '3404'
+ht-degree: 5%
 
 ---
 
@@ -174,7 +175,7 @@ Edite as seguintes Configurações do Dynamic Media selecionando o ícone **[!UI
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
+  * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
 
   ![configuração da proporção de pixels do dispositivo para a predefinição de imagem](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -212,10 +213,10 @@ Edite as seguintes configurações do Dynamic Media selecionando **[!UICONTROL E
 
   Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
-   * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=pt-BR)
-   * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=pt-BR)
+  * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=pt-BR)
+  * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=pt-BR)
 
-     Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
+    Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
 
 * **[!UICONTROL Título]** - Alterar o título do vídeo.
 
@@ -249,7 +250,7 @@ Edite a seguinte Configuração do Dynamic Media selecionando **[!UICONTROL Edit
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
+  * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
 
   ![configuração de taxa de pixels do dispositivo para corte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 

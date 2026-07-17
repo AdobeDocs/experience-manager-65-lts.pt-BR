@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4661'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
    <td><strong>Zoom vertical</strong></td>
    <td><p>O visualizador de zoom vertical permite maximizar uma experiência de visualização de imagens do produto para fornecer aos usuários a melhor representação de um produto. A localização vertical das amostras faz o seguinte:</p>
     <ul>
-     <li>Garante que as amostras estejam "acima da dobra".<br/> Com amostras horizontais, dependendo do tamanho da tela de desktop do usuário, elas não ficam visíveis até que o usuário role a página para baixo. Ao inserir as amostras verticalmente no visualizador, elas garantem a visibilidade independentemente do tamanho da tela do usuário.</li>
+     <li>Garante que as amostras estejam "acima da dobra".<br/> Com as amostras horizontais, dependendo do tamanho da tela do desktop do usuário, elas não ficam visíveis até que o usuário role a página para baixo. Ao inserir as amostras verticalmente no visualizador, elas garantem a visibilidade independentemente do tamanho da tela do usuário.</li>
      <li>Maximiza o tamanho da imagem principal.<br /> Com amostras horizontais, é necessário reservar espaço na página para garantir que elas estejam visíveis. Esse posicionamento diminuiu o tamanho da imagem principal. No entanto, com um layout de amostra vertical, não é necessário alocar esse espaço. Dessa forma, você pode maximizar o tamanho da imagem principal.</li>
     </ul> </td>
   </tr>
@@ -446,7 +446,7 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
      Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores de visualização corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas deverão ser definidas usando o nome de classe do visualizador `.s7mixedmediaviewer` definido em um elemento de visualizador pai.
 
-     Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando o *&lt;nome do visualizador>*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources). Por exemplo, se você quiser ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalização do Visualizador de Zoom](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) No entanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+     Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando o *&lt;nome do visualizador>*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalizando o Visualizador de Zoom](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Entretanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
 
    >[!NOTE]
    >
@@ -464,9 +464,9 @@ Por exemplo, para o tipo *VideoPlayer*, em **[!UICONTROL Modificadores]** > **[!
    * **[!UICONTROL traço]** - Fluxo de vídeos somente como traço. No entanto, em dispositivos Safari/iOS, você deve selecionar **[!UICONTROL hls]** como o tipo.
    * **[!UICONTROL hls]** - Fluxo de vídeos somente como hls.
    * **[!UICONTROL auto]** - Prática recomendada. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, a Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Fluxo de vídeos como traço, hls ou progressivo, como na seguinte ordem de reprodução:
-      * Se o navegador suportar DASH, a transmissão DASH será usada primeiro.
-      * Se o navegador não for compatível com DASH, a transmissão do HLS será usada em segundo lugar.
-      * Se o navegador não for compatível com DASH ou HLS, a reprodução progressiva será usada por último.
+     * Se o navegador suportar DASH, a transmissão DASH será usada primeiro.
+     * Se o navegador não for compatível com DASH, a transmissão do HLS será usada em segundo lugar.
+     * Se o navegador não for compatível com DASH ou HLS, a reprodução progressiva será usada por último.
 
 1. No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujos comportamentos você deseja alterar.
 
@@ -521,7 +521,7 @@ Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, voc�
 
 Se desativar a opção **[!UICONTROL Rolagem automática]** (desmarcar a caixa de seleção) na predefinição do visualizador, durante a reprodução do vídeo pelo usuário, o painel exibirá apenas a primeira imagem em miniatura em toda a duração do vídeo. Entretanto, um usuário pode rolar manualmente pelas miniaturas usando os ícones de seta para cima e para baixo, se desejar.
 
-Ao ativar (selecionar) a **[!UICONTROL Rolagem automática]** na predefinição do visualizador as imagens em miniatura atribuídas a um segmento de vídeo são roladas para exibição no início de um segmento durante a reprodução do vídeo. Entretanto, há instâncias em que determinadas miniaturas em um segmento são exibidas com duas vezes mais comprimento no início ou no final delas. Esse comportamento ocorre porque a quantidade de miniaturas em um segmento é maior que o número visível no painel e não é divisível uniformemente.
+Ao habilitar (selecionar) a **[!UICONTROL Rolagem automática]** na predefinição do visualizador as imagens em miniatura atribuídas a um segmento de vídeo são roladas para exibição no início de um segmento durante a reprodução do vídeo. Entretanto, há instâncias em que determinadas miniaturas em um segmento são exibidas com duas vezes mais comprimento no início ou no final delas. Esse comportamento ocorre porque a quantidade de miniaturas em um segmento é maior que o número visível no painel e não é divisível uniformemente.
 
 Para ilustrar, suponha que você tenha um segmento de vídeo de 30 segundos. E há um total de nove miniaturas para exibir durante os 30 segundos. Seu navegador é dimensionado de forma que haja quatro posições de miniatura visíveis no painel de exibição. O segmento de tempo do vídeo de 30 segundos é dividido em três subsegmentos. A tabela a seguir mostra o detalhamento de quais miniaturas são exibidas para um determinado subsegmento de tempo:
 
