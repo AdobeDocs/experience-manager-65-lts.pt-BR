@@ -9,10 +9,11 @@ docset: aem65
 role: User, Admin
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d3699ddf-2a6e-4837-a98b-61b565de3d76
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 6%
+source-wordcount: '3404'
+ht-degree: 5%
 
 ---
 
@@ -112,7 +113,7 @@ Os componentes do Dynamic Media disponíveis incluem:
 
 >[!NOTE]
 >
->Esses componentes não estão disponíveis por padrão. Eles devem ser disponibilizados por meio do editor de modelo antes de você usá-los. [Depois que eles forem disponibilizados no &#x200B;](/help/sites-authoring/templates.md#editing-templates-template-authors)n editor de modelo, você poderá adicionar os componentes à sua página como faria com qualquer outro componente do Experience Manager.
+>Esses componentes não estão disponíveis por padrão. Eles devem ser disponibilizados por meio do editor de modelo antes de você usá-los. [Depois que eles forem disponibilizados no ](/help/sites-authoring/templates.md#editing-templates-template-authors)n editor de modelo, você poderá adicionar os componentes à sua página como faria com qualquer outro componente do Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -174,7 +175,7 @@ Edite as seguintes Configurações do Dynamic Media selecionando o ícone **[!UI
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
+  * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
 
   ![configuração da proporção de pixels do dispositivo para a predefinição de imagem](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -212,10 +213,10 @@ Edite as seguintes configurações do Dynamic Media selecionando **[!UICONTROL E
 
   Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
-   * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=pt-BR)
-   * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=pt-BR)
+  * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+  * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-     Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
+    Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
 
 * **[!UICONTROL Título]** - Alterar o título do vídeo.
 
@@ -249,7 +250,7 @@ Edite a seguinte Configuração do Dynamic Media selecionando **[!UICONTROL Edit
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
+  * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
 
   ![configuração de taxa de pixels do dispositivo para corte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
@@ -358,9 +359,9 @@ Consulte [Entrega de conteúdo HTTP2](/help/assets/http2.md) para obter detalhes
 
 >[!MORELIKETHIS]
 >
->* [Usar o player de vídeo no Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html?lang=pt-BR)
->* [Usar vídeo interativo com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html?lang=pt-BR)
->* [Entender o Visualizador de Ativos com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html?lang=pt-BR)
->* [Usar uma miniatura de vídeo personalizada com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=pt-BR)
->* [Entender o gerenciamento de cores com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=pt-BR)
->* [Usando a nitidez de imagem com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=pt-BR)
+>* [Usar o player de vídeo no Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
+>* [Usar vídeo interativo com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
+>* [Entender o Visualizador de Ativos com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
+>* [Usar uma miniatura de vídeo personalizada com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Entender o gerenciamento de cores com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html)
+>* [Usando a nitidez de imagem com o Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
