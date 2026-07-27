@@ -7,9 +7,10 @@ topic-tags: document_services
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -37,9 +38,9 @@ O fluxo de trabalho Chamar DDX requer os seguintes documentos de entrada:
 
 * **DDX**: é uma entrada obrigatória para a etapa de fluxo de trabalho Chamar DDX e pode ser especificada selecionando uma das seguintes opções no menu suspenso de entrada DDX.
 
-   * *Relativo à Carga*: o arquivo de entrada DDX é relativo à pasta de carga do item de fluxo de trabalho.
-   * *Usar carga*: a carga do item de fluxo de trabalho é usada como o documento DDX de entrada.
-   * *Caminho absoluto*: o caminho absoluto para o documento DDX no repositório do CRX.
+  * *Relativo à Carga*: o arquivo de entrada DDX é relativo à pasta de carga do item de fluxo de trabalho.
+  * *Usar carga*: a carga do item de fluxo de trabalho é usada como o documento DDX de entrada.
+  * *Caminho absoluto*: o caminho absoluto para o documento DDX no repositório do CRX.
 
 * **Criar mapa a partir de carga**: quando selecionado, todos os documentos na pasta de carga são adicionados ao Mapa do documento de entrada para a API `invoke` no Assembler. O nome do nó de cada documento é usado como uma chave no mapa.
 

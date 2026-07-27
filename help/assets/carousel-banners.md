@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 48cdca14c4e993281ed8c0a4a364aebe7a4611ad
+exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4550'
 ht-degree: 3%
 
 ---
@@ -56,7 +57,7 @@ Para começar a usar rapidamente os banners do carrossel:
    >
    >Se você for cliente do Experience Manager Assets e do Dynamic Media, insira manualmente os dados de hotspots e mapas de imagem e, em seguida, integre o URL publicado ou o código incorporado ao seu sistema de gerenciamento de conteúdo de terceiros.
 
-1. Opcional: [crie uma predefinição do visualizador Conjunto de carrossel](/help/assets/managing-viewer-presets.md), conforme necessário.
+1. Opcional: [crie uma predefinição do visualizador Conjunto para carrossel](/help/assets/managing-viewer-presets.md), conforme necessário.
 
    Se você for um administrador, poderá personalizar o comportamento e a aparência do carrossel criando sua própria predefinição do visualizador do Carrossel. O principal benefício é poder reutilizar essa predefinição do visualizador personalizado para vários carrosséis. No entanto, os usuários podem, opcionalmente, personalizar o comportamento e a aparência do carrossel diretamente durante a criação do carrossel. Esse método é a abordagem preferida quando você deseja um design específico para um determinado carrossel.
 
@@ -84,7 +85,7 @@ Para começar a usar rapidamente os banners do carrossel:
 
    * [Adicionar um banner de carrossel à página do site](#adding-a-carousel-banner-to-your-website-page) Você pode adicionar a URL do banner de carrossel ou o código de inserção copiado na página do site.
 
-      * [Integre o banner do carrossel a um Quickview existente](#integrating-the-carousel-banner-with-an-existing-quickview). Se você usa um sistema de gerenciamento de conteúdo da Web de terceiros, é necessário integrar o novo banner do carrossel com a implementação do Quickview existente em seu site.
+     * [Integre o banner do carrossel a um Quickview existente](#integrating-the-carousel-banner-with-an-existing-quickview). Se você usa um sistema de gerenciamento de conteúdo da Web de terceiros, é necessário integrar o novo banner do carrossel com a implementação do Quickview existente em seu site.
 
    * [Adicionar um banner de carrossel ao seu site no Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente Mídia interativa.
 
@@ -138,10 +139,10 @@ Considere os seguintes exemplos de URLs do Quickview e seus pontos de acesso ou 
    <td>SKU única, encontrada na cadeia de caracteres de consulta.</td>
    <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>A única parte variável na URL é o valor do parâmetro da cadeia de caracteres de consulta <code>productId=</code>, e é claramente um valor de SKU. Portanto, os pontos de acesso ou mapas de imagem precisam apenas de campos SKU preenchidos com valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -157,9 +158,9 @@ Considere os seguintes exemplos de URLs do Quickview e seus pontos de acesso ou 
    <td>SKU e ID de categoria na cadeia de caracteres de consulta.</td>
    <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no parâmetro <code>prodId</code> e a ID da categoria é armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de ponto de acesso/mapa de imagem são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
      <li><p>A SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
@@ -280,24 +281,23 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
    * Selecione **[!UICONTROL Quickview]**.
 
-      * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de produtos (lupa) para abrir a página Selecionar produto. Selecione o produto que deseja usar e marque a marca de seleção no canto superior direito da página para que você possa retornar ao editor de banner do carrossel.
-      * Se você não for um cliente do Experience Manager Sites
+     * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de produtos (lupa) para abrir a página Selecionar produto. Selecione o produto que deseja usar e marque a marca de seleção no canto superior direito da página para que você possa retornar ao editor de banner do carrossel.
+     * Se você não for um cliente do Experience Manager Sites
 
-         * Consulte [Identificar variáveis de ponto de acesso](#identifying-hotspot-and-image-map-variables) se desejar definir essas variáveis.
-         * Em seguida, insira manualmente o valor do SKU. No campo de texto Valor do SKU, digite o SKU (Unidade de manutenção de estoque) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo Quickview para que o sistema saiba como associar o ponto de acesso tocado a uma Quickview de SKU específica.
-         * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar melhor um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, category=Mens é uma variável adicionada.
+       * Consulte [Identificar variáveis de ponto de acesso](#identifying-hotspot-and-image-map-variables) se desejar definir essas variáveis.
+       * Em seguida, insira manualmente o valor do SKU. No campo de texto Valor do SKU, digite o SKU (Unidade de manutenção de estoque) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo Quickview para que o sistema saiba como associar o ponto de acesso tocado a uma Quickview de SKU específica.
+       * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar melhor um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, category=Mens é uma variável adicionada.
 
-         * Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
+       * Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
    * Selecione **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de sites (pasta) para navegar até um URL.
+     * Se você for um cliente do Experience Manager Sites, selecione o ícone Seletor de sites (pasta) para navegar até um URL.
+       >[!NOTE]
+       >
+       >O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 
-        >[!NOTE]
-        >
-        >O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
-
-      * Se você for um cliente independente, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.
+     * Se você for um cliente independente, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.
 
    Certifique-se de especificar se o link deve ser aberto em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
 
@@ -305,16 +305,16 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
    * Selecione **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para poder retornar à página de gerenciamento de pontos de acesso.
-Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
+     * Se você for um cliente do Experience Manager Sites, selecione o ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para poder retornar à página de gerenciamento de pontos de acesso.
+       Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
 
-      * Especifique a largura e a altura do Fragmento de experiência conforme ele aparece no banner.
+     * Especifique a largura e a altura do Fragmento de experiência conforme ele aparece no banner.
 
-        >[!NOTE]
-        >
-        >As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
-        >
-        >Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
+       >[!NOTE]
+       >
+       >As ferramentas de compartilhamento de redes sociais no banner do carrossel não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência.
+       >
+       >Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem incorporá-lo com sucesso aos Fragmentos de experiência.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -374,7 +374,7 @@ Você pode usar a Visualização para ver como o banner do carrossel é exibido 
 
 Quando estiver satisfeito com o banner do carrossel, você poderá publicá-lo.
 Consulte [Incorporação do Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).
-Consulte [Vinculando URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+Consulte [Vinculando URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 Consulte [Adicionando o Dynamic Media Assets a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Você pode visualizar banners do carrossel no Editor do carrossel (método preferencial) ou na lista **[!UICONTROL Visualizadores]**.
