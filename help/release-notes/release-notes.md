@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
+source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
 workflow-type: tm+mt
-source-wordcount: '7770'
-ht-degree: 96%
+source-wordcount: '7761'
+ht-degree: 95%
 
 ---
 
@@ -53,11 +53,11 @@ O AEM 6.5 LTS SP2 agora inclui OpenAPIs para [gerenciamento de modelos e fragmen
 
 * Experiência do usuário aprimorada no editor visual de regras. Essa atualização inclui:
 
-   * Recarregamento automático da visualização de resumo depois de salvar para mostrar o status atualizado da regra
+  * Recarregamento automático da visualização de resumo depois de salvar para mostrar o status atualizado da regra
 
-   * Exibição dos botões “Adicionar” e “Excluir”, além de permissão para ativá-los/desativá-los, em vez de ocultá-los
+  * Exibição dos botões “Adicionar” e “Excluir”, além de permissão para ativá-los/desativá-los, em vez de ocultá-los
 
-   * Fornecimento de feedback claro quando uma operação de salvar regra não é concluída com êxito (FORMS-21261)
+  * Fornecimento de feedback claro quando uma operação de salvar regra não é concluída com êxito (FORMS-21261)
 
 * Adição da interface de programação de aplicativos (API) do tempo de execução para ativar/desativar o modo de exportação de XML (Extensible Markup Language) legado no AEM Forms, substituindo o parâmetro `Dcom.adobe.fd.forms.export.legacy`. Esse aprimoramento permite que os usuários alternem os modos de exportação com mais eficiência, melhorando a flexibilidade do fluxo de trabalho. (FORMS-23115)
 
@@ -157,7 +157,8 @@ O suporte a eventos headless não tinha eventos OSGi necessários para fragmento
 
 * O RTE do fragmento de conteúdo apresentou problemas visuais e de layout após alterações recentes no estilo da interface do usuário. O Pacote de serviços 2 refina o estilo do RTE para que a barra de ferramentas e a área editável sejam renderizadas corretamente e permaneçam legíveis. O Editor de fragmento de conteúdo agora se alinha à aparência e ao comportamento do Editor de páginas. (SITES-38684)
 * A remoção de escopos IMS do Seletor de ativos Polaris interrompeu a integração do Fragmento de conteúdo com o ponto de acesso de entrega. Os autores detectam falhas ao abrir o seletor de ativos remoto e selecionar ativos. A atualização adiciona novamente os escopos IMS necessários e restaura o acesso estável da camada de entrega. (SITES-35837)
-* O painel Conteúdo associado não renderiza mais um espaço reservado &quot;indefinido&quot; codificado. O Editor de fragmento de conteúdo agora resolve esse texto por meio de recursos de localização, para que os editores vejam o texto da interface do usuário traduzido. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* O painel Conteúdo associado não renderiza mais um espaço reservado &quot;indefinido&quot; codificado. O Editor de fragmento de conteúdo agora resolve esse texto por meio de recursos de localização, para que os editores vejam o texto da interface traduzido. (SITES-33675)
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * O Editor de fragmento de conteúdo agora exibe um rótulo de guia Geral traduzido nas localidades. O editor substitui o texto de guia não localizado e remove as IDs internas dos títulos das guias. (SITES-30715)
 * O Editor de fragmento de conteúdo agora exibe nomes traduzidos para os tipos de ativos permitidos. A lista do seletor não mescla mais strings internas e rótulos somente em inglês quando os autores configuram restrições de referência de conteúdo. (SITES-29699)
 
@@ -359,23 +360,23 @@ O pacote de serviços 2 do AEM 6.5 LTS exige o S3 Connector 1.60.10 ou posterior
 
   **Impacto**
 
-   * O Sling considera esses PIDs obsoletos, e você deve removê-los de suas configurações:
-      * PID de fábrica: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
-      * PID global: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
-Essas configurações mais antigas usam propriedades, como `whitelist.name` e `whitelist.bundles`.
+  * O Sling considera esses PIDs obsoletos, e você deve removê-los de suas configurações:
+    * PID de fábrica: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+    * PID global: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+      Essas configurações mais antigas usam propriedades, como `whitelist.name` e `whitelist.bundles`.
 
-   * O Sling ainda fornece compatibilidade retroativa parcial para os PIDs obsoletos, mas não os use em novas configurações. Em vez disso, use os `LoginAdminAllowList.*` PIDs mais recentes.
-   * Não execute configurações obsoletas e novas de lista de permissões ao mesmo tempo. Configurações mistas podem criar ambiguidade e produzir comportamento não intencional. Ao migrar para o AEM 6.5 LTS SP2, remova os PIDs obsoletos completamente.
+  * O Sling ainda fornece compatibilidade retroativa parcial para os PIDs obsoletos, mas não os use em novas configurações. Em vez disso, use os `LoginAdminAllowList.*` PIDs mais recentes.
+  * Não execute configurações obsoletas e novas de lista de permissões ao mesmo tempo. Configurações mistas podem criar ambiguidade e produzir comportamento não intencional. Ao migrar para o AEM 6.5 LTS SP2, remova os PIDs obsoletos completamente.
 
   **O que você deve fazer**
 
-   1. Encontre configurações de lista de permissões que utilizem PIDs `LoginAdminWhitelist*`.
-   1. Substitua-os pelos novos PIDs apropriados:
+  1. Encontre configurações de lista de permissões que utilizem PIDs `LoginAdminWhitelist*`.
+  1. Substitua-os pelos novos PIDs apropriados:
 
-      * PID de fábrica: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
-      * PID global: `org.apache.sling.jcr.base.LoginAdminAllowList`
+     * PID de fábrica: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+     * PID global: `org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      Para obter mais detalhes, consulte [Abordagem obsoleta para pacotes de lista de permissões para login administrativo](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+     Para obter mais detalhes, consulte [Abordagem obsoleta para pacotes de lista de permissões para login administrativo](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
 
 * O AEM 6.5 LTS SP2 atualiza o conjunto de pacotes de camada de base para Sling, Oak e Felix. Essas atualizações fortalecem a estabilidade do tempo de execução principal e alinham as versões de dependência na plataforma. (GRANITE-61874)
 
@@ -499,7 +500,7 @@ Para conferir os requisitos de instalação, consulte as [instruções de instal
 > Se você estiver atualizando diretamente de SPs antigos do 6.5 para o LTS SP1, siga as instruções fornecidas para a [atualização](/help/sites-deploying/upgrade.md) do 6.5 para o 6.5 LTS GA.
 
 
-Para instruções mais detalhadas, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
+Para obter instruções detalhadas, consulte a [documentação de atualização](/help/sites-deploying/upgrade.md), pois a mesma documentação se aplica às atualizações do LTS Service Pack.
 
 >[!NOTE]
 >
