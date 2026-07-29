@@ -8,9 +8,10 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ O CRX permite configurar os direitos de acesso para contas de usuário e de grup
 
 >[!NOTE]
 >
->O CRX implementa o controle de acesso [&#x200B; conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>O CRX implementa o controle de acesso [ conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Uma instalação padrão de um repositório do CRX é configurada para usar listas de controle de acesso baseadas em recursos. Esta é uma possível implementação do controle de acesso JSR-283 e uma das implementações presentes com Jackrabbit.
 
@@ -69,22 +70,22 @@ O CRX usa dois conceitos principais ao avaliar direitos de acesso:
 
 * **principal** é uma entidade que possui direitos de acesso. Os principais incluem:
 
-   * Uma conta de usuário
-   * Uma conta de grupo
+  * Uma conta de usuário
+  * Uma conta de grupo
 
-     Se uma conta de usuário pertencer a um ou mais grupos, ela também será associada a cada uma dessas entidades de grupo.
+    Se uma conta de usuário pertencer a um ou mais grupos, ela também será associada a cada uma dessas entidades de grupo.
 
 * Um **assunto** é usado para representar a origem de uma solicitação.
 
   É usado para consolidar os direitos de acesso aplicáveis a essa solicitação. Elas são obtidas de:
 
-   * O usuário principal
+  * O usuário principal
 
-     Os direitos que você atribui diretamente à conta de usuário.
+    Os direitos que você atribui diretamente à conta de usuário.
 
-   * Todos os grupos principais associados a esse usuário
+  * Todos os grupos principais associados a esse usuário
 
-     Todos os direitos são atribuídos a qualquer um dos grupos aos quais o usuário pertence.
+    Todos os direitos são atribuídos a qualquer um dos grupos aos quais o usuário pertence.
 
   O resultado é usado para permitir ou negar acesso ao recurso solicitado.
 
@@ -123,8 +124,8 @@ Os direitos de acesso no CRX são avaliados da seguinte maneira:
 
 * As entidades do usuário sempre têm prioridade sobre as entidades do grupo, independentemente:
 
-   * a ordem na lista de controle de acesso
-   * sua posição na hierarquia do nó
+  * a ordem na lista de controle de acesso
+  * sua posição na hierarquia do nó
 
 * Para um determinado principal, existe (no máximo) uma negação e uma entrada de permissão em um determinado nó. A implementação sempre limpa as entradas redundantes e garante que o mesmo privilégio não seja listado nas entradas de permissão e negação.
 
@@ -511,7 +512,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
    <td>É um privilégio agregado que contém todos os outros privilégios predefinidos.</td>
   </tr>
   <tr>
-   <td><strong>Avançado </strong></td>
+   <td><strong>Avançado</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -560,7 +561,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Remover um nó.</td>
+   <td>Remova um nó.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>

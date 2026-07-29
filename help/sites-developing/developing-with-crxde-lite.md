@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2053'
 ht-degree: 1%
 
 ---
@@ -71,7 +72,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Editar painel</td>
-   <td><p>Guia <strong>Página inicial</strong>: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de dados de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo no painel do <strong>Explorer</strong> para que você possa exibir seu conteúdo. Por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong>, as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clique duas vezes na linha de status do painel <strong>Editar</strong> para abrir a caixa de diálogo <strong>Ir para a linha</strong>, para que você possa inserir um número de linha específico para ir para.<br /> </td>
+   <td><p>Guia <strong>Página inicial</strong>: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de dados de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo no painel do <strong>Explorer</strong> para que você possa exibir seu conteúdo. Por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong>, as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clicar duas vezes na linha de status do painel <strong>Editar</strong> abre a caixa de diálogo <strong>Ir para a linha</strong> para que você possa inserir um número de linha específico.<br /> </td>
   </tr>
   <tr>
    <td>Guia Propriedades<br /> </td>

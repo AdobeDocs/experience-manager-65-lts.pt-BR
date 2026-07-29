@@ -9,13 +9,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '905'
 ht-degree: 1%
 
 ---
-
 
 # Console de marcação da interface clássica{#classic-ui-tagging-console}
 
@@ -49,19 +49,19 @@ por exemplo, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Em ambos os casos, insira
 
    * **Título**
-(*Obrigatório*) O título de exibição da marca. Embora qualquer caractere possa ser inserido,
-é recomendável não usar estes caracteres especiais:
+     (*Obrigatório*) O título de exibição da marca. Embora qualquer caractere possa ser inserido,
+     é recomendável não usar estes caracteres especiais:
 
-      * `colon (:)` - delimitador de namespace
-      * `forward slash (/)` - delimitador de submarca
+     * `colon (:)` - delimitador de namespace
+     * `forward slash (/)` - delimitador de submarca
 
      Esses caracteres não serão exibidos se inseridos.
 
    * **Nome**
-(*Obrigatório*) O nome do nó da marca.
+     (*Obrigatório*) O nome do nó da marca.
 
    * **Descrição**
-(*Opcional*) Uma descrição para a marca.
+     (*Opcional*) Uma descrição para a marca.
 
    * selecione **Criar**
 
@@ -178,7 +178,7 @@ Por padrão, a tag `titles` nas propriedades da página é exibida no idioma da 
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles` de acordo com o idioma da página.
 
-Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 >[!NOTE]
 >
