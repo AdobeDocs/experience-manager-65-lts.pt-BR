@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4168'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -298,7 +298,7 @@ Para adicionar uma associação:
 Para editar propriedades:
 
 1. Marque a caixa de seleção ao lado de um objeto de modelo de dados, uma propriedade ou um serviço no modelo de dados de formulário.
-1. Selecione **[!UICONTROL Editar Propriedades]**. O painel **[!UICONTROL Editar Propriedades]** do objeto de modelo, propriedade ou serviço selecionado é aberto.
+1. Selecione **[!UICONTROL Editar propriedades]**. O painel **[!UICONTROL Editar Propriedades]** do objeto de modelo, propriedade ou serviço selecionado é aberto.
 
    * **Objeto do modelo de dados**: especifique os serviços de leitura e gravação e edite os argumentos.
    * **Propriedade**: especifique o tipo, subtipo e formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
@@ -382,9 +382,9 @@ Depois de adicionar o serviço `GET LINK` à guia Serviços no Modelo de Dados d
 
 >[!NOTE]
 >
->Os valores disponíveis no campo **Valor Padrão** do argumento **NavigationPropertyName** dependem do estado da matriz **Return?Botão de alternância**. Quando ativado, ele mostra as propriedades de navegação do tipo Coleção.
+>Os valores disponíveis no campo **Valor Padrão** do argumento **NavigationPropertyName** dependem do estado da matriz **Return?** botão de alternância. Quando ativado, ele mostra as propriedades de navegação do tipo Coleção.
 
-Neste exemplo, você também pode escolher o objeto de modelo de saída como Pessoa e o argumento de propriedade de navegação como Amigos ou Melhor Amigo (dependendo se **Retornar matriz?** está habilitado ou desabilitado).
+Neste exemplo, você também pode escolher o objeto de modelo de saída como Pessoa e o argumento de propriedade de navegação como Amigos ou Melhor Amigo (dependendo se **Retornar matriz?** está ativado ou desativado).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 

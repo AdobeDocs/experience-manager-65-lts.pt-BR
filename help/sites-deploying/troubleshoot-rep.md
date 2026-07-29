@@ -12,7 +12,7 @@ role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
    1. Clique em &quot;Ferramentas&quot; no menu superior.
    1. Clique no botão de lupa.
    1. Selecione &quot;XPath&quot; como Type.
-   1. Na caixa &quot;Consulta&quot;, digite esta ordem de consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) por @slingevent:created
+   1. Na caixa &quot;Consulta&quot;, digite esta consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) ordenada por @slingevent:created
    1. Clique em &quot;Pesquisar&quot;.
    1. Nos resultados, os itens principais são os trabalhos de evento do sling mais recentes. Clique em cada uma e localize as replicações paralisadas correspondentes ao que aparece na parte superior da fila.
 
@@ -70,7 +70,7 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
    * Arquivo de log: logs/replication.log
    * Logger: com.day.cq.replication
 
-1. Se você suspeitar que o problema esteja relacionado a eventos/trabalhos do sling de alguma forma, também será possível adicionar esse pacote do Java™ em categorias:org.apache.sling.event
+1. Se você suspeitar que o problema esteja relacionado a eventos/trabalhos do sling de alguma forma, também será possível adicionar esse pacote Java™ em categories:org.apache.sling.event
 
 ## Pausando Fila do Agente de Replicação  {#pausing-replication-agent-queue}
 

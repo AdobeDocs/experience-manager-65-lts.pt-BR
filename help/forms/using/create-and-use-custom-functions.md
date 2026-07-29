@@ -3,9 +3,10 @@ title: Criar e adicionar funções personalizadas em um Formulário adaptável
 description: O AEM Forms é compatível com funções personalizadas que permitem aos usuários criar e usar suas próprias funções no editor de regras.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -74,10 +75,10 @@ Como alternativa, você pode usar: `@argument` `{type} name <Parameter Descripti
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. string
-   2. número
-   3. booleano
-   4. escopo
+  1. string
+  2. número
+  3. booleano
+  4. escopo
 
   O escopo é usado para campos de referência de um Formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
@@ -87,11 +88,11 @@ Mostra os parâmetros usados pela função. Uma função pode ter várias tags d
 Sintaxe: `@return {type}`
 Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
-{type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
+  {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. string
-   1. número
-   1. booleano
+  1. string
+  1. número
+  1. booleano
 
   Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 
