@@ -7,8 +7,8 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 66%
+source-wordcount: '3746'
+ht-degree: 67%
 
 ---
 
@@ -36,53 +36,53 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
 
 * Use hífenshifens para separar palavras.
 
-   * Nomeie páginas usando hífenshifens (-) como separadores.
-   * Evite usar concatenadas, sublinhados e espaços.
+  * Nomeie páginas usando hífenshifens (-) como separadores.
+  * Evite usar concatenadas, sublinhados e espaços.
 
 * Evite a utilização de parâmetros de consulta sempre que possível. Quando necessário, limite-os a dois ou menos.
 
-   * Use a estrutura de diretório para indicar a arquitetura de informações, quando disponível.
-   * Se uma estrutura de diretório não for uma opção, use seletores Sling no URL em vez de strings de consulta. Além do valor de SEO fornecido, os seletores sling também permitem que as páginas sejam armazenadas em cache pelo Dispatcher.
+  * Use a estrutura de diretório para indicar a arquitetura de informações, quando disponível.
+  * Se uma estrutura de diretório não for uma opção, use seletores Sling no URL em vez de strings de consulta. Além do valor de SEO fornecido, os seletores sling também permitem que as páginas sejam armazenadas em cache pelo Dispatcher.
 
 * Quanto mais legível for um URL, melhor. Ter palavras-chave presentes no URL aumenta o valor.
 
-   * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
-   * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
-   * Por exemplo:
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-é preferível a `mybrand.com/products/product-detail.1234.html`
+  * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
+  * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
+  * Por exemplo:
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    é preferível a `mybrand.com/products/product-detail.1234.html`
 
 * Evite subdomínios sempre que possível, já que os mecanismos de pesquisa os tratam como entidades diferentes, fragmentando o valor SEO do site.
 
-   * Em vez disso, use subcaminhos de primeiro nível. Por exemplo, em vez de `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
+  * Em vez disso, use subcaminhos de primeiro nível. Por exemplo, em vez de `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
 
-   * Planeje sua hierarquia de conteúdo para corresponder à forma como o conteúdo é apresentado, de acordo com essa diretriz.
+  * Planeje sua hierarquia de conteúdo para corresponder à forma como o conteúdo é apresentado, de acordo com essa diretriz.
 
 * A eficácia da palavra-chave em URLs diminui conforme o comprimento do URL e a posição da palavra-chave aumentam. Em outras palavras, menor é melhor.
 
-   * Use técnicas e recursos de redução de URL fornecidos pelo AEM para remover partes desnecessárias do URL.
-   * Por exemplo, `mybrand.com/en/myPage.html` é preferível a `mybrand.com/content/my-brand/en/myPage.html`.
+  * Use técnicas e recursos de redução de URL fornecidos pelo AEM para remover partes desnecessárias do URL.
+  * Por exemplo, `mybrand.com/en/myPage.html` é preferível a `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Use URLs canônicos.
 
-   * Quando um URL puder ser distribuído a partir de caminhos diferentes ou com parâmetros ou seletores diferentes, certifique-se de usar uma tag `rel=canonical` na página.
+  * Quando um URL puder ser distribuído a partir de caminhos diferentes ou com parâmetros ou seletores diferentes, certifique-se de usar uma tag `rel=canonical` na página.
 
-   * Inclua URLs canônicos no código do modelo AEM.
+  * Inclua URLs canônicos no código do modelo AEM.
 
 * Corresponder URLs a títulos de página sempre que possível.
 
-   * Os autores de conteúdo devem ser encorajados a seguir essa prática.
+  * Os autores de conteúdo devem ser encorajados a seguir essa prática.
 
 * Insensibilidade a maiúsculas e minúsculas em solicitações de URL.
 
-   * Configure o Dispatcher para regravar todas as solicitações de entrada em letras minúsculas.
-   * Treine autores de conteúdo para criar todas as páginas usando letras minúsculas.
+  * Configure o Dispatcher para regravar todas as solicitações de entrada em letras minúsculas.
+  * Treine autores de conteúdo para criar todas as páginas usando letras minúsculas.
 
 * Certifique-se de que cada página seja distribuída somente de um protocolo.
 
-   * Às vezes, os sites serão distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao criar links a partir desta página, se o usuário puder retornar às páginas `http` e acessá-las por meio do `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
+  * Às vezes, os sites serão distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao criar links a partir desta página, se o usuário puder retornar às páginas `http` e acessá-las por meio do `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
 
-   * Atualmente, o Google prefere páginas `https` às páginas `http`. Eles ajudam a facilitar a vida de todos para atender todo o site por `https`.
+  * Atualmente, o Google prefere páginas `https` às páginas `http`. Eles ajudam a facilitar a vida de todos para atender todo o site por `https`.
 
 ### Configuração de servidor {#server-configuration}
 
@@ -90,11 +90,11 @@ Em termos de configuração do servidor, você pode executar as seguintes etapas
 
 * Use um arquivo `robots.txt` para bloquear o rastreamento de qualquer conteúdo que não deve ser indexado.
 
-   * Bloquear **todos** os rastreamentos em ambientes de teste.
+  * Bloquear **todos** os rastreamentos em ambientes de teste.
 
 * Ao iniciar um novo site com URLs atualizados, implemente os redirecionamentos 301 para garantir que sua classificação de SEO existente não seja perdida.
 * Inclua um favicon para o site.
-* Para facilitar o rastreamento de conteúdo pelos mecanismos de pesquisa, implemente um mapa de site XML. Certifique-se de incluir um mapa de site móvel para sites móveis e/ou responsivos.
+* Para facilitar a rastrea de conteúdo pelos mecanismos de pesquisa, implemente um mapa de site XML. Certifique-se de incluir um mapa de site móvel para sites móveis e/ou responsivos.
 
 ## Configurações do AEM {#aem-configurations}
 
@@ -220,8 +220,8 @@ Ao mesmo tempo, permitiria que os usuários finais interagissem com o nome da p�
 Em uma instalação padrão do AEM:
 
 * para a configuração do OSGi
-  **Apache Sling Resource Resolver Factory**
-( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Fábrica do Apache Sling Resource Resolver**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * a propriedade
   **Localização do mapeamento** ( `resource.resolver.map.location`)
@@ -242,7 +242,7 @@ Este é um exemplo de como esse problema ocorre:
 
 1. O Dispatcher armazena a resposta em cache em `/my-page.html` e retorna a resposta ao usuário.
 1. Um autor de conteúdo altera essa página e a ativa.
-1. O agente de liberação do Dispatcher envia uma solicitação de invalidação para `/content/my-brand/my-page`**.** Como a Dispatcher não tem uma página em cache neste caminho, o conteúdo antigo permanece em cache e é obsoleto.
+1. O agente de liberação do Dispatcher envia uma solicitação de invalidação para `/content/my-brand/my-page`**.** Como o Dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e é obsoleto.
 
 Há maneiras de configurar regras personalizadas de liberação do Dispatcher que mapearão o URL mais curto para o URL mais longo para fins de invalidação de cache.
 

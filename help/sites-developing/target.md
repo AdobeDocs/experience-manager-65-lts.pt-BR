@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1296'
 ht-degree: 3%
 
 ---
@@ -223,7 +224,7 @@ Para remover o comando Target do menu de contexto, adicione a seguinte proprieda
 * Tipo: Booleano
 * Value: True
 
-Por exemplo, para desativar o direcionamento dos componentes de título das páginas do site de demonstração do Geometrixx, adicione a propriedade ao nó /apps/geometrixx/components/title/cq:editConfig.
+Por exemplo, para desativar o direcionamento dos componentes de título das páginas do Site de demonstração do Geometrixx, adicione a propriedade ao nó /apps/geometrixx/components/title/cq:editConfig.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -233,7 +234,7 @@ Por exemplo, para desativar o direcionamento dos componentes de título das pág
 >
 >Se não estiver usando o DTM, você envia a confirmação do pedido para a Adobe Target.
 
-Para rastrear o desempenho do seu site, envie informações de compra da página de confirmação de pedido para a Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) e [Mbox de confirmação de pedido - Adicionar parâmetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=pt)) A Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando o seu nome de MBox é `orderConfirmPage` e usa os seguintes nomes de parâmetros específicos:
+Para rastrear o desempenho do seu site, envie informações de compra da página de confirmação de pedido para a Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) e [Mbox de confirmação de pedido - Adicionar parâmetros personalizados.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) A Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando o nome da sua MBox é `orderConfirmPage` e usa os seguintes nomes de parâmetros específicos:
 
 * productPurchasedId: uma lista de IDs que identificam os produtos comprados.
 * orderId: a ID do pedido.
@@ -317,7 +318,7 @@ Quando o componente é incluído na página de check-out no exemplo anterior, a 
 
 ## Noções básicas sobre o componente de Direcionamento {#understanding-the-target-component}
 
-O componente de Direcionamento permite que os autores criem mboxes dinâmicas a partir de componentes de conteúdo do CQ. (Consulte [Direcionamento de conteúdo](/help/sites-authoring/content-targeting-touch.md).) O componente de Destino está localizado em /libs/cq/personalization/components/target.
+O componente de Direcionamento permite que os autores criem mboxes dinâmicas a partir de componentes de conteúdo do CQ. (Consulte [Direcionamento de conteúdo](/help/sites-authoring/content-targeting-touch.md).) O componente de Direcionamento está localizado em /libs/cq/personalization/components/target.
 
 O script target.jsp acessa as propriedades da página para determinar o mecanismo de direcionamento a ser usado para o componente e, em seguida, executa o script apropriado:
 
