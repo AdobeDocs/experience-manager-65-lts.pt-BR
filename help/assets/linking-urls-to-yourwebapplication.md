@@ -8,10 +8,11 @@ content-type: reference
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 16798533-855d-4f14-8edb-edba79818dbf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 6%
 
 ---
 
@@ -55,7 +56,7 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
 1. Navegue até o ativo *publicado* cujo URL da predefinição de imagem ou URL da predefinição do visualizador você deseja copiar e selecione o ativo para abri-lo.
 
-   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
+   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição de imagem também deve ser publicada.
 
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
@@ -111,9 +112,9 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são ativ
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        Por exemplo, `https://aem.com/is/content/adobe/image.gif`.
+       Por exemplo, `https://aem.com/is/content/adobe/image.gif`.
 
    * Selecione **[!UICONTROL Ativo]** > **[!UICONTROL Representações dinâmicas]**, selecione uma representação dinâmica do ativo estático e copie a URL.
 
@@ -169,7 +170,7 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são ativ
 
    (O caminho acima é apenas um exemplo; não é o caminho real que você copia.)
 
-   * Em **[!UICONTROL ID de Registro]**, copie o nome do cliente encontrado na última parte da ID. Posteriormente, você precisará do nome do cliente copiado nessas etapas.
+   * Em **[!UICONTROL ID de registro]**, copie o nome do cliente encontrado na última parte da ID. Posteriormente, você precisará do nome do cliente copiado nessas etapas.
 
      Por exemplo, se a ID de registro fosse `87654321|demoCo`, o nome do cliente copiado seria `demoCo`.
 
