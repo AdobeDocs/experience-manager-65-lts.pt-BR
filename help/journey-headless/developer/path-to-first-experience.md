@@ -4,9 +4,10 @@ description: Nesta parte da jornada de desenvolvedor do AEM Headless, você ente
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 36a20b73-9277-4619-8103-80a3f900459d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '2023'
 ht-degree: 87%
 
 ---
@@ -94,7 +95,7 @@ Esta é uma visão geral do que é necessário para implementar seu primeiro apl
 1. Criar fragmentos de conteúdo
 1. Consultar conteúdo com o GraphQL
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. A seguir estão várias práticas recomendadas para que os autores e desenvolvedores de conteúdo se lembrem ao planejar o projeto.
 
@@ -106,8 +107,8 @@ Um projeto headless não é bem-sucedido apenas devido à tecnologia implementad
 * Se você tiver restrições de acesso, tente alinhar seu modelo de conteúdo aos requisitos de acesso.
 * Quando você tem requisitos de acesso, eles devem orientar sua hierarquia de conteúdo. Agrupe os conteúdos que são editados pelo mesmo grupo de pessoas.
 * Agrupe os conteúdos semelhantes em uma pasta.
-   * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar um novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
-   * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
+  * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar um novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
+  * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
 * A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Assim, profissionais não precisam escolher um local, somente fornecer um nome e começar a editar a nova referência.
 
 ### Criar conteúdo {#authoring}
@@ -147,7 +148,7 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 * [Jornada de tradução headless do AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Desenvolvimento headless para AEM Sites](/help/sites-developing/headless/introduction.md) - uma introdução rápida para orientar o desenvolvedor headless do AEM com os recursos necessários
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.
-* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/pt-br?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
+* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos exemplificativos que destacam APIs GraphQL do AEM.
 * [Guia de introdução headless](/help/sites-developing/headless/introduction.md#getting-started) - uma introdução rápida aos recursos headless do AEM para usuários já familiarizados com o AEM.
 * [Criar modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica sobre Modelos de fragmento de conteúdo

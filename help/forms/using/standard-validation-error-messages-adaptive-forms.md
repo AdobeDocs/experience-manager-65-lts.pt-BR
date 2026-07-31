@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 1%
+source-wordcount: '2318'
+ht-degree: 2%
 
 ---
 
@@ -25,10 +25,10 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html).
 
 
-O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
+O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode acionar um fluxo de trabalho personalizado no back-end para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
 
 ![fluxo de trabalho do manipulador de erros para entender como adicionar um manipulador de erros personalizado em formulários](/help/forms/using/assets/error-handler-workflow.png)
 
@@ -106,19 +106,19 @@ Com as melhorias nos recursos e atualizações subsequentes nas versões do AEM 
 
 Em que:
 * `type (required)` especifica o tipo de falha. Pode ser um dos seguintes valores:
-   * `SERVER_SIDE_VALIDATION` indica uma falha devido à validação do lado do servidor.
-   * `FORM_SUBMISSION` indica uma falha durante o envio do formulário
-   * `SERVICE_INVOCATION` indica uma falha durante uma invocação de serviço de terceiros.
-   * `FAILURE` indica uma falha geral.
-   * `VALIDATION_ERROR` indica uma falha devido a um erro de validação.
+  * `SERVER_SIDE_VALIDATION` indica uma falha devido à validação do lado do servidor.
+  * `FORM_SUBMISSION` indica uma falha durante o envio do formulário
+  * `SERVICE_INVOCATION` indica uma falha durante uma invocação de serviço de terceiros.
+  * `FAILURE` indica uma falha geral.
+  * `VALIDATION_ERROR` indica uma falha devido a um erro de validação.
 
 * `title (optional)` fornece um título ou uma breve descrição da falha.
 * `detail (optional)` fornece detalhes adicionais sobre a falha, se necessário.
 * `instance (optional)` representa uma instância ou um identificador associado à falha e ajuda a rastrear ou identificar a ocorrência específica da falha.
 * `validationErrors (required)` contém informações sobre erros de validação. Inclui os seguintes campos:
-   * `fieldname` menciona a expressão SOM dos campos que falharam nos critérios de validação.
-   * `dataRef` representa o caminho JSON ou XPath dos campos que falharam na validação.
-   * `details` contém a mensagem de erro de validação com o campo incorreto.
+  * `fieldname` menciona a expressão SOM dos campos que falharam nos critérios de validação.
+  * `dataRef` representa o caminho JSON ou XPath dos campos que falharam na validação.
+  * `details` contém a mensagem de erro de validação com o campo incorreto.
 * Campo `originCode (optional)` adicionado pelo AEM e contém o código de status http retornado pelo serviço externo
 * O campo `originMessage (optional)` foi adicionado pelo AEM e contém os dados brutos de erro retornados pelo serviço externo.
 
@@ -182,13 +182,13 @@ Você pode exibir o valor de dataRef na janela **[!UICONTROL Propriedades]** de 
 
 Antes de usar o manipulador de erros personalizado em uma Forms adaptável:
 
-* Conhecimento básico para [criar uma função personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=pt-BR#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
+* Conhecimento básico para [criar uma função personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
 
 ## Adicionar manipulador de erros usando o Editor de regras {#add-error-handler-using-rule-editor}
 
-Usando a ação Chamar serviço[&#x200B; do &#x200B;](/help/forms/using/rule-editor.md#invoke)Editor de regras, você define os critérios de validação com base na fonte de dados usada com o Formulário adaptável. Caso você use os serviços Web RESTful como fonte de dados, é possível definir os critérios de validação em um arquivo de definição do Swagger. Ao usar as funções do manipulador de erros e o Editor de regras no Adaptive Forms, você pode gerenciar e personalizar com eficiência a manipulação de erros. Você define as condições usando o Editor de regras e configura as ações desejadas a serem executadas quando a regra for acionada. O Formulário adaptável valida as entradas inseridas nos campos com base em critérios de validação predefinidos. Caso os valores de entrada não atendam aos critérios de validação, as mensagens de erro serão exibidas no nível do campo em um Formulário adaptável.
+Usando a ação Chamar serviço](/help/forms/using/rule-editor.md#invoke) do [Editor de regras, você define os critérios de validação com base na fonte de dados usada com o Formulário adaptável. Caso você use os serviços Web RESTful como fonte de dados, é possível definir os critérios de validação em um arquivo de definição do Swagger. Ao usar as funções do manipulador de erros e o Editor de regras no Adaptive Forms, você pode gerenciar e personalizar com eficiência a manipulação de erros. Você define as condições usando o Editor de regras e configura as ações desejadas a serem executadas quando a regra for acionada. O Formulário adaptável valida as entradas inseridas nos campos com base em critérios de validação predefinidos. Caso os valores de entrada não atendam aos critérios de validação, as mensagens de erro serão exibidas no nível do campo em um Formulário adaptável.
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Usando o Editor de regras, você pode:
 ### Adicionar função de manipulador de erros padrão {#add-default-errror-handler}
 
 Um manipulador de erros padrão é compatível com a exibição de mensagens de erro em campos se a resposta do erro estiver no esquema padrão ou na falha de validação do lado do servidor.
-Para entender como usar um manipulador de erros padrão usando a ação Chamar serviço[&#x200B; do &#x200B;](/help/forms/using/rule-editor.md#invoke)Editor de regras, use um exemplo de um Formulário adaptável simples com dois campos, **ID de animal de estimação** e **Nome de animal de estimação** e use um manipulador de erros padrão no campo **ID de animal de estimação** para verificar vários erros retornados pelo ponto de extremidade REST configurado para chamar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para adicionar um manipulador de erros padrão usando a ação Chamar serviço do Editor de regras, execute as seguintes etapas:
+Para entender como usar um manipulador de erros padrão usando a ação Chamar serviço](/help/forms/using/rule-editor.md#invoke) do [Editor de regras, use um exemplo de um Formulário adaptável simples com dois campos, **ID de animal de estimação** e **Nome de animal de estimação** e use um manipulador de erros padrão no campo **ID de animal de estimação** para verificar vários erros retornados pelo ponto de extremidade REST configurado para chamar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para adicionar um manipulador de erros padrão usando a ação Chamar serviço do Editor de regras, execute as seguintes etapas:
 
 1. Abra um Formulário adaptável no modo de criação, selecione um componente de formulário e selecione **[!UICONTROL Editor de regras]** para abrir o editor de regras.
 1. Selecione **[!UICONTROL Criar]**.
@@ -300,7 +300,7 @@ Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta 
 
 Agora, vamos entender como configurar e usar um manipulador de erros personalizado usando o serviço Chamar do editor de regras no AEM Forms.
 
-#### &#x200B;2. Use o Editor de regras para configurar o manipulador de erros personalizado {#use-custom-error-handler}
+#### &#x200B;2. Usar o Editor de regras para configurar o manipulador de erros personalizado {#use-custom-error-handler}
 
 Antes de implementar o manipulador de erros personalizado em um Formulário adaptável, verifique se o nome da biblioteca do cliente na **[!UICONTROL Categoria da biblioteca do cliente]** está alinhado com o nome especificado na opção de categorias do arquivo `.content.xml`.
 
