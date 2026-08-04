@@ -8,9 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1197dc8e-7fbe-4f74-942b-3aa9fafc07ac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2738'
 ht-degree: 0%
 
 ---
@@ -71,7 +72,7 @@ Um aspecto importante para entender sobre o AEM é como as solicitações recebi
 
 Os principais aspectos para entender a resolução de solicitações do Apache Sling são como as solicitações são mapeadas principalmente para um recurso específico no Repositório de conteúdo, como as propriedades adicionais da solicitação, juntamente com as propriedades desses objetos de conteúdo, determinam qual código de aplicativo é chamado para renderizar o conteúdo e como o código em /apps substitui o código em /libs.
 
-### Quickstart {#quickstart}
+### Início rápido {#quickstart}
 
 Nenhuma etapa três: para instalar e executar, basta baixar e clicar duas vezes no arquivo JAR Quickstart. Não há etapa três. Qualquer funcionalidade opcional adicional não deve exigir mais do que a instalação do pacote apropriado do Compartilhamento de pacotes.
 
@@ -177,6 +178,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Armazenamento Tar (TarMK)** - TarMK é o sistema de persistência padrão no AEM. Embora o AEM possa ser configurado para usar um sistema de persistência diferente (como o MongoDB), o TarMK tem certas vantagens, pois é otimizado para o desempenho de casos de uso típicos do JCR (portanto, é rápido), usa um formato de dados padrão do setor e pode ter backup rápido e fácil.
 
-**Modelo** - No AEM, um Modelo especifica um tipo específico de página. Ele define a estrutura de uma página (enquanto também especifica uma imagem em miniatura e várias propriedades). Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato.
+**Modelo** - No AEM, um Modelo especifica um tipo específico de página. Ele define a estrutura de uma página (enquanto também especifica uma imagem em miniatura e várias propriedades). Por exemplo, você pode ter modelos separados para páginas do produtos, mapas de site e informações de contato.
 
 **Fluxo de trabalho** - O sistema de Fluxo de Trabalho do AEM permite a criação de processos automatizados envolvendo páginas ou ativos.

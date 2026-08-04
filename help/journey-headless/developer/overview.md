@@ -4,10 +4,11 @@ description: Documentação do AEM Headless CMS. Comece aqui para obter uma jorn
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1425c1b4-3c47-47ff-b2ef-408e889ddb34
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 69%
+source-wordcount: '1248'
+ht-degree: 71%
 
 ---
 
@@ -37,7 +38,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios headless com 
 >
 >Se preferir **aprender fazendo** e tiver conhecimento técnico, visite os tutoriais do AEM Headless, que são organizados por API e estrutura e estão disponíveis na [seção Recursos Adicionais](#additional-resources) no final deste documento.
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Essa jornada foi projetada para o perfil do desenvolvedor, apresentando os requisitos, as etapas e a abordagem de um projeto AEM Headless da perspectiva do desenvolvedor. A jornada define perfis adicionais com as quais o desenvolvedor deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do desenvolvedor.
 
@@ -94,6 +95,6 @@ Como tal, as jornadas são projetadas para se manterem sozinhas. No entanto, vá
 * [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e aprender como modelar o conteúdo para seu projeto.
 * [Documentação técnica do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) - Se você já conhece bem as tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
 
-   * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+  * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

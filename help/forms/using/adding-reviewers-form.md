@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fbddbd62-2f21-4eb6-8926-90647846ee8b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 2%
 
 ---
 
@@ -59,13 +60,13 @@ Os grupos de usuários permitem associar diferentes conjuntos de revisores de en
 Antes de executar as etapas a seguir, consulte [Pré-requisito](../../forms/using/adding-reviewers-form.md#prerequisite).
 
 Para criar um grupo e adicionar membros a ele, navegue até **Ferramentas** > **Operações** > **Segurança** > **Grupos**.
-Para obter mais informações, consulte [Serviços e Administração de Usuários](/help/sites-administering/security.md).
+Para obter mais informações, consulte [Administração e Serviços do Usuário](/help/sites-administering/security.md).
 Adicione o grupo que você cria como membro do grupo de usuários predefinido: **forms-submit-reviewers**. Esse grupo de usuários é fornecido com o AEM Forms e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um formulário adaptável:
 
 1. No modo de criação, navegue até **Forms** > **Forms e Documentos**.
-1. Use a opção **Selecionar &#x200B;** para selecionar um formulário adaptável e clique em **Exibir propriedades**.
+1. Use a opção **Selecionar** para selecionar um formulário adaptável e clique em **Exibir propriedades**.
 1. Na janela Propriedades do formulário, clique em **Editar** e em **AVANÇADO**.
 1. Insira o grupo no campo de grupo de revisores de envio e clique em **Concluído**.
 

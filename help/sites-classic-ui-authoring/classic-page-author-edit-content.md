@@ -1,6 +1,6 @@
 ---
 title: Edição do conteúdo da página
-description: O conteúdo é adicionado usando componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+description: O conteúdo é adicionado usando componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,10 +9,11 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+exl-id: be81e33d-8e37-4a57-bcc1-78e968c64641
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
+source-wordcount: '1843'
+ht-degree: 17%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 16%
 
 Assim que a página for criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
-O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 
 >[!NOTE]
 >
@@ -179,7 +180,7 @@ Componentes herdados podem ser o resultado de vários cenários, incluindo:
 * [Inicializações](/help/sites-classic-ui-authoring/classic-launches.md) (quando com base na livecopy).
 * Componentes específicos; por exemplo, o Sistema de parágrafo herdado no Geometrixx.
 
-Você pode cancelar (e depois reativar) a herança. Dependendo do componente, isso pode estar disponível em:
+Você pode cancelar (e depois reabilitar) a herança. Dependendo do componente, isso pode estar disponível em:
 
 1. **Live Copy**
 
@@ -203,7 +204,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam comentários sobre o seu conteúdo. Isso é usado com frequência para fins de revisão e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para visualizar páginas:
 
@@ -225,7 +226,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
 Para edições de maior escala da mesma frase, uma opção de menu **[Localizar e Substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite procurar e substituir várias instâncias de uma cadeia de caracteres, em uma seção do site.
 
-## Bloquear uma página   {#locking-a-page}
+## Bloquear uma página {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa alterar o conteúdo. Isso é útil quando você está fazendo várias edições em uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -303,4 +304,4 @@ Os campos de formulário que os componentes de formulário renderizam não devem
 
 >[!NOTE]
 >
->Permissões especiais são necessárias para desfazer e refazer alterações em arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.
+>Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.
