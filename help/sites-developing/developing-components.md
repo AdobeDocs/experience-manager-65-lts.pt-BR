@@ -13,8 +13,8 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3200'
-ht-degree: 0%
+source-wordcount: '3540'
+ht-degree: 1%
 
 ---
 
@@ -88,11 +88,11 @@ O mecanismo para separar a lógica da aparência ajuda a esclarecer o que é nec
 
 ### Uso do Java {#using-java}
 
-[A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR). Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+[A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
 
 ### Utilização do JavaScript {#using-javascript}
 
-[A API de uso do JavaScript do HTL permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR). Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+[A API de uso do JavaScript do HTL permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 
 ### Uso de bibliotecas HTML do lado do cliente {#using-client-side-html-libraries}
 
@@ -132,15 +132,15 @@ Para obter detalhes completos, consulte:
 
 * Coral UI
 
-   * Fornece uma interface consistente em todas as soluções em nuvem
-   * [Conceitos da interface habilitada para toque do AEM - interface do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guia da interface do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Fornece uma interface consistente em todas as soluções em nuvem
+  * [Conceitos da interface habilitada para toque do AEM - interface do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Guia da interface de usuário do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Interface do Granite
 
-   * Fornece marcação da interface Coral encapsulada em componentes Sling para construir consoles e caixas de diálogo da interface
-   * [Conceitos da interface do usuário habilitada para toque do AEM - interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Fornece marcação da interface Coral encapsulada em componentes Sling para construir consoles e caixas de diálogo da interface
+  * [Conceitos da interface do usuário habilitada para toque do AEM - interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Caixas de diálogo para a interface habilitada para toque:
 * usar a estrutura da interface de usuário do Granite.
 * contém uma estrutura de nó que descreve os campos na caixa de diálogo.
 
-   * estes nós são `nt:unstructured` com a propriedade `sling:resourceType` necessária.
+  * estes nós são `nt:unstructured` com a propriedade `sling:resourceType` necessária.
 
 Um exemplo de estrutura de nó pode ser:
 
@@ -191,7 +191,7 @@ Para obter exemplos, consulte:
 >
 >Consulte:
 >
->* a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
+>* a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* o código de amostra relacionado coberto em [Amostra de código - Como personalizar campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -229,7 +229,7 @@ Para ver um exemplo, consulte:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Estender (herdar de) um campo {#extending-inheriting-from-a-field}
 
@@ -267,7 +267,7 @@ Para ver um exemplo, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Ouvintes na estrutura de conteúdo {#listeners-in-the-content-structure}
 
@@ -306,7 +306,7 @@ Para obter exemplos, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -385,28 +385,28 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
 
    * `assetGroup`:
 
-      * Tipo: `String`
-      * Valor: o grupo ao qual o ativo relacionado pertence; por exemplo, `media`
+     * Tipo: `String`
+     * Valor: o grupo ao qual o ativo relacionado pertence; por exemplo, `media`
 
    * `assetMimetype`:
 
-      * Tipo: `String`
-      * Valor: o tipo mime do ativo relacionado; por exemplo, `image/*`
+     * Tipo: `String`
+     * Valor: o tipo mime do ativo relacionado; por exemplo, `image/*`
 
    * `droptarget`:
 
-      * Tipo: `String`
-      * Valor: o destino de liberação; por exemplo, `image`
+     * Tipo: `String`
+     * Valor: o destino de liberação; por exemplo, `image`
 
    * `resourceType`:
 
-      * Tipo: `String`
-      * Valor: o recurso componente relacionado; por exemplo, `foundation/components/image`
+     * Tipo: `String`
+     * Valor: o recurso componente relacionado; por exemplo, `foundation/components/image`
 
    * `type`:
 
-      * Tipo: `String`
-      * Valor: o tipo, por exemplo, `Images`
+     * Tipo: `String`
+     * Valor: o tipo, por exemplo, `Images`
 
 Para obter exemplos, consulte:
 
@@ -423,7 +423,7 @@ Você pode encontrar o código desta página no GitHub
 
 >[!NOTE]
 >
->A criação automática de instâncias de componentes agora pode ser configurada facilmente na interface do usuário ao usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e Modelos Editáveis. Consulte [Criando Modelos de Página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obter mais informações sobre como definir quais componentes são associados automaticamente a determinados tipos de mídia.
+>A criação automática de instâncias de componentes agora pode ser configurada facilmente na interface do usuário ao usar [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e Modelos Editáveis. Consulte [Criando Modelos de Página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obter mais informações sobre como definir quais componentes são associados automaticamente a determinados tipos de mídia.
 
 ## Utilização da extensão AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -444,24 +444,24 @@ Ao migrar um componente projetado para uso com a interface clássica para um com
 
 * HTL
 
-   * O uso do [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) não é obrigatório, mas se o componente precisar de atualização, será o momento ideal para considerar a [migração de JSP para HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+  * O uso do [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) não é obrigatório, mas se o componente precisar de atualização, será o momento ideal para considerar a [migração de JSP para HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componentes
 
-   * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que usa funções específicas da interface clássica
-   * Plug-in RTE. Para obter mais informações, consulte [Configurando o Editor de Rich Text](/help/sites-administering/rich-text-editor.md).
-   * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funções específicas da interface clássica
+  * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que usa funções específicas da interface clássica
+  * Plug-in RTE. Para obter mais informações, consulte [Configurando o Editor de Rich Text](/help/sites-administering/rich-text-editor.md).
+  * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funções específicas da interface clássica
 
 * Caixas de diálogo
 
-   * Crie uma caixa de diálogo para usar na interface habilitada para toque. No entanto, para fins de compatibilidade, a interface habilitada para toque pode usar a definição de uma caixa de diálogo da interface clássica, quando nenhuma caixa de diálogo foi definida para a interface habilitada para toque.
-   * As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) são fornecidas para ajudar a estender os componentes existentes.
-   * [O mapeamento de ExtJS para componentes de interface do Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos de interface do Granite equivalentes.
-   * Personalizando campos, para obter mais informações, consulte a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
-   * Migrar de vtypes para [validação da interface do usuário para Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Usando ouvintes JS, para obter mais informações, consulte [Manipulando eventos de campo](#handling-field-events) e a sessão do AEM Gems em [Personalizando campos de caixa de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
+  * Crie uma caixa de diálogo para usar na interface habilitada para toque. No entanto, para fins de compatibilidade, a interface habilitada para toque pode usar a definição de uma caixa de diálogo da interface clássica, quando nenhuma caixa de diálogo foi definida para a interface habilitada para toque.
+  * As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) são fornecidas para ajudar a estender os componentes existentes.
+  * [O mapeamento de ExtJS para componentes de interface do Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos de interface do Granite equivalentes.
+  * Personalizando campos, para obter mais informações, consulte a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+  * Migrar de vtypes para [validação da interface do usuário para Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Usando ouvintes JS, para obter mais informações, consulte [Manipulando eventos de campo](#handling-field-events) e a sessão do AEM Gems em [Personalizando campos de caixa de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
-### Migrando o código cq:listener {#migrating-cq-listener-code}
+### Migrando código cq:listener {#migrating-cq-listener-code}
 
 Se você estiver migrando um projeto que foi projetado para a interface clássica, o código `cq:listener` (e as clientlibs relacionadas a componentes) poderá usar funções específicas para a interface clássica (como `CQ.wcm.*`). Para a migração, você deve atualizar esse código usando os objetos/funções equivalentes na interface habilitada para toque.
 

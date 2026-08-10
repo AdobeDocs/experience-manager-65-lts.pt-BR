@@ -75,11 +75,11 @@ As configurações a seguir estão disponíveis para o serviço de formulários 
 
 O serviço Central Migration Bridge ( `CentralMigrationBridge`) invoca um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Bridge de migração central permitem reutilizar os seguintes ativos centrais em formulários do AEM:
 
-* design do modelo (&ast;.ifd)
-* modelos de saída (&ast;.mdf)
-* arquivos de dados (&ast;.dat)
-* arquivos preâmbulo (&ast;.pre)
-* arquivos de definição de dados (&ast;.tdf)
+* design do modelo (&amp;ast;.ifd)
+* modelos de saída (&amp;ast;.mdf)
+* arquivos de dados (&amp;ast;.dat)
+* arquivos preâmbulo (&amp;ast;.pre)
+* arquivos de definição de dados (&amp;ast;.tdf)
 
 A configuração a seguir está disponível para o serviço Central Migration Bridge.
 
@@ -421,7 +421,7 @@ Dependendo do servidor LDAP, o nome de usuário pode ser um nome de usuário sim
 
 ## Definições do serviço de configuração do Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-O serviço de configuração do Microsoft SharePoint `(MSSharePointConfigService)` permite especificar credenciais para o usuário do AEM Forms que tem permissões de representação. Para obter informações sobre permissões de representação, consulte [Configurando o Conector para o Microsoft SharePoint](https://help.adobe.com/pt_BR/AEMForms/6.1/SharePointConfig/index.html).
+O serviço de configuração do Microsoft SharePoint `(MSSharePointConfigService)` permite especificar credenciais para o usuário do AEM Forms que tem permissões de representação. Para obter informações sobre permissões de representação, consulte [Configurando o Conector para o Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 As seguintes configurações estão disponíveis para o serviço de configuração do Microsoft SharePoint:
 
