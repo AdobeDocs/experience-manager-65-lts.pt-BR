@@ -1,25 +1,25 @@
 ---
 title: Atualização para o AEM 6.5 Forms LTS no OSGi
-description: Você pode executar uma atualização direta do AEM 6.5.22.0 Forms para o AEM 6.5 Forms LTS.
+description: Você pode executar uma atualização direta do AEM 6.5.17.0 Forms ou posterior para o AEM 6.5 Forms LTS.
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1619'
 ht-degree: 4%
 
 ---
 
 # Atualização para o AEM 6.5 Forms LTS no OSGi {#upgrade-to-aem-forms-osgi}
 
-Para [atualizar do AEM 6.5 para o AEM 6.5 LTS](/help/sites-deploying/upgrade.md), atualize para o AEM 6.5.22.0 Forms ou posterior. Há suporte para uma atualização direta do AEM 6.5.22.0 para o AEM 6.5 Forms LTS.
+Para [atualizar do AEM 6.5 para o AEM 6.5 LTS](/help/sites-deploying/upgrade.md), atualize para o AEM 6.5.17.0 Forms ou posterior. Há suporte para uma atualização direta do AEM 6.5.17.0 (ou posterior) para o AEM 6.5 Forms LTS.
 
 Se você estiver usando AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms ou AEM 6.5 Forms, uma atualização direta para AEM 6.5 Forms LTS não estará disponível. Para obter caminhos de atualização detalhados, consulte a documentação [Caminhos de Atualização](/help/forms/using/upgrade.md).
 
-Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas para atualizar para o AEM 6.5 LTS Forms:
+Depois de atualizar para o AEM Forms 6.5.17.0 ou posterior, siga estas etapas para atualizar para o AEM 6.5 LTS Forms:
 
 1. Instale o pacote complementar do AEM Forms. As etapas estão listadas abaixo:
 
@@ -74,8 +74,8 @@ Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas pa
 
      No AEM 6.5 Forms, a versão do jQuery foi atualizada para 3.2.1 e a versão da interface do usuário do jQuery foi atualizada para 1.12.1. O AEM Form usa JQuery no modo **noConflict**. Portanto, se você estiver usando qualquer outra versão do jQuery, nenhum problema será exibido ao executar um upgrade. No entanto, ao atualizar para o AEM 6.5 Forms:
 
-      * Certifique-se de que os componentes personalizados, se houver, sejam compatíveis com as versões do jQuery compatíveis.
-      * Remova APIs não compatíveis dos componentes personalizados. Consulte o [guia de atualização](https://jquery.com/upgrade-guide/3.0/) para obter a lista de APIs removidas. Por exemplo, o suporte para as APIs load(), .unload() e .error() é removido. Use o método .on() no lugar das APIs mencionadas anteriormente. Por exemplo, altere $(&quot;img&quot;).load(fn) para $(&quot;img&quot;).on(&quot;load&quot;, fn).
+     * Certifique-se de que os componentes personalizados, se houver, sejam compatíveis com as versões do jQuery compatíveis.
+     * Remova APIs não compatíveis dos componentes personalizados. Consulte o [guia de atualização](https://jquery.com/upgrade-guide/3.0/) para obter a lista de APIs removidas. Por exemplo, o suporte para as APIs load(), .unload() e .error() é removido. Use o método .on() no lugar das APIs mencionadas anteriormente. Por exemplo, altere $(&quot;img&quot;).load(fn) para $(&quot;img&quot;).on(&quot;load&quot;, fn).
 
    * **(Se estiver atualizando a partir do AEM 6.2 Forms ou somente versões anteriores) Reconfigure a análise e os relatórios**
 
@@ -87,9 +87,9 @@ Depois de atualizar para o service pack AEM Forms 6.5.22.0, siga estas etapas pa
    * **Verifique a replicação e a replicação inversa:** Publique, preencha e envie alguns formulários migrados. Verifique também os dados enviados.
    * **Verifique o acesso às interfaces de usuário do administrador e do desenvolvedor:** Faça logon na instância do AEM a partir de uma conta de administrador e verifique se você tem acesso às seguintes URLs:
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
@@ -342,7 +342,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 
 Quando a implantação for concluída e o AEM for totalmente iniciado:
 
-**URL do Autor do AEM:**
+**URL do autor do AEM:**
 `http://<server-ip>:8080/cq-quickstart`
 
 **Credenciais Padrão:**
