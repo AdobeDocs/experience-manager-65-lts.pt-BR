@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
-ht-degree: 6%
+source-wordcount: '4374'
+ht-degree: 7%
 
 ---
 
@@ -120,7 +120,7 @@ Você também pode extrair os índices no seu sistema no formato JSON. Para faze
 
 **Durante o Desenvolvimento**
 
-Defina limites baixos para `oak.queryLimitInMemory` (por exemplo, 10000) e Oak. `queryLimitReads` (por exemplo, 5000) e otimize a consulta cara ao acessar um UnsupportedOperationException dizendo &quot;A consulta leu mais de x nós...&quot;
+Defina limites baixos para `oak.queryLimitInMemory` (por exemplo, 10000) e Oak. `queryLimitReads` (por exemplo, 5000) e otimize a consulta cara ao acessar um UnsupportedOperationException dizendo &quot;A consulta lê mais de x nós...&quot;
 
 Isso ajuda a evitar consultas que consomem muitos recursos (ou seja, sem o suporte de qualquer índice ou com menos índice de cobertura). Por exemplo, uma consulta que lê 1 milhão de nós resultaria em maior I/O e teria um impacto negativo no desempenho geral do aplicativo. Qualquer query que falhar devido aos limites acima deve ser analisada e otimizada.
 
@@ -128,13 +128,13 @@ Isso ajuda a evitar consultas que consomem muitos recursos (ou seja, sem o supor
 
 * Monitore os logs de consultas que acionam travessia de nó grande ou consumo de memória de heap grande : &quot;
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * Otimizar a consulta para reduzir o número de nós percorridos
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * Otimizar a consulta para reduzir o número de nós percorridos
 
 * Monitore os logs para consultas que acionam grande consumo de memória de heap:
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * Otimizar o query para reduzir o consumo de memória da pilha
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * Otimizar o query para reduzir o consumo de memória da pilha
 
 Para versões do AEM 6.0 - 6.2, é possível ajustar o limite para passagem de nó por meio de parâmetros JVM no script de inicialização do AEM para evitar que consultas grandes sobrecarreguem o ambiente.
 
@@ -234,59 +234,59 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 * Aplica-se a/se:
 
-   * Todas as versões do Oak
-   * Somente [índices de propriedade](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+  * Todas as versões do Oak
+  * Somente [índices de propriedade](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * Sintomas:
 
-   * Nós existentes antes da atualização da definição do índice de propriedade ausentes nos resultados
+  * Nós existentes antes da atualização da definição do índice de propriedade ausentes nos resultados
 
 * Como verificar:
 
-   * Determine se os nós ausentes foram criados/modificados antes da implantação da definição de índice atualizada.
-   * Verificar as propriedades `jcr:created` ou `jcr:lastModified` de qualquer nó ausente em relação ao tempo modificado do índice
+  * Determine se os nós ausentes foram criados/modificados antes da implantação da definição de índice atualizada.
+  * Verificar as propriedades `jcr:created` ou `jcr:lastModified` de qualquer nó ausente em relação ao tempo modificado do índice
 
 * Como resolver:
 
-   * [Reindexar](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) o índice lucene
-   * Como alternativa, toque (execute uma operação de gravação benigna) nos nós ausentes
+  * [Reindexar](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) o índice lucene
+  * Como alternativa, toque (execute uma operação de gravação benigna) nos nós ausentes
 
-      * Requer toques manuais ou código personalizado
-      * Requer que o conjunto de nós ausentes seja conhecido
-      * Exige a alteração de qualquer propriedade no nó
+    * Requer toques manuais ou código personalizado
+    * Requer que o conjunto de nós ausentes seja conhecido
+    * Exige a alteração de qualquer propriedade no nó
 
 #### Alteração na definição do índice Lucene {#lucene-index-definition-change}
 
 * Aplica-se a/se:
 
-   * Todas as versões do Oak
-   * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Todas as versões do Oak
+  * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Sintomas:
 
-   * O índice Lucene não contém os resultados esperados
-   * Os resultados da consulta não refletem o comportamento esperado da definição do índice
-   * O plano de consulta não relata a saída esperada com base na definição do índice
+  * O índice Lucene não contém os resultados esperados
+  * Os resultados da consulta não refletem o comportamento esperado da definição do índice
+  * O plano de consulta não relata a saída esperada com base na definição do índice
 
 * Como verificar:
 
-   * Verifique se a definição do índice foi alterada usando o Mbean JMX (LuceneIndex) de estatísticas do Índice Lucene, método `diffStoredIndexDefinition`.
+  * Verifique se a definição do índice foi alterada usando o Mbean JMX (LuceneIndex) de estatísticas do Índice Lucene, método `diffStoredIndexDefinition`.
 
 * Como resolver:
 
-   * Versões do Oak anteriores à 1.6:
+  * Versões do Oak anteriores à 1.6:
 
-      * [Reindexar](#how-to-re-index) o índice lucene
+    * [Reindexar](#how-to-re-index) o índice lucene
 
-   * Oak versões 1.6+
+  * Oak versões 1.6+
 
-      * Se o conteúdo existente não for afetado pelas alterações, apenas uma atualização será necessária
+    * Se o conteúdo existente não for afetado pelas alterações, apenas uma atualização será necessária
 
-         * [Atualize](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) o índice lucene definindo [oak:queryIndexDefinition]@refresh=true
+      * [Atualize](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) o índice lucene definindo [oak:queryIndexDefinition]@refresh=true
 
-      * Senão, [reindexe](#how-to-re-index) o índice lucene
+    * Senão, [reindexe](#how-to-re-index) o índice lucene
 
-         * Observação: o estado do índice a partir da última reindexação válida (ou indexação inicial) é usado até que uma nova reindexação seja acionada
+      * Observação: o estado do índice a partir da última reindexação válida (ou indexação inicial) é usado até que uma nova reindexação seja acionada
 
 ### Situações de erro e excepcionais {#erring-and-exceptional-situations}
 
@@ -303,62 +303,62 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 * Aplica-se a/se:
 
-   * Todas as versões do Oak
-   * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Todas as versões do Oak
+  * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Sintomas:
 
-   * O índice Lucene não contém os resultados esperados
+  * O índice Lucene não contém os resultados esperados
 
 * Como verificar:
 
-   * O arquivo de log de erros contém uma exceção informando que um binário do índice Lucene está ausente
+  * O arquivo de log de erros contém uma exceção informando que um binário do índice Lucene está ausente
 
 * Como resolver:
 
-   * Executar uma verificação de repositório de passagem; por exemplo:
+  * Executar uma verificação de repositório de passagem; por exemplo:
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+    [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-     percorrer o repositório determina se outros binários (além dos arquivos do lucene) estão ausentes
+    percorrer o repositório determina se outros binários (além dos arquivos do lucene) estão ausentes
 
-   * Se binários diferentes dos índices Lucene estiverem ausentes, restaurar do backup
-   * Caso contrário, [reindexar](#how-to-re-index) *todos* índices Lucene
-   * Observação:
+  * Se binários diferentes dos índices Lucene estiverem ausentes, restaurar do backup
+  * Caso contrário, [reindexar](#how-to-re-index) *todos* índices Lucene
+  * Observação:
 
-     Essa condição indica um armazenamento de dados configurado incorretamente que pode resultar na ausência DE QUALQUER binário (por exemplo, binários de ativos).
+    Essa condição indica um armazenamento de dados configurado incorretamente que pode resultar na ausência DE QUALQUER binário (por exemplo, binários de ativos).
 
-     Nesse caso, restaure para a última versão válida do repositório para recuperar todos os binários ausentes.
+    Nesse caso, restaure para a última versão válida do repositório para recuperar todos os binários ausentes.
 
 #### O binário do índice Lucene está corrompido {#lucene-index-binary-is-corrupt}
 
 * Aplica-se a/se:
 
-   * Todas as versões do Oak
-   * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Todas as versões do Oak
+  * Somente [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Sintomas:
 
-   * O índice Lucene não contém os resultados esperados
+  * O índice Lucene não contém os resultados esperados
 
 * Como verificar:
 
-   * O `AsyncIndexUpdate` (a cada cinco segundos) falhará com uma exceção no error.log:
+  * O `AsyncIndexUpdate` (a cada cinco segundos) falhará com uma exceção no error.log:
 
-     `...a Lucene index file is corrupt...`
+    `...a Lucene index file is corrupt...`
 
 * Como resolver:
 
-   * Remover a cópia local do índice Lucene
+  * Remover a cópia local do índice Lucene
 
-      1. Parar o AEM
-      1. Excluir a cópia local do índice Lucene em `crx-quickstart/repository/index`
-      1. Reiniciar o AEM
+    1. Parar o AEM
+    1. Excluir a cópia local do índice Lucene em `crx-quickstart/repository/index`
+    1. Reiniciar o AEM
 
-   * Se isso não resolver o problema e as exceções `AsyncIndexUpdate` persistirem:
+  * Se isso não resolver o problema e as exceções `AsyncIndexUpdate` persistirem:
 
-      1. [Reindexar](#how-to-re-index) o índice de erros
-      1. Registre também um tíquete de [Suporte da Adobe](https://helpx.adobe.com/br/support.html)
+    1. [Reindexar](#how-to-re-index) o índice de erros
+    1. Registre também um tíquete de [Suporte da Adobe](https://helpx.adobe.com/br/support.html)
 
 ### Como reindexar {#how-to-re-index}
 
@@ -371,7 +371,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 * Use [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) para reindexar o índice de propriedade
 * Definir a propriedade async-reindex como verdadeira no índice de propriedade
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 * Reindexe o índice de propriedade de forma assíncrona usando o Console da Web por meio do **PropertyIndexAsyncReindex** MBean;
 
@@ -384,7 +384,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 * Use [oak-run.jar para reindexar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) o índice de Propriedade Lucene.
 * Defina a propriedade async-reindex como true no índice de propriedade lucene
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ Em operação normal do AEM, por exemplo, ao fazer upload do Assets por meio da 
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)versão 1.7.4+
 * Uma pasta/compartilhamento do sistema de arquivos para armazenar o texto extraído acessível das instâncias de indexação do AEM
 
-   * A configuração OSGi de pré-extração de texto requer um caminho do sistema de arquivos para os arquivos de texto extraídos, de modo que eles devem ser acessíveis diretamente da instância do AEM (montagem da unidade local ou do compartilhamento de arquivos)
+  * A configuração OSGi de pré-extração de texto requer um caminho do sistema de arquivos para os arquivos de texto extraídos, de modo que eles devem ser acessíveis diretamente da instância do AEM (montagem da unidade local ou do compartilhamento de arquivos)
 
 #### Como executar a pré-extração de texto {#how-to-perform-text-pre-extraction}
 

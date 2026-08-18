@@ -6,7 +6,7 @@ role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
 source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5707'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,8 @@ Uma estrutura de projeto simplificada e padronizada pode reduzir significativame
 
 * Use o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura do projeto do AEM. Ele cria a estrutura e os modelos recomendados para o projeto do AEM. Além disso, fornece sistemas de automação de build e controle de alterações para ajudar a gerenciar o projeto.
 
-   * Use o comando maven `archetype:generate` para gerar a estrutura inicial.
-   * Use o comando maven `eclipse:eclipse` para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.
+  * Use o comando maven `archetype:generate` para gerar a estrutura inicial.
+  * Use o comando maven `eclipse:eclipse` para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.
 
 Para obter mais informações, consulte [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
@@ -63,10 +63,10 @@ Depois de configurar o projeto do AEM, defina uma estratégia para a criação e
 * É recomendável carregar os pacotes de formulários usando a interface do usuário do Gerenciador de formulários em vez da interface do Gerenciador de pacotes do CRX, pois o carregamento de pacotes por meio do Gerenciador de pacotes do CRX pode, às vezes, causar anomalias.
 * O AEM Forms permite criar formulários adaptáveis com base nos seguintes modelos de formulário. Os modelos de formulário atuam como interface para a troca de dados entre um formulário e o sistema AEM e fornecem uma estrutura baseada em XML para o fluxo de dados dentro e fora de um formulário adaptável. Além disso, os modelos de formulário impõem regras e restrições aos formulários adaptáveis na forma de restrições de esquema e XFA.
 
-   * **Nenhum**: os formulários adaptáveis criados com esta opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
-   * **Esquema XML ou JSON**: os esquemas XML e JSON representam a estrutura em que os dados são produzidos ou consumidos pelo sistema back-end em sua organização. Você pode associar um esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis na guia Objeto de modelo de dados do navegador de conteúdo para a criação de formulários adaptáveis. Você pode arrastar e soltar os elementos do esquema para criar o formulário.
-   * **Modelo de formulário XFA**: é um modelo de formulário ideal se você tem investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
-   * **Modelo de dados de formulário**: é um modelo de formulário preferido se você estiver procurando integrar seus sistemas de back-end, como bancos de dados, serviços Web e perfil de usuário do AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados nos sistemas de back-end. Um editor de modelo de dados de formulário permite definir e configurar entidades e serviços em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Para obter mais informações, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
+  * **Nenhum**: os formulários adaptáveis criados com esta opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
+  * **Esquema XML ou JSON**: os esquemas XML e JSON representam a estrutura em que os dados são produzidos ou consumidos pelo sistema back-end em sua organização. Você pode associar um esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis na guia Objeto de modelo de dados do navegador de conteúdo para a criação de formulários adaptáveis. Você pode arrastar e soltar os elementos do esquema para criar o formulário.
+  * **Modelo de formulário XFA**: é um modelo de formulário ideal se você tem investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
+  * **Modelo de dados de formulário**: é um modelo de formulário preferido se você estiver procurando integrar seus sistemas de back-end, como bancos de dados, serviços Web e perfil de usuário do AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados nos sistemas de back-end. Um editor de modelo de dados de formulário permite definir e configurar entidades e serviços em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Para obter mais informações, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
 É importante escolher cuidadosamente o modelo de dados que não apenas atenda aos seus requisitos, mas que estenda seus investimentos existentes em ativos XFA e XSD, se houver. Use o Modelo XSD para criar modelos de formulário porque o XML gerado contém dados de acordo com o XPATH definido pelo esquema. Usar o Modelo XSD como uma opção padrão para o Modelo de dados de formulário também ajuda, pois ele dissocia o design do formulário do sistema de back-end que processa e consome dados e melhora o desempenho do formulário devido ao mapeamento de um para um do campo de formulário. Além disso, BindRef do campo pode se tornar o XPATH de seu valor de dados em XML.
 
@@ -78,8 +78,8 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
 
 * O AEM Forms fornece modelos de formulário adaptáveis prontos para uso que você pode usar para criar formulários adaptáveis. Você também pode criar seus próprios templates. O AEM fornece modelos estáticos e editáveis.
 
-   * Os modelos estáticos são definidos e configurados pelos desenvolvedores.
-   * Os modelos editáveis são criados pelos autores usando o editor de modelos. O editor de modelos permite definir uma estrutura básica e o conteúdo inicial em um modelo. Qualquer modificação na camada da estrutura é refletida em todos os formulários que usam esse modelo. O conteúdo inicial pode incluir tema pré-configurado, serviço de preenchimento prévio, ação de envio e assim por diante. No entanto, essas configurações podem ser modificadas para um formulário usando o editor de formulários. Para obter mais informações, consulte [Modelos de formulário adaptável](/help/forms/using/template-editor.md).
+  * Os modelos estáticos são definidos e configurados pelos desenvolvedores.
+  * Os modelos editáveis são criados pelos autores usando o editor de modelos. O editor de modelos permite definir uma estrutura básica e o conteúdo inicial em um modelo. Qualquer modificação na camada da estrutura é refletida em todos os formulários que usam esse modelo. O conteúdo inicial pode incluir tema pré-configurado, serviço de preenchimento prévio, ação de envio e assim por diante. No entanto, essas configurações podem ser modificadas para um formulário usando o editor de formulários. Para obter mais informações, consulte [Modelos de formulário adaptável](/help/forms/using/template-editor.md).
 
 * Para estilizar uma instância específica de campo ou painel, use [estilo em linha](/help/forms/using/inline-style-adaptive-forms.md). Como alternativa, você pode definir uma classe em um arquivo CSS e especificar o nome da classe na propriedade Classe CSS do componente.
 * Inclua uma biblioteca do cliente em um componente para aplicar estilos de forma consistente em formulários ou fragmentos adaptáveis que usam esse componente. Para obter mais informações, consulte [Criar um componente de página de formulário adaptável](/help/forms/using/custom-adaptive-forms-templates.md).
@@ -88,9 +88,9 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
 * Os formulários adaptáveis fornecem layouts de painel, como responsivo, com guias, acordeões e assistente, para controlar como os componentes de formulário são posicionados em um painel. É possível criar layouts de painel personalizados e disponibilizá-los para uso por autores de formulário. Para obter mais informações, consulte [Criação de componentes de layout personalizados para formulários adaptáveis](/help/forms/using/custom-layout-components-forms.md).
 * Você também pode personalizar componentes específicos do formulário adaptável, como campos e layout do painel.
 
-   * Use a funcionalidade de [Sobreposição](/help/sites-developing/overlays.md) do AEM para modificar uma cópia de um componente. Não é recomendável modificar componentes padrão.
-   * Para personalizar o layout dos componentes de formulário adaptáveis prontos para uso em /libs, [crie componentes de layout personalizados](/help/forms/using/custom-layout-components-forms.md), além dos [layouts padrão](/help/forms/using/layout-capabilities-adaptive-forms.md).
-   * Introduza interatividades personalizadas criando widgets ou aparências personalizados. Não é recomendável modificar componentes padrão. Para obter mais informações, consulte [Estrutura de aparência](/help/forms/using/introduction-widgets.md).
+  * Use a funcionalidade de [Sobreposição](/help/sites-developing/overlays.md) do AEM para modificar uma cópia de um componente. Não é recomendável modificar componentes padrão.
+  * Para personalizar o layout dos componentes de formulário adaptáveis prontos para uso em /libs, [crie componentes de layout personalizados](/help/forms/using/custom-layout-components-forms.md), além dos [layouts padrão](/help/forms/using/layout-capabilities-adaptive-forms.md).
+  * Introduza interatividades personalizadas criando widgets ou aparências personalizados. Não é recomendável modificar componentes padrão. Para obter mais informações, consulte [Estrutura de aparência](/help/forms/using/introduction-widgets.md).
 
 * Consulte [Manipulando informações de identificação pessoal](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) para obter recomendações sobre como manipular dados de PII.
 
@@ -136,18 +136,18 @@ O editor de regras fornece um editor visual e um editor de código para escrever
 * Ao lidar com regras complexas ou de uso comum, considere escrever lógica de negócios como funções em uma biblioteca do cliente separada que você pode especificar e reutilizar em formulários adaptáveis. A biblioteca do cliente deve ser uma biblioteca independente e não deve ter dependências externas, exceto em jQuery e Underscore.js. Você também pode usar a biblioteca do cliente para impor a [revalidação do lado do servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) dos dados de formulário enviados.
 * Os formulários adaptáveis fornecem um conjunto de APIs que você pode usar para se comunicar e executar ações em formulários adaptáveis. Algumas das principais APIs são as seguintes. Para obter mais informações, consulte [Referência da API da Biblioteca JavaScript para Forms Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
-   * `guideBridge.reset()`: Redefine um formulário.
-   * `guideBridge.submit()`: envia um formulário.
-   * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: define o foco para um campo.
-   * `guideBridge.validate(errorList, somExpression, focus)`: valida um formulário.
-   * `guideBridge.getDataXML(options)`: Obtém dados de formulário como XML.
-   * `guideBridge.resolveNode(somExpression)`: Obtém um objeto de formulário.
-   * `guideBridge.setProperty(somList, propertyName, valueList)`: define a propriedade de um objeto de formulário.
-   * Além disso, você pode usar as seguintes propriedades de campo:
+  * `guideBridge.reset()`: Redefine um formulário.
+  * `guideBridge.submit()`: envia um formulário.
+  * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: define o foco para um campo.
+  * `guideBridge.validate(errorList, somExpression, focus)`: valida um formulário.
+  * `guideBridge.getDataXML(options)`: Obtém dados de formulário como XML.
+  * `guideBridge.resolveNode(somExpression)`: Obtém um objeto de formulário.
+  * `guideBridge.setProperty(somList, propertyName, valueList)`: define a propriedade de um objeto de formulário.
+  * Além disso, você pode usar as seguintes propriedades de campo:
 
-      * `field.value` para alterar o valor de um campo.
-      * `field.enabled` para ativar/desativar um campo.
-      * `field.visible` para alterar a visibilidade de um campo.
+    * `field.value` para alterar o valor de um campo.
+    * `field.enabled` para ativar/desativar um campo.
+    * `field.visible` para alterar a visibilidade de um campo.
 
 * Os autores do formulário adaptável podem precisar escrever código JavaScript para criar lógica de negócios em um formulário. Embora o JavaScript seja eficiente, ele provavelmente comprometerá as expectativas de segurança. Portanto, você deve garantir que o autor do formulário seja uma pessoa confiável e que haja processos para revisar e aprovar o código JavaScript antes que um formulário seja colocado em produção. O administrador pode restringir o acesso ao editor de regras a grupos de usuários com base em sua função. Consulte [Conceder acesso ao editor de regras para grupos de usuários selecionados](/help/forms/using/rule-editor-access-user-groups.md).
 * Você pode usar expressões em regras para tornar formulários adaptáveis dinâmicos. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter mais informações sobre expressões e práticas recomendadas, consulte [Expressões de formulários adaptáveis](/help/forms/using/adaptive-form-expressions.md).
@@ -207,16 +207,16 @@ Considere as seguintes práticas recomendadas para superar problemas de desempen
 * Inclua apenas os campos e painéis em formulários adaptáveis que capturem informações do usuário. Considere manter o conteúdo estático mínimo ou use URLs para abri-los em uma janela separada.
 * Embora cada formulário seja projetado para uma finalidade específica, há alguns segmentos comuns na maioria dos formulários. Por exemplo, detalhes pessoais, endereço, detalhes de emprego e assim por diante. Crie [fragmentos de formulário adaptáveis](/help/forms/using/adaptive-form-fragments.md) para elementos de formulário e seções comuns e use-os em formulários. Também é possível salvar um painel em um formulário existente como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários adaptáveis associados. Ele promove a criação colaborativa, pois vários autores podem trabalhar simultaneamente em diferentes fragmentos que compõem um formulário.
 
-   * Semelhante aos formulários adaptáveis, é recomendável que todo o estilo específico do fragmento e os scripts personalizados sejam definidos na biblioteca do cliente usando a caixa de diálogo do contêiner do fragmento. Além disso, tente criar fragmentos autossuficientes que não dependam de objetos fora dele.
-   * Evite usar script de fragmentos cruzados. Se houver algum objeto fora do fragmento ao qual você deve se referir, tente tornar esse objeto uma parte do formulário principal. Se o objeto ainda precisar residir em outro fragmento, consulte-o pelo seu nome no script.
+  * Semelhante aos formulários adaptáveis, é recomendável que todo o estilo específico do fragmento e os scripts personalizados sejam definidos na biblioteca do cliente usando a caixa de diálogo do contêiner do fragmento. Além disso, tente criar fragmentos autossuficientes que não dependam de objetos fora dele.
+  * Evite usar script de fragmentos cruzados. Se houver algum objeto fora do fragmento ao qual você deve se referir, tente tornar esse objeto uma parte do formulário principal. Se o objeto ainda precisar residir em outro fragmento, consulte-o pelo seu nome no script.
 
 * Use Salvar e retomar com o salvamento automático para salvar o formulário adaptável periodicamente e permitir que os usuários visitem novamente mais tarde para preencher o formulário.
 * Configurar fragmentos para carregar lentamente. No tempo de execução, os fragmentos marcados para carregamento lento são renderizados somente quando necessários. Ele reduz significativamente o tempo de carregamento de formulários grandes. Também é compatível com fragmentos com painéis repetíveis. Para obter mais informações, consulte [Configurar carregamento lento](/help/forms/using/lazy-loading-adaptive-forms.md).
 
-   * Não configure o carregamento lento em fragmentos em um layout de grade responsivo ou no primeiro painel.
-   * Os componentes de Anexos de arquivo e Termos e condições não são compatíveis com fragmentos carregados lentamente.
-   * Marque um valor em um painel carregado lento como Usar valor globalmente se esse valor for usado em alguma outra parte do formulário, de modo que o valor esteja disponível para uso quando o painel que o contém for descarregado.
-   * Considere escrever regras de visibilidade para fragmentos que devem ser exibidos ou ocultados com base em uma condição.
+  * Não configure o carregamento lento em fragmentos em um layout de grade responsivo ou no primeiro painel.
+  * Os componentes de Anexos de arquivo e Termos e condições não são compatíveis com fragmentos carregados lentamente.
+  * Marque um valor em um painel carregado lento como Usar valor globalmente se esse valor for usado em alguma outra parte do formulário, de modo que o valor esteja disponível para uso quando o painel que o contém for descarregado.
+  * Considere escrever regras de visibilidade para fragmentos que devem ser exibidos ou ocultados com base em uma condição.
 * Defina o valor de **Número de chamadas por solicitação** no **Apache Sling Main Servlet** para um número relativamente grande. Ela permite que o servidor do Forms permita chamadas adicionais. A configuração exibe um valor padrão de 1500. O valor, 1500 chamadas, é para outros componentes do Experience Manager, como Sites e Assets. O conjunto de valores padrão de formulários adaptáveis é 20000. Se você encontrar o erro `too many calls` em logs ou o formulário não for renderizado, tente aumentar o valor para um número grande para resolver o problema. Se o número de chamadas exceder 20000, significa que o formulário é complexo e pode levar algum tempo para renderizar o formulário no navegador. Isso só acontece na primeira vez que o formulário é carregado, depois que ele é armazenado em cache e, uma vez armazenado em cache, não há impacto significativo no desempenho.
 
 ### Preenchimento prévio de formulários adaptáveis {#prefilling-adaptive-forms}
@@ -253,9 +253,9 @@ Um documento de registro (DoR) é uma versão nivelada do PDF de um formulário 
 
 * Dependendo do modelo de dados de formulário em que um formulário adaptável é baseado, você pode configurar um modelo para DoR da seguinte maneira:
 
-   * **Modelo de formulário XFA**: use o arquivo XDP associado como modelo do DoR.
-   * **Esquema XSD**: use o modelo XFA associado que usa o mesmo esquema XML usado pelo formulário adaptável.
-   * **Nenhum**: usar DoR gerado automaticamente.
+  * **Modelo de formulário XFA**: use o arquivo XDP associado como modelo do DoR.
+  * **Esquema XSD**: use o modelo XFA associado que usa o mesmo esquema XML usado pelo formulário adaptável.
+  * **Nenhum**: usar DoR gerado automaticamente.
 
 * Configure cabeçalho, rodapé, imagens, cor, fonte e assim por diante, diretamente da guia Documento de registro do editor de formulário adaptável.
 * Use `DoRService` para gerar o DoR de forma programática.
@@ -329,7 +329,7 @@ Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho 
 * Criar [páginas de erro personalizadas mostradas pelo manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md).
 * Servidor AEM Forms seguro.
 
-   * Use o modo de execução `nosamplecontent` para garantir que não haja conteúdo de amostra e usuários de amostra implantados no servidor de produção. Consulte [Executando o AEM no Modo Pronto para Produção](/help/sites-administering/production-ready.md).
+  * Use o modo de execução `nosamplecontent` para garantir que não haja conteúdo de amostra e usuários de amostra implantados no servidor de produção. Consulte [Executando o AEM no Modo Pronto para Produção](/help/sites-administering/production-ready.md).
 
 * Mantenha o tamanho do heap em no mínimo 8 GB. Para outras configurações, consulte [Ajuste de desempenho do servidor AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
 * Use sessões de usuário do serviço em vez de sessões de administrador para executar tarefas de nível de serviço. Para obter mais informações, consulte [Autenticação de serviço](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html).
@@ -403,14 +403,14 @@ Antes de decidir usar bibliotecas personalizadas de clientes, é importante cons
 As **Funções personalizadas** oferecem uma vantagem notável sobre o **Editor de códigos**, pois fornecem uma separação clara entre conteúdo e código, o que melhora a colaboração e simplifica os fluxos de trabalho. É recomendável usar funções personalizadas para as seguintes vantagens:
 
 * **Use o controle de versão facilmente como o Git:**
-   * O isolamento do código do conteúdo reduz significativamente os conflitos do Git durante o gerenciamento de conteúdo e promove um repositório bem organizado.
-   * As Funções personalizadas são valiosas para projetos com vários colaboradores que trabalham simultaneamente.
+  * O isolamento do código do conteúdo reduz significativamente os conflitos do Git durante o gerenciamento de conteúdo e promove um repositório bem organizado.
+  * As Funções personalizadas são valiosas para projetos com vários colaboradores que trabalham simultaneamente.
 
 * **Benefícios técnicos:**
-   * Funções personalizadas oferecem modularidade e encapsulamento.
-   * Os módulos podem ser desenvolvidos, testados e mantidos de forma independente.
-   * Aumenta a reutilização e a capacidade de manutenção do código.
+  * Funções personalizadas oferecem modularidade e encapsulamento.
+  * Os módulos podem ser desenvolvidos, testados e mantidos de forma independente.
+  * Aumenta a reutilização e a capacidade de manutenção do código.
 
 * **Processo eficiente de desenvolvimento:**
-   * A modularidade permite que os desenvolvedores se concentrem em funcionalidades específicas.
-   * Diminui o fardo dos desenvolvedores ao reduzir as complexidades de toda a base de código para um processo de desenvolvimento mais eficiente.
+  * A modularidade permite que os desenvolvedores se concentrem em funcionalidades específicas.
+  * Diminui o fardo dos desenvolvedores ao reduzir as complexidades de toda a base de código para um processo de desenvolvimento mais eficiente.

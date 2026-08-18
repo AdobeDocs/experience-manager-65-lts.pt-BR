@@ -4,10 +4,11 @@ description: Quando um componente em uma página da Web é renderizado, um eleme
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 085192a0-0415-4861-8bea-a66cd50d9487
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -18,8 +19,8 @@ Quando um componente em uma página da Web é renderizado, um elemento HTML pode
 * Um componente só pode ser editado quando envolvido com um elemento HTML.
 * O elemento de encapsulamento é usado para aplicar classes HTML que fornecem:
 
-   * informações de layout
-   * informações de estilo
+  * informações de layout
+  * informações de estilo
 
 Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos. Se e como a tag de decoração é renderizada é definida pela combinação de dois fatores, nos quais essa página se aprofundará:
 
@@ -42,9 +43,9 @@ As seguintes propriedades e nós podem ser aplicados aos componentes para contro
 
 * Nó **`cq:htmlTag`:** Este nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
 
-   * **`cq:tagName {String}`:** Pode ser usado para especificar uma marca HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
-   * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
-   * Outros nomes de propriedades serão adicionados como atributos do HTML com o mesmo valor de string fornecido.
+  * **`cq:tagName {String}`:** Pode ser usado para especificar uma marca HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
+  * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
+  * Outros nomes de propriedades serão adicionados como atributos do HTML com o mesmo valor de string fornecido.
 
 ## Controles de script {#script-controls}
 
