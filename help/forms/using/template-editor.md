@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 0%
+source-wordcount: '2096'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html).
 
 
 
@@ -61,13 +61,13 @@ Ao abrir um modelo para edição, você pode ver os seguintes componentes do Edi
 * **Barra de ferramentas da página**
 Contém as seguintes opções:
 
-   * **Alternar Painel Lateral**: Permite mostrar ou ocultar a barra lateral.
-   * **Informações da página**: permite especificar informações como hora de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
-   * **Emulador**: permite simular e personalizar a aparência para diferentes dispositivos.
-   * **Seletor de camada:** permite alterar a camada.
-Você pode escolher a camada **Estrutura** ou a camada **Conteúdo inicial**. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
+  * **Alternar Painel Lateral**: Permite mostrar ou ocultar a barra lateral.
+  * **Informações da página**: permite especificar informações como hora de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
+  * **Emulador**: permite simular e personalizar a aparência para diferentes dispositivos.
+  * **Seletor de camada:** permite alterar a camada.
+    Você pode escolher a camada **Estrutura** ou a camada **Conteúdo inicial**. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
 
-   * **Visualizar:** permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
+  * **Visualizar:** permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
 
 * **Barra Lateral:** fornece os navegadores de Conteúdo, Propriedades, Assets e Componentes.
 * **Barra de ferramentas do componente:** ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.

@@ -5,9 +5,10 @@ topic-tags: Security
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ Você pode configurar um firewall externo para permitir que determinados URLs da
     </ul> </td> 
   </tr>
   <tr>
-   <td>Portal Forms </td> 
+   <td>Portal de fomulários </td> 
    <td>
     <ul> 
      <li>/content/forms/portal/</li> 
@@ -122,9 +123,9 @@ Você pode configurar o firewall interno para permitir que determinados componen
 
 Por padrão, os ativos disponíveis nos nós de publicação estão acessíveis a todos. O acesso somente leitura está ativado para todos os ativos. É necessário para habilitar o acesso anônimo. Se você planeja restringir a visualização do formulário e enviar o acesso somente a usuários autenticados, use um grupo comum para permitir que somente usuários autenticados tenham acesso somente leitura aos ativos disponíveis nos nós de publicação. Os seguintes locais/diretórios contêm ativos de formulários que exigem proteção (acesso somente leitura para usuários autenticados):
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&ast;
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## Manipule com segurança os dados de formulários  {#securely-handle-forms-data}
 
@@ -167,18 +168,18 @@ Um conjunto diferente de personalidades de usuário é necessário para as inst�
 
 * Há um conjunto diferente de grupos predefinidos com privilégios específicos para cada persona. Atribuir usuários ao grupo.
 
-   * Um usuário do grupo de usuários de formulários:
+  * Um usuário do grupo de usuários de formulários:
 
-      * O pode criar, preencher, publicar e enviar um formulário.
-      * O não pode criar um formulário adaptável baseado em XDP.
-      * não têm permissões para gravar scripts para formulários adaptáveis.
-      * não é possível importar XDP ou qualquer pacote que contenha XDP
+    * O pode criar, preencher, publicar e enviar um formulário.
+    * O não pode criar um formulário adaptável baseado em XDP.
+    * não têm permissões para gravar scripts para formulários adaptáveis.
+    * não é possível importar XDP ou qualquer pacote que contenha XDP
 
-   * Um usuário do grupo de usuários avançados de formulários cria, preenche, publica e envia todos os tipos de formulários, grava scripts para formulários adaptáveis e importa pacotes que contêm XDP.
-   * Um usuário de autores de modelo e usuário avançado de modelo pode visualizar e criar um modelo.
-   * Um usuário de autores do fdm pode criar e modificar um modelo de dados de formulário.
-   * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
-   * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
+  * Um usuário do grupo de usuários avançados de formulários cria, preenche, publica e envia todos os tipos de formulários, grava scripts para formulários adaptáveis e importa pacotes que contêm XDP.
+  * Um usuário de autores de modelo e usuário avançado de modelo pode visualizar e criar um modelo.
+  * Um usuário de autores do fdm pode criar e modificar um modelo de dados de formulário.
+  * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
+  * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
 
 **Ao processar o autor:**
 

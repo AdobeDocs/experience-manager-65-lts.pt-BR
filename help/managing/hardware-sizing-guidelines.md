@@ -7,7 +7,7 @@ role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
 source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -20,29 +20,29 @@ Os fatores básicos a serem considerados são (nesta ordem):
 
 * **Velocidade da rede**
 
-   * Latência de rede
-   * Largura de banda disponível
+  * Latência de rede
+  * Largura de banda disponível
 
 * **Velocidade computacional**
 
-   * Eficiência de armazenamento em cache
-   * Tráfego esperado
-   * Complexidade de modelos, aplicativos e componentes
-   * Autores simultâneos
-   * Complexidade da operação de criação (edição simples de conteúdo, implantação do MSM e assim por diante)
+  * Eficiência de armazenamento em cache
+  * Tráfego esperado
+  * Complexidade de modelos, aplicativos e componentes
+  * Autores simultâneos
+  * Complexidade da operação de criação (edição simples de conteúdo, implantação do MSM e assim por diante)
 
 * **Desempenho de E/S**
 
-   * Desempenho e eficiência do armazenamento de arquivos ou bancos de dados
+  * Desempenho e eficiência do armazenamento de arquivos ou bancos de dados
 
 * **Disco rígido**
 
-   * pelo menos duas ou três vezes maior que o tamanho do repositório
+  * pelo menos duas ou três vezes maior que o tamanho do repositório
 
 * **Memória**
 
-   * Tamanho do site (número de objetos de conteúdo, páginas e usuários)
-   * Número de usuários/sessões ativos ao mesmo tempo
+  * Tamanho do site (número de objetos de conteúdo, páginas e usuários)
+  * Número de usuários/sessões ativos ao mesmo tempo
 
 ## Arquitetura {#architecture}
 
@@ -53,7 +53,7 @@ Em uma configuração de projeto típica, você tem vários ambientes nos quais 
 * **Ambiente de desenvolvimento**
 Desenvolver novos recursos ou fazer alterações significativas. A prática recomendada é trabalhar usando um ambiente de desenvolvimento por desenvolvedor (instalações locais em seus sistemas pessoais).
 
-* **Ambiente de teste do autor**
+* **Criar ambiente de teste**
 Para verificar as alterações. O número de ambientes de teste pode variar dependendo dos requisitos do projeto (por exemplo, separado para controle de qualidade, teste de integração ou teste de aceitação do usuário).
 
 * **Publicar ambiente de teste**

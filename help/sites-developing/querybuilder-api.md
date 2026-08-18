@@ -13,7 +13,7 @@ role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2350'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 ## Sessão Gem {#gem-session}
 
-O [Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos da Adobe Experience Manager oferecidos por especialistas da Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
+O [Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) é uma série de aprofundamentos técnicos da Adobe Experience Manager oferecidos por especialistas da Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
 
 >[!NOTE]
 >
->A sessão do AEM Gem [Pesquisar formulários ficou mais fácil com o AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral detalhada do construtor de consultas.
+>A sessão do AEM Gem [Pesquisar formulários ficou mais fácil com o AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de consultas.
 
 ## Exemplos de consulta {#sample-queries}
 
@@ -141,8 +141,8 @@ Por exemplo, a interface pode adaptar a seguinte abordagem:
 
 * A resposta pode ter o seguinte resultado:
 
-   * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode mostrar até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar isso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. Conforme o usuário vai para as próximas páginas, chamadas feitas para o Construtor de Consultas aumentariam o limite de `guessTotal` e também dos parâmetros `offset` e `limit`.
+  * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode mostrar até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
+  * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar isso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. Conforme o usuário vai para as próximas páginas, chamadas feitas para o Construtor de Consultas aumentariam o limite de `guessTotal` e também dos parâmetros `offset` e `limit`.
 
 `guessTotal` deve ser usado nos casos em que a interface do usuário precisa usar rolagem infinita para evitar que o Construtor de Consultas determine a contagem exata de ocorrências.
 
@@ -476,12 +476,12 @@ Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação 
 
 * Habilitar logs DEBUG para o QueryBuilder a fim de obter consulta XPath subjacente e explicável
 
-   * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
+  * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
 * Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 * Copie a consulta XPath da entrada de log da consulta QueryBuilder associada. Por exemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Cole a consulta XPath na [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
 
@@ -495,12 +495,12 @@ Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação 
 
 * Habilitar logs DEBUG para o QueryBuilder a fim de obter consulta XPath subjacente e explicável
 
-   * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
+  * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
 * Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 * Copie a consulta XPath da entrada de log da consulta QueryBuilder associada. Por exemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Cole a consulta XPath na [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
 
