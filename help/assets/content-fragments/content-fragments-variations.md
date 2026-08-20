@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2078'
+ht-degree: 57%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 59%
 
 Na guia **Variações**, é possível fazer o seguinte:
 
-* [Inserir o conteúdo](#authoring-your-content) para o fragmento,
-* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal**,
+* [Insira o conteúdo](#authoring-your-content) do seu fragmento
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **Mestre**
 
 Executar uma série de outras ações, dependendo do tipo de dados que está sendo editado; por exemplo:
 
@@ -30,8 +30,6 @@ Executar uma série de outras ações, dependendo do tipo de dados que está sen
 * [Fazer upload de conteúdo](#uploading-content)
 
 * [Visualizar as principais estatísticas](#viewing-key-statistics) (sobre textos multilinha)
-
-* [Resumir texto](#summarizing-text)
 
 * [Sincronizar as variações com o conteúdo Principal](#synchronizing-with-master)
 
@@ -51,22 +49,22 @@ Por exemplo:
 
 * Fazer edições no conteúdo diretamente da guia **Variações**; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
-   * para campos de **Texto multilinha**, você também pode abrir o [editor de tela cheia](#full-screen-editor) para:
+  * para campos de **Texto multilinha**, você também pode abrir o [editor de tela cheia](#full-screen-editor) para:
 
-      * selecionar o [Formato](#formats)
-      * ver mais opções de edição (para formato [Rich text](#rich-text))
-      * acessar uma variedade de [ações](#actions)
+    * selecionar o [Formato](#formats)
+    * ver mais opções de edição (para formato [Rich text](#rich-text))
+    * acessar uma variedade de [ações](#actions)
 
-   * Para campos de **Referência do fragmento**, a opção [Editar fragmento do conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
+  * Para campos de **Referência do fragmento**, a opção [Editar fragmento do conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
 * Atribuir **Marcas** à variação atual; as marcas podem ser adicionadas, atualizadas e removidas
 
-   * As [Marcas](/help/sites-authoring/tags.md) são avançadas ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
+  * As [Marcas](/help/sites-authoring/tags.md) são avançadas ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para localizar conteúdo (por tags) e aplicar operações em massa.
 
-      * As pesquisas por uma tag retornam o fragmento, com a variação da tag destacada.
-      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
+    * As pesquisas por uma tag retornam o fragmento, com a variação da tag destacada.
+    * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da rede de entrega de conteúdo (CDN) (para armazenamento em cache da CDN), em vez de usar o nome da variação.
 
-     Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
+    Por exemplo, você pode marcar fragmentos relevantes como “Lançamento de Natal” para permitir a navegação somente entre eles como um subconjunto ou a cópia para uso com outro lançamento futuro em uma nova pasta.
 
   >[!NOTE]
   >
@@ -101,8 +99,6 @@ As seguintes ações também estão disponíveis (para todos os [formatos](#form
 
 * [Sincronizar com o Principal](#synchronizing-with-master) (ao editar uma variação)
 
-* [Resumir texto](#summarizing-text)
-
 ### Formatos {#formats}
 
 As opções para editar texto de várias linhas dependem do formato selecionado:
@@ -130,10 +126,10 @@ A edição de rich text permite formatar:
 * Estilo do parágrafo: parágrafo, cabeçalho 1/2/3
 * [Inserir ativo](#inserting-assets-into-your-fragment)
 * Abrir o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
-   * Pesquisar
-   * Localizar/substituir
-   * Verificador ortográfico
-   * [Anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Pesquisar
+  * Localizar/substituir
+  * Verificador ortográfico
+  * [Anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inserir fragmento de conteúdo](#inserting-content-fragment-into-your-fragment); disponível quando o campo de **Texto de várias linhas** está configurado para **Permitir referência de fragmento**.
 
 As [ações](#actions) também podem ser acessadas pelo editor de tela cheia.
@@ -216,60 +212,6 @@ Por exemplo:
 ### Fazer upload de conteúdo {#uploading-content}
 
 Para facilitar o processo de criação de fragmentos de conteúdo, você pode fazer upload de um texto preparado em um editor externo e adicioná-lo diretamente ao fragmento.
-
-### Resumo de texto {#summarizing-text}
-
-O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mas mantendo os pontos principais e o significado geral.
-
->[!NOTE]
->
->Em um nível mais técnico, o sistema mantém as frases que julga fornecer a *melhor relação entre densidade e exclusividade das informações* de acordo com algoritmos específicos.
-
->[!CAUTION]
->
->O fragmento de conteúdo deve ter uma pasta de idioma válida (código ISO) como ancestral; ela serve para determinar o modelo de idioma a ser usado.
->
->Por exemplo, `en/`, como no seguinte caminho:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->O inglês está disponível pronto para uso.
->
->Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
->
->* [Francês (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemão (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espanhol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Selecione o **Principal** ou a variação exigida.
-1. Abra o editor de tela cheia.
-
-1. Selecione **Resumir texto** na barra de ferramentas.
-
-   ![resumo](assets/cfm-variations-05.png)
-
-1. Especifique o número alvo de palavras e selecione **Iniciar**:
-1. O texto original é apresentado lado a lado com o resumo proposto:
-
-   * As frases que serão eliminadas são destacadas em vermelho e tachadas.
-   * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
-   * Clique em qualquer frase não destacada se desejar eliminá-la.
-
-1. Selecione **Resumir** para confirmar as alterações.
-
-1. O texto original é apresentado lado a lado com o resumo proposto:
-
-   * As frases que serão eliminadas são destacadas em vermelho e tachadas.
-   * Clique em qualquer frase destacada se desejar mantê-la no conteúdo resumido.
-   * Clique em qualquer frase não destacada se desejar eliminá-la.
-   * As estatísticas do resumo são apresentadas: **Real** e **Alvo**-
-   * Você pode **Visualizar** as alterações.
-
-   ![comparação de resumo](assets/cfm-variations-06.png)
 
 ### Anotação de um fragmento de conteúdo {#annotating-a-content-fragment}
 
