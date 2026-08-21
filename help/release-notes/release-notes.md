@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,34 +415,34 @@ O UberJar para AEM 6.5 LTS SP3 usa o AEM 6.5 LTS UberJar versão 6.6.3. Você po
 
 Para compilar nas APIs públicas, use o seguinte:
 
-    &quot;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>apis&lt;/classifier>
-    &lt;scope>fornecido&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Se o código também depender de APIs obsoletas, adicione o seguinte:
 
-    &quot;xml
-    &lt;dependência>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;versão>6.6.3&lt;/versão>
-    &lt;classifier>apis obsoletas&lt;/classifier>
-    &lt;escopo>fornecido&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -462,10 +462,10 @@ O SP2 para o AEM 6.5 LTS é fornecido como um arquivo JAR do Quickstart, em vez 
 1. No diretório de instalação do AEM (fora de `crx-quickstart/`), substitua o JAR de início rápido anterior pelo JAR do SP3.
 1. Extraia o arquivo JAR:
 
-       &quot;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &quot;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    (Ajuste sinalizadores de heap conforme necessário.)
 
 1. Renomeie o arquivo JAR extraído para corresponder à função e à porta como, por exemplo, `cq-author-4502.jar` ou `cq-publish-4503.jar`.
@@ -670,5 +670,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
