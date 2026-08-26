@@ -9,9 +9,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2f760a0e-bee3-4803-b0db-6e1137396600
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -80,7 +81,7 @@ Para assinar notificações:
    * Ativado: quando uma página é ativada.
    * Desativado: quando uma página é desativada.
    * Excluída (sindicalização): quando uma página é excluída-replicada, ou seja, quando uma ação de exclusão executada em uma página é replicada.
-Quando uma página é excluída ou movida, uma ação de exclusão é automaticamente replicada: a página é excluída na instância de origem em que a ação de exclusão foi executada e na instância de destino definida pelos agentes de replicação.
+     Quando uma página é excluída ou movida, uma ação de exclusão é automaticamente replicada: a página é excluída na instância de origem em que a ação de exclusão foi executada e na instância de destino definida pelos agentes de replicação.
 
    * Modificado: quando uma página é modificada.
    * Criado: quando uma página é criada.
@@ -92,8 +93,8 @@ Quando uma página é excluída ou movida, uma ação de exclusão é automatica
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
    * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
 
-   * Para ser notificado de todas as páginas pertencentes à subárvore, defina **Exato?** a **Não**.
-Para ser notificado somente para ações na página definida pelo caminho, defina **Exato?** a **Sim**.
+   * Para ser notificado de todas as páginas pertencentes à subárvore, defina **Exato?** para **Não**.
+     Para ser notificado somente para ações na página definida pelo caminho, defina **Exato?** para **Sim**.
 
    * Para permitir a regra, defina **Regra** como **Permitir**. Se definida como **Negar**, a regra será negada, mas não removida, e poderá ser permitida posteriormente.
 

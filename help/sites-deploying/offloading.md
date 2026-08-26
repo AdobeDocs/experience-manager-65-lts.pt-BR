@@ -11,7 +11,7 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2393'
 ht-degree: 1%
 
 ---
@@ -208,7 +208,7 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 | Tópico de trabalho | PID do serviço | Descrição |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos gerados pelo administrador de eventos OSGi para oferecer compatibilidade com versões anteriores. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Use o Console da Web ou um nó `sling:OsgiConfig` para configurar as propriedade
 
 | Nome da propriedade no Console da Web | ID OSGi | Descrição |
 |---|---|---|
-| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço JobManager local processa. O valor padrão de &ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
+| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço JobManager local processa. O valor padrão de &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
 | Lista de bloqueios de tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço JobManager local não processa. |
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
@@ -289,7 +289,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Criação do agente reverso {#creating-the-reverse-agent}
 
-1. Crie um **Agente de Replicação Inversa** no autor. (Consulte a [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
+1. Crie um **Agente de Replicação Inversa** no autor. (Consulte a [documentação dos agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
 1. Crie o agente usando as seguintes propriedades:
 
    | Propriedade | Valor |
@@ -302,7 +302,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Criação do agente de caixa de saída {#creating-the-outbox-agent}
 
-1. Crie um **Agente de Replicação** na instância de trabalho. (Consulte a [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve ser `offloading_outbox`.
+1. Crie um **Agente de Replicação** na instância de trabalho. (Consulte a [documentação dos agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve ser `offloading_outbox`.
 1. Crie o agente usando as propriedades a seguir.
 
    | Propriedade | Valor |

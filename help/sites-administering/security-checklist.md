@@ -9,10 +9,11 @@ docset: aem65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 1d011ae238f213459c97e921740db10640935022
+exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2958'
-ht-degree: 1%
+source-wordcount: '3048'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +35,7 @@ Esta seção trata de várias etapas necessárias para garantir que sua instala�
 
 Para obter mais informações, consulte [Executando o AEM no Modo Pronto para Produção](/help/sites-administering/production-ready.md).
 
-### Ativar HTTPS para segurança da camada de transporte {#enable-https-for-transport-layer-security}
+### Habilitar HTTPS para segurança da camada de transporte {#enable-https-for-transport-layer-security}
 
 Habilitar a camada de transporte HTTPS em instâncias de autor e publicação é obrigatório para ter uma instância segura.
 
@@ -48,7 +49,7 @@ Verifique se você instalou os [Hotfixes de Segurança mais recentes fornecidos 
 
 ### Alterar senhas padrão para as contas de administrador do AEM e do console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do &lbrace;AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
+A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do {AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
 
 Essas contas incluem:
 
@@ -109,11 +110,11 @@ A Adobe recomenda definir páginas de manipulador de erros personalizadas, espec
 
 >[!NOTE]
 >
->Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=pt-BR) para obter mais detalhes.
+>Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) para obter mais detalhes.
 
 ### Lista de verificação de segurança completa do Dispatcher {#complete-dispatcher-security-checklist}
 
-O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda concluir a [lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR).
+O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda concluir a [lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -224,27 +225,27 @@ Para cada um dos seguintes serviços, as configurações especificadas devem ser
 
 * [Gerenciador de biblioteca HTML do Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * habilitar **Minify** (para remover caracteres CRLF e espaços em branco).
-   * habilite o **Gzip** (para permitir que os arquivos sejam compactados e acessados com uma solicitação).
-   * desabilitar **Depuração**
-   * desabilitar **Horário**
+  * habilitar **Minify** (para remover caracteres CRLF e espaços em branco).
+  * habilite o **Gzip** (para permitir que os arquivos sejam compactados e acessados com uma solicitação).
+  * desabilitar **Depuração**
+  * desabilitar **Horário**
 
 * [Filtro de Depuração WCM CQ de Dias](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * desmarcar **Habilitar**
+  * desmarcar **Habilitar**
 
 * [Filtro WCM CQ de Dia](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * somente em publicação, defina **Modo WCM** como &quot;desabilitado&quot;
+  * somente em publicação, defina **Modo WCM** como &quot;desabilitado&quot;
 
 * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * desabilitar **Gerar Informações de Depuração**
+  * desabilitar **Gerar Informações de Depuração**
 
 * [Manipulador de script JSP do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * desabilitar **Gerar Informações de Depuração**
-   * desabilitar **Conteúdo Mapeado**
+  * desabilitar **Gerar Informações de Depuração**
+  * desabilitar **Conteúdo Mapeado**
 
 Consulte [Configurações OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -265,9 +266,9 @@ Um ataque de negação de serviço (DoS) é uma tentativa de tornar um recurso d
 
   Por exemplo, `.../en.html` também pode ser solicitado como:
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   Todas as variações válidas (por exemplo, retornam uma resposta `200` e são configuradas para serem armazenadas em cache) são armazenadas em cache pelo Dispatcher, eventualmente resultando em um sistema de arquivos completo e nenhum serviço para mais solicitações.
 
@@ -323,7 +324,7 @@ Para ajudar a evitar o uso indevido de DoS, você pode fazer o seguinte:
 >
 >Essa mitigação deve ser executada somente em ambientes AEM que não estejam usando o Forms.
 
-Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença do **&ast;.form.&ast;** sequência de caracteres em consultas.
+Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença da cadeia de caracteres **&amp;ast;.form.&amp;ast;** em consultas.
 
 Para atenuar esse problema, você pode executar as seguintes etapas:
 
@@ -376,7 +377,7 @@ Nenhuma configuração deve ser executada para ativá-la, pois agora essa é a m
 
 Embora não seja recomendado, você pode desativá-la caso precise da implementação antiga para ter compatibilidade com versões anteriores de seus aplicativos existentes. Para fazer isso, você deve fazer o seguinte:
 
-1. Vá para o Console da Web e remova a entrada **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** da propriedade **requiredServicePids** no **Apache Jackrabbit Oak SecurityProvider**.
+1. Vá para o Console da Web e remova a entrada **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** da propriedade **requiredServicePids** no **Apache Jackrabbit Oak SecurityProvider**.
 
    Você também pode encontrar o Provedor de Segurança do Oak procurando o PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** nas configurações do OSGi.
 
