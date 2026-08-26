@@ -8,13 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a3108797-8085-4683-971f-509e7bfa06b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1594'
 ht-degree: 52%
 
 ---
-
 
 # Integração do AEM 6.5 com o Adobe Campaign Classic {#integrating-campaign-classic}
 
@@ -42,8 +42,8 @@ Este documento aborda detalhadamente cada uma dessas etapas.
 ## Pré-requisitos {#prerequisites}
 
 * Acesso de administrador ao Adobe Campaign Classic
-   * Para executar a integração, é necessário ter uma instância do Adobe Campaign Classic em funcionamento, incluindo um banco de dados configurado.
-   * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Classic, consulte a [documentação do Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=pt-BR), em particular, o Guia de Instalação e Configuração.
+  * Para executar a integração, é necessário ter uma instância do Adobe Campaign Classic em funcionamento, incluindo um banco de dados configurado.
+  * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Classic, consulte a [documentação do Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=pt-BR), em particular, o Guia de Instalação e Configuração.
 * Acesso de administrador ao AEM
 
 ## Instalar o pacote de integração do AEM no Campaign {#install-package}
@@ -144,7 +144,7 @@ O AEM usa [o operador já configurado no Campaign](#create-operator) para se com
 
 1. Uma nova janela e uma nova caixa de diálogo são abertas para editar a configuração. Forneça as informações necessárias.
 
-   * **Nome do usuário** - este é [o operador do pacote de integração do AEM com o Adobe Campaign criado na etapa anterior.](#create-operator) Por padrão, é `aemserver`.
+   * **Nome de usuário** - Este é [o operador do pacote de Integração do Adobe Campaign AEM criado na etapa anterior.](#create-operator) Por padrão, é `aemserver`.
    * **Senha** - esta é a senha do [operador do pacote de integração do AEM com o Adobe Campaign criado na etapa anterior.](#create-operator)
    * **Endpoint da API** - este é o URL da instância do Adobe Campaign.
 
@@ -241,12 +241,12 @@ Ao [instalar o pacote de **integração do AEM** no Campaign,](#install-package)
 1. Na guia **Geral** dessa conta, insira as informações de usuário definidas na etapa [Definir senha do usuário remoto de campanha](#set-campaign-remote-password).
 
    * **Servidor** - O endereço do servidor do autor do AEM
-      * O servidor do autor do AEM deve ser acessível através da instância do servidor do Adobe Campaign Classic.
-      * Certifique-se de que o endereço do servidor **não** termine em uma barra.
+     * O servidor do autor do AEM deve ser acessível através da instância do servidor do Adobe Campaign Classic.
+     * Certifique-se de que o endereço do servidor **não** termine em uma barra.
    * **Conta** - Por padrão, esse é o usuário `campaign-remote` definido no AEM na etapa [Definir senha do usuário remoto de campanha](#set-campaign-remote-password).
    * **Senha** - Esta senha é igual à do usuário `campaign-remote` definido no AEM na etapa [Definir senha do usuário remoto de campanha](#set-campaign-remote-password).
 
-1. Marque a caixa de seleção **Ativado**.
+1. Marque a caixa de seleção **Habilitado**.
 
 1. Clique em **Salvar**.
 
