@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 0%
@@ -145,4 +145,4 @@ Para definir o nome personalizado:
 >
 >Para o aplicativo de demonstração, o nome para exibição padrão é **Cidadão**. Para um aplicativo personalizado que você cria, o nome para exibição padrão é **Conta de Contexto do Sistema**.
 >
->**client_idleTimeout:** quando um usuário permanece inativo por um período específico, a sessão do AEM Forms Workspace expira. Para ativar o recurso, adicione uma entrada às Configurações globais &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Você pode especificar o valor 0 para desativar o tempo limite ocioso. O tempo é especificado em segundos.
+>**client_idleTimeout:** quando um usuário permanece inativo por um período específico, a sessão do AEM Forms Workspace expira. Para habilitar o recurso, adicione uma entrada às Configurações Globais &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Você pode especificar o valor 0 para desativar o tempo limite ocioso. O tempo é especificado em segundos.
