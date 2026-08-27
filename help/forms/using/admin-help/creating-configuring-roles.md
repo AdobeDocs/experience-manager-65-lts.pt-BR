@@ -10,7 +10,7 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 0%
@@ -79,7 +79,7 @@ As seguintes funções padrão adicionais podem ser incluídas, dependendo dos c
 
 **Administrador do AEM Forms Workspace:** pode exibir e modificar configurações na página Workspace no Console de Administração
 
-***observação &#x200B;**: o Flex Workspace está obsoleto para a versão do AEM Forms.*
+***observação **: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 **Usuário do Workspace:** pode fazer logon no aplicativo de usuário final do Workspace
 
