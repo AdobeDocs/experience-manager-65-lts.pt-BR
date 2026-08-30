@@ -8,14 +8,21 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
 # Analytics usando a estrutura do Cloud Service {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>O painel do Analytics para AEM Forms está obsoleto. Não é mais possível exibir relatórios de análise no AEM Forms. Para exibir os dados de análise de formulários, use a interface do usuário do Adobe Analytics.
+>
+>Além disso, a API do [Adobe Analytics 1.4 chegou ao fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, as configurações do Adobe Analytics que usam credenciais de usuário (nome de usuário e senha) não são mais compatíveis.
 
 O AEM Forms integra-se ao Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
 
