@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 1%
+source-wordcount: '1582'
+ht-degree: 6%
 
 ---
 
@@ -45,9 +45,9 @@ A conta do Adobe Analytics deve:
 
 Antes de continuar, verifique se suas credenciais permitem fazer logon no Adobe Analytics. Por uma das seguintes formas:
 
-* [Entrar no Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
+* [Entrar na Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
-* [Entrar no Adobe Analytics](https://sc.omniture.com/login/)
+* [Logon no Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuração do AEM para usar seus data centers da Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -81,6 +81,10 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 1. Clique em Salvar.
 
 ## Configuração da conexão com o Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
+
+>[!CAUTION]
+>
+>A API do [Adobe Analytics 1.4 chegou ao fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, as configurações do Adobe Analytics que usam credenciais de usuário (nome de usuário e senha) não são mais compatíveis.
 
 >[!CAUTION]
 >
@@ -150,21 +154,21 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
 
 * **Servidor de Acompanhamento**
 
-   * contém o URL usado para enviar chamadas do Adobe Analytics
+  * contém o URL usado para enviar chamadas do Adobe Analytics
 
-      * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
-      * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
-      * `sc.omtrdc.net` - nome de domínio
+    * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
+    * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
+    * `sc.omtrdc.net` - nome de domínio
 
 * **Servidor de Rastreamento Seguro**
 
-   * Tem os mesmos segmentos que o servidor de rastreamento
-   * Usado para enviar dados de páginas seguras (`https://`)
+  * Tem os mesmos segmentos que o servidor de rastreamento
+  * Usado para enviar dados de páginas seguras (`https://`)
 
 * **Namespace do visitante**
 
-   * O namespace determina a primeira parte do URL de rastreamento.
-   * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
+  * O namespace determina a primeira parte do URL de rastreamento.
+  * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
 
 ## Associar uma página a uma estrutura do Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 

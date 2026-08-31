@@ -8,14 +8,19 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 5%
+source-wordcount: '673'
+ht-degree: 4%
 
 ---
 
 # Classificações do Adobe{#adobe-classifications}
+
+[!BADGE Descontinuado]{type=negative tooltip="Este recurso chegou ao fim da vida útil"}
+
+<div class="preview"> As Classificações do Adobe exigem uma configuração do Adobe Analytics que use credenciais de usuário (nome de usuário e senha), para a qual não há mais suporte agora que a API do <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 chegou ao fim da vida útil</a>. Como resultado, as Classificações do Adobe se tornaram obsoletas. </div>
 
 As Classificações do Adobe exportam os dados de classificação para [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de forma agendada. O exportador é uma implementação de um **com.adobe.cq.scheduled.exporter.Exporter**.
 
@@ -84,13 +89,13 @@ Na implementação padrão SAINTDefaultTransformer, os recursos secundários da 
 
 * classificação de id `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Produto = Meu nome de produto (String)
-      * Preço = 120,90 (String)
-      * Tamanho = M (String)
-      * Cor = preto (String)
-      * Cor^Código = 101 (Cadeia de caracteres)
+    * Produto = Meu nome de produto (String)
+    * Preço = 120,90 (String)
+    * Tamanho = M (String)
+    * Cor = preto (String)
+    * Cor^Código = 101 (Cadeia de caracteres)
 
 **Cabeçalho e Gravação do SAINT:**
 
