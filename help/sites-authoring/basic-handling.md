@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 3c506169fb7857e8bbcf20881bae3ac22eeb5fd4
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 42%
+source-wordcount: '3057'
+ht-degree: 41%
 
 ---
 
@@ -43,11 +43,11 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 >[!NOTE]
 >
->Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console **Sites**.
+>Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.**
 >
 >Para começar, clique em **Sites**.
 
-### Navegação do produto   {#product-navigation}
+### Navegação do produto {#product-navigation}
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Clique aqui para obter uma boa visão geral do manuseio básico do AEM.
 
@@ -71,12 +71,12 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)** - Representado por uma bússola  
+* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)** - Representado por uma bússola
 * **[Ferramentas](/help/sites-authoring/basic-handling.md#tools-panel)**: representadas por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação   {#navigation-panel}
+### Painel Navegação {#navigation-panel}
 
 O painel Navegação fornece acesso aos consoles do AEM:
 
@@ -143,7 +143,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://business.adobe.com/br/)
+* [Soluções](https://business.adobe.com/)
 
   ![Soluções](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -213,7 +213,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Ir para o conteúdo principal](assets/bh-30.png)
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Há vários recursos de ajuda disponíveis:
 
@@ -241,11 +241,11 @@ Há vários recursos de ajuda disponíveis:
 
   No console **Ferramentas**, você também pode acessar os **Recursos** externos:
 
-   * **Documentação**
-Exibir a documentação do Gerenciamento de experiência na Web
+  * **Documentação**
+    Exibir a documentação do Gerenciamento de experiência na Web
 
-   * **Recursos do desenvolvedor**
-Recursos e downloads do desenvolvedor
+  * **Recursos do desenvolvedor**
+    Recursos e downloads do desenvolvedor
 
   >[!NOTE]
   >
@@ -268,7 +268,7 @@ As ações disponíveis na barra de ferramentas mudam para refletir as ações q
 
 A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![Barra de ferramentas de Ações](assets/bh-12.png)
 
@@ -299,7 +299,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface como miniaturas em nenhuma das exibições. Se você for um administrador, poderá usar sobreposições para configurar o AEM Assets e exibir representações originais como miniaturas.
 
-### Seleção de recursos   {#selecting-resources}
+### Seleção de recursos {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -396,29 +396,31 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
 * É possível navegar para cima e para baixo na árvore tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
-   * O nome e a divisa do recurso são realçados quando tocados ou clicados.
+  * O nome e a divisa do recurso são realçados quando tocados ou clicados.
 
-     ![Exibição de coluna](assets/bh-17.png)
+    ![Exibição de coluna](assets/bh-17.png)
 
-   * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
-   * Se você clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
+  * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
+  * Se você clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
 
-   * Quando selecionada, uma marca de seleção é sobreposta à miniatura e o nome do recurso também é realçado.
-   * Os detalhes do recurso selecionado são mostrados na coluna final.
-   * A barra de ferramentas de ações ficará disponível.
+  * Quando selecionada, uma marca de seleção é sobreposta à miniatura e o nome do recurso também é realçado.
+  * Os detalhes do recurso selecionado são mostrados na coluna final.
+  * A barra de ferramentas de ações ficará disponível.
 
-     ![Exibição de coluna](assets/bh-18.png)
+    ![Exibição de coluna](assets/bh-18.png)
 
   Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 
-   * Título da página
-   * Nome da página (parte do URL da página)
-   * Modelo no qual a página se baseia
-   * Detalhes da modificação
-   * Idioma da página
-   * Detalhes da publicação
+  * Título da página
+  * Nome da página (parte do URL da página)
+  * Modelo no qual a página se baseia
+  * Detalhes da modificação
+  * Idioma da página
+  * Detalhes da publicação
+  * [Hora de ligar/desligar da página](/help/sites-authoring/editing-page-properties.md#on-off-time) (se definido)
+
 
 ### Exibição de cartão {#card-view}
 
@@ -426,13 +428,13 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
 * A exibição de cartão mostra cartões de informação para cada item no nível atual. Eles fornecem informações como:
 
-   * Uma representação visual do conteúdo da página.
-   * O título da página.
-   * Datas importantes (como a última edição e publicação).
-   * A página está bloqueada, oculta ou faz parte de uma live copy.
-   * Se apropriado, quando é necessário tomar medidas como parte de um fluxo de trabalho.
+  * Uma representação visual do conteúdo da página.
+  * O título da página.
+  * Datas importantes (como a última edição e publicação).
+  * A página está bloqueada, oculta ou faz parte de uma live copy.
+  * Se apropriado, quando é necessário tomar medidas como parte de um fluxo de trabalho.
 
-      * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-authoring/inbox.md).
+    * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-authoring/inbox.md).
 
 * [Ações rápidas](#quick-actions) também estão disponíveis nessa visualização, como recursos de seleção e ações comuns, como “Editar”.
 
@@ -451,26 +453,31 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
   ![Exibição de Lista - Selecionar Tudo](assets/bh-20.png)
 
-   * Quando todos os itens da lista forem selecionados, essa caixa de seleção aparecerá marcada.
+  * Quando todos os itens da lista forem selecionados, essa caixa de seleção aparecerá marcada.
 
-      * Para desmarcar tudo, clique na caixa de seleção.
+    * Para desmarcar tudo, clique na caixa de seleção.
 
-   * Quando apenas alguns itens são selecionados, ela aparece com um sinal de menos.
+  * Quando apenas alguns itens são selecionados, ela aparece com um sinal de menos.
 
-      * Para selecionar tudo, clique na caixa de seleção.
-      * Para desmarcar tudo, clique novamente na caixa de seleção.
+    * Para selecionar tudo, clique na caixa de seleção.
+    * Para desmarcar tudo, clique novamente na caixa de seleção.
 
 * Selecione as colunas a serem mostradas usando a opção **Configurações de Exibição**, localizada abaixo do botão Exibições. As seguintes colunas estão disponíveis para exibição:
 
-   * **Nome**: o nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não é alterado independentemente do idioma
-   * **Modificado**: a última data de modificação e último usuário que modificou
-   * **Publicado**: o status da publicação
-   * **Modelo** - Modelo no qual a página se baseia
-   * **Fluxo de trabalho**: o fluxo de trabalho atualmente aplicado à página. Mais informações estão disponíveis ao passar o mouse ou abrir a Linha do tempo.
+  * **Nome**: o nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não é alterado independentemente do idioma
+  * **Modificado**: a última data de modificação e último usuário que modificou
+    * A entrada da coluna terá um ícone de aviso se a página tiver sido atualizada desde a última publicação.
+    * ![Modificado desde a última publicação](assets/modified.png)
+  * **Publicado**: o status da publicação
+    * A entrada da coluna será marcada com um ícone de relógio se a página tiver [horas de ativação/desativação](/help/sites-authoring/editing-page-properties.md#on-time) definidas.
+    * Passe o mouse sobre o ícone para obter detalhes.
+    * ![Tempo de ativação/desativação definido](assets/on-off-time.png)
+  * **Modelo** - Modelo no qual a página se baseia
+  * **Fluxo de trabalho**: o fluxo de trabalho atualmente aplicado à página. Mais informações estão disponíveis ao passar o mouse ou abrir a Linha do tempo.
 
-   * **Análise de página**
-   * **Visitantes únicos**
-   * **Tempo na página**
+  * **Análise de página**
+  * **Visitantes únicos**
+  * **Tempo na página**
 
   ![Configurações de Exibição - Configurar Colunas](assets/bh-21.png)
 
@@ -530,25 +537,27 @@ A coluna de linha do tempo permite:
 
 * [Exibir vários eventos](#timelineviewevents) relacionados a um item selecionado.
 
-   * Os tipos de eventos podem ser selecionados na lista suspensa:
+  * Os tipos de eventos podem ser selecionados na lista suspensa:
 
-      * [Comentários](#timelineaddingandviewingcomments)
-      * Anotações
-      * Atividades
-      * [Lançamentos](/help/sites-authoring/launches.md)
-      * [Versões](/help/sites-authoring/working-with-page-versions.md)
-      * [Fluxos de trabalhos](/help/sites-authoring/workflows-applying.md)
+    * [Comentários](#timelineaddingandviewingcomments)
+    * Anotações
+    * Atividades, incluindo edições e publicação
+      * Se a página tiver [horas de ativação/desativação](/help/sites-authoring/editing-page-properties.md#on-off-time) definidas e a hora atual estiver fora da janela de horas de ativação/desativação, uma atividade de Página inválida poderá ser exibida.
+      * Isso indica apenas que a página está fora de sua janela de validade, não necessariamente que a publicação da página foi desfeita.
+    * [Lançamentos](/help/sites-authoring/launches.md)
+    * [Versões](/help/sites-authoring/working-with-page-versions.md)
+    * [Fluxos de trabalhos](/help/sites-authoring/workflows-applying.md)
 
-         * exceto para [fluxos de trabalho transitórios](/help/sites-developing/workflows.md#transient-workflows), pois nenhuma informação de histórico é salva para eles
+      * exceto para [fluxos de trabalho transitórios](/help/sites-developing/workflows.md#transient-workflows), pois nenhuma informação de histórico é salva para eles
 
-      * e Mostrar tudo
+    * e Mostrar tudo
 
 * [Adicionar/exibir comentários](#timelineaddingandviewingcomments) sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Digitar um comentário e Retornar registra o comentário. É exibido quando **Comentários** ou **Mostrar tudo** é selecionado.
 
 * Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites, é possível fazer o seguinte:
 
-   * [Salve uma versão](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [Iniciar um fluxo de trabalho](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [Salve uma versão](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
+  * [Iniciar um fluxo de trabalho](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Essas opções são acessíveis por meio da divisa ao lado do campo **Comentário**.
 
@@ -564,8 +573,8 @@ Essas opções são acessíveis por meio da divisa ao lado do campo **Comentári
 * [Cópias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referência de conteúdo:
 
-   * Links diretos de outras páginas para a página selecionada
-   * Conteúdo emprestado de, concedido a ou ambos à página selecionada pelo componente Referência
+  * Links diretos de outras páginas para a página selecionada
+  * Conteúdo emprestado de, concedido a ou ambos à página selecionada pelo componente Referência
 
 ![bh-28](assets/bh-28.png)
 
