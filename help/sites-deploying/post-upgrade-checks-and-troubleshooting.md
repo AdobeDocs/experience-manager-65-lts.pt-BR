@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Após a [Atualização no Local](/help/sites-deploying/in-place-upgrade.md), as 
 * [Habilitar agentes de replicação](#enable-replication-agents)
 
 * [Habilitar os trabalhos agendados personalizados](#enable-custom-scheduled-jobs)
+
+* [Reinstalar ou verificar complementos](#reinstall-or-verify-add-ons)
 
 * [Executar plano de teste](#execute-test-plan)
 
@@ -92,6 +94,19 @@ Depois que o ambiente de publicação for totalmente atualizado e validado, ativ
 ### Habilitar os trabalhos agendados personalizados {#enable-custom-scheduled-jobs}
 
 Todos os trabalhos agendados como parte da base de código podem ser ativados neste ponto.
+
+### Reinstalar ou verificar complementos {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>Tecnicamente, a instalação de um Service Pack do AEM 6.5 LTS é uma [atualização no local](/help/sites-deploying/in-place-upgrade.md) completa (o jar de início rápido do AEM é totalmente substituído antes da aplicação da atualização). Como resultado, as tarefas de limpeza padrão pré-atualização executadas durante qualquer atualização no local agora também são executadas ao aplicar um Service Pack.
+
+Uma dessas tarefas remove as pastas `install` obsoletas (`install` e as variantes de modo de execução, como `install.author` ou `install.publish`) encontradas em qualquer lugar em `/libs`, para evitar que pacotes e configurações obsoletos sejam reinstalados. Se sua solução depende de um complemento que mantém seus próprios pacotes ou configurações OSGi em uma pasta do `install` no `/libs`, essa pasta pode ser removida como parte da aplicação de um Service Pack, mesmo que isso não tenha sido observado em atualizações do Service Pack no passado.
+
+Após aplicar um Service Pack:
+
+* Verifique se todos os complementos instalados anteriormente ainda estão presentes e se seus pacotes e configurações OSGi estão ativos. Verifique em `/system/console/bundles` se há pacotes que não foram iniciados.
+* Se o conteúdo de um complemento estiver ausente, reinstale o pacote de conteúdo do complemento para restaurá-lo.
 
 ### Executar plano de teste {#execute-test-plan}
 
