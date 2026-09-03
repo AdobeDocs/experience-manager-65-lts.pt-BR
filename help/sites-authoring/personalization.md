@@ -5,18 +5,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 36%
+source-wordcount: '570'
+ht-degree: 28%
 
 ---
+
 
 # Personalização e direcionamento de conteúdo {#personalization}
 
 ## Personalização e direcionamento de conteúdo {#personalization-and-content-targeting}
 
 O AEM fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas.
+
+>[!NOTE]
+>
+>O Modo de direcionamento e o componente clássico de Direcionamento do AEM usam a integração do AEM Target com base no ContextHub. As páginas que dependem exclusivamente do AEP Web SDK não renderizarão o componente clássico de Direcionamento do AEM. [Consulte a documentação do desenvolvedor para obter detalhes.](/help/sites-developing/target.md)
 
 ## Modo de direcionamento {#targeting-mode}
 
@@ -30,7 +35,7 @@ Por exemplo, o catálogo de produtos We.Retail inclui teasers que chamam a aten�
 
 As atividades também identificam o [mecanismo de direcionamento](/help/sites-authoring/personalization.md#targeting-engine) que suas páginas usam.
 
-Use o [console de Atividades](/help/sites-authoring/activitylib.md) para criar e gerenciar as atividades das suas marcas. Você também pode criar atividades ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
+Use o [console de Atividades](/help/sites-authoring/activitylib.md) para criar e gerenciar as atividades das suas marcas. Você também pode criar atividades ao [criar conteúdo direcionado.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Experiências {#experiences}
 
@@ -48,7 +53,7 @@ Uma oferta é um conteúdo que aparece em um local em uma página para uma exper
 
 Por exemplo, a página Feminino do site de amostra We.Retail pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Feminino acima de 30 e para a experiência Feminino abaixo de 30.
 
-Use o [Console de ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
+Use o [Console de ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Mecanismo de direcionamento {#targeting-engine}
 
@@ -63,6 +68,6 @@ O AEM fornece um mecanismo de direcionamento integrado que processa solicitaçõ
 O mecanismo de direcionamento do Adobe Target faz com que as informações coletadas das visitas às páginas sejam rastreadas no Adobe Target.
 
 * Ao usar esse mecanismo de direcionamento, você utilizará os segmentos importados do Adobe Target para definir os públicos-alvo das suas experiências.
-* As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* As atividades que usam o mecanismo Adobe Target estão [sincronizadas com o Destino.](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
 
-Você pode usar esse mecanismo quando tiver [integrado com o Adobe Target](/help/sites-administering/opt-in.md).
+Você pode usar este mecanismo quando tiver o [integrado ao Adobe Target.](/help/sites-administering/opt-in.md)
