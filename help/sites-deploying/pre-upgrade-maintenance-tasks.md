@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 0%
+source-wordcount: '1332'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +24,7 @@ Antes de iniciar a atualização, é importante seguir estas tarefas de manuten�
 * [Definições de índice](#index-definitions)
 * [Garantir espaço suficiente em disco](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [Fazer backup completo do AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Verificar Backups de Pré-Atualização Obsoletos](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [Gerar o arquivo quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configurar a limpeza do fluxo de trabalho e do log de auditoria](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Instalar, Configurar e Executar as Tarefas de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -46,6 +47,18 @@ Ao executar a atualização, verifique se há espaço em disco suficiente.
 ## Fazer backup completo do AEM {#fully-back-up-aem}
 
 O backup do AEM deve ser concluído antes do início da atualização. Faça backup do repositório, da instalação do aplicativo, do armazenamento de dados e das instâncias Mongo, se aplicável. Para obter mais informações sobre como fazer backup e restaurar uma instância do AEM, consulte [Backup e Restauração](/help/sites-administering/backup-and-restore.md).
+
+## Verificar Backups de Pré-Atualização Obsoletos {#check-stale-pre-upgrade-backups}
+
+Antes de uma atualização, o AEM faz backup de determinados caminhos (como `/etc/tags`) em `/var/upgrade/PreUpgradeBackup/<timestamp>` e os restaura após a conclusão da atualização. Cada nó de backup tem uma propriedade de status de mesclagem: `INIT` significa que o backup foi criado, mas nunca foi mesclado novamente, enquanto `COMPLETED` significa que a mesclagem foi concluída com êxito.
+
+Se um backup de uma atualização anterior (por exemplo, de 6.4 para 6.5) for deixado no status `INIT`, a atualização mais recente (de 6.5 para 6.5 LTS) restaurará esse backup antigo e não mesclado. Isso pode reintroduzir silenciosamente conteúdo obsoleto ou desatualizado que não corresponde mais ao estado atual do repositório, resultando em problemas inesperados após a conclusão da atualização.
+
+Para evitar isso, antes de iniciar a atualização:
+
+1. Usando o CRXDE Lite (`/crx/de/index.jsp`), verifique a instância de origem de nós pré-existentes em `/var/upgrade/PreUpgradeBackup/`.
+2. Inspecione a propriedade do status de mesclagem de cada nó de backup encontrado.
+3. Se um nó for encontrado no status `INIT` de uma atualização anterior, revise seu conteúdo e limpe-o — exclua-o ou mescle-o explicitamente — antes de continuar. Isso garante que a atualização crie um backup novo e preciso, em vez de restaurar silenciosamente dados obsoletos.
 
 ## Gerar o arquivo quickstart.properties {#generate-quickstart-properties}
 
@@ -95,7 +108,7 @@ A funcionalidade do bean gerenciado pode ser acessada usando o [Console JMX](/he
 
 Você pode acessar os MBeans ao:
 
-1. Indo para o Console JMX em *https://serveraddress:serverport/system/console/jmx*
+1. Ir para o Console JMX em *https://serveraddress:serverport/system/console/jmx*
 1. Pesquise por **PreUpgradeTasks** e clique no resultado
 
 1. Selecione qualquer método na seção **Operações** e selecione **Chamar** na janela a seguir.
