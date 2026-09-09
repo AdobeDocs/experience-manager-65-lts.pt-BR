@@ -1,5 +1,5 @@
 ---
-title: Desenvolver o AEM Commerce
+title: Desenvolver AEM Commerce
 description: Saiba como gerar um projeto do AEM habilitado para comércio usando o arquétipo de projeto do AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local.
 topics: Commerce, Development
 feature: Commerce Integration Framework
@@ -11,14 +11,14 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 17%
+source-wordcount: '880'
+ht-degree: 25%
 
 ---
 
-# Desenvolver o AEM Commerce {#develop}
+# Desenvolver AEM Commerce {#develop}
 
-O desenvolvimento de projetos do AEM Commerce com base no Commerce integration framework (CIF) para AEM segue as mesmas regras e práticas recomendadas de outros Projetos AEM. Revise o seguinte primeiro:
+O desenvolvimento de projetos do AEM Commerce com base no Commerce integration framework (CIF) para AEM segue as mesmas regras e práticas recomendadas de outros projetos do AEM. Revise o seguinte primeiro:
 
 - [Guia do usuário para desenvolvimento no AEM](/help/sites-developing/getting-started.md)
 - [Conceitos principais do AEM](/help/sites-developing/the-basics.md)
@@ -27,13 +27,13 @@ O desenvolvimento de projetos do AEM Commerce com base no Commerce integration f
 
 ## Desenvolvimento local para o AEM Commerce {#local}
 
-Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos do CIF.
+Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos da CIF.
 
 >[!NOTE]
 >
->As instruções a seguir ajudam a configurar um ambiente de desenvolvimento do AEM local para o AEM Commerce usando o CIF com foco no AEM 6.5 (LTS). Se você estiver usando o AEM as a Cloud Service, consulte a documentação do [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>As instruções a seguir ajudam a configurar um ambiente de desenvolvimento do AEM local para o AEM Commerce usando o CIF com foco no AEM 6.5 (LTS). Se você estiver usando o AEM as a Cloud Service, consulte a documentação do [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
-O complemento AEM Commerce para o AEM, conhecido como complemento CIF, está disponível para desenvolvimento local e é fornecido como um pacote do AEM. Ele pode ser baixado do [Portal de Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) como um pacote de recursos.
+O complemento do AEM Commerce para o AEM, conhecido como complemento do CIF, está disponível para desenvolvimento local e é fornecido como um pacote do AEM. Ele pode ser baixado do [Portal de Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) como um pacote de recursos.
 
 ### Software necessário
 
@@ -164,4 +164,4 @@ Navegue até http://localhost:4502/system/console/configMgr e crie uma configura
 ## Recursos adicionais
 
 - [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
-- [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
+- [Loja de referência AEM Venia](https://github.com/adobe/aem-cif-guides-venia)
