@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
+source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
 workflow-type: tm+mt
-source-wordcount: '6705'
-ht-degree: 26%
+source-wordcount: '7575'
+ht-degree: 23%
 
 ---
 
@@ -301,9 +301,57 @@ O histórico de promoções de lançamentos agora exibe o texto localizado na Li
 
 
 
-<!--
 ### [!DNL Forms]{#forms-65-lts-sp3}
--->
+
+>[!NOTE]
+>
+> O AEM Forms 6.5 LTS Service Pack 3 (SP3) para implantações OSGi agora está disponível. Ele inclui correções de erros, melhorias de segurança e aprimoramentos. O **AEM Forms 6.5 LTS Service Pack 3 (SP3) para implantações JEE será lançado em uma data posterior.**
+
+#### Aprimoramentos {#forms-enhancements-65-lts-sp3}
+
+* FORMS-24360: adição de suporte ao PDF Generator (PDFG) para o Microsoft Office 2024.
+* FORMS-24949: adição do suporte ao Forms Builder Agent no AEM Forms 6.5 LTS. Isso faz o back-port das APIs HTTP do Forms Manager e das APIs HTTP da API de geração de formulários (GenAI) exigidas pelo agente.
+* FORMS-25180: adição do valor `daysUntilSigningDeadline` à interface do usuário do AEM Forms, para que os autores possam mostrar aos recipients quantos dias restam antes de um prazo de assinatura do Adobe Sign.
+* FORMS-25182: O PDF Generator (PDFG) agora oferece suporte a conversões de documentos multithread quando configurado com uma única conta de usuário.
+
+#### Problemas corrigidos {#forms-fixed-issues-65-lts-sp3}
+
+* FORMS-23726: Falha ao aplicar um esquema XML nas propriedades do Adaptive Forms devido a um conflito de biblioteca `xsom`. A seleção de esquema agora funciona.
+* FORMS-24296: O campo Anexo de Arquivo dos Componentes de Base aceitou tipos de arquivo não permitidos (por exemplo, `.xsd`) no momento do carregamento e os rejeitou somente no envio, ao contrário de outros tipos bloqueados. Os tipos não permitidos agora estão bloqueados no upload.
+* FORMS-24603: nas cartas do Gerenciamento de correspondência, os fragmentos de texto que carregavam uma condição perderam as quebras de linha quando salvos como um rascunho. Os rascunhos agora mantêm as quebras de linha originais.
+* FORMS-24783: os anexos de arquivo foram removidos da etapa `assignTask` nos fluxos de trabalho do Forms baseados na iniciativa Open Services Gateway (OSGi). Os anexos agora são preservados por meio da atribuição de tarefas.
+* FORMS-24877: o ícone de calendário do Seletor de datas não expunha nenhum rótulo acessível quando um padrão de exibição era aplicado, portanto, o leitor de tela do NVDA anunciava apenas &quot;clicável&quot;. O ícone agora fornece um rótulo descritivo.
+* FORMS-24913: os fluxos de trabalho do AEM Forms foram interrompidos após a etapa do Adobe Sign porque o status de assinatura nunca foi retornado. Os fluxos de trabalho agora continuam após a conclusão da assinatura.
+* FORMS-25033: o componente Assinatura Escrita foi ignorado na ordem das guias do teclado, criando uma barreira de acessibilidade para usuários somente de teclado. A navegação por guias agora atinge o campo.
+* FORMS-25045: as traduções do chinês tradicional (Hong Kong) pararam de ser renderizadas após uma atualização, portanto, os formulários voltaram para o idioma padrão. O texto localizado agora é renderizado corretamente.
+* FORMS-25170: a chamada `addInstance()` não exibia painéis adicionados dinamicamente quando a contagem de instâncias inicial era 0. Os painéis adicionados agora aparecem imediatamente.
+* FORMS-25225: a revalidação do lado do servidor removeu traduções de campo que ficavam fora dos fragmentos no Adaptive Forms, revertendo rótulos para a linguagem base. Essas traduções foram mantidas.
+* FORMS-25233: Em implantações da iniciativa Open Services Gateway (OSGi), o serviço Assembler compilou um XDP mestre com seu fragmento imediato, mas não resolveu referências de fragmento aninhado, como cabeçalhos, rodapés e subformulários reutilizáveis, portanto, elas estavam ausentes da saída montada. Os fragmentos aninhados agora são resolvidos.
+* FORMS-25289: o serviço de renderização do Forms retornou saídas diferentes para a mesma entrada nos service packs, afetando as correspondências do Gerenciamento de correspondências. A saída da renderização agora é consistente.
+* FORMS-25290: as letras do Gerenciamento de correspondência salvas perderam espaços e mostravam um &quot;x&quot; perdido em alguns lugares quando reabertas. O conteúdo da carta salva agora permanece intacto.
+* FORMS-25346: Após uma atualização de service pack, as letras de Comunicações interativas (IC) congelam em um ponteiro de carregamento e as letras que carregaram perderam espaço na pré-visualização. O carregamento e o espaçamento agora funcionam corretamente.
+* FORMS-25431: o assistente Criar fragmento de formulário enviou uma solicitação de rede em cada pressionamento de tecla no campo de título. As chamadas redundantes foram removidas.
+* FORMS-25645: falha ao criar um fragmento de formulário adaptável com base em componentes principais de um esquema JSON carregado em linha com &quot;O modelo de formulário ALC-FMG-700-009 inválido foi especificado&quot;. Os esquemas JSON em linha agora são aceitos.
+* FORMS-25646: um fragmento de formulário adaptável baseado em Componentes principais criado a partir de um esquema JSON mostrou um painel Fontes de dados vazio no editor. O painel agora lista as fontes de dados do esquema.
+* FORMS-25674: A interface do usuário do Agente de Comunicações Interativas (IC) é aberta para uma página em branco, de modo que os agentes não podem exibir o conteúdo do IC. A interface do usuário do Agente agora é renderizada.
+* FORMS-25686: a alternância da opção de tipo de esquema no assistente Criar fragmento de formulário adaptável não limpou o estado da opção anterior, produzindo uma incompatibilidade de esquema. O assistente agora redefine a opção inativa.
+* FORMS-25757: a aplicação de um tema não atualizou a biblioteca base do cliente, portanto, as alterações de tema pareciam não ter efeito. Os temas agora atualizam a biblioteca base do cliente.
+* FORMS-25825: o menu de hambúrguer móvel não respondeu a toques, deixando a navegação inutilizável em dispositivos móveis. O menu agora é aberto conforme esperado.
+* FORMS-26333: a ação Publicar desapareceu depois que um formulário teve a publicação desfeita, o que bloqueou a republicação. Publicar agora está disponível após desfazer a publicação.
+* FORMS-26763: no Designer, a formatação em negrito nos hiperlinks dentro de um objeto de texto estático era perdida após qualquer edição no texto. A formatação em negrito agora sobrevive às edições.
+* FORMS-26817: Clicar em Redefinir em um Formulário adaptável limpou a imagem configurada pelo autor no componente de Imagem e deixou uma imagem corrompida, enquanto outros campos são redefinidos corretamente. Redefinir agora mantém a imagem configurada.
+* FORMS-26852: Na interface do usuário do Agente, um campo de data/hora exibia a data um dia antes do valor armazenado. O campo agora mostra a data correta.
+
+#### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
+
+Nenhum problema conhecido foi relatado para esta versão.
+
+#### Correções de segurança {#forms-security-fixes-65-lts-sp3}
+
+Esta versão soluciona vulnerabilidades de segurança no AEM Forms, incluindo várias correções de criação de script entre sites (XSS), uma correção de falsificação de solicitação do lado do servidor (SSRF), uma correção de entidade externa XML (XXE) e atualizações para bibliotecas de terceiros.
+
+<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
+
 
 
 
@@ -396,7 +444,6 @@ Os projetos de tradução agora mantêm contagens de status precisas à medida q
 * A caixa de diálogo da variável de fluxo de trabalho agora exibe os controles corretos para as variáveis Modelo de dados de formulário, JSON, XML e Documento. Os autores não veem mais a marcação de HTML bruta quando criam essas variáveis não primitivas. (GRANITE-67915)
 
 
-
 ## Sobre [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 A plataforma do [!DNL Adobe Experience Manager] 6.5 LTS baseia-se nas versões atualizadas da estrutura baseada em OSGi (Apache Sling e Apache Felix) e do repositório de conteúdo Java™: Apache Jackrabbit Oak 1.68.x.
@@ -442,7 +489,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -670,5 +717,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
