@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
+source-git-commit: 3a17318df3ad11c44b87145011bb3337d1fe9ef9
 workflow-type: tm+mt
-source-wordcount: '7575'
-ht-degree: 23%
-
+source-wordcount: '7277'
+ht-degree: 22%
 ---
-
 
 # Notas de versão atuais do Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
 
@@ -489,7 +487,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -619,30 +617,6 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 * Em implantações do Forms JEE LTS Service Pack 2 em execução no WebSphere® Liberty Profile, a funcionalidade de email falha. Ao tentar usar recursos de email, o servidor registra um erro: `Could not convert socket to TLS`. (FORMS-24692)
 * No Forms JEE LTS em execução no JBoss®, a funcionalidade relacionada ao email falha. Ao tentar usar recursos de email, o servidor registra um erro: `Error IMAPProvider not a subtype`. Para resolver esse problema, instale o hotfix de [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear). (FORMS-24892)
 
-### Corrupção do repositório durante a compactação online após a compactação offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
-
-Os usuários podem enfrentar corrupção do repositório durante a compactação online se a compactação offline tiver sido executada anteriormente no repositório JCR. Um `SegmentNotFoundException` (SNFE) pode ocorrer neste cenário e pode levar à corrupção do repositório.
-
-Para resolver o problema, instale o Hotfix de [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Como o hotfix inclui um pacote de baixo nível `oak-segment-tar`, a instância é reiniciada após a instalação.
-
-Planeje o tempo de inatividade da instância ao aplicá-la. Para compactação offline, use o [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) correspondente, também disponível na Distribuição de Software.
-
->[!NOTE]
->
-> * Para qualquer operação `oak-run`, use o [`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
->
-> * Inicie o AEM definindo a propriedade do sistema `oak.compaction.legacy=true`.
-
-### Pacote `com.adobe.granite.apicontroller` ausente no AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
-
-O pacote `com.adobe.granite.apicontroller` está ausente no AEM 6.5 LTS SP2. Esse pacote controla como os pacotes OSGi são resolvidos e pode impedir que os pacotes sejam resolvidos para outros pacotes, o que é útil para limitar as APIs expostas.
-
-Para usar esta funcionalidade, instale o hotfix de [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip).
-
->[!NOTE]
->
-> Para garantir que a configuração padrão do `com.adobe.granite.apicontroller` não introduza restrições de resolução não intencionais que afetem implementações personalizadas existentes, verifique o status do pacote de todos os pacotes instalados após a instalação do hotfix.
-
 ### Comentários JSON não são mais compatíveis com Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
 Esse problema afeta os desenvolvedores e administradores de pacotes OSGi que implantam pacotes que usam `Sling-Initial-Content` com arquivos JSON.
@@ -717,5 +691,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
