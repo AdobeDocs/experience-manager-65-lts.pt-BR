@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ba0a378-0b52-40bd-8dab-32490594558e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
-
+source-wordcount: '419'
+ht-degree: 5%
 ---
-
 # Configurar sua página para edição em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [A edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
@@ -61,7 +60,7 @@ Campos são habilitados no componente de página (*não* no modelo):
 
    >[!NOTE]
    >
-   >Este exemplo presume que os Componentes principais foram instalados na instância, que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
+   >Este exemplo presume que os Componentes principais foram instalados na instância, que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [documentação dos Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) para obter mais informações.
 
 1. Navegue até o campo obrigatório dentro da definição `cq:dialog`.
 1. Defina a seguinte propriedade no nó do campo:

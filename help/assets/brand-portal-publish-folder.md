@@ -9,13 +9,12 @@ docset: aem65
 feature: Brand Portal
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b67df215-6ef9-461a-bfb8-f5b5ece8451b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '568'
 ht-degree: 34%
-
 ---
-
 # Publicar pastas no Brand Portal{#publish-folders-to-brand-portal}
 
 Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos e pastas na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve integrar o AEM Assets ao Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).

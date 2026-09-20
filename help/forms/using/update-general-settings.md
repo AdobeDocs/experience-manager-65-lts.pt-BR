@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 735e4c4a-6580-4698-a1bf-75c4b1e47b5b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 1%
-
 ---
-
 # Atualização de configurações gerais{#updating-general-settings}
 
 As configurações gerais do aplicativo AEM Forms permitem especificar configurações como busca de anexos, modo offline, tela de aterrissagem, categoria padrão e frequência de salvamento automático.
@@ -49,9 +48,9 @@ Você pode fazer as seguintes alterações nas configurações do seu aplicativo
 * **Tela de aterrissagem**: para definir o local de início ([Tela inicial](../../forms/using/home-screen.md)) do aplicativo.
 Opções disponíveis:
 
-   * Forms
-   * Tarefas
-   * Favoritos
+  * Forms
+  * Tarefas
+  * Favoritos
 
 * **Categoria padrão**: permite que você selecione a categoria de formulários a serem exibidos na tela inicial. Ao selecionar Tudo, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. Os Forms estão disponíveis no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
 

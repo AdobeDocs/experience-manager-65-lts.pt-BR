@@ -5,13 +5,12 @@ contentOwner: khsingh
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Document Security
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 97b93a5f-cea7-4d79-8ee1-c6a94b7a6983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '599'
 ht-degree: 0%
-
 ---
-
 # Instalação e configuração do servidor de segurança de documentos {#installing-and-configuring-the-document-security-server}
 
 Use a segurança de documentos para distribuir com segurança quaisquer informações salvas em um formato compatível. Somente usuários autorizados podem acessar documentos protegidos.
@@ -45,13 +44,13 @@ Execute as seguintes etapas para instalar e configurar o AEM Forms no JEE:
 1. (Somente instalações que não sejam de Tecla na Mão) Leia o [Preparando-se para instalar o AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br) ou o [Preparando-se para instalar o cluster do AEM Forms server](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_br) e prepare seu ambiente para instalar e configurar o AEM Forms no JEE.
 1. Dependendo do ambiente e do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções para concluir a instalação
 
-   * [Instalando e implantando o AEM Forms no JEE usando JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_br)
-   * [Instalando e implantando o AEM Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_br)
-   * [Instalando e implantando o AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_br)
-   * [Instalando e implantando o AEM Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_br)
-   * [Configurando o AEM Forms no JEE no cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_br)
-   * [Configurando o AEM Forms no JEE no cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_br)
-   * [Configurando o AEM Forms no JEE no cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_br)
+   * [Instalação e implantação do AEM Forms no JEE usando o JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_br)
+   * [Instalação e implantação do AEM Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_br)
+   * [Instalação e implantação do AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_br)
+   * [Instalação e implantação do AEM Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_br)
+   * [Configuração do AEM Forms no JEE no cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_br)
+   * [Configuração do AEM Forms no JEE no cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_br)
+   * [Configuração do AEM Forms no JEE no cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_br)
 
    >[!NOTE]
    >

@@ -9,13 +9,12 @@ docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6653649a-5076-48e3-a7ed-5b74d4d2e8e1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 0%
-
+source-wordcount: '1253'
+ht-degree: 2%
 ---
-
 # Ofertas de segurança de documentos{#document-security-offerings}
 
 A segurança de documentos do Adobe Experience Manager Forms garante que somente usuários autorizados possam usar seus documentos. Com a segurança de documentos, você pode distribuir com segurança qualquer informação que tenha sido salva em um formato compatível. Os formatos de arquivo compatíveis incluem Adobe Portable Document Format (PDF) e arquivos do Microsoft® Word, Excel e PowerPoint.

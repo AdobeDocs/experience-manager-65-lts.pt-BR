@@ -8,13 +8,12 @@ content-type: reference
 feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3c207bfd-5d40-4355-8710-a620f0d66399
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 18%
-
 ---
-
 # Conflitos de implantação do MSM{#msm-rollout-conflicts}
 
 Conflitos podem ocorrer se novas páginas com o mesmo nome de página forem criadas na ramificação do blueprint e em uma ramificação dependente da live copy.
@@ -47,7 +46,7 @@ Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criada
 
   Uma página criada manualmente na ramificação da live copy; com uma página secundária, `lc-level-1`.
 
-   * Ativado ao publicar como `/b`, junto com a página secundária.
+  * Ativado ao publicar como `/b`, junto com a página secundária.
 
 **Antes da implantação**
 
@@ -93,7 +92,7 @@ O AEM fornece:
 
 * O [manipulador de conflitos padrão](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * A possibilidade de implementar um [manipulador personalizado](#customized-handlers).
 * O mecanismo de classificação de serviço que permite definir a prioridade de cada manipulador individual. O serviço com a classificação mais alta é usado.
@@ -113,13 +112,13 @@ Esse manipulador de conflitos dá prioridade ao blueprint. A página de live cop
 
   É movido (dentro da live copy) para `/b_msm_moved`. Isso funciona como um backup e garante que nenhum conteúdo seja perdido.
 
-   * `lc-level-1` não é movido.
+  * `lc-level-1` não é movido.
 
 * blueprint: `/b`
 
   É implantado na página de live copy `/b`.
 
-   * `bp-level-1` é implantado na live copy.
+  * `bp-level-1` é implantado na live copy.
 
 **Após a implantação**
 
@@ -159,11 +158,11 @@ Os manipuladores de conflito personalizados podem ter o seguinte:
 * Desenvolvido/configurado de acordo com seus requisitos; por exemplo, você pode desenvolver um manipulador para que a página da Live Copy tenha prioridade.
 * Projetado para ser configurado usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md); especificamente:
 
-   * **Classificação do serviço**:
+  * **Classificação do serviço**:
 
-     Define a ordem relacionada a outros manipuladores de conflito ( `service.ranking`).
+    Define a ordem relacionada a outros manipuladores de conflito ( `service.ranking`).
 
-     O valor padrão é 0.
+    O valor padrão é 0.
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 

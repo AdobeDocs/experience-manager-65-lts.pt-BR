@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8f504453-1009-46d9-83a5-d4a8531d7e2c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
-
 # Uso do salvamento automático no aplicativo AEM Forms{#using-autosave-in-aem-forms-app}
 
 Quando um usuário insere dados no aplicativo Adobe Experience Manager Forms, o recurso de salvamento automático os salva em intervalos regulares. O recurso de salvamento automático no aplicativo AEM Forms ajuda a evitar a perda de dados se o aplicativo for fechado acidentalmente.
@@ -41,4 +40,4 @@ Execute as seguintes etapas para usar o recurso de salvamento automático no apl
 1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você será solicitado a restaurar a tarefa com a caixa de diálogo Recuperar tarefa não salva. Clique em **OK** na caixa de diálogo Recuperar tarefa não salva para continuar a trabalhar com a tarefa salva. Você pode clicar em **Cancelar** para excluir os dados salvos correspondentes ao último salvamento automático acionado e começar a trabalhar com uma nova tarefa.
 
    Ao clicar em **OK**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionados antes da falha do aplicativo. Inclui os dados de formulário e todos os anexos associados à tarefa.
-   [![Recuperando uma tarefa &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** Aplicativo fechado à força **C.** Aplicativo reiniciado com caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais
+   [![Recuperando uma tarefa &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** O aplicativo foi fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais

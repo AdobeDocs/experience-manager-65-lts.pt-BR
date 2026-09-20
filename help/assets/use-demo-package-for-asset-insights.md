@@ -5,13 +5,12 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 12f457e4-f5d7-47cb-b38a-9d63e7c19475
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 2%
-
 ---
-
 # Use o pacote de demonstração para o Assets Insights {#using-demo-package-for-asset-insights}
 
 Usando o pacote de demonstração, você pode permitir que o Adobe Assets Insights capture dados e gere insights para uma página da Web de exemplo.
@@ -21,11 +20,11 @@ Usando o pacote de demonstração, você pode permitir que o Adobe Assets Insigh
 1. Configure o Assets Insights usando as instruções em [Configuração do Assets Insights](configure-asset-insights.md).
 1. Baixe o pacote de amostra do Assets abaixo e instale o pacote do Gerenciador de pacotes do CRXDE.
 
-[Obter arquivo](assets/insightsdemo.zip)
+   [Obter arquivo](assets/insightsdemo.zip)
 
 1. Baixe o arquivo ZIP que contém a página da Web de exemplo abaixo e extraia em seu sistema de arquivos local.
 
-[Obter arquivo](assets/demosite.zip)
+   [Obter arquivo](assets/demosite.zip)
 
 1. Clique na página da Web que será aberta no navegador da Web.
 

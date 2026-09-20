@@ -1,18 +1,17 @@
 ---
 title: Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência We.Finance
-description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca residencial do site de referência We.Finance.
+description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca da página de referência do We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1021fbb4-a12a-4758-8f36-dc9ad73681cd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Saiba como usar os serviços do Microsoft® Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca do site de referência We.Finance
@@ -29,7 +28,7 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
 
 * AEM 6.3 Forms Service Pack 1 e posterior
 * Conta do Microsoft® Dynamics 365
-* Aplicativo registrado para o serviço Dynamics 365 com o Ative Diretory do Microsoft® Azure
+* Aplicativo registrado para o serviço Dynamics 365 com o Microsoft® Azure Ative Diretory
 * ID do cliente e segredo do cliente para o aplicativo registrado
 
 ## Vincule a calculadora de hipoteca do site à página inicial do site {#link-the-home-mortgage-calculator-with-your-site-home-page}

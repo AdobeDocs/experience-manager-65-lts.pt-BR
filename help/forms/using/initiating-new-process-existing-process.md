@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4a2a06c2-a4fa-463c-9375-bebda426a14c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '239'
 ht-degree: 0%
-
 ---
-
 # Iniciar um novo processo com dados de processo existentes no espaço de trabalho do AEM Forms{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
 É possível iniciar um novo processo usando os dados de um processo existente. A necessidade de iniciar um novo processo a partir dos dados de processo existentes surge quando precisamos usar o mesmo formulário frequentemente com poucas alterações no conteúdo, como o dos formulários de tempo livre pago. Esse recurso economiza tempo e esforço dos usuários, especialmente quando o processo tem um longo formulário para preencher.

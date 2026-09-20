@@ -8,13 +8,12 @@ topic-tags: document_services
 feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 0%
-
 ---
-
 # Usar HSM para assinar ou certificar documentos digitalmente {#use-hsm-to-digitally-sign-or-certify-documents}
 
 HSM (Hardware Security Modules, módulos de segurança de hardware) e etokens são dispositivos de computação dedicados, resistentes e à violação, projetados para gerenciar, processar e armazenar chaves digitais com segurança. Esses dispositivos são conectados diretamente a um computador ou servidor de rede.

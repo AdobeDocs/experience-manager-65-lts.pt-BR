@@ -8,13 +8,12 @@ topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 347354ce-36f3-4e17-acda-0f34b60069f6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 75%
-
 ---
-
 # Trabalhar com fluxos de trabalho{#working-with-workflows}
 
 Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um(a) editor(a) precisa revisar o conteúdo, antes que o(a) admin do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:

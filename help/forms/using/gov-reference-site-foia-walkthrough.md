@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a2f79634-6eca-479a-89d7-e1ef2e4a6e6d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # Apresentação do site de referência do We.Gov para a FOIA {#we-gov-reference-site-foia-walkthrough}
 
 ## Cenário do site de referência da Lei de liberdade de informações {#reference-site-freedom-of-information-act-scenario}
@@ -35,7 +34,7 @@ O cenário envolve os seguintes perfis:
 
 ## Sarah inicia pedido de informações no âmbito da Foia {#sarah-initiates-request-for-information-under-foia}
 
-De acordo com a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros de casos da Administração para Crianças e Famílias para o período de 2013 a 2016. Sarah apresenta este pedido ao Department of Justice - Office of Information Policy e indica também que pode pagar até USD 100 para as despesas de impressão e de correio.
+De acordo com a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros de casos da Administração para Crianças e Famílias para o período de 2013 a 2016. Sarah apresenta este pedido ao Departamento de Justiça - Escritório de Política de Informação e também indica que ela é susceptível de pagar até USD 100 para os custos de impressão e postagem.
 
 ### Como funciona {#how-it-works}
 
@@ -49,7 +48,7 @@ Sarah clica em **Aplicar** e na página Formulário de solicitação da Lei de L
 
 * **Agência:** Sarah especifica a agência para a qual a solicitação foi endereçada como Departamento de Justiça - Escritório de Políticas de Informações.
 
-* **Pagará Até**: Sarah especifica que está preparada para pagar até USD 100 por despesas de impressão e postagem.
+* **Pagará Até**: Sarah especifica que está preparada para pagar até USD 100 para despesas de impressão e postagem.
 * **Descreva a solicitação em detalhes**: Sarah especifica &quot;Solicitando cópia dos logs de casos da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016&quot;.
 
 ![Solicitando cópia dos logs de caso da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016](assets/sarahfiosform.png)

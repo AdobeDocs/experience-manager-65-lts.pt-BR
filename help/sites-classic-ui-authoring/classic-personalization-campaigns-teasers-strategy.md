@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3232ccb0-dd4c-4457-9467-cdad788f977c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1203'
 ht-degree: 2%
-
 ---
-
 # Teasers e estratégias{#teasers-and-strategies}
 
 As campanhas geralmente usam teasers como um mecanismo para atrair um segmento específico da população de visitantes até o conteúdo focado em seus interesses. Um ou mais teasers são definidos para uma campanha específica.
@@ -110,7 +109,7 @@ E usamos as seguintes definições de teaser:
 
 Em seguida, se aplicarmos isso a um visitante em que:
 
-* **S1**, **S2 e &#x200B;** S6** resolvidos com êxito
+* **S1**, **S2 e** S6** resolvidos com êxito
 
 * a marca **marketing** tem três ocorrências
 * a tag **business** tem seis ocorrências
@@ -244,10 +243,10 @@ Depois de criar sua marca e campanha, você pode criar e configurar sua experiê
 1. Edite o componente de teaser para adicionar o:
 
    * **Caminho da campanha**
-Caminho para a página da campanha que contém a página de teaser individual; os segmentos determinam exatamente qual teaser será mostrado.
+     Caminho para a página da campanha que contém a página de teaser individual; os segmentos determinam exatamente qual teaser será mostrado.
 
    * **[Estratégia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Método usado para seleção quando vários segmentos são resolvidos com sucesso.
+     Método usado para seleção quando vários segmentos são resolvidos com sucesso.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

@@ -8,13 +8,12 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # Trabalhar com ativos 3D no Dynamic Media {#working-with-three-d-assets-dm}
 
 O Dynamic Media permite carregar, gerenciar, visualizar e fornecer ativos 3D como experiências imersivas.
@@ -40,7 +39,7 @@ Consulte também [formatos 3D compatíveis](/help/assets/assets-formats.md).
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.O* USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
+| USDZ | Arquivo Zip do Universal Scene Description | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
 
 >[!NOTE]
 >
@@ -67,19 +66,19 @@ Consulte [Configurar os serviços em nuvem do Dynamic Media](/help/assets/config
 
    * Organizar e pesquisar ativos 3D
 
-      * [Organize ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
-      * [Pesquisar ativos 3D](/help/assets/search-assets.md).
-      * [Use predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
+     * [Organize ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
+     * [Pesquisar ativos 3D](/help/assets/search-assets.md).
+     * [Use predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
 
    * Exibir ativos 3D
 
-      * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
-      * [Gerenciar a predefinição do visualizador Dimensional](/help/assets/managing-viewer-presets.md).
+     * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
+     * [Gerenciar a predefinição do visualizador Dimensional](/help/assets/managing-viewer-presets.md).
 
    * Trabalhar com metadados de ativos 3D
 
-      * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
-      * [Esquemas de metadados](/help/assets/metadata-schemas.md).
+     * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
+     * [Esquemas de metadados](/help/assets/metadata-schemas.md).
 
 1. **Publicar ativos 3D**
 
@@ -150,8 +149,8 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    * Próximo ao canto superior direito da página, selecione **[!UICONTROL Visualização]** para entrar no modo **[!UICONTROL Visualização]**.
    * Exclua `/editor.html` da URL da página no navegador.
 
-   ![Ativo 3D sendo exibido dentro do componente de Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Um ativo 3D totalmente interativo conforme exibido no modo **[!UICONTROL Visualização]**.
+   ![Ativo 3D exibido dentro do componente de Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   Um ativo 3D totalmente interativo conforme exibido no modo **[!UICONTROL Visualização]**.
 
 1. No modo **[!UICONTROL Visualizar]**, siga um destes procedimentos:
 
@@ -170,7 +169,7 @@ O Dynamic Media inclui um componente de Mídia 3D do Dynamic Media que pode ser 
 
 * [Adicionar o componente de Mídia 3D ao modelo de página](#adding-three-d-media-component-to-page-template)
 * [Adicionar o componente de Mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Opcional - Configurar o componente de Mídia 3D](#configuring-the-three-d-component)
+  * [Opcional - Configurar o componente de Mídia 3D](#configuring-the-three-d-component)
 * [Atribuir um ativo 3D ao componente de Mídia 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Adicionar o componente de Mídia 3D ao modelo de página {#adding-three-d-media-component-to-page-template}

@@ -7,13 +7,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dca7f612-f505-414b-9326-90624be9db39
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
-
 ---
-
 # Canal de impressão e canal da Web{#print-channel-and-web-channel}
 
 As Comunicações interativas podem ser fornecidas por meio de dois canais: impressão e Web. O canal de impressão é usado para criar PDFs e comunicações em papel, como uma carta impressa como lembrete para pagamento de prêmio de seguro, enquanto o canal da Web é usado para fornecer experiências online, como um extrato de cartão de crédito em um site.

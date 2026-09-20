@@ -9,13 +9,12 @@ docset: aem65
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '3030'
 ht-degree: 0%
-
 ---
-
 # Contexto do cliente em detalhes{#client-context-in-detail}
 
 >[!NOTE]
@@ -189,15 +188,15 @@ O AEM fornece os componentes de armazenamento de contexto genérico e genericsto
 
 * Pares de valor de propriedade: estenda o componente `GenericStoreProperties`. Esse componente renderiza automaticamente armazenamentos de pares de valores da propriedade. Vários pontos de interação são fornecidos:
 
-   * `prolog.jsp` e `epilog.jsp`: interação de componente que permite adicionar lógica do lado do servidor antes ou depois da renderização do componente.
+  * `prolog.jsp` e `epilog.jsp`: interação de componente que permite adicionar lógica do lado do servidor antes ou depois da renderização do componente.
 
 * Dados complexos: estenda o componente `GenericStore`. Seu armazenamento de sessão precisa de um método &quot;renderizador&quot; que é chamado sempre que o componente deve ser renderizado. A função do renderizador é chamada com dois parâmetros:
 
-   * `@param {String} store`
-O armazenamento a ser renderizado
+  * `@param {String} store`
+    O armazenamento a ser renderizado
 
-   * `@param {String} divId`
-Id da div na qual o armazenamento deve ser renderizado.
+  * `@param {String} divId`
+    Id da div na qual o armazenamento deve ser renderizado.
 
 >[!NOTE]
 >
@@ -301,7 +300,7 @@ O componente de repositório de contexto `/libs/cq/personalization/components/co
 
 Para renderizar dados de armazenamento usando um componente de armazenamento genérico, faça o seguinte:
 
-* Adicione a tag personalization:storeRendererTag ao script JSP do componente para identificar o nome do armazenamento da sessão.
+* Adicione a marca de personalização :storeRendererTag ao script JSP do componente para identificar o nome do armazenamento da sessão.
 * Implemente um método de renderizador na classe de armazenamento de sessão.
 
 #### Identificação do armazenamento de sessão genericstore {#identifying-the-genericstore-session-store}
@@ -617,11 +616,11 @@ Para criar um segundo contexto de cliente, duplique a ramificação:
 
 * A subpasta:
   `/content`
-contém o conteúdo do contexto de cliente personalizado.
+  contém o conteúdo do contexto de cliente personalizado.
 
 * A pasta:
   `/contextstores`
-permite definir configurações diferentes para os armazenamentos de contexto.
+  permite definir configurações diferentes para os armazenamentos de contexto.
 
 Para usar o contexto de cliente personalizado, edite a propriedade
 `path`

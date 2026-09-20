@@ -1,5 +1,5 @@
 ---
-title: Gerenciador de vários sites e tradução
+title: Gerenciador multisite e tradução
 description: Saiba como reutilizar o conteúdo em todo o projeto e gerenciar sites multilíngues no Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,38 +8,37 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Multi Site Manager, Language Copy
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 325089d0-9310-4219-b0e3-9645c3189d37
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
-
+source-wordcount: '370'
+ht-degree: 40%
 ---
-
-# Gerenciador de vários sites e tradução {#msm-and-translation}
+# Gerenciador multisite e tradução {#msm-and-translation}
 
 As seguintes ferramentas administrativas estão disponíveis para gerenciar sites e páginas:
 
 * O Gerenciador de vários sites (MSM) permite usar o conteúdo do mesmo site em vários locais, permitindo variações:
 
-   * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-administering/msm.md)
+  * [Reutilizar conteúdo: Gerenciador multisite e Live Copy](/help/sites-administering/msm.md)
 
 * A ferramenta de tradução permite automatizar a tradução de conteúdo da página, ativos e conteúdo gerado pelo usuário para criar e manter sites multilíngues:
 
-   * [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md)
+  * [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md)
 
 * Esses dois recursos podem ser combinados para atender a sites que são [Multinacionais e Multilíngues](#multinational-and-multilingual-sites).
 
 ## Sites multinacionais e multilíngues {#multinational-and-multilingual-sites}
 
-Você pode criar conteúdo para sites multinacionais e multilíngues com eficiência usando o gerenciador de vários sites e o fluxo de trabalho de tradução. Crie um site principal em um idioma para um país específico e, em seguida, use esse conteúdo como base para os outros sites, usando a tradução quando necessário:
+É possível criar conteúdo para sites multinacionais e multilíngues com eficiência usando o Gerenciador multisite e o fluxo de trabalho de tradução. Crie um site principal em um idioma para um país específico e, em seguida, use esse conteúdo como base para os outros sites, usando a tradução quando necessário:
 
 * [Traduzir](/help/sites-administering/translation.md) o site principal em diferentes idiomas.
 
 * Use o [Gerenciador de vários sites](/help/sites-administering/msm.md) para:
 
-   * Reutilizar o conteúdo do site principal e as traduções para criar sites para outros países e culturas.
-   * Limite o uso do gerenciador de vários sites para conteúdo em um único idioma, por exemplo, inglês principal > ramificações de idioma inglês em sites de países, francês principal > ramificações de idioma francês em sites de países.
-   * Quando necessário, desconecte elementos das live copies para adicionar detalhes de localização.
+  * Reutilizar o conteúdo do site principal e as traduções para criar sites para outros países e culturas.
+  * Limite o uso do gerenciador de vários sites para conteúdo em um único idioma, por exemplo, inglês principal > ramificações de idioma inglês em sites de países, francês principal > ramificações de idioma francês em sites de países.
+  * Quando necessário, desconecte elementos das live copies para adicionar detalhes de localização.
 
 O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mostra todos os níveis/elementos envolvidos):
 

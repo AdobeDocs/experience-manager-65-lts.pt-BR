@@ -7,13 +7,12 @@ topic-tags: correspondence-management
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 17e1310f-f82d-42ee-a7cb-9bc141f23aee
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '476'
 ht-degree: 0%
-
 ---
-
 # Modelos de carta de referência {#reference-letter-templates}
 
 No Gerenciamento de correspondências, um modelo de correspondência contém campos de formulário típicos, recursos de layout como cabeçalho e rodapé e &quot;áreas de destino&quot; vazias para a inserção de conteúdo.

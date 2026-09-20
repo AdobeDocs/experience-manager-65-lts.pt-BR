@@ -7,13 +7,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '807'
 ht-degree: 0%
-
 ---
-
 # Gerar visualização HTML5 de um formulário XDP{#generate-html-preview-of-an-xdp-form}
 
 Ao criar um formulário no AEM Forms Designer, além de visualizar a representação de um formulário no PDF, você também pode visualizar uma representação HTML5 dele. Você pode usar a guia **Visualizar HTML** para visualizar um formulário como ele apareceria em um navegador.
@@ -36,13 +35,13 @@ Para permitir que o Designer gere a pré-visualização do HTML de formulários 
 
    * AEM Forms no JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms no OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -73,14 +72,14 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
    * **Número da porta HTTP**: porta do servidor AEM. O valor padrão é 4502.
    * **Contexto de Visualização do HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
 
    * **Contexto do Forms Manager:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
-      * `/aem/forms` (AEM Forms no OSGi)
-      * `/lc/forms` (AEM Forms no JEE)
+     * `/aem/forms` (AEM Forms no OSGi)
+     * `/lc/forms` (AEM Forms no JEE)
 
    >[!NOTE]
    >

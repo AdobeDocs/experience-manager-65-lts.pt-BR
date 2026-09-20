@@ -1,19 +1,18 @@
 ---
-title: Gerenciamento de correspondência | Manuseio de dados do usuário
+title: Gerenciamento de correspondência | Manipulação de dados do usuário
 description: Saiba mais sobre o Gerenciamento de correspondência e como lidar com dados do usuário em um ambiente do Adobe Experience Manager Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 57385e88-9a3d-4d89-986b-9f254aa722ca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 0%
-
 ---
-
-# Gerenciamento de correspondência | Manuseio de dados do usuário {#correspondence-management-handling-user-data}
+# Gerenciamento de correspondência | Manipulação de dados do usuário {#correspondence-management-handling-user-data}
 
 O Gerenciamento de correspondência da AEM Forms permite criar, gerenciar e simplificar correspondências seguras e personalizadas de clientes. Ele fornece uma interface intuitiva para usuários empresariais que permite criar correspondências usando blocos de conteúdo e elementos de mídia pré-aprovados. Para obter mais informações sobre como criar correspondências, consulte [Criar correspondência](/help/forms/using/create-correspondence.md).
 

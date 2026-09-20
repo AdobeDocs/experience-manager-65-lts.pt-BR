@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 988e986f-8e0b-48a2-a529-9c0f931131b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Exibição de dados adicionais na lista de tarefas{#displaying-additional-data-in-todo-list}
 
 Por padrão, a lista de tarefas pendentes do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, é possível adicionar outras informações, como data de criação e data do prazo final. Você também pode adicionar ícones e alterar o estilo da exibição.

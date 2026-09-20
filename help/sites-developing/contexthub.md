@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c7c42bcd-d90a-430a-bbcd-b104d0670ebf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 1%
-
 ---
-
 # ContextHub{#contexthub}
 
 O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do JavaScript do lado do cliente permite acessar os dados para personalizar o conteúdo.

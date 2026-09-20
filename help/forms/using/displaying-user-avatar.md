@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0c72fe67-13da-4eac-8cd6-8699e546f8f4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
-
 ---
-
 # Exibir o avatar do usuário {#displaying-the-user-avatar}
 
 O avatar do usuário conectado é exibido no canto superior direito do espaço de trabalho do AEM Forms. Além disso, os avatares dos subordinados diretos na hierarquia organizacional são exibidos na Exibição do gerente. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do banco de dados, digamos, servidor LDAP.

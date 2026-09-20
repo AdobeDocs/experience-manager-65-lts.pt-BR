@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 15471908-feb1-4178-a24d-7cefe7717820
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 4%
-
+source-wordcount: '178'
+ht-degree: 16%
 ---
-
 # Amostras de código{#code-samples}
 
 A Equipe de serviços da Adobe Consulting gerou uma série de amostras de código do Adobe Experience Manager (AEM). Essas amostras são pedaços de código bem comentados para ajudar os desenvolvedores do AEM a entender os componentes principais do AEM. Os exemplos estão disponíveis aqui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).

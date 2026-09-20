@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: dad8b6d4-a2d9-4913-a5bc-02cb6ad38b11
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '369'
 ht-degree: 0%
-
 ---
-
 # Alteração de estilos padrão de formulários HTML5{#changing-default-styles-of-html-forms}
 
 Os formulários HTML5 são renderizados usando os recursos do HTML5 e o estilo do formulário renderizado é feito usando CSS. A aparência padrão de um formulário HTML5 é semelhante à sua representação do PDF. Os desenvolvedores podem usar o CSS personalizado para alterar a aparência padrão dos formulários HTML5.

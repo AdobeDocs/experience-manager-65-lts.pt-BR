@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f8376cde-cfda-461e-8b1c-f958c7ad5cb0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Criação de páginas{#authoring-pages}
 
 A seguir há uma visão geral da criação com o AEM:
@@ -47,5 +46,5 @@ No lado esquerdo de cada página autorável, o localizador de conteúdo fornece 
 * **Menu de contexto**
 Clicar com o botão direito do mouse na maioria dos elementos da tela (por exemplo, parágrafos na página) exibe um menu de contexto com opções de ação apropriadas.
 
-* **Pesquisar enquanto você digita**
+* **Pesquisar enquanto digita**
 Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface do AEM apresenta correspondências dinâmicas à medida que você digita a consulta.

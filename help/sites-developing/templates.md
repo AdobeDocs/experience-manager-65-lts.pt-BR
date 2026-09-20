@@ -9,13 +9,12 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 0%
-
+source-wordcount: '901'
+ht-degree: 2%
 ---
-
 # Modelos{#templates}
 
 Os modelos são usados em vários pontos do AEM:
@@ -44,9 +43,9 @@ As vantagens dos Modelos editáveis:
 
 * Foram introduzidos para permitir que você defina o seguinte para qualquer página criada com o modelo:
 
-   * a estrutura
-   * o conteúdo inicial
-   * políticas de conteúdo
+  * a estrutura
+  * o conteúdo inicial
+  * políticas de conteúdo
 
 * Após a criação da nova página, uma conexão dinâmica é mantida entre a página e o modelo. Essa conexão significa que as alterações na estrutura do modelo são refletidas em qualquer página criada com esse modelo; as alterações no conteúdo inicial não são refletidas.
 * Usa políticas de conteúdo (editadas pelo editor de modelo) para manter as propriedades de design (não usa o modo Design no editor de páginas).
@@ -129,4 +128,3 @@ Para limitar quais modelos podem ser usados para criar páginas secundárias em 
 Você pode usar a propriedade `cq:allowedTemplates` no nó `jcr:content` do modelo para aplicar essa configuração a todas as páginas recém-criadas que usam esse modelo.
 
 Se quiser adicionar mais restrições, por exemplo, em relação à hierarquia do modelo, você pode usar as propriedades `allowedParents/allowedChildren` no modelo. Em seguida, é possível especificar explicitamente que as páginas criadas a partir de um modelo T devem ser páginas principais/secundárias das páginas criadas a partir de um modelo T.
-

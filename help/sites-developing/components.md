@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
-
+source-wordcount: '620'
+ht-degree: 46%
 ---
-
 # Visão geral dos componentes{#components-overview}
 
 Esta página fornece uma visão geral dos componentes do Adobe Experience Manager (AEM), como os [usados para criação de página](/help/sites-authoring/default-components-foundation.md).
@@ -108,7 +107,7 @@ As páginas a seguir fornecem informações mais detalhadas sobre o desenvolvime
 * [Uso de condições de ocultação](/help/sites-developing/hide-conditions.md)
 * IU Clássica
 
-   * [Componentes do AEM (Interface clássica)](/help/sites-developing/developing-components-classic.md)
-   * [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
-   * [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
-   * [Desenvolvimento do Forms (interface clássica)](/help/sites-developing/developing-forms.md)
+  * [Componentes do AEM (Interface clássica)](/help/sites-developing/developing-components-classic.md)
+  * [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
+  * [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
+  * [Desenvolvimento do Forms (interface clássica)](/help/sites-developing/developing-forms.md)

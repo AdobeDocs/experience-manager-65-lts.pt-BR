@@ -4,13 +4,12 @@ description: Aplicar serviços de nuvem de tradução a pastas no Adobe Experien
 role: Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cbe4f479-a287-412e-ab8b-98c310bb49b5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '398'
 ht-degree: 42%
-
 ---
-
 # Aplicar serviços de tradução em nuvem a pastas {#applying-translation-cloud-services-to-folders}
 
 O [!DNL Adobe Experience Manager] permite que você aproveite os serviços de tradução baseados na nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos com base em suas necessidades.
@@ -35,7 +34,7 @@ Aplicar serviços de nuvem de tradução diretamente à pasta de ativos elimina 
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. O serviço de tradução é aplicado à pasta.
+1. Na barra de ferramentas, clique em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo.O serviço de tradução é aplicado à pasta.
 
 ## Aplicar conector de tradução personalizado  {#applying-custom-translation-connector}
 

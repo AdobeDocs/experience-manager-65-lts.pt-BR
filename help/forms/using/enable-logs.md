@@ -9,13 +9,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 755966e5-6267-4633-bcad-05860a2eda6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '644'
 ht-degree: 4%
-
 ---
-
 # Habilitar o registro para formulários HTML5{#enable-logging-for-html-forms}
 
 Você pode configurar o utilitário logger para começar a criar registros para os formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível de acordo com seus requisitos. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar logs para ambos os componentes.
@@ -24,7 +23,7 @@ Você pode configurar o utilitário logger para começar a criar registros para 
 
 Execute as seguintes etapas para configurar registros do lado do servidor:
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
+1. Acesse `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
    ![&#x200B; Caixa de diálogo de opção de configuração do agente de log do Apace Sling &#x200B;](assets/logconfig.png)
 

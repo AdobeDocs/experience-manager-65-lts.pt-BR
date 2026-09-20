@@ -9,13 +9,12 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2902'
 ht-degree: 0%
-
 ---
-
 # Adicionar recursos do Dynamic Media Classic às páginas {#adding-scene-features-to-your-page}
 
 O [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=pt-BR) é uma solução hospedada para gerenciamento, aprimoramento, publicação e fornecimento de ativos de mídia avançada para Web, dispositivos móveis, email e exibições e impressões conectadas à Internet.

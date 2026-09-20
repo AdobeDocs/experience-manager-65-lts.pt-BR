@@ -8,13 +8,12 @@ topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4110e3d5-7242-459b-b249-637b5bf3472d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3948'
 ht-degree: 5%
-
 ---
-
 # Suporte a script para formulários HTML5 {#scripting-support-for-html-forms}
 
 JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5 estão listados abaixo:
@@ -1284,7 +1283,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica um script JavaScript e um período de tempo. O script é executado apenas uma vez, depois que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
+   <td>Especifica um script JavaScript e um período de tempo. O script é executado apenas uma vez, após o período decorrido.O valor de retorno desse método deve ser mantido em uma variável do JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1303,7 +1302,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    <td> </td>
   </tr>
   <tr>
-   <td>app.activeDocs</td>
+   <td>app.ativeDocs</td>
    <td>Uma matriz que contém o objeto Doc para cada documento ativo. Se nenhum documento estiver ativo, o ativeDocs não retornará nada; ou seja, ele tem o mesmo comportamento que d = new Array(0) no JavaScript principal.</td>
    <td>Retorna uma matriz vazia para formulários HTMl5.</td>
   </tr>
@@ -1313,7 +1312,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    <td>Sempre verdadeiro para Forms HTMl5.</td>
   </tr>
   <tr>
-   <td>app.constants</td>
+   <td>app.constantes</td>
    <td>Um objeto wrapper para manter vários valores constantes. Atualmente, essa propriedade retorna um objeto com uma única propriedade, align.</td>
    <td>Os formulários HTML5 retornam um objeto de alinhamento vazio.</td>
   </tr>

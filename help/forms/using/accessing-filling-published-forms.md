@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 10764131-21e9-4c1c-b9d1-e878cc927fb6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # Acesso e preenchimento de formulários publicados{#accessing-and-filling-published-forms}
 
 Em uma configuração de implantação de portal centrada em formulários, o desenvolvimento de formulários e o desenvolvimento de portal são duas atividades distintas. Enquanto designers de formulários criam e armazenam formulários em um repositório, os desenvolvedores da Web criam um aplicativo da Web para listar formulários e manipular envios. Em seguida, os Forms são copiados para o nível da Web, pois não há comunicação entre o repositório de formulários e o aplicativo Web.
@@ -49,7 +48,7 @@ O componente de Pesquisa e Lister permite adicionar a seguinte funcionalidade ao
 
 Você pode pesquisar formulários na página do Forms Portal usando as seguintes opções:
 
-* Pesquisa de Texto Completo
+* Pesquisar texto completo
 * Pesquisa avançada
 
 A pesquisa de texto completo permite localizar e listar formulários com base nas palavras-chave especificadas.

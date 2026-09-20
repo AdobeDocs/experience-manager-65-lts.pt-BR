@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1279'
 ht-degree: 0%
-
 ---
-
 # Adicionar rastreamento do Adobe Analytics aos componentes{#adding-adobe-analytics-tracking-to-components}
 
 ## Inclusão do módulo Adobe Analytics em um componente de Página {#including-the-adobe-analytics-module-in-a-page-component}
@@ -353,9 +352,9 @@ Quando um item de dados é omitido do valor `product`, ele é enviado como uma c
 
 O nó `analytics` do componente deve expor os nomes de variáveis usando a propriedade `cq:trackvars`:
 
-* product.category
+* categoria.produto
 * product.sku
-* product.quantity
+* quantidade.produto
 * product.price
 * product.events.eventName1
 * product.events.eventName_n
@@ -438,6 +437,6 @@ O módulo de comércio eletrônico fornece vários componentes que geram dados v
 
 #### Limitar o tamanho das chamadas de rastreamento {#limiting-the-size-of-tracking-calls}
 
-Geralmente, os navegadores da Web limitam o tamanho das solicitações do GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você deve rastrear puder exceder o limite.
+Geralmente, os navegadores da Web limitam o tamanho das solicitações GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você deve rastrear puder exceder o limite.
 
 Por exemplo, o componente `submitorder` de comércio eletrônico limita o número de `product` itens em uma chamada a quatro. Quando o carrinho contém mais de quatro produtos, ele gera várias funções do `CQ_Analytics.record`.

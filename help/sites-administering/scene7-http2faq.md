@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 76d20b36-5941-48c0-8e05-f464a418a1e2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
-
+source-wordcount: '840'
+ht-degree: 2%
 ---
-
 # Perguntas frequentes sobre entrega de conteúdo HTTP2{#http-delivery-of-content-faq}
 
 A Adobe está animada em anunciar a disponibilidade da entrega de conteúdo HTTP/2. Quando você usa HTTP/2, percebe um aumento geral no desempenho.

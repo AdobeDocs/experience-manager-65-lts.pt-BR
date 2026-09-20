@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e0986f82-a049-44d4-bf4c-e2f020315ce5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 1%
-
 ---
-
 # Exibição de componentes com base no modelo usado{#displaying-components-based-on-the-template-used}
 
 Quando um autor de formulário cria um formulário adaptável usando um [modelo](../../forms/using/template-editor.md), o autor do formulário pode ver e usar componentes específicos com base na política do modelo. Você pode especificar uma política de conteúdo de modelo que permita escolher um grupo de componentes que o autor do formulário vê no momento da criação do formulário.

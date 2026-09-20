@@ -4,20 +4,18 @@ description: Em implantações de cluster do AEM Forms 6.5.1 LTS usando o JBoss 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 0%
-
 ---
-
-
 # Não é possível iniciar o controlador de domínio JBoss
 
 ## Problema
 
 Nas implantações de cluster do **AEM Forms 6.5.1 LTS** usando o **JBoss EAP 8**, o arquivo de configuração
-`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` (e variantes específicas do banco de dados) pode conter uma **marca `<security>` de abertura duplicada**.
+`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` (e variantes específicas do banco de dados) pode conter uma **marca de abertura `<security>` duplicada**.
 
 Isso causa uma **configuração XML inválida**, resultando em **falha na inicialização do Controlador de Domínio JBoss** e impedindo a inicialização de cluster bem-sucedida.
 
@@ -28,9 +26,9 @@ Isso causa uma **configuração XML inválida**, resultando em **falha na inicia
 * **Servidor de Aplicativos:** JBoss EAP 8.x
 * **Arquivos de Configuração:**
 
-   * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
 
 ## Etapas de solução de problemas
 

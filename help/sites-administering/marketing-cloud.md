@@ -1,6 +1,6 @@
 ---
 title: Integração com a Adobe Experience Cloud
-description: Saiba como integrar o Adobe Experience Manager ao Adobe Experience Cloud.
+description: Saiba como integrar o Adobe Experience Manager com a Adobe Experience Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 456bcdf5-3d43-43d8-b243-70095e0cf58c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
-
+source-wordcount: '868'
+ht-degree: 2%
 ---
-
 # Integração com a Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-O [Adobe Experience Cloud](https://business.adobe.com/br/products/marketing-cloud/main.html) inclui produtos avançados de análise da Web e otimização de sites, que fornecem dados e insights acionáveis e em tempo real para impulsionar iniciativas online bem-sucedidas. Ele oferece uma plataforma integrada e aberta para a otimização de negócios on-line. A nuvem consiste em aplicativos integrados para coletar e liberar o poder do insight do cliente para otimizar os esforços de aquisição, conversão e retenção do cliente, bem como a criação e a distribuição de conteúdo.
+A [Adobe Experience Cloud](https://business.adobe.com/br/products/marketing-cloud/main.html) inclui produtos avançados de análise da Web e otimização de sites, que fornecem dados e insights acionáveis e em tempo real para impulsionar iniciativas online bem-sucedidas. Ele oferece uma plataforma integrada e aberta para a otimização de negócios on-line. A nuvem consiste em aplicativos integrados para coletar e explorar o potencial do insight do cliente para otimizar os esforços de aquisição, conversão e retenção do cliente, bem como a criação e a distribuição de conteúdo.
 
 Com o Adobe Experience Manager (AEM), você pode se integrar perfeitamente aos seguintes produtos da Adobe Experience Cloud:
 

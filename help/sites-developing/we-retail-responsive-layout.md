@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 25e035ce-0445-43a3-bd75-513a2e601b6a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '261'
 ht-degree: 6%
-
 ---
-
 # Experimentar layout responsivo no We.Retail{#trying-out-responsive-layout-in-we-retail}
 
 Todas as páginas do We.Retail usam o componente de Contêiner de layout para implementar um design responsivo. O contêiner de layout fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo **Layout** no editor de páginas, que permite criar e editar seu layout responsivo dependendo do dispositivo.

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0e4b5758-3da5-4ca5-8553-161f923661aa
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com listas de tarefas{#working-with-to-do-lists}
 
 Ao exibir suas listas de tarefas pendentes, você pode ver tarefas de um processo de negócios atribuídas a você, a qualquer grupo ao qual você pertença ou que sejam tarefas compartilhadas de outros usuários. É possível abrir, trabalhar e concluir as tarefas conforme necessário, como aprovar ou rejeitar uma solicitação ou adicionar mais informações. Após concluir uma tarefa, ela será enviada para a próxima pessoa no processo de negócios,
@@ -44,10 +43,10 @@ Ao abrir e trabalhar em uma tarefa, as ferramentas que estão disponíveis para 
 
 * **Análise de vários usuários**: você recebe uma tarefa ao mesmo tempo em que outros usuários a recebem. Você e os outros usuários devem fornecer informações ou revisar o conteúdo, ou ambos. As seguintes ferramentas podem estar disponíveis com este tipo de tarefa:
 
-   * Exibir as instruções da tarefa
-   * Visualização do status de conclusão de todos os usuários atribuídos à tarefa
-   * Exibir os comentários de todos os usuários atribuídos à tarefa
-   * Adicionar comentários à tarefa
+  * Exibir as instruções da tarefa
+  * Visualização do status de conclusão de todos os usuários atribuídos à tarefa
+  * Exibir os comentários de todos os usuários atribuídos à tarefa
+  * Adicionar comentários à tarefa
 
 As ferramentas adicionais que podem estar disponíveis com qualquer uma das tarefas acima incluem:
 

@@ -9,13 +9,12 @@ docset: aem65
 feature: Brand Portal
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1456a32e-c98f-4106-8546-799614c51a59
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 30%
-
 ---
-
 # Publicar coleções no Brand Portal {#publish-collections-to-brand-portal}
 
 Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar coleções na instância do AEM Assets Brand Portal para sua organização. No entanto, primeiro você deve integrar o AEM Assets ao Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).

@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f3755499-472b-4eb9-bc98-7918b77f7ab0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 49%
-
 ---
-
 # Noções sobre segmentação{#understanding-segmentation}
 
 A segmentação é uma consideração importante ao criar uma campanha. Normalmente, é necessário ter segmentos já definidos antes de iniciar a campanha.
@@ -58,7 +57,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Receita
 * Tamanho da família
 * Estado civil
-* Sexo
+* Gênero
 * Local
 
 **Características derivadas**

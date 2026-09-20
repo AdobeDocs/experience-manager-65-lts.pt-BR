@@ -4,13 +4,12 @@ description: Saiba como criar, fazer layout e pré-visualizar um formulário ada
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1419'
 ht-degree: 9%
-
 ---
-
 # Tutorial: Criar um formulário adaptável {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-criar-forma-adaptável-imagem-principal](assets/02-create-adaptive-form-main-image.png)
@@ -60,7 +59,7 @@ O AEM [!DNL Forms] fornece muitos componentes para exibir informações em um fo
 
    É possível selecionar Get file para baixar o logotipo usado neste artigo, caso não tenha um.
 
-[Obter arquivo](assets/logo.png)
+   [Obter arquivo](assets/logo.png)
 
 1. Arraste o componente **[!UICONTROL Rodapé]** de ![treeexpandall](assets/treeexpandall.png) para o formulário adaptável. Nesse estágio, o formulário tem a seguinte aparência:
 
@@ -71,7 +70,7 @@ O AEM [!DNL Forms] fornece muitos componentes para exibir informações em um fo
 Os componentes são blocos fundamentais de um formulário adaptável. O AEM [!DNL Forms] fornece muitos componentes para capturar e exibir informações em um formulário adaptável. Você pode arrastar os componentes de ![treeexpandall](assets/treeexpandall.png) para um formulário. Para saber mais sobre os componentes disponíveis e a funcionalidade correspondente, consulte [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md).
 
 1. Arraste o **[!UICONTROL componente de Caixa numérica]** para o formulário adaptável. Coloque-o antes do componente de rodapé. Abra as propriedades do componente, altere o **[!UICONTROL Título]** do componente para **`Customer ID`**, altere o **[!UICONTROL Nome do Elemento]** para **`customer_ID`**, habilite a opção **[!UICONTROL Campo Obrigatório]**, habilite a opção **[!UICONTROL Usar Tipo de Entrada Numérica do HTML5]** e selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Arraste três componentes Caixa de texto para o formulário adaptável. Coloque-os antes do componente de rodapé. Defina as seguintes propriedades para essas caixas de texto.:
+1. Arraste três componentes Caixa de texto para o formulário adaptável. Coloque-os antes do componente de rodapé. Defina as seguintes propriedades para essas caixas de texto:
 
    <table> 
     <tbody> 

@@ -8,13 +8,12 @@ topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # Aplicação de fluxos de trabalho a páginas{#applying-workflows-to-pages}
 
 Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
@@ -24,8 +23,8 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
   É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente:
 
-   * Um comentário que fornece informações sobre por que você iniciou o fluxo de trabalho.
-   * Um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
+  * Um comentário que fornece informações sobre por que você iniciou o fluxo de trabalho.
+  * Um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
 
 >[!NOTE]
 >

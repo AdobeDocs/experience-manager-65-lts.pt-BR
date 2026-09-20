@@ -4,14 +4,12 @@ description: O JBoss EAP 8 usa o Elytron para habilitar a comunicação segura e
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 3%
-
 ---
-
-
 # Configuração da autenticação de nó secundário (com base em Elytron)
 
 ## Configurar a autenticação de nó secundário usando o Elytron
@@ -45,7 +43,7 @@ Para interromper o JBoss se ele estiver em execução:
 
 ## Escolha uma opção de configuração
 
-* **Opção 1: Configuração Rápida Usando O Repositório De Credenciais Padrão**
+* **Opção 1: Configuração Rápida Usando o Repositório de Credenciais Padrão**
 Recomendado para ambientes inferiores e testes.
 
 * **Opção 2: Configuração do Repositório de Credenciais Personalizado**
@@ -229,4 +227,3 @@ Confirme o registro bem-sucedido usando os logs do controlador do host em ambos 
 * **A opção 2** habilita a segurança mais forte usando uma senha de repositório de credenciais personalizado.
 * A configuração deve ser concluída **somente em nós secundários**.
 * A configuração do nó primário é reutilizada automaticamente no domínio.
-

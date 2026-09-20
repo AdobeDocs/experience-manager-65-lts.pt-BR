@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # SSL/TLS por padrão{#ssl-tls-by-default}
 
 Em um esforço para melhorar continuamente a segurança do AEM, a Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar a instâncias do AEM.

@@ -8,13 +8,12 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ff94f750-c193-438b-8be0-fcd7a40cead4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # Início e Interrupção da Linha de Comando{#command-line-start-and-stop}
 
 ## Iniciar o Adobe Experience Manager a partir da linha de comando {#starting-adobe-experience-manager-from-the-command-line}
@@ -90,8 +89,8 @@ Para interromper o AEM, siga um destes procedimentos:
 
 * Dependendo da plataforma usada:
 
-   * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para desligar o servidor.
-   * Se você tiver usado o script de inicialização no UNIX®, deverá usar o script de interrupção para interromper o AEM.
+  * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para desligar o servidor.
+  * Se você tiver usado o script de inicialização no UNIX®, deverá usar o script de interrupção para interromper o AEM.
 
 * Se você iniciou o AEM clicando duas vezes no arquivo jar, clique no botão **Ligado** na janela de inicialização (o botão muda para **Desligado**) para desligar o servidor.
 

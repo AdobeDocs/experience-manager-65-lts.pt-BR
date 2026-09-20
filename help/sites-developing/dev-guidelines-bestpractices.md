@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento do AEM – Diretrizes e práticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Diretrizes para o uso de modelos e componentes {#guidelines-for-using-templates-and-components}
@@ -62,21 +61,21 @@ Por exemplo:
 
   Isso envolvia a sobreposição de uma definição de componente:
 
-   * Criar uma pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
+  * Criar uma pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
-      * Por exemplo, para personalizar a cópia do componente de Texto:
+    * Por exemplo, para personalizar a cópia do componente de Texto:
 
-         * de `/libs/foundation/components/text`
-         * para `/apps/myProject/components/text`
+      * de `/libs/foundation/components/text`
+      * para `/apps/myProject/components/text`
 
 * [Personalização de páginas mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Esse caso envolve a sobreposição de um servlet:
 
-   * No repositório, copie um ou mais scripts padrão:
+  * No repositório, copie um ou mais scripts padrão:
 
-      * de `/libs/sling/servlet/errorhandler/`
-      * para `/apps/sling/servlet/errorhandler/`
+    * de `/libs/sling/servlet/errorhandler/`
+    * para `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >

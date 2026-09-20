@@ -7,13 +7,12 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4efa0c3f-f628-4168-88c9-ba5d0ce075ff
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 5%
-
+source-wordcount: '748'
+ht-degree: 6%
 ---
-
 # Suporte XFA em formulários adaptáveis baseados em XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introdução {#introduction}
@@ -56,7 +55,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de data/hora </p> </td>
-   <td><p>Seletor de data</p> </td>
+   <td><p>Seletor de datas</p> </td>
   </tr>
   <tr>
    <td><p>Rabisco de assinatura</p> </td>

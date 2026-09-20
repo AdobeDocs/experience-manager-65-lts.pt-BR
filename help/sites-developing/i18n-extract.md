@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d6aa0ff8-01b8-48ef-93f3-59edb9cd50bd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Extraindo strings para tradução{#extracting-strings-for-translating}
 
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:

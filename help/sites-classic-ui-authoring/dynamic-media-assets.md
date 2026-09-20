@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 42836ae9-d184-4bef-84dd-e15077909cb3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
-
+source-wordcount: '211'
+ht-degree: 1%
 ---
-
 # Trabalhar com o Dynamic Media{#working-with-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos avançados de merchandising e marketing visuais sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c1c4ab9c-7950-41f8-a493-11e11ebcaa95
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '374'
 ht-degree: 0%
-
 ---
-
 # Sincronização do aplicativo{#synchronizing-the-app}
 
 ## Sincronização do aplicativo {#synchronizing-the-app-1}
@@ -43,6 +42,6 @@ Selecione o botão Sincronizar ![sync-app](assets/sync-app.png) no canto inferio
 ### Especificações técnicas {#technical-specifications}
 
 * A lógica principal de enviar os dados do aplicativo offline para o servidor do AEM Forms está incluída em runtime/offline/util/offline.js.
-* No .js, a chamada para a função processOfflineSubmittedSavedTasks(...) envia as tarefas salvas/enviadas para o servidor. Também lida com erros ou conflitos no processo de sincronização. Se o envio de uma tarefa falhar, a tarefa no aplicativo será marcada como com falha. Além disso, a tarefa permanece na Caixa de saída.
+* No .js, a chamada para processOfflineSubmittedSavedTasks(...) envia as tarefas salvas/enviadas para o servidor. Também lida com erros ou conflitos no processo de sincronização. Se o envio de uma tarefa falhar, a tarefa no aplicativo será marcada como com falha. Além disso, a tarefa permanece na Caixa de saída.
 * As funções syncSubmittedTask() e syncSavedTask() executam operações em tarefas individuais.
 * A chamada para a função processOfflineSubmittedSavedTasks() é iniciada pelo componente de lista de tarefas depois que um usuário seleciona sincronizar o estado offline para o servidor ou uma sincronização automática pelo thread em segundo plano.

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1817'
 ht-degree: 0%
-
 ---
-
 # Configuração do rastreamento de vídeo para o Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Há vários métodos disponíveis para rastrear eventos de vídeo, dois dos quais são opções herdadas para versões mais antigas do Adobe Analytics. Essas opções herdadas são: Marcos herdados e Segundos herdados.

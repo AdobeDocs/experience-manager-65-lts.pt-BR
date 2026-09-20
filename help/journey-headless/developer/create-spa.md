@@ -4,13 +4,12 @@ description: Nesta continuação opcional da Jornada de desenvolvedores headless
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 71b7f46de3619605c8a5aedc496cfb85ed582f59
+exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # Como criar aplicativos de página única (SPAs) com o AEM {#create-spa}
 
 Nesta continuação opcional da [Jornada de desenvolvedores headless do AEM](overview.md), você aprende como o Adobe Experience Manager (AEM) pode combinar a entrega headless com recursos tradicionais de pilha completa do CMS e como criar SPAs editáveis usando a estrutura do Editor de SPA do AEM, além de integrar SPAs externos, habilitando recursos de edição conforme necessário.
@@ -123,7 +122,7 @@ Veja abaixo os [recursos adicionais](#additional-resources) que abordam tópicos
 Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos mencionados neste documento.
 
 * [Headful e headless no AEM](/help/sites-developing/headful-headless.md): uma descrição dos diferentes modelos de entrega disponíveis no AEM
-* [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md): uma boa introdução a SPAs no AEM
+* [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md) - Uma boa introdução a SPAs no AEM
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md): diretrizes sobre como desenvolver SPAs para o AEM
 * [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md): detalhes de como o editor de SPA funciona
 * [Documentos de referência de SPA](/help/sites-developing/spa-reference-materials.md): referências da API JavaScript e links para projetos de código aberto do GitHub para SPAs do AEM

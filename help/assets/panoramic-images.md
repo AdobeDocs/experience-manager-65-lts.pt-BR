@@ -9,13 +9,12 @@ docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # Imagens panorâmicas{#panoramic-images}
 
 Esta seção descreve como trabalhar com o Visualizador de imagens panorâmicas para renderizar imagens panorâmicas esféricas para obter uma experiência de visualização imersiva em 360 graus de uma sala, propriedade, localização ou paisagem.

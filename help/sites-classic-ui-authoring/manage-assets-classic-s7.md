@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e452c343-3bba-4774-b153-c5ba05f24362
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3578'
 ht-degree: 0%
-
 ---
-
 # Adicionar recursos do Dynamic Media Classic (Scene7) à sua página{#adding-scene-features-to-your-page}
 
 O [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=pt-BR) é uma solução hospedada para gerenciamento, aprimoramento, publicação e fornecimento de ativos de mídia avançada para Web, dispositivos móveis, email e exibições e impressões conectadas à Internet.

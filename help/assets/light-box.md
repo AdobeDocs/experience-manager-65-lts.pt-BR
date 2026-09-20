@@ -5,13 +5,12 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 913b8c5a-c532-43a0-93ce-0b96dd5eec54
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '248'
 ht-degree: 0%
-
 ---
-
 # Lightbox {#lightbox}
 
 O Lightbox é um tipo especial de coleção que fornece acesso fácil aos ativos. Você pode acessar rapidamente o Lightbox para adicionar ou excluir ativos. Ele serve como sua galeria de imagens pessoal.

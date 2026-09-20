@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2212'
 ht-degree: 2%
-
 ---
-
 # Integração com o Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Integre o [Adobe Dynamic Tag Management](https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html) ao AEM para que você possa usar suas propriedades da Web do Dynamic Tag Management para rastrear sites do AEM. O Dynamic Tag Management permite que os profissionais de marketing gerenciem tags para coleta de dados e distribuam dados nos sistemas de marketing digital. Por exemplo, use o Dynamic Tag Management para coletar dados de uso do site da AEM e distribuir os dados para análise no Adobe Analytics ou no Adobe Target.
@@ -28,7 +27,7 @@ Após configurar a integração, as alterações nas ferramentas e regras de imp
 >Se estiver usando o DTM com uma configuração de proxy personalizada, defina as configurações de proxy do cliente HTTP, pois algumas funcionalidades do AEM estão usando as APIs 3.x e algumas outras as APIs 4.x:
 >
 >* A 3.x está configurada com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* A 4.x está configurada com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 4.x está configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Opções de implantação {#deployment-options}
@@ -162,7 +161,7 @@ Ao hospedar as bibliotecas Tag Management dinâmicas no AEM, o AEM configura aut
   </tr>
   <tr>
    <td>Expressão de programação</td>
-   <td>(Aparece e é obrigatório quando Ativar importador de pesquisa está selecionado.) Uma expressão cron que controla quando as bibliotecas do Dynamic Tag Management são baixadas.</td>
+   <td>(Aparece e é obrigatório quando Ativar importador de pesquisa estiver selecionado.) Uma expressão cron que controla quando as bibliotecas do Dynamic Tag Management são baixadas.</td>
   </tr>
  </tbody>
 </table>

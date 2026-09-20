@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 29943019-6ff2-440e-8cf8-4b92b0408021
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '532'
 ht-degree: 0%
-
 ---
-
 # Definição dos casos de teste{#defining-your-test-cases}
 
 Seus casos de teste devem se basear no:
@@ -96,12 +95,12 @@ Verifique se o site ainda está disponível quando um servidor é desligado.
 * **Clusters**
 Usado para fornecer o seguinte:
 
-   * **Failover**
-Se um servidor falhar, outros servidores no cluster assumirão o processamento.
+  * **Failover**
+    Se um servidor falhar, outros servidores no cluster assumirão o processamento.
 
-   * **Desempenho**
-O balanceamento de carga com failover completo aumenta o desempenho de um cluster.
-Quando usado para um projeto de cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
+  * **Desempenho**
+    O balanceamento de carga com failover completo aumenta o desempenho de um cluster.
+    Quando usado para um projeto de cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
 
 ## Teste de software de terceiros {#testing-third-party-software}
 

@@ -7,13 +7,12 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bc3cf42f-9107-4960-bef5-49d1dde4fbb5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
-
+source-wordcount: '444'
+ht-degree: 4%
 ---
-
 # Criação da ajuda em contexto para campos de formulário{#authoring-in-context-help-for-form-fields}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -55,7 +54,7 @@ Você pode usar o campo Descrição longa para especificar texto longo ou incorp
 
 ![Adicionando mídia avançada como ajuda em contexto para campos de formulário](assets/long-descriptions.png)
 
-Adicionar descrição longa exibe um **?Ícone** ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
+Adicionando descrição longa exibe um **?** ícone ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
 
 ![Exemplo de ajuda em contexto de mídia avançada](assets/photoshop.png)
 
@@ -65,6 +64,6 @@ Além da ajuda em contexto para campos de formulário, você pode especificar a 
 
 ![Adicionando ajuda em contexto para um painel de formulário](assets/panel-level-help.png)
 
-Adicionar ajuda para o painel exibe um **?Ícone** ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
+Adicionando ajuda para o painel exibe um **?** ícone ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
 
 ![Exemplo de ajuda em contexto no nível do painel do formulário](assets/photoshop-1.png)

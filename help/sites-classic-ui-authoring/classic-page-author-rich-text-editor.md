@@ -7,13 +7,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f5114938-1279-4f00-9c2b-bd9ecd8eef6f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1788'
 ht-degree: 2%
-
 ---
-
 # Editor de rich text {#rich-text-editor}
 
 O Editor de Rich Text é um elemento básico fundamental para inserir conteúdo textual no AEM. É a base de vários componentes, incluindo:
@@ -266,7 +265,7 @@ As funções específicas da tabela são:
 * [Adicionar ou Excluir Linhas](#add-or-delete-rows)
 * [Adicionar ou excluir colunas](#add-or-delete-columns)
 * [Seleção de Linhas ou Colunas Inteiras](#selecting-entire-rows-or-columns)
-* [Mesclar Células](#merge-cells)
+* [Mesclar células](#merge-cells)
 * [Dividir células](#split-cells)
 * [Tabelas aninhadas](#creating-nested-tables)
 * [Remover tabela](#remove-table)
@@ -334,7 +333,7 @@ A coluna atual também pode ser excluída.
 
 Seleciona toda a linha ou coluna atual. Ações específicas (por exemplo, mesclar) ficam disponíveis.
 
-#### Mesclar Células {#merge-cells}
+#### Mesclar células {#merge-cells}
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 

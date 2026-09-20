@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
 # Publicar páginas{#publishing-pages}
 
 Depois de criar e revisar seu conteúdo no ambiente de criação, disponibilize-o em seu site público (seu ambiente de publicação).
@@ -28,13 +27,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
->* **Publicar/Desfazer a publicação**
+>* **Publicar/Desfazer publicação**
 >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
 >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
->* **Replicar / Replicação**
+>* **Replicar/Replicar**
 >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
 

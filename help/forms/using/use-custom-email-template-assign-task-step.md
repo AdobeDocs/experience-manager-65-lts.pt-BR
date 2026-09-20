@@ -6,13 +6,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cb661ab6-5a76-421f-9fa7-e505fd629d45
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
-
+source-wordcount: '518'
+ht-degree: 1%
 ---
-
 # Usar modelos de email personalizados em uma etapa Atribuir tarefa{#use-custom-email-templates-in-an-assign-task-step}
 
 Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma notificação de e-mail típica contém o link da tarefa atribuída e informações relacionadas à tarefa. A imagem a seguir exibe um exemplo de notificação por email:

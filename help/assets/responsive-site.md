@@ -8,13 +8,12 @@ content-type: reference
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 053efcc4-35dd-49c8-9645-ae29aa492352
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '343'
 ht-degree: 11%
-
 ---
-
 # Entregar imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
 Use o recurso Código responsivo quando quiser compartilhar o código para veiculação responsiva com o desenvolvedor da Web. Você copia o código (**[!UICONTROL RESS]**) responsivo para a área de transferência para poder compartilhá-lo com o desenvolvedor da Web.

@@ -8,21 +8,20 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # Definição das configurações do AEM DS{#configuring-aem-ds-settings}
 
 Este artigo descreve como configurar o **Serviço de Configurações do AEM DS**. Essa configuração pode ser usada em vários cenários, por exemplo:
 
 * No Gerenciamento de correspondência
 
-   * Para configurar o fluxo de trabalho AEM Forms
-   * Ao usar o Portal do Forms para salvar remotamente rascunhos/envios
+  * Para configurar o fluxo de trabalho AEM Forms
+  * Ao usar o Portal do Forms para salvar remotamente rascunhos/envios
 
 * Em Formulários adaptáveis, para casos em que um Formulário adaptável é enviado da instância de publicação
 
@@ -43,7 +42,7 @@ Veja a seguir as etapas para configurar as **[!UICONTROL Configurações do AEM 
 
 1. Adicione as seguintes informações nos respectivos campos:
 
-   **[!UICONTROL URL do Servidor de Processamento]**: o Servidor de Processamento é o servidor no qual o fluxo de trabalho do Forms ou do AEM deve ser acionado. Pode ser o mesmo que o URL da instância do autor do AEM ou o outro URL do servidor (ou seja, https://localhost:port/).
+   **[!UICONTROL URL do Servidor de Processamento]**: o Servidor de Processamento é o servidor no qual o fluxo de trabalho do Forms ou do AEM deve ser acionado. Pode ser a mesma URL da instância do autor do AEM ou a outra URL do Servidor (ou seja, https://localhost:port/).
 
    **[!UICONTROL Nome de Usuário do Servidor de Processamento]**: Nome de Usuário do Fluxo de Trabalho [baseado na URL do servidor sendo usada]
 

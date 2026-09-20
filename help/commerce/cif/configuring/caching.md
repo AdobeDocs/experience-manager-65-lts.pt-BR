@@ -4,13 +4,12 @@ description: Saiba mais sobre as diferentes configurações disponíveis para ha
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7da2c607-b407-4e4b-bfba-bfaa78aff475
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '882'
 ht-degree: 54%
-
 ---
-
 # Armazenamento em cache e desempenho {#caching}
 
 ## Armazenamento em cache de respostas do Component e GraphQL {#graphql}
@@ -64,5 +63,5 @@ Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define
 ## Recursos adicionais
 
 - [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
-- [Configuração de armazenamento em cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
+- [Configuração de cache do GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
 - [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)

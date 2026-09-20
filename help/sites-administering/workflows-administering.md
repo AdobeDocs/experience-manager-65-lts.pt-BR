@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
-
+source-wordcount: '1015'
+ht-degree: 63%
 ---
-
 # Administração de instâncias do fluxo de trabalho{#administering-workflow-instances}
 
 O console do fluxo de trabalho fornece várias ferramentas para administrar instâncias do fluxo de trabalho e garantir que elas estejam em execução conforme esperado.
@@ -140,7 +139,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>Nome da tarefa</td>
+   <td>Nome do processo</td>
    <td>scheduledpurge.name</td>
    <td>Um nome descritivo para a limpeza agendada.</td>
   </tr>
@@ -188,7 +187,7 @@ Os dados processados por fluxos de trabalho são armazenados no armazenamento fo
 
 No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não são mantidas no JCR para as instâncias de fluxo de trabalho dos modelos marcados para armazenamento externo.
 
-A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
+A propriedade *userMetadataPersistenceEnabled* está armazenada no nó *jcr:content* do modelo de fluxo de trabalho. Esse sinalizador é mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 

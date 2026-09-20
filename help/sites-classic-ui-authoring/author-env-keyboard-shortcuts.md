@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2fd45cb4-33e0-47b0-a4cc-4ae039b78e36
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 34%
-
+source-wordcount: '115'
+ht-degree: 24%
 ---
+# Atalhos de teclado para Consoles{#keyboard-shortcuts-for-consoles}
 
-# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
-
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso dos consoles, outros para [edição de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

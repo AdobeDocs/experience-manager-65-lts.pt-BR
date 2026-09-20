@@ -7,13 +7,12 @@ docset: aem65
 feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 761c9946-bf8e-468e-b8f5-36c958d68e90
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # Visualização e noções básicas dos relatórios de transação do AEM Forms no OSGi{#viewing-and-understanding-transaction-reports}
 
 Relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Para obter mais informações, consulte [Visão geral dos Relatórios de Transações do AEM Forms](../../forms/using/transaction-reports-overview.md).

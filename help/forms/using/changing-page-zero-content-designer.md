@@ -7,13 +7,12 @@ docset: aem65
 feature: Adaptive Forms,Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f966f5fb-338a-4d8e-91c6-aa0eddd03420
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '232'
 ht-degree: 0%
-
 ---
-
 # Alteração do conteúdo da Página zero no Designer {#changing-page-zero-content-in-designer}
 
 O conteúdo da Página Zero é exibido por padrão quando um visualizador que não seja da Adobe PDF, como o visualizador padrão do PDF em [!DNL Chrome] ou [!DNL Firefox], não consegue ler o conteúdo do formulário PDF/XFA. A mensagem padrão de Página zero é mostrada abaixo.

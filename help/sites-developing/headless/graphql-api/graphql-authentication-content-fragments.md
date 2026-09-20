@@ -4,13 +4,12 @@ description: Entenda a autenticação necessária para consultas remotas de Grap
 feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8891b13d-5d7d-4ac5-99ba-bde8bff58a6d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 42%
-
+source-wordcount: '112'
+ht-degree: 41%
 ---
-
 # Autenticação para consultas remotas do Adobe Experience Manager GraphQL em fragmentos de conteúdo {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
 Um caso de uso fundamental para a [API do GraphQL do Adobe Experience Manager (AEM) para entrega de fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) é o de aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticado para garantir a entrega de conteúdo headless.

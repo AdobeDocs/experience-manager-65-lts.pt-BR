@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Configuração do scheduler de sincronização {#configuring-the-synchronization-scheduler}
 
 Por padrão, o agendador de sincronização é executado a cada 3 minutos para sincronizar todos os ativos modificados e atualizados no repositório por meio do LiveCycle Workbench 11. Os aplicativos que contêm formulários e recursos ficam visíveis na interface do usuário do AEM Forms após a conclusão do processo de sincronização.
@@ -51,7 +50,7 @@ Você pode usar a opção **Sincronizar Assets do Repositório** para sincroniza
 
 Você pode criar novos aplicativos no designer de workflow (LiveCycle Workbench).
 
-Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem um nome idêntico, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.* está registrado.
+Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem nomes idênticos, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.*&quot; está registrado.
 
 Para resolver o conflito, renomeie o aplicativo e sincronize manualmente os ativos.
 

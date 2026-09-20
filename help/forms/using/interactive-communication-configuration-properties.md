@@ -9,13 +9,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73e4cd72-0479-4b3c-82d2-653cded590b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 6%
-
+source-wordcount: '614'
+ht-degree: 7%
 ---
-
 # Propriedades de configuração de Comunicações interativas{#interactive-communications-configuration-properties}
 
 As Comunicações Interativas incluem propriedades que são configuradas automaticamente após a instalação do pacote do [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Os autores de Comunicações interativas podem editar essas propriedades de configuração padrão usando a página **Configuração do console da Web do Adobe Experience Manager**.
@@ -54,7 +53,7 @@ Selecione a **configuração de fragmentos de documento** na página **Configura
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Recuo</td> 

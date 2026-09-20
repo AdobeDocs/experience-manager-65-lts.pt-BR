@@ -8,13 +8,12 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e2d31db9-bb47-4260-8ebb-000a7b776f53
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 1%
-
 ---
-
 # Personalização da marca {#branding-customization}
 
 É possível personalizar o ícone do aplicativo, o nome do aplicativo, as imagens de inicialização e a página de logon para fornecer uma aparência distinta e específica da organização para o aplicativo AEM Forms. Por exemplo, você pode alterar as imagens para usar logotipos da sua organização. O aplicativo AEM Forms é compatível com as seguintes personalizações:

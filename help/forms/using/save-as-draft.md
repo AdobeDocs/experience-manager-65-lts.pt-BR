@@ -7,13 +7,12 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 25dba5c5-0f27-457a-935b-c451e0bf5241
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # Salvamento de uma tarefa ou formulário como rascunho {#saving-a-task-or-form-as-a-draft}
 
 A opção salvar como rascunho salva um instantâneo de uma tarefa ou formulário junto com os dados preenchidos no formulário associado. Você também pode criar um rascunho de um modelo. Os rascunhos são salvos no dispositivo móvel e sincronizados com o servidor do Adobe Experience Manager Forms para uma recuperação posterior.

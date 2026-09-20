@@ -1,19 +1,18 @@
 ---
-title: Aprimoramentos de tradução
+title: Aprimoramentos da tradução
 description: Aprimoramentos e refinamentos incrementais nos recursos de gerenciamento de tradução do AEM.
 topic-tags: site-features
 content-type: reference
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
-
-# Aprimoramentos de tradução{#translation-enhancements}
+# Aprimoramentos da tradução{#translation-enhancements}
 
 Esta página apresenta melhorias e refinamentos incrementais aos recursos de gerenciamento de tradução do AEM.
 
@@ -79,8 +78,8 @@ Para usar este recurso:
 
 * Um TMS deve ser configurado para uso com o AEM.
 * O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
-   * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
+  * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
+  * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
 
 As atualizações da memória de tradução podem ser interceptadas e enviadas a um destino personalizado, nos casos em que uma memória de tradução própria for usada.
 

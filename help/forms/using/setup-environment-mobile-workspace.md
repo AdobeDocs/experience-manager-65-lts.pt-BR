@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 41799183-ef5a-4990-bd7b-7b58cafe3960
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # Configurar ambiente para o aplicativo AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Você precisa do seguinte hardware, software e licenças para criar e implantar o aplicativo AEM Forms:

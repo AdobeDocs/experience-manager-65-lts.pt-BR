@@ -4,13 +4,12 @@ description: Saiba como personalizar os Componentes principais do Adobe Experien
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 11%
-
+source-wordcount: '2667'
+ht-degree: 14%
 ---
-
 # Personalizar os Componentes principais do Adobe Experience Manager CIF {#customize-cif-components}
 
 O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para usar os [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estende ainda mais o componente [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Adobe Commerce. Você também pode saber mais sobre a integração do GraphQL entre o Adobe Experience Manager (AEM) e o Adobe Commerce e os ganchos de extensão fornecidos pelos Componentes principais do CIF.
@@ -56,7 +55,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
 1. Nesse ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a página `US` > `Home` em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Você verá que a loja está usando o tema Venia. Ao expandir o Menu principal da loja, você verá várias categorias, indicando que a conexão com o Adobe Commerce está funcionando.
+   Você verá que a vitrine está usando o tema Venia. Ao expandir o Menu principal da loja, você verá várias categorias, indicando que a conexão com o Adobe Commerce está funcionando.
 
    ![Loja configurada com o tema Venia](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -64,7 +63,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
 O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, adicione uma instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
 
-1. Acesse a **página inicial** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navegue até a **Home Page** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Insira um novo **Teaser do produto** no container do layout principal da página.
 
@@ -477,7 +476,7 @@ Neste ponto, a lógica de quando exibir o símbolo **Eco Friendly** está funcio
 
    ![Implementação Final Da Medalha Amigável Eco](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Parabéns {#congratulations}
+## Parabéns! {#congratulations}
 
 Você personalizou seu primeiro componente CIF do AEM. Baixe os [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
@@ -490,8 +489,8 @@ Revise a funcionalidade do selo **Novo** que já foi implementado no Teaser do p
 ## Recursos adicionais {#additional-resources}
 
 - [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
-- [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
-- [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
+- [Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personalização dos Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
 - [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 - [Uso do seletor de produto e categoria do CIF](use-cif-pickers.md)

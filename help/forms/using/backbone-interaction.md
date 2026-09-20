@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c04d7d09-9d92-4a6c-b00f-7386a12ef5eb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # Interação backbone{#backbone-interaction}
 
 O Backbone é uma biblioteca que ajuda a criar e a seguir a arquitetura MVC em aplicações Web. A ideia básica do Backbone é organizar sua interface em visualizações lógicas, apoiadas por modelos, cada um dos quais pode ser atualizado independentemente quando o modelo muda, sem precisar redesenhar a página. Para obter mais informações sobre o Backbone, consulte [https://backbonejs.org](https://backbonejs.org/).

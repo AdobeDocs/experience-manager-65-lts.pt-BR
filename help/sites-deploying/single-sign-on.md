@@ -8,13 +8,12 @@ content-type: reference
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
-
+source-wordcount: '752'
+ht-degree: 1%
 ---
-
 # Logon único {#single-sign-on}
 
 O Logon único (SSO) permite que um usuário acesse vários sistemas após fornecer credenciais de autenticação (como um nome de usuário e senha) uma vez. Um sistema separado (conhecido como autenticador confiável) executa a autenticação e fornece ao Experience Manager as credenciais do usuário. O Experience Manager verifica e impõe as permissões de acesso ao usuário (ou seja, determina quais recursos o usuário tem permissão para acessar).

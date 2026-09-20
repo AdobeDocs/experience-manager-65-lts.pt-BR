@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a4e6b858-2470-4e8a-b02d-58e6ab7f37ea
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # Experimentar a estrutura globalizada de sites no We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 O We.Retail foi criado com uma estrutura de site globalizada que oferece um idioma principal que pode ser copiado para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.

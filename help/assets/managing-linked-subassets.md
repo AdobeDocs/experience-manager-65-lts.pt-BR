@@ -1,17 +1,16 @@
 ---
 title: Gerenciar ativos compostos com referências e várias páginas
-description: Saiba como criar referências a ativos digitais no  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas individuais de subativos de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
+description: Saiba como criar referências a ativos digitais no [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas individuais de subativos de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 077dfd55-0193-41ff-97c0-9f6be978cc9f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # Gerenciar ativos compostos e de várias páginas {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] pode identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Esse recurso está disponível somente para formatos de arquivo compatíveis. Se o ativo carregado contiver referências a [!DNL Experience Manager] ativos, um link bidirecional será criado entre os ativos carregados e referenciados.
@@ -99,8 +98,8 @@ Para gerar os subativos, siga um destes procedimentos:
 * Novos ativos: o fluxo de trabalho [!UICONTROL Atualização DAM do Assets] é executado em qualquer novo ativo que seja carregado para [!DNL Experience Manager]. Os subativos são gerados automaticamente para novos ativos de várias páginas.
 * Ativos de várias páginas existentes: execute manualmente o fluxo de trabalho [!UICONTROL DAM Atualizar Assets] seguindo uma das etapas:
 
-   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Iniciar fluxo de trabalho], selecione [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
-   * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
+  * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Iniciar fluxo de trabalho], selecione [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
+  * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
 
 Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho **[!UICONTROL Analisar documentos do Word]** do DAM. Ele gera um componente `cq:Page` a partir do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do componente `cq:Page`. Essas imagens são extraídas mesmo se a geração de sub-ativos estiver desativada.
 

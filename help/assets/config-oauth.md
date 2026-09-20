@@ -1,16 +1,15 @@
 ---
 title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
-description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
+description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 6%
-
+source-wordcount: '1079'
+ht-degree: 7%
 ---
-
 # Solução de problemas de tags inteligentes para credenciais do OAuth {#oauth-config}
 
 Uma configuração de autorização aberta é necessária para aprovar o consentimento para que o aplicativo [!DNL Adobe Experience Manager] interaja com os Serviços de Conteúdo Inteligente de maneira segura.
@@ -38,8 +37,8 @@ Uma configuração OAuth requer os seguintes pré-requisitos:
 
 * Crie uma nova integração OAuth no [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Use o `ClientID`, `ClientSecret`, `OrgID` e outras propriedades nas etapas abaixo:
 * Os seguintes arquivos podem ser encontrados neste caminho `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configuração do OAuth para o AMS existente e usuários locais {#steps-config-oauth-onprem}
 
@@ -51,7 +50,6 @@ As etapas abaixo podem ser executadas pelo administrador do sistema. O cliente A
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Atualize o `auth.token.provider.client.id` com a ID de cliente da nova configuração OAuth.
    * Atualizar `auth.access.token.request` para `"https://ims-na1.adobelogin.com/ims/token/v3"`

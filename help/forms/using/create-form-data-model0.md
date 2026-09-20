@@ -7,13 +7,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2796'
 ht-degree: 0%
-
 ---
-
 # Tutorial: criar modelo de dados do formulário no AEM Forms{#tutorial-create-form-data-model}
 
 ![04-criar-formulário-modelo-dados-principal](assets/04-create-form-data-model-main.png)
@@ -190,14 +189,14 @@ A configuração do modelo de dados de formulário inclui:
 
    * **Objetos do modelo de dados**:
 
-      * faturas
-      * chamadas
-      * cliente
+     * faturas
+     * chamadas
+     * cliente
 
    * **Serviços:**
 
-      * obter
-      * atualizar
+     * obter
+     * atualizar
 
    Selecione **Adicionar Selecionados** para adicionar objetos e serviços de modelo de dados selecionados ao modelo de dados de formulário.
 
@@ -244,7 +243,7 @@ Execute as seguintes etapas para criar propriedades-filho calculadas para o obje
 
 ### Adicionar associações entre objetos de modelo de dados {#add-associations-between-data-model-objects}
 
-Depois que os objetos do modelo de dados tiverem sido definidos, você poderá criar associações entre eles. A associação pode ser um para um ou um para muitos. Por exemplo, pode haver vários dependentes associados a um funcionário. É chamada de associação um para muitos e é representada por 1:n na linha que conecta os objetos do modelo de dados associados. No entanto, se uma associação retornar um nome de funcionário exclusivo para uma determinada ID de funcionário, ela será chamada de associação um para um.
+Depois que os objetos do modelo de dados tiverem sido definidos, você poderá criar associações entre eles. A associação pode ser um para um ou um para muitos. Por exemplo, pode haver vários dependentes associados a um funcionário. É chamada de associação um para muitos e representada por 1:n na linha que conecta objetos de modelo de dados associados. No entanto, se uma associação retornar um nome de funcionário exclusivo para uma determinada ID de funcionário, ela será chamada de associação um para um.
 
 Ao adicionar objetos de modelo de dados associados em uma fonte de dados a um modelo de dados de formulário, suas associações são mantidas e exibidas como conectadas por linhas de seta.
 
@@ -252,8 +251,8 @@ Com base no caso de uso, crie as seguintes associações entre os objetos do mod
 
 | Associação | Objetos do modelo de dados |
 |---|---|
-| 1:n | cliente: chamadas (várias chamadas podem ser associadas a um cliente em uma fatura mensal) |
-| 1:1 | cliente:listas (Um faturamento é associado a um cliente para um determinado mês) |
+| 1:n | cliente:calls (Várias chamadas podem ser associadas a um cliente em uma fatura mensal) |
+| 1:1 | cliente:bills (Uma fatura está associada a um cliente para um determinado mês) |
 
 Execute as seguintes etapas para criar associações entre objetos de modelo de dados:
 
@@ -274,7 +273,7 @@ Execute as seguintes etapas para criar associações entre objetos de modelo de 
 1. Na caixa de diálogo **Adicionar argumento**:
 
    * Selecione **mobilenum** na lista suspensa **Nome**. A propriedade de número de celular é uma propriedade comum disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre o cliente e chamar objetos de modelo de dados.
-Para cada número de celular disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
+     Para cada número de celular disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
 
    * Especifique um título opcional e uma descrição para o argumento.
    * Selecione **cliente** na lista suspensa **Ligando a**.
@@ -302,7 +301,7 @@ Para cada número de celular disponível no objeto de modelo de dados do cliente
    * Selecione **contas** da lista suspensa **Objeto de Modelo**.
 
    * Selecione **get** da lista suspensa **Serviço**. A propriedade **billplan**, que é a chave primária para a tabela de contas, já está disponível na seção **Argumentos**.
-Os objetos de modelo de dados de listas e clientes são vinculados usando as propriedades billplan (listas) e customerplan (cliente), respectivamente. Crie um vínculo entre essas propriedades para recuperar os detalhes do plano para qualquer cliente disponível no banco de dados MySQL.
+     Os objetos de modelo de dados de listas e clientes são vinculados usando as propriedades billplan (listas) e customerplan (cliente), respectivamente. Crie um vínculo entre essas propriedades para recuperar os detalhes do plano para qualquer cliente disponível no banco de dados MySQL.
 
    * Selecione **cliente** na lista suspensa **Ligando a**.
 

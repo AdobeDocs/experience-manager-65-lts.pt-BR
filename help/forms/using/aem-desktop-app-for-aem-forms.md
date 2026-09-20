@@ -8,13 +8,12 @@ noindex: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b1c4808-8f41-47e5-b936-f017c29dbd3f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '484'
 ht-degree: 0%
-
 ---
-
 # Aplicativo de desktop do Adobe Experience Manager (AEM) para AEM Forms {#aem-desktop-app-for-aem-forms}
 
 O aplicativo de desktop do AEM permite mapear o repositório do Adobe Experience Manager (AEM) Assets e os arquivos binários do AEM Forms para um diretório de rede no sistema. Você pode exibir os ativos sincronizados e os arquivos binários em um explorador de arquivos e usar vários aplicativos para editar os arquivos conforme desejado. Além de visualizar os arquivos, você também pode criar, fazer upload e excluir os arquivos binários. Você também pode abrir, editar e salvar arquivos diretamente do software. Por exemplo, você pode abrir e editar diretamente um arquivo XDP do Designer. As alterações feitas nos ativos localmente são refletidas no repositório do AEM Assets e na interface do usuário do AEM Forms.

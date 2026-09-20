@@ -1,17 +1,16 @@
 ---
 title: Práticas recomendadas para processar os formatos de arquivo compatíveis
-description: Práticas recomendadas para processar os vários tipos de arquivos com suporte usando o  [!DNL Experience Manager Assets].
+description: Práticas recomendadas para processar os vários tipos de arquivos com suporte usando o [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 28765aeb-1303-40da-bde0-df1b4c625d37
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '481'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para o formato de arquivo Assets {#assets-file-format-best-practices}
 
 O [!DNL Adobe Experience Manager Assets] oferece suporte a muitas bibliotecas de formatos de arquivo proprietárias e de terceiros para atender a diversos requisitos de suporte de arquivos dos usuários. As bibliotecas Adobe compatíveis incluem, [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer e [!DNL Adobe InDesign Server]. Além disso, o [!DNL Experience Manager Assets] oferece suporte a bibliotecas de terceiros, incluindo [!DNL ImageMagick], [!DNL TwelveMonkeys] e assim por diante.

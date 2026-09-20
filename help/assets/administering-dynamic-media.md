@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '264'
 ht-degree: 1%
-
 ---
-
 # Configuração do Dynamic Media {#setting-up-dynamic-media}
 
 [O Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
@@ -41,5 +40,3 @@ Consulte também os seguintes tópicos:
 >**Se estiver atualizando:**
 >
 >* Após ativar e executar o Experience Manager, qualquer ativo que você fizer upload terá o Dynamic Media ativado automaticamente (a menos que tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do Experience Manager e for novo no Dynamic Media, deverá reprocessar seus ativos para ativá-los no Dynamic Media.
-
-

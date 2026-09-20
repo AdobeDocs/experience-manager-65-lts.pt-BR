@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # Alterando o local da interface do usuário do espaço de trabalho do AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 O espaço de trabalho do AEM Forms oferece suporte imediato para os idiomas inglês, francês, alemão e japonês. Ela também permite localizar a interface do usuário do AEM Forms Workspace em qualquer outro idioma.
@@ -54,7 +53,7 @@ Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados seja
 
 >[!NOTE]
 >
->Para encontrar o código de localidade do idioma do navegador do seu navegador. Abrir `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>Para encontrar o código de localidade do idioma do navegador do seu navegador. Abra `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![recolhendo_imagens_de_painéis](assets/collapsing_panels_image.png)
 
@@ -79,7 +78,7 @@ Para localizar as imagens, execute as seguintes etapas:
 
 1. Execute todas as alterações semânticas listadas no artigo [Personalização do Workspace](../../forms/using/introduction-customizing-html-workspace.md).
 1. Navegue até a pasta *js/runtime/utility* e abra o arquivo *usersession.js* para edição.
-1. Localize o código listado no bloco de código original e adicione a condição *lang!== &#39;nw&#39;* para a instrução if:
+1. Localize o código listado no bloco de código original e adicione a condição *lang !== &#39;nw&#39;* à instrução if:
 
    ```javascript
    // Orignal code

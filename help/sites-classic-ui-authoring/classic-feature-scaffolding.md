@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # Andaime{#scaffolding}
 
 Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente. Por meio da interface padrão do Adobe Experience Manager (AEM), seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.

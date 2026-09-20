@@ -4,13 +4,12 @@ description: Entenda como o recurso de conteúdo associado do AEM fornece a cone
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5e0a8316-4207-417a-9855-dfac53ca0eb0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 49%
-
 ---
-
 # Conteúdo associado{#associated-content}
 
 O recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam (opcionalmente) ser usados com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo headless [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Qualquer conteúdo associado pode ser configurado usando o editor de Fragmento de conteúdo.

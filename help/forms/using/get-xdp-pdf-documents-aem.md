@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 674e6e03-0c34-4dbb-b0b2-d8f1e65547d7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 0%
-
 ---
-
 # Obtenção de documentos XDP e PDF no AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Visão geral {#overview}

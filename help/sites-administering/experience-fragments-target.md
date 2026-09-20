@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 39473f0a-e4ee-4372-a0ea-ccf5d32501b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Exportar Fragmentos de experiência para o Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Você pode exportar [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) criados no Adobe Experience Manager (AEM) para o Adobe Target (Target). Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
@@ -84,7 +83,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades de página** 
 
    >[!NOTE]
    >
-   >Se você adicionar a configuração da nuvem à pasta principal do fragmento de experiência, a configuração será herdada pelas pastas secundárias.
+   >Se você adicionar a configuração da nuvem à pasta principal do fragmento de experiência, a configuração será herdada pelas pastas filhas.
    >
    >
    >Se você adicionar a configuração da nuvem ao próprio fragmento de experiência, a configuração será herdada por todas as variações.
@@ -186,12 +185,12 @@ Para evitar essas situações:
 
   A mensagem de erro no AEM não proíbe que o usuário exclua (à força) o fragmento de experiência. Se o fragmento de experiência for excluído:
 
-   * A oferta do Target com o fragmento de experiência do AEM pode exibir um comportamento indesejado
+  * A oferta do Target com o fragmento de experiência do AEM pode exibir um comportamento indesejado
 
-      * A oferta provavelmente ainda será renderizada, pois o HTML do fragmento de experiência foi enviado para o Target
-      * Qualquer referência no fragmento de experiência pode não funcionar corretamente se os ativos referenciados também tiverem sido excluídos no AEM.
+    * A oferta provavelmente ainda será renderizada, pois o HTML do fragmento de experiência foi enviado para o Target
+    * Qualquer referência no fragmento de experiência pode não funcionar corretamente se os ativos referenciados também tiverem sido excluídos no AEM.
 
-   * É impossível fazer mais modificações no fragmento de experiência, pois ele não existe mais no AEM.
+  * É impossível fazer mais modificações no fragmento de experiência, pois ele não existe mais no AEM.
 
 
 ## Remoção de ClientLibs dos Fragmentos de experiência exportados para o Target {#removing-clientlibs-from-fragments-exported-target}

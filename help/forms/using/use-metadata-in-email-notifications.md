@@ -6,13 +6,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '899'
 ht-degree: 0%
-
 ---
-
 # Usar metadados em uma notificação por email {#use-metadata-in-an-email-notification}
 
 Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma [notificação por email](../../forms/using/use-custom-email-template-assign-task-step.md) típica contém o link da tarefa atribuída e informações relacionadas à tarefa.
@@ -184,7 +183,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
    Se você não especificar o título, o campo Metadados personalizados exibirá o caminho completo do arquivo ECMAScript. Execute as seguintes etapas para especificar um título significativo para o script:
 
    1. Expanda o nó do script, clique com o botão direito do mouse no nó **[!UICONTROL jcr:content]** e clique em **[!UICONTROL Mixins]**.
-   1. Digite mix:title na caixa de diálogo Editar misturas e clique em **+**.
+   1. Digite mix:title na caixa de diálogo Editar Mixins e clique em **+**.
    1. Adicione uma propriedade com os seguintes valores.
 
       | Nome | jcr:title |

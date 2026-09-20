@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 46db0690-03e9-4b31-aa44-200f224f3707
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 2%
-
+source-wordcount: '394'
+ht-degree: 4%
 ---
-
 # Ferramentas de desenvolvimento{#development-tools}
 
 Para desenvolver aplicativos JCR, Apache Sling ou Adobe Experience Manager (AEM), os seguintes conjuntos de ferramentas estão disponíveis:
@@ -24,12 +23,12 @@ Para desenvolver aplicativos JCR, Apache Sling ou Adobe Experience Manager (AEM)
   O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor CRX/AEM, quando desenvolve um aplicativo estendendo ou modificando os componentes prontos para uso e pacotes Java™ ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
 
 * Um conjunto constituído pelo seguinte:
-   * Um ambiente de desenvolvimento integrado. Por exemplo, [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * Uma ferramenta de criação. Por exemplo, [Apache Maven](/help/sites-developing/ht-projects-maven.md).
-   * FileVault, que foi desenvolvido pela Adobe para mapear um repositório em um sistema de arquivos, um sistema de controle de versão. Por exemplo, Subversion.
-   * Um sistema de rastreio de erros. Por exemplo, Jira.
-   * Um sistema central de gerenciamento de dependências. Por exemplo, Apache Archiva.
-   * E um sistema de automação de construção. Por exemplo, Apache Continuum.
+  * Um ambiente de desenvolvimento integrado. Por exemplo, [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md).
+  * Uma ferramenta de criação. Por exemplo, [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+  * FileVault, que foi desenvolvido pela Adobe para mapear um repositório em um sistema de arquivos, um sistema de controle de versão. Por exemplo, Subversion.
+  * Um sistema de rastreio de erros. Por exemplo, Jira.
+  * Um sistema central de gerenciamento de dependências. Por exemplo, Apache Archiva.
+  * E um sistema de automação de construção. Por exemplo, Apache Continuum.
 
   Essa configuração permite integrar totalmente o aplicativo (conteúdo, código, configuração) em qualquer ambiente e processo de desenvolvimento. O link entre os diferentes elementos é a representação do repositório no sistema de arquivos por meio do FileVault, já que todas as ferramentas de desenvolvimento mencionadas anteriormente podem funcionar com arquivos.
 
@@ -58,7 +57,7 @@ O AEM é fornecido com outras ferramentas que facilitam o desenvolvimento:
 Ferramentas que facilitam a criação de novos projetos:
 
 * [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
-* [Modelos de AEM Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
+* [Modelos do AEM Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
 >

@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '545'
 ht-degree: 0%
-
 ---
-
 # Personalizar páginas mostradas pelo Manipulador de erros{#customizing-pages-shown-by-the-error-handler}
 
 O Adobe Experience Manager (AEM) vem com um manipulador de erros padrão para lidar com erros HTTP; por exemplo, mostrando:
@@ -68,7 +67,7 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 
 Os erros HTTP 500 são causados por exceções do lado do servidor.
 
-* **[Erro Interno do Servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* Erro interno do servidor **[500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.
 
 Quando o processamento de solicitações resulta em uma exceção, a estrutura do Apache Sling (em que o AEM está incorporado):
@@ -76,8 +75,8 @@ Quando o processamento de solicitações resulta em uma exceção, a estrutura d
 * registra a exceção
 * devoluções:
 
-   * o código de resposta HTTP 500
-   * o rastreamento de pilha de exceção
+  * o código de resposta HTTP 500
+  * o rastreamento de pilha de exceção
 
   no corpo da resposta.
 

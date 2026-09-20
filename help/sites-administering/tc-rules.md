@@ -5,13 +5,12 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 575be4c4fd05ec0a48ca7fdea67e13ce8eca0789
+exl-id: ab876224-22bd-4fd7-b609-bd5703715932
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 61%
-
+source-wordcount: '1136'
+ht-degree: 62%
 ---
-
 # Identificação de conteúdo a ser traduzido{#identifying-content-to-translate}
 
 As regras de tradução identificam o conteúdo a ser traduzido para páginas, componentes e ativos que estão incluídos ou excluídos de projetos de tradução. Quando uma página ou ativo está sendo traduzido, o AEM extrai esse conteúdo para que ele possa ser enviado ao serviço de tradução.
@@ -42,7 +41,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Sintaxe de regra para páginas, componentes e ativos {#rule-syntax-for-pages-components-and-assets}
 
-Uma regra é um elemento `node` com um ou mais elementos `property` secundários e zero ou mais elementos `node` secundários:
+Uma regra é um elemento `node` com um ou mais elementos filhos `property` e zero ou mais elementos `node` filhos:
 
 ```xml
 <node path="content path">
@@ -56,15 +55,15 @@ Uma regra é um elemento `node` com um ou mais elementos `property` secundários
 Cada um desses elementos `node` têm as seguintes características:
 
 * O atributo `path` contém o caminho para o nó raiz da ramificação à qual as regras se aplicam.
-* Os elementos `property` secundários identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
+* Os elementos `property` filhos identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
 
-   * O atributo `name` contém o nome da propriedade.
-   * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. Por padrão, o valor é `true`. Esse atributo é útil ao substituir regras anteriores.
+  * O atributo `name` contém o nome da propriedade.
+  * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. Por padrão, o valor é `true`. Esse atributo é útil ao substituir regras anteriores.
 
-* Os elementos `node` secundários identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
+* Os elementos `node` filhos identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
 
-   * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
-   * Os elementos `property` secundários identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` secundários para regras de nó.
+  * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
+  * Os elementos `property` filhos identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` filhos para regras de nó.
 
 A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma propriedade `text`, como o componente de texto de base e o componente de imagem de base.
 
@@ -164,7 +163,7 @@ Há 4 atributos que você pode alterar por meio da interface: `isDeep`, `inherit
 
 **isDeep** Este atributo é aplicável em filtros de nó e é verdadeiro por padrão. Ele verifica se o nó (ou seus antecessores) contém essa propriedade com o valor da propriedade especificado no filtro. Se for falso, ele só verifica o nó atual.
 
-Por exemplo, nós filhos estão sendo adicionados a um trabalho de tradução mesmo quando o nó pai está com a propriedade `draftOnly` definida como verdadeira para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
+Por exemplo, nós filhos estão sendo adicionados a um trabalho de tradução mesmo quando o nó pai está com a propriedade `draftOnly` definida como verdadeira para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós filhos.
 
 No Editor, você pode marcar/desmarcar **É profundo** na guia **Filtros**.
 
@@ -188,7 +187,7 @@ Na interface, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
 
 Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**.
 
-**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo, jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
+**updateDestinationLanguage** Este atributo é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo, jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
 
 Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**, mas para as propriedades específicas que têm códigos de idioma como valor.
 

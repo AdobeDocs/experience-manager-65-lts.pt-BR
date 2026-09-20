@@ -8,20 +8,19 @@ discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 45c6a654-c726-4a45-86a9-57f4ed24b4ca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '543'
 ht-degree: 1%
-
 ---
-
 # Modelo de formulário de renderização para formulários HTML5 {#rendering-form-template-for-html-forms}
 
 ## Renderizar Ponto de Extremidade {#render-endpoint}
 
 Os formulários HTML5 têm a noção de **Perfis** que são expostos como pontos de extremidade REST para habilitar a Renderização Móvel de Modelos de Formulário. Estes perfis associaram o **Renderizador de Perfil**. Elas são páginas JSP responsáveis por gerar a representação do formulário no HTML, chamando o serviço OSGi do Forms. O caminho JCR do nó de Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário apontando para o perfil &#39;padrão&#39; é semelhante a:
 
-https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*caminho da pasta que contém o formulário xdp*>&amp;modelo=&lt;*nome do xdp*>
+https://<*host*>:<*porta*>/content/xfaforms/profiles/default.html?contentRoot=<*caminho da pasta que contém o formulário xdp*>&template=<*nome do xdp*>
 
 Por exemplo, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

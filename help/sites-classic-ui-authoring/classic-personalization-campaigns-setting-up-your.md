@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cf510635-6cbf-4f2b-b289-7ad31978c608
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2219'
 ht-degree: 0%
-
 ---
-
 # Configuração da campanha{#setting-up-your-campaign}
 
 Configurar uma nova campanha inclui as seguintes etapas (genéricas):
@@ -29,22 +28,22 @@ Em seguida, dependendo do tipo de experiências que você criar, será necessár
 
 * Se estiver criando um Teaser:
 
-   1. [Criar uma experiência de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Adicionar conteúdo ao seu teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+  1. [Criar uma experiência de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Adicionar conteúdo ao seu teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * Se estiver criando um informativo:
 
-   1. [Criar uma experiência com informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
+  1. [Criar uma experiência com informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
 
 * Se estiver criando uma oferta do Adobe Target (antigo Test&amp;Target):
 
-   1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -121,19 +120,19 @@ Agora que você criou o esqueleto básico para sua experiência, é necessário 
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+  * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * [Informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
-   * [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
+  * [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Oferta da Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
+  * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
 
 ### Adicionar um novo ponto de contato {#adding-a-new-touchpoint}
 
@@ -253,7 +252,7 @@ Para adicionar leads a listas pré-existentes:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. No menu **Ferramentas**, selecione **Adicionar à Lista....** A janela **Adicionar à Lista** é aberta.
+1. No menu **Ferramentas**, selecione **Adicionar à Lista...**. A janela **Adicionar à Lista** será aberta.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 

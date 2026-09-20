@@ -7,13 +7,12 @@ noindex: true
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d53e4cb3-c632-4589-a37b-a39fd55acd88
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 14%
-
+source-wordcount: '814'
+ht-degree: 15%
 ---
-
 # Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -45,9 +44,9 @@ O serviço de tradução automática traduz imediatamente seu conteúdo em forma
 
    Para obter mais informações sobre configurações e configurações do documento de registro, consulte:
 
-[Documento de configuração modelo de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Configuração do modelo de documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[Configurações do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Configurações do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personalize as informações de identidade visual do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida com o mesmo idioma para o qual você localizou o Formulário adaptável usando o idioma do computador. A localidade do navegador ajuda a localizar as informações de marca no documento de registro.
 1. Para exibir o documento de registro localizado, selecione Gerar visualização. O documento de registro PDF é gerado e aberto em uma nova guia no navegador.

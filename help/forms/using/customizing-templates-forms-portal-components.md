@@ -8,13 +8,12 @@ docset: aem65
 feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1257'
 ht-degree: 0%
-
 ---
-
 # Personalização de modelos para componentes do Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Pré-requisitos {#prerequisites}
@@ -33,15 +32,15 @@ Faça o seguinte para poder criar um modelo personalizado para vários component
 
 ## Criação de um modelo personalizado {#creating-a-nbsp-custom-template}
 
-1. Criar um nó sling:Folder em /apps
+1. Crie um nó sling:Folder em /apps
 
    Adicione uma propriedade &quot;fpContentType&quot;. Especifique valores apropriados para a propriedade, dependendo do componente para o qual você está definindo o modelo personalizado.
 
    * Componente de pesquisa e listagem: &quot;/libs/fd/fp/formTemplate&quot;
    * Componente de rascunhos e envios:
 
-      * Seção Rascunhos: /libs/fd/fp/draftsTemplate
-      * Seção de envios: /libs/fd/fp/submissionsTemplate
+     * Seção Rascunhos: /libs/fd/fp/draftsTemplate
+     * Seção de envios: /libs/fd/fp/submissionsTemplate
 
    * Componente do link: /libs/fd/fp/linkTemplate
 
@@ -52,7 +51,7 @@ Faça o seguinte para poder criar um modelo personalizado para vários component
    >O título pode ser diferente do nome do nó de sling:Folder que você criou.
 
    A imagem a seguir descreve a configuração do componente de Pesquisa e Lister.
-   ![Criando uma sling:Folder](assets/1.png)
+   ![Criando um sling:Folder](assets/1.png)
 
 1. Crie um arquivo template.html nesta pasta para que ele possa servir como modelo personalizado.
 1. Grave o modelo personalizado e use os metadados personalizados conforme descrito abaixo.

@@ -1,5 +1,5 @@
 ---
-title: Estratégia de backup do Connector para usuários do EMC Documentum&reg;
+title: Estratégia de backup para o Connector para usuários do EMC Documentum&reg;
 description: Verifique como criar uma estratégia de backup para o Connector para usuários do EMC Documentum&reg;.
 contentOwner: admin
 content-type: reference
@@ -8,13 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 019e1a9b-c26c-429f-8153-fceeb85f7096
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
-
 ---
-
 # Estratégia de backup para o Connector para usuários do EMC Documentum® {#backup-strategy-for-connector-for-emc-documentum-users}
 
 Se você tiver o Connector for EMC Documentum® instalado, além das instruções neste capítulo, sua estratégia de backup e recuperação deve incluir backup (ou recuperação) do computador em que o sistema ECM está instalado. (Consulte a documentação do ECM Documentum®).

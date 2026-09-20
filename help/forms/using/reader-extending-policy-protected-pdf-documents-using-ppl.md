@@ -8,13 +8,12 @@ topic-tags: document_services
 feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b1430a30-313f-4efc-85c5-ccb914923031
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '828'
 ht-degree: 0%
-
 ---
-
 # Reader ampliando documentos do PDF protegidos por política usando a Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Familiarize-se com os conceitos de segurança de documentos, extensão do leitor e linguagem de programação Java para ler e estender os documentos do PDF protegidos por política de segurança de documentos.

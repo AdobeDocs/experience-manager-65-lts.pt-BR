@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 90a44cab-3ecf-4a71-95d4-e8ce2d996980
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 5%
-
 ---
-
 # Fazer logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
 
 As etapas do Forms Workflow fornecem logs detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
@@ -80,7 +79,7 @@ Faça o seguinte para ativar o log de depuração para workflows do AEM Forms:
 
 1. Acesse o gerenciador de configurações do console da Web do AEM em:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Selecione **[!UICONTROL Sling]** > **[!UICONTROL Suporte De Log]**.
 1. Selecione **[!UICONTROL Adicionar novo Agente.]**

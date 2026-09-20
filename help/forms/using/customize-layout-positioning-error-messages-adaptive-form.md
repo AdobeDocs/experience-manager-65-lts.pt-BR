@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9347f22a-166f-4403-9ca9-c29139384b2b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 0%
-
 ---
-
 # Personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 Você pode personalizar o layout e o posicionamento das mensagens de erro de um formulário adaptável. Você pode executar as seguintes personalizações:
