@@ -468,7 +468,7 @@ O uso de seletores CSS semelhantes aos seguintes não é recomendado para uso co
 Isso ocorre porque elementos html adicionais, como a tag &lt;div>, são adicionados ao HTML gerado após a importação.
 
 * Scripts que dependem da estrutura semelhante à acima também não são recomendados para uso com elementos marcados para conversão em componentes do AEM.
-* O uso de estilos nas tags de marcação para conversão de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;> não é recomendado.
+* O uso de estilos nas tags de marcação para conversão de componentes como &lt;div data-cq-component=&quot;&ast;&quot;> não é recomendado.
 * O layout de design deve seguir as práticas recomendadas da HTML5 Boilerplate. Leia mais em: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuração de módulos OSGI {#configuring-osgi-modules}
@@ -529,7 +529,7 @@ A tabela abaixo descreve brevemente as propriedades:
 >
 >Por exemplo, se a configuração padrão for
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E você precisa substituir `CQ_DESIGN_PATH` por `VIPURL` no padrão de pesquisa, então seu padrão de pesquisa deve ter esta aparência:
 >
