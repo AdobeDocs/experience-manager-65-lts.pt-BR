@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b43fe826-5bb9-474e-b83e-187b90afa84b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '492'
 ht-degree: 0%
-
 ---
-
 # Estender o rastreamento de eventos{#extending-event-tracking}
 
 O AEM Analytics permite rastrear a interação do usuário no seu site. Como desenvolvedor, talvez seja necessário:
@@ -104,7 +103,7 @@ Específico da loja:
 
 >[!NOTE]
 >
->Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
+>Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adição de retornos de chamada de registro {#adding-record-callbacks}
 

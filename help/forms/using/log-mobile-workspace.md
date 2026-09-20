@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 387e2514-722f-4fe6-b375-2f0586eb281f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
-
 ---
-
 # Logon no aplicativo Adobe Experience Manager Forms{#logging-in-to-aem-forms-app}
 
 Ao iniciar o aplicativo Adobe Experience Manager (AEM) Forms, primeiro você deve fornecer suas credenciais de logon e um URL do servidor do AEM Forms.

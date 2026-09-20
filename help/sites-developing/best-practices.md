@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 3%
-
+source-wordcount: '441'
+ht-degree: 5%
 ---
-
 # Práticas recomendadas{#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
@@ -30,7 +29,7 @@ Antes de iniciar seu projeto de desenvolvimento do AEM, revise primeiro estas pr
 * [Armadilhas de código](/help/sites-developing/code-pitfalls.md)
 * [Interação JCR](/help/sites-developing/jcr-integration.md)
 * [Pacotes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=pt-BR)
+* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informações adicionais sobre práticas recomendadas {#additional-best-practices-information}
 
@@ -70,7 +69,7 @@ O gerenciamento e a criação do conteúdo do seu site têm algumas práticas re
   </tr>
   <tr>
    <td>Fluxos de trabalhos</td>
-   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de workflows</a></td>
+   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de fluxos de trabalho</a></td>
    <td><p>Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade do processamento que ocorre em um ambiente do AEM. Portanto, é altamente recomendável planejar as implementações dos workflows com cuidado.</p> </td>
   </tr>
  </tbody>
@@ -83,7 +82,7 @@ A Linguagem de modelo do HTML (HTL) é um novo sistema de modelos do HTML, intro
 |  |  |  |
 |---|---|---|
 | Visão geral da HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Este documento descreve o que é o HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
-| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/br/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
+| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
 
 >[!NOTE]
 >

@@ -9,14 +9,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2004'
 ht-degree: 0%
-
 ---
-
-
 # Perguntas frequentes dos formulários HTML5{#frequently-asked-questions-faq-for-html-forms}
 
 Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo dos formulários HTML5.
@@ -212,7 +210,7 @@ Resposta: O campo Data aceita o formato ISO, AAAA-MM-DD. Se você especificar um
 
 1. O HTML5 Forms executa o script de inicialização e o evento de formulário pronto várias vezes?
 
-   Resposta: Sim, os scripts de inicialização e os eventos de formulário pronto são executados várias vezes, pelo menos uma vez no servidor e outra no lado do cliente. É recomendável gravar scripts como inicializar ou formulário:eventos prontos com base em alguma lógica de negócios (dados de formulário ou de campo) para que a ação seja executada com base no estado dos dados e idempotente (se os dados forem iguais).
+   Resposta: Sim, os scripts de inicialização e os eventos de formulário pronto são executados várias vezes, pelo menos uma vez no servidor e outra no lado do cliente. É recomendável gravar scripts como inicializar ou formar :ready eventos com base em alguma lógica de negócios (dados de formulário ou campo) para que a ação seja executada com base no estado dos dados e idempotentes (se os dados forem iguais).
 
 ### Design de XDP {#designing-xdp}
 

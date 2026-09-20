@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1135'
 ht-degree: 2%
-
 ---
-
 # Publicar um email para provedores de serviços de email{#publishing-an-email-to-email-service-providers}
 
 Você pode publicar informativos em serviços de email, como ExactTarget e Silverpop Engage. Este documento descreve como configurar o AEM para publicar um boletim informativo nesses serviços de e-mail.

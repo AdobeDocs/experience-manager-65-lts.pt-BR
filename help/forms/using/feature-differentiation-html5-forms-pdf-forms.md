@@ -9,13 +9,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: adf65e7f-9984-40e8-99e3-fadce08bb44e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 2%
-
 ---
-
 # Diferenciação de recursos entre o HTML5 Forms e o PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 A tabela a seguir especifica o suporte ao recurso fornecido para o HTML5 Forms e o PDF forms:
@@ -54,7 +53,7 @@ A tabela a seguir especifica o suporte ao recurso fornecido para o HTML5 Forms e
   </tr>
   <tr>
    <td>Cabeçalhos/Rodapés </td>
-   <td>Compatível. <br /> <br /> Como os formulários móveis do HTML5 não oferecem suporte a quebras de página, os cabeçalhos e rodapés aparecem apenas uma vez. No entanto, você pode configurá-los no layout para serem exibidos em vários locais na visualização de formulários para dispositivos móveis.<br /> </td>
+   <td>Compatível. <br /> <br /> Como os formulários móveis HTML5 não são compatíveis com quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. No entanto, você pode configurá-los no layout para serem exibidos em vários locais na visualização de formulários para dispositivos móveis.<br /> </td>
    <td>Compatível.</td>
   </tr>
   <tr>

@@ -8,27 +8,26 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d2f5fc90-7047-4a45-9c82-996f0da60782
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 65%
-
+source-wordcount: '620'
+ht-degree: 58%
 ---
-
 # Integração com o Adobe Target{#integrating-with-adobe-target}
 
-Como parte da Adobe Marketing Cloud, o [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM adotou o fluxo de trabalho de direcionamento usado no Adobe Target Standard. Se você usa o Target, estará familiarizado com o ambiente de edição de direcionamento no AEM.
+Como parte da Adobe Marketing Cloud, o [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público-alvo instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM adotou o fluxo de trabalho de direcionamento usado no Adobe Target Standard. Se você usa o Target, estará familiarizado com o ambiente de edição de direcionamento no AEM.
 
 Integre o AEM Sites com o Adobe Target para personalizar o conteúdo em suas páginas:
 
 * Implemente o direcionamento de conteúdo.
-* Use os públicos do Target para criar experiências personalizadas.
+* Use os públicos-alvos do Target para criar experiências personalizadas.
 * Envie dados de contexto para o Target quando os visitantes interagirem com suas páginas.
 * Rastreie as taxas de conversão.
 
 Para integrar com o Target, execute as seguintes tarefas:
 
-1. [Execute as tarefas de pré-requisito](/help/sites-administering/target-requirements.md): registre-se no Adobe Target e configure determinados aspectos da instância de autor do AEM. Sua conta do Adobe Target deve ter no mínimo **o aprovador &#x200B;** permissões de nível. Além disso, você deve proteger as configurações de atividade no nó de publicação para que elas fiquem inacessíveis aos usuários.
+1. [Execute as tarefas de pré-requisito](/help/sites-administering/target-requirements.md): registre-se no Adobe Target e configure determinados aspectos da instância de criação do AEM. Sua conta do Adobe Target deve ter no mínimo **o aprovador **permissões de nível. Além disso, você deve proteger as configurações de atividade no nó de publicação para que elas fiquem inacessíveis aos usuários.
 
 1. Ou:
 
@@ -46,16 +45,16 @@ Para integrar com o Target, execute as seguintes tarefas:
 >Se você estiver usando o Target com uma configuração de proxy personalizada, precisará configurar ambas as configurações de proxy do cliente HTTP, pois algumas funcionalidades do AEM usam as APIs 3.x e outras usam as APIs 4.x:
 >
 >* A 3.x está configurada com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* A 4.x está configurada com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 4.x está configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 >[!CAUTION]
 >
->Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que não possa ser acessado por usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+>Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
 >Consulte [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) para obter informações detalhadas.
 
-Quando a integração for concluída, você poderá [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md) que envia dados do visitante para o Adobe Target. Observe que os componentes da página exigem um código específico para ativar o direcionamento de conteúdo. (Consulte [Desenvolvimento de Conteúdo Direcionado](/help/sites-developing/target.md).)
+Quando a integração for concluída, você poderá [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md) que envia dados do visitante para o Adobe Target. Observe que os componentes da página exigem um código específico para habilitar o direcionamento de conteúdo. (Consulte [Desenvolvimento de Conteúdo Direcionado](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >
@@ -67,7 +66,7 @@ Integrar o AEM com o Adobe Target requer conhecimento sobre o Adobe Target, o ge
 
 * Adobe Target (consulte a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=pt-BR)).
 * Console de Atividades do AEM (consulte [Gerenciamento de atividades](/help/sites-authoring/activitylib.md)).
-* Públicos do AEM (consulte [Gerenciamento de públicos](/help/sites-authoring/managing-audiences.md)).
+* Públicos-alvos do AEM (consulte [Gerenciamento de públicos-alvos](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

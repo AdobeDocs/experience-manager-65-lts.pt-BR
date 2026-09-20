@@ -1,6 +1,6 @@
 ---
 title: Como acessar programaticamente o JCR do AEM
-description: Você pode modificar programaticamente nós e propriedades localizados no repositório do AEM, que faz parte do Adobe Experience Cloud
+description: Você pode modificar programaticamente nós e propriedades localizados no repositório do AEM, que faz parte da Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0b375003-183d-4007-b1a1-0c48607745d1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Como acessar programaticamente o JCR do AEM{#how-to-programmatically-access-the-aem-jcr}
 
-Você pode modificar programaticamente nós e propriedades localizados no repositório do Adobe CQ, que faz parte do Adobe Experience Cloud. Para acessar o repositório CQ, use a API Java™ Content Repository (JCR). Você pode usar a API JCR do Java™ para criar, substituir, atualizar e excluir conteúdo (CRUD) localizado no repositório do Adobe CQ. Para obter mais informações sobre a API JCR do Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Você pode modificar programaticamente nós e propriedades localizados no repositório do Adobe CQ, que faz parte da Adobe Experience Cloud. Para acessar o repositório CQ, use a API Java™ Content Repository (JCR). Você pode usar a API JCR do Java™ para criar, substituir, atualizar e excluir conteúdo (CRUD) localizado no repositório do Adobe CQ. Para obter mais informações sobre a API JCR do Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >

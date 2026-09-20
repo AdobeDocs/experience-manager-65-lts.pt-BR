@@ -4,18 +4,17 @@ description: Saiba como ativar determinadas funcionalidades do fragmento de cont
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b526cd3a-9b04-403a-a6f4-6abe973aaeac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 45%
-
 ---
-
 # Fragmentos de conteúdo - Navegador de configuração{#content-fragments-configuration-browser}
 
 Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os recursos avançados de entrega headless do Adobe Experience Manager (AEM).
 
-## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
+## Habilitar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
 Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** para habilitar o seguinte:
 
@@ -24,7 +23,7 @@ Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** par
 
 >[!CAUTION]
 >
->Se você não ativar os **modelos de fragmentos de conteúdo**:
+>Se você não habilitar os **modelos de fragmentos de conteúdo**:
 >
 >* a opção **Criar** não estará disponível para criar modelos.
 >* você não pode [selecionar a configuração de sites para criar o ponto de extremidade relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
@@ -34,7 +33,7 @@ Para habilitar a funcionalidade dos fragmentos de conteúdo, você deve fazer o 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
 * Aplicar a configuração à sua pasta de ativos
 
-### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
+### Habilitar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
 Para [usar determinadas funcionalidades do Fragmento de Conteúdo](#creating-a-content-fragment-model), você **deve** habilitá-las primeiro por meio do **Navegador de Configuração**:
 
@@ -48,7 +47,7 @@ Para [usar determinadas funcionalidades do Fragmento de Conteúdo](#creating-a-c
 
    1. Especifica um **Título**.
    1. Para permitir seu uso, selecione
-      * **Modelos de fragmentos do conteúdo**
+      * **Modelos de fragmentos de conteúdo**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuração](assets/cfm-conf-01.png)

@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2d05a36e-c02e-41ef-a03d-2a799aa6eab3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 0%
-
 ---
-
 # Condição em linha e repetição em comunicações interativas e cartas{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## Condições em linha {#inline-conditions}
@@ -179,7 +178,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Caso contrário, se você não precisar renderizar as informações (aqui transações) seletivamente, mantenha a condição vazia excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é habilitado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
+   Caso contrário, se você não precisar renderizar as informações (aqui transações) seletivamente, mantenha a condição vazia excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é ativado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
 
 1. Selecione um separador para formatar o texto dinâmico e selecione a marca de seleção a ser salva:
 
@@ -199,11 +198,11 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a correspondência com dados de amostra.
    * Um arquivo de dados XML anexado ao dicionário de dados relevante.
 
-   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/br/aem-forms/6-2/data-dictionary.html).
+   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 
-   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
+   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5} garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
 
    >[!NOTE]
    >

@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 31fad2a6-f6e8-4d9c-a2b2-6749635fcf9b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 0%
-
 ---
-
 # Personalizar criar interface de correspondência{#customize-create-correspondence-ui}
 
 ## Visão geral {#overview}
@@ -113,7 +112,7 @@ Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras padr
 
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. No CRXDE, clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -130,7 +129,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
 1. Clique em jcr:content na estrutura de pastas.
 
-   jcr:propriedades do conteúdo são exibidas.
+   as propriedades do jcr:content são exibidas.
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
@@ -138,7 +137,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    A caixa de diálogo Editar jcr:data é exibida.
 
-   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
+   Clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
 
 1. Na caixa de diálogo Editar jcr:data, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
 
@@ -156,7 +155,7 @@ A imagem de logotipo personalizada requer que uma folha de estilos adicional sej
 
 Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo com a interface do usuário:
 
-1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
 1. Crie um arquivo chamado customcss.css (você não pode usar um nome de arquivo diferente) no seguinte local:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -165,7 +164,7 @@ Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo 
 
    1. Clique com o botão direito na pasta **css** e selecione **Criar > Criar arquivo**.
    1. Na caixa de diálogo Novo Arquivo, especifique o nome do CSS como `customcss.css` (você não pode usar um nome de arquivo diferente) e clique em **OK**.
-   1. Adicione o seguinte código ao arquivo css recém-criado. Em content:url no código, especifique o nome da imagem carregada na pasta imgs no CRXDE.
+   1. Adicione o seguinte código ao arquivo css recém-criado. No conteúdo :url no código, especifique o nome da imagem que você carregou para a pasta imgs no CRXDE.
 
       ```css
       .logo, .logo:after {

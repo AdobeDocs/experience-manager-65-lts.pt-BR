@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a6ae1633-63a8-4364-b298-bc569459a136
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 1%
 ---
-
 # Incorporação do componente de link em uma página{#embedding-link-component-in-a-page}
 
 ## Pré-requisitos {#prerequisites}
@@ -55,6 +54,6 @@ Execute as seguintes etapas para adicionar um componente Link à página:
 * Selecione PDF como o tipo de renderização se o caminho especificado no Caminho do formulário apontar para um documento que tenha PDF como formato de renderização permitido.
 * A URL de envio de um formulário pode ser especificada em vários locais e sua ordem de precedência é a seguinte:
 
-   1. O URL de envio incorporado ao formulário (no botão enviar) tem a prioridade mais alta.
-   1. O URL de envio mencionado no Forms Manager tem a prioridade média.
-   1. O URL de envio mencionado no portal de formulários tem a prioridade mais baixa.
+  1. O URL de envio incorporado ao formulário (no botão enviar) tem a prioridade mais alta.
+  1. O URL de envio mencionado no Forms Manager tem a prioridade média.
+  1. O URL de envio mencionado no portal de formulários tem a prioridade mais baixa.

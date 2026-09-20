@@ -9,13 +9,12 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 654cf0fc-1a80-4764-8ce7-22d060e1f61a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 5%
-
+source-wordcount: '2299'
+ht-degree: 7%
 ---
-
 # Conjuntos de imagem {#image-sets}
 
 Os Conjuntos de imagens oferecem aos usuários uma experiência de visualização integrada, em que os usuários podem ver diferentes visualizações de um item selecionando uma imagem em miniatura. Os Conjuntos de imagens permitem apresentar visualizações alternativas de um item e o visualizador oferece ferramentas de zoom para examinar as imagens de perto.
@@ -38,7 +37,7 @@ Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recome
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
+| Número de ativos duplicados por conjunto | Nenhuma duplicata | 20‡ |
 | Número máximo de imagens por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 
 ‡ A prática recomendada é não ter ativos duplicados em um conjunto. O limite é de 20 duplicatas para um único ativo. Se você adicionar outra duplicata para esse ativo — dentro desse conjunto — a solicitação retornará um erro ou ignorará a duplicata.
@@ -143,7 +142,7 @@ Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recome
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
+| Número de ativos duplicados por conjunto | Nenhuma duplicata | 20‡ |
 | Número máximo de imagens por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 
 ‡ A prática recomendada é não ter ativos duplicados em um conjunto. O limite é de 20 duplicatas para um único ativo. Se você adicionar outra duplicata para esse ativo — dentro desse conjunto — a solicitação retornará um erro ou ignorará a duplicata.
@@ -154,7 +153,7 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e vá para **[!UICONTROL Navegação]** > **[!UICONTROL Assets]**. Navegue até o local em que você deseja criar um Conjunto de imagens, em seguida, vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do Conjunto de imagens.
 
-   Você também pode criar o conjunto de dentro de uma pasta que contenha seus ativos.
+   Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -247,7 +246,6 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
    * Para reordenar ativos, arraste uma imagem para um novo local (selecione o ícone reordenar para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, selecione o cabeçalho da coluna.
    * Para adicionar um ativo ou atualizar um ativo existente, selecione **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
-
      >[!NOTE]
      >
      >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.

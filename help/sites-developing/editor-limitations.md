@@ -8,13 +8,12 @@ topic-tags: introduction
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f66c1c5-0fe7-47be-ad78-ef4548e4e26b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
-
+source-wordcount: '312'
+ht-degree: 10%
 ---
-
 # Limitações do editor{#editor-limitations}
 
 O editor na interface habilitada para toque usa sobreposições para interagir com o conteúdo confinado em um iframe. Essa interação cria algumas limitações no uso do editor e também para desenvolvedores. Esta página resume essas limitações e fornece soluções ou soluções alternativas, quando possível.

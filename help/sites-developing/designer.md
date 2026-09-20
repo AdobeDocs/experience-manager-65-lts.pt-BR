@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 6605deda-99b8-4447-b62d-a1a50c4eed30
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # Designs e o Designer{#designs-and-the-designer}
 
 >[!CAUTION]
@@ -43,7 +42,7 @@ Os designs são armazenados em `/apps/<your-project>`. O caminho para o design a
 >
 >Todas as alterações feitas em uma página no modo de design são persistentes abaixo do nó de design do site e são aplicadas automaticamente a todas as páginas que têm o mesmo design.
 
-## Do que você precisará {#what-you-will-need}
+## O que você vai precisar {#what-you-will-need}
 
 Para realizar seu design, você precisará:
 

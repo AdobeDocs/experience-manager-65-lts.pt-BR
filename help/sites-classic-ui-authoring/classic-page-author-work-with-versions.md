@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 17%
-
+source-wordcount: '1342'
+ht-degree: 18%
 ---
-
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
 O controle de versão cria um “instantâneo” de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
@@ -98,9 +97,9 @@ Para comparar a versão atual da página com uma versão anterior:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Na Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
+1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado ***publicado*** de uma página em ocasiões específicas no passado.
 
@@ -169,8 +168,8 @@ Se quiser exibir a linha do tempo do documento:
 1. Selecione e mova (mantenha pressionada e arraste) a linha do tempo para mover pela linha do tempo do documento.
 
    * Todas as linhas indicam versões publicadas.
-Quando uma página é ativada, uma nova linha é iniciada. Toda vez que o documento é editado, uma nova cor aparece.
-No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial. A linha amarela indica que a página foi editada em algum momento durante a versão vermelha e assim por diante.
+     Quando uma página é ativada, uma nova linha é iniciada. Toda vez que o documento é editado, uma nova cor aparece.
+     No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial. A linha amarela indica que a página foi editada em algum momento durante a versão vermelha e assim por diante.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -193,4 +192,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi projetado para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um log de auditoria ou a fins legais.

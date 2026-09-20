@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1102'
 ht-degree: 1%
-
 ---
-
 # Solução de problemas de integração{#troubleshooting-integration-issues}
 
 ## Dicas gerais de solução de problemas {#general-troubleshooting-tips}
@@ -60,14 +59,14 @@ Para obter detalhes adicionais sobre como criar serviços de importador de dados
 
 ### O encerramento leva muito tempo devido ao Importador de buscas {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics nas propriedades da página [guia Cloud Services](/help/sites-developing/extending-cloud-config.md). A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para AEM 6.3 e anterior ou 6 para AEM 6.4   e posterior) do tipo `cq;PollConfig` que instancia PollingImporters usados para importar dados do Analytics para o AEM. Como resultado:
+O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics nas propriedades da página [guia Cloud Services](/help/sites-developing/extending-cloud-config.md). A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para o AEM 6.3 e anterior ou 6 para o AEM 6.4 e posterior) do tipo `cq;PollConfig` que instancia PollingImporters usados para importar dados do Analytics para o AEM. Como resultado:
 
 * Ter muitas páginas referenciando o Analytics resulta em uma grande quantidade de Importadores de buscas.
 * Além disso, copiar e colar páginas com uma referência a uma configuração do Analytics leva a uma duplicação de PollingImporters.
 
 #### Solução {#solution-1}
 
-Primeiramente, analisar o [error.log](/help/sites-deploying/configure-logging.md) pode fornecer informações sobre a quantidade de PollingImporters ativos ou registrados. Por exemplo:
+Primeiramente, analisar o [error.log](/help/sites-deploying/configure-logging.md) pode fornecer a você algumas informações do insight sobre a quantidade de PollingImporters ativos ou registrados. Por exemplo:
 
 ```
 # Count PollingImporter entries
@@ -99,11 +98,11 @@ Para corrigir o problema, tente o seguinte:
 * Republicar as configurações encontradas em `/etc/cloudservices/dynamictagmanagement`
 * Verificar ACLs em `/etc/cloudservices`. As ACLs devem ser:
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults`
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public`
 
 Para obter mais informações sobre o gerenciamento de ACLs, leia a página [Administração e Segurança do Usuário](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -165,7 +164,7 @@ Esse problema pode ter várias causas:
 Você pode experimentar as seguintes soluções:
 
 * Verifique se o código do cliente que carrega as bibliotecas do tipo DTM (que por sua vez carregam as bibliotecas do Target) é executado de forma síncrona no [cabeçalho da página](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
+* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
 
 ### Uma oferta padrão é sempre exibida em vez da oferta correta ao usar AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -210,7 +209,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/contact.html) para provisionar sua conta corretamente.
+Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/contact.html) para provisionar sua conta corretamente.
 
 ### APIs úteis do Target {#helpful-target-apis}
 

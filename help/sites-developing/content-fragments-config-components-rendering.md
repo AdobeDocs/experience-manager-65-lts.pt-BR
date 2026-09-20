@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4ed9232f-0e31-43bb-9f7d-3b351557288f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Fragmentos de conteúdo configuram componentes para renderização{#content-fragments-configuring-components-for-rendering}
 
 Há vários [serviços avançados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relacionados à renderização de fragmentos de conteúdo. Para usar esses serviços, os tipos de recursos desses componentes devem se tornar conhecidos pela estrutura de fragmentos de conteúdo.

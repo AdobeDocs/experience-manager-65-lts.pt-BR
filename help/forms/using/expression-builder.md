@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '797'
 ht-degree: 1%
-
 ---
-
 # Funções remotas no Construtor de expressões{#remote-functions-in-expression-builder}
 
 Usando o Construtor de expressões, você pode criar expressões ou condições que executam cálculos em valores de dados fornecidos pelo Dicionário de dados ou pelos usuários finais. O Gerenciamento de correspondências usa o resultado da avaliação da expressão para selecionar ativos como texto, imagens, listas e condições e inseri-los na correspondência, conforme necessário.
@@ -34,7 +33,7 @@ Os operadores disponíveis para uso em expressões estão disponíveis na barra 
 Estes são alguns exemplos de JSP EL usados com frequência que você pode usar na solução de Gerenciamento de correspondência:
 
 * Para adicionar dois números: ${number1 + number2}
-* Para concatenar duas cadeias de caracteres: ${str1} ${str2}
+* Para concatenar duas sequências de caracteres: ${str1} ${str2}
 * Para comparar dois números: ${age &lt; 18}
 
 Você pode encontrar mais informações na [especificação JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). O gerenciador de expressões do lado do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
@@ -42,27 +41,27 @@ Você pode encontrar mais informações na [especificação JSP EL](https://down
 * Índices de coleção e chaves de mapa (usando a notação []) não têm suporte em nomes de variáveis para expressões avaliadas no lado do cliente.
 * A seguir estão os tipos de parâmetros ou tipos de retorno das funções usadas em expressões:
 
-   * java.lang.String
-   * java.lang.Character
-   * Char
-   * java.lang.Boolean
-   * Booleano
-   * java.lang.Integer
-   * Int
-   * java.util.list
-   * java.lang.Short
-   * Short
-   * java.lang.Byte
-   * byte
-   * java.lang.Double
-   * Duplo
-   * java.lang.Long
-   * Longo
-   * java.lang.Float
-   * Flutuante
-   * java.util.Calendar
-   * java.util.Date
-   * java.util.List
+  * java.lang.String
+  * java.lang.Character
+  * Char
+  * java.lang.Boolean
+  * Booleano
+  * java.lang.Integer
+  * Int
+  * java.util.list
+  * java.lang.Short
+  * Short
+  * java.lang.Byte
+  * byte
+  * java.lang.Double
+  * Duplo
+  * java.lang.Long
+  * Longo
+  * java.lang.Float
+  * Flutuante
+  * java.util.Calendar
+  * java.util.Date
+  * java.util.List
 
 ### Função remota {#remote-function}
 

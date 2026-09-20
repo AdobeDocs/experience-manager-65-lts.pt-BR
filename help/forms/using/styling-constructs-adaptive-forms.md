@@ -7,13 +7,12 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0ecfd918-2c68-4085-8c6e-440499b84fc1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2378'
 ht-degree: 3%
-
 ---
-
 # Construtores de estilo para formulários adaptáveis{#styling-constructs-for-adaptive-forms}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -24,7 +23,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html).
+O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 
@@ -532,7 +531,7 @@ Você pode alterar o tema de cores das linhas de cabeçalho e corpo em uma tabel
  </tbody>
 </table>
 
-## Anexo de arquivo {#file-attachment}
+## Arquivo em anexo {#file-attachment}
 
 O widget Anexo de arquivo de formulários adaptáveis permite fazer upload de arquivos. Você também pode personalizar o widget usando as variáveis.
 

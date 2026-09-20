@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Correspondence Management
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 475e3c95-913d-49ee-8245-b88b967f9b7e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 0%
-
 ---
-
 # Publicação e cancelamento de publicação de formulários e documentos{#publishing-and-unpublishing-forms-and-documents}
 
 O AEM Forms permite criar, publicar e desfazer a publicação de formulários facilmente. Para obter mais informações sobre o AEM Forms, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
@@ -47,12 +46,12 @@ O Adaptive Forms pode utilizar algumas configurações, configurações e person
 * Outras configurações de serviços na nuvem são ativadas somente se o usuário tiver permissões de administrador.
 * Personalizações. Isso inclui, mas não se limita a:
 
-   * Layouts personalizados
-   * Aparências personalizadas
-   * Arquivo CSS - tomado como entrada na caixa de diálogo de propriedades do contêiner Formulário adaptável
-   * Categoria da biblioteca do cliente - usada como entrada na caixa de diálogo de propriedades do contêiner de Formulário adaptável
-   * Qualquer outra biblioteca do cliente que tenha sido incluída como parte do modelo de Formulário adaptável.
-   * Caminhos de design
+  * Layouts personalizados
+  * Aparências personalizadas
+  * Arquivo CSS - tomado como entrada na caixa de diálogo de propriedades do contêiner Formulário adaptável
+  * Categoria da biblioteca do cliente - usada como entrada na caixa de diálogo de propriedades do contêiner de Formulário adaptável
+  * Qualquer outra biblioteca do cliente que tenha sido incluída como parte do modelo de Formulário adaptável.
+  * Caminhos de design
 
 ## Estados do ativo {#asset-states}
 

@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: efeda84f-e04f-4cbd-898c-4754dc29e008
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 2%
-
+source-wordcount: '710'
+ht-degree: 3%
 ---
-
 # Configuração de Desfazer para Edição de Página{#configuring-undo-for-page-editing}
 
 O [serviço OSGi](/help/sites-deploying/configuring-osgi.md) **Configuração de Desfazer WCM CQ de Dia** ( `com.day.cq.wcm.undo.UndoConfigService`) expõe várias propriedades que controlam o comportamento dos comandos desfazer e refazer para editar páginas.
@@ -46,16 +45,16 @@ A seguir estão as propriedades conforme exibidas no console da Web, seguidas pe
 * **Habilitar**
 ( `cq.wcm.undo.enabled`)
 
-   * **Descrição**: determina se os autores da página podem desfazer e refazer alterações.
-   * **Padrão**: `Selected`
-   * **Tipo**: `Boolean`
+  * **Descrição**: determina se os autores da página podem desfazer e refazer alterações.
+  * **Padrão**: `Selected`
+  * **Tipo**: `Boolean`
 
 * **Caminho**
 ( `cq.wcm.undo.path`)
 
-   * **Descrição**: o caminho do repositório para dados de desfazer binários persistentes. Quando os autores alteram dados binários, como imagens, a versão original dos dados é mantida aqui. Quando as alterações nos dados binários são desfeitas, esses dados binários são restaurados na página.
-   * **Padrão**: `/var/undo`
-   * **Tipo**: `String`
+  * **Descrição**: o caminho do repositório para dados de desfazer binários persistentes. Quando os autores alteram dados binários, como imagens, a versão original dos dados é mantida aqui. Quando as alterações nos dados binários são desfeitas, esses dados binários são restaurados na página.
+  * **Padrão**: `/var/undo`
+  * **Tipo**: `String`
 
   >[!NOTE]
   >
@@ -64,85 +63,85 @@ A seguir estão as propriedades conforme exibidas no console da Web, seguidas pe
 * **Min. validade**
 ( `cq.wcm.undo.validity`)
 
-   * **Descrição**: a quantidade mínima de tempo, em horas, em que os dados de desfazer binários são armazenados. Após esse período, os dados binários ficam disponíveis para exclusão, a fim de conservar o espaço em disco.
-   * **Padrão**: `10`
-   * **Tipo**: `Integer`
+  * **Descrição**: a quantidade mínima de tempo, em horas, em que os dados de desfazer binários são armazenados. Após esse período, os dados binários ficam disponíveis para exclusão, a fim de conservar o espaço em disco.
+  * **Padrão**: `10`
+  * **Tipo**: `Integer`
 
 * **Etapas**
 ( `cq.wcm.undo.steps`)
 
-   * **Descrição**: o número máximo de ações de página armazenadas no histórico de desfazer.
-   * **Padrão**: `20`
-   * **Tipo**: `Integer`
+  * **Descrição**: o número máximo de ações de página armazenadas no histórico de desfazer.
+  * **Padrão**: `20`
+  * **Tipo**: `Integer`
 
 * **Persistência**
 ( `cq.wcm.undo.persistence`)
 
-   * **Descrição**: a classe que persiste no histórico de desfazer. Duas classes de persistência são fornecidas:
+  * **Descrição**: a classe que persiste no histórico de desfazer. Duas classes de persistência são fornecidas:
 
-      * `CQ.undo.persistence.WindowNamePersistence`: persiste o histórico usando a propriedade window.name.
-      * `CQ.undo.persistence.CookiePersistance`: persiste o histórico usando cookies.
+    * `CQ.undo.persistence.WindowNamePersistence`: persiste o histórico usando a propriedade window.name.
+    * `CQ.undo.persistence.CookiePersistance`: persiste o histórico usando cookies.
 
-   * **Padrão**: `CQ.undo.persistence.WindowNamePersistence`
-   * **Tipo**: `String`
+  * **Padrão**: `CQ.undo.persistence.WindowNamePersistence`
+  * **Tipo**: `String`
 
 * **Modo de persistência**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **Descrição**: determina quando o histórico de desfazer é persistente. Selecione esta opção para manter o histórico de desfazer após cada edição de página. Desmarque essa opção para persistir somente quando ocorrer um recarregamento de página (por exemplo, o usuário navega para uma página diferente).
+  * **Descrição**: determina quando o histórico de desfazer é persistente. Selecione esta opção para manter o histórico de desfazer após cada edição de página. Desmarque essa opção para persistir somente quando ocorrer um recarregamento de página (por exemplo, o usuário navega para uma página diferente).
 
-     A persistência do histórico de desfazer usa os recursos do navegador da Web. Se o navegador dos usuários reagir lentamente às edições da página, tente persistir no histórico de desfazer nos recarregamentos da página.
+    A persistência do histórico de desfazer usa os recursos do navegador da Web. Se o navegador dos usuários reagir lentamente às edições da página, tente persistir no histórico de desfazer nos recarregamentos da página.
 
-   * **Padrão**: `Selected`
-   * **Tipo**: `Boolean`
+  * **Padrão**: `Selected`
+  * **Tipo**: `Boolean`
 
 * **Modo do marcador**
 ( `cq.wcm.undo.markermode`)
 
-   * **Descrição**: especifica a sinalização visual a ser usada para indicar quais parágrafos são afetados quando ocorre desfazer ou refazer. Os seguintes valores são válidos:
+  * **Descrição**: especifica a sinalização visual a ser usada para indicar quais parágrafos são afetados quando ocorre desfazer ou refazer. Os seguintes valores são válidos:
 
-      * flash: O indicador de seleção dos parágrafos pisca temporariamente.
-      * select: O parágrafo é selecionado.
+    * flash: O indicador de seleção dos parágrafos pisca temporariamente.
+    * select: O parágrafo é selecionado.
 
-   * **Padrão**: `flash`
-   * **Tipo**: `String`
+  * **Padrão**: `flash`
+  * **Tipo**: `String`
 
 * **Bons componentes**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descrição**: uma lista de componentes que você deseja que sejam afetados pelos comandos desfazer e refazer. Adicionar caminhos de componentes a esta lista quando eles funcionarem corretamente com undo/redo. Anexe um asterisco (&ast;) para especificar um grupo de componentes:
+  * **Descrição**: uma lista de componentes que você deseja que sejam afetados pelos comandos desfazer e refazer. Adicionar caminhos de componentes a esta lista quando eles funcionarem corretamente com undo/redo. Anexe um asterisco (&amp;ast;) para especificar um grupo de componentes:
 
-      * O valor a seguir especifica o componente de texto de base:
+    * O valor a seguir especifica o componente de texto de base:
 
-        `foundation/components/text`
+      `foundation/components/text`
 
-      * O valor a seguir especifica todos os componentes de base:
+    * O valor a seguir especifica todos os componentes de base:
 
-        `foundation/components/*`
+      `foundation/components/*`
 
-   * Quando undo ou redo é emitido para um componente que não está nessa lista, uma mensagem é exibida indicando que o comando pode não ser confiável.
+  * Quando undo ou redo é emitido para um componente que não está nessa lista, uma mensagem é exibida indicando que o comando pode não ser confiável.
 
-   * **Padrão**: a propriedade é preenchida com muitos componentes que a AEM fornece.
-   * **Tipo**: `String[]`
+  * **Padrão**: a propriedade é preenchida com muitos componentes que a AEM fornece.
+  * **Tipo**: `String[]`
 
 * **Componentes inválidos**
 ( `cq.wcm.undo.blacklist`)
 
-   * **Descrição**: uma lista de componentes e/ou operações de componentes que você não deseja que sejam afetados pelo comando desfazer. Adicione componentes e operações de componentes que não se comportam corretamente com o comando desfazer:
+  * **Descrição**: uma lista de componentes e/ou operações de componentes que você não deseja que sejam afetados pelo comando desfazer. Adicione componentes e operações de componentes que não se comportam corretamente com o comando desfazer:
 
-      * Adicione um caminho de componente quando não quiser nenhuma das operações do componente no histórico Desfazer, por exemplo, `collab/forum/components/post`
-      * Anexe dois pontos (:) e uma operação ao caminho quando quiser que essa operação específica seja omitida do histórico de desfazer (outras operações funcionam corretamente), por exemplo, `collab/forum/components/post:insertParagraph.`
+    * Adicione um caminho de componente quando não quiser nenhuma das operações do componente no histórico Desfazer, por exemplo, `collab/forum/components/post`
+    * Anexe dois pontos (:) e uma operação ao caminho quando quiser que essa operação específica seja omitida do histórico de desfazer (outras operações funcionam corretamente), por exemplo, `collab/forum/components/post:insertParagraph.`
 
   >[!NOTE]
   >
   >Quando uma operação está nessa lista, ela ainda é adicionada ao histórico desfazer. Os usuários não podem desfazer operações que existem antes de uma operação **Componente inválido** no histórico de desfazer.
 
-   * Os nomes de operação típicos são os seguintes:
+  * Os nomes de operação típicos são os seguintes:
 
-      * `insertParagraph`: O componente é adicionado à página.
-      * `removeParagraph`: O componente foi excluído.
-      * `moveParagraph`: O parágrafo é movido para um local diferente.
-      * `updateParagraph`: As propriedades de parágrafo foram alteradas.
+    * `insertParagraph`: O componente é adicionado à página.
+    * `removeParagraph`: O componente foi excluído.
+    * `moveParagraph`: O parágrafo é movido para um local diferente.
+    * `updateParagraph`: As propriedades de parágrafo foram alteradas.
 
-   * **Padrão**: a propriedade é preenchida com várias operações de componente.
-   * **Tipo**: `String[]`
+  * **Padrão**: a propriedade é preenchida com várias operações de componente.
+  * **Tipo**: `String[]`

@@ -8,16 +8,15 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '380'
 ht-degree: 0%
-
 ---
-
 # Integração de landing pages ao Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-A AEM integrou a solução de páginas de aterrissagem com o [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) usando os seguintes componentes de chamada para ação (CTA):
+A AEM integrou a solução de páginas de aterrissagem com o [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) usando os seguintes componentes do call-to-action (CTA):
 
 1. Componente de Click Through
 1. Componente Link gráfico
@@ -30,7 +29,7 @@ A Adobe recomenda que você passe pela [integração AEM-Adobe Analytics existen
 
 ## Componentes disponíveis para mapeamento {#components-available-for-mapping}
 
-No AEM, os componentes de **Chamada para Ação** - **ClickThroughLink** e **GraphicalLink** - exibidos aqui no sidekick, podem ser mapeados para variáveis do Adobe Analytics.
+No AEM, os componentes do **Call to action** - **ClickThroughLink** e **GraphicalLink** - exibidos aqui no sidekick, podem ser mapeados para variáveis do Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -39,7 +38,7 @@ No AEM, os componentes de **Chamada para Ação** - **ClickThroughLink** e **Gra
 Para mapear componentes da página de aterrissagem para o Adobe Analytics:
 
 1. Depois de criar a configuração do Adobe Analytics e uma estrutura, selecione o conjunto de relatórios apropriado no menu suspenso. Isso resulta na busca das variáveis do Adobe Analytics e sua exibição no localizador de conteúdo.
-1. Arraste e solte os componentes de Chamada para ação (CTA) do sidekick na área de mapeamento no meio da página, conforme apropriado.
+1. Arraste e solte os componentes do Call to action (CTA) do sidekick na área de mapeamento no meio da página, conforme apropriado.
 
 <table>
  <tbody>

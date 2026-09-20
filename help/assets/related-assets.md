@@ -5,22 +5,21 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7b07a5ce-c438-4e5f-a14c-bf96b42c2a78
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
-
+source-wordcount: '644'
+ht-degree: 41%
 ---
-
 # Ativos relacionados {#related-assets}
 
-O [!DNL Adobe Experience Manager Assets] permite relacionar ativos manualmente com base nas necessidades da sua organização usando o recurso de ativos relacionados. Por exemplo, você pode relacionar um arquivo de licença a um ativo ou uma imagem/vídeo em um tópico semelhante. Você pode relacionar ativos que compartilham determinados atributos comuns. Você também pode usar o recurso para criar relacionamentos de origem/derivados entre ativos. Por exemplo, se você tiver um arquivo PDF gerado a partir de um arquivo INDD, poderá relacionar o arquivo PDF ao seu arquivo INDD de origem.
+O [!DNL Adobe Experience Manager Assets] permite relacionar manualmente os ativos de acordo com as necessidades da sua organização usando o recurso de ativos relacionados. Por exemplo, você pode relacionar um arquivo de licença a um ativo ou uma imagem/vídeo sobre um tema semelhante. Você pode relacionar ativos que compartilham determinados atributos comuns. Você também pode usar esse recurso para criar relações de origem/derivado entre ativos. Por exemplo, se você tiver um arquivo PDF gerado a partir de um arquivo INDD, poderá relacionar o arquivo PDF ao seu arquivo INDD de origem.
 
 Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou JPG de baixa resolução com fornecedores ou agências e disponibilizar o arquivo INDD de alta resolução somente mediante solicitação.
 
 >[!NOTE]
 >
->Somente os usuários com permissões de edição em ativos podem relacionar e não relacionar os ativos.
+>Somente os usuários com permissões de edição sobre os ativos podem associá-los ou desassociá-los.
 
 ## Relacionar ativos {#relating-assets}
 
@@ -50,7 +49,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Clique em **[!UICONTROL Confirmar]**.
-1. Clique em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relação na etapa 3, o ativo relacionado é listado em uma categoria apropriada na seção **[!UICONTROL Relacionado]**. Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Source]**.
+1. Clique em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relação na etapa 3, o ativo relacionado é listado em uma categoria apropriada na seção **[!UICONTROL Relacionado]**. Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -68,7 +67,7 @@ Criar relacionamentos de origem/derivados entre ativos usando o recurso de ativo
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manager Assets] buscará o ativo referenciado e o incluirá para tradução.
+Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manager Assets] busca o ativo referenciado e o inclui para tradução.
 
 A página ![Propriedades do ativo mostra o arquivo de origem do ativo relacionado a ser incluído para tradução](assets/asset-properties-source-asset.png)
 

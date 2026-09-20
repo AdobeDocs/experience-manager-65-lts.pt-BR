@@ -9,18 +9,17 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 3%
-
 ---
-
 # Criação de modelos de fluxo de trabalho{#creating-workflow-models}
 
 >[!CAUTION]
 >
->Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/br/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
+>Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
 
 Você cria um [modelo de fluxo de trabalho](/help/sites-developing/workflows.md#model) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
@@ -84,9 +83,9 @@ Ao abrir um [modelo Padrão e/ou Herdado](/help/sites-developing/workflows.md#wo
 * O navegador de Etapas não está disponível (lado esquerdo).
 * Há uma ação **Editar** disponível na barra de ferramentas (lado direito).
 * Inicialmente, o modelo e suas propriedades são apresentados no modo somente leitura como:
-   * Os fluxos de trabalho padrão estão em `/libs`
-   * Os fluxos de trabalho herdados estão em `/etc`
-Selecionar **Editar** irá:
+  * Os fluxos de trabalho padrão estão em `/libs`
+  * Os fluxos de trabalho herdados estão em `/etc`
+    Selecionar **Editar** irá:
 * fazer uma cópia do fluxo de trabalho em `/conf`
 * disponibilizar o navegador de Etapas
 * permitir que você faça alterações
@@ -414,7 +413,6 @@ Para definir uma regra OR, proceda da seguinte maneira:
    * Defina esta como a **Rota Padrão** definindo o **Valor** como `true`.
 
    * Como **Regra**, defina o caminho para o script. Por exemplo:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,7 +422,6 @@ Para definir uma regra OR, proceda da seguinte maneira:
 1. Edite as propriedades da **Ramificação 2** de **OU Divisão**.
 
    * Como **Regra**, defina o caminho para o outro script. Por exemplo:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Defina as propriedades das etapas individuais em cada ramificação. Verifique se o **Usuário/Grupo** está definido.

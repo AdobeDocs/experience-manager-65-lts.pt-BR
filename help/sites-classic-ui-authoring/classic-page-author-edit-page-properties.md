@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0dd160d5-6a08-4c11-92d2-a5a75fc47dba
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 20%
-
+source-wordcount: '766'
+ht-degree: 19%
 ---
-
 # Editar as propriedades da página{#editing-page-properties}
 
 Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não, e as informações da live copy estarão disponíveis conforme apropriado.
@@ -35,13 +34,13 @@ As propriedades são distribuídas por várias guias:
 
   Aqui você pode adicionar ou remover tags da página, atualizando a lista na caixa de seleção:
 
-   * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
-   * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
+  * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
+  * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
 
-     A nova tag será criada quando você pressionar Enter. A nova tag será mostrada em uma caixa, com uma pequena estrela à direita indicando que é uma nova tag.
+    A nova tag será criada quando você pressionar Enter. A nova tag será mostrada em uma caixa, com uma pequena estrela à direita indicando que é uma nova tag.
 
-   * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
-   * Um x é exibido quando você passa o mouse sobre uma entrada de tag na caixa de seleção; isso pode ser usado para remover essa tag para esta página.
+  * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
+  * Um x é exibido quando você passa o mouse sobre uma entrada de tag na caixa de seleção; isso pode ser usado para remover essa tag para esta página.
 
 * **Ocultar na Navegação**
 
@@ -75,7 +74,7 @@ As propriedades são distribuídas por várias guias:
 
   Deixe esses campos vazios novamente para as páginas que deseja publicar imediatamente.
 
-* **URL personalizada**
+* **URL personalizado**
 
   Permite inserir um URL personalizado para esta página. Isso permite que você tenha um URL mais curto e expressivo.
 
@@ -83,7 +82,7 @@ As propriedades são distribuídas por várias guias:
 
   >[!CAUTION]
   >
-  >URLs personalizadas:
+  >URLs personalizados:
   >
   >* deve ser exclusivo, portanto, certifique-se de que o valor ainda não esteja sendo usado por outra página.
   >* não são compatíveis com padrões regex.
@@ -92,7 +91,7 @@ As propriedades são distribuídas por várias guias:
 
   Indica se você deseja que a página use a URL personalizada.
 
-### Avançado  {#advanced}
+### Avançado {#advanced}
 
 * **Idioma**
 
@@ -130,19 +129,19 @@ As propriedades são distribuídas por várias guias:
 
   Especifique uma configuração de exportação.
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 * **Miniatura da página**
 
   Mostra a imagem em miniatura da página. É possível:
 
-   * **Gerar visualização**
+  * **Gerar visualização**
 
-     Gera uma visualização da página para usar como miniatura.
+    Gera uma visualização da página para usar como miniatura.
 
-   * **Fazer upload de imagem**
+  * **Fazer upload de imagem**
 
-     Carregue uma imagem para usar como miniatura.
+    Carregue uma imagem para usar como miniatura.
 
 ### Cloud Services {#cloud-services}
 
@@ -156,7 +155,7 @@ As propriedades são distribuídas por várias guias:
 
   Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permissões   {#permissions}
+### Permissões {#permissions}
 
 * **Permissões** (interface otimizada para toque)
 
@@ -168,13 +167,13 @@ As propriedades são distribuídas por várias guias:
 
   Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
   Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site  {#site-structure}
+### Estrutura do site {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de Inscrição**, a **Página Offline**, entre outras.
 

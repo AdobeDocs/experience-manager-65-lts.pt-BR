@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b2dfc8fb-7bc4-4b5e-8c8f-1463fdc18e50
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
-
 ---
-
 # Compilando seu Plano de Teste{#compiling-your-test-plan}
 
 Os casos de teste individuais serão amalgamados em seu Plano de teste, que também definirá:

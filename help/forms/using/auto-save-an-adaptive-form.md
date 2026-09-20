@@ -6,13 +6,12 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4b6497a2-a505-471e-bf06-b385a5684de8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 0%
-
+source-wordcount: '770'
+ht-degree: 2%
 ---
-
 # Salvar automaticamente um formulário adaptável {#auto-save-an-adaptive-form}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -49,7 +48,7 @@ Para um formulário adaptável, a opção de salvamento automático não é ativ
 
 1. (Somente salvamento automático baseado em evento) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em evento.
 
-   1. Na caixa **Salvar automaticamente após este evento**, especifique um evento [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
+   1. Na caixa **Salvar automaticamente após este evento**, especifique um evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
 
 1. (Opcional) Para salvar automaticamente o conteúdo para usuários anônimos, selecione a opção **Habilitar salvamento automático para usuários anônimos** e clique em **[!UICONTROL OK]**.
 

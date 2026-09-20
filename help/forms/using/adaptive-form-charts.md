@@ -6,13 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2045'
 ht-degree: 0%
-
 ---
-
 # Gráficos de formulário adaptável {#af-charts}
 
 ![Imagem_Herói](assets/charts_hero_image.jpg)
@@ -151,7 +150,7 @@ Depois de escrever uma função personalizada, faça o seguinte para disponibili
 1. No CRXDE Lite, crie um nó nt:unstructured na pasta de aplicativos com as seguintes propriedades:
    * Defina guideComponentType como fd/af/reduer. (obrigatório)
    * Defina o valor com um nome totalmente qualificado da função personalizada do JavaScript. (obrigatório)
-   * Defina jcr:description para um nome significativo. Ele aparece na lista suspensa **Usar função**. Por exemplo, **Multiplicar**.
+   * Defina jcr:description com um nome significativo. Ele aparece na lista suspensa **Usar função**. Por exemplo, **Multiplicar**.
    * Defina qtip para obter uma breve descrição da função. Ela aparece como uma dica de ferramenta ao passar o ponteiro sobre o nome da função na lista suspensa Usar função.
    * Clique em **Salvar tudo** para salvar a configuração.
    * A função agora está disponível para uso no gráfico.

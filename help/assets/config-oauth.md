@@ -1,16 +1,15 @@
 ---
 title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
-description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
+description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 6%
-
+source-wordcount: '1079'
+ht-degree: 7%
 ---
-
 # Solução de problemas de tags inteligentes para credenciais do OAuth {#oauth-config}
 
 Uma configuração de autorização aberta é necessária para aprovar o consentimento para que o aplicativo [!DNL Adobe Experience Manager] interaja com os Serviços de Conteúdo Inteligente de maneira segura.
@@ -26,7 +25,7 @@ Consulte [configuração de serviços de conteúdo inteligente](#integrate-adobe
 
 >[!NOTE]
 >
->Se necessário, você pode enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&support-tab=home#support).
+>Se necessário, você pode enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 ## Configuração do OAuth para os usuários existentes do AMS {#oauth-config-new-ams-users}
 
@@ -38,12 +37,12 @@ Uma configuração OAuth requer os seguintes pré-requisitos:
 
 * Crie uma nova integração OAuth no [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Use o `ClientID`, `ClientSecret`, `OrgID` e outras propriedades nas etapas abaixo:
 * Os seguintes arquivos podem ser encontrados neste caminho `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configuração do OAuth para o AMS existente e usuários locais {#steps-config-oauth-onprem}
 
-As etapas abaixo podem ser executadas pelo administrador do sistema. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte após o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&support-tab=home#support).
+As etapas abaixo podem ser executadas pelo administrador do sistema. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte após o [processo de suporte](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 1. Adicionar ou atualizar as propriedades abaixo em `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -51,7 +50,6 @@ As etapas abaixo podem ser executadas pelo administrador do sistema. O cliente A
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Atualize o `auth.token.provider.client.id` com a ID de cliente da nova configuração OAuth.
    * Atualizar `auth.access.token.request` para `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -126,7 +124,7 @@ Um certificado público permite autenticar seu perfil na Adobe Developer Console
 
    >[!NOTE]
    >
-   >A URL fornecida como [!UICONTROL URL de Serviço] não pode ser acessada pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro [!UICONTROL URL de Serviço]. Para obter o status geral do serviço e o agendamento de manutenção, consulte [https://status.adobe.com/pt-br](https://status.adobe.com/pt-br).
+   >A URL fornecida como [!UICONTROL URL de Serviço] não pode ser acessada pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro [!UICONTROL URL de Serviço]. Para obter o status geral do serviço e o agendamento de manutenção, consulte [https://status.adobe.com](https://status.adobe.com).
 
 1. Clique em **[!UICONTROL Baixar Certificado Público para Integração com o OAuth]** e baixe o arquivo de certificado público `AEM-SmartTags.crt`. Além disso, você não é mais obrigado a fazer upload desse certificado no console do desenvolvedor do Adobe.
 
@@ -186,4 +184,4 @@ Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONT
 >
 >* [Visão geral e como treinar Tags Inteligentes](enhanced-smart-tags.md)
 >* [Configurar marcação inteligente](config-smart-tagging.md)
->* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=pt-BR)
+>* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

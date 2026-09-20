@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e99f1cbd-492e-4cc2-9975-8f17c885dd8c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 2%
-
 ---
-
 # Atualização do link para a documentação {#updating-the-link-to-the-documentation}
 
 Você pode acessar o conteúdo de ajuda padrão do espaço de trabalho do AEM Forms selecionando **Ajuda > Ajuda do Workspace**. Ele aponta para a documentação online no site da Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.

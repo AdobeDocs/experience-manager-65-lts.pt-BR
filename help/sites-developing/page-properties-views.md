@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 027e086f-0883-45de-9531-b8119c99b118
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '500'
 ht-degree: 0%
-
 ---
-
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
 Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
@@ -33,13 +32,13 @@ Os campos devem ser configurados especificamente se qualquer alteração for nec
 
 * Propriedade da página a ser disponibilizada no modo de exibição de criação (por exemplo, assistente **Criar Página**):
 
-   * Nome: `cq:showOnCreate`
-   * Tipo: `Boolean`
+  * Nome: `cq:showOnCreate`
+  * Tipo: `Boolean`
 
 * Propriedade da página a ser disponibilizada no modo de edição (por exemplo, **Modo de Exibição**/**Editar**) **Propriedades** opção):
 
-   * Nome: `cq:hideOnEdit`
-   * Tipo: `Boolean`
+  * Nome: `cq:hideOnEdit`
+  * Tipo: `Boolean`
 
 Por exemplo, consulte as configurações para campos agrupados em **Mais Títulos e Descrição** na guia **Básico** para o componente de Página de base. Estes estão visíveis no assistente **Criar página**, pois `cq:showOnCreate` foi definido como `true`:
 
@@ -49,7 +48,7 @@ Por exemplo, consulte as configurações para campos agrupados em **Mais Título
 
 >[!TIP]
 >
->Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=pt-BR) para obter um guia sobre como personalizar as propriedades de página.
+>Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades de página.
 
 ## Configuração das propriedades da página {#configuring-your-page-properties}
 

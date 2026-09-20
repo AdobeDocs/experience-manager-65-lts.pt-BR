@@ -4,13 +4,12 @@ description: Saiba como usar os fragmentos de conteúdo do AEM com o GraphQL par
 feature: Content Fragments,Headless,GraphQL
 role: User,Developer
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8d0271c0-a795-4ff6-a2ae-72329f05a401
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 74%
-
+source-wordcount: '697'
+ht-degree: 72%
 ---
-
 # Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Com o Adobe Experience Manager (AEM), você pode usar fragmentos de conteúdo em conjunto com a API do AEM GraphQL (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos de forma headless. A capacidade de personalizar uma única consulta de API permite recuperar e fornecer o conteúdo específico que você deseja/precisa renderizar (como resposta à consulta de API única).
@@ -38,7 +37,7 @@ Um sistema de gerenciamento de conteúdo (CMS) headless é:
 
 Em termos de criação de fragmentos de conteúdo no AEM, isso significa que:
 
-* É possível usar fragmentos de conteúdo para criar um conteúdo que não é inicialmente destinado a ser publicado diretamente (1:1) em páginas formatadas.
+* Você pode usar Fragmentos de conteúdo para criar conteúdo que não seja inicialmente destinado a ser publicado diretamente (1:1) em páginas formatadas.
 
 * O conteúdo dos fragmentos de conteúdo será estruturado de maneira predeterminada, de acordo com os Modelos de fragmento de conteúdo. Isso simplifica o acesso para os seus aplicativos, que processarão ainda mais seu conteúdo.
 
@@ -63,7 +62,7 @@ A implementação da API GraphQL do AEM é baseada nas [bibliotecas GraphQL do J
 Os [fragmentos de conteúdo](#content-fragments) podem ser usados como base para o GraphQL em consultas do AEM, pois:
 
 * Permitem projetar, criar, preparar e publicar conteúdo independente de páginas.
-* Os [Modelos de fragmentos do conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
+* Os [Modelos de fragmentos de conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
 * A [referência do fragmento](#fragment-references), disponível ao definir um modelo, pode ser usada para definir camadas adicionais de estrutura.
 
 ![Fragmentos de conteúdo para uso com GraphQL](assets/cfm-nested-01.png "Fragmentos de conteúdo para uso com GraphQL")
@@ -76,11 +75,11 @@ Fragmentos de conteúdo:
 
 * Baseiam-se em um [Modelo de fragmento de conteúdo](#content-fragments-models), que predefine a estrutura do fragmento resultante.
 
-### Modelos de fragmentos do conteúdo {#content-fragments-models}
+### Modelos de fragmentos de conteúdo {#content-fragments-models}
 
 Esses [Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md):
 
-* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Ativados**.
+* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Habilitados**.
 
 * Fornecem os tipos de dados e campos necessários para o GraphQL. Garantem que seu aplicativo solicite apenas o que é possível e receba o que é esperado.
 
@@ -98,7 +97,7 @@ A **[Referência do fragmento](/help/assets/content-fragments/content-fragments-
 
 * Permite recuperar dados estruturados.
 
-   * Quando definido como **multifeed**, vários fragmentos secundários podem ser referenciados (recuperados) pelo fragmento principal.
+  * Quando definido como **multifeed**, vários fragmentos secundários podem ser referenciados (recuperados) pelo fragmento principal.
 
 ### Visualização JSON {#json-preview}
 

@@ -5,16 +5,15 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bda2f261-a755-40b9-bd4d-c783f7f7a4b9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 74%
-
+source-wordcount: '257'
+ht-degree: 73%
 ---
-
 # Tradução de conteúdo para sites multilíngues {#translating-content-for-multilingual-sites}
 
-Automatize a tradução de conteúdo da página, ativos e conteúdo gerado pelo usuário para criar e manter sites multilíngues. Para automatizar workflows de tradução, você integra provedores de serviços de tradução ao AEM e cria projetos para traduzir o conteúdo em vários idiomas. O AEM permite workflows de tradução humana e de máquina.
+Automatize a tradução de conteúdo da página, ativos e conteúdo gerado pelo usuário para criar e manter sites multilíngues. Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução ao AEM e cria projetos para traduzir o conteúdo em vários idiomas. O AEM permite fluxos de trabalho de tradução humana e de máquina.
 
 * Tradução humana: o conteúdo é enviado para seu provedor de tradução e traduzido por tradutores profissionais. Quando concluído, o conteúdo traduzido é retornado e importado para o AEM. Quando seu provedor de tradução é integrado ao AEM, o conteúdo é enviado automaticamente entre o AEM e o provedor de tradução.
 * Tradução automática: o serviço de tradução automática traduz imediatamente seu conteúdo.
@@ -34,6 +33,6 @@ Se o seu provedor de serviços de tradução não fornecer um conector para inte
 >
 >Seu usuário precisa ser membro do grupo projetos-administradores para usar os recursos de Cópia de idioma.
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 A página [Práticas recomendadas de tradução](/help/sites-administering/tc-bp.md) contém informações importantes sobre a implementação.

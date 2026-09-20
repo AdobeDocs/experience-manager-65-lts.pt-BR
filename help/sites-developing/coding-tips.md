@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e431a240-45a2-4222-b854-32b90e5cd100
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # Dicas de codificação{#coding-tips}
 
 ## Use taglibs ou HTL o máximo possível {#use-taglibs-or-htl-as-much-as-possible}
@@ -54,7 +53,7 @@ Idealmente, os nomes devem revelar sua intenção. Um teste de código comum par
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//obter imagens com marcas de formatação<br /> getItems() de Lista pública {}</p> </td>
+   <td><p>//get tags images<br /> public List getItems() {}</p> </td>
    <td><p>lista pública getTaggedImages() {}</p> </td>
   </tr>
  </tbody>

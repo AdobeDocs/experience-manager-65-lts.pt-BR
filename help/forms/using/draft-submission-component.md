@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3d4ff4d1-aab6-47b9-9804-2a0f3438332d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 0%
-
+source-wordcount: '747'
+ht-degree: 4%
 ---
-
 # Rascunhos e componentes de envios{#drafts-and-submissions-component}
 
 O componente Rascunhos e envios lista todos os formulários que estão no estado de rascunho e os formulários que já foram enviados. O componente tem seções (guias) separadas para rascunhos e formulários enviados. Os usuários podem exibir apenas seus rascunhos e formulários enviados.
@@ -55,21 +54,21 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
   </tr>
   <tr>
    <td> </td>
-   <td>Caminho de estilo personalizado</td>
+   <td>Personalizar estilo do caminho</td>
    <td>Se você escolher a opção <strong>Estilo personalizado</strong> no campo <strong>Tipo de estilo</strong>, use o campo <strong>Caminho de estilo personalizado</strong> para especificar o caminho do arquivo CSS personalizado. </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Opções de Exibição</td>
+   <td>Opções de exibição</td>
    <td><p>Especifica as guias a serem exibidas. Você pode optar por exibir formulários de rascunho, formulários enviados ou ambos. </p> <p><strong>Observação</strong>:<em> Para <strong>Opções de exibição</strong>, se você selecionar uma opção diferente de <strong>Ambas</strong>, a opção de campo <strong>Guia Padrão</strong> não será usada.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Guia Padrão</td>
+   <td>Guia padrão</td>
    <td>Especifica a guia a ser exibida quando a página do portal de formulários for carregada. Você pode escolher entre <strong>Guia Forms de rascunho</strong> e <strong>Guia Forms enviada</strong>.</td>
   </tr>
   <tr>
-   <td>Configuração da guia Forms de rascunho</td>
+   <td>Configuração da guia Rascunhos de formulários</td>
    <td>Título personalizado</td>
    <td>Especifica o título da guia <strong>Rascunho do Forms</strong>. O valor padrão é <strong>Rascunho do Forms.</strong></td>
   </tr>
@@ -79,7 +78,7 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
    <td>Especifica o layout a ser usado para a lista Forms de rascunho.</td>
   </tr>
   <tr>
-   <td>Configuração da guia Forms enviada</td>
+   <td>Configuração da guia Formulários enviados</td>
    <td>Título personalizado </td>
    <td>Especifica o título da <strong>guia do Forms </strong> enviada. O valor padrão é <strong>Forms Enviado.</strong></td>
   </tr>

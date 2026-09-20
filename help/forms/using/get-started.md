@@ -8,13 +8,12 @@ discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 48cb61d1-4f2f-43c4-bf19-0a6987916ea2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '236'
 ht-degree: 0%
-
 ---
-
 # Introdução aos formulários HTML5 {#getting-started-with-html-forms}
 
 Os formulários HTML5 oferecem vários recursos prontos para dispositivos móveis. Ele ajuda você a expandir suas soluções e fluxos de trabalho atuais para tablets ou dispositivos smartphones com navegadores HTML5. Alguns recursos incluem:

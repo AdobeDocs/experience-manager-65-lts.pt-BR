@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c0e3809d-dde0-44a0-b075-e670d86e9d10
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
-
 ---
-
 # Ferramenta de conversão da caixa de diálogo{#dialog-conversion-tool}
 
 A ferramenta de conversão da caixa de diálogo é fornecida para ajudar a estender componentes existentes que têm apenas uma caixa de diálogo definida para a interface clássica (com base em ExtJS) ou com base na interface do Granite e Coral 2. A ferramenta usa a caixa de diálogo original para criar uma caixa de diálogo duplicada projetada para a interface padrão, com base na interface do Granite e no Coral 3.

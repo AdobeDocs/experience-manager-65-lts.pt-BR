@@ -7,13 +7,12 @@ topic-tags: forms-manager
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # Criar novas pastas para categorizar formulários {#create-new-folders-to-categorize-forms}
 
 Você pode organizar melhor seus ativos usando pastas. Como o AEM Forms é compatível com vários tipos de ativos — modelos de formulário, PDFs, documentos, recursos e formulários adaptáveis, com vários metadados — você pode usar pastas para categorizar seus formulários com base nos critérios desejados.

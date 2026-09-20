@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e2ea0bb3-56c9-42cf-a3da-146f3fe36fe2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 12%
-
 ---
-
 # Trabalhar com ativos{#working-with-assets}
 
 A seção [Ferramentas e Ambiente do Autor](/help/sites-authoring/author-environment-tools.md) fornece informações sobre como usar o [!UICONTROL Localizador de Conteúdo] para localizar e usar ativos ao editar páginas. O AEM Assets fornece outros métodos para trabalhar com ativos:

@@ -1,6 +1,6 @@
 ---
 title: Exportador JSON para serviços de conteúdo
-description: Os Serviços de conteúdo da AEM foram projetados para generalizar a descrição e a entrega de conteúdo de/para o AEM além do foco em páginas da Web. Eles fornecem a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
+description: Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web. Eles realizam a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
 contentOwner: User
 content-type: reference
 topic-tags: components
@@ -8,13 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8c66b978-872e-4f5e-8f64-1e2dfb7d7dde
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 23%
-
+source-wordcount: '453'
+ht-degree: 41%
 ---
-
 # Exportador JSON para serviços de conteúdo{#json-exporter-for-content-services}
 
 Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web.
@@ -29,7 +28,7 @@ Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer 
 
 >[!NOTE]
 >
->A funcionalidade descrita aqui está disponível para todos os Componentes Principais desde a [versão 1.1.0 dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+>A funcionalidade descrita aqui está disponível para todos os Componentes Principais desde a [versão 1.1.0 dos Componentes Principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
 
 ## Exportador JSON com componentes principais de fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
 
@@ -81,15 +80,15 @@ Consulte também:
 
 * API HTTP de ativos
 
-   * [API HTTP de ativos](/help/assets/mac-api-assets.md)
+  * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
 * Modelos Sling:
 
-   * [Modelos do Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+  * [Modelos Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM com JSON:
 
-   * [Obtendo informações de página no formato JSON](/help/sites-developing/pageinfo.md)
+  * [Obtendo informações de página no formato JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentação relacionada {#related-documentation}
 
@@ -97,8 +96,8 @@ Para obter mais detalhes, consulte:
 
 * O [tópico Fragmentos de conteúdo no guia do usuário do Assets](/help/assets/content-fragments/content-fragments.md)
 
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
-* [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
+* [Habilitação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)
+* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)

@@ -5,13 +5,12 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: deba01bd-7a8d-48cd-956d-fbe8eb8671ba
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # Configurar o RTE para criar páginas da Web e sites acessíveis {#configure-rte-for-accessibility}
 
 O Adobe Experience Manager oferece suporte a vários recursos de acessibilidade padrão de acordo com vários padrões de acessibilidade. Além disso, os desenvolvedores podem personalizar ou estender o para fornecer recursos que ajudam a criar conteúdo acessível usando componentes do Experience Manager que usam o Rich Text Editor (RTE).

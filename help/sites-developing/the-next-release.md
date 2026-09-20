@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a541e609-9c42-4b2f-8964-1612f2ed2c07
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '152'
 ht-degree: 0%
-
 ---
-
 # A próxima versão...{#the-next-release}
 
 A implementação de um projeto raramente é o fim do processo. Uma versão subsequente é (quase) sempre prevista e pode até ser iniciada durante os estágios finais da implementação atual.

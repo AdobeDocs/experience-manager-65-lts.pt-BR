@@ -8,13 +8,12 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Experience Fragments,Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1d0c8304-32ec-4bfb-a3f5-7c1a8d6979dc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 18%
-
+source-wordcount: '244'
+ht-degree: 20%
 ---
-
 # Experimentar fragmentos de experiência no We.Retail{#trying-out-experience-fragments-in-we-retail}
 
 Experimentar fragmentos de experiência no We.Retail

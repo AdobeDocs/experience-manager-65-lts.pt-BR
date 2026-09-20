@@ -8,13 +8,12 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cad7253d-95fb-47eb-b1c9-2d22a9e34481
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 # Criação de projetos de tradução para fragmentos de conteúdo {#creating-translation-projects-for-content-fragments}
 
 Além dos ativos, o Adobe Experience Manager (AEM) Assets oferece suporte a fluxos de trabalho de cópia de idioma para [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) (incluindo variações). Nenhuma otimização adicional é necessária para executar fluxos de trabalho de cópia de idioma em fragmentos de conteúdo. Em cada fluxo de trabalho, todo o fragmento de conteúdo é enviado para tradução.

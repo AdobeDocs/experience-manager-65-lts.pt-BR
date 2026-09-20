@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: baf8bbbf4d3c27117a620d0ee0c799b8cc37582f
+exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3524'
 ht-degree: 0%
-
 ---
-
 # Extensão e configuração do importador de design para páginas iniciais{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 Esta seção descreve como configurar e, se desejado, estender o importador de design para páginas de aterrissagem. O trabalho com Páginas de Aterrissagem após a importação é abordado em [Páginas de Aterrissagem.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -234,9 +233,9 @@ Se uma marca `<img>` com uma url absoluta src for tentada para conversão de com
 
 Caso contrário, as imagens de URL absolutas são suportadas para tags img que não fazem parte do componente de Imagem div.
 
-### Componentes de frase de chamariz {#call-to-action-components}
+### Componentes do call-to-action {#call-to-action-components}
 
-Você pode marcar parte da página de aterrissagem para importação como um &quot;componente de chamada para ação editável&quot;; esses componentes de chamada para ação importados podem ser editados após a importação da página de aterrissagem. O AEM inclui os seguintes componentes do CTA:
+Você pode marcar parte da página de destino para importação como um &quot;componente editável do Call to action&quot;; esses componentes importados do call-to-action podem ser editados após a importação da página de destino. O AEM inclui os seguintes componentes do CTA:
 
 * Clicar através do link - Permite adicionar um link de texto que, quando clicado, leva o visitante a um URL de destino.
 * Link gráfico - Permite adicionar uma imagem que, quando clicada, leva o visitante a um URL de destino.
@@ -275,7 +274,7 @@ Esse componente pode ser usado em qualquer aplicativo independente ou pode ser i
 
 #### Vincular ao gráfico {#graphical-link}
 
-Esse componente do CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de aterrissagem. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
+Esse componente do CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de aterrissagem. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. É parte do grupo &quot;Call to action&quot;.
 
 Propriedades suportadas
 
@@ -322,9 +321,9 @@ Um formulário de cliente potencial é um formulário usado para coletar informa
 **Recursos com suporte**
 
 * Campos de leads predefinidos - nome, sobrenome, endereço, data, gênero, sobre, userId, emailId, botão enviar estão disponíveis no sidekick. Basta arrastar/soltar o componente desejado em seu formulário de lead.
-* Com a ajuda desses componentes, o autor pode criar um formulário de cliente potencial independente, esses campos correspondem a campos de formulário de cliente potencial. Em aplicativos zip independentes ou importados, o usuário pode adicionar campos extras usando campos de formulário de cliente em potencial cq:form ou cta, nomeá-los e projetá-los de acordo com os requisitos.
+* Com a ajuda desses componentes, o autor pode criar um formulário de cliente potencial independente, esses campos correspondem a campos de formulário de cliente potencial. Em aplicativos zip autônomos ou importados, o usuário pode adicionar campos extras usando campos de formulário de cliente em potencial cq:form ou cta, nomeá-los e projetá-los de acordo com os requisitos.
 * Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial do CTA, por exemplo, - firstName para o nome no formulário de cliente potencial e assim por diante.
-* Os campos que não estão mapeados para formulários de cliente potencial são mapeados para cq:componentes de formulário - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
+* Os campos que não estão mapeados para o formulário de cliente potencial são mapeados para os componentes do cq:form - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
 * O usuário pode fornecer o título usando a tag &quot;rótulo&quot; e o estilo usando a &quot;classe&quot; de atributo de estilo (disponível somente para componentes de formulário de lead do CTA).
 * A página de agradecimento e a lista de assinaturas podem ser fornecidas como um parâmetro oculto do formulário (presente no index.htm) ou podem ser adicionadas/editadas na barra de edição do &quot;Início do formulário de cliente potencial&quot;
 
@@ -334,7 +333,7 @@ Um formulário de cliente potencial é um formulário usado para coletar informa
 
 * Restrições como - necessárias podem ser fornecidas a partir da configuração de edição de cada um dos componentes.
 
-Tag do HTML para incluir o componente de link gráfico no zip importado. Aqui, &quot;firstName&quot; é mapeado para o formulário de cliente potencial firstName, e assim por diante, exceto para caixas de seleção - essas duas caixas de seleção mapeiam para o componente cq:form dropdown.
+Tag do HTML para incluir o componente de link gráfico no zip importado. Aqui, &quot;firstName&quot; é mapeado para o formulário de lead firstName, e assim por diante, exceto pelas caixas de seleção - essas duas caixas de seleção são mapeadas para o componente suspenso cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -460,16 +459,16 @@ O uso de seletores CSS semelhantes aos seguintes não é recomendado para uso co
 |---|---|---|
 | E + F | um elemento F imediatamente precedido por um elemento E | [Combinador irmão adjacente](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | um elemento F precedido por um elemento E | [Combinador irmão geral](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:raiz | um elemento E, raiz do documento | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:enésimo filho(n) | um elemento E, o enésimo filho de seu pai | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:enésimo-último-filho(n) | um elemento E, o enésimo filho de seu pai, contando do último | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:n-ésimo de tipo(n) | um elemento E, o n-ésimo irmão de seu tipo | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:enésimo-último-de-tipo(n) | um elemento E, o n-ésimo irmão de seu tipo, contando do último | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | um elemento E, raiz do documento | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | um elemento E, o enésimo filho de seu pai | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | um elemento E, o enésimo filho de seu pai, contando do último | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) | um elemento E, o n-ésimo irmão de seu tipo | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) | um elemento E, o n-ésimo irmão de seu tipo, contando do último | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 Isso ocorre porque elementos html adicionais, como a tag &lt;div>, são adicionados ao HTML gerado após a importação.
 
 * Scripts que dependem da estrutura semelhante à acima também não são recomendados para uso com elementos marcados para conversão em componentes do AEM.
-* O uso de estilos nas tags de marcação para conversão de componentes como &lt;div data-cq-component=&quot;&ast;&quot;> não é recomendado.
+* O uso de estilos nas tags de marcação para conversão de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;> não é recomendado.
 * O layout de design deve seguir as práticas recomendadas da HTML5 Boilerplate. Leia mais em: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuração de módulos OSGI {#configuring-osgi-modules}
@@ -493,7 +492,7 @@ A tabela abaixo descreve brevemente as propriedades:
   <tr>
    <td>Importador de design de landing page</td>
    <td>Extrair filtro</td>
-   <td>A lista de expressões regulares a serem usadas para filtrar arquivos da extração. <br /> entradas de CEP correspondentes a qualquer um dos padrões especificados são excluídas da extração</td>
+   <td>A lista de expressões regulares a serem usadas para filtrar arquivos da extração. <br /> As entradas de CEP correspondentes a qualquer um dos padrões especificados são excluídas da extração</td>
   </tr>
   <tr>
    <td>Construtor de landing page</td>
@@ -513,12 +512,12 @@ A tabela abaixo descreve brevemente as propriedades:
   <tr>
    <td>Pré-processador de entrada de página inicial</td>
    <td>Padrão de pesquisa </td>
-   <td>O padrão a ser pesquisado, no conteúdo da entrada do arquivo. Essa expressão regular corresponde ao conteúdo da entrada linha por linha. Após a correspondência, o texto correspondente é substituído pelo padrão de substituição especificado.<br /> <br /> Veja a observação abaixo sobre as limitações atuais do pré-processador de entrada de página de aterrissagem.</td>
+   <td>O padrão a ser pesquisado, no conteúdo da entrada do arquivo. Essa expressão regular corresponde ao conteúdo da entrada linha por linha. Após a correspondência, o texto correspondente é substituído pelo padrão de substituição especificado.<br /> <br /> Consulte a observação abaixo sobre as limitações atuais de pré-processador de entrada de página de aterrissagem.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Substituir padrão</td>
-   <td>O padrão que substitui as correspondências encontradas. Você pode usar referências de grupos regex como $1, $2. Além disso, esse padrão oferece suporte a palavras-chave como {designPath} que são resolvidas com o valor real durante a importação.</td>
+   <td>O padrão que substitui as correspondências encontradas. Você pode usar referências de grupos regex como $1, $2. Além disso, esse padrão suporta palavras-chave como {designPath} que são resolvidas com o valor real durante a importação.</td>
   </tr>
  </tbody>
 </table>
@@ -530,7 +529,7 @@ A tabela abaixo descreve brevemente as propriedades:
 >
 >Por exemplo, se a configuração padrão for
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E você precisa substituir `CQ_DESIGN_PATH` por `VIPURL` no padrão de pesquisa, então seu padrão de pesquisa deve ter esta aparência:
 >

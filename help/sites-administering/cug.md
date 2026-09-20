@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 831d42bb7f885b637d2e356fe06bb0e141639915
+exl-id: c44ecbb4-a883-4468-bddc-55964485529b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '780'
 ht-degree: 1%
-
 ---
-
 # Criação de um grupo fechado de usuários{#creating-a-closed-user-group}
 
 Grupos de usuários fechados (CUGs) são usados para limitar o acesso a páginas específicas que residem em um site da Internet publicado. Essas páginas exigem que os membros atribuídos façam logon e forneçam credenciais de segurança.
@@ -80,7 +79,7 @@ Para aplicar o CUG a uma ou mais páginas:
    1. Ative a caixa de seleção **Habilitar**.
 
    1. Adicione o caminho à sua **Página de Logon**.
-Isso é opcional; se deixado em branco, a página de logon padrão será usada.
+      Isso é opcional; se deixado em branco, a página de logon padrão será usada.
 
    ![CUG adicionado](assets/cug-authentication-requirement.png)
 
@@ -116,13 +115,13 @@ Para evitar isso, é aconselhável criar páginas de redirecionamento não prote
 
 Se estiver usando o Dispatcher, você precisará definir um farm do Dispatcher com as seguintes propriedades:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#identifying-virtual-hosts-virtualhosts): corresponde ao caminho para as páginas às quais o CUG se aplica.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): corresponde ao caminho para as páginas às quais o CUG se aplica.
 * \sessionmanagement: veja abaixo.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache): um diretório de cache dedicado aos arquivos aos quais o CUG se aplica.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): um diretório de cache dedicado aos arquivos aos quais o CUG se aplica.
 
 ### Configuração do Gerenciamento de sessão do Dispatcher para CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Configure o [gerenciamento de sessão no arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-secure-sessions-sessionmanagement) para o CUG. O manipulador de autenticação usado quando o acesso é solicitado para páginas CUG determina como você configura o gerenciamento de sessão.
+Configure o [gerenciamento de sessão no arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) para o CUG. O manipulador de autenticação usado quando o acesso é solicitado para páginas CUG determina como você configura o gerenciamento de sessão.
 
 ```xml
 /sessionmanagement
@@ -136,7 +135,7 @@ Configure o [gerenciamento de sessão no arquivo dispatcher.any](https://experie
 >Quando um farm do Dispatcher tem o gerenciamento de sessão ativado, todas as páginas manipuladas pelo farm não são armazenadas em cache. Para armazenar em cache páginas que estejam fora do CUG, crie um segundo farm no dispatcher.any
 >que manipula as páginas que não são CUG.
 
-1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-secure-sessions-sessionmanagement) definindo `/directory`; por exemplo:
+1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) definindo `/directory`; por exemplo:
 
    ```xml
    /sessionmanagement
@@ -146,5 +145,4 @@ Configure o [gerenciamento de sessão no arquivo dispatcher.any](https://experie
      }
    ```
 
-1. Definir [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#caching-when-authentication-is-used) para `0`.
-
+1. Definir [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) para `0`.

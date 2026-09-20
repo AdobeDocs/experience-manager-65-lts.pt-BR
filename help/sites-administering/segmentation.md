@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e024c456-1d50-4ff2-bfb6-aca1cca31632
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 61%
-
+source-wordcount: '1763'
+ht-degree: 62%
 ---
-
 # Configuração da segmentação com o ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -42,7 +41,7 @@ Selecione sua configuração para ver os segmentos, por exemplo, Site WKND:
 
 ![Públicos-alvo - Segmentos](assets/segmentation-access-segments.png)
 
-## Editor do segmento  {#segment-editor}
+## Editor do segmento {#segment-editor}
 
 O **Editor de segmentos** permite modificar facilmente um segmento. Para editar um segmento, selecione-o na [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) e clique no botão **Editar**.
 
@@ -242,8 +241,8 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
-      * Ele pode ser ajustado, se necessário.
+     * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
+     * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](assets/contexthub-create-folder.png)
 
@@ -254,7 +253,6 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
    * Você pode clicar nos cabeçalhos da coluna para ajustar sua classificação.
-
      ![A nova pasta](assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}

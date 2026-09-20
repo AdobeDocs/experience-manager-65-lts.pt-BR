@@ -4,13 +4,12 @@ description: Entenda as configurações do AEM e como elas gerenciam as configur
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 73230415-078c-4933-8521-bc18e5490103
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 4%
-
+source-wordcount: '1505'
+ht-degree: 5%
 ---
-
 # Configurações e o navegador de configuração {#configuration-browser}
 
 As configurações do AEM servem para gerenciar configurações no AEM e servem como espaços de trabalho.
@@ -37,7 +36,7 @@ As configurações podem ser criadas para vários recursos diferentes no AEM.
 
 * [Configurações na nuvem](/help/sites-administering/configurations.md)
 * [Segmentos do Context Hub](/help/sites-administering/segmentation.md)
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Modelos editáveis](/help/sites-authoring/templates.md)
 
 ### Exemplo {#administrator-example}
@@ -78,12 +77,12 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
-      * Ele é gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
-      * Ele pode ser ajustado, se necessário.
+     * Ele é gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
+     * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Configurações na nuvem](/help/sites-administering/configurations.md)
    * [Segmentos do Context Hub](/help/sites-administering/segmentation.md)
-   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
    * [Modelos editáveis](/help/sites-authoring/templates.md)
 1. Clique em **Criar**.
 

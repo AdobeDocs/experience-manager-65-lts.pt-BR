@@ -9,13 +9,12 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 7%
-
 ---
-
 # Edição de inicializações{#editing-launches}
 
 ## Editar páginas de lançamento {#editing-launch-pages}
@@ -44,9 +43,9 @@ Depois de criar um lançamento, é possível alterar o nome do lançamento e a d
 
    * Na guia **Geral**, você pode editar:
 
-      * **Título**
-      * **Data de ativação**: é equivalente à data de lançamento
-      * **Pronto para produção**
+     * **Título**
+     * **Data de ativação**: é equivalente à data de lançamento
+     * **Pronto para produção**
 
      Consulte [Inicializações - a Ordem dos Eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
 

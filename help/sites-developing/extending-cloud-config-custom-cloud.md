@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '404'
 ht-degree: 5%
-
 ---
-
 # Criação de uma Cloud Service personalizada{#creating-a-custom-cloud-service}
 
 O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personalizados de Cloud Service. Isso permite inserir marcação personalizada na página de forma estruturada. Isso é usado principalmente para provedores de análises de terceiros, por exemplo, Google Analytics, Chartbeat e assim por diante. Os serviços em nuvem são herdados das páginas pai para as páginas filho, com a capacidade de interromper a herança em qualquer nível.
@@ -82,12 +81,12 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personaliz
    * **Tipo**: `cq:Dialog`
    * **Propriedades**:
 
-      * **Nome**: `title`
-      * **Tipo**: `String`
-      * **Valor**: `Google Analytics Config`
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `dialog`
+     * **Nome**: `title`
+     * **Tipo**: `String`
+     * **Valor**: `Google Analytics Config`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `dialog`
 
 1. Criar um nó em `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
@@ -95,9 +94,9 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personaliz
    * **Tipo**: `cq:Widget`
    * **Propriedades**:
 
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `tabpanel`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `tabpanel`
 
 1. Criar um nó em `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
@@ -110,9 +109,9 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personaliz
    * **Tipo**: `cq:Panel`
    * **Propriedades**:
 
-      * **Nome**: `title`
-      * **Tipo**: `String`
-      * **Valor**: `Config`
+     * **Nome**: `title`
+     * **Tipo**: `String`
+     * **Valor**: `Config`
 
 1. Criar um nó em `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
@@ -120,23 +119,23 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personaliz
    * **Tipo**: `nt:unstructured`
    * **Propriedades**:
 
-      * **Nome**: `fieldLabel`
-      * **Tipo**: cadeia de caracteres
-      * **Valor**: ID da conta
+     * **Nome**: `fieldLabel`
+     * **Tipo**: cadeia de caracteres
+     * **Valor**: ID da conta
 
-      * **Nome**: `fieldDescription`
-      * **Tipo**: `String`
-      * **Valor**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **Nome**: `fieldDescription`
+     * **Tipo**: `String`
+     * **Valor**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Nome**: `name`
-      * **Tipo**: `String`
-      * **Valor**: `./accountID`
-      * **Nome**: `validateOnBlur`
-      * **Tipo**: `String`
-      * **Valor**: `true`
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valor**: `textfield`
+     * **Nome**: `name`
+     * **Tipo**: `String`
+     * **Valor**: `./accountID`
+     * **Nome**: `validateOnBlur`
+     * **Tipo**: `String`
+     * **Valor**: `true`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valor**: `textfield`
 
 1. Copie `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` para `/apps/acs/analytics/components/googleanalyticspage/body.jsp` e altere `libs` para `apps` na linha 34 e torne a referência de script na linha 79 um caminho totalmente qualificado.
 1. Criar um modelo em `/apps/acs/analytics/templates/`:
@@ -147,7 +146,7 @@ O conjunto padrão de Serviços em nuvem pode ser estendido com tipos personaliz
    * com **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * com **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
    * com **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (no nó do modelo, não no nó jcr:content)
-   * com **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (em jcr:content)
+   * com **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (no jcr:content)
 
 1. Criar um componente: `/apps/acs/analytics/components/googleanalytics`.
 

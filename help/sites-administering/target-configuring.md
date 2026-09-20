@@ -4,13 +4,12 @@ description: Saiba como configurar manualmente a integração com o Adobe Target
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a83de8a787f0e446d4d231fdffbf37a11dfd9c53
+exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Configuração manual da integração com o Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Você pode modificar as configurações do assistente de aceitação feitas ao usar o assistente ou integrar manualmente ao Adobe Target sem usar o assistente.
@@ -51,7 +50,7 @@ Os seguintes valores de propriedade são usados na configuração da nuvem da Co
 >* Melhores opções de implementação para aplicativos de página única
 >* A AT.js contém os componentes que foram incluídos na target.js, portanto, não é mais chamada para o target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriedades da Estrutura de Destino Provisionada {#provisioned-target-framework-properties}
 
@@ -103,7 +102,7 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 
 >[!NOTE]
 >
->O arquivo da Biblioteca de Destino, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+>O arquivo da biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
 >
 >A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 >
@@ -114,7 +113,7 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 >
 >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Criação de uma configuração da nuvem do Target {#creating-a-target-cloud-configuration}
 
@@ -170,11 +169,11 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
 
    >[!NOTE]
    >
-   >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+   >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é habilitado.
    >
    >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
    >
-   >O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+   >O direcionamento preciso é sempre habilitado na instância de criação. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
    >
    >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
 
@@ -219,7 +218,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 
 ### Associação de atividades com a configuração de nuvem do Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associe suas [atividades do AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associe suas [atividades do AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -230,7 +229,7 @@ Associe suas [atividades do AEM](/help/sites-authoring/activitylib.md) à config
 >
 >* Se a opção **xt_only** estiver **not** habilitada no locatário do Adobe Target (clientcode), você poderá criar **atividades XT e A/B** no AEM.
 >
->**Observação adicional:** a opção **xt_only** é uma configuração aplicada a um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+>**Observação adicional:** a opção **xt_only** é uma configuração aplicada a um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível habilitar ou desabilitar essa opção no AEM.
 
 ### Associar a estrutura do Target ao seu site {#associating-the-target-framework-with-your-site}
 

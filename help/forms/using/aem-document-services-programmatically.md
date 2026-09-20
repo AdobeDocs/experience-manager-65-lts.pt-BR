@@ -4,13 +4,12 @@ description: Saiba como usar APIs de serviços de documentos para assinar, cript
 feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6439'
+source-wordcount: '6510'
 ht-degree: 1%
-
 ---
-
 # Uso dos serviços de documento da AEM de forma programática  {#using-aem-document-services-programmatically}
 
 Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento da AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
@@ -25,7 +24,7 @@ Amostras e exemplos neste documento ajudam você a entender e usar os Serviços 
 
 * Antes de usar as APIs de serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Baixe e configure o [AEM Forms Client SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) com seu projeto maven do AEM. As classes de cliente necessárias para criar projetos Maven usando os Serviços de documento da AEM estão disponíveis lá.
+* Baixe e configure o [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) com seu projeto maven do AEM. As classes de cliente necessárias para criar projetos Maven usando os Serviços de documento da AEM estão disponíveis lá.
 
 * Saiba [como criar seu projeto do AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -35,14 +34,14 @@ O serviço DocAssurance inclui os seguintes serviços:
 
 * Serviço de assinatura
 * Serviço de criptografia
-* Serviço de extensões do Reader
+* Serviço de extensão do Reader
 
 Você pode executar as seguintes operações usando o serviço DocAssurance:
 
 * [Adicionar assinatura invisível](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
 
 * [Adicionar campo de assinatura](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
-* [Aplicar carimbo data e hora do documento](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
+* [Aplicar carimbo de data e hora do documento](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
 * [Obter assinatura](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
 * [Obter Lista de Campos de Assinatura](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
@@ -67,7 +66,7 @@ Você pode executar as seguintes operações usando o serviço DocAssurance:
 
 >[!NOTE]
 >
->Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html)
+>Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Adicionar um campo de assinatura invisível {#adding-an-invisible-signature-field}
 
@@ -75,7 +74,7 @@ As assinaturas digitais aparecem em campos de assinatura, que são campos de for
 
 **Sintaxe**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -256,7 +255,7 @@ public Document addSignatureField(Document inDoc,
  PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)
 ```
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -421,13 +420,13 @@ public class AddSignatureField {
 }
 ```
 
-### Aplicar carimbo data e hora do documento {#apply-document-timestamp}
+### Aplicar carimbo de data e hora do documento {#apply-document-timestamp}
 
 Você pode programaticamente carimbar um documento de acordo com as especificações do [PAdES 4](https://en.wikipedia.org/wiki/PAdES). Você também pode usar a especificação [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) para documentos relacionados a transações.
 
 **Sintaxe**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -634,7 +633,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 **Sintaxe**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -758,7 +757,7 @@ public class GetSignature {
 
 **Sintaxe**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 | Parâmetros | Descrição |
 |---|---|
@@ -877,7 +876,7 @@ Ao modificar um campo de assinatura existente, você pode editar o documento do 
 
 **Sintaxe**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -1034,7 +1033,7 @@ public class ModifySignatureField {
 }
 ```
 
-### Criar documentos PDF {#certifying-pdf-documents-nbsp}
+### Certificação de documentos do PDF  {#certifying-pdf-documents-nbsp}
 
 Você pode proteger um documento do PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
@@ -1049,7 +1048,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions, ReaderExtensionOptions readerExtensionOptions, UnlockOptions unlockOptions)
 ```
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -1392,7 +1391,7 @@ A chave pública é armazenada no certificado do usuário que deve estar dispon�
 >
 >O AEM Forms também oferece suporte à especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* para assinatura digital de documentos do PDF.
 
-**Criar documentos PDF**
+**Certificando Documentos do PDF**
 
 Você pode proteger um documento do PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
@@ -1426,7 +1425,7 @@ secureDocument(Document inDoc,
  UnlockOptions unlockOptions)
 ```
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -1448,7 +1447,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Inclui as opções necessárias para estender um documento do Reader PDF</td>
+   <td>Inclui as opções necessárias para estender um documento do Reader</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1759,7 +1758,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Amostra 2**: esta amostra é usada para executar a criptografia PKI, assinar um campo de assinatura e estender o documento do Reader PDF.
+**Amostra 2**: esta amostra é usada para executar a criptografia PKI, assinar um campo de assinatura e estender o documento do Reader.
 
 ```java
 /*************************************************************************
@@ -2105,7 +2104,7 @@ Para obter informações de direitos de uso da credencial especificada pelo `cre
 
 **Sintaxe**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -2196,7 +2195,7 @@ Para buscar informações de direitos de uso para um determinado documento, cham
 
 **Sintaxe**: `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -2314,7 +2313,7 @@ public void getDocumentUsageRights() {
 
 Você pode remover os direitos de uso de um documento chamando a API `removeUsageRights` de dentro da API `docAssuranceService`.
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -2441,7 +2440,7 @@ As assinaturas digitais podem ser verificadas para garantir que um documento PDF
 
 **Sintaxe**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -2456,7 +2455,7 @@ As assinaturas digitais podem ser verificadas para garantir que um documento PDF
   <tr>
    <td><code class="code">signatureField
       Name</code><br /> </td>
-   <td>O nome do campo de assinatura a ser certificado nome totalmente qualificado ou nome parcial pode ser dado<br /> </td>
+   <td>O nome do campo de assinatura a ser validado. nome totalmente qualificado ou nome parcial pode ser dado<br /> </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
@@ -2759,7 +2758,7 @@ O AEM permite verificar assinaturas digitais em documentos do PDF. Um documento 
 
 **Sintaxe**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3057,7 +3056,7 @@ Você pode aplicar uma nova assinatura digital a um campo de assinatura somente 
 
 **Sintaxe**: `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3178,7 +3177,7 @@ public class ClearSignatureField {
 
 **Sintaxe**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3297,7 +3296,7 @@ public class GetCertifyingSignatureField {
 
 **Sintaxe**: `void getPDFEncryption(Document inDoc)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3413,7 +3412,7 @@ Remova a criptografia baseada em senha de um documento PDF para permitir que os 
 
 **Sintaxe**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3512,7 +3511,7 @@ Você pode remover a criptografia baseada em certificado de um documento do PDF 
 
 **Sintaxe**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -3646,7 +3645,7 @@ A API generatePDFOutput gera um documento do PDF ao mesclar um design de formul�
 
 **Sintaxe:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
-#### Parâmetros SMTP {#input-parameters}
+#### Parâmetros de entrada {#input-parameters}
 
 <table>
  <tbody>
@@ -3659,11 +3658,11 @@ A API generatePDFOutput gera um documento do PDF ao mesclar um design de formul�
    <td>Especifica o caminho e o nome do arquivo de entrada. O arquivo pode ser do tipo PDF ou XDP. Se apenas o nome do arquivo for especificado, o arquivo será lido em relação ao contentRoot especificado nas opções.</td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Um arquivo XML que contém os dados mesclados com o documento PDF.<br /> </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Especifica valores de variáveis contentRoot, locale, AcrobatVersion, linearizedPDF e taggedPDF. O parâmetro options aceita objetos do tipo PDFOutputOptions. <br /> </td>
   </tr>
  </tbody>
@@ -3753,7 +3752,7 @@ A API generatePDFOutput gera um documento do PDF ao mesclar um design de formul�
 
 **Sintaxe:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
-#### Parâmetro de URL {#input-parameter}
+#### Parâmetro de entrada {#input-parameter}
 
 <table>
  <tbody>
@@ -3766,11 +3765,11 @@ A API generatePDFOutput gera um documento do PDF ao mesclar um design de formul�
    <td>Especifica o caminho e o nome do arquivo de entrada. O arquivo pode ser do tipo PDF ou XDP. Se apenas o nome do arquivo for especificado, o arquivo será lido em relação ao contentRoot especificado nas opções. <br /> </td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Um arquivo XML que contém os dados mesclados com o documento PDF.<br /> </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Especifica valores de variáveis contentRoot, locale, AcrobatVersion, linearizedPDF e taggedPDF. O parâmetro options aceita objetos do tipo PDFOutputOptions.</td>
   </tr>
  </tbody>
@@ -3863,7 +3862,7 @@ Mescla um design de formulário com dados para criar um documento do PDF. Opcion
 
 **Sintaxe:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
-#### Parâmetros SMTP {#input-parameters-1}
+#### Parâmetros de entrada {#input-parameters-1}
 
 <table>
  <tbody>
@@ -3872,15 +3871,15 @@ Mescla um design de formulário com dados para criar um documento do PDF. Opcion
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>Modelos<br /> </td>
+   <td>modelos<br /> </td>
    <td>Especifica o Mapa de chave e o nome de arquivo do modelo.<br /> </td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Especifica o Mapa de chave e o documento de dados. Se a chave não for nula, o documento de dados será renderizado com o modelo para a chave correspondente especificada no Mapa de modelos. </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Especifica valores de variáveis contentRoot, locale, AcrobatVersion, linearizedPDF e taggedPDF. O parâmetro options aceita objetos do tipo PDFOutputOptions.</td>
   </tr>
   <tr>
@@ -3980,7 +3979,7 @@ Gera uma saída PCL, PostScript e ZPL de um design de formulário e arquivo de d
 
 **Sintaxe:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
-#### Parâmetros SMTP {#input-parameters-2}
+#### Parâmetros de entrada {#input-parameters-2}
 
 <table>
  <tbody>
@@ -3993,11 +3992,11 @@ Gera uma saída PCL, PostScript e ZPL de um design de formulário e arquivo de d
    <td>Especifica o caminho e o nome do arquivo de entrada. Se apenas o nome do arquivo for especificado, o arquivo será lido em relação ao contentRoot especificado nas opções. O arquivo pode ser do tipo PDF ou XDP.<br /> </td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Um arquivo XML que contém dados mesclados com documentos do PDF.<br /> </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Especifica valores de variáveis contentRoot, locale, AcrobatVersion, linearizedPDF e taggedPDF. O parâmetro options aceita objetos do tipo PrintedOutputOptions.<br /> </td>
   </tr>
  </tbody>
@@ -4071,7 +4070,7 @@ Gera uma saída PCL, PostScript e ZPL considerando um design de formulário e um
 
 **Sintaxe:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
-#### Parâmetros SMTP {#input-parameters-3}
+#### Parâmetros de entrada {#input-parameters-3}
 
 <table>
  <tbody>
@@ -4084,11 +4083,11 @@ Gera uma saída PCL, PostScript e ZPL considerando um design de formulário e um
    <td>Especifica o caminho e o nome do arquivo de entrada. Se apenas o nome do arquivo for especificado, o arquivo será lido em relação ao contentRoot especificado nas opções. O arquivo pode ser do tipo XDP. </td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Um arquivo XML que contém dados mesclados com documentos do PDF.<br /> </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Esse objeto é usado para definir os valores de contentRoot, locale, printConfig, copies e paginationOverride. O parâmetro options aceita objetos do tipo PrintedOutputOptions.<br /> </td>
   </tr>
  </tbody>
@@ -4156,7 +4155,7 @@ Gera um documento dos formatos PS, PCL e ZPL ao mesclar um design de formulário
 
 **Sintaxe`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
-#### Parâmetros SMTP {#input-parameters-4}
+#### Parâmetros de entrada {#input-parameters-4}
 
 <table>
  <tbody>
@@ -4165,15 +4164,15 @@ Gera um documento dos formatos PS, PCL e ZPL ao mesclar um design de formulário
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>Modelos<br /> </td>
+   <td>modelos<br /> </td>
    <td>Especifica o mapa de chave e nome de arquivo de modelo.<br /> </td>
   </tr>
   <tr>
-   <td>Dados</td>
+   <td>dados</td>
    <td>Especifica o mapa da chave e o documento de dados. Se a chave não for nula, o documento de dados será renderizado com o modelo para a chave correspondente no Mapa de modelos.<br /> </td>
   </tr>
   <tr>
-   <td>Opções</td>
+   <td>opções</td>
    <td>Especifica o objeto do tipo PrintedOutputOptions. Este objeto é usado para definir os valores de contentRoot, locale, printConfig, copies, paginationOverride.<br /> </td>
   </tr>
   <tr>
@@ -4294,13 +4293,13 @@ O serviço Forms fornece APIs para importar e exportar dados de e para um formul
 * **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** exporta dados de um formulário do PDF.
 * **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dados em um PDF Form interativo.
 
-### ExportData {#exportdata}
+### exportData {#exportdata}
 
 Exporta dados de formulário de um formulário interativo do PDF nos formatos XML e XDP.
 
 **Sintaxe:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
-#### Parâmetros SMTP {#input-parameters-5}
+#### Parâmetros de entrada {#input-parameters-5}
 
 <table>
  <tbody>
@@ -4378,13 +4377,13 @@ try {
  }
 ```
 
-### ImportData {#importdata}
+### importData {#importdata}
 
 Importa dados de formulário em um formulário interativo do PDF.
 
 **Sintaxe:** `Document importData(Document PDF, Document data)`
 
-#### Parâmetros SMTP {#input-parameters-6}
+#### Parâmetros de entrada {#input-parameters-6}
 
 <table>
  <tbody>
@@ -4453,7 +4452,7 @@ private File importData(File inDoc, File inXML)
 }
 ```
 
-## Configuração do gerador de PDF {#pdfgeneratorservice}
+## Serviço PDF Generator {#pdfgeneratorservice}
 
 O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos em PDF. Também converte o PDF em outros formatos de arquivo e otimiza o tamanho dos documentos do PDF.
 
@@ -4462,7 +4461,7 @@ O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos
 O GeneratePDFService fornece APIs para converter vários formatos de arquivo, como .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsoleto), .jpg, .bmp, .tif, .png, .html e muitos outros formatos de arquivo para o PDF. Ela também fornece APIs para exportar o PDF para vários formatos de arquivo e otimizar PDFs. O serviço oferece suporte às seguintes APIs:
 
 * **createPDF**: converte um tipo de arquivo suportado para um documento PDF. É compatível com formatos de arquivo como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
-* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
+* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
 
 * **otimizePDF**: otimiza o documento do PDF e também converte um documento do PDF de um tipo para outro. O método aceita um documento PDF como entrada.
 * **htmlToPdf2**: converte uma página do HTML em um documento do PDF. Ele aceita o URL da página do HTML como entrada.
@@ -4509,14 +4508,14 @@ O GeneratePDFService fornece APIs para converter vários formatos de arquivo, co
 
 #### createPDF {#createpdf}
 
-A API createPDF converte um tipo de arquivo compatível em um documento PDF. É compatível com vários formatos de arquivo, como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
+The createPDF API converts a supported file type to a PDF document. It supports various file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third-party generic PDF generating application type can also be plugged into the API.
 
-Para a conversão, somente alguns parâmetros são obrigatórios. Um documento de entrada é um parâmetro obrigatório. Posteriormente, você poderá aplicar as permissões de segurança, as Configurações de saída do PDF e as informações de metadados ao documento de saída do PDF.
+For the conversion, only a few parameters are mandatory. An input document is mandatory parameter. You can apply the security permissions, PDF Output Settings, and Metadata information later to the output PDF document.
 
-O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
+The createPDF service returns a java.util.Map with results. As chaves do mapa são:
 
 * ConvertedDoc: contém o documento PDF recém-criado.
-* LogDoc: contém o arquivo de log.
+* LogDoc: It contains the log file.
 
 O serviço createPDF gera as seguintes exceções:
 
@@ -4526,7 +4525,7 @@ O serviço createPDF gera as seguintes exceções:
 
 **Sintaxe:** `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
 
-#### Parâmetros SMTP {#input-parameters-7}
+#### Parâmetros de entrada {#input-parameters-7}
 
 <table>
  <tbody>
@@ -4565,7 +4564,7 @@ O serviço createPDF gera as seguintes exceções:
     <ul>
      <li>Sem segurança</li>
      <li>Segurança de Senha<br /> </li>
-     <li>Segurança AEM<br /> </li>
+     <li>Segurança de certificado<br /> </li>
      <li>Servidor de políticas do Adobe</li>
     </ul> <p>É um parâmetro opcional.</p> </td>
   </tr>
@@ -4575,7 +4574,7 @@ O serviço createPDF gera as seguintes exceções:
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>O arquivo contém informações de metadados aplicadas ao Documento do PDF gerado. Esse recurso é opcional.<br /> </td>
+   <td>O arquivo contém informações de metadados aplicadas ao Documento do PDF gerado. Este parâmetro é opcional.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4662,7 +4661,7 @@ O serviço createPDF gera as seguintes exceções:
 Map exportPDF(Document inputDoc, String inputFileName, String formatType, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
-#### Parâmetros SMTP {#input-parameters-8}
+#### Parâmetros de entrada {#input-parameters-8}
 
 <table>
  <tbody>
@@ -4755,7 +4754,7 @@ O serviço createPDF gera as seguintes exceções:
 OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
-#### Parâmetros SMTP {#input-parameters-9}
+#### Parâmetros de entrada {#input-parameters-9}
 
 <table>
  <tbody>
@@ -4845,7 +4844,7 @@ O serviço htmlToPdf2 gera as seguintes exceções:
 HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String securitySettingsName, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
-#### Parâmetros SMTP {#input-parameters-10}
+#### Parâmetros de entrada {#input-parameters-10}
 
 <table>
  <tbody>
@@ -4943,7 +4942,7 @@ Converte os formatos compatíveis em documentos do PDF. O método aceita arquivo
 Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
-#### Parâmetros SMTP {#input-parameters-11}
+#### Parâmetros de entrada {#input-parameters-11}
 
 <table>
  <tbody>
@@ -4978,7 +4977,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
     <ul>
      <li>Sem segurança</li>
      <li>Segurança de Senha<br /> </li>
-     <li>Segurança AEM<br /> </li>
+     <li>Segurança de certificado<br /> </li>
      <li>Servidor de políticas do Adobe</li>
     </ul> <p>É um parâmetro opcional.</p> </td>
   </tr>
@@ -5065,7 +5064,7 @@ A API do PDF de marcação automática melhora a acessibilidade do PDF adicionan
 
 * Blocos de texto (parágrafos)
 * Listas com marcadores em um operador
-* Sumário (v1)
+* Sumário (TOC)
 
 ![Documento do PDF com Marcação Automática](assets/auto-tag-api.png)
 
@@ -5073,7 +5072,7 @@ A amostra de código Java a seguir demonstra como converter um arquivo PDF em um
 
 **Sintaxe**: `Document tag(final Document inDoc)`
 
-**Parâmetros SMTP**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
@@ -5123,5 +5122,3 @@ void tag(File inputFile) throws Exception
     }
 }
 ```
-
-

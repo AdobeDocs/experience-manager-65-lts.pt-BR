@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: fbc55cbd-c754-44f8-8159-72cedc60e137
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '500'
 ht-degree: 0%
-
 ---
-
 # Integração com o Otimizador de conteúdo BrightEdge{#integrating-with-brightedge-content-optimizer}
 
 Crie uma configuração de nuvem do BrightEdge para que o AEM possa se conectar usando as credenciais da sua conta do BrightEdge. É possível criar várias configurações se você usar várias contas.

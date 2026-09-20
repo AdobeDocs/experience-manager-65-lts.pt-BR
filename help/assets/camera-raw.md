@@ -1,17 +1,16 @@
 ---
 title: Suporte do [!DNL Adobe Camera Raw] para processar ativos digitais
-description: Saiba como habilitar o suporte [!DNL Adobe Camera Raw] no [!DNL Adobe Experience Manager Assets]
+description: Saiba como habilitar o suporte ao [!DNL Adobe Camera Raw] no [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8cf34359-b6e0-4c84-84ec-d9d2b27edc6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # Processar imagens usando [!DNL Adobe Camera Raw] {#camera-raw-support}
 
 Você pode habilitar o suporte do [!DNL Adobe Camera Raw] para processar formatos de arquivo brutos, como CR2, NEF e RAF, e renderizar as imagens no formato JPEG. A funcionalidade tem suporte no [!DNL Adobe Experience Manager Assets] usando o [pacote Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponível na Distribuição de Software.
@@ -42,10 +41,10 @@ Para habilitar o suporte ao [!DNL Camera Raw] em [!DNL Experience Manager Assets
    * **[!UICONTROL Tipos MIME]**: `image/dng` e `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
 
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
 
    ![chlimage_1-130](assets/chlimage_1-336.png)
 

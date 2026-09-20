@@ -8,14 +8,12 @@ topic-tags: content
 content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
-
 # Gerenciador de pacotes {#working-with-packages}
 
 Os pacotes permitem importar e exportar conteúdo do repositório. Você pode usar pacotes para instalar novo conteúdo, instalar nova funcionalidade, transferir conteúdo entre instâncias e fazer backup do conteúdo do repositório.
@@ -64,8 +62,8 @@ O Gerenciador de pacotes está dividido em quatro áreas funcionais principais:
 * **Painel de Navegação à Esquerda** - Esse painel permite filtrar e classificar a lista de pacotes.
 * **Lista de Pacotes** - Esta é a lista de pacotes na sua instância filtrada e classificada de acordo com as seleções no Painel de Navegação Esquerdo.
 * **Log de atividades** - Esse painel é minimizado no início e expande-se para detalhar a atividade do Gerenciador de Pacotes, por exemplo, quando um pacote é compilado ou instalado. Há botões adicionais na guia Registro de atividades para:
-   * **Limpar Log**
-   * **Mostrar/Ocultar**
+  * **Limpar Log**
+  * **Mostrar/Ocultar**
 * **Barra de Ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de Navegação Esquerdo e a lista de Pacotes, além de botões para pesquisar, criar e carregar pacotes.
 
 ![Interface do usuário do Gerenciador de Pacotes](assets/package-manager-ui.png)
@@ -128,7 +126,7 @@ A caixa de diálogo **Configurações de Pacote** está disponível por meio do 
 | Grupo | Para organizar pacotes, digite o nome de um novo grupo ou selecione um grupo existente |
 | Versão | Texto a ser usado para a versão |
 | Descrição | Uma breve descrição do pacote que permite a marcação HTML para formatação |
-| Miniatura  | O ícone que aparece com a lista de pacotes |
+| Miniatura | O ícone que aparece com a lista de pacotes |
 
 #### Miniaturas do pacote {#thumbnails}
 
@@ -174,7 +172,7 @@ Ao criar regras, você define uma expressão regular (também conhecida como reg
 | include | Incluir incluirá todos os arquivos e pastas no diretório especificado que correspondam à expressão regular. Incluir **não** incluirá outros arquivos ou pastas do caminho raiz especificado. |
 | excluir | Excluir excluirá todos os arquivos e pastas que correspondem à expressão regular. |
 
-Os filtros de pacote geralmente são definidos quando você [cria o pacote pela primeira vez.](#creating-a-new-package) No entanto, eles também podem ser editados mais tarde, depois disso, o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
+Os filtros de pacote são definidos com mais frequência quando você [cria o pacote pela primeira vez.](#creating-a-new-package) No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 
 >[!TIP]
 >
@@ -243,7 +241,7 @@ Há muitas ações que podem ser executadas em um pacote.
 
    ![Novo pacote](assets/new-package.png)
 
-1. Clique em **Editar** para definir o conteúdo do pacote [.](#package-contents) Clique em **Salvar** depois que terminar de editar as configurações.
+1. Clique em **Editar** para definir o [conteúdo do pacote.](#package-contents) Clique em **Salvar** depois que terminar de editar as configurações.
 
 1. Agora você pode [Criar](#building-a-package) seu pacote.
 

@@ -7,13 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: da668935-9d16-49e1-8e7a-772fc4040c1d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 1%
-
 ---
-
 # Configurar uma solução de gerenciamento de correspondência {#configuring-a-correspondence-management-solution}
 
 ## Definindo o URL da instância do autor para VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -50,4 +49,4 @@ Siga estas etapas para poder definir o URL da instância de publicação para o 
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-Para obter mais informações sobre como configurar o Gerenciamento de Correspondências, consulte [Propriedades de Configuração do Gerenciamento de Correspondências](https://helpx.adobe.com/br/aem-forms/6-2/cm-configuration-properties.html).
+Para obter mais informações sobre como configurar o Gerenciamento de Correspondências, consulte [Propriedades de Configuração do Gerenciamento de Correspondências](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

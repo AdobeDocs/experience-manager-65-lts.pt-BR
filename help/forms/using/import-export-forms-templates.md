@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 7ca50e97a42edc4eefd296ada88c19a1c598b08c
+exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2481'
 ht-degree: 0%
-
 ---
-
 # Importação e exportação de ativos para o AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
 Você pode mover formulários e ativos relacionados, temas, dicionários de dados, fragmentos de documentos e cartas entre diferentes instâncias do AEM Forms. Esse movimento é necessário ao migrar sistemas ou mover formulários de um servidor de preparo para um servidor de produção. Para os ativos para os quais há suporte para upload e importação pela interface do AEM Forms, o uso da interface do Forms é a maneira recomendada para exportar ou importar. Não é recomendado usar o Gerenciador de pacotes do AEM para exportar ou importar esses ativos.
@@ -37,10 +36,10 @@ Para baixar os ativos do Forms e do Documents:
 1. Em Baixar ativos, escolha uma das opções a seguir e selecione **Baixar**.
 
    * **Baixar como Pacote do CRX:** use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Todos os ativos de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulário, documentos do PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacotes da interface do usuário do AEM Forms.
-A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
+     A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
    * **Baixar ativo(s) como arquivos binários:** Use a opção para baixar somente modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDFs e XDPs como um arquivo .zip.
-Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos binários**. Para baixar esses ativos, você deve usar a opção **Baixar como Pacote do CRX**.
+     Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos binários**. Para baixar esses ativos, você deve usar a opção **Baixar como Pacote do CRX**.
 
    Os ativos selecionados são baixados como um arquivo (arquivo .zip).
 

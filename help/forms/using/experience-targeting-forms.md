@@ -7,13 +7,12 @@ topic-tags: integrations
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: be7493a9-1e3b-4918-8b3e-fb1a2000b453
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '846'
 ht-degree: 0%
-
 ---
-
 # Criar experiências direcionadas no AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrar o Adobe Target com o AEM Forms {#integrate-adobe-target-with-aem-forms}
@@ -35,8 +34,8 @@ Configure o Adobe Target no AEM para usá-lo com formulários adaptáveis e comu
 1. Na página Atividades, selecione **Criar > Criar marca**.
 1. Você deverá escolher um modelo e inserir as propriedades.
 
-   Selecione um modelo e, em seguida, **Próximo.** Insira o título da sua marca na seção Propriedades e selecione **Criar.**
-Sua marca agora está listada na página Atividades.
+   Selecione um modelo, selecione **Próximo.** Insira o título da sua marca na seção Propriedades e selecione **Criar.**
+   Sua marca agora está listada na página Atividades.
 
 1. Selecione sua marca na página Atividades.
 1. Na Área principal da sua marca, selecione **Criar** > **Criar atividade**.

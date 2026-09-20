@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '385'
 ht-degree: 10%
-
 ---
-
 # Desenvolvimento e diff de página{#developing-and-page-diff}
 
 ## Visão geral do recurso {#feature-overview}
@@ -44,18 +43,18 @@ No entanto, há algumas limitações que devem ser consideradas pelo desenvolved
 
 * Esse recurso usa classes CSS que não têm namespace para o produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diferencial poderá ser afetada.
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * Como o diferencial é no lado do cliente e é executado no carregamento da página, os ajustes no DOM após a execução do serviço de diferencial do lado do cliente não serão considerados. Isso pode afetar
 
-   * Componentes que usam o AJAX para incluir conteúdo
-   * Aplicativos de página única
-   * Componentes baseados em JavaScript que manipulam o DOM na interação do usuário.
+  * Componentes que usam o AJAX para incluir conteúdo
+  * Aplicativos de página única
+  * Componentes baseados em JavaScript que manipulam o DOM na interação do usuário.
 
 >[!NOTE]
 >

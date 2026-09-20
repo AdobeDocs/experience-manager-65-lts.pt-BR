@@ -9,13 +9,12 @@ role: User, Admin
 mini-toc-levels: 3
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a54d39c3-e3eb-4d09-b79e-b5284e6e3f0b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1606'
 ht-degree: 1%
-
 ---
-
 # Vídeo {#video}
 
 O Adobe Experience Manager Assets fornece um gerenciamento centralizado de ativos de vídeo, em que você pode fazer upload de vídeos diretamente no Assets para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Assets para criação de página.
@@ -24,7 +23,7 @@ A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo ot
 
 * O componente de **[!UICONTROL Vídeo do Scene7]** executa automaticamente a detecção de dispositivo e largura de banda para reproduzir o formato e a qualidade de vídeo corretos em computadores, tablets e dispositivos móveis.
 * Assets - É possível incluir conjuntos de vídeos adaptáveis em vez de apenas ativos de vídeo únicos. Um conjunto de vídeos adaptáveis contém todas as representações de vídeo necessárias para reproduzir vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes, como 400 kbps, 800 kbps e 1000 kbps. Use um Conjunto de vídeos adaptados, juntamente com o componente de vídeo S7, para transmissão de vídeo adaptado em várias telas, incluindo dispositivos móveis para desktop, iOS, Android™, BlackBerry® e Windows.
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/pt_BR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Sobre FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -65,7 +64,7 @@ Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, car
 
 Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para o Scene7. O fluxo de trabalho recomendado é o seguinte:
 
-1. No Dynamic Media Classic, [configure um carregamento e uma codificação de FTP agendados para o Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-files-using-via-ftp).
+1. No Dynamic Media Classic, [configure um carregamento e uma codificação de FTP agendados para o Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 1. No Experience Manager, acesse ativos de vídeo no WCM na guia **[!UICONTROL Scene7]** do Localizador de conteúdo.
 1. Crie com o componente de Vídeo **[!UICONTROL Scene7]**.
 
@@ -84,7 +83,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=pt-BR#video-presets-for-encoding-video-files).
+   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >A Adobe recomenda que você selecione ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecione a opção **[!UICONTROL Codificação de vídeo adaptável]**.
 

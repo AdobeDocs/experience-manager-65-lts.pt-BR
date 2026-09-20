@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 109ab777-c7be-4725-8b91-c4e5d6a735ab
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
-
 ---
-
 # Habilitar o CRXDE Lite no AEM{#enabling-crxde-lite-in-aem}
 
 Para garantir que as instalações do AEM sejam o mais seguras possível, a lista de verificação de segurança recomenda [desabilitar o WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) em ambientes de produção.

@@ -9,13 +9,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 0%
-
+source-wordcount: '2051'
+ht-degree: 2%
 ---
-
 # Arquitetura dos formulários HTML5{#architecture-of-html-forms}
 
 ## Arquitetura {#architecture}
@@ -30,7 +29,7 @@ O [Apache Sling](https://sling.apache.org/) é centrado em recursos. Ele usa um 
 
 Para obter detalhes sobre o ponto de extremidade REST e os parâmetros de solicitação com suporte, consulte [Renderizando Modelo de Formulário](/help/forms/using/rendering-form-template.md).
 
-Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android™, o Sling primeiro resolve o nó de perfil com base no URL da solicitação. Deste Nó de Perfil, ele lê **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de Renderização de Formulário. Em seguida, ele usa seletores de solicitação Sling juntamente com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge uma JSP de renderizador de perfil, a JSP chama o serviço OSGi do Forms.
+Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android™, o Sling primeiro resolve o nó de perfil com base no URL da solicitação. Deste Nó de perfil, lê-se **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com esta solicitação de Renderização de formulário. Em seguida, ele usa seletores de solicitação Sling juntamente com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge uma JSP de renderizador de perfil, a JSP chama o serviço OSGi do Forms.
 
 Para obter mais detalhes sobre a resolução do script sling, consulte [Folha de características do AEM Sling](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) ou [Decomposição do URL do Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -93,7 +92,7 @@ O HTML5 forms usa o armazenamento em cache para otimizar a taxa de transferênci
   </tr>
   <tr>
    <td>Agressivo</td>
-   <td>Armazenar em cache o conteúdo do HTML renderizado <br /> Armazenar em cache todos os artefatos no nível Conservador.<br /> <strong>Observação</strong>: essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
+   <td>Armazenar em cache conteúdo HTML renderizado <br /> Armazenar em cache todos os artefatos no nível Conservador.<br /> <strong>Observação</strong>: essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
   </tr>
  </tbody>
 </table>

@@ -7,13 +7,12 @@ topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b9b989e3-f204-4929-a03a-857cbb786185
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1537'
 ht-degree: 1%
-
 ---
-
 # Amostra para integrar o componente de rascunhos e envios ao banco de dados {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Visão geral de exemplo {#sample-overview}
@@ -25,7 +24,7 @@ A amostra, discutida neste documento, é uma implementação de referência de d
 >[!NOTE]
 >
 >* Os exemplos e as configurações explicadas neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los apropriadamente pelo seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
+>* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 >* O pacote de amostra funciona somente com ações de envio do Adaptive Forms.
 
 ## Definir e configurar a amostra {#set-up-and-configure-the-sample}
@@ -36,7 +35,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
    Exemplo de pacote para integração de banco de dados
 
-[Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Acesse o gerenciador de pacotes do AEM em https://[*host*]:[*port*]/crx/packmgr/.
 1. Clique em **[!UICONTROL Carregar pacote]**.

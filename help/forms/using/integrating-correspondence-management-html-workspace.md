@@ -7,13 +7,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b383fa80-1643-41f3-bc6c-176727fea688
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '642'
 ht-degree: 0%
-
 ---
-
 # Integração de aplicativos de terceiros ao espaço de trabalho do AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
 O espaço de trabalho do AEM Forms oferece suporte ao gerenciamento de atribuições de tarefas e atividades de conclusão de formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® Forms ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
@@ -100,7 +99,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    ```
 
    [Obter arquivo](assets/dscsample.zip)
-Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o Serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o Serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Na caixa de diálogo Definir atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
 

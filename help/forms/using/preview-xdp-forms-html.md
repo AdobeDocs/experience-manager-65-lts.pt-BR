@@ -7,13 +7,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '807'
 ht-degree: 0%
-
 ---
-
 # Gerar visualização HTML5 de um formulário XDP{#generate-html-preview-of-an-xdp-form}
 
 Ao criar um formulário no AEM Forms Designer, além de visualizar a representação de um formulário no PDF, você também pode visualizar uma representação HTML5 dele. Você pode usar a guia **Visualizar HTML** para visualizar um formulário como ele apareceria em um navegador.
@@ -36,13 +35,13 @@ Para permitir que o Designer gere a pré-visualização do HTML de formulários 
 
    * AEM Forms no JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms no OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -73,20 +72,20 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
    * **Número da porta HTTP**: porta do servidor AEM. O valor padrão é 4502.
    * **Contexto de Visualização do HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
 
    * **Contexto do Forms Manager:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
-      * `/aem/forms` (AEM Forms no OSGi)
-      * `/lc/forms` (AEM Forms no JEE)
+     * `/aem/forms` (AEM Forms no OSGi)
+     * `/lc/forms` (AEM Forms no JEE)
 
    >[!NOTE]
    >
    >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
-   ![Opções do AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
@@ -110,7 +109,7 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
 
 O Designer permite visualizar e testar o formulário usando dados XML de amostra. É recomendável testar frequentemente seu formulário com dados de amostra para garantir que ele seja renderizado corretamente.
 
-Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de exemplo para visualizar o formulário](https://help.adobe.com/pt_BR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Criar dados de exemplo para visualizar o formulário](https://help.adobe.com/pt_BR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Criar dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Testar o formulário usando uma fonte de dados de amostra garante que os dados e campos sejam mapeados e que os subformulários de repetição sejam repetidos conforme esperado. Você pode criar um layout de formulário equilibrado que forneça o espaço apropriado para cada objeto exibir os dados mesclados.
 

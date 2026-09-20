@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9b934d95-f59f-46d5-9d13-4ad2561453b3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 1%
-
 ---
-
 # Criação de componentes de layout personalizados para formulários adaptáveis{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Pré-requisitos {#prerequisite}

@@ -8,13 +8,12 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1e3c4724-9dbd-4e39-a0fc-efe7fd8906cd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 4%
 ---
-
 # Pesquisar formulários e ativos{#searching-for-forms-and-assets}
 
 Você pode pesquisar seus formulários ou ativos de formulário, usando uma sequência de texto ou de texto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
@@ -90,7 +89,7 @@ Você pode selecionar qualquer número de tipos de ativos. A pesquisa retorna a 
    <td>Pesquisar em todos os modelos de formulário.<br /> </td> 
   </tr>
   <tr>
-   <td>Formulário do PDF</td> 
+   <td>Formulário em PDF</td> 
    <td>Pesquisar em todos os documentos do PDF.</td> 
   </tr>
   <tr>

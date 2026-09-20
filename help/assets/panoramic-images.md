@@ -9,13 +9,12 @@ docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # Imagens panorâmicas{#panoramic-images}
 
 Esta seção descreve como trabalhar com o Visualizador de imagens panorâmicas para renderizar imagens panorâmicas esféricas para obter uma experiência de visualização imersiva em 360 graus de uma sala, propriedade, localização ou paisagem.
@@ -42,7 +41,7 @@ Para carregar ativos para uso com o visualizador de Imagens panorâmicas, consul
 
 Para que o visualizador de imagens panorâmicas funcione corretamente no Adobe Experience Manager, sincronize as predefinições do visualizador de imagens panorâmicas com os metadados específicos do Dynamic Media Classic e do Dynamic Media Classic para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer essa sincronização, configure o Dynamic Media Classic da seguinte maneira:
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
 
 1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configuração de Publicação]** > **[!UICONTROL Servidor de Imagens]**.
 1. Na página Publicação do Servidor de Imagens, no menu suspenso **[!UICONTROL Contexto de Publicação]** próximo à parte superior, selecione **[!UICONTROL Servidor de Imagens]**.

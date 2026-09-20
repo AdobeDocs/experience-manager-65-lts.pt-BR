@@ -1,6 +1,6 @@
 ---
 title: Manuseio básico
-description: Uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager. Usa o console Sites como base.
+description: Uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager. Ele usa o console do Sites como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1188'
 ht-degree: 4%
-
 ---
-
 # Manuseio básico{#basic-handling}
 
 >[!NOTE]
@@ -53,7 +52,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Lançamentos</strong></td>
-   <td>Isso o ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; elas permitem desenvolver o conteúdo para uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, juntamente com o painel Referências.</i> <i>Se necessário, este console estará disponível no console Ferramentas; selecione Operações e Inicializações.</i></td>
+   <td>Isso o ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; elas permitem desenvolver o conteúdo para uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, junto com o painel Referências.</i> <i>Se necessário, este console estará disponível no console Ferramentas; selecione Operações e Inicializações.</i></td>
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
@@ -102,7 +101,7 @@ Aqui você pode [gerenciar suas páginas](/help/sites-authoring/managing-pages.m
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Em vários consoles (por exemplo, Sites), um botão **Ajuda** está disponível. Clicar na **Ajuda** abre o site de documentação ou o Compartilhamento de Pacotes.
 
@@ -116,10 +115,10 @@ O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore
 
 * Clicar no nome da página no painel esquerdo faz o seguinte:
 
-   * Lista as páginas secundárias no painel direito
-   * Expande a estrutura no painel esquerdo.
+  * Lista as páginas secundárias no painel direito
+  * Expande a estrutura no painel esquerdo.
 
-     Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
+    Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
 
 * Clicar duas vezes no nome da página (painel esquerdo) expande a árvore, embora, como a página é aberta ao mesmo tempo, esse efeito não seja tão óbvio.
 
@@ -157,7 +156,7 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>Miniatura </td>
+   <td>Miniatura</td>
    <td>Mostra uma miniatura da página.</td>
   </tr>
   <tr>

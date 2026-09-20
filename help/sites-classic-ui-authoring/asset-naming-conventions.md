@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 37de1a8b-b7db-469e-98a7-20ddb6218510
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '130'
 ht-degree: 1%
-
 ---
-
 # Convenções de nomenclatura para testes de ativos{#naming-conventions-for-assets-testing}
 
 Os nós no repositório estão sujeitos às convenções de nomenclatura do [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o Adobe Experience Manager impõe mais convenções para o nome dos nós de ativos.
@@ -25,13 +24,13 @@ A interface clássica impõe restrições mais rigorosas:
 
 * Valida o nome do ativo quando um nome de nó explícito:
 
-   * um título de ativo é fornecido para conversão no nome do nó
-   * um nome de nó explícito é fornecido
+  * um título de ativo é fornecido para conversão no nome do nó
+  * um nome de nó explícito é fornecido
 
 * Caracteres válidos (na verdade, somente esses caracteres são válidos quando um ativo é criado na interface clássica):
 
-   * &#39;a&#39; a &#39;z&#39;
-   * &#39;A&#39; a &#39;Z&#39;
-   * &#39;0&#39; a &#39;9&#39;
-   * _ (sublinhado)
-   * `-` (traço/sinal de menos)
+  * &#39;a&#39; a &#39;z&#39;
+  * &#39;A&#39; a &#39;Z&#39;
+  * &#39;0&#39; a &#39;9&#39;
+  * _ (sublinhado)
+  * `-` (traço/sinal de menos)

@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1334d04b-8e73-487c-aa87-531f00f1d5f2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '514'
 ht-degree: 0%
-
 ---
-
 # Configuração de componentes no modo de design{#configuring-components-in-design-mode}
 
 Quando a instância do AEM é instalada pronta para uso, uma seleção de componentes é disponibilizada imediatamente no sidekick.

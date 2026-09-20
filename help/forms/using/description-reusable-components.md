@@ -8,13 +8,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 8ecb0f5a-e11a-4371-8136-5db8c98c6043
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1217'
 ht-degree: 9%
-
 ---
-
 # Descrição de componentes reutilizáveis {#description-of-reusable-components}
 
 O espaço de trabalho do AEM Forms é composto de [componentes reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que são organizados em uma [estrutura de pastas](/help/forms/using/folder-structure.md) específica no CRX™. Cada componente tem um modelo, uma visualização e um arquivo de modelo no local especificado na estrutura de pastas, as dependências da JavaScript™ em outros arquivos de componentes, os eventos acompanhados pelo componente e os objetos do JavaScript que acionam esses eventos no espaço de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivo e dependências constituintes é fornecida aqui.
@@ -82,7 +81,7 @@ O espaço de trabalho do AEM Forms é composto de [componentes reutilizáveis](/
   </tr>
   <tr>
    <td><p>Modelo</p></td>
-   <td><p>task.html</p></td>
+   <td><p>tarefa.html</p></td>
   </tr>
   <tr>
    <td><p>Requer componentes</p></td>
@@ -469,7 +468,7 @@ O espaço de trabalho do AEM Forms é composto de [componentes reutilizáveis](/
   </tr>
   <tr>
    <td><p>Modelo</p></td>
-   <td><p>startpoint.html</p></td>
+   <td><p>ponto inicial.html</p></td>
   </tr>
   <tr>
    <td><p>Requer componentes</p></td>
@@ -740,15 +739,15 @@ O espaço de trabalho do AEM Forms é composto de [componentes reutilizáveis](/
  <tbody>
   <tr>
    <td><p>Modelo</p> </td>
-   <td><p>outofoffice.js</p> </td>
+   <td><p>outooffice.js</p> </td>
   </tr>
   <tr>
    <td><p>Exibir</p> </td>
-   <td><p>outofoffice.js</p> </td>
+   <td><p>outooffice.js</p> </td>
   </tr>
   <tr>
    <td><p>Modelo</p> </td>
-   <td><p>outofoffice.html</p> </td>
+   <td><p>outooffice.html</p> </td>
   </tr>
   <tr>
    <td><p>Requer componentes</p> </td>

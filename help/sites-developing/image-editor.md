@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: caaa4902-5f38-45c7-a788-521e05653538
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 9%
-
+source-wordcount: '322'
+ht-degree: 17%
 ---
-
 # Editor de imagem{#image-editor}
 
 O Editor de imagens é uma parte principal do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.

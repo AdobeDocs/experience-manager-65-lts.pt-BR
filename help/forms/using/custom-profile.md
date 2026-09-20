@@ -8,13 +8,12 @@ discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '657'
 ht-degree: 0%
-
 ---
-
 # Criação de um perfil personalizado para formulários HTML5 {#creating-a-custom-profile-for-html-forms}
 
 Um perfil é um nó de recurso em [Apache Sling](https://sling.apache.org/). Ele representa a versão personalizada do serviço de representação de formulários do HTML5. Você pode usar o serviço de Representação de formulários do HTML5 para personalizar a aparência, o comportamento e as interações dos formulários do HTML5. Existe um nó de perfil na pasta `/content` no repositório JCR. Você pode colocar o nó diretamente na pasta `/content` ou em qualquer subpasta da pasta `/content`.

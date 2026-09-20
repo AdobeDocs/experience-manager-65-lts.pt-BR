@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ab565118-9698-4630-ac06-4aa534875a19
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '291'
 ht-degree: 0%
-
 ---
-
 # Personalizando Ações da Tarefa {#customizing-task-actions}
 
 O espaço de trabalho do AEM Forms permite que os usuários personalizem as ações da tarefa. Antes de personalizar as ações de tarefa, siga as etapas listadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).

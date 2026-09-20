@@ -4,13 +4,12 @@ description: Analise essas considerações importantes antes de definir as polí
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1460872b-415f-4392-a480-c442790fd0d9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 79%
-
 ---
-
 # Fragmentos de conteúdo - Considerações sobre a exclusão {#content-fragments-delete-considerations}
 
 Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
@@ -21,7 +20,7 @@ A capacidade de excluir conteúdo é uma ferramenta poderosa, mas também perigo
 
 Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser considerados em dois níveis:
 
-1. **O fragmento do conteúdo como uma única entidade.**
+1. **O fragmento de conteúdo como uma única entidade.**
 
    * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão [Excluir](/help/sites-administering/security.md#actions) pode ser [atribuída por meio do Gerenciamento de Usuários e/ou Grupos](/help/sites-administering/security.md#managing-permissions).
@@ -71,15 +70,15 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
 * Para os nós ou pastas do fragmento de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * Para o nó `jcr:content` de todos os fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
 
 * Para todos os nós abaixo de `jcr:content` de todos os fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
 Esses privilégios `remove` devem ser [administrados usando Listas de Controle de Acesso, no CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 

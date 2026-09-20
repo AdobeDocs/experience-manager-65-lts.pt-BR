@@ -7,13 +7,12 @@ topic-tags: Configuration
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f6530bd3-16cd-4d6b-b92b-6c96f01f1939
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1033'
 ht-degree: 0%
-
 ---
-
 # Conexão do AEM Forms com o Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 O conector do Adobe Experience Manager (AEM) LiveCycle permite a invocação simplificada do Adobe LiveCycle ES4 Acrobat Services a partir de aplicativos Web e fluxos de trabalho da AEM. O LiveCycle fornece um SDK cliente avançado, que permite que os aplicativos clientes iniciem os serviços do LiveCycle usando APIs Java™. O AEM LiveCycle Connector simplifica o uso dessas APIs no ambiente OSGi.
@@ -153,7 +152,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Quase todos os serviços da Acrobat no LiveCycle exigem autenticação. Você pode usar qualquer uma das seguintes opções para iniciar esses serviços sem fornecer credenciais explícitas no código:
 
-### configurações de Inclui na lista de permissões {#allowlist-configuration}
+### Incluir na lista de permissões configuração {#allowlist-configuration}
 
 A configuração do LiveCycle Client SDK contém uma configuração sobre nomes de serviço. Essa configuração é uma lista de serviços para os quais a lógica de invocação usa uma credencial de administrador pronta para uso. Por exemplo, se você adicionar serviços do DiretoryManager (parte da API de gerenciamento de usuários) a essa lista, qualquer código de cliente poderá usar o serviço diretamente. Além disso, a camada de chamada passa automaticamente as credenciais configuradas como parte da solicitação enviada ao servidor do LiveCycle.
 
@@ -217,7 +216,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 Os seguintes serviços estão disponíveis:
 
 * com.adobe.idp.um.api.AuthenticationManager
-* com.adobe.idp.um.api.DirectoryManager
+* com.adobe.idp.um.api.DiretoryManager
 * com.adobe.idp.um.api.AuthorizationManager
 * com.adobe.idp.dsc.registry.service.ServiceRegistry
 * com.adobe.idp.dsc.registry.component.ComponentRegistry

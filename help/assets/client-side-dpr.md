@@ -4,13 +4,12 @@ description: Saiba como usar a proporção de pixels do dispositivo no lado do c
 role: Admin,User
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # Sobre a imagem inteligente com a proporção de pixels do dispositivo (DPR) do lado do cliente {#client-side-dpr}
 
 A solução Smart Imaging atual usa strings de agente do usuário para determinar o tipo de dispositivo (desktop, tablet, celular e assim por diante) que está sendo usado.
@@ -56,7 +55,7 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
    Você pode combinar ambos os scripts DPR em um para evitar várias solicitações de rede.
 
    A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página do HTML.
-A Adobe também recomenda que você Bootstrap seu aplicativo em tag HTML de comparação em vez de um elemento body. O motivo é que o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página do HTML.
+   A Adobe também recomenda que você Bootstrap seu aplicativo em tag HTML de comparação em vez de um elemento body. O motivo é que o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página do HTML.
 
 ## Download de arquivos do JavaScript {#client-side-dpr-script}
 

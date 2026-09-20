@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9fe575ad-1e8d-460f-a933-ddc2e927a6e8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 2%
-
 ---
-
 # Script de análise de solicitação{#request-analysis-script}
 
 ## Download {#download}
@@ -27,7 +26,7 @@ Este script é feito para facilitar a análise dos arquivos `access.log`, produz
 
 Este script é feito para facilitar a análise dos arquivos `access.log`, produzindo um relatório legível para processamento posterior.
 
-Ele produz o número geral de solicitações, GET vs. POST, Distribuição de solicitações ao longo do tempo e muito mais.
+Ele produz o número geral de solicitações, GET vs POST, Distribuição de solicitações ao longo do tempo e muito mais.
 
 A saída está na sintaxe do Markdown, portanto, será mais fácil convertê-la em PDFs com ferramentas como o pandoc ou mostrá-la em um navegador com plug-ins como o visualizador do Markdown.
 

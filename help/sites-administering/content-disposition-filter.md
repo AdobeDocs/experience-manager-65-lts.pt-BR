@@ -8,13 +8,12 @@ topic-tags: Security
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 997cb6f3-1ef8-409c-acea-157d5b27a6b2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # Filtro de disposição de conteúdo {#content-disposition-filter}
 
 O filtro de disposição de conteúdo é um recurso de segurança contra ataques XSS em arquivos SVG.

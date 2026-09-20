@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1840'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento do editor de itens em massa{#developing-the-bulk-editor}
 
 Esta seção descreve como desenvolver a ferramenta Editor de itens em massa e como estender o componente Lista de produtos, que é baseado no Editor de itens em massa.
@@ -432,7 +431,7 @@ Cada parte do Editor de itens em massa pode ser configurada. A tabela a seguir l
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>Configuração de metadados da coluna. As propriedades possíveis são (aplicadas a todas as células da coluna): <br />
+   <td>Configuração de metadados da coluna. As possíveis propriedades são (aplicadas a todas as células da coluna): <br />
     <ul>
      <li>cellStyle: html style </li>
      <li>cellCls: classe css </li>
@@ -528,7 +527,7 @@ O servlet Query funciona da seguinte maneira: ele recebe uma consulta GQL e as c
 
 No caso do componente Lista de produtos, os dois parâmetros enviados para o servlet de consulta são os seguintes:
 
-* query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
+* consulta: &quot;caminho:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 E o fluxo JSON é retornado da seguinte maneira:

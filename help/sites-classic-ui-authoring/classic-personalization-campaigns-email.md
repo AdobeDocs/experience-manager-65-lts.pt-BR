@@ -9,14 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 1%
 ---
-
-
 # Marketing por email{#e-mail-marketing}
 
 >[!NOTE]
@@ -72,25 +70,25 @@ Este documento descreve as noções básicas para a criação de boletins inform
    ![Caixa de diálogo Propriedades da página](assets/mcm_newnewsletterdialog.png)
 
    * **De Nome**
-Nome que deve aparecer como remetente do informativo.
+     Nome que deve aparecer como remetente do informativo.
 
    * **Do endereço**
-O endereço de e-mail que deve aparecer como o remetente do informativo.
+     O endereço de e-mail que deve aparecer como o remetente do informativo.
 
    * **Assunto**
-Assunto do informativo.
+     Assunto do informativo.
 
    * **Responder para**
-Endereço de e-mail que deve tratar das respostas para o informativo enviado.
+     Endereço de e-mail que deve tratar das respostas para o informativo enviado.
 
    * **Descrição**
-Descrição do informativo.
+     Descrição do informativo.
 
    * **No Prazo**
-A data e hora de envio do informativo.
+     A data e hora de envio do informativo.
 
    * **Lista de Destinatários Padrão**
-Lista padrão que deve receber o informativo.
+     Lista padrão que deve receber o informativo.
 
    Eles podem ser atualizados em um estágio posterior da caixa de diálogo **Propriedades...**.
 
@@ -143,7 +141,7 @@ Para personalizar um informativo e simular como ele será:
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta da instância em execução for alterada.
 
-Alternar entre clientes de e-mail comuns para ver como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
+Alternar entre clientes de e-mail comuns para ver a forma como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
 
 Atualmente, você pode exibir informativos nos seguintes clientes de e-mail:
 

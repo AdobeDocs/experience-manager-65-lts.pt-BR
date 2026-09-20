@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1cd2aae7-306f-4f7a-b4d2-e8c64827c09a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '432'
 ht-degree: 0%
-
 ---
-
 # Recuperando Variáveis de Tarefa no URL de Resumo {#getting-task-variables-in-summary-url}
 
 A página de resumo exibe informações relacionadas à tarefa. Este artigo descreve como você pode reutilizar informações relacionadas à tarefa na página de resumo.
@@ -75,7 +74,7 @@ Nesta orquestração de exemplo, um funcionário envia um formulário de inscri�
 
       * **Caminho da pasta**: o caminho onde o novo nó do CRX é criado. Defina o caminho como **/content**.
       * **Nome do nó**: atribua a variável de entrada nodeName a este campo. É uma string exclusiva de nome de nó.
-      * **Tipo de Nó**: defina o tipo como **nt:unstructured**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do processo de resumo **criar PTO**.
+      * **Tipo de nó**: defina o tipo como **nt:unstructured**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do processo de resumo **criar PTO**.
 
    1. Transmita os dados do formulário enviado (**employeeName**, **employeeID**, **ptoReason** e **totalDays**) como entrada para o novo processo **criar resumo PTO**. Usar a saída como **ptoSummaryNodePath**.
 

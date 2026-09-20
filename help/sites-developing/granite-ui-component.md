@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Criação de um novo componente de campo da interface de usuário do Granite{#creating-a-new-granite-ui-field-component}
 
 A interface do usuário do Granite fornece uma variedade de componentes projetados para serem usados em formulários; eles são chamados de *campos* no vocabulário da interface do usuário do Granite. Os componentes de formulário padrão do Granite estão disponíveis em:
@@ -33,16 +32,16 @@ Use a estrutura do Granite UI Foundation para desenvolver e/ou estender componen
 
 * lado do servidor:
 
-   * uma coleção de componentes de base
+  * uma coleção de componentes de base
 
-      * base - modular, componível, em camadas, reutilizável
-      * componentes - componentes Sling
+    * base - modular, componível, em camadas, reutilizável
+    * componentes - componentes Sling
 
-   * auxiliares para ajudar no desenvolvimento de aplicativos
+  * auxiliares para ajudar no desenvolvimento de aplicativos
 
 * lado do cliente:
 
-   * uma coleção de clientlibs que fornecem algum vocabulário (ou seja, extensão da linguagem HTML) para alcançar padrões de interação genéricos por meio de uma interface do usuário orientada por Hypermedia.
+  * uma coleção de clientlibs que fornecem algum vocabulário (ou seja, extensão da linguagem HTML) para alcançar padrões de interação genéricos por meio de uma interface do usuário orientada por Hypermedia.
 
 O componente genérico da interface do usuário do Granite `field` é composto de dois arquivos de interesse:
 
@@ -55,7 +54,7 @@ Para obter exemplos, consulte:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

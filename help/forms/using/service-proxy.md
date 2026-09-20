@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a9152ba8-3c59-4a20-b164-7a57f10d9ea4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '705'
 ht-degree: 1%
-
 ---
-
 # Proxy do serviço HTML5 forms{#html-forms-service-proxy}
 
 O Proxy do Serviço de Formulários do HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique a URL do serviço de envio por meio do parâmetro de solicitação *submitServiceProxy*.

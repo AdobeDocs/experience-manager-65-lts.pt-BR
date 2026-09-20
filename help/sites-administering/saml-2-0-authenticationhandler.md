@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '864'
 ht-degree: 1%
-
 ---
-
 # Manipulador de autenticação SAML 2.0{#saml-authentication-handler}
 
 O AEM vem com um manipulador de autenticação [SAML](https://saml.xml.org/saml-specifications). Este manipulador dá suporte ao Protocolo de Solicitação de Autenticação [SAML](https://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) usando a associação `HTTP POST`.
@@ -30,7 +29,7 @@ Este manipulador armazena a mensagem de resposta SAML criptografada no nó do us
 
 >[!NOTE]
 >
->Consulte [uma demonstração da integração do AEM e do SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=pt-BR).
+>Consulte [uma demonstração da integração do AEM e do SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configurando o Manipulador de Autenticação SAML 2.0 {#configuring-the-saml-authentication-handler}
 
@@ -85,7 +84,7 @@ O [console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso à 
 
 **Adicionar aos grupos** Se um usuário deve ou não ser adicionado automaticamente aos grupos do CRX após a autenticação bem-sucedida.
 
-**Associação de Grupo** O nome do saml:Attribute contendo uma lista de grupos CRX aos quais esse usuário deve ser adicionado.
+**Associação de Grupo** O nome do saml:Attribute que contém uma lista de grupos CRX aos quais este usuário deve ser adicionado.
 
 ## Adicionar o certificado IdP ao AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 

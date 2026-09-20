@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
-
+source-wordcount: '1381'
+ht-degree: 4%
 ---
-
 # Adicionar ação personalizada à exibição de Listagem de ativos{#add-custom-action-to-the-asset-listing-view}
 
 ## Visão geral {#overview}
@@ -81,7 +80,7 @@ Para personalizar o Gerenciamento de correspondências para permitir que os usu�
 
       **Nome:** downloadFlatPDF (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui downloadFlatPDF). O CRX exibe as propriedades do nó.
 
@@ -95,7 +94,7 @@ Para personalizar o Gerenciamento de correspondências para permitir que os usu�
         <td><strong>Valor e descrição</strong></td>
         </tr>
         <tr>
-        <td>Classe </td>
+        <td>Classe</td>
         <td>String</td>
         <td>foundation-collection-action</td>
         </tr>
@@ -253,7 +252,7 @@ Para personalizar o Gerenciamento de correspondências para permitir que os usu�
 
       **Nome:** letterpdfdownloader (Ou o nome que você deseja dar a esta propriedade) deve ser exclusivo. Se você usar um nome diferente aqui, especifique também o mesmo na variável ACTION_URL do arquivo formaction.js.)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui downloadFlatPDF). O CRX exibe as propriedades do nó.
 

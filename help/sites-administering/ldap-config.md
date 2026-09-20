@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d19750c4-9477-4bcb-b225-5f089b43194d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1657'
 ht-degree: 0%
-
 ---
-
 # Configuração do LDAP com AEM 6 {#configuring-ldap-with-aem}
 
 O LDAP (o protocolo **L** ightweight **D** diretory **A** ccess **P** a) é usado para acessar serviços de diretório centralizados. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuários, pois elas podem ser acessadas por vários aplicativos. Um desses servidores LDAP é o Ative Diretory. O LDAP geralmente é usado para obter o Logon único, que permite que um usuário acesse vários aplicativos depois de fazer logon uma vez.
@@ -40,9 +39,9 @@ Para que o LDAP funcione com o AEM, você deve criar três configurações OSGi:
 
 >[!NOTE]
 >
->Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=pt-BR) para aprofundar Módulos de Logon Externos.
+>Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para aprofundar Módulos de Logon Externos.
 >
->Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=pt)
+>Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## Configuração do provedor de identidade LDAP {#configuring-the-ldap-identity-provider}
 
@@ -279,12 +278,12 @@ Para ativar o log de depuração, faça o seguinte:
 
 * Nível de registro: depuração
 * Arquivo de log logs/ldap.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nível de registro: depuração
 * Arquivo de log: logs/external.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Uma Palavra sobre Afiliação de Grupos {#a-word-on-group-affiliation}

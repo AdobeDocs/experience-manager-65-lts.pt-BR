@@ -5,13 +5,12 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 17898ee854df1141272b207f96cebe69c325f12c
+exl-id: b89e2899-35b9-4105-bfa5-ca21dc6f4e14
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1289'
 ht-degree: 44%
-
 ---
-
 # Configuração da estrutura de integração de tradução{#configuring-the-translation-integration-framework}
 
 A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM.

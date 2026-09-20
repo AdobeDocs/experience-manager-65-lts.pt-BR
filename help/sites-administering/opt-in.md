@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d872078f-3aa0-4abe-ac2a-74a1cd47b219
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 8%
 ---
-
 # Ativação do Adobe Analytics e do Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 O AEM tem um procedimento de aceitação para ajudar na integração com o Adobe Analytics e o Adobe Target. Isso está disponível e pronto para uso, como uma tarefa pré-carregada atribuída ao grupo de usuários administrador.
@@ -155,11 +154,11 @@ Não é necessário alterar as configurações de nuvem. No entanto, você pode 
 
 >[!NOTE]
 >
->Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+>Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é habilitado.
 >
 >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
 >
->O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+>O direcionamento preciso é sempre habilitado na instância de criação. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
 >
 >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Faça as alterações diretamente nesses componentes.
 
@@ -179,9 +178,9 @@ Os parâmetros enviados dependem do seguinte:
 
 * Se você quiser usar o arquivo **marketingcloud.properties** preenchido com todas as credenciais necessárias, deverá enviar os seguintes parâmetros:
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criadas
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criadas
 
   Por exemplo, uma solicitação de ondulação que cria configurações do Analytics e do Target e as anexa à página we.retail seria:
 
@@ -190,17 +189,17 @@ Os parâmetros enviados dependem do seguinte:
   ```
 
 * Se você não quiser usar o arquivo **marketingcloud.properties**, envie as credenciais e os parâmetros. Por exemplo:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * caminho=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criados; vários caminhos podem ser definidos
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * caminho=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criados; vários caminhos podem ser definidos
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   Nesse caso, a solicitação de ondulação que cria as configurações do Analytics e do Target e as anexa à página de we-retail seria:
 

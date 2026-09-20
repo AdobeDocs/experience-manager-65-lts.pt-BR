@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4678557b-904d-43c4-b53c-5710ab081f0f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # Adição de ação personalizada em itens de lista de formulários{#adding-custom-action-on-form-lister-items}
 
 No AEM Forms, você pode criar uma página de portal listando os formulários disponíveis. Por padrão, você pode pesquisar e listar formulários em uma página do portal. É possível abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para os formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criando uma página de portal de formulários](../../forms/using/creating-form-portal-page.md).

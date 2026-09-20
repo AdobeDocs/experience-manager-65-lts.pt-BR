@@ -4,13 +4,12 @@ description: Saiba como conectar o AEM ao Microsoft Translator pronto para uso p
 feature: Language Copy
 role: Admin
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 80d3540a47afd9c9cc09e7913b8d27065833c180
+exl-id: e4beda86-2d74-44b9-a5f4-e3671ba9a2da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 63%
-
+source-wordcount: '270'
+ht-degree: 64%
 ---
-
 # Conectar ao Microsoft Translator {#connecting-to-microsoft-translator}
 
 O AEM fornece um conector integrado para o [Microsoft Translator](https://www.microsoft.com/pt-br/translator/business/) para traduzir conteúdo ou ativos da página. Após obter uma licença do Microsoft para usar o Microsoft Translator, configure o conector seguindo as instruções nesta página.

@@ -7,13 +7,12 @@ docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0d9ca4ab-51ac-44cb-aac9-79c0d31e6df7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
-
 ---
-
 # Tutorial: Criar modelos{#tutorial-create-templates}
 
 ![07-aplicar-regras-ao-formulário-adaptável_pequeno](assets/07-apply-rules-to-adaptive-form_small.png)
@@ -88,8 +87,8 @@ Para criar um modelo XDP para o canal de impressão, faça o seguinte:
    * Resumo da fatura
    * Resumo - Selecione a guia **Subformulário** e selecione **Posicionado** na lista suspensa **Conteúdo** para este subformulário. Insira os seguintes subformulários no subformulário **Resumo**.
 
-      * Encargos
-      * Gráficos
+     * Encargos
+     * Gráficos
 
    * ChamadasDiscriminadas
    * PayNow

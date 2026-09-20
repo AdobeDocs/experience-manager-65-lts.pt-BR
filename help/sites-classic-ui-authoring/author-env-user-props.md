@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 19930920-ffa5-4cfc-a564-ae004320e143
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 14%
-
+source-wordcount: '229'
+ht-degree: 23%
 ---
-
 # Configurar o ambiente da sua conta{#configuring-your-account-environment}
 
 O Adobe Experience Manager (AEM) fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de Autor.
@@ -25,9 +24,9 @@ Usando as [configurações da conta](#account-settings) e as [preferências do u
 * **Barra de Ferramentas de Edição**
 Selecione se deseja ter a barra de ferramentas de edição global. Esta barra de ferramentas, que é mostrada na parte superior da janela do navegador, oferece botões **Copiar**, **Recortar**, **Colar**, **Excluir** para usar com os componentes de parágrafo desta página:
 
-   * Mostrar quando necessário (Padrão)
-   * Sempre mostrar
-   * Manter oculto
+  * Mostrar quando necessário (Padrão)
+  * Sempre mostrar
+  * Manter oculto
 
 * **Representar como**
 A funcionalidade de [Representar como](/help/sites-administering/security.md#impersonating-another-user) permite que um usuário trabalhe em nome de outro usuário.
@@ -38,10 +37,10 @@ O idioma a ser usado para a interface do usuário do ambiente de criação. Sele
 * **Gerenciamento de Janelas**
 Selecione:
 
-   * Diversas Janelas (Padrão)
-As páginas são abertas em uma nova janela.
-   * Janela única
-As páginas são abertas na janela atual.
+  * Diversas janelas (padrão)
+    As páginas são abertas em uma nova janela.
+  * Uma janela
+    As páginas são abertas na janela atual.
 
 ## Configurações de conta {#account-settings}
 

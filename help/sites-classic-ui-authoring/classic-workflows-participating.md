@@ -1,6 +1,6 @@
 ---
 title: Participar de fluxos de trabalho
-description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
+description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e lhe atribui um item de trabalho.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,16 +8,15 @@ topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # Participar de fluxos de trabalho{#participating-in-workflows}
 
-Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
+Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e lhe atribui um item de trabalho.
 
 ## Processando seus itens de trabalho {#processing-your-work-items}
 
@@ -33,9 +32,9 @@ Você pode executar as seguintes ações para processar um item de trabalho:
 
   Os usuários disponíveis para delegação dependem de quem recebeu o item de trabalho:
 
-   * Se o item de trabalho foi atribuído a um grupo, os membros do grupo ficarão disponíveis.
-   * Se o item de trabalho tiver sido atribuído a um grupo e depois delegado a um usuário, os membros desse grupo e esse usuário estarão disponíveis.
-   * Se o item de trabalho foi atribuído a um único usuário, ele não poderá ser delegado.
+  * Se o item de trabalho foi atribuído a um grupo, os membros do grupo ficarão disponíveis.
+  * Se o item de trabalho tiver sido atribuído a um grupo e depois delegado a um usuário, os membros desse grupo e esse usuário estarão disponíveis.
+  * Se o item de trabalho foi atribuído a um único usuário, ele não poderá ser delegado.
 
 * **Retroceder**
 

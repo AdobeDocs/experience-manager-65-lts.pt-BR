@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c8745d19-139a-4cea-982a-537bc1dd207d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1744'
 ht-degree: 0%
-
 ---
-
 # Criar aparências personalizadas para campos de formulário adaptáveis{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Introdução {#introduction}
@@ -129,9 +128,9 @@ Depois que o modelo do projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">&lbrace;
+   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
+      }</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

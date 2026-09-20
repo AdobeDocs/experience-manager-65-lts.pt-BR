@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d6bd4028-56c9-4e09-9bba-1199a41b41b8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 3%
 ---
-
 # A estrutura de proteção CSRF{#the-csrf-protection-framework}
 
 Além do Filtro referenciador do Apache Sling, o Adobe também fornece uma nova Estrutura de proteção CSRF para proteger contra esse tipo de ataque.
@@ -39,11 +38,11 @@ Para usar os tokens, é necessário replicar o binário HMAC para todas as inst�
 >
 >Faça também as alterações necessárias na configuração do Dispatcher para usar a Estrutura de proteção CSRF:
 >
->* [Configurando o Adobe Experience Manager Dispatcher para Evitar Ataques CSRF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Configurando o Adobe Experience Manager Dispatcher para Evitar Ataques CSRF](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Visão geral do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->Se você usar o cache manifest com seu aplicativo web, adicione &quot;**&ast;**&quot; ao manifesto para garantir que o token não coloque a chamada de geração de token CSRF offline. Para obter mais informações, consulte este [link](https://www.w3.org/TR/offline-webapps/).
+>Se você usar o cache manifest com seu aplicativo web, certifique-se de adicionar &quot;**&amp;ast;**&quot; ao manifesto para garantir que o token não coloque a chamada de geração de token CSRF offline. Para obter mais informações, consulte este [link](https://www.w3.org/TR/offline-webapps/).
 >
 >Para obter mais informações sobre ataques CSRF e maneiras de atenuá-los, consulte a [página OWASP de falsificação de solicitação entre sites](https://owasp.org/www-community/attacks/csrf).

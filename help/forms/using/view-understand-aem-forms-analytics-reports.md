@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b38fac48-04e7-4f10-930d-60107658a1f1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
-
+source-wordcount: '1082'
+ht-degree: 2%
 ---
-
 # Visualizar e entender os relatórios do AEM Forms Analytics {#view-and-understand-aem-forms-analytics-reports}
 
 O Adobe Experience Manager Forms integra-se ao Adobe Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
@@ -62,7 +61,7 @@ O AEM Forms exibe relatórios do Analytics para o formulário e para cada painel
 
 ![Relatório de resumo de um formulário adaptável](assets/analyticsdashboard_callout.png)
 
-**A.** Conversões **B.** Resumo no nível de formulário **C.** Resumo no nível de painel **D.** Navegadores de visitantes - filtro **E.** Sistema operacional de visitantes - filtro **F.** Idioma dos visitantes - filtro
+**A.** Conversões **B.** Resumo no nível de formulário **C.** Resumo no nível de painel **D.** Navegadores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma dos visitantes - filtro
 
 Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode exibir relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
 
@@ -74,7 +73,7 @@ Por padrão, o relatório de análise dos últimos sete dias é exibido. Você p
 
 ### Gráfico de conversões para formulários adaptáveis e HTML5 {#conversions-graph-for-adaptive-and-html-forms}
 
-O gráfico de conversões no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
+O gráfico de conversões no nível do formulário fornece uma insight sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
 * **Representações**: o número de vezes que um formulário é aberto
 * **Visitantes**: o número de visitantes do formulário
@@ -84,14 +83,14 @@ O gráfico de conversões no nível do formulário fornece informações sobre o
 
 ### Relatório do Analytics para formulários adaptáveis e HTML5 {#analytics-report-for-adaptive-and-html-forms}
 
-A seção de resumo no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
+A seção de resumo no nível do formulário fornece uma insight sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
 * **Tempo médio de preenchimento**: tempo médio gasto no preenchimento do formulário. Quando os usuários passam tempo no formulário, mas não enviam, esse tempo não é incluído nesse cálculo.
 * **Representações**: número de vezes que o formulário foi renderizado ou aberto
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
 * **Envios**: número de vezes que o formulário foi enviado
 * **Abortar**: número de vezes que os usuários começaram a preencher o formulário e depois saíram sem preenchê-lo
-* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/br/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Relatório de análise resumida em nível de formulário expandido](assets/analytics-report.png)
 
@@ -125,7 +124,7 @@ As tabelas Distribuição do navegador, Distribuição do sistema operacional e 
 
 Para filtrar ainda mais os dados de análise, você pode clicar em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela Distribuição de navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome, da seguinte maneira:
 
-![Filtro aplicado ao relatório do Analytics - Google Chrome &#x200B;](assets/filter-1.png)
+![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter-1.png)
 
 Se você exibir o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também serão exibidos de acordo com o filtro aplicado.
 

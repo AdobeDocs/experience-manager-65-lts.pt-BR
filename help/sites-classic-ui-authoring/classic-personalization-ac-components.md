@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: abdb803b-a770-4f4b-8788-45d067341e0f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 4%
-
+source-wordcount: '2564'
+ht-degree: 5%
 ---
-
 # Componentes do Adobe Campaign{#adobe-campaign-components}
 
 Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao trabalhar com boletins informativos e formulários. Ambos estão descritos neste documento.
@@ -175,20 +174,20 @@ Arraste uma imagem do localizador de conteúdo ou clique em para navegar até um
 * **Propriedades da Imagem** (**Propriedades Avançadas da Imagem**)
 Permite especificar o seguinte:
 
-   * **Título**
-O título do bloco; é mostrado por mouseover.
+  * **Título**
+    O título do bloco; é mostrado por mouseover.
 
-   * **Texto Alternativo**
-Texto alternativo a ser mostrado se a imagem não puder ser exibida.
+  * **Texto Alternativo**
+    Texto alternativo a ser mostrado se a imagem não puder ser exibida.
 
-   * **Vincular a**
-Crie um link para ativos ou outras páginas no seu site.
+  * **Vincular a**
+    Crie um link para ativos ou outras páginas no seu site.
 
-   * **Descrição**
-Uma descrição da imagem.
+  * **Descrição**
+    Uma descrição da imagem.
 
-   * **Tamanho**
-Define a altura e a largura da imagem.
+  * **Tamanho**
+    Define a altura e a largura da imagem.
 
 >[!NOTE]
 >
@@ -266,7 +265,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Campo de opções (Campanha)</p> </td>
    <td><p>byte com valores associados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Gênero</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campanha)</p> </td>

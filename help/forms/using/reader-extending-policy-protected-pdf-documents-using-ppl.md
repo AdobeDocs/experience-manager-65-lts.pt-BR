@@ -8,20 +8,19 @@ topic-tags: document_services
 feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b1430a30-313f-4efc-85c5-ccb914923031
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '828'
 ht-degree: 0%
-
 ---
-
 # Reader ampliando documentos do PDF protegidos por política usando a Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Familiarize-se com os conceitos de segurança de documentos, extensão do leitor e linguagem de programação Java para ler e estender os documentos do PDF protegidos por política de segurança de documentos.
 
 Você pode usar a segurança de documentos para restringir o acesso de documentos específicos do PDF somente a usuários autorizados. Você também pode determinar como um destinatário pode usar um documento protegido. Por exemplo, você pode especificar se os destinatários podem imprimir, copiar ou editar o texto de um documento protegido por política de segurança de documentos. Para saber mais sobre segurança de documentos, consulte [sobre segurança de documentos](/help/forms/using/admin-help/document-security.md).
 
-Você pode usar extensões de leitor para ativar recursos interativos no documento do Adobe PDF por meio do Acrobat Reader. Esses recursos interativos que normalmente estão disponíveis apenas no Adobe Acrobat Professional e Standard. Para saber mais sobre os recursos interativos que a extensão do Reader pode habilitar, consulte [serviço Adobe Experience Manager Forms DocAssurance &#x200B;](/help/forms/using/overview-aem-document-services.md)**.**
+Você pode usar extensões de leitor para ativar recursos interativos no documento do Adobe PDF por meio do Acrobat Reader. Esses recursos interativos que normalmente estão disponíveis apenas no Adobe Acrobat Professional e Standard. Para saber mais sobre os recursos interativos que a extensão do Reader pode habilitar, consulte [serviço Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
 
 Você pode usar a biblioteca de proteção portátil para aplicar políticas no documento sem a necessidade de documentos que viajem pela rede. Somente credenciais de segurança e detalhes de políticas de proteção viajam pela rede. O documento real nunca sai do cliente e as políticas de proteção são aplicadas localmente no cliente.
 
@@ -67,7 +66,7 @@ Você pode usar a `applyUsageRights`API Java para aplicar direitos de uso a docu
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Especifica um objeto do tipo <a href="https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. O objeto usageRights representa direitos individuais que podem ser aplicados a um documento do PDF protegido por política.</p> </td>
+   <td><p>Especifica um objeto do tipo <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. O objeto usageRights representa direitos individuais que podem ser aplicados a um documento do PDF protegido por política.</p> </td>
   </tr>
  </tbody>
 </table>

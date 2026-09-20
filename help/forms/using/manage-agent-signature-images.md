@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3081dedf-ba92-4205-af67-930524719e60
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 0%
-
+source-wordcount: '689'
+ht-degree: 1%
 ---
-
 # Gerenciar imagens de assinatura do agente{#manage-agent-signature-images}
 
 ## Visão geral {#overview}
@@ -33,7 +32,7 @@ Também é possível substituir a função personalizada padrão para definir su
 1. Certifique-se de que a imagem de assinatura do agente tenha o mesmo nome do usuário AEM do usuário. (A extensão não é necessária para o nome de arquivo da imagem.)
 1. No CRX, crie uma pasta chamada `cmUserRoot` na pasta de conteúdo.
 
-   1. Ir para `https://'[server]:[port]'/crx/de`. Se necessário, efetue login como Administrador.
+   1. Acesse `https://'[server]:[port]'/crx/de`. Se necessário, efetue login como Administrador.
 
    1. Clique com o botão direito do mouse na pasta **conteúdo** e selecione **Criar** > **Criar pasta**.
 
@@ -47,7 +46,7 @@ Também é possível substituir a função personalizada padrão para definir su
 
 1. No Content Explorer, navegue até a pasta cmUserRoot e adicione a imagem de assinatura do agente nela.
 
-   1. Ir para `https://'[server]:[port]'/crx/explorer/index.jsp`. Efetue login como Administrador, se necessário.
+   1. Acesse `https://'[server]:[port]'/crx/explorer/index.jsp`. Efetue login como Administrador, se necessário.
    1. Clique em **Content Explorer**. O Content Explorer é aberto em uma nova janela.
    1. No Content Explorer, navegue até a pasta cmUserRoot e selecione-a. Clique com o botão direito do mouse na pasta **cmUserRoot** e selecione **Novo Nó**.
 
@@ -57,7 +56,7 @@ Também é possível substituir a função personalizada padrão para definir su
 
       **Nome:** João da Silva (ou o nome do arquivo de assinatura do agente)
 
-      **Tipo:** nt:arquivo
+      **Tipo:** nt:file
 
       Na pasta `cmUserRoot`, uma nova pasta chamada `JohnDoe` (ou o nome fornecido na etapa anterior) é criada.
 
@@ -67,7 +66,7 @@ Também é possível substituir a função personalizada padrão para definir su
 
       Se a propriedade não estiver presente, primeiro crie uma propriedade com o nome jcr:content.
 
-      ![jcr:content property](assets/3_jcrcontentntresource.png)
+      ![jcr:content propriedade](assets/3_jcrcontentntresource.png)
 
       Entre as subpropriedades de jcr:content está jcr:data, que está esmaecido. Clique duas vezes em jcr:data. A propriedade se torna editável e o botão Escolher arquivo aparece na entrada. Clique em **Escolher Arquivo** e selecione o arquivo de imagem que deseja usar como logotipo. O arquivo de imagem não precisa ter uma extensão.
 

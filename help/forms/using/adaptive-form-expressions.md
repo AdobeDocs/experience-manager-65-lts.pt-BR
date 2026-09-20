@@ -7,13 +7,12 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 0%
-
+source-wordcount: '2866'
+ht-degree: 1%
 ---
-
 # Expressões de formulário adaptável{#adaptive-form-expressions}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -38,10 +37,10 @@ Os painéis repetitivos são instâncias de um painel que são adicionadas ou re
 * Formulários adaptáveis fornecem algumas funções especiais para simplificar a computação para painéis repetíveis, como soma, contagem, mínimo, máximo, filtro e muito mais. Para obter a lista completa das funções, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * As APIs para manipular instâncias do painel de repetição são:
 
-   * Para adicionar uma instância de painel: `panel1.instanceManager.addInstance()`
-   * Para obter um índice de repetição do painel: `panel1.instanceIndex`
-   * Para obter o instanceManager de um painel: `_panel1 or panel1.instanceManager`
-   * Para remover uma instância de um painel: `_panel1.removeInstance(panel1.instanceIndex)`
+  * Para adicionar uma instância de painel: `panel1.instanceManager.addInstance()`
+  * Para obter um índice de repetição do painel: `panel1.instanceIndex`
+  * Para obter o instanceManager de um painel: `_panel1 or panel1.instanceManager`
+  * Para remover uma instância de um painel: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Tipos de expressão {#expression-types}
 
@@ -282,7 +281,7 @@ Execute as seguintes etapas para criar um padrão personalizado para um tipo de 
 
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para o campo numérico, o valor da propriedade `guideComponentType` é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao nó `textboxpatterns`. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-9999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
+1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao nó `textboxpatterns`. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
 
    ![Criando padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 

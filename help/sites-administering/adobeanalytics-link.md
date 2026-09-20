@@ -8,14 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d9318173-c598-4de0-bbbe-2c094da8afa6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1645'
 ht-degree: 0%
-
 ---
-
-
 # Configuração do rastreamento de links para o Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Quando os usuários clicam em links nas páginas do seu site, você pode capturar informações relacionadas no Adobe Analytics. Por exemplo, use o rastreamento de link para saber como os usuários interagem com o seu site, rastreie downloads de arquivos e rastreie links de saída.
@@ -119,7 +117,7 @@ Para enviar dados variáveis com cliques em links:
 
 Propriedades para enviar dados variáveis com cliques em links:
 
-* **Vincular Eventos de Rastreamento**
+* **Vincular eventos de rastreamento**
 Insira as variáveis de evento do Adobe Analytics que deseja usar para contar cliques em links.
 
   Separe vários nomes de variáveis com uma vírgula.
@@ -140,7 +138,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemplo de configuração de rastreamento de link {#example-link-tracking-configuration}
 
-Execute os procedimentos a seguir para explorar o comportamento de rastreamento de link da integração do Adobe Analytics. Os procedimentos mostram resultados do [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=pt-BR).
+Execute os procedimentos a seguir para explorar o comportamento de rastreamento de link da integração do Adobe Analytics. Os procedimentos mostram resultados do [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 ### Configuração geral {#general-configuration}
 

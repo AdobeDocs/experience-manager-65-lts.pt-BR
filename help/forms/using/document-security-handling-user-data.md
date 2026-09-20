@@ -1,19 +1,18 @@
 ---
-title: Segurança de documentos | Manuseio de dados do usuário
+title: Segurança de documentos | Manipulação de dados do usuário
 description: Saiba mais sobre como a Segurança de documentos do AEM Forms permite gerenciar dados de usuários e armazenamentos de dados, além de acessar, excluir e exportar dados de usuários.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 0%
-
 ---
-
-# Segurança de documentos | Manuseio de dados do usuário {#document-security-handling-user-data}
+# Segurança de documentos | Manipulação de dados do usuário {#document-security-handling-user-data}
 
 A segurança de documentos do AEM Forms permite criar, armazenar e aplicar configurações de segurança predefinidas a seus documentos. Ele garante que somente usuários autorizados possam usar os documentos. Você pode proteger documentos usando políticas. Uma política é uma coleção de informações que inclui configurações de segurança e uma lista de usuários autorizados. Você pode aplicar uma política a um ou mais documentos e autoriza os usuários adicionados no gerenciamento de usuários do AEM Forms JEE.
 

@@ -9,13 +9,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7d9fadf8-c48a-424e-8b71-18ffd0328a13
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 0%
-
+ht-degree: 1%
 ---
-
 # Criar aparências personalizadas em formulários HTML5{#create-custom-appearances-in-html-forms}
 
 Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados usando a estrutura de aparências. O mecanismo XFA usa vários widgets, consulte [Estrutura de aparência para formulários adaptáveis e HTML5](/help/forms/using/introduction-widgets.md) para obter informações detalhadas.
@@ -46,7 +45,7 @@ Os formulários HTML5 fornecem uma implementação da estrutura de widgets que p
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> {<br /> desfoque: XFA_EXIT_EVENT,<br /> }<br /> Este exemplo mostra que o desfoque é um evento HTML e XFA_EXIT_EVENT é um evento XFA correspondente. </td>
+   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Este exemplo mostra que o blur é um evento HTML e XFA_EXIT_EVENT é um evento XFA correspondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -103,5 +102,5 @@ onde &quot;identifier&quot; é um seletor CSS jQuery que representa um campo esp
 | Tipo de identificador | Identificador | Descrição |
 |---|---|---|
 | Campo específico com nome nome do campo | Identificador:&quot;div.fieldname&quot; | Todos os campos com o nome ‘fieldname’ são renderizados usando o widget. |
-| Todos os campos do tipo &quot;type&quot;(onde type é NumericField, DateField, e assim por diante).: | Identificador: &quot;div.type&quot; | Para Timefield e DateTimeField, o tipo é textfield, pois esses campos não são compatíveis. |
+| Todos os campos do tipo &quot;type&quot;(onde type é NumericField, DateField, e assim por diante): | Identificador: &quot;div.type&quot; | Para Timefield e DateTimeField, o tipo é textfield, pois esses campos não são compatíveis. |
 | Todos os campos | Identificador: &quot;div.field&quot; |  |

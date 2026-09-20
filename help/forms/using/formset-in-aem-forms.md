@@ -8,13 +8,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
-
 ---
-
 # Formulário definido no AEM Forms{#form-set-in-aem-forms}
 
 ## Visão geral {#overview}
@@ -302,7 +301,7 @@ A subárvore indica os dados dos formulários no conjunto de formulários. O ele
 
 Essa tag indica o início do Formulário XML HTML5. Isso é adicionado no XML de envio se estiver presente no XML de preenchimento prévio ou se não houver XML de preenchimento prévio. Essa tag pode ser removida do XML de preenchimento prévio.
 
-### XFA:CONJUNTOS DE DADOS {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -314,7 +313,7 @@ Essa tag indica o início do Formulário XML HTML5. Isso é adicionado no XML de
 
 `children: xfa:data`
 
-### XFA:DADOS {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 

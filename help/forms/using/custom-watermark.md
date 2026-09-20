@@ -8,13 +8,12 @@ docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: eb089355-51d9-4c41-bd82-5ca873438410
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 # Marca d&#39;água personalizada na visualização de carta do PDF{#custom-watermark-in-letter-pdf-preview}
 
 ## Visão geral {#overview}
@@ -78,7 +77,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
    </DDX>
    ```
 
-   Para obter informações sobre como personalizar a aparência, o texto e o alinhamento da marca d&#39;água, consulte Adição e remoção de marcas d&#39;água e planos de fundo no documento [Serviço de Assembler e Referência DDX](https://help.adobe.com/pt_BR/livecycle/11.0/ddxRef.pdf).
+   Para obter informações sobre como personalizar a aparência, o texto e o alinhamento da marca d&#39;água, consulte Adição e remoção de marcas d&#39;água e planos de fundo no documento [Serviço de Assembler e Referência DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

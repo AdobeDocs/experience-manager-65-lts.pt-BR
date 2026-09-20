@@ -8,16 +8,15 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b98729d3-111a-446b-915a-ca85b3cd75f0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 20%
-
 ---
-
 # Incorpore o vídeo do Dynamic Media, o visualizador de imagem ou o visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
+Use o recurso **[!UICONTROL Código incorporado]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Código incorporado]**.
 
 Você incorpora URLs somente se estiver *não* usando o Adobe Experience Manager como o WCM. Se você estiver usando o Experience Manager como o WCM, [adicione os ativos diretamente na sua página](adding-dynamic-media-assets-to-pages.md).
 
@@ -39,7 +38,7 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 
 1. Navegue até o ativo de vídeo ou imagem *publicado* cujo código de inserção você deseja copiar.
 
-   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
+   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição de imagem também deve ser publicada.
 
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 

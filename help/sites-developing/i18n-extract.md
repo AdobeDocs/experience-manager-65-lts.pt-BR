@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d6aa0ff8-01b8-48ef-93f3-59edb9cd50bd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Extraindo strings para tradução{#extracting-strings-for-translating}
 
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:
@@ -65,10 +64,10 @@ A parte padrão de uma regra é usada para corresponder aos nomes dos arquivos a
 | Prefixo | Efeito |
 |---|---|
 | / | Indica um caminho JCR. Portanto, este prefixo corresponde a arquivos abaixo do diretório jcr_root. |
-| &ast; | Indica um arquivo regular no sistema de arquivos. |
+| &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
 | nenhum | Nenhum prefixo ou padrão que comece com uma pasta ou nome de arquivo indica um arquivo regular no sistema de arquivos. |
 
-Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
+Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
 
 <table>
  <tbody>

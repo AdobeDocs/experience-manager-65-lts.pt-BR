@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2fcb0241-8018-4bdd-b89d-44b8fc063ff3
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '348'
 ht-degree: 0%
-
 ---
-
 # Gerenciando tarefas em uma hierarquia organizacional usando a Exibição do Gerente{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia — relatórios diretos ou indiretos — e executar várias ações neles. As tarefas estão disponíveis na guia Tarefa no espaço de trabalho do AEM Forms. As ações compatíveis com as tarefas de subordinados diretos são:

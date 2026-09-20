@@ -9,13 +9,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1190'
 ht-degree: 0%
-
 ---
-
 # Ferramenta de servidor proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 O servidor proxy atua como um servidor intermediário que transmite solicitações entre um cliente e um servidor. O servidor proxy rastreia todas as interações cliente-servidor e gera um log de toda a comunicação TCP. Isso permite monitorar exatamente o que está acontecendo, sem precisar acessar o servidor principal.
@@ -115,7 +114,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que essa entrada vem do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (o contador de conexões começa em 0)
 * #00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
-* [GET &lt;?>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
+* [GET &lt;??>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
 

@@ -7,13 +7,12 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 69e96a98-20f2-4baf-a9eb-988c06eaa63c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 0%
-
 ---
-
 # Introdução aos formulários HTML5{#introduction-to-html-forms}
 
 O HTML5 forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6.0) que pode renderizar modelos de formulário XFA no formato HTML5. Esse recurso permite a renderização de formulários em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Os formulários HTML5 não só oferecem suporte aos recursos existentes de modelos de formulário XFA, como também adicionam novos recursos, como assinatura à mão, para dispositivos móveis.

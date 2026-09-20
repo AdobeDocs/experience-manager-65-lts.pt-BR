@@ -7,13 +7,12 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f698980d-d6f9-435d-853f-4d2827640aaf
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
-
+source-wordcount: '604'
+ht-degree: 0%
 ---
-
 # APIs para acessar instâncias de cartas {#apis-to-access-letter-instances}
 
 ## Visão geral {#overview}
@@ -39,7 +38,7 @@ O Gerenciamento de correspondências expõe as APIs para buscar instâncias de c
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/br/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
+A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
 
 **Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 

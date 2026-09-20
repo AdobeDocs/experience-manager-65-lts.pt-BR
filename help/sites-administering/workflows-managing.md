@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de acesso a workflows
+title: Gerenciamento de acesso a fluxos de trabalho
 description: Saiba como configurar Listas de controle de acesso de acordo com contas de usuário para permitir (ou desativar) a inicialização e a participação em fluxos de trabalho.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,13 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 3%
-
 ---
-
-# Gerenciamento de acesso a workflows{#managing-access-to-workflows}
+# Gerenciamento de acesso a fluxos de trabalho{#managing-access-to-workflows}
 
 Configure ACLs de acordo com as contas de usuário para permitir (ou desativar) a inicialização e a participação em workflows.
 
@@ -26,13 +25,13 @@ As ações relativas aos fluxos de trabalho podem ser realizadas se:
 * você está trabalhando com a conta `admin`
 * a conta foi atribuída ao grupo padrão `workflow-users`:
 
-   * esse grupo mantém todos os privilégios necessários para que seus usuários executem ações de workflow.
-   * quando a conta está nesse grupo, ela só tem acesso aos workflows iniciados.
+  * esse grupo mantém todos os privilégios necessários para que seus usuários executem ações de workflow.
+  * quando a conta está nesse grupo, ela só tem acesso aos workflows iniciados.
 
 * a conta foi atribuída ao grupo padrão `workflow-administrators`:
 
-   * esse grupo tem todos os privilégios necessários para que seus usuários privilegiados monitorem e administrem workflows.
-   * quando a conta está nesse grupo, ela tem acesso a todos os workflows.
+  * esse grupo tem todos os privilégios necessários para que seus usuários privilegiados monitorem e administrem workflows.
+  * quando a conta está nesse grupo, ela tem acesso a todos os workflows.
 
 >[!NOTE]
 >
@@ -60,7 +59,7 @@ Se o modelo de fluxo de trabalho estiver armazenado em `/var/workflow/models`, v
 
 1. Clique na guia **Controle de acesso**.
 1. Na tabela **Políticas de Controle de Acesso Local** (**Lista de Controle de Acesso**), clique no ícone de adição para **Adicionar Entrada**.
-1. Na caixa de diálogo **Adicionar nova entrada**, adicione um ACE com as seguintes propriedades:
+1. Na caixa de diálogo **Adicionar nova entrada**, adicione uma ACE com as seguintes propriedades:
 
    * **Entidade**: `content-authors`
    * **Tipo**: `Deny`
@@ -97,7 +96,7 @@ Em seguida, você pode adicionar uma ACL à própria pasta.
 1. Clique na guia **Controle de acesso**.
 1. Na tabela **Política de Controle de Acesso Aplicável**, clique no ícone de adição para **Adicionar** uma entrada.
 1. Na tabela **Políticas de Controle de Acesso Local** (**Lista de Controle de Acesso**), clique no ícone de adição para **Adicionar Entrada**.
-1. Na caixa de diálogo **Adicionar nova entrada**, adicione um ACE com as seguintes propriedades:
+1. Na caixa de diálogo **Adicionar nova entrada**, adicione uma ACE com as seguintes propriedades:
 
    * **Entidade**: `content-authors`
    * **Tipo**: `Deny`
@@ -105,7 +104,7 @@ Em seguida, você pode adicionar uma ACL à própria pasta.
 
    >[!NOTE]
    >
-   >Assim como em [Aplicar uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), você pode incluir um rep:glob para limitar o acesso a um fluxo de trabalho específico.
+   >Assim como em [Aplicar uma ACL para o modelo de fluxo de trabalho específico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), você pode incluir um representante:glob para limitar o acesso a um fluxo de trabalho específico.
 
    ![wf-110](assets/wf-110.png)
 

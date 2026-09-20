@@ -7,13 +7,12 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1b6c09f7-6f89-4fe9-8217-bf1a301bf9cb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2168'
 ht-degree: 7%
-
 ---
-
 # Descrição do objeto JSON do espaço de trabalho do AEM Forms {#aem-forms-workspace-json-object-description}
 
 Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo.
@@ -237,7 +236,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>status<br /> </td>
    <td>S</td>
-   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criado e salvo (a tarefa é criada a partir do ponto inicial e salva.)<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuído e Salvo (a tarefa é atribuída e salva.)<br /> 100 = Concluído (A tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final.)<br /> 102 = Encerrado<br /> </td>
+   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criada e Salva (a tarefa é criada a partir do ponto inicial e salva.)<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuída e Salva (a tarefa é atribuída e salva.)<br /> 100 = Concluído (A tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final.)<br /> 102 = Encerrado<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -411,7 +410,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>tipo</td>
    <td>S</td>
-   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila compartilhada.<br /> 2. Fila de Grupo.<br type="_moz" /> </td>
+   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila Compartilhada.<br /> 2. Fila de Grupo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -605,7 +604,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>S</td>
-   <td>0 = Atribuição Inicial<br /> 1 = Encaminhar (a tarefa foi encaminhada para o proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa.)<br /> 3 = Declarado (a tarefa foi reivindicada pelo proprietário atual da tarefa.)<br /> 4 = Escalonamento (a tarefa foi atribuída ao proprietário atual da tarefa após o escalonamento.)<br /> 5 = Administrador atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultada ( A tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
+   <td>0 = Atribuição Inicial<br /> 1 = Encaminhar (A tarefa foi encaminhada para o proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa.)<br /> 3 = Declarado (a tarefa foi reivindicada pelo proprietário atual da tarefa.)<br /> 4 = Escalonamento (a tarefa foi atribuída ao proprietário atual da tarefa após o escalonamento.)<br /> 5 = Administrador Atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultada ( A tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>

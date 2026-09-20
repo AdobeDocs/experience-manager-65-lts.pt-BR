@@ -8,13 +8,12 @@ docset: aem65
 feature: Document Services,Assembler,Barcoded Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f823d240-88c7-4357-9dbb-6cc069451721
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1046'
 ht-degree: 0%
-
 ---
-
 # Serviço Forms com código de barras{#barcoded-forms-service}
 
 ## Visão geral {#overview}
@@ -93,7 +92,7 @@ O serviço Forms com código de barras retorna o seguinte documento XML após de
 
 ### Fluxos de trabalho que usam formulários com código de barras {#workflows-that-use-barcoded-forms}
 
-Os autores de formulários criam formulários interativos com códigos de barras usando o Designer. (Consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando um usuário preenche um formulário com código de barras usando o Adobe Reader ou o Acrobat, o código de barras é atualizado automaticamente para codificar os dados do formulário.
+Os autores de formulários criam formulários interativos com códigos de barras usando o Designer. (Consulte a [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Quando um usuário preenche um formulário com código de barras usando o Adobe Reader ou o Acrobat, o código de barras é atualizado automaticamente para codificar os dados do formulário.
 
 O serviço Forms com código de barras é útil para converter dados existentes em papel em formato eletrônico. Por exemplo, quando um formulário com código de barras é preenchido e impresso, a cópia impressa pode ser digitalizada e usada como entrada para o serviço Forms com código de barras.
 
@@ -136,9 +135,9 @@ Você pode usar o **Serviço Forms com Códigos de Barras do AEMFD** no Console 
 
 O Serviço Forms com código de barras fornece as duas APIs a seguir:
 
-* **[decode](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica todos os códigos de barras disponíveis em um documento PDF de entrada ou em uma imagem TIFF. Ele retorna outro documento XML que contém dados recuperados de todos os códigos de barras disponíveis no documento ou na imagem de entrada.
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica todos os códigos de barras disponíveis em um documento PDF de entrada ou em uma imagem TIFF. Ele retorna outro documento XML que contém dados recuperados de todos os códigos de barras disponíveis no documento ou na imagem de entrada.
 
-* **[extractToXML](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converter dados decodificados usando a API de decodificação em dados XML. Esses dados XML podem ser mesclados com um formulário XFA. Ele retorna uma lista de documentos XML, um para cada código de barras.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converter dados decodificados usando a API de decodificação em dados XML. Esses dados XML podem ser mesclados com um formulário XFA. Ele retorna uma lista de documentos XML, um para cada código de barras.
 
 ### Usando o Serviço BCF com um JSP ou Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 

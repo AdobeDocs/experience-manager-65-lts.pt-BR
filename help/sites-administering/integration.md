@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: ac7f2ea1-4e0c-44da-8d1d-d65c65d817cb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 12%
-
+source-wordcount: '131'
+ht-degree: 10%
 ---
-
 # Integração de soluções{#solutions-integration}
 
 * [Integração com a Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
@@ -29,5 +28,5 @@ As seguintes informações estão disponíveis sobre a integração do AEM com o
 >Se estiver usando uma configuração de proxy personalizada juntamente com sua integração, você deve definir ambas as configurações de proxy do HTTP Client, pois algumas funcionalidades do AEM estão usando as APIs 3.x e algumas outras as APIs 4.x:
 >
 >* A 3.x está configurada com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* A 4.x está configurada com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 4.x está configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20fd27e2-0eb7-4fab-a56a-f83816947579
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
-
 ---
-
 # Referência do processo de fluxo de trabalho{#workflow-process-reference}
 
 O AEM fornece várias etapas de processo que podem ser usadas para criar modelos de fluxo de trabalho. Etapas de processo personalizadas também podem ser adicionadas para tarefas não cobertas pelas etapas internas (consulte [Criação de Modelos de Fluxo de Trabalho](/help/sites-developing/workflows-models.md)).
@@ -30,7 +29,7 @@ As etapas do processo são definidas por uma classe Java™ ou por um ECMAScript
 * Para os processos de classe Java™, o nome de classe totalmente qualificado é fornecido.
 * Para os processos do ECMAScript, é fornecido o caminho para o script.
 
-### Carga útil {#payload}
+### Conteúdo {#payload}
 
 A carga é a entidade sobre a qual uma instância de fluxo de trabalho atua. A carga é selecionada implicitamente pelo contexto em que uma instância de fluxo de trabalho é iniciada.
 
@@ -51,7 +50,7 @@ Os argumentos são inseridos como uma única cadeia de caracteres na propriedade
 ```
 
 
-### Tempo limite {#timeout}
+### Tempo-limite {#timeout}
 
 Após esse período de tempo limite, a etapa do fluxo de trabalho não estará mais operacional. Alguns processos de fluxo de trabalho respeitam o tempo limite, enquanto outros não se aplicam e são ignorados.
 
@@ -207,7 +206,7 @@ Bloqueia a carga do workflow.
 A etapa não tem efeito nas seguintes circunstâncias:
 
 * A carga já está bloqueada
-* O nó de carga útil não contém um nó secundário jcr:content
+* O nó de carga não contém um nó filho jcr:content
 
 ### UnlockProcess {#unlockprocess}
 
@@ -222,7 +221,7 @@ Desbloqueia a carga do fluxo de trabalho.
 A etapa não tem efeito nas seguintes circunstâncias:
 
 * A carga já está desbloqueada
-* O nó de carga útil não contém um nó secundário jcr:content
+* O nó de carga não contém um nó filho jcr:content
 
 ## Processos de controle de versão {#versioning-processes}
 

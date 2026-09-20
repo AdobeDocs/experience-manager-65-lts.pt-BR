@@ -8,13 +8,12 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1288'
 ht-degree: 0%
-
 ---
-
 # Criação de um modelo de formulário adaptável personalizado{#creating-a-custom-adaptive-form-template}
 
 >[!NOTE]
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-* Noções básicas sobre o [Modelo de página](/help/sites-authoring/templates.md) e a [Criação do formulário adaptável](https://helpx.adobe.com/br/aem-forms/6-1/introduction-forms-authoring.html) do AEM
+* Noções básicas sobre o [Modelo de página](/help/sites-authoring/templates.md) e a [Criação do formulário adaptável](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html) do AEM
 
 * Noções básicas sobre as [Bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) do AEM
 
@@ -51,7 +50,7 @@ A tabela a seguir enumera a associação entre os modelos e o componente de pág
  <tbody>
   <tr>
    <td><p><strong>Modelo</strong></p> </td>
-   <td><p><strong>Componente de Página </strong></p> </td>
+   <td><p><strong>Componente de Página</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>

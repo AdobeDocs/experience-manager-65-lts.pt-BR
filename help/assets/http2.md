@@ -8,13 +8,12 @@ content-type: reference
 role: User, Admin
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '788'
 ht-degree: 3%
-
 ---
-
 # Entrega de conteúdo HTTP/2 {#http-delivery-of-content}
 
 A Adobe está animada em anunciar a disponibilidade da entrega de conteúdo HTTP/2 com o benefício geral de um melhor desempenho.
@@ -60,7 +59,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você inicia a solicitação para mudar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Para mudar para HTTP/2, inicie uma solicitação de Suporte ao cliente da Adobe. Consulte [Abrir um tíquete de suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=en&support-tab=home#support).
+1. Para mudar para HTTP/2, inicie uma solicitação de Suporte ao cliente da Adobe. Consulte [Abrir um tíquete de suporte](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 

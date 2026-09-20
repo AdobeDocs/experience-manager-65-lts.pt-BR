@@ -4,13 +4,12 @@ description: O serviço Assembler permite combinar, reorganizar e aumentar docum
 feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 5e1c5e07-1848-4784-9bdc-4d3b464baebe
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # Usando o serviço Assembler{#using-assembler-service}
 
 O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). Para obter mais informações sobre o serviço de assembler, consulte [Visão Geral do Serviço de Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
@@ -316,9 +315,9 @@ Você pode usar o serviço Assembler para obter as seguintes informações sobre
 
 * Informações de texto.
 
-   * Palavras em cada página do documento
-   * Posição de cada palavra em cada página do documento
-   * Frases em cada parágrafo de cada página do documento
+  * Palavras em cada página do documento
+  * Posição de cada palavra em cada página do documento
+  * Frases em cada parágrafo de cada página do documento
 
 * Marcadores, incluindo número da página, título, destino e aparência. Você pode exportar isto\
   dados de um documento do PDF e importe-os para um documento do PDF.

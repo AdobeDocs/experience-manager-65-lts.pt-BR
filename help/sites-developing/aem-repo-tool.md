@@ -8,13 +8,12 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: c762e9dd-cd22-40f4-aee4-fd832032dea4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '287'
 ht-degree: 2%
-
 ---
-
 # Ferramenta AEM Repo{#aem-repo-tool}
 
 A AEM Repo Tool é uma solução simples para transferir conteúdo JCR entre seu sistema de arquivos local e o servidor do AEM por meio da linha de comando comparável ao FTP. A AEM Repo Tool é semelhante à [ferramenta Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mas é mais rápida, tem dependências mínimas e é um script bash simples.

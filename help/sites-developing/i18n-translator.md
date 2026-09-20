@@ -8,13 +8,12 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a8f03f31dd636ee239cfc6f2b67a7573216cf0fe
+exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2344'
 ht-degree: 0%
-
 ---
-
 # Usar o Translator para gerenciar dicionários{#using-translator-to-manage-dictionaries}
 
 O AEM fornece um console para gerenciar as várias traduções de textos usados na interface do usuário do componente. Este console está disponível em
@@ -177,11 +176,11 @@ A barra de pesquisa na parte inferior da ferramenta Tradutor fornece opções de
 * **Filtrar por texto:** um padrão para corresponder à cadeia de caracteres em inglês, ao comentário ou às traduções. Somente itens que correspondem a todo ou parte do padrão aparecem na tabela.
 * **Alterações: Qualquer, Modificado, Novo, Excluído:** Mostra os itens que foram alterados e não foram salvos.
 
-   * Qualquer um: mostra itens que foram modificados, adicionados ou removidos.
-   * Modificado: mostra itens que foram alterados.
-   * Novo: mostra itens que foram adicionados.
-   * Excluído: mostra os itens que serão removidos.
-   * Várias seleções: mostra itens que têm todas as propriedades selecionadas.
+  * Qualquer um: mostra itens que foram modificados, adicionados ou removidos.
+  * Modificado: mostra itens que foram alterados.
+  * Novo: mostra itens que foram adicionados.
+  * Excluído: mostra os itens que serão removidos.
+  * Várias seleções: mostra itens que têm todas as propriedades selecionadas.
 
 * **Tem Comentário**: mostra itens que possuem comentários para tradutores.
 * **Traduções ausentes:** mostra itens em que pelo menos um idioma não tem uma tradução.
@@ -291,8 +290,8 @@ Use o procedimento a seguir para adicionar ou remover idiomas.
    * **Tipo**: `Multi-String`
    * **Valor**: a lista de idiomas que você deseja exibir. Por exemplo:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
@@ -384,4 +383,4 @@ Da mesma forma, o teste de strings de dicionário deve ser executado como parte 
 
 >[!NOTE]
 >
->Ao usar o Dispatcher, você precisa [invalidar páginas em cache](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html) para incluir novas cadeias de caracteres de dicionário em cadeias de caracteres de componentes renderizadas.
+>Ao usar o Dispatcher, você precisa [invalidar páginas em cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir novas cadeias de caracteres de dicionário em cadeias de caracteres de componentes renderizadas.

@@ -7,13 +7,12 @@ topic-tags: forms-app
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '683'
 ht-degree: 0%
-
 ---
-
 # Solução de problemas do aplicativo AEM Forms {#troubleshoot-aem-forms-app}
 
 Este artigo descreve as mensagens de erro que podem ser exibidas ao criar o aplicativo AEM Forms e as etapas para resolvê-las.
