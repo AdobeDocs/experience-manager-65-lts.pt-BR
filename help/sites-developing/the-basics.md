@@ -11,11 +11,9 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3373'
 ht-degree: 0%
-
 ---
-
 # Conceitos principais do AEM {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +26,10 @@ Você precisa das seguintes habilidades para desenvolver com base no AEM:
 
 * Conhecimento básico das técnicas de aplicação web, incluindo:
 
-   * o ciclo solicitação-resposta (XMLHttpRequest / XMLHttpResponse)
-   * HTML
-   * CSS
-   * JavaScript
+  * o ciclo solicitação-resposta (XMLHttpRequest / XMLHttpResponse)
+  * HTML
+  * CSS
+  * JavaScript
 
 * Conhecimento prático do Experience Server (CRX), incluindo o Content Explorer
 * Para desenvolver na interface clássica do usuário, também é necessário ter conhecimento básico de JSP (JavaServer Pages), incluindo a capacidade de entender e modificar exemplos de JSP simples.
@@ -44,7 +42,7 @@ O padrão Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.co
 
 O lead da especificação é da Adobe Research (Switzerland) AG.
 
-O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.O &ast; é usado para o acesso direto e manipulação do conteúdo do repositório.
+O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +84,8 @@ Devido à filosofia centrada no conteúdo, o Sling implementa um servidor orient
 * RESTful, não apenas na superfície; os recursos e as representações são modelados corretamente dentro do servidor
 * remove um ou mais modelos de dados
 
-   * anteriormente, era necessário o seguinte: estrutura de URL, objetos de negócios, esquema de BD;
-   * agora isso é reduzido a: URL = resource = JCR structure
+  * anteriormente, era necessário o seguinte: estrutura de URL, objetos de negócios, esquema de BD;
+  * agora isso é reduzido a: URL = resource = JCR structure
 
 ### Decomposição de URL {#url-decomposition}
 
@@ -160,11 +158,11 @@ Alguns outros pontos a observar são:
 * quando o Método (GET, POST) é necessário, ele é especificado em maiúsculas, de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
 * vários mecanismos de script são compatíveis:
 
-   * HTL (Linguagem de modelo HTML - sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
-   * Páginas do ECMAScript (JavaScript) (execução no lado do servidor): `.esp, .ecma`
-   * Java™ Server Pages (execução no lado do servidor): `.jsp`
-   * Compilador de Servlet Java™ (execução no lado do servidor): `.java`
-   * Modelos JavaScript (execução no lado do cliente): `.jst`
+  * HTL (Linguagem de modelo HTML - sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
+  * Páginas do ECMAScript (JavaScript) (execução no lado do servidor): `.esp, .ecma`
+  * Java™ Server Pages (execução no lado do servidor): `.jsp`
+  * Compilador de Servlet Java™ (execução no lado do servidor): `.java`
+  * Modelos JavaScript (execução no lado do cliente): `.jst`
 
 A lista de mecanismos de script suportados pela instância fornecida do AEM está listada no Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
@@ -176,7 +174,7 @@ Usando o exemplo acima, se `sling:resourceType` for `hr/jobs`, então para:
 
   O script é /apps/hr/jobs/jobs.esp; a última seção do sling:resourceType forma o nome do arquivo.
 
-* Solicitações POST (todos os tipos de solicitações, exceto GET/HEAD; o nome do método deve estar em maiúsculas)
+* Solicitações POST (todos os tipos de solicitação exceto GET/HEAD, o nome do método deve estar em maiúsculas)
 
   POST é usado no nome do script.
 
@@ -198,19 +196,19 @@ Usando o exemplo acima, se `sling:resourceType` for `hr/jobs`, então para:
 
 * Se nenhum sling:resourceType estiver definido, então:
 
-   * o caminho do conteúdo é usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
+  * o caminho do conteúdo é usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
 
-     Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
+    Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
 
-   * o tipo de nó primário é usado.
+  * o tipo de nó primário é usado.
 
 * Se nenhum script for encontrado, o script padrão será usado.
 
   A representação padrão é compatível como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listam as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
 * Para o tratamento de erros http (códigos 403 ou 404), o Sling procura um script em:
 
-   * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
-   * ou o local dos scripts padrão /libs/sling/servlet/errorhandler/403.esp ou 404.esp, respectivamente.
+  * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
+  * ou o local dos scripts padrão /libs/sling/servlet/errorhandler/403.esp ou 404.esp, respectivamente.
 
 Se vários scripts se aplicarem a uma determinada solicitação, o script com a melhor correspondência será selecionado. Quanto mais específica for uma correspondência, melhor ela será; em outras palavras, quanto mais o seletor corresponder melhor, independentemente de qualquer correspondência de extensão de solicitação ou nome de método.
 
@@ -243,30 +241,30 @@ Por exemplo:
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 A hierarquia de tipo de:
 
 * `/x`
-   * é `[ c, b, a, <default>]`
+  * é `[ c, b, a, <default>]`
 * enquanto para `/y`
-   * a hierarquia é `[ c, a, <default>]`
+  * a hierarquia é `[ c, a, <default>]`
 
 Isso ocorre porque `/y` tem a propriedade `sling:resourceSuperType`, enquanto `/x` não tem e, portanto, seu supertipo é retirado de seu tipo de recurso.
 
@@ -276,18 +274,18 @@ No Sling, os scripts não podem ser chamados diretamente, pois isso quebraria o 
 
 Se você chamar a representação (o script) diretamente, ocultará o recurso dentro do script para que a estrutura (Sling) não saiba mais sobre ela. Dessa forma, você perde determinados recursos:
 
-* tratamento automático de métodos http diferentes do GET, incluindo:
+* tratamento automático de métodos http diferentes de GET, incluindo:
 
-   * POST, PUT, DELETE que é manipulada com uma implementação padrão do sling
-   * o script `POST.jsp` no local sling:resourceType
+  * POST, PUT, DELETE que é manipulada com uma implementação padrão do sling
+  * o script `POST.jsp` no seu local do sling:resourceType
 
 * sua arquitetura de código não é mais tão limpa nem tão claramente estruturada quanto deveria ser; de importância primordial para o desenvolvimento em larga escala
 
 ### API Sling {#sling-api}
 
-Usa o pacote da API do Sling, org.apache.sling.&ast; e bibliotecas de tags.
+Usa o pacote da API do Sling, org.apache.sling.&amp;ast;, e as bibliotecas de tags.
 
-### Referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
+### Referenciando elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
 Uma consideração final é a necessidade de fazer referência aos elementos existentes nos scripts.
 
@@ -470,9 +468,9 @@ Por exemplo, sites geralmente são fornecidos em vários idiomas para públicos 
 * Gerencie com eficiência diferentes versões de idioma de um site.
 * Atualizar automaticamente um ou mais sites com base em um site de origem:
 
-   * Aplique uma estrutura de base comum e use conteúdo comum em vários sites.
-   * Maximize o uso dos recursos disponíveis.
-   * Mantenha uma aparência comum.
-   * Concentre esforços no gerenciamento do conteúdo que difere entre os sites.
+  * Aplique uma estrutura de base comum e use conteúdo comum em vários sites.
+  * Maximize o uso dos recursos disponíveis.
+  * Mantenha uma aparência comum.
+  * Concentre esforços no gerenciamento do conteúdo que difere entre os sites.
 
 Para obter mais informações, consulte [Gerenciador de vários sites](/help/sites-administering/msm.md).

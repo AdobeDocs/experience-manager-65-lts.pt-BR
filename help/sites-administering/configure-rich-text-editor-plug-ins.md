@@ -8,11 +8,9 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4381'
+source-wordcount: '4463'
 ht-degree: 2%
-
 ---
-
 # Configurar os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
 
 As funcionalidades do RTE são disponibilizadas por meio de uma série de plug-ins, cada um com a propriedade de recursos. É possível configurar a propriedade de recursos para ativar ou desativar um ou mais recursos de RTE. Este artigo descreve como configurar especificamente os plug-ins do RTE.
@@ -38,16 +36,16 @@ Por padrão, os plug-ins `format`, `link`, `list`, `justify` e `control` e todos
 
    * Dependendo do componente, os nós principais são:
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * São do tipo: **jcr:primaryType** `cq:Widget`
    * Ambos têm as seguintes propriedades:
 
-      * **Nome** `name`
-      * **Tipo** `String`
-      * **Valor** `./text`
+     * **Nome** `name`
+     * **Tipo** `String`
+     * **Valor** `./text`
 
 1. Dependendo da interface para a qual você está configurando, crie um nó `<rtePlugins-node>`, se ele não existir:
 
@@ -299,7 +297,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que o autor vê ao selecionar o estilo.
    * Nome: `text`
-*Tipo: `String`
+     *Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Crie uma folha de estilos e especifique seu caminho. Consulte [especificar local da folha de estilos](#locationofstylesheet). Adicione o conteúdo a seguir à folha de estilos. Altere a cor do plano de fundo conforme desejado.
@@ -455,12 +453,10 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Nesse nó (nomeado de acordo com o intervalo de caracteres especiais), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Value** a representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valor** a representação (decimal) [Unicode](https://unicode.org/) do último caractere no intervalo
 
@@ -500,21 +496,21 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
    >* **Tipo** `String[]`
    >
    >* **Valor** um ou ambos, conforme necessário:
-   >* `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
-   >* `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
+   >   * `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
+   >   * `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
 
 1. Defina o local das folhas de estilos CSS para que você possa referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois é o mesmo que ao definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 1. No nó `table`, crie os seguintes nós novos (conforme necessário):
 
    * Para definir estilos para a tabela inteira (disponível em **Propriedades da tabela**):
 
-      * **Nome** `tableStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `tableStyles`
+     * **Tipo** `cq:WidgetCollection`
 
    * Para definir estilos para as células individuais (disponível em **Propriedades da célula**):
 
-      * **Nome** `cellStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `cellStyles`
+     * **Tipo** `cq:WidgetCollection`
 
 1. Crie um nó (sob o nó `tableStyles` ou `cellStyles`, conforme apropriado) para que possa representar um estilo individual:
 
@@ -525,15 +521,15 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
 
    * Para definir o estilo CSS a ser referenciado
 
-      * **Nome** `cssName`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um `.` precedente, por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssName`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um `.` precedente, por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Para definir que um texto descritivo seja exibido no seletor suspenso
 
-      * **Nome** `text`
-      * **Tipo** `String`
-      * **Valor** o texto a ser exibido na lista de seleção
+     * **Nome** `text`
+     * **Tipo** `String`
+     * **Valor** o texto a ser exibido na lista de seleção
 
 1. Salve todas as alterações.
 
@@ -686,58 +682,58 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
    * Estilo CSS para links internos:
 
-      * **Nome** `cssInternal`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssInternal`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Estilo CSS para links externos
 
-      * **Nome** `cssExternal`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssExternal`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Matriz de **protocolos** válidos. Os protocolos com suporte são `http://`, `https://`, `file://` e `mailto:`.
 
-      * **Nome** `protocols`
-      * **Tipo** `String[]`
-      * **Valor** um ou mais protocolos
+     * **Nome** `protocols`
+     * **Tipo** `String[]`
+     * **Valor** um ou mais protocolos
 
    * **defaultProtocol** (propriedade do tipo **String**): protocolo a ser usado se o usuário não tiver especificado explicitamente um.
 
-      * **Nome** `defaultProtocol`
-      * **Tipo** `String`
-      * **Valor** um ou mais protocolos padrão
+     * **Nome** `defaultProtocol`
+     * **Tipo** `String`
+     * **Valor** um ou mais protocolos padrão
 
    * Definição de como lidar com o atributo de direcionamento de um link. Criar um nó:
 
-      * **Nome** `targetConfig`
-      * **Tipo** `nt:unstructured`
+     * **Nome** `targetConfig`
+     * **Tipo** `nt:unstructured`
 
      No nó `targetConfig`, defina as propriedades necessárias:
 
-      * Especifique o modo de destino:
+     * Especifique o modo de destino:
 
-         * **Nome** `mode`
-         * **Tipo** `String`
-         * **Valor**
+       * **Nome** `mode`
+       * **Tipo** `String`
+       * **Valor**
 
-            * `auto`: significa que um destino automático foi escolhido
+         * `auto`: significa que um destino automático foi escolhido
 
-              (especificado pela propriedade `targetExternal` para links externos ou `targetInternal` para links internos).
+           (especificado pela propriedade `targetExternal` para links externos ou `targetInternal` para links internos).
 
-            * `manual`: não aplicável neste contexto
-            * `blank`: não aplicável neste contexto
+         * `manual`: não aplicável neste contexto
+         * `blank`: não aplicável neste contexto
 
-      * O target para links internos:
+     * O target para links internos:
 
-         * **Nome** `targetInternal`
-         * **Tipo** `String`
-         * **Value** o destino para links internos (use somente quando o modo for `auto`)
+       * **Nome** `targetInternal`
+       * **Tipo** `String`
+       * **Value** o destino para links internos (use somente quando o modo for `auto`)
 
-      * O target para links externos:
+     * O target para links externos:
 
-         * **Nome** `targetExternal`
-         * **Tipo** `String`
-         * **Value** o destino para links externos (usado apenas quando o modo é `auto`).
+       * **Nome** `targetExternal`
+       * **Tipo** `String`
+       * **Value** o destino para links externos (usado apenas quando o modo é `auto`).
 
 1. Salve todas as alterações.
