@@ -11,11 +11,9 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1468'
 ht-degree: 1%
-
 ---
-
 # Personalização da criação de página{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,8 +26,8 @@ O Adobe Experience Manager (AEM) fornece vários mecanismos para permitir que vo
 
   As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` A nova clientlib deve:
 
-   * depende da clientlib de criação `cq.authoring.editor.sites.page`
-   * fazer parte da categoria `cq.authoring.editor.sites.page.hook` apropriada
+  * depende da clientlib de criação `cq.authoring.editor.sites.page`
+  * fazer parte da categoria `cq.authoring.editor.sites.page.hook` apropriada
 
 * Sobreposições
 
@@ -100,7 +98,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-assetfinder-flickr no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* [Abra o projeto aem-authoring-extension-assetfinder-flickr no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## Filtrar recursos {#filtering-resources}
@@ -132,7 +130,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-toolbar-screenshot no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+* [Abra o projeto aem-authoring-extension-toolbar-screenshot no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## Adicionar novo editor no local {#add-new-in-place-editor}
@@ -151,12 +149,12 @@ Em uma instalação padrão do AEM:
 
      por exemplo:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * propriedade: `editorType`
+       * propriedade: `editorType`
 
-           Define o tipo de editor embutido usado quando a edição no local é acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
+         Define o tipo de editor embutido usado quando a edição no local é acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
 
 1. Detalhes adicionais de configuração do editor podem ser configurados usando um nó `config` contendo configurações e um nó `plugin` para conter os detalhes necessários de configuração do plug-in.
 
@@ -233,7 +231,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-header-backtosites no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* [Abra o projeto aem-authoring-extension-header-backtosites no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## Personalizar a solicitação para o fluxo de trabalho de ativação {#customizing-the-request-for-activation-workflow}

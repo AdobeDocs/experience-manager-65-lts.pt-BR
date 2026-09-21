@@ -9,13 +9,11 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2949'
 ht-degree: 1%
-
 ---
-
 
 # Plataformas compatíveis com AEM Forms no JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -83,7 +81,7 @@ A Adobe recomenda essas configurações e fornece suporte total ou restrito como
 >[!NOTE]
 >
 >Para ajudar os clientes da AEM Forms a reduzir o custo de propriedade, simplificar a arquitetura de implantação e modernizar a pilha de desenvolvimento, a plataforma corporativa da Adobe Experience Manager está se afastando das implantações baseadas em servidor de aplicativos em favor das implantações independentes baseadas em OSGi. A Adobe continua a oferecer suporte à pilha do AEM Forms JEE com uma matriz reduzida de componentes de infraestrutura.
->Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em relação ao Adaptive Forms responsivo para comunicações interativas em vários canais, móveis e integrações de dados de back-end usando o Modelo de dados de formulário.
+>Para novas instalações, quando viável, é recomendável implantar o AEM Forms na pilha OSGi moderna para usar as inovações mais recentes em torno do Adaptive Forms responsivo para comunicações móveis, comunicações interativas de vários canais e integrações de dados de back-end usando o Modelo de dados de formulário.
 
 ### Máquinas virtuais Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -225,7 +223,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 
 >[!NOTE]
 >
->O WebSphere® Liberty Profile (WLP) é suportado somente com o Oracle Database e o IBM® Sumeru JDK 21.
+>O WebSphere® Liberty Profile (WLP) é compatível apenas com o Oracle Database ou Microsoft® SQL Server e IBM® Sumeru JDK 21.
 
 ### Sistemas operacionais de servidor {#server-operating-systems}
 
@@ -288,7 +286,7 @@ Considere as exceções a seguir ao escolher uma plataforma para configurar o AE
 
 1. O repositório do CRX oferece suporte à persistência do tipo TarMK e MongoDB.
 1. O AEM Forms no JEE não suporta o controle de acesso baseado em função (RBAC) JBoss®.
-1. O AEM Forms no JEE suporta o WebSphere® Liberty Profile (WLP) somente com o Oracle Database e o IBM® Sumeru JDK 21.
+1. O AEM Forms no JEE suporta o WebSphere® Liberty Profile (WLP) somente com o Oracle Database ou Microsoft® SQL Server e IBM® Sumeru JDK 21.
 
 <!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -671,7 +669,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-<!--## Revision History {#revision-history}-->
+## Histórico de revisão {#revision-history}
+
+- 6.5 LTS SP3 (setembro de 2026)
+  - **Suporte adicionado**: o WebSphere® Liberty Profile (WLP) agora é compatível com o Microsoft® SQL Server, além do Oracle Database.
 
 <!--
 

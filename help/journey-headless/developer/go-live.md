@@ -7,11 +7,9 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1909'
 ht-degree: 51%
-
 ---
-
 # Como executar o aplicativo headless {#go-live}
 
 Nesta parte da [Jornada de desenvolvedores headless do AEM](overview.md), saiba como implantar um aplicativo headless em tempo real.
@@ -115,12 +113,12 @@ Agora, é hora de preparar seu aplicativo headless AEM para lançamento, seguind
 * Evite mais de cinco níveis aninhados de hierarquias de fragmentos. Níveis adicionais tornam difícil para os autores de conteúdo considerar o impacto de suas alterações.
 * Use consultas de vários objetos em vez de modelar consultas com hierarquias de dependência nos modelos. Isso permite uma flexibilidade de mais longo prazo para reestruturar a saída JSON sem precisar fazer muitas alterações de conteúdo.
 
-### Maximizar a taxa de ocorrências do cache CDN {#maximize-cdn}
+### Maximizar a taxa de hits do cache CDN {#maximize-cdn}
 
 * Não use consultas diretas da GraphQL, a menos que esteja solicitando conteúdo ao vivo a partir da superfície.
-   * Use consultas persistentes sempre que possível.
-   * Forneça um TTL de CDN acima de 600 segundos para que o CDN possa armazená-los em cache.
-   * O AEM pode calcular o impacto de uma alteração de modelo em consultas existentes.
+  * Use consultas persistentes sempre que possível.
+  * Forneça um TTL de CDN acima de 600 segundos para que o CDN possa armazená-los em cache.
+  * O AEM pode calcular o impacto de uma alteração de modelo em consultas existentes.
 * Divida arquivos JSON/consultas GraphQL entre taxa de alteração de conteúdo baixa e alta para reduzir o tráfego do cliente para CDN e atribuir um TTL mais alto. Isso minimiza a revalidação da CDN do JSON com o servidor de origem.
 * Para invalidar ativamente o conteúdo da CDN, use a Limpeza suave. Isso permite que a CDN baixe novamente o conteúdo sem causar perda de cache.
 
@@ -164,15 +162,15 @@ Para que os usuários tenham a melhor experiência possível ao usar o aplicativ
 * Validar versões de visualização e produção do aplicativo
 * Verificar as páginas de status do AEM para obter o status atual de disponibilidade do serviço
 * Acessar relatórios de desempenho
-   * Desempenho da entrega
-      * Servidores de origem: número de chamadas, taxas de erro, cargas da CPU, tráfego de conteúdo
-   * Desempenho do autor
-      * Verificar número de usuários, solicitações e carga
+  * Desempenho da entrega
+    * Servidores de origem: número de chamadas, taxas de erro, cargas da CPU, tráfego de conteúdo
+  * Desempenho do autor
+    * Verificar número de usuários, solicitações e carga
 * Relatórios de desempenho específicos do Access App e Space
-   * Quando o servidor estiver ativo, verifique se as métricas gerais estão verdes/laranjas/vermelhas, então identifique problemas específicos do aplicativo
-   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop Photoshop, paywall)
-   * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
-   * Entre em contato com o Suporte ao cliente em caso de outros problemas.
+  * Quando o servidor estiver ativo, verifique se as métricas gerais estão verdes/laranjas/vermelhas, então identifique problemas específicos do aplicativo
+  * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop Photoshop, paywall)
+  * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
+  * Entre em contato com o Suporte ao cliente em caso de outros problemas.
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -225,10 +223,10 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 * Cache da CDN
 
-   * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#controlling-a-cdn-cache)
+  * [Controle de um cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#controlling-a-cdn-cache)
 
-   * Configurando o [Reescritor de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*pesquisar Reescritor de CDN*)
+  * Configurando o [Reescritor de CDN](/help/sites-deploying/osgi-configuration-settings.md) (*pesquisar Reescritor de CDN*)
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais de sem cabeçalho no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
