@@ -7,13 +7,11 @@ user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: da9de2298544a342a34ff91815732017c1b24299
+source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
 workflow-type: tm+mt
-source-wordcount: '7798'
+source-wordcount: '7804'
 ht-degree: 19%
-
 ---
-
 # Documentação do Adobe Experience Manager 6.5 LTS {#content}
 
 + Notas de versão {#release-notes}
@@ -1103,6 +1101,7 @@ ht-degree: 19%
     + [Falha na execução do script no AEM Forms 6.5 LTS com JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
     + [Não é possível iniciar o controlador de domínio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
     + [Reduzindo vulnerabilidades de SSRF (Server-Side Request Forgery) para AEM Forms no JEE 6.5 LTS SP2](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+    + [O AEM Forms bloqueia solicitações HTTP válidas](/help/forms/troubleshooting/aem-forms-blocks-valid-http-requests.md)
   + Documentação herdada {#legacy-documentation}
     + {hide-from-toc}[Usando o serviço de execução de script no AEM Forms no JEE Workbench para compilar dados XML](/help/forms/developing/building-xml.md)
     + {hide-from-toc}[Compactando e descompactando arquivos usando um AEM Forms no DSC Personalizado JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
