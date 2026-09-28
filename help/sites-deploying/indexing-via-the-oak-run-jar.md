@@ -10,11 +10,9 @@ role: Admin
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '985'
 ht-degree: 0%
-
 ---
-
 # Indexação por meio do Jar executado pela Oak {#indexing-via-the-oak-run-jar}
 
 A execução de Oak suporta todos os casos de uso de indexação na linha de comando sem precisar operar a partir do nível JMX. As vantagens da abordagem oak-run são:
@@ -92,11 +90,11 @@ Execute esse processo somente em uma única instância do AEM no cluster.
 
 * **Considerações sobre Modo de Espera a Frio (TarMK)**
 
-   * Não há considerações especiais para o Modo de Espera a Frio; as instâncias de Modo de Espera a Frio sincronizam as alterações como de costume.
+  * Não há considerações especiais para o Modo de Espera a Frio; as instâncias de Modo de Espera a Frio sincronizam as alterações como de costume.
 
 * **Farms de Publicação do AEM (Farms de Publicação do AEM devem ser sempre TarMK)**
 
-   * Para o farm de publicação, isso deve ser feito para todas OU executar as etapas em uma única publicação. Em seguida, clone a configuração para outros (tomando todas as precauções normais ao clonar instâncias do AEM; sling.id - deve vincular a algo aqui).
+  * Para o farm de publicação, isso deve ser feito para todas OU executar as etapas em uma única publicação. Em seguida, clone a configuração para outros (tomando todas as precauções normais ao clonar instâncias do AEM; sling.id - deve vincular a algo aqui).
 
 ### Reindexação online para TarMK {#onlinere-indexingfortarmk}
 

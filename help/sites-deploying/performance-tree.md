@@ -11,11 +11,9 @@ role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1298'
 ht-degree: 9%
-
 ---
-
 # Árvore de desempenho{#performance-tree}
 
 ## Escopo {#scope}
@@ -243,7 +241,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache">Configuração do cache do Dispatcher</a></li>
     </ol> <p>Como melhorar a taxa de cache; tornar as solicitações compatíveis com cache (práticas recomendadas do Dispatcher)</p> <p>Além disso, considere as configurações abaixo para otimizar suas configurações de cache<br /> </p>
     <ol>
-     <li>Definir uma regra sem cache para uma solicitação HTTP que não seja do GET</li>
+     <li>Definir uma regra sem cache para solicitação HTTP que não seja GET</li>
      <li>Configurar cadeias de caracteres de consulta para não serem armazenadas em cache</li>
      <li>Não armazenar URLs com extensões ausentes em cache</li>
      <li>Cabeçalhos de autenticação de cache (possível desde a versão 4.1.10 do Dispatcher)</li>
@@ -256,7 +254,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   </tr>
   <tr>
    <td><strong>Etapa 35</strong></td>
-   <td>Configurar Dispatcher</td>
+   <td>Configurar o Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR">Configurando o Dispatcher</a><br /> </td>
   </tr>
   <tr>

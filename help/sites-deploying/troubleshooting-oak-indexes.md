@@ -11,11 +11,9 @@ role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 0%
-
+source-wordcount: '1501'
+ht-degree: 1%
 ---
-
 # Solução de problemas de índices do Oak{#troubleshooting-oak-indexes}
 
 ## Reindexação lenta  {#slow-re-indexing}
@@ -66,8 +64,8 @@ Em circunstâncias excepcionais, o pool de threads usado para gerenciar a indexa
    * Navegue até o AEM OSGi Web console>Status>Sling Scheduler ou acesse https://&lt;host>:&lt;port>/system/console/status-slingscheduler (por exemplo, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
    * Verifique se as seguintes entradas de pool existem:
 
-      * ApacheSlingoak
-      * ApacheSlingDefault
+     * ApacheSlingoak
+     * ApacheSlingDefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -94,7 +92,7 @@ A reindexação pode ser considerada &quot;completamente paralisada&quot; sob du
 
 * A reindexação é lenta, a ponto de não ser relatado nenhum progresso significativo nos arquivos de log em relação ao número de nós percorridos.
 
-   * Por exemplo, se não houver mensagens no período de uma hora ou se o progresso estiver tão lento que leve uma semana ou mais para ser concluído.
+  * Por exemplo, se não houver mensagens no período de uma hora ou se o progresso estiver tão lento que leve uma semana ou mais para ser concluído.
 
 * A reindexação fica presa em um loop infinito se exceções repetidas aparecerem nos arquivos de log (por exemplo, `OutOfMemoryException`) no thread de indexação. A repetição de uma ou mais exceções idênticas no log indica que o Oak tenta indexar a mesma coisa repetidamente, mas falha no mesmo problema.
 
@@ -105,21 +103,21 @@ Para identificar e corrigir um processo de reindexação paralisado, faça o seg
    * Colete 5 minutos de despejo de thread, um despejo de thread a cada 2 segundos.
    * [Definir nível DEBUG e logs para os anexadores](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * Coletar dados do MBean assíncrono `IndexStats`:
 
-      * Navegue até o AEM OSGi Web Console>Main>JMX>IndexStat>async
+     * Navegue até o AEM OSGi Web Console>Main>JMX>IndexStat>async
 
-        ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Use o [modo de console do oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) para coletar os detalhes do que existe no nó * `/:async`*.
    * Colete uma lista de pontos de verificação do repositório usando o MBean `CheckpointManager`:
 
-      * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
+     * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-        ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Depois de coletar todas as informações descritas na Etapa 1, reinicie o AEM.
 
@@ -140,8 +138,8 @@ Para interromper com segurança a reindexação, siga estas etapas:
    * Navegue até o MBean IndexStats apropriado pelo console JMX, acessando AEM OSGi Web Console>Main>JMX ou https://&lt;host>:&lt;port>/system/console/jmx (por exemplo, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
    * Abra o MBean IndexStats com base na faixa de reindexação que você deseja parar ( `async`, `async-reindex` ou `fulltext-async`)
 
-      * Para identificar a faixa apropriada e, portanto, a instância MBean IndexStats, verifique a propriedade &quot;async&quot; dos Índices Oak. A propriedade &quot;async&quot; contém o nome da faixa: `async`, `async-reindex` ou `fulltext-async`.
-      * A faixa também está disponível ao acessar o Gerenciador de índice da AEM na coluna &quot;Assíncrono&quot;. Para acessar o Gerenciador de índice, navegue até Operações>Diagnóstico>Gerenciador de índice.
+     * Para identificar a faixa apropriada e, portanto, a instância MBean IndexStats, verifique a propriedade &quot;async&quot; dos Índices Oak. A propriedade &quot;async&quot; contém o nome da faixa: `async`, `async-reindex` ou `fulltext-async`.
+     * A faixa também está disponível ao acessar o Gerenciador de índice da AEM na coluna &quot;Assíncrono&quot;. Para acessar o Gerenciador de índice, navegue até Operações>Diagnóstico>Gerenciador de índice.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -150,15 +148,15 @@ Para interromper com segurança a reindexação, siga estas etapas:
 
    * Ao reindexar um índice **existente**, defina a propriedade reindex como false
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * Ou então, para um índice **novo**:
 
-      * Defina a propriedade type como disabled
+     * Defina a propriedade type como disabled
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * ou remova a definição do índice totalmente
+     * ou remova a definição do índice totalmente
 
    Confirmar as alterações no repositório ao concluir.
 
