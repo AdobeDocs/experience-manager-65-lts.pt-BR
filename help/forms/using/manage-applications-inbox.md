@@ -7,11 +7,9 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1091'
 ht-degree: 2%
-
 ---
-
 # Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada do AEM. Para disponibilizar um workflow do Forms como aplicativo na Caixa de entrada, crie um aplicativo de workflow. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras maneiras de iniciar fluxos de trabalho do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](../../forms/using/aem-forms-workflow.md#launch).
@@ -136,7 +134,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/using) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
+   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

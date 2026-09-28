@@ -10,11 +10,9 @@ role: Admin
 exl-id: 6ed130d5-30b5-4864-8bea-dfe41bed5422
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '156'
 ht-degree: 0%
-
 ---
-
 # Verificações de consistência e passagem{#consistency-and-traversal-checks}
 
 Durante a atualização, pode haver problemas devido a inconsistências no espaço de trabalho. Você pode executar uma atualização de teste para ver se isso é um problema ou executar as verificações de consistência como uma ação preventiva.
