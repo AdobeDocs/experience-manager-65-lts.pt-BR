@@ -4,7 +4,19 @@ description: Use os componentes principais do formulário adaptável do AEM para
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -57,8 +69,8 @@ Os autores de formulário podem comparar duas versões diferentes de um formulá
 Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários. Qualquer usuário do formulário pode comentar em um formulário ou revisar um formulário por meio de comentários. Para comentar em um formulário, selecione um **[!UICONTROL Formulário]** e adicione um **[!UICONTROL Comentário]** ao formulário.
 
 >[!NOTE]
-> Quando você usa comentários em componentes principais do formulário adaptável, como discutido acima, a funcionalidade de formulário, [adicionar revisores a formulários](/help/forms/using/create-reviews-forms.md), está desabilitada.
-
+>
+>Quando você usa comentários em componentes principais do formulário adaptável, como discutido acima, a funcionalidade de formulário, [adicionar revisores a formulários](/help/forms/using/create-reviews-forms.md), está desabilitada.
 
 ![Adicionar comentários em um formulário](assets/form-comments.png)
 

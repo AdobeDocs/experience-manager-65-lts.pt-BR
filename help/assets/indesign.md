@@ -1,17 +1,29 @@
 ---
-title: Integrar [!DNL Assets] com [!DNL InDesign Server]
-description: Saiba como integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server].
+title: Integrar [!DNL Assets] a [!DNL InDesign Server]
+description: Saiba como integrar [!DNL Adobe Experience Manager Assets] a [!DNL Adobe InDesign Server].
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 2%
-
 ---
-
 # Integrar [!DNL Adobe Experience Manager Assets] a [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] usa:
@@ -20,11 +32,11 @@ ht-degree: 2%
 * Um trabalhador proxy para definir e gerenciar uma tarefa específica.
 Elas podem abranger uma grande variedade de tarefas; por exemplo, usar um [!DNL InDesign Server] para processar arquivos.
 
-Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que você criou com [!DNL Adobe InDesign], um proxy é usado. Isso usa um trabalhador proxy para se comunicar com [!DNL Adobe InDesign Server], onde [scripts](https://helpx.adobe.com/br/indesign/using/scripting.html) são executados para extrair metadados e gerar várias representações para [!DNL Experience Manager Assets]. O trabalhador proxy habilita a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e [!DNL Experience Manager] em uma configuração de nuvem.
+Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que você criou com [!DNL Adobe InDesign], um proxy é usado. Isso usa um trabalhador proxy para se comunicar com [!DNL Adobe InDesign Server], onde [scripts](https://helpx.adobe.com/indesign/using/scripting.html) são executados para extrair metadados e gerar várias representações para [!DNL Experience Manager Assets]. O trabalhador proxy habilita a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e [!DNL Experience Manager] em uma configuração de nuvem.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/br/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo [ExtendScript](https://helpx.adobe.com/br/indesign/using/scripting.html).Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -41,9 +53,9 @@ Este script de comando irá:
    * Recupere o arquivo INDD.
    * Executar comandos [!DNL InDesign Server]:
 
-      * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
-      * As representações do PDF e do JPG são geradas.
-      * As representações HTML e IDML são geradas.
+     * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
+     * As representações do PDF e do JPG são geradas.
+     * As representações HTML e IDML são geradas.
 
    * Postar os arquivos resultantes de volta para [!DNL Experience Manager Assets].
 
@@ -136,7 +148,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Manipulador de extração de página**: na lista pop-up, selecione o manipulador que deseja usar. Um manipulador de extração opera em uma representação específica, escolhida por um `RenditionPicker` relacionado (consulte a API `ExtractionHandler`). Em uma instalação padrão do [!DNL Experience Manager], o seguinte está disponível:
-   * Identificador de extração de exportação IDML: opera na representação `IDML` gerada na etapa MediaExtract.
+  * Identificador de extração de exportação IDML: opera na representação `IDML` gerada na etapa MediaExtract.
 
 * **Nome da página**: especifique o nome que deseja atribuir à página resultante. Se deixado em branco, o nome é &quot;página&quot; (ou um derivado se &quot;página&quot; já existir).
 
@@ -163,7 +175,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **Pool de IDS**
-Os pontos de extremidade do SOAP a serem usados para comunicação com o [!DNL InDesign Server]. É possível adicionar, remover e solicitar itens.
+     Os pontos de extremidade do SOAP a serem usados para comunicação com o [!DNL InDesign Server]. É possível adicionar, remover e solicitar itens.
 
 1. Clique em OK para salvar.
 
@@ -203,19 +215,19 @@ Para configurar o número de jobs de IDS paralelos:
 
    Se houver vários computadores executando o [!DNL InDesign Server], adicione pontos de extremidade SOAP (número de processadores por computador -1) para cada computador.
 
+   >[!NOTE]
+   >
+   >Ao trabalhar com um pool de trabalhadores, você pode ativar a lista de bloqueios de trabalhadores de IDS.
+   >
+   >Para fazer isso, habilite a caixa de seleção **[!UICONTROL enable.retry.name]**, na configuração `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que permite novas tentativas de trabalho de IDS.
+   >
+   >Além disso, na configuração `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, defina um valor positivo para o parâmetro `max.errors.to.blacklist`, que determina o número de tentativas de trabalho antes de barrar uma ID da lista de manipuladores de trabalho.
+   >
+   >Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o trabalhador de IDS é revalidado. Se o trabalhador for encontrado online, ele será removido da lista de bloqueios.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->Ao trabalhar com um pool de trabalhadores, você pode ativar a lista de bloqueios de trabalhadores de IDS.
->
->Para fazer isso, habilite a caixa de seleção **[!UICONTROL enable.retry.name]**, na configuração `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que permite novas tentativas de trabalho de IDS.
->
->Além disso, na configuração `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, defina um valor positivo para o parâmetro `max.errors.to.blacklist`, que determina o número de tentativas de trabalho antes de barrar uma ID da lista de manipuladores de trabalho.
->
->Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o trabalhador de IDS é revalidado. Se o trabalhador for encontrado online, ele será removido da lista de bloqueios.
 
 ## Habilitar suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
 
@@ -239,4 +251,4 @@ Você pode alterar as credenciais de administrador padrão (nome de usuário e s
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
+>* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

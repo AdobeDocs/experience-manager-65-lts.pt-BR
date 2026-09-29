@@ -9,7 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 2%
@@ -61,42 +74,42 @@ O componente **Ferramentas de email** do ExactTarget pode adicionar mais funcion
 
 1. Selecione uma opção no menu **Opções**:
 
-<table>
- <tbody>
-  <tr>
-   <td>Endereço de correio físico (obrigatório)</td>
-   <td>Esse componente insere o endereço de correspondência físico de sua organização no email.</td>
-  </tr>
-  <tr>
-   <td>Centro de perfil (obrigatório)</td>
-   <td>O centro de perfil é uma página da Web em que os assinantes podem inserir e manter as informações pessoais que você mantém sobre eles.</td>
-  </tr>
-  <tr>
-   <td>Visualizar e-mail como página da web</td>
-   <td>Esse componente permite que o usuário visualize o email como uma página da Web.</td>
-  </tr>
-  <tr>
-   <td>Política de privacidade</td>
-   <td>Este componente insere o link para sua política de privacidade no email.<br /> </td>
-  </tr>
-  <tr>
-   <td>Central para cancelar inscrição</td>
-   <td>Dá ao usuário a opção de cancelar a inscrição na lista de endereçamento.</td>
-  </tr>
-  <tr>
-   <td>Centro de assinaturas</td>
-   <td>Uma central de assinaturas é uma página da Web em que um assinante pode controlar as mensagens que recebe da sua organização.</td>
-  </tr>
-  <tr>
-   <td>Rastrear aberturas de e-mail</td>
-   <td>Um componente oculto que permite usar o recurso de rastreamento ExactTarget.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Endereço de correio físico (obrigatório)</td>
+      <td>Esse componente insere o endereço de correspondência físico de sua organização no email.</td>
+   </tr>
+   <tr>
+      <td>Centro de perfil (obrigatório)</td>
+      <td>O centro de perfil é uma página da Web em que os assinantes podem inserir e manter as informações pessoais que você mantém sobre eles.</td>
+   </tr>
+   <tr>
+      <td>Visualizar e-mail como página da web</td>
+      <td>Esse componente permite que o usuário visualize o email como uma página da Web.</td>
+   </tr>
+   <tr>
+      <td>Política de privacidade</td>
+      <td>Este componente insere o link para sua política de privacidade no email.<br /> </td>
+   </tr>
+   <tr>
+      <td>Central para cancelar inscrição</td>
+      <td>Dá ao usuário a opção de cancelar a inscrição na lista de endereçamento.</td>
+   </tr>
+   <tr>
+      <td>Centro de assinaturas</td>
+      <td>Uma central de assinaturas é uma página da Web em que um assinante pode controlar as mensagens que recebe da sua organização.</td>
+   </tr>
+   <tr>
+      <td>Rastrear aberturas de e-mail</td>
+      <td>Um componente oculto que permite usar o recurso de rastreamento ExactTarget.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->O menu suspenso **Options** só será preenchido se a configuração ExactTarget for aplicada ao email. Consulte [Aplicando a configuração do serviço de email às configurações de email](#applying-e-mail-service-configuration-to-e-mail-settings) para obter mais informações.
+   >[!NOTE]
+   >
+   >O menu suspenso **Options** só será preenchido se a configuração ExactTarget for aplicada ao email. Consulte [Aplicando a configuração do serviço de email às configurações de email](#applying-e-mail-service-configuration-to-e-mail-settings) para obter mais informações.
 
 1. Publique o email no ExactTarget.
 
