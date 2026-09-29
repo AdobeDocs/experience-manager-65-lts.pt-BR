@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 0%
-
+source-wordcount: '2463'
+ht-degree: 2%
 ---
-
 # Fragmentos de formulário adaptável{#adaptive-form-fragments}
 
 ## Aplica-se a {#applies-to}
@@ -107,7 +123,7 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
    * **Modelo de Formulário**: Dependendo do modelo de formulário para o formulário adaptável, este campo exibe o **Esquema XML**, **Modelo de Formulário** ou **Nenhum**. É um campo não editável.
 
    * **Raiz do modelo de fragmento**: aparece somente em formulários adaptáveis baseados em XSD. Especifica a raiz do modelo de fragmento. Você pode escolher **/** ou o tipo complexo XSD no menu suspenso. Você só poderá reutilizar o fragmento em outro formulário adaptável se selecionar o tipo complexo como a raiz do modelo de fragmento.
-Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD completa da raiz ficará visível na guia de modelo de dados de formulário adaptável. Para uma raiz de modelo de fragmento de tipo complexo, somente os descendentes do tipo complexo selecionado ficam visíveis na guia modelo de dados de formulário adaptável. Se você criar um fragmento e escolher um tipo complexo como a **Raiz do modelo de fragmento**, poderá usá-lo sempre que esse tipo complexo for usado, no mesmo formulário ou em vários formulários.
+     Se você escolher **/** como a raiz do modelo de fragmento, a árvore XSD completa da raiz ficará visível na guia de modelo de dados de formulário adaptável. Para uma raiz de modelo de fragmento de tipo complexo, somente os descendentes do tipo complexo selecionado ficam visíveis na guia modelo de dados de formulário adaptável. Se você criar um fragmento e escolher um tipo complexo como a **Raiz do modelo de fragmento**, poderá usá-lo sempre que esse tipo complexo for usado, no mesmo formulário ou em vários formulários.
 
    * **XSD Ref**: aparece somente em formulários adaptáveis baseados em XSD. Ela exibe a localização do esquema XML.
 

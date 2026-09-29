@@ -8,7 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: 1b6c09f7-6f89-4fe9-8217-bf1a301bf9cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 7%
@@ -21,49 +43,49 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
 
    As categorias estão presentes na guia iniciar processo do espaço de trabalho. Essas categorias são usadas para classificar os pontos de partida.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriedade</strong></td>
-   <td><strong>Somente Cliente</strong></td>
-   <td><strong>Comentários</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>S</td>
-   <td>Nome da categoria</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>S</td>
-   <td>ID da Categoria <br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>descrição<br type="_moz" /> </td>
-   <td>S</td>
-   <td>Descrição da categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>S</td>
-   <td>Contém oid da categoria pai<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Contém a lista de todos os pontos de partida presentes em uma categoria</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Contém a lista de categorias filho diretas de uma categoria<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propriedade</strong></td>
+      <td><strong>Somente Cliente</strong></td>
+      <td><strong>Comentários</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>S</td>
+      <td>Nome da categoria</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>S</td>
+      <td>ID da Categoria <br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>descrição<br type="_moz" /> </td>
+      <td>S</td>
+      <td>Descrição da categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>S</td>
+      <td>Contém oid da categoria pai<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Contém a lista de todos os pontos de partida presentes em uma categoria</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Contém a lista de categorias filho diretas de uma categoria<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Todos os pontos iniciais e favoritos são categorias definidas no lado do cliente. A categoria Favorito contém todos os pontos iniciais marcados pelo usuário como favoritos. A categoria Todos os pontos iniciais contém todos os pontos iniciais.
+   >[!NOTE]
+   >
+   >Todos os pontos iniciais e favoritos são categorias definidas no lado do cliente. A categoria Favorito contém todos os pontos iniciais marcados pelo usuário como favoritos. A categoria Todos os pontos iniciais contém todos os pontos iniciais.
 
 1. Ponto inicial
 

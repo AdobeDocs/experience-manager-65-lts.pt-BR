@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '5053'
+source-wordcount: '5215'
 ht-degree: 16%
-
 ---
-
 # Otimização do desempenho {#performance-optimization}
 
 >[!NOTE]
@@ -597,11 +606,13 @@ Para páginas que não são modificadas, as imagens ainda permanecem no cache, e
 * Se, por outro lado, você oferecer a opção de dez páginas iniciais diferentes, poderá armazenar em cache cada uma delas para melhorar o desempenho.
 
 >[!TIP]
+>
 >Para obter mais detalhes sobre como configurar o cache do Dispatcher, consulte o [Tutorial de cache do AEM Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/dispatcher-tutorial/overview) e sua seção sobre [Armazenamento em cache de conteúdo protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=pt-BR#dispatcher-tips-and-tricks)
 
 Se você personalizar cada página colocando o nome do usuário na barra de título (por exemplo), isso terá um impacto no desempenho.
 
 >[!TIP]
+>
 >Para armazenar em cache conteúdo protegido, consulte [Armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR) no guia do Dispatcher.
 
 Em relação à combinação de conteúdo restrito e público em uma página, considere uma estratégia que use inclusões do lado do servidor no Dispatcher ou inclusões do lado do cliente por meio do Ajax no navegador.

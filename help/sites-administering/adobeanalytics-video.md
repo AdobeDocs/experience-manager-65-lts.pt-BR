@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 0%
@@ -291,26 +302,26 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    Além disso, as informações enviadas para o Adobe Analytics são menos personalizáveis. Há apenas três variáveis disponíveis para mapeamento:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>As variáveis mapeadas para esse local conterão o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>As variáveis mapeadas para esse local conterão o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+   >[!NOTE]
+   >
+   >Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para props 1 a 3
 
@@ -348,26 +359,26 @@ Ao usar o método **&#x200B; legacy seconds**, as chamadas do Adobe Analytics s�
 
    As informações enviadas para o Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>A variável mapeada para este conterá o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>A variável mapeada para este conterá o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+   >[!NOTE]
+   >
+   >Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para prop1, prop2 e prop3
 

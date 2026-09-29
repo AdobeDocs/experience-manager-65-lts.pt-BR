@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1903'
 ht-degree: 0%
-
 ---
-
 # Analytics usando [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 O AEM Forms integra-se ao [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/overview) para permitir que você capture e rastreie métricas de desempenho para seus formulários publicados. O objetivo por trás da análise dessas métricas é permitir que os usuários empresariais obtenham insights sobre o comportamento do usuário final e otimizem a experiência de captura de dados. Você pode capturar e rastrear o comportamento de usuários conectados e não conectados (anônimos) por meio do Adobe Analytics para Forms adaptável.
@@ -164,7 +180,8 @@ Execute as seguintes etapas para criar regras com base na extensão **[!UICONTRO
 
 1. Na seção **[!UICONTROL Actions]**, selecione + e especifique **[!UICONTROL Adobe Analytics]** como o nome da Extensão.
 
-1. Selecione **[!UICONTROL Limpar Variáveis]** como o Tipo de Ação. Selecione **[!UICONTROL Manter alterações]**. Depois de executar essas etapas, a seção **[!UICONTROL Ações]** é exibida como:   ![Configuração de ações](/help/forms/using/assets/actions-config.png)
+1. Selecione **[!UICONTROL Limpar Variáveis]** como o Tipo de Ação. Selecione **[!UICONTROL Manter alterações]**. Depois de executar essas etapas, a seção **[!UICONTROL Ações]** é exibida como:
+   ![Configuração de ações](/help/forms/using/assets/actions-config.png)
 
    Personalize a seção **[!UICONTROL Ações]** de acordo com suas necessidades. Por exemplo, você pode definir duas etapas **Enviar Beacon** em um fluxo de Ações para enviar dados para [!DNL Adobe Analytics] e tratá-los como uma exibição de página em uma etapa e enviar dados para [!DNL Adobe Analytics] e não tratá-los como uma exibição de página na segunda etapa.
 
@@ -237,8 +254,8 @@ Para usar a configuração [!DNL Adobe Launch] em um Formulário adaptável exis
 Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, você poderá [validar](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon) se houver um fluxo de eventos de dados apropriado entre o AEM Forms e o [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >Nesse caso, se os recursos do [Analytics usando o Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) e do **Analytics usando o Adobe Launch** estiverem habilitados simultaneamente, o **Analytics usando o Adobe Launch** terá prioridade.
-> 
 
 ### Criar regras para capturar eventos personalizados (Opcional) {#capture-custom-events}
 

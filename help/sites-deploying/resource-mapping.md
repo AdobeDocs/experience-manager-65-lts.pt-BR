@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 0%
-
+source-wordcount: '542'
+ht-degree: 2%
 ---
-
 # Mapeamento de recursos{#resource-mapping}
 
 O mapeamento de recursos é usado para definir redirecionamentos, URLs personalizados e hosts virtuais para o Adobe Experience Manager (AEM).
@@ -56,10 +65,10 @@ Mostra a configuração atual (conforme definido para o [Apache Sling Resource R
 * Teste de configuração
 Isso permite inserir um URL ou um caminho de recurso. Clique em **Resolver** ou **Mapear** para confirmar como o sistema transformará a entrada.
 
-* **Entradas do Mapa de Resolução**
+* **Entradas do Mapa do Resolvedor**
 A lista de entradas usadas pelos métodos ResourceResolver.resolve para mapear URLs para Recursos.
 
-* **Mapeando Entradas do Mapa**
+* **Mapeamento de Entradas do Mapa**
 A lista de entradas usadas pelos métodos ResourceResolver.map para mapear Caminhos de Recursos para URLs.
 
 As duas listas mostram várias entradas, incluindo aquelas definidas como padrão pelas aplicações. Geralmente, elas têm como objetivo simplificar URLs para o usuário.
@@ -105,7 +114,7 @@ Para criar o mapeamento que prefixa qualquer solicitação para https://localhos
 1. Criar um nó:
 
    * **Tipo** `sling:Mapping`
-Esse tipo de nó se destina a esses mapeamentos, embora seu uso não seja obrigatório.
+     Esse tipo de nó se destina a esses mapeamentos, embora seu uso não seja obrigatório.
 
    * **Nome** `localhost_any`
 
@@ -114,15 +123,15 @@ Esse tipo de nó se destina a esses mapeamentos, embora seu uso não seja obriga
 
    * **Nome** `sling:match`
 
-      * **Tipo** `String`
+     * **Tipo** `String`
 
-      * **Valor** `localhost.4503/`
+     * **Valor** `localhost.4503/`
 
    * **Nome** `sling:internalRedirect`
 
-      * **Tipo** `String[]`
+     * **Tipo** `String[]`
 
-      * **Valor** `/content/`
+     * **Valor** `/content/`
 
 1. Clique em **Salvar tudo**.
 

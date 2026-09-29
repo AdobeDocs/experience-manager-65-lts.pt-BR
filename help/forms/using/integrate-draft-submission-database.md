@@ -8,9 +8,24 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1533'
 ht-degree: 1%
 ---
 # Amostra para integrar o componente de rascunhos e envios ao banco de dados {#sample-for-integrating-drafts-submissions-component-with-database}
@@ -87,79 +102,79 @@ página em https://[*host*]:[*port*]/system/console/configMgr.
 1. A conexão do banco de dados pode ser feita por meio do Apache Sling Connection Pooled Data Source.
 1. Para conexão Apache Sling, localize e clique para abrir a **[!UICONTROL Fonte de dados agrupada da conexão Apache Sling]** no modo de edição, na Configuração do console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriedade</strong></td>
-   <td><strong>Valor</strong></td>
-  </tr>
-  <tr>
-   <td>Nome da fonte de dados</td>
-   <td><p>Um nome de fonte de dados para filtrar drivers do pool de fonte de dados</p> <p><strong>Observação: </strong><em>A implementação de exemplo usa FormsPortal como o nome da fonte de dados.</em></p> </td>
-  </tr>
-  <tr>
-   <td>Classe de driver JDBC</td>
-   <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
-   <td>URI de conexão JDBC<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_do_esquema</em>]</td>
-  </tr>
-  <tr>
-   <td>Nome de usuário</td>
-   <td>Um nome de usuário para autenticar e executar ações em tabelas do banco de dados</td>
-  </tr>
-  <tr>
-   <td>Senha</td>
-   <td>Senha associada ao nome de usuário</td>
-  </tr>
-  <tr>
-   <td>Isolamento de transação</td>
-   <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
-   <td>Máximo de conexões ativas</td>
-   <td>1000</td>
-  </tr>
-  <tr>
-   <td>Máximo de Conexões Ociosas</td>
-   <td>100</td>
-  </tr>
-  <tr>
-   <td>Mínimo de conexões ociosas</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Tamanho inicial</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Espera Máxima</td>
-   <td>100000</td>
-  </tr>
-  <tr>
-   <td>Teste ao tomar emprestado</td>
-   <td>Marcado</td>
-  </tr>
-  <tr>
-   <td>Teste enquanto ocioso</td>
-   <td>Marcado</td>
-  </tr>
-  <tr>
-   <td>Consulta de validação</td>
-   <td>Os valores de exemplo são SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
-   <td>Tempo limite de consulta de validação</td>
-   <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Propriedade</strong></td>
+    <td><strong>Valor</strong></td>
+    </tr>
+    <tr>
+    <td>Nome da fonte de dados</td>
+    <td><p>Um nome de fonte de dados para filtrar drivers do pool de fonte de dados</p> <p><strong>Observação: </strong><em>A implementação de exemplo usa FormsPortal como o nome da fonte de dados.</em></p> </td>
+    </tr>
+    <tr>
+    <td>Classe de driver JDBC</td>
+    <td>com.mysql.jdbc.Driver</td>
+    </tr>
+    <tr>
+    <td>URI de conexão JDBC<br /> </td>
+    <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_do_esquema</em>]</td>
+    </tr>
+    <tr>
+    <td>Nome de usuário</td>
+    <td>Um nome de usuário para autenticar e executar ações em tabelas do banco de dados</td>
+    </tr>
+    <tr>
+    <td>Senha</td>
+    <td>Senha associada ao nome de usuário</td>
+    </tr>
+    <tr>
+    <td>Isolamento de transação</td>
+    <td>READ_COMMITTED</td>
+    </tr>
+    <tr>
+    <td>Máximo de conexões ativas</td>
+    <td>1000</td>
+    </tr>
+    <tr>
+    <td>Máximo de Conexões Ociosas</td>
+    <td>100</td>
+    </tr>
+    <tr>
+    <td>Mínimo de conexões ociosas</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Tamanho inicial</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Espera Máxima</td>
+    <td>100000</td>
+    </tr>
+    <tr>
+    <td>Teste ao tomar emprestado</td>
+    <td>Marcado</td>
+    </tr>
+    <tr>
+    <td>Teste enquanto ocioso</td>
+    <td>Marcado</td>
+    </tr>
+    <tr>
+    <td>Consulta de validação</td>
+    <td>Os valores de exemplo são SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+    </tr>
+    <tr>
+    <td>Tempo limite de consulta de validação</td>
+    <td>10000</td>
+    </tr>
+    </tbody>
+    </table>
 
->[!NOTE]
->
->* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o provisionou e forneça as informações necessárias para configurar o pool de conexões JDBC.
->* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI da conexão JDBC deve ser o mesmo para todas as instâncias do autor e de publicação.
+   >[!NOTE]
+   >
+   >* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o provisionou e forneça as informações necessárias para configurar o pool de conexões JDBC.
+   >* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI da conexão JDBC deve ser o mesmo para todas as instâncias do autor e de publicação.
 
 1. Deixe as outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 

@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3330'
 ht-degree: 0%
-
 ---
-
 # Configurações do OSGi{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do AEM. É usado para controlar os pacotes compostos do AEM e sua configuração.
@@ -104,11 +113,11 @@ Certas configurações podem afetar o desempenho. Desative essas configurações
 
 * para instâncias de produção:
 
-   * desabilitar **Gerar Informações de Depuração**
+  * desabilitar **Gerar Informações de Depuração**
 
 **Instalador do Apache Sling JCR** Esses parâmetros provavelmente não precisam de configuração, mas podem ser úteis ao desenvolver ou depurar. Por exemplo, as pastas de instalação podem ser úteis para fazer check-in ou check-out ou para criar um pacote.
 
-* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e em que profundidade as pastas do repositório serão pesquisadas em busca de recursos a serem instalados. Quando um curinga é usado (como em .&#42;/instalar) todas as correspondências apropriadas são pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e em que profundidade as pastas do repositório serão pesquisadas em busca de recursos a serem instalados. Quando um curinga é usado (como em .&#42;/install), todas as correspondências apropriadas são pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Caminho de pesquisa**, lista de caminhos em que o jcrinstall procura recursos a serem instalados, juntamente com um número que indica o fator de ponderação desse caminho.
 
@@ -243,17 +252,17 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 
 * Para instâncias de produção:
 
-   * habilitar **Minify** (para remover caracteres CRLF e espaços em branco).
-   * habilite o **Gzip** (para permitir que os arquivos sejam compactados e acessados com uma solicitação).
-   * desabilitar **Depuração**
-   * desabilitar **Horário**
+  * habilitar **Minify** (para remover caracteres CRLF e espaços em branco).
+  * habilite o **Gzip** (para permitir que os arquivos sejam compactados e acessados com uma solicitação).
+  * desabilitar **Depuração**
+  * desabilitar **Horário**
 
 * Para o desenvolvimento de JS (especialmente quando há firebugging/depuração):
 
-   * desabilitar **Minify**
-   * habilite **Depurar** para separar os arquivos para depuração e usar com o fire bug.
-   * habilite **Timing** se estiver interessado em sincronização.
-   * habilite o console **Debug** para ver as mensagens de log do console JS.
+  * desabilitar **Minify**
+  * habilite **Depurar** para separar os arquivos para depuração e usar com o fire bug.
+  * habilite **Timing** se estiver interessado em sincronização.
+  * habilite o console **Debug** para ver as mensagens de log do console JS.
 
 >[!CAUTION]
 >
@@ -340,8 +349,8 @@ Para usuários selecionados, o nome de usuário extraído da solicitação HTTP 
 * **Formato**
 Indica o formato em que a ID de usuário é fornecida. Uso:
 
-   * `Basic` se a ID do usuário estiver codificada no formato de Autenticação Básica HTTP
-   * `AsIs` se a ID de usuário for fornecida em texto sem formatação ou qualquer valor de expressão regular aplicada, deverá ser usada como está ou qualquer expressão regular
+  * `Basic` se a ID do usuário estiver codificada no formato de Autenticação Básica HTTP
+  * `AsIs` se a ID de usuário for fornecida em texto sem formatação ou qualquer valor de expressão regular aplicada, deverá ser usada como está ou qualquer expressão regular
 
 **Filtro de depuração WCM CQ do dia** Isso é útil no desenvolvimento, pois permite o uso de sufixos como ?debug=layout ao acessar uma página. Por exemplo, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornece informações de layout que podem ser de interesse do desenvolvedor.
 

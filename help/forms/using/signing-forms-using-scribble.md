@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 9%
-
+source-wordcount: '772'
+ht-degree: 10%
 ---
-
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -45,13 +61,11 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
 
 * Quando a proporção da tela Assinatura Escrita for maior que 1, as informações de geolocalização serão adicionadas ao lado direito da tela Assinatura Escrita.
 
-![rabisco de assinatura-fundo](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+  ![rabisco de assinatura-fundo](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
-
->[!NOTE]
->
->As assinaturas são sempre salvas no formato PNG.
->
+  >[!NOTE]
+  >
+  >As assinaturas são sempre salvas no formato PNG.
 
 ## Configurar um formulário adaptável para usar a assinatura escritas {#configure-an-adaptive-form-to-use-scribble-signature}
 

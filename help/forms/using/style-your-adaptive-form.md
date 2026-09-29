@@ -6,13 +6,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 10%
-
+source-wordcount: '2193'
+ht-degree: 9%
 ---
-
 # Estilizar o formulário adaptável {#do-not-publish-style-your-adaptive-form}
 
 Saiba como criar um tema personalizado, estilizar componentes individuais e usar o Web Fonts em um tema.
@@ -351,7 +367,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fundo</td> 
+      <td>Histórico</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +441,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fundo</td> 
+      <td>Histórico</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -444,16 +460,12 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 É possível usar várias fontes para criar um formulário adaptável. Todos os dispositivos nos quais o formulário adaptável é exibido podem não ter as fontes usadas para criar o formulário adaptável. Você pode usar um serviço de fontes da Web para fornecer as fontes necessárias ao dispositivo de destino.
 
 [!DNL Adobe Fonts] é um serviço da Web Fonts. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Fonts] em um formulário adaptável:
-1. Navegue pela [biblioteca de fontes do Adobe](https://fonts.adobe.com/) e escolha a fonte para estilizar o formulário.
-<!--
->[!NOTE]
->
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
--->
 
->[!NOTE]
->
-> É possível adicionar tags ou filtros para refinar a lista de fontes.
+1. Navegue pela [biblioteca de fontes do Adobe](https://fonts.adobe.com/) e escolha a fonte para estilizar o formulário.
+
+   >[!NOTE]
+   >
+   > É possível adicionar tags ou filtros para refinar a lista de fontes.
 
 1. Clique no botão &lt;/> para adicionar a família a um projeto da Web, caso encontre uma fonte que goste.
 
@@ -463,31 +475,40 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 
    >[!NOTE]
    >
-   > Você só poderá adicionar fontes ao projeto da Web se elas tiverem o botão &lt;/> disponível.
+   >Você só poderá adicionar fontes ao projeto da Web se elas tiverem o botão &lt;/> disponível.
 
-2. Dê um nome ao projeto da Web.
-3. Marque as caixas de seleção para selecionar os pesos e estilos de fonte que deseja incluir.
+1. Dê um nome ao projeto da Web.
+1. Marque as caixas de seleção para selecionar os pesos e estilos de fonte que deseja incluir.
 
    ![adicionar uma biblioteca de fontes](assets/add-a-font-window.png)
 
-4. Selecione **Clique** para criar o projeto.
-5. Copie o código incorporado e o URL da tela.
+1. Selecione **Clique** para criar o projeto.
+1. Copie o código incorporado e o URL da tela.
+
    ![código incorporado e URL](assets/font-add-url.png)
 
-6. Clique em **Concluído** para fechar a janela do projeto Web.
-7. Faça logon na instância do AEM e vá para a URL `http://server:port/crx/de/index.jsp#`
-8. Crie uma estrutura de pastas no CRXDE, por exemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Vá para a pasta `clientlibs` recém-criada e adicione as propriedades `allowProxy` e `categories`.
-10. Navegue até `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crie uma pasta css.
-11. Vá para a pasta CSS criada e crie um arquivo. Por exemplo, crie um arquivo como `fonts.css` e cole o código incorporado junto com a URL.
-    ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Salve as alterações.
+1. Clique em **Concluído** para fechar a janela do projeto Web.
+1. Faça logon na instância do AEM e vá para a URL `http://server:port/crx/de/index.jsp#`
+1. Crie uma estrutura de pastas no CRXDE, por exemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+1. Vá para a pasta `clientlibs` recém-criada e adicione as propriedades `allowProxy` e `categories`.
+1. Navegue até `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crie uma pasta css.
+1. Vá para a pasta CSS criada e crie um arquivo. Por exemplo, crie um arquivo como `fonts.css` e cole o código incorporado junto com a URL.
+
+   ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. Salve as alterações.
 
 >[!NOTE]
 >
 > Para usar as fontes personalizadas adicionadas em um Formulário Adaptável, verifique se o nome da biblioteca do cliente na **[!UICONTROL Categoria da Biblioteca do Cliente]** está alinhado com o nome especificado na opção de categorias da pasta clientlib.
 
 As fontes incluídas agora podem ser acessadas no Formulário adaptável por meio da seguinte biblioteca de cliente de fontes personalizadas.
+
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 
 <!--
