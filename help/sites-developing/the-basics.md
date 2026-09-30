@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3379'
 ht-degree: 0%
 ---
 # Conceitos principais do AEM {#aem-core-concepts}
@@ -49,11 +49,11 @@ Também é recomendável que você leia e siga as [Diretrizes e Práticas Recome
 
 ## Repositório de conteúdo Java™ {#java-content-repository}
 
-O padrão Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica uma maneira independente de fornecedor e de implementação para acessar conteúdo bidirecionalmente em nível granular em um repositório de conteúdo.
+O padrão Java™ Content Repository (JCR), [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), especifica uma maneira independente de fornecedor e de implementação para acessar conteúdo bidirecionalmente em nível granular em um repositório de conteúdo.
 
 O lead da especificação é da Adobe Research (Switzerland) AG.
 
-O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
+O pacote [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -294,7 +294,7 @@ Se você chamar a representação (o script) diretamente, ocultará o recurso de
 
 ### API Sling {#sling-api}
 
-Usa o pacote da API do Sling, org.apache.sling.&ast;, e as bibliotecas de tags.
+Usa o pacote da API do Sling, org.apache.sling.&amp;ast;, e as bibliotecas de tags.
 
 ### Referenciando elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -345,7 +345,7 @@ Os seguintes aspectos são de interesse para o desenvolvimento:
 
 **Item** Um item é um nó ou uma propriedade.
 
-Para obter informações detalhadas sobre como manipular objetos Item, consulte os [documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) da Interface javax.jcr.Item
+Para obter informações detalhadas sobre como manipular objetos Item, consulte os [documentos Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) da Interface javax.jcr.Item
 
 **Nós (e suas propriedades)** Nós e suas propriedades são definidos na especificação da API JCR 2.0 (JSR 283). Eles armazenam conteúdo, definições de objeto, scripts de renderização e outros dados.
 
@@ -361,7 +361,7 @@ Por exemplo, para obter as propriedades do nó atual, é possível usar o seguin
 
 O currentNode é o objeto do nó atual.
 
-Para obter mais informações sobre como manipular objetos Node, consulte os [documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Para obter mais informações sobre como manipular objetos Node, consulte os [documentos Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** No AEM, todas as entradas de usuário são gerenciadas por widgets. Geralmente, são usados para controlar a edição de um conteúdo.
 
@@ -400,7 +400,7 @@ Por exemplo, para obter o nome da página atual, é possível usar o seguinte c�
 
 S`tring pageName = currentPage.getName();`
 
-CurrentPage é o objeto da página atual. Para obter mais informações sobre como manipular objetos Page, consulte os [documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
+CurrentPage é o objeto da página atual. Para obter mais informações sobre como manipular objetos Page, consulte os [documentos Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gerenciador de páginas** O gerenciador de páginas é uma interface que fornece métodos para operações em nível de página.
 
@@ -408,7 +408,7 @@ Por exemplo, para obter a página que contém um recurso, é possível usar o se
 
 Página myPage = pageManager.getContainingPage(myResource);
 
-O pageManager é o objeto do gerenciador de páginas e o myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte os [documentos Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
+O pageManager é o objeto do gerenciador de páginas e o myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte os [documentos Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estrutura no repositório {#structure-within-the-repository}
 

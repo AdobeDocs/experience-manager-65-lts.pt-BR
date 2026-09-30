@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 23%
 ---
 # Suporte a fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
@@ -178,8 +178,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
->* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -273,7 +273,7 @@ O conteúdo associado não está exposto no momento.
 
 O uso pode ser diferente dependendo se você está usando um ambiente de autor ou de publicação no AEM, juntamente com seu caso de uso específico.
 
-* É altamente recomendável que a criação esteja associada a uma instância de autor ([&#x200B; e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação esteja associada a uma instância de autor ([ e, no momento, não há meios de replicar um fragmento para publicar usando esta API](/help/assets/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
   * Armazenar e entregar a partir de uma instância de criação do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
@@ -286,7 +286,7 @@ O uso pode ser diferente dependendo se você está usando um ambiente de autor o
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Para obter mais detalhes, consulte a [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
@@ -410,7 +410,7 @@ Retornado quando:
 
 Consulte esta página para obter referências detalhadas de API:
 
-* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
   * [Recursos disponíveis](/help/assets/mac-api-assets.md#assets)
@@ -420,4 +420,4 @@ Consulte esta página para obter referências detalhadas de API:
 Para obter mais informações, consulte:
 
 * [Documentação da API HTTP do Assets](/help/assets/mac-api-assets.md)
-* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessão do AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

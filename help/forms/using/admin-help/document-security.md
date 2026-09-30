@@ -20,9 +20,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 0%
 ---
 # Sobre a segurança de documentos {#about-document-security}
@@ -259,7 +259,7 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   Usar conjuntos de políticas facilita a atribuição e o gerenciamento de políticas relacionadas a usuários específicos em uma organização ou departamento. Por exemplo, conjuntos de políticas separados para o departamento de finanças e recursos humanos podem ajudar a gerenciar e aplicar políticas relacionadas facilmente a documentos designados para departamentos correspondentes.
 
-* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
+* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
 
   * Forneça controle de acesso centralizado para documentos em sua organização.
 
@@ -267,7 +267,7 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   * Use um mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa, além do processo padrão de avaliação de políticas. Por exemplo, quando o serviço determina se um usuário pode imprimir um documento protegido por política, ele pode usar o processo padrão de avaliação de política. E também pode usar o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa.
 
-  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantenha os conjuntos de políticas em um número limitado:** Vários fatores levam ao crescimento constante de políticas e conjuntos de políticas. Alguns fatores comuns são:
 
@@ -283,4 +283,4 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   >[!NOTE]
   >
-  >Você pode usar a API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar no máximo 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de editor de documentos e, em seguida, cria e retorna uma lista de nomes de conjuntos de políticas exclusivos associados às políticas recuperadas para você. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.
+  >Você pode usar a API [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar no máximo 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de editor de documentos e, em seguida, cria e retorna uma lista de nomes de conjuntos de políticas exclusivos associados às políticas recuperadas para você. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.

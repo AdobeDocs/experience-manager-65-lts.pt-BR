@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 1%
 ---
 # Componentes do Adobe Experience Manager (AEM) - Noções básicas{#aem-components-the-basics}
@@ -53,7 +53,7 @@ Antes de qualquer discussão séria começar sobre o desenvolvimento de componen
 
 * **Interface do usuário habilitada para toque**
   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface de usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface de usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* Interface clássica do **&#x200B;**
+* Interface clássica do ****
 Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
 
 Os componentes podem ser implementados para suportar a interface habilitada para toque, a interface clássica ou ambas. Ao observar uma instância padrão, você também verá componentes prontos para uso que foram originalmente projetados para a interface clássica, para a interface habilitada para toque ou para ambas.
@@ -210,7 +210,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 
 O ícone ou a abreviação do componente é definido por meio das propriedades JCR do componente quando ele é criado pelo desenvolvedor. Essas propriedades são avaliadas na seguinte ordem e a primeira propriedade válida encontrada é usada.
 
-1. `cq:icon` - Propriedade de cadeia de caracteres apontando para um ícone padrão na [biblioteca de interface do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) para ser exibida no navegador de componentes
+1. `cq:icon` - Propriedade de cadeia de caracteres apontando para um ícone padrão na [biblioteca de interface do Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) para ser exibida no navegador de componentes
    * Use o valor do atributo HTML do ícone Coral.
 1. `abbreviation` - Propriedade de cadeia de caracteres para personalizar a abreviação do nome do componente no navegador de componentes
    * A abreviação deve ser limitada a dois caracteres.
@@ -601,7 +601,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no **&#x200B; CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
+* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no** CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1042,7 +1042,7 @@ O exemplo a seguir é equivalente à configuração `REFRESH_INSERTED`:
 
 >[!NOTE]
 >
->Na interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte a seção de eventos `before<action>` e `after<action>` da documentação dos widgets [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
+>Na interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte a seção de eventos `before<action>` e `after<action>` da documentação dos widgets [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) e [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Com a seguinte configuração, a página é atualizada depois que o componente é excluído, editado, inserido ou movido:
 

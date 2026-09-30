@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '790'
 ht-degree: 0%
 ---
 # Teste da interface do usuário{#testing-your-ui}
@@ -39,7 +39,7 @@ A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de teste escrita em Ja
 
 >[!NOTE]
 >
->Consulte a [documentação](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) da Hobbes.js para obter detalhes completos sobre a API.
+>Consulte a [documentação](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) da Hobbes.js para obter detalhes completos sobre a API.
 
 ## Estrutura dos ensaios {#structure-of-tests}
 
@@ -112,7 +112,7 @@ Os Conjuntos de testes são executados sequencialmente na ordem em que aparecem 
 
 O procedimento a seguir o orienta durante a criação e execução de um Conjunto de Testes usando [conteúdo do We.Retail](/help/sites-developing/we-retail.md), mas você pode modificar facilmente o teste para usar uma página da Web diferente.
 
-Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a [documentação da API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a [documentação da API Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Abra o CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Clique com o botão direito do mouse na pasta `/etc/clientlibs` e clique em **Criar > Criar pasta**. Digite `myTests` para o nome e clique em **OK**.

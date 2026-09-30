@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1673'
 ht-degree: 0%
 ---
 # Integração de serviços com o console JMX{#integrating-services-with-the-jmx-console}
@@ -47,11 +47,11 @@ Além de definir a interface de gerenciamento, a interface também define a inte
 
 ### Usando anotações para fornecer informações sobre o MBean {#using-annotations-to-provide-mbean-information}
 
-O pacote [com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornece várias anotações e classes para fornecer facilmente metadados MBean ao console JMX. Use essas anotações e classes em vez de adicionar informações diretamente ao objeto MBeanInfo do MBean.
+O pacote [com.adobe.granite.jmx.annotation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornece várias anotações e classes para fornecer facilmente metadados MBean ao console JMX. Use essas anotações e classes em vez de adicionar informações diretamente ao objeto MBeanInfo do MBean.
 
 **Anotações**
 
-Adicione anotações à interface de gerenciamento para especificar metadados MBean. As informações aparecem no console JMX para cada classe de implementação implantada. As seguintes anotações estão disponíveis (para obter informações completas, consulte o [com.adobe.granite.jmx.annotation JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Adicione anotações à interface de gerenciamento para especificar metadados MBean. As informações aparecem no console JMX para cada classe de implementação implantada. As seguintes anotações estão disponíveis (para obter informações completas, consulte o [com.adobe.granite.jmx.annotation JavaDocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Descrição:** fornece uma descrição da classe ou do método MBean. Quando usada na declaração da classe, a descrição aparece na página Console JMX para o MBean. Quando usada em um método, a descrição aparece como texto em foco para o atributo ou operação correspondente.
 * **Impacto:** o impacto de um método. Valores de parâmetro válidos são os campos definidos por [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).

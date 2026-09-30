@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5032'
+source-wordcount: '5034'
 ht-degree: 1%
 ---
 # Criar um site completo (JSP){#create-a-fully-featured-website-jsp}
@@ -532,9 +532,9 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
    * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
-   * O [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
+   * O [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -1539,6 +1539,6 @@ Para este componente, você pode definir vários parâmetros nos modos de ediç�
    ```
 
 1. Salve as alterações.
-1. No navegador, recarregue a página **&#x200B; Produtos &#x200B;**. A página inteira se parece com o seguinte:
+1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

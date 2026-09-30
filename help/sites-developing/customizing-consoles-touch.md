@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 1%
 ---
 # Personalização dos Consoles {#customizing-the-consoles}
@@ -48,7 +48,7 @@ Eles podem ser usados de várias maneiras para estender os consoles do AEM. Uma 
 >
 >* Usando e criando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando e criando [sobreposições](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)
 >
 
 
@@ -73,7 +73,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 >[!NOTE]
 >
->Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -159,7 +159,7 @@ Para personalizar as colunas na exibição de lista:
 
 1. Opcionalmente:
 
-   * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
+   * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.

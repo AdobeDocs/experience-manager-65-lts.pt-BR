@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 1%
 ---
 # Usar a Fusão de recursos do Sling no AEM{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ O Sling Resource Merger combina recursos de sobreposição e substituição (e s
 
 >[!CAUTION]
 >
->O Sling Resource Merger e métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html). Essa situação também significa que ela só é apropriada para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
+>O Sling Resource Merger e métodos relacionados só podem ser usados com o [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html). Essa situação também significa que ela só é apropriada para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
 >
 >Para sobrepor ou substituir outras áreas (incluindo outras partes de um componente habilitado para toque ou a interface clássica), copie o nó e a estrutura apropriados do original. Coloque a cópia onde você define a personalização.
 
@@ -221,7 +221,7 @@ Com a funcionalidade padrão, esses casos de uso permitem fazer o seguinte:
      * tipo: `String[]`
      * value: uma lista dos nós filhos (conforme definido em `/libs`) para ocultar/ignorar
 
-     O curinga &ast; pode ser usado para ocultar ou ignorar todos os nós filhos.
+     O curinga &amp;ast; pode ser usado para ocultar ou ignorar todos os nós filhos.
 
 * **Reordenar nós**
 

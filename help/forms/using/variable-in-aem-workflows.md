@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2214'
 ht-degree: 0%
 ---
 # Variáveis em workflows do AEM Forms{#variables-in-aem-forms-workflows}
@@ -46,20 +46,20 @@ Nos modelos de fluxo de trabalho do AEM, é possível:
 * [Defina um valor para a variável](../../forms/using/variable-in-aem-workflows.md#set-a-variable) usando a etapa de fluxo de trabalho Definir Variável.
 * [Use a variável](../../forms/using/variable-in-aem-workflows.md#use-a-variable) em todas as etapas do fluxo de trabalho do AEM Forms para recuperar o valor armazenado e nas etapas OR Split e Goto para definir uma expressão de roteamento.
 
-As variáveis são uma extensão da interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existente. Você pode usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
+As variáveis são uma extensão da interface [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existente. Você pode usar [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
 
 ## Criar uma variável {#create-a-variable}
 
 Você cria variáveis usando a seção Variáveis disponível no sidekick do modelo de fluxo de trabalho. As variáveis de fluxo de trabalho do AEM são compatíveis com os seguintes tipos de dados:
 
 * **Tipos de dados primitivos**: Long, Double, Boolean, Date e String
-* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
+* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
 
 >[!NOTE]
 >
 >Os fluxos de trabalho são compatíveis apenas com o formato ISO8601 para variáveis do tipo Date.
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
 
 Execute as seguintes etapas para criar uma variável:
 
@@ -197,7 +197,7 @@ Todas as etapas do fluxo de trabalho do AEM Forms são compatíveis com variáve
 
 ### Etapas de fluxo de trabalho sem suporte para variáveis {#workflow-steps-without-support-for-variables}
 
-Você pode usar a interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não oferecem suporte a variáveis.
+Você pode usar a interface [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não oferecem suporte a variáveis.
 
 #### Recuperar o valor da variável {#retrieve-the-variable-value}
 
@@ -211,7 +211,7 @@ Use as seguintes APIs no Script ECMA para recuperar valores para variáveis exis
 | Modelo de dados de formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
 
 **Exemplo**
 
@@ -241,7 +241,7 @@ atualiza o valor da variável **salário** para 50000.
 
 Você pode usar uma API para definir variáveis e passá-las para chamar instâncias de fluxo de trabalho.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) usa model, wfData e metaData como argumentos. Use MetaDataMap para definir o valor da variável.
+[workflowSession.startWorkflow](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) usa model, wfData e metaData como argumentos. Use MetaDataMap para definir o valor da variável.
 
 Nesta API, a variável **variableName** está definida como **value** usando metaData.put(variableName, value);
 

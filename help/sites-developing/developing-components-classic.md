@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2449'
 ht-degree: 1%
 ---
 # Desenvolvimento de componentes do Adobe Experience Manager (AEM) (Interface clássica){#developing-aem-components-classic-ui}
@@ -101,7 +101,7 @@ Há três métodos para acessar o conteúdo no WCM do AEM:
 
 * Pelo objeto `currentPage` introduzido em `global.jsp`:
 
-  O objeto `currentPage` é uma instância de uma página (consulte [API AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). A classe de página fornece alguns métodos para acessar conteúdo.
+  O objeto `currentPage` é uma instância de uma página (consulte [API AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). A classe de página fornece alguns métodos para acessar conteúdo.
 
   Exemplo: `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ Para desenvolver novos componentes para o AEM com base em um componente existent
    >
    >Um componente para o:
    >
-   >* A interface habilitada para toque usa componentes do [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-   >* A interface clássica usa [widgets ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* A interface habilitada para toque usa componentes do [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+   >* A interface clássica usa [widgets ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >

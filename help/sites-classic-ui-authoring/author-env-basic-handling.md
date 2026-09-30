@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1189'
 ht-degree: 4%
 ---
 # Manuseio básico{#basic-handling}
@@ -150,7 +150,7 @@ O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore
 >em:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin na API do Widget do CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
+>Consulte [SiteAdmin na API do Widget do CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
 
 ## Informações da página no console Sites {#page-information-on-the-websites-console}
 

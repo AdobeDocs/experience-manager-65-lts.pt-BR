@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '465'
 ht-degree: 5%
 ---
 # Personalização do console de boas-vindas (interface clássica){#customizing-the-welcome-console-classic-ui}
@@ -197,7 +197,7 @@ Consulte a [seção Segurança](/help/sites-administering/security.md) para obte
 
 ### Mecanismo de seleção de link {#link-selection-mechanism}
 
-No `/libs/cq/core/components/welcome/welcome.jsp`, é usado o [ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta nos nós que possuem a propriedade:
+No `/libs/cq/core/components/welcome/welcome.jsp`, é usado o [ConsoleUtil](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta nos nós que possuem a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`
 

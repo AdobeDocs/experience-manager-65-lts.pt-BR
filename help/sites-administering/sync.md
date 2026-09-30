@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2352'
 ht-degree: 3%
 ---
 # Sincronização de usuário{#user-synchronization}
@@ -45,7 +45,7 @@ A partir do AEM 6.1, quando a sincronização de usuários é ativada, os dados 
 
 ## Distribuição Sling {#sling-distribution}
 
-Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
+Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo do Oak JCR, e são acessados usando a [API do Oak](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Com atualizações pouco frequentes, é razoável que os dados do usuário sejam sincronizados com outras instâncias de Publicação usando a [Distribuição de conteúdo de sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (distribuição de sling).
 
 Os benefícios da sincronização de usuários usando a distribuição Sling, em comparação à replicação tradicional, são:
 
@@ -491,7 +491,7 @@ Como membro do grupo `administrators`, o usuário autorizado deve ter os seguint
 
 Se a ID do Sling corresponder entre duas ou mais instâncias de Publicação, a sincronização do grupo de usuários falhará.
 
-Consulte a seção [9. Identificador exclusivo do Sling &#x200B;](#unique-sling-id)
+Consulte a seção [9. Identificador exclusivo do Sling ](#unique-sling-id)
 
 ### Sincronizando usuários e grupos de usuários manualmente {#manually-syncing-users-and-user-groups}
 

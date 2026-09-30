@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 ---
 # Sobreposições{#overlays}
@@ -35,7 +35,7 @@ Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e 
 
 Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são implementadas e usadas:
 
-* AEM 6.0 e posteriores - para sobreposições relacionadas ao [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
+* AEM 6.0 e posteriores - para sobreposições relacionadas ao [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
 
   * Método
 
@@ -66,13 +66,13 @@ Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são 
 
 >[!CAUTION]
 >
->O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
+>O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
 >
 >As sobreposições para outras áreas (incluindo a interface clássica) envolvem a cópia do nó apropriado e de toda a subestrutura e, em seguida, fazem as alterações necessárias.
 
 Sobreposições são o método recomendado para muitas alterações, como [configurar seus consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [criar a categoria de seleção para o navegador de ativos no painel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (usado ao criar páginas). Elas são necessárias como:
 
-* ***Não* fazer alterações na ramificação `/libs`**&#x200B;As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+* ***Não* fazer alterações na ramificação `/libs`**As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
 
   * atualizar na sua instância
   * aplicar um hotfix

@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 1%
 ---
 # Estrutura da interface do usuário habilitada para toque do Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
@@ -176,4 +176,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.
+Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.

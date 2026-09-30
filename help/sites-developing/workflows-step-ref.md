@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3270'
 ht-degree: 2%
 ---
 # Referência da Etapa do fluxo de trabalho {#workflow-step-reference}
@@ -349,7 +349,7 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 
 1. **Definição de Caixa de Diálogo de Exemplo**
 
-   O trecho de código XML a seguir representa uma caixa de diálogo que armazena um valor `String` no nó `watchEmail` do conteúdo da carga. O nó de título representa o componente [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
+   O trecho de código XML a seguir representa uma caixa de diálogo que armazena um valor `String` no nó `watchEmail` do conteúdo da carga. O nó de título representa o componente [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -437,7 +437,7 @@ Crie um serviço OSGi ou um ECMAScript que selecione um usuário ao qual atribui
 
 * **Serviço OSGi**
 
-  Os serviços devem implementar a interface [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). A interface define os seguintes membros:
+  Os serviços devem implementar a interface [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). A interface define os seguintes membros:
 
   * Campo `SERVICE_PROPERTY_LABEL`: use este campo para especificar o nome do seletor de participantes. O nome aparece em uma lista de seletores de participantes disponíveis nas propriedades da **Etapa dinâmica de participante**.
 

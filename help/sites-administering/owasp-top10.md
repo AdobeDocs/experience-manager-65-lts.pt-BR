@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 3%
 ---
 # OWASP Top 10{#owasp-top}
@@ -74,7 +74,7 @@ Dados confidenciais, como credenciais de terceiros, são armazenados em formato 
 
 ## &#x200B;8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## &#x200B;9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 

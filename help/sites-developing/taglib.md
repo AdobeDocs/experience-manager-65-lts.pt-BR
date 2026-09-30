@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 0%
@@ -49,7 +49,7 @@ O global também declara a [biblioteca de Sling](/help/sites-developing/taglib.m
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-A tag `<ui:includeClientLib>` Inclui uma biblioteca de cliente html AEM, que pode ser uma js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no jsp. Esta marca é um wrapper de conveniência em torno da interface de serviço ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+A tag `<ui:includeClientLib>` Inclui uma biblioteca de cliente html AEM, que pode ser uma js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no jsp. Esta marca é um wrapper de conveniência em torno da interface de serviço ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Ela tem os seguintes atributos:
 

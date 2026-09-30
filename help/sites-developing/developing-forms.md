@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 0%
 ---
 # Desenvolvimento do Forms (interface clássica){#developing-forms-classic-ui}
@@ -48,7 +48,7 @@ Além de [desenvolver novos componentes](/help/sites-developing/developing-compo
 
 >[!NOTE]
 >
->Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
+>Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
 
 ## Pré-carregando Valores de Formulário {#preloading-form-values}
 
@@ -324,7 +324,7 @@ Quando a configuração Mostrar/Ocultar é inválida, a configuração é fornec
 
 ### Desenvolvimento de scripts para uso com o Forms {#developing-scripts-for-use-with-forms}
 
-Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Você pode usar isso para ações como chamar um serviço antes que o formulário seja enviado e cancelar o serviço se ele falhar:
 

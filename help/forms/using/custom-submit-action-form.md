@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1698'
 ht-degree: 1%
 ---
 # Gravação da ação enviar personalizada para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html).
 
 Os formulários adaptáveis exigem ações de envio para processar dados especificados pelo usuário. A ação Enviar determina a tarefa executada nos dados enviados por meio de um formulário adaptável. O Adobe Experience Manager (AEM) inclui [ações Enviar prontas para uso](../../forms/using/configuring-submit-actions.md) que demonstram tarefas personalizadas que você pode executar usando os dados enviados pelo usuário. Por exemplo, você pode executar tarefas, como enviar emails ou armazenar dados.
 
@@ -121,7 +121,7 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
 ## Criar uma ação enviar personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém a ação Enviar armazenar conteúdo (desaprovado) pronta para uso que salva os dados no repositório do CRX. Além disso, o CQ fornece uma API de [Email](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) que pode ser usada para enviar emails. Antes de usar a API de Email, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR&wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
+Execute as seguintes etapas para criar uma ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém a ação Enviar armazenar conteúdo (desaprovado) pronta para uso que salva os dados no repositório do CRX. Além disso, o CQ fornece uma API de [Email](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) que pode ser usada para enviar emails. Antes de usar a API de Email, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e o nome store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 
@@ -157,7 +157,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
    Adicione o script post.POST.jsp à ação. (/apps/custom_submit_action/store_and_mail/).
 
-   Execute a ação Armazenar predefinida (script post.POST.jsp). Use a API [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
+   Execute a ação Armazenar predefinida (script post.POST.jsp). Use a API [FormsHelper.runAction](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -167,7 +167,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
    `String mailTo = properties.get("mailTo");`
 
-   Por fim, use a API de email do CQ para enviar o email. Use a classe [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de Email conforme mostrado abaixo:
+   Por fim, use a API de email do CQ para enviar o email. Use a classe [SimpleEmail](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de Email conforme mostrado abaixo:
 
    >[!NOTE]
    >

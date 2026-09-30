@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # Inicialização de fluxos de trabalho{#starting-workflows}
@@ -44,13 +44,13 @@ Ao administrar workflows, você pode iniciá-los usando vários métodos:
 >
 >* [Aplicando Fluxos de Trabalho a Páginas](/help/sites-authoring/workflows-applying.md)
 >* [Como aplicar fluxos de trabalho a ativos do DAM](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/br/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Projetos de tradução](/help/sites-administering/tc-manage.md)
 >
 
 ## Modelos do fluxo de trabalho {#workflow-models}
 
-Você pode iniciar um fluxo de trabalho [&#x200B; com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
+Você pode iniciar um fluxo de trabalho [ com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
 
 ## Iniciadores de fluxos de trabalho {#workflows-launchers}
 
@@ -183,7 +183,7 @@ Um pacote de workflow:
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
      * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
-     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 

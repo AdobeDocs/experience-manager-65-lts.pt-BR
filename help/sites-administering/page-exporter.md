@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1076'
 ht-degree: 1%
 ---
 # O exportador da página{#the-page-exporter}
@@ -73,7 +73,7 @@ Selecione o modelo necessário para o site e confirme com **OK**.
 
 ## Criação de uma configuração do Exportador de página para seu site {#creating-a-page-exporter-configuration-for-your-site}
 
-O exportador da página é baseado na [estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). As configurações disponíveis na caixa de diálogo **Propriedades da página** são modelos de exportação que definem as dependências necessárias para uma página.
+O exportador da página é baseado na [estrutura de sincronização de conteúdo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). As configurações disponíveis na caixa de diálogo **Propriedades da página** são modelos de exportação que definem as dependências necessárias para uma página.
 
 Quando uma exportação de página é acionada, o modelo de exportação é referenciado. O caminho da página e o caminho de design são aplicados dinamicamente. O arquivo zip é então criado usando a funcionalidade padrão Sincronização de conteúdo.
 
@@ -117,7 +117,7 @@ Quando seu template estiver configurado, disponibilize-o:
 
 ### Nós de configuração do exportador da página {#page-exporter-configuration-nodes}
 
-O modelo consiste em uma estrutura de nó, pois usa a [estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Cada nó tem uma propriedade `type` que define uma ação específica no processo de criação do arquivo zip.
+O modelo consiste em uma estrutura de nó, pois usa a [estrutura de sincronização de conteúdo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Cada nó tem uma propriedade `type` que define uma ação específica no processo de criação do arquivo zip.
 
 <!--
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
@@ -188,7 +188,7 @@ Configurações personalizadas também são possíveis.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Para atender a alguns requisitos específicos, implemente um [manipulador de atualização personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Para atender a alguns requisitos específicos, implemente um [manipulador de atualização personalizado](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!--
 To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
@@ -196,7 +196,7 @@ To meet some specific requirements, you may need to implement a custom `type` pr
 
 ## Exportar programaticamente uma página {#programmatically-exporting-a-page}
 
-Para exportar uma página de forma programática, você pode usar o serviço OSGI [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Esse serviço permite:
+Para exportar uma página de forma programática, você pode usar o serviço OSGI [PageExporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html). Esse serviço permite:
 
 * Exportar uma página e gravar na resposta do servlet HTTP.
 * Exporte uma página e salve o arquivo zip em um local específico.

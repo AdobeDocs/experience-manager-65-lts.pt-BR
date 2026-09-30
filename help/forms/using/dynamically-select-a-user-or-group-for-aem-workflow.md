@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 0%
 ---
 # Selecionar dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
@@ -131,9 +131,9 @@ function getAdobeSignRecipients() {
 
 ## Usar interface Java para escolher um usuário ou grupo dinamicamente {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Você pode usar a interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para as etapas Assinar e Atribuir tarefa da Adobe. Você pode criar um pacote OSGi que use a interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implantá-lo no AEM Forms Server. Disponibiliza a opção para seleção nos componentes `Assign Task` e Adobe Sign do fluxo de trabalho do AEM.
+Você pode usar a interface Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para as etapas Assinar e Atribuir tarefa da Adobe. Você pode criar um pacote OSGi que use a interface Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implantá-lo no AEM Forms Server. Disponibiliza a opção para seleção nos componentes `Assign Task` e Adobe Sign do fluxo de trabalho do AEM.
 
-Você precisa dos arquivos jar [AEM Forms Client SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) e jar [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Você precisa dos arquivos jar [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) e jar [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar a amostra de código listada abaixo. Adicione esses arquivos jar como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Novo projeto]**.
 1. Na tela Selecionar um assistente, selecione **[!UICONTROL Projeto Maven]** e clique em **[!UICONTROL Avançar]**.
@@ -240,7 +240,7 @@ Você precisa dos arquivos jar [AEM Forms Client SDK](https://experienceleague.a
    </project>
    ```
 
-1. Adicione o código-fonte que usa a interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para a etapa Atribuir tarefa. Para obter o código de exemplo, consulte [Amostra para escolher dinamicamente um usuário ou grupo usando uma interface Java](#-sample-scripts-for).
+1. Adicione o código-fonte que usa a interface Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para escolher dinamicamente um usuário ou grupo para a etapa Atribuir tarefa. Para obter o código de exemplo, consulte [Amostra para escolher dinamicamente um usuário ou grupo usando uma interface Java](#-sample-scripts-for).
 1. Abra um prompt de comando e navegue até o diretório que contém o projeto de pacote OSGi. Use o seguinte comando para criar o pacote OSGi:
 
    `mvn clean install`

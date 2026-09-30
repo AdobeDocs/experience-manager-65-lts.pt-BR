@@ -27,9 +27,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1033'
 ht-degree: 0%
 ---
 # Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
@@ -175,5 +175,5 @@ Você deve ser um administrador do AEM para excluir dados de usuários das inst�
 Também é possível usar APIs para acessar e remover nós e propriedades. Consulte os documentos a seguir para obter mais informações.
 
 * [Como acessar programaticamente o JCR do AEM](/help/sites-developing/access-jcr.md)
-* [Removendo nós e propriedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Referência da API](https://helpx.adobe.com/br/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Removendo nós e propriedades](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Referência da API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
