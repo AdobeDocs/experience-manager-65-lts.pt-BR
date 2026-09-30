@@ -10,13 +10,31 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: aa257d33-302c-4a01-be48-e4ff56700bfa
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1398'
-ht-degree: 0%
-
+ht-degree: 2%
 ---
-
 # Perfis para processamento de metadados, imagens e vídeos{#profiles-for-processing-metadata-images-and-videos}
 
 Um perfil é uma fórmula para quais opções serão aplicadas a ativos que são carregados em uma pasta. Por exemplo, você pode especificar o perfil de metadados e o perfil de codificação de vídeo a serem aplicados aos ativos de vídeo carregados. Ou qual perfil de imagens aplicar aos ativos de imagem para cortá-los corretamente.

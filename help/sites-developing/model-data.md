@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1780'
 ht-degree: 0%
-
 ---
-
 # Modelagem de dados - Modelo de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Origem {#source}
@@ -173,9 +182,9 @@ Eu acho que há casos de uso em que um sistema realmente não pode funcionar se 
 
 Se um modelo de conteúdo expor algo que mesmo remotamente cheira a um arquivo ou pasta, tento usar (ou estender de) `nt:file`, `nt:folder` e `nt:resource`.
 
-Em minha experiência, muitos aplicativos genéricos permitem a interação implícita com nt:folder e nt:files e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos, como CIFS ou WebDAV sobre JCR, torna-se implícita.
+Em minha experiência, muitos aplicativos genéricos permitem a interação com nt:folder e nt:files implicitamente e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos, como CIFS ou WebDAV sobre JCR, torna-se implícita.
 
-Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você tiver vários &quot;arquivos&quot;, nt:folder é um bom lugar para armazená-los.
+Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você puder ter vários &quot;arquivos&quot;, um nt:folder é um bom lugar para armazená-los.
 
 Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;author&quot; ou &quot;description&quot;, estenda `nt:resource`, não o `nt:file`. Eu raramente estendo nt:file e frequentemente estendo `nt:resource`.
 

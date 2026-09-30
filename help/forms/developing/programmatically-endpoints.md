@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 1%
-
 ---
-
 # Gerenciando Endpoints Programaticamente {#programmatically-managing-endpoints}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -948,8 +963,8 @@ Adicione um endpoint TaskManager usando a API Java:
 
    * Crie um objeto `CreateEndpointCategoryInfo` usando seu construtor e transmitindo os seguintes valores:
 
-      * Um valor de string que especifica o valor do identificador da categoria
-      * Um valor de string que especifica a descrição da categoria
+     * Um valor de string que especifica o valor do identificador da categoria
+     * Um valor de string que especifica a descrição da categoria
 
    * Crie a categoria invocando o método `createEndpointCategory` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointCategoryInfo`. Este método retorna um objeto `EndpointCategory` que representa a nova categoria.
 
@@ -1068,8 +1083,8 @@ Modifique um endpoint usando a API Java:
    * Crie um objeto `ModifyEndpointInfo` invocando seu construtor.
    * Para cada valor de configuração a ser definido, chame o método `setConfigParameterAsText` do objeto `ModifyEndpointInfo`. Por exemplo, para definir o valor de configuração da url, chame o método `setConfigParameterAsText` do objeto `ModifyEndpointInfo` e passe os seguintes valores:
 
-      * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir o valor de configuração `url`, especifique `url`.
-      * Um valor de string que especifica o valor do valor de configuração. Para definir um valor para o valor de configuração `url`, especifique o local da pasta monitorada.
+     * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir o valor de configuração `url`, especifique `url`.
+     * Um valor de string que especifica o valor do valor de configuração. Para definir um valor para o valor de configuração `url`, especifique o local da pasta monitorada.
 
    * Invoque o método `modifyEndpoint` do objeto `EndpointRegistryClient` e passe o objeto `ModifyEndpointInfo`.
 

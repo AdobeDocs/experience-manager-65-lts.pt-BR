@@ -4,13 +4,23 @@ description: O AEM Forms é compatível com funções personalizadas que permite
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '1071'
 ht-degree: 0%
-
 ---
-
 # Funções personalizadas no Adaptive Forms
 
 ## Introdução
@@ -61,7 +71,7 @@ Uma função privada não está incluída como uma função personalizada.
 
 * **Nome**
 Sintaxe: `@name funcName <Function Name>`
-Alternativamente, o `,` é possível usar o `@function funcName <Function Name>` **ou o** `@func` `funcName <Function Name>`.
+Alternativamente `,` você pode usar: `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
   `funcName` é o nome da função (nenhum espaço é permitido).
   `<Function Name>` é o nome para exibição da função.
 

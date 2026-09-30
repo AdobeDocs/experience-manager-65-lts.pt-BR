@@ -1,18 +1,27 @@
 ---
 title: Estender funcionalidade de pesquisa
-description: Estender os recursos de pesquisa de  [!DNL Adobe Experience Manager Assets]  além dos padrões.
+description: Estender os recursos de pesquisa do [!DNL Adobe Experience Manager Assets] além dos padrões.
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '828'
+ht-degree: 7%
 ---
-
 # Estender pesquisa de ativos {#extending-assets-search}
 
 Você pode estender os recursos de pesquisa do [!DNL Adobe Experience Manager Assets]. Pronto para uso, [!DNL Experience Manager Assets] procura ativos por sequências de caracteres.
@@ -52,7 +61,7 @@ O [!DNL Assets] vem com um conjunto de predicados predefinidos que podem ser usa
 
 Além de usar predicados pré-existentes, os desenvolvedores do [!DNL Experience Manager] também podem criar seus próprios predicados usando a [API do Construtor de Consultas](/help/sites-developing/querybuilder-api.md).
 
-A criação de predicados personalizados requer conhecimento básico sobre a [Estrutura de widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+A criação de predicados personalizados requer conhecimento básico sobre a [Estrutura de widgets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
 
 A prática recomendada é copiar um predicado existente e ajustá-lo. Os predicados de amostra estão em **/libs/cq/search/components/predicates**.
 
@@ -140,7 +149,7 @@ Para criar um predicado de propriedade:
    </script>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
 1. Navegue até o navegador e, na página de exemplo (por exemplo, **press.html**), alterne para o modo de design e habilite o novo componente para o sistema de parágrafo de predicado (por exemplo, **left**).
 
 1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante**, e clique na lupa para iniciar a pesquisa.
@@ -244,7 +253,7 @@ Para criar um predicado de grupo:
        });
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
 1. Navegue até o navegador e, na página de exemplo (por exemplo, **press.html**), alterne para o modo de design e habilite o novo componente para o sistema de parágrafo de predicado (por exemplo, **left**).
 1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados**.
 

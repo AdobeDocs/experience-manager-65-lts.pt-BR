@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1197dc8e-7fbe-4f74-942b-3aa9fafc07ac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 0%
-
 ---
-
 # Contribuição para o AEM{#contributing-to-aem}
 
 ## Metodologia de desenvolvimento {#development-methodology}
@@ -44,7 +53,7 @@ No mais alto nível, você deve ter uma sólida compreensão sobre:
 * Cookies do navegador
 * e outros conceitos modernos de desenvolvimento na Web
 
-A pilha de tecnologia do Adobe Experience Manager é baseada no contêiner OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) com a estrutura Web [Apache Sling](https://sling.apache.org/index.html) e incorpora um Repositório de Conteúdo Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) baseado no [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarize-se com esses projetos individuais e com quaisquer outros componentes de código aberto (por exemplo, Apache Lucene) usados na área em que você pretende contribuir.
+A pilha de tecnologia do Adobe Experience Manager é baseada no contêiner OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) com a estrutura Web [Apache Sling](https://sling.apache.org/index.html) e incorpora um Repositório de Conteúdo Java™ ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) baseado no [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarize-se com esses projetos individuais e com quaisquer outros componentes de código aberto (por exemplo, Apache Lucene) usados na área em que você pretende contribuir.
 
 ## Conhecimento tribal {#tribal-knowledge}
 

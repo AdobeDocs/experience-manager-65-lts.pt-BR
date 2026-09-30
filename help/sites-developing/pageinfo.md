@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '952'
 ht-degree: 1%
-
 ---
-
 # Obtendo informações de página no formato JSON{#obtaining-page-information-in-json-format}
 
 Para obter as informações da página, envie uma solicitação ao servlet PageInfo para obter os metadados da página no formato JSON.
@@ -554,7 +563,7 @@ Para recursos que usam seu componente de página do aplicativo como o `sling:res
 
 ### Exemplo de implementação de PageInfoProvider {#example-pageinfoprovider-implementation}
 
-A classe Java a seguir implementa [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) e retorna a URL publicada do recurso de página atual.
+A classe Java a seguir implementa [PageInfoProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html) e retorna a URL publicada do recurso de página atual.
 
 ```java
 package com.adobe.example;

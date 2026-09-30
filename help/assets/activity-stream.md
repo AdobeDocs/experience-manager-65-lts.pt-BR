@@ -6,13 +6,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 12%
-
+source-wordcount: '226'
+ht-degree: 20%
 ---
-
 # Fluxo de atividades na linha do tempo {#activity-stream-in-timeline}
 
 Esse recurso exibe logs de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas ao ativo no [!DNL Adobe Experience Manager Assets], o recurso de fluxo de atividades atualizará a linha do tempo para refletir a atividade.
@@ -28,7 +39,7 @@ As seguintes operações são registradas no fluxo de atividade:
 * Rejeitar
 * Mover
 
-Os logs de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de log são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou ativos existentes são modificados e verificados no [!DNL Experience Manager] por meio do [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou do [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=pt-BR).
+Os registros de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de registro são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou ativos existentes são modificados e verificados no [!DNL Experience Manager] por meio do [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou do [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=pt-BR).
 
 >[!NOTE]
 >

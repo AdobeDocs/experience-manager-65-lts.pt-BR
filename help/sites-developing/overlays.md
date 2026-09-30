@@ -9,9 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 ---
 # Sobreposições{#overlays}
@@ -24,7 +35,7 @@ Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e 
 
 Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são implementadas e usadas:
 
-* AEM 6.0 e posteriores - para sobreposições relacionadas ao [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
+* AEM 6.0 e posteriores - para sobreposições relacionadas ao [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
 
   * Método
 
@@ -55,7 +66,7 @@ Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são 
 
 >[!CAUTION]
 >
->O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
+>O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
 >
 >As sobreposições para outras áreas (incluindo a interface clássica) envolvem a cópia do nó apropriado e de toda a subestrutura e, em seguida, fazem as alterações necessárias.
 

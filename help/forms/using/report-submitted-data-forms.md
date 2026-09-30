@@ -8,13 +8,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 5%
-
 ---
-
 # APIs para trabalhar com formulários enviados no Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 O AEM Forms fornece APIs que você pode usar para consultar dados de formulários enviados pelo Portal do Forms. Além disso, você pode publicar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
@@ -23,7 +34,7 @@ O AEM Forms fornece APIs que você pode usar para consultar dados de formulário
 >
 >Os usuários que invocam as APIs devem ser adicionados ao grupo de revisores. Consulte [Associar revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
-## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## OBTER `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Retorna uma lista de todos os formulários qualificados.
 
@@ -57,7 +68,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## OBTER `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Retorna detalhes de todos os formulários enviados. No entanto, você pode usar parâmetros de URL para limitar os resultados.
 
@@ -158,7 +169,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## OBTER `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retorna todos os comentários publicados na instância de envio especificada.
 

@@ -8,24 +8,37 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '295'
 ht-degree: 1%
-
 ---
-
 # Registrar uma transação para implementações personalizadas do AEM Forms no OSGi {#record-a-transaction-for-custom-implementations}
 
 ## Aplica-se a {#applies-to}
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
 
 Usar a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente
 
-Você pode usar o código personalizado para enviar um formulário do PDF ou enviar o URL de visualização da interface do usuário do agente para os usuários finais visualizarem uma comunicação interativa. Ou você envia um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com o AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs do AEM Forms não são contabilizadas como transações. A AEM Forms fornece uma API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar essas ações, como transações.
+Você pode usar o código personalizado para enviar um formulário do PDF ou enviar o URL de visualização da interface do usuário do agente para os usuários finais visualizarem uma comunicação interativa. Ou você envia um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com o AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs do AEM Forms não são contabilizadas como transações. A AEM Forms fornece uma API, [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar essas ações, como transações.
 
 Para registrar uma transação, escreva o [servlet sling padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=pt-BR) e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
 

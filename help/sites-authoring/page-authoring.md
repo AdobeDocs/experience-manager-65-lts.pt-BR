@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # Criação de páginas{#authoring-pages}
 
 Os itens a seguir fornecem dois tipos de visão geral para criação com o AEM:
@@ -49,5 +62,5 @@ Um clique duplo único ou lento revelará a barra de ferramentas apropriada (ún
 * **[Layout responsivo](/help/sites-authoring/responsive-layout.md)**
 Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva.
 
-* **Pesquisar enquanto você digita**
+* **Pesquisar enquanto digita**
 Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface do AEM apresenta correspondências dinâmicas à medida que você digita a consulta.

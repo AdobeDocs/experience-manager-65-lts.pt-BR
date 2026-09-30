@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
-
+source-wordcount: '2898'
+ht-degree: 2%
 ---
-
 # Uso de bibliotecas do cliente{#using-client-side-libraries}
 
 Sites modernos dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado.
@@ -101,7 +112,7 @@ Para obter informações completas, incluindo atributos para filtrar JS, CSS ou 
 
 >[!CAUTION]
 >
->O `<cq:includeClientLib>`, que antigamente era comumente usado para incluir bibliotecas de clientes, está obsoleto desde o AEM 5.6. Em vez disso, o [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado conforme detalhado acima.
+>O `<cq:includeClientLib>`, que antigamente era usado com frequência para incluir bibliotecas de clientes, está obsoleto desde o AEM 5.6. Em vez disso, [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado conforme detalhado acima.
 
 ## Criação de pastas de bibliotecas de clientes {#creating-client-library-folders}
 
@@ -446,7 +457,7 @@ O componente `dumplibs` inclui um seletor de teste que exibe o código-fonte ger
 
    * Abra o seguinte URL no navegador da Web (use um host e porta diferentes, conforme necessário):
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    A página padrão mostra saída para tags sem valor para o atributo categories.
 

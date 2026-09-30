@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 46f191d9-b667-44e3-83e9-7988fffb0ecf
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2724'
 ht-degree: 1%
-
 ---
-
 # Como usar a ferramenta VLT {#how-to-use-the-vlt-tool}
 
 A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela [The Apache Foundation](https://www.apache.org/), que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos. A ferramenta VLT tem funções semelhantes às do cliente do sistema de controle de origem (como um cliente SVN), fornecendo operações normais de check-in, check-out e gerenciamento, além de opções de configuração para representação flexível do conteúdo do projeto.
@@ -774,8 +785,8 @@ Os códigos de status usados pelo VLT são:
 * &#39;I&#39; Ignorado
 * &#39;M&#39; Modificado
 * &#39;R&#39; Substituído
-* &#39;?&#39; o item não está sob controle de versão
-* &#39;!&#39; item ausente (removido por comando não svn) ou incompleto
+* O item &#39;?&#39; não está sob controle de versão
+* O item &#39;!&#39; está ausente (removido por um comando não-svn) ou incompleto
 * &#39;~&#39; item com versão obstruído por algum item de um tipo diferente
 
 ## Configurando a sincronização do FileVault {#setting-up-filevault-sync}

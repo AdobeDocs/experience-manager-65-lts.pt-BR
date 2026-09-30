@@ -9,9 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: 669dda42-2656-578e-8b9a-9960823e4401
+    internal-label: Platform Matrix
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
+source-wordcount: '2993'
 ht-degree: 1%
 ---
 
@@ -407,6 +425,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >- Se a instalação do Microsoft® Office se tornar desativada ou não licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >- A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >- As conversões do PDF Generator para OpenOffice são suportadas no Windows e no Linux®.
+>- No Red Hat® Enterprise Linux® 9, a compilação de 32 bits do OpenOffice requer o `libcrypt.so.1`, que não está instalado por padrão. Se estiver ausente, o OpenOffice não será iniciado com o erro `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e as conversões OpenOffice-to-PDF falharão. Instale o pacote `libxcrypt-compat` (32 bits) para fornecer a biblioteca: `sudo dnf install -y libxcrypt-compat.i686`.
 >- Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
 >- A PDF Generator não oferece suporte ao Microsoft® Windows 11.
 >- O suporte ao Microsoft® Office 2021 Professional Plus está obsoleto.

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1952'
 ht-degree: 0%
-
 ---
-
 # Desenvolvimento do Forms (interface clássica){#developing-forms-classic-ui}
 
 A estrutura básica de um formulário é:
@@ -39,7 +48,7 @@ Além de [desenvolver novos componentes](/help/sites-developing/developing-compo
 
 >[!NOTE]
 >
->Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
+>Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
 
 ## Pré-carregando Valores de Formulário {#preloading-form-values}
 
@@ -315,7 +324,7 @@ Quando a configuração Mostrar/Ocultar é inválida, a configuração é fornec
 
 ### Desenvolvimento de scripts para uso com o Forms {#developing-scripts-for-use-with-forms}
 
-Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Para obter mais informações sobre os elementos da API que podem ser usados ao gravar scripts, consulte os [javadocs relacionados a formulários](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Você pode usar isso para ações como chamar um serviço antes que o formulário seja enviado e cancelar o serviço se ele falhar:
 

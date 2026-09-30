@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3906'
 ht-degree: 0%
-
 ---
-
 # Criar correspondência{#create-correspondence}
 
 ## Criar correspondência na interface do usuário Criar correspondência {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -225,7 +238,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
 1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode selecionar a linha ou o parágrafo relevante na pré-visualização de correspondências ou selecionar o módulo de conteúdo diretamente na hierarquia de conteúdo.
 
-   Por exemplo, a linha &quot;To allow us to access...&quot; é selecionada no gráfico abaixo e o módulo de conteúdo correspondente é selecionado na guia Content.
+   Por exemplo, a linha &quot;Para permitir que acessemos...&quot; for selecionada no gráfico abaixo e o módulo de conteúdo correspondente for selecionado na guia Content.
 
    Ao tocar em Realçar módulos selecionados no conteúdo ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), você pode desabilitar ou habilitar a funcionalidade para realçar o módulo de conteúdo na guia Conteúdo quando o texto, parágrafo ou campo de dados relevante for tocado na pré-visualização de correspondência.
 
@@ -285,7 +298,7 @@ Essas instâncias só podem ser salvas quando a carta está sendo exibida na ins
 
 Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas na instância de criação e publicação para ativar o recurso Salvar como rascunho:
 
-As propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* não são transferidas para a instância de publicação por padrão. Para transferir as propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* para a instância de publicação, desabilite o componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para desativar o componente:
+As propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* não são transferidas para a instância de publicação por padrão. Para transferir as propriedades *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* para publicar a instância, desabilite o componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para desativar o componente:
 
 1. Na instância do autor, abra o console Componentes do Adobe Experience Manager Web Console. A URL padrão é `http://author-server:port/system/console/components`
 

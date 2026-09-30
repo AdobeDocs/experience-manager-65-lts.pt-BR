@@ -1,18 +1,32 @@
 ---
 title: Desenvolvimento de proxy [!DNL Assets]
-description: Um proxy é uma instância  [!DNL Experience Manager]  que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um  [!DNL Experience Manager] proxy, operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
+description: Um proxy é uma instância [!DNL Experience Manager] que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um proxy do [!DNL Experience Manager], operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
 role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '857'
 ht-degree: 0%
-
 ---
-
 # Desenvolvimento de proxy [!DNL Assets] {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] usa um proxy para distribuir o processamento de determinadas tarefas.
@@ -81,7 +95,7 @@ Um trabalhador proxy é um processador responsável por gerenciar um trabalho e 
 
 ### API do cliente {#client-api}
 
-[`JobService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) está disponível como um serviço OSGi que fornece métodos para criar trabalhos, remover trabalhos e obter resultados desses trabalhos. A implementação padrão deste serviço (`JobServiceImpl`) usa o cliente HTTP para se comunicar com o servlet proxy remoto.
+[`JobService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html) está disponível como um serviço OSGi que fornece métodos para criar trabalhos, remover trabalhos e obter resultados desses trabalhos. A implementação padrão deste serviço (`JobServiceImpl`) usa o cliente HTTP para se comunicar com o servlet proxy remoto.
 
 Veja a seguir um exemplo de uso da API:
 
@@ -108,10 +122,10 @@ Veja a seguir um exemplo de uso da API:
 ### Configurações do Cloud Service {#cloud-service-configurations}
 
 <!--
-TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+TBD: Cannot find com.day.cq.dam.api.proxy at https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
 As configurações de proxy e de trabalho de proxy estão disponíveis por meio das configurações de serviços em nuvem, conforme acessível no console [!DNL Assets] **Ferramentas** ou em `/etc/cloudservices/proxy`. Espera-se que cada trabalhador proxy adicione um nó sob `/etc/cloudservices/proxy` para obter detalhes de configuração específicos do trabalhador (por exemplo, `/etc/cloudservices/proxy/workername`).
@@ -145,13 +159,13 @@ Para configurar seu próprio trabalhador proxy personalizado, é necessário:
 
 * Configurar e implementar o (usando evento Sling):
 
-   * um tópico de trabalho personalizado
-   * um manipulador de eventos de job personalizado
+  * um tópico de trabalho personalizado
+  * um manipulador de eventos de job personalizado
 
 * Em seguida, use a API JobService para:
 
-   * despachar seu trabalho personalizado para o proxy
-   * gerenciar seu trabalho
+  * despachar seu trabalho personalizado para o proxy
+  * gerenciar seu trabalho
 
 * Se quiser usar o proxy de um fluxo de trabalho, você deve implementar uma etapa externa personalizada usando a API WorkflowExternalProcess e a API JobService.
 

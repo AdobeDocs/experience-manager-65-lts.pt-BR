@@ -1,17 +1,28 @@
 ---
 title: Modelos de ativos
-description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets]  e como usá-los para criar materiais de suporte de marketing.
+description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets] e como usá-los para criar materiais de suporte de marketing.
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1571'
 ht-degree: 0%
-
 ---
-
 # Modelos de ativos {#asset-templates}
 
 Os modelos de ativos são uma classe especial de ativos que facilitam a redefinição rápida de objetivos de conteúdo visualmente avançado para mídia digital e impressa. Um modelo de ativo inclui duas partes, a seção de mensagens fixas e a seção editável. A seção de mensagem fixa pode conter conteúdo proprietário, como logotipo da marca e informações de copyright que estão desativadas para edição. A seção editável pode conter conteúdo visual e textual em campos que podem ser editados para personalizar as mensagens.

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 0%
-
+source-wordcount: '687'
+ht-degree: 1%
 ---
-
 # Personalização dos Consoles {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -39,7 +48,7 @@ Eles podem ser usados de várias maneiras para estender os consoles do AEM. Uma 
 >
 >* Usando e criando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando e criando [sobreposições](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)
 >
 
 
@@ -60,7 +69,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 * consoles (qualquer console com base nas páginas de interface do Granite); por exemplo:
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >
@@ -150,8 +159,7 @@ Para personalizar as colunas na exibição de lista:
 
 1. Opcionalmente:
 
-   * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-
+   * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.

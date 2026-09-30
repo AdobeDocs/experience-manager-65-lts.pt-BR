@@ -9,9 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b96517c1-e0b9-4ccd-9ac2-f9e56a812382
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 2%
 ---
 # Uso de condições de ocultação {#using-hide-conditions}
@@ -32,7 +43,7 @@ Ao usar as condições de ocultação, administradores, desenvolvedores e superu
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` é responsável por filtrar os recursos com base na existência e no valor da propriedade `granite:hide`, localizada no campo a ser filtrado. A implementação de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` inclui uma instância de `FilteringResourceWrapper.`
 
-A implementação usa a [API ELResolver](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) do Granite e adiciona uma variável personalizada `cqDesign` por meio do ExpressionCustomizer.
+A implementação usa a [API ELResolver](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) do Granite e adiciona uma variável personalizada `cqDesign` por meio do ExpressionCustomizer.
 
 Estes são alguns exemplos de condições de ocultação em um nó de design localizado em `etc/design` ou como uma Política de Conteúdo.
 

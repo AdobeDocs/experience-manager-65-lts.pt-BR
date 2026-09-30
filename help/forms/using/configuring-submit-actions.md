@@ -8,13 +8,31 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 2%
-
+source-wordcount: '2700'
+ht-degree: 4%
 ---
-
 # Configuração da ação Enviar {#configuring-the-submit-action}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -38,12 +56,12 @@ Configurar ação de envio
 
 As ações de envio padrão disponíveis com formulários adaptáveis são:
 
-* Enviar para endpoint REST
+* Enviar para o ponto de acesso REST
 * Enviar e-mail
 * Enviar PDF por email
 * Chamar uma Forms Workflow
 * Enviar usando modelo de dados de formulário
-* Ação de envio do portal do Forms
+* Ação Enviar do Portal de formulários
 * Chamar um fluxo de trabalho do AEM
 * Enviar para o Power Automate
 
@@ -54,7 +72,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 >[!NOTE]
 >
 >Verifique se a pasta [AEM_Installation_Diretory]\crx-quickstart\temp\datamanager\ASM
->&#x200B;>existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
+>existe. O diretório é necessário para armazenar temporariamente anexos. Caso o diretório não exista, crie-o.
 
 >[!CAUTION]
 >
@@ -62,7 +80,7 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 
 Você pode escrever uma ação de envio personalizada para formulários adaptáveis para atender ao seu caso de uso. Para obter mais informações, consulte [Escrevendo ação enviar personalizada para formulários adaptáveis](../../forms/using/custom-submit-action-form.md).
 
-## Enviar para endpoint REST {#submit-to-rest-endpoint}
+## Enviar para o ponto de acesso REST {#submit-to-rest-endpoint}
 
 A opção de envio **Enviar para o ponto de extremidade REST** passa os dados preenchidos no formulário para uma página de confirmação configurada como parte da solicitação HTTP GET. Você pode adicionar o nome dos campos a serem solicitados. O formato da solicitação é:
 
@@ -133,7 +151,7 @@ Além disso, você pode enviar um anexo de formulário usando um modelo de dados
 
 Para obter informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](../../forms/using/data-integration.md).
 
-## Ação de envio do portal do Forms {#forms-portal-submit-action}
+## Ação Enviar do Portal de formulários {#forms-portal-submit-action}
 
 A opção **Enviar Ação do Forms Portal** disponibiliza dados de formulário por meio de um AEM Forms Portal.
 
@@ -159,7 +177,7 @@ A ação enviar coloca o seguinte no local da carga útil do fluxo de trabalho. 
 
 ## Enviar para o Power Automate {#microsoft-power-automate}
 
-Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas comerciais sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
+Você pode configurar um Formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente. Estes são alguns exemplos do que você pode fazer após integrar um formulário adaptável ao Microsoft® Power Automate:
 
 * Usar dados adaptáveis do Forms em processos de negócios do Power Automate
 * Use o Power Automate para enviar dados capturados para mais de 500 fontes de dados ou qualquer API disponível publicamente
@@ -193,10 +211,10 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Lista do SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
-   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+   * Você pode recuperar os `Client ID` e `Client Secret` do seu aplicativo no portal Microsoft® Azure.
+   * No portal Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
    * Adicione as permissões de API `offline_access` e `Sites.Manage.All` na guia **Microsoft® Graph** para fornecer permissões de leitura/gravação. Adicione a permissão `AllSites.Manage` na guia **Sharepoint** para interagir remotamente com os dados do SharePoint.
-   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal Microsoft® Azure.
 
      >[!NOTE]
      >
@@ -210,7 +228,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
 Você pode usar a configuração da Lista do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Execute as seguintes etapas para usar uma configuração de armazenamento de Lista do SharePoint em um Formulário adaptável como:
 
-1. [Criar um modelo de dados de formulário usando o Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Criar um modelo de dados de formulário usando a configuração da lista do Microsoft® SharePoint](/help/forms/using/create-form-data-model.md)
 1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Criar um Formulário Adaptável](/help/forms/using/create-adaptive-form.md).
 1. [Configurar a ação Enviar usando um Modelo de dados de formulário](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

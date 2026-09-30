@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1410'
 ht-degree: 2%
-
 ---
-
 # Configurar o contêiner de layout e o modo de layout{#configuring-layout-container-and-layout-mode}
 
 Saiba como configurar o Contêiner de layout e o Modo de layout.
@@ -34,17 +43,17 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
   Esse componente fornece um sistema de parágrafo de grade para permitir adicionar e posicionar componentes em uma grade responsiva. Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
 
-   * O componente **Contêiner de layout** padrão é definido em:
+  * O componente **Contêiner de layout** padrão é definido em:
 
-     /libs/wcm/foundation/components/responvegrid
+    /libs/wcm/foundation/components/responvegrid
 
-   * É possível definir contêineres de layout:
+  * É possível definir contêineres de layout:
 
-      * Como um componente que o usuário pode adicionar a uma página.
-      * Como o parsys padrão da página.
-      * Ambos.
+    * Como um componente que o usuário pode adicionar a uma página.
+    * Como o parsys padrão da página.
+    * Ambos.
 
-        Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
+      Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
 
 * **[Modo de layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
@@ -82,13 +91,13 @@ Estes procedimentos são usados para habilitar o modo **Layout** no site.
 * São usados em design responsivo.
 * Pode ser definido:
 
-   * No modelo de página, de onde as configurações são copiadas para qualquer página criada com esse modelo.
-   * No nó da página, de onde as configurações são herdadas por qualquer página secundária.
+  * No modelo de página, de onde as configurações são copiadas para qualquer página criada com esse modelo.
+  * No nó da página, de onde as configurações são herdadas por qualquer página secundária.
 
 * Defina um título e uma largura:
 
-   * O título descreve o agrupamento genérico de dispositivos, com orientação se necessário; por exemplo, telefone, tablet, paisagem de tabelas.
-   * A largura define a largura máxima em pixels para esse agrupamento de dispositivo genérico. Por exemplo, se o telefone do ponto de interrupção tiver uma largura de 768, isso indicará a largura máxima do layout usado para um dispositivo telefônico.
+  * O título descreve o agrupamento genérico de dispositivos, com orientação se necessário; por exemplo, telefone, tablet, paisagem de tabelas.
+  * A largura define a largura máxima em pixels para esse agrupamento de dispositivo genérico. Por exemplo, se o telefone do ponto de interrupção tiver uma largura de 768, isso indicará a largura máxima do layout usado para um dispositivo telefônico.
 
 * Estão visíveis como marcadores na parte superior do editor de páginas quando você está usando o emulador.
 * São herdados da hierarquia do nó principal e podem ser substituídos à vontade.
@@ -233,11 +242,11 @@ Por exemplo:
 
 * Antes:
 
-   * `width=100px`
+  * `width=100px`
 
 * Depois:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Conformidade com redimensionamento e imagem adaptável {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ Você pode configurar o número de colunas disponíveis para cada instância esp
 
    * Número de colunas disponíveis:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Componentes que podem ser adicionados ao componente atual:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Grades Responsivas Aninhadas {#nested-responsive-grids}
 
@@ -309,7 +318,7 @@ Pode haver ocasiões em que você ache necessário aninhar grades responsivas pa
 
 Quando não for possível evitar o uso de grades responsivas aninhadas, verifique se:
 
-* Todos os contêineres (contêineres, guias, acordeões, etc.) têm a propriedade `layout = responsiveGrid`.
+* Todos os contêineres (contêineres, guias, acordeões etc.) tem a propriedade `layout = responsiveGrid`.
 * Não misture a propriedade `layout = simple` na hierarquia de contêiner.
 
 Isso inclui todos os containers estruturais do modelo de página.

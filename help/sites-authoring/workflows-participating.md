@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 73%
-
+source-wordcount: '1534'
+ht-degree: 72%
 ---
-
 # Participar de fluxos de trabalho{#participating-in-workflows}
 
 Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para executar a atividade e lhe atribui um item de trabalho. O usuário recebe uma notificação para realizar a ação apropriada:
@@ -37,12 +52,12 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * Ao usar o editor de páginas, a barra de status será exibida:
 
-   * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
-   * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
-   * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
+  * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
+  * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
+  * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
 
-      * use as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
-      * clique no número real para abrir uma lista suspensa de todos os workflows aplicáveis e selecione o workflow que deseja exibir na barra de status.
+    * use as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
+    * clique no número real para abrir uma lista suspensa de todos os workflows aplicáveis e selecione o workflow que deseja exibir na barra de status.
 
   ![wf-59](assets/wf-59.png)
 

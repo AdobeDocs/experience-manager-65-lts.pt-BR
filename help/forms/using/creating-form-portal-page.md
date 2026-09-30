@@ -9,13 +9,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 1%
-
+source-wordcount: '1711'
+ht-degree: 4%
 ---
-
 # Criação de uma página do portal de formulários{#creating-a-forms-portal-page}
 
 ## Aplica-se a {#applies-to}
@@ -89,12 +100,12 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
   </tr>
   <tr>
    <td> </td>
-   <td>Desativar pesquisa avançada</td>
+   <td>Desativar Pesquisa avançada</td>
    <td>Quando ativado, oculta o ícone de pesquisa avançada.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Desativar pesquisa de texto</td>
+   <td>Desativar Pesquisa de texto</td>
    <td>Quando ativado, oculta a barra de pesquisa de texto completo.</td>
   </tr>
   <tr>
@@ -118,13 +129,13 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
    <td><p>Substitui a palavra <strong>de</strong> pelo texto especificado (Página 1 <strong>de </strong>51). O valor padrão é <strong>de</strong>.</p> <p>Por exemplo, se você especificar <strong>de </strong>neste campo, o texto será alterado para Página 1 <strong>de </strong>51.</p> </td>
   </tr>
   <tr>
-   <td><span class="uicontrol"><strong>Link do formulário</strong></code></td>
+   <td><span class="uicontrol"><strong>Formar link</strong></code></td>
    <td>Tipo de renderização</td>
    <td>Controla a listagem de formulários com base no tipo de renderização especificado. As opções disponíveis são PDF e HTML. Por exemplo, se você selecionar apenas HTML como tipo de renderização, as PDF forms serão filtradas.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Perfil do HTML</td>
+   <td>Perfil HTML</td>
    <td>Configura o perfil do HTML a ser usado para renderização. Todos os perfis disponíveis estão listados na lista suspensa.</td>
   </tr>
   <tr>
@@ -154,7 +165,7 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
   </tr>
   <tr>
    <td> </td>
-   <td>Caminho de estilo personalizado</td>
+   <td>Personalizar estilo do caminho</td>
    <td>Se você selecionou Personalizado como o Tipo de estilo, procure para especificar o caminho para o CSS personalizado, caso contrário, selecione Padrão.</td>
   </tr>
  </tbody>

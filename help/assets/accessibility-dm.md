@@ -8,13 +8,27 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: e0d8c871-755b-4042-bb9e-9b9a2648e9fe
+    internal-label: Accessibility
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # Acessibilidade em [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 O [!DNL Dynamic Media] oferece suporte ao controle de teclado e às tecnologias assistivas, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
@@ -33,10 +47,10 @@ O percurso do foco segue o local natural do elemento da interface do usuário na
 * No editor de ponto de acesso, é possível usar alguns pressionamentos de tecla personalizados, como teclas de seta, para interagir com elementos complexos da interface do usuário e reposicionar pontos de acesso.
 * No editor de Vídeo Interativo, você pode usar o `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar a chave `Backspace` para excluir o item selecionado da guia **[!UICONTROL Conteúdo]**. Além disso, pressionar `Tab` funções conforme desejado para navegar entre elementos interativos na página.
 * No editor de Recorte de imagem/Recorte inteligente, você pode fazer o seguinte:
-   * Use as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
-   * A primeira parada de `Tab` realça o quadro de imagem inteiro. Em seguida, é possível usar as teclas de seta no teclado para reposicionar o quadro.
-   * As próximas quatro `Tab` paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto fica realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
-Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única imagem](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+  * Use as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
+  * A primeira parada de `Tab` realça o quadro de imagem inteiro. Em seguida, é possível usar as teclas de seta no teclado para reposicionar o quadro.
+  * As próximas quatro `Tab` paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto fica realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
+    Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única imagem](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 

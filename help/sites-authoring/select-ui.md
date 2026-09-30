@@ -5,23 +5,36 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '721'
 ht-degree: 1%
-
 ---
-
 # Seleção da interface{#selecting-your-ui}
 
 A interface habilitada para toque do Adobe Experience Manager (AEM) é a interface padrão. No entanto, pode haver momentos em que o usuário deseje alternar para a [interface clássica](/help/sites-classic-ui-authoring/classicui.md). Há várias opções para fazer isso.
 
 Há vários locais em que você pode definir qual interface do usuário será usada:
 
-* [Configurando a interface padrão para sua instância](#configuring-the-default-ui-for-your-instance)
+* [Configurando a interface do usuário padrão para sua instância](#configuring-the-default-ui-for-your-instance)
 Define a interface padrão para ser exibida no logon do usuário. O usuário pode substituir isso e selecionar uma interface diferente para sua conta ou sessão atual.
 
-* [Definindo a criação da interface clássica para sua conta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+* [Definindo a Criação da Interface Clássica para sua conta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
 Isso define a interface como o padrão ao editar páginas, embora o usuário possa substituí-la e selecionar uma interface diferente para sua conta ou sessão atual.
 
 * [Alternando para a interface clássica da sessão atual](#switching-to-classic-ui-for-the-current-session)
@@ -103,21 +116,21 @@ As configurações definidas por um usuário ou administrador do sistema podem s
 
 * Ao criar páginas:
 
-   * O uso do editor clássico é forçado ao acessar a página usando `cf#` na URL. Por exemplo:
-     `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  * O uso do editor clássico é forçado ao acessar a página usando `cf#` na URL. Por exemplo:
+    `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * O uso do editor habilitado para toque é forçado ao usar `/editor.html` na URL ou ao usar um dispositivo de toque. Por exemplo:
-     `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+  * O uso do editor habilitado para toque é forçado ao usar `/editor.html` na URL ou ao usar um dispositivo de toque. Por exemplo:
+    `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualquer imposição é temporária e válida somente para a sessão do navegador
 
-   * Um conjunto de cookies é definido dependendo se for usado habilitado para toque ( `editor.html`) ou clássico ( `cf#`).
+  * Um conjunto de cookies é definido dependendo se for usado habilitado para toque ( `editor.html`) ou clássico ( `cf#`).
 
 * Ao abrir páginas por meio do `siteadmin`, é feita a verificação da existência do seguinte:
 
-   * O cookie
-   * Uma preferência do usuário
-   * Se não houver nenhum, o padrão será as definições definidas na [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço do Modo de Interface do Usuário de Criação do WCM** (serviço `AuthoringUIMode`).
+  * O cookie
+  * Uma preferência do usuário
+  * Se não houver nenhum, o padrão será as definições definidas na [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço do Modo de Interface do Usuário de Criação do WCM** (serviço `AuthoringUIMode`).
 
 >[!NOTE]
 >

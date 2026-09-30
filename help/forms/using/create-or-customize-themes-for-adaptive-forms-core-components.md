@@ -6,13 +6,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 4%
-
+source-wordcount: '2092'
+ht-degree: 5%
 ---
-
 # Criar ou personalizar um tema de formulário adaptável {#introduction-to-theme}
 
 ## Aplica-se a {#applies-to}
@@ -30,9 +44,9 @@ No AEM Forms 6.5, um tema é uma biblioteca do cliente AEM usada para definir os
 
 O ambiente do AEM 6.5 fornece os temas listados abaixo para o Forms adaptável baseado em Componentes principais:
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
 * [Tema de saúde](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
@@ -56,9 +70,9 @@ Um tema é um pacote que abrange o arquivo CSS, os arquivos JavaScript e os recu
 
 O AEM Forms 6.5 fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricação](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -77,7 +91,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 * [Habilite os Componentes principais adaptáveis do Forms](/help/forms/using/enable-adaptive-forms-core-components.md) para o seu ambiente.
 
-* Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de compilação comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
+* Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 
 * Saiba como criar uma [biblioteca do cliente no Adobe Experience Manager](/help/sites-developing/clientlibs.md). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
 
@@ -113,9 +127,9 @@ Os exemplos fornecidos no documento são baseados no tema **Tela**, mas você po
 
 Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
 Execute as seguintes instruções para clonar um tema:
 
@@ -342,4 +356,4 @@ Para remover temas não utilizados ou indesejados:
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)

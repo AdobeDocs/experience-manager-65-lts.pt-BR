@@ -4,13 +4,21 @@ description: O Feature Toggle é uma funcionalidade do AEM que permite aos admin
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '305'
 ht-degree: 1%
-
 ---
-
 # Alternância de recursos no Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
 O Feature Toggle é uma funcionalidade do AEM que permite aos administradores ativar ou desativar recursos específicos dinamicamente. Esse recurso é particularmente útil para gerenciar os **recursos de Primeiros usuários** e os **recursos de Pré-lançamento** sem exigir grandes implantações ou alterações na base de código. Ele garante flexibilidade e controle sobre quais recursos estão acessíveis em um ambiente AEM.

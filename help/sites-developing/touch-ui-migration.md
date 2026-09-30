@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 3%
-
+source-wordcount: '684'
+ht-degree: 7%
 ---
-
 # Migração para a interface de toque{#migration-to-the-touch-ui}
 
 A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecida simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Esta se tornou a interface padrão no AEM com a interface herdada, orientada para desktop, chamada de *interface clássica*.
@@ -114,9 +123,9 @@ As caixas de diálogo são um fator importante ao migrar seus componentes:
 * [Migração de um componente clássico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) - para ajudá-lo a converter as caixas de diálogo dos seus componentes de interface clássica para a interface de toque
 
-   * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
+  * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
 
-* [Personalizando Campos de Caixa de Diálogo na Interface para Toque](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalização de campos de caixa de diálogo na interface para toque](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalizando a Criação de Página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
 
@@ -143,10 +152,10 @@ Embora não esteja diretamente relacionado a uma migração para a interface de 
 Para obter informações completas sobre como desenvolver o AEM, consulte a coleção de recursos em:
 
 * [Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md)
-* [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutoriais e vídeos do AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=pt-BR)
+* [Documentação da interface de usuário do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Tutoriais e vídeos do AEM 6.5 Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/overview)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=pt-BR)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

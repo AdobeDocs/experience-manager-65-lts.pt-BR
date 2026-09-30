@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 0%
-
 ---
-
 # Criando Fluxos de Saída de Documento  {#creating-document-output-streams}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -310,10 +327,10 @@ Crie um documento do PDF usando a API de saída (serviço Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -568,10 +585,10 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -768,9 +785,9 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1092,9 +1109,9 @@ Crie um documento do PDF com base em fragmentos usando a API de serviço de saí
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor da constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1300,10 +1317,10 @@ Imprima em um arquivo usando a API de saída (serviço da Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -1542,12 +1559,12 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
 
    * Recupere um documento para impressão invocando o método `generatePrintedOutput` do objeto `OutputClient` e passando os seguintes valores:
 
-      * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
-      * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
-      * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
-      * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
-      * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
-      * O objeto `com.adobe.idp.Document` que representa a fonte de dados XML que contém dados de formulário a serem mesclados com o design do formulário.
+     * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+     * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
+     * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
+     * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
+     * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
+     * O objeto `com.adobe.idp.Document` que representa a fonte de dados XML que contém dados de formulário a serem mesclados com o design do formulário.
 
      Este método retorna um objeto `OutputResult` que contém os resultados da operação.
 
@@ -1586,10 +1603,10 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -1611,15 +1628,15 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
 
    * Recupere um documento para impressão invocando o método `generatePrintedOutput` do objeto `OutputServiceService` e passando os seguintes valores:
 
-      * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
-      * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
-      * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
-      * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
-      * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução de impressão usadas ao enviar um fluxo de impressão para uma impressora de rede.
-      * O objeto `BLOB` que contém a fonte de dados XML que contém dados de formulário.
-      * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-      * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-      * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+     * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+     * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
+     * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
+     * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
+     * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução de impressão usadas ao enviar um fluxo de impressão para uma impressora de rede.
+     * O objeto `BLOB` que contém a fonte de dados XML que contém dados de formulário.
+     * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+     * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+     * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
 
    * Crie um objeto `BLOB` para enviar à impressora obtendo o valor do método `generatedDoc` do objeto `OutputResult`. Este método retorna um objeto `BLOB` que contém dados PostScript retornados pelo método `generatePrintedOutput`.
 
@@ -1881,10 +1898,10 @@ Crie vários arquivos PDF usando a API de saída (serviço Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -2113,10 +2130,10 @@ Crie regras de pesquisa usando a API de saída (serviço Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
@@ -2327,10 +2344,10 @@ Nivelar um documento interativo do PDF em um documento não interativo do PDF us
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento interativo do PDF.
 

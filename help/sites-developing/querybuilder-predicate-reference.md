@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # Referência de predicado do construtor de consultas{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -27,7 +25,7 @@ ht-degree: 1%
 >
 >Por exemplo, consulte:
 >
->* [http://localhost:4502/system/console/services?filter=%28component.fatory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Geral {#general}
 
@@ -229,7 +227,7 @@ Conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Essas ass
 
 ### hasPermission {#haspermission}
 
-Restringe o resultado aos itens em que a sessão atual tem os [privilégios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe o resultado aos itens em que a sessão atual tem os [privilégios JCR especificados.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
@@ -269,7 +267,7 @@ Ela oferece suporte à extração de facetas e fornece dois buckets para ativos 
 
 ### memberOf {#memberof}
 
-Localiza itens que são membros de uma [coleção de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Localiza itens que são membros de uma [coleção de recursos de sling](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
@@ -382,7 +380,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 * **profundidade**
 
-  Um número de níveis curinga sob os quais a propriedade e o caminho relativo podem existir. Por exemplo, `property=size depth=2` verifica o nó e o tamanho, node/&ast;/size e node/&ast;/&ast;/size.
+  Um número de níveis curinga sob os quais a propriedade e o caminho relativo podem existir. Por exemplo, o `property=size depth=2` verifica o nó e o tamanho, o nó/&ast;/tamanho e o nó/&ast;/&ast;/tamanho.
 
 ### `rangeproperty` {#rangeproperty}
 
@@ -475,18 +473,18 @@ O nome &quot;root&quot; nunca é usado em uma query, ele é implícito.
 
   (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com estas padrão (extensíveis por meio do serviço ResultHitWriter):
 
-   * **simples**:
+  * **simples**:
 
-     Mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
+    Mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
 
-   * **cheio**:
+  * **cheio**:
 
-     Os resultados são renderizados como Sling JSON para cada nó, com `jcr:path` mostrando o caminho da ocorrência. Por padrão, a resposta inclui somente as propriedades diretas do nó; use `p.nodedepth=N` para incluir conteúdo mais profundo, onde `0` retorna a subárvore inteira. Defina `p.acls=true` para incluir as permissões JCR da sessão atual para cada item (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Os resultados são renderizados como Sling JSON para cada nó, com `jcr:path` mostrando o caminho da ocorrência. Por padrão, a resposta inclui somente as propriedades diretas do nó; use `p.nodedepth=N` para incluir conteúdo mais profundo, onde `0` retorna a subárvore inteira. Defina `p.acls=true` para incluir as permissões JCR da sessão atual para cada item (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
 
-   * **seletivo**:
+  * **seletivo**:
 
-     A resposta inclui somente as propriedades listadas em `p.properties`, que é uma lista separada por espaços de caminhos relativos (use `+` em URLs). Se um caminho relativo tiver uma profundidade maior que 1, a saída o aninhará como objetos filho. A propriedade especial `jcr:path` sempre inclui o caminho da ocorrência.
+    A resposta inclui somente as propriedades listadas em `p.properties`, que é uma lista separada por espaços de caminhos relativos (use `+` em URLs). Se um caminho relativo tiver uma profundidade maior que 1, a saída o aninhará como objetos filho. A propriedade especial `jcr:path` sempre inclui o caminho da ocorrência.
 
 
 ### `savedquery` {#savedquery}

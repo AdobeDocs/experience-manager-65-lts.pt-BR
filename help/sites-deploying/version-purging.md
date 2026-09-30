@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 1%
-
 ---
-
 # Limpeza de versão{#version-purging}
 
 Em uma instalação padrão, o Adobe Experience Manager (AEM) cria uma versão de uma página ou nó quando você ativa uma página após atualizar o conteúdo.
@@ -39,11 +49,11 @@ Isso pode ser configurado para limpar versões antigas quando novas versões sã
 Isso é usado como parte do monitoramento e da manutenção do seu repositório.
 Ela permite intervir para remover versões antigas de um nó, ou uma hierarquia de nós, de acordo com estes parâmetros:
 
-   * O número máximo de versões a serem mantidas no repositório.
-Quando esse número é excedido, a versão mais antiga é removida.
+  * O número máximo de versões a serem mantidas no repositório.
+    Quando esse número é excedido, a versão mais antiga é removida.
 
-   * A idade máxima de qualquer versão mantida no repositório.
-Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
+  * A idade máxima de qualquer versão mantida no repositório.
+    Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
 
 * a [tarefa de manutenção Limpeza de Versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode programar a tarefa de manutenção Limpeza de versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Limpeza de versão.
 
@@ -96,34 +106,34 @@ Por exemplo, ao definir o número máximo de versões a serem mantidas E a vers�
 
 * Configuração:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Com:
 
-   * Dez versões foram feitas nos últimos 60 dias
-   * Três dessas versões foram criadas nos últimos 30 dias
+  * Dez versões foram feitas nos últimos 60 dias
+  * Três dessas versões foram criadas nos últimos 30 dias
 
 * Isso significa que:
 
-   * As três últimas versões são mantidas
+  * As três últimas versões são mantidas
 
 Por exemplo, ao definir o número mínimo E máximo de versões a serem retidas E a versão mais antiga a ser retida:
 
 * Configuração:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Com:
 
-   * Cinco versões foram feitas há 60 dias
+  * Cinco versões foram feitas há 60 dias
 
 * Isso significa que:
 
-   * Três versões são mantidas
+  * Três versões são mantidas
 
 ## Ferramenta Limpar versões {#purge-versions-tool}
 

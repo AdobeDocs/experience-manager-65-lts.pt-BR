@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 23ca3bff-1a7e-48cc-83b7-b2ec8545cd00
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 1%
-
+source-wordcount: '1250'
+ht-degree: 5%
 ---
-
 # Recursos de layout de formulários adaptáveis{#layout-capabilities-of-adaptive-forms}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -67,7 +83,7 @@ Os layouts do Painel estão disponíveis no local `/libs/fd/af/layouts/panel`.
 
 Lista de layouts de painel em formulários adaptáveis
 
-### Responsivo - tudo em uma página sem navegação {#responsive-everything-on-one-page-without-navigation-br}
+### Responsivo - tudo em uma página, sem navegação {#responsive-everything-on-one-page-without-navigation-br}
 
 Use este layout de painel para criar um layout responsivo que se ajuste ao tamanho da tela do seu dispositivo sem qualquer necessidade de navegação especializada.
 
@@ -99,7 +115,7 @@ Expressão de conclusão de etapa no layout Assistente para um formulário de v�
 
 Um formulário usando o Assistente
 
-### Layout para design do Accordion {#layout-for-accordion-design}
+### Layout para o design de accordion {#layout-for-accordion-design}
 
 Usando esse layout, você pode colocar o componente `Panel adaptive form` em um painel com navegação de estilo Accordion. Usando esse layout, você também pode criar painéis repetíveis. Os painéis repetíveis permitem adicionar ou remover painéis dinamicamente, conforme necessário. Você pode definir o número mínimo e máximo de vezes que um painel é repetido. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
 
@@ -109,7 +125,7 @@ A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo us
 
 Painéis repetíveis criados com o layout Acordeão
 
-### Layout com guias - as guias são exibidas à esquerda {#tabbed-layout-tabs-appear-on-the-left}
+### Layout com guias - as guias são exibidas no lado esquerdo {#tabbed-layout-tabs-appear-on-the-left}
 
 Usando este layout, você pode colocar o componente `Panel adaptive form` em um painel com navegação por guias. As guias são colocadas à esquerda do conteúdo do painel.
 
@@ -117,7 +133,7 @@ Usando este layout, você pode colocar o componente `Panel adaptive form` em um 
 
 Guias que aparecem à esquerda de um painel
 
-### Layout com guias - guias são exibidas na parte superior {#tabbed-layout-tabs-appear-on-the-top}
+### Layout com guias - as guias são exibidas no topo {#tabbed-layout-tabs-appear-on-the-top}
 
 Usando esse layout, você pode colocar o Componente `Panel adaptive form` em um painel com navegação por guias. As guias são colocadas em cima do conteúdo do painel.
 
@@ -139,7 +155,7 @@ Lista de layouts móveis em formulários adaptáveis
 
 Ao usar um layout móvel, o menu de formulário, para acessar vários painéis de formulário, está disponível ao tocar no ícone ![aem6forms_form_menu](assets/aem6forms_form_menu.png).
 
-### Layout com títulos de painel no cabeçalho do formulário {#layout-with-panel-titles-in-the-form-header}
+### Layout sem títulos do painel no cabeçalho do formulário {#layout-with-panel-titles-in-the-form-header}
 
 Esse layout, como o nome sugere, mostra títulos de painel junto com o menu de navegação e a barra de navegação. Esse layout também fornece ícones Próximo e Anterior para navegação.
 

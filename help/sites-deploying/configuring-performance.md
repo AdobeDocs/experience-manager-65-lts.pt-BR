@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '5216'
 ht-degree: 16%
 ---
 # Otimização do desempenho {#performance-optimization}
@@ -227,7 +227,7 @@ O mecanismo de fluxo de trabalho usa as filas de trabalho do Apache Sling para m
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Fila de fluxo de trabalho do Granite: a maioria das etapas do fluxo de trabalho, como aquelas que processam ativos DAM, usam o serviço Fila de fluxo de trabalho do Granite.
-* Fila de trabalho do processo externo do fluxo de trabalho do Granite: esse serviço é usado para etapas especiais do fluxo de trabalho externo que normalmente são usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de extração de mídia do InDesign é implementada como um processo externo. O mecanismo de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Fila de trabalho do processo externo do fluxo de trabalho do Granite: esse serviço é usado para etapas especiais do fluxo de trabalho externo que normalmente são usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de extração de mídia do InDesign é implementada como um processo externo. O mecanismo de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure esses serviços para limitar o número máximo de processos de fluxo de trabalho simultâneos.
 

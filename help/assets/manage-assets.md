@@ -8,13 +8,24 @@ mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10234'
+source-wordcount: '10238'
 ht-degree: 3%
-
 ---
-
 # Organize seus ativos digitais {#manage-digital-assets}
 
 | Versão | Link do artigo |
@@ -198,7 +209,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 1. No canto inferior direito da página Upload, clique em **[!UICONTROL Enviar Upload]**.
 
    Para exibir o progresso do carregamento, na Barra de Navegação Global, clique em **[!UICONTROL Trabalhos]**. A página Jobs exibe o progresso do upload. Você pode continuar trabalhando no [!DNL Experience Manager] e retornar à página Trabalhos no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
-Para cancelar um trabalho de carregamento em andamento, clique em **[!UICONTROL Cancelar]** ao lado da Duração.
+   Para cancelar um trabalho de carregamento em andamento, clique em **[!UICONTROL Cancelar]** ao lado da Duração.
 
 #### Fazer upload das opções de trabalho {#upload-job-options}
 

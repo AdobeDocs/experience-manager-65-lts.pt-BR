@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 0%
-
+source-wordcount: '1168'
+ht-degree: 1%
 ---
-
 # Recuperação dos dados de formulários do AEM {#recovering-the-aem-forms-data}
 
 Esta seção descreve as etapas necessárias para recuperar os dados de formulários do AEM. Consulte também [Considerações especiais sobre backup e recuperação](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -51,11 +65,11 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 1. Se necessário, recrie o sistema físico a partir de uma imagem do sistema. Por exemplo, esta etapa pode não ser necessária se o motivo da recuperação for um servidor de banco de dados com defeito.
 1. Aplique patches ou atualizações aos formulários do AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas no procedimento de backup. Os formulários do AEM devem ser corrigidos no mesmo nível de patch de quando foi feito o backup do sistema.
 1. (WebSphere® Application Server) Se estiver recuperando uma nova instância do WebSphere® Application Server, execute o comando restoreConfig.bat/sh.
-1. Recupere o banco de dados do AEM Forms executando primeiro uma operação de restauração de banco de dados usando os arquivos de backup do banco de dados e, em seguida, aplicando os redo logs de transação ao banco de dados recuperado. (Consulte [banco de dados de formulários do AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obter mais informações, consulte um destes artigos da base de dados de conhecimento:
+1. Recupere o banco de dados do AEM Forms executando primeiro uma operação de restauração de banco de dados usando os arquivos de backup do banco de dados e, em seguida, aplicando os redo logs de transação ao banco de dados recuperado. (Consulte [banco de dados do AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obter mais informações, consulte um destes artigos da knowledge base:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Formulários de backup e recuperação do DB2® para AEM](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Formulários Oracle Backup and Recovery for AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Backup e recuperação do Microsoft® SQL Server para formulários AEM](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [Backup e recuperação MySQL para formulários AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recupere o diretório GDS, primeiro excluindo o conteúdo do diretório GDS na instalação existente do AEM Forms e, em seguida, copiando o conteúdo do diretório GDS do GDS de backup. Se você alterou o local do diretório GDS, consulte [Alterando o local GDS durante a recuperação](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).

@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '571'
+ht-degree: 4%
 ---
-
 # Configurações do serviço de nuvem{#cloud-service-configurations}
 
 As configurações são projetadas para fornecer a lógica e a estrutura para armazenar configurações de serviço.
 
 É possível estender as instâncias existentes para criar suas próprias configurações.
 
-## Conceitos  {#concepts}
+## Conceitos {#concepts}
 
 Os princípios usados no desenvolvimento das configurações foram baseados nos seguintes conceitos:
 
@@ -49,8 +58,8 @@ Para fornecer uma configuração para novos serviços, faça o seguinte:
 
 * Nesta seção:
 
-   * um modelo de configuração
-   * um componente de configuração
+  * um modelo de configuração
+  * um componente de configuração
 
 O modelo e o componente devem herdar `sling:resourceSuperType` do modelo base:
 
@@ -136,7 +145,7 @@ propertyname
 
 ### API {#api}
 
-Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integração do AEM {#aem-integration}
 
@@ -165,7 +174,7 @@ A propriedade será criptografada automaticamente (usando o serviço `CryptoSupp
 >
 >Por padrão, o `EcryptionPostProcessor` criptografa somente `POST` solicitações feitas para `/etc/cloudservices`.
 
-#### Propriedades adicionais para a página de serviço jcr:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
+#### Propriedades adicionais para nós jcr:content da página de serviço {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +184,7 @@ A propriedade será criptografada automaticamente (usando o serviço `CryptoSupp
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da marca <code>body</code>).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas do JavaScript para rastrear o comportamento do visitante.</td>
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da marca <code>body</code>).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas do JavaScript para rastrear o comportamento do visitante.</td>
   </tr>
   <tr>
    <td>descrição</td>

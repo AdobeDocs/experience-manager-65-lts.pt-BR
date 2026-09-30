@@ -7,9 +7,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 ---
 # Segurança de documentos | Manipulação de dados do usuário {#document-security-handling-user-data}
@@ -123,7 +141,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Para exportar dados da tabela `EdcAuditEntity`, use a API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
+>Para exportar dados da tabela `EdcAuditEntity`, use a API [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
 
 Para obter dados completos sobre um usuário no sistema, acesse e exporte dados do banco de dados de gerenciamento de usuários. Para obter mais informações, consulte [Gerenciamento de usuários do Forms: Manipulando dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 
@@ -148,7 +166,7 @@ Faça o seguinte para excluir dados de segurança de documentos para uma ID prin
 
    >[!NOTE]
    >
-   >Para excluir dados da tabela `EdcAuditEntity`, use a API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
+   >Para excluir dados da tabela `EdcAuditEntity`, use a API [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
 
 1. Arquivos XML de diretiva ativos e arquivados são armazenados nas tabelas de banco de dados `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity`, respectivamente. Para excluir dados de um usuário dessas tabelas, faça o seguinte:
 

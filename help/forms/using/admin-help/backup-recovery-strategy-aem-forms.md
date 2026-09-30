@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 0%
-
 ---
-
 # Estratégia de backup e recuperação para formulários AEM{#backup-and-recovery-strategy-for-aem-forms}
 
 Se sua implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você será responsável por implementar uma estratégia para fazer backup desses dados e garantir que eles permaneçam sincronizados com os dados do AEM Forms. Além disso, o aplicativo deve ser projetado de modo que seja robusto o suficiente para lidar com um cenário em que os bancos de dados adicionais fiquem fora de sincronia. É altamente recomendável que qualquer operação de banco de dados executada seja feita no contexto de uma transação para ajudar a manter um estado consistente.
@@ -45,9 +60,9 @@ O banco de dados é usado para armazenar artefatos de formulário, configuraçõ
 
 * O modo **Backup de instantâneo** indica que o sistema de formulários do AEM está no modo de backup indefinidamente ou por um número especificado de minutos, após o qual o modo de backup não será mais habilitado. Para entrar ou sair do modo de backup de snapshot, você pode usar uma das opções a seguir. Após um cenário de recuperação, o modo de backup de snapshot não deve ser ativado.
 
-   * Use a página Definições de Backup no Console de Administração. Para entrar no modo de instantâneo, marque a caixa de seleção Operar no modo de backup seguro. Desmarque a caixa de seleção para sair do modo de instantâneo.
-   * Use o script LCBackupMode (consulte [Fazer backup do banco de dados, do GDS e dos diretórios Raiz de Armazenamento de Conteúdo](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para sair do modo de backup de instantâneo, no argumento de script, defina o parâmetro `continuousCoverage` como `false` ou use a opção `leaveContinuousCoverage`.
-   * Use a API de Backup/Recuperação fornecida. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Use a página Definições de Backup no Console de Administração. Para entrar no modo de instantâneo, marque a caixa de seleção Operar no modo de backup seguro. Desmarque a caixa de seleção para sair do modo de instantâneo.
+  * Use o script LCBackupMode (consulte [Fazer backup do banco de dados, do GDS e dos diretórios Raiz de Armazenamento de Conteúdo](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para sair do modo de backup de instantâneo, no argumento de script, defina o parâmetro `continuousCoverage` como `false` ou use a opção `leaveContinuousCoverage`.
+  * Use a API de Backup/Recuperação fornecida. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **O modo de backup contínuo** indica que o sistema está sempre no modo de backup, com uma nova sessão de modo de backup sendo iniciada assim que a sessão anterior é lançada. Não há tempo limite associado ao modo de backup contínuo. Quando o script ou as APIs LCBackupMode são chamados para deixar o modo de backup contínuo, uma nova sessão de modo de backup contínuo é iniciada. Esse modo é útil para oferecer suporte a backups contínuos, mas ainda permitir que documentos antigos e desnecessários sejam removidos do diretório GDS. O modo de backup contínuo não é suportado pela página Backup e Recuperação. Após um cenário de recuperação, o modo de backup contínuo ainda é ativado. Você pode sair do modo de backup contínuo (modo de backup contínuo) usando o script LCBackupMode com a opção `leaveContinuousCoverage`.
 

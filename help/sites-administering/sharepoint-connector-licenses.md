@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 4573803a-65dd-433a-b833-3242556bb1fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
-
 ---
-
 # Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 Esta seção lista todas as licenças, avisos de direitos autorais e isenções de responsabilidade que devem ser explicitamente declarados com o Conector Day JCR para MS® SharePoint.

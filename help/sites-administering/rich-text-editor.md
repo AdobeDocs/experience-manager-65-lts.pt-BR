@@ -6,9 +6,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2978'
 ht-degree: 1%
 ---
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
@@ -316,12 +327,12 @@ Em uma página, você pode incluir a biblioteca cliente CoralUI 2 RTE ou a bibli
 
 ## Informações adicionais {#further-information}
 
-Para obter mais informações sobre como configurar o RTE, consulte a [API do AEM Widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
+Para obter mais informações sobre como configurar o RTE, consulte a [API do AEM Widget](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 Em particular, para ver os plug-ins e as opções relacionadas disponíveis:
 
-* O componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornece um campo de formulário para editar informações de texto estilizado (rich text). Para conhecer todos os parâmetros disponíveis para o formulário rich text, consulte as Opções de configuração.
-* O componente RichText fornece uma ampla variedade de funcionalidades usando plug-ins listados em [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada plugin:
+* O componente [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) fornece um campo de formulário para editar informações de texto estilizado (rich text). Para conhecer todos os parâmetros disponíveis para o formulário rich text, consulte as Opções de configuração.
+* O componente RichText fornece uma ampla variedade de funcionalidades usando plug-ins listados em [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada plugin:
 
   * consulte os Recursos para obter detalhes sobre a funcionalidade que pode ser ativada (ou desativada)
   * Consulte as Opções de configuração para todos os parâmetros disponíveis para obter a configuração detalhada do plug-in apropriado

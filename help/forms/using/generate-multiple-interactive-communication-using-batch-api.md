@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2268'
 ht-degree: 1%
-
 ---
-
 # Gerar várias comunicações interativas usando a API em lote {#use-batch-api-to-generate-multiple-ic}
 
 Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O template é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas de telefone, demonstrativos de cartão de crédito para vários clientes.
@@ -171,7 +185,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
 
 ## Chame a API de lote usando solicitações REST
 
-Você pode invocar [a API de lote](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) por meio de solicitações de Transferência de Estado Representacional (REST). Ele permite que você forneça um terminal REST a outros usuários para acessar a API e configurar seus próprios métodos para processar, armazenar e personalizar a comunicação interativa. Você pode desenvolver seu próprio servlet Java™ personalizado para implantar a API em sua instância do AEM.
+Você pode invocar [a API de lote](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) por meio de solicitações de Transferência de Estado Representacional (REST). Ele permite que você forneça um terminal REST a outros usuários para acessar a API e configurar seus próprios métodos para processar, armazenar e personalizar a comunicação interativa. Você pode desenvolver seu próprio servlet Java™ personalizado para implantar a API em sua instância do AEM.
 
 Antes de implantar o servlet Java™, certifique-se de que você tenha uma comunicação interativa e que os arquivos de dados correspondentes estejam prontos. Execute as seguintes etapas para criar e implantar o servlet Java™:
 
@@ -345,7 +359,7 @@ Em seguida, o URL a seguir no nó de publicação exibe o Canal da Web da comuni
 
 Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório do CRX, no sistema de arquivos, no servidor da Web ou pode acessar dados por meio do serviço de preenchimento prévio OSGI. A sintaxe para mesclar dados usando vários protocolos é:
 
-* **Protocolo CRX**
+* **Protocolo do CRX**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocolo de arquivo**

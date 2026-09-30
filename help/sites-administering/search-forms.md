@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 7%
-
 ---
-
 # Configuração de formulários de pesquisa{#configuring-search-forms}
 
 Use o **Search Forms** para personalizar a seleção de predicados de pesquisa usados nos painéis de pesquisa disponíveis em vários consoles do AEM e/ou painéis do ambiente de criação. A personalização desses painéis torna a funcionalidade de pesquisa versátil, de acordo com suas necessidades específicas.
@@ -26,9 +35,9 @@ Você pode [configurar os formulários de pesquisa](#configuring-your-search-for
 
 * **Ferramentas**
 
-   * **Geral**
+  * **Geral**
 
-      * **Pesquisar Forms**
+    * **Pesquisar Forms**
 
 Ao acessar esse console pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração apropriada é a configuração padrão (pronta para uso) e não pode ser excluída. Após personalizar a configuração, o bloqueio desaparecerá, a menos que você [exclua sua configuração personalizada](#deleting-a-configuration-to-reinstate-the-default). Nesse caso, o padrão (e o indicador de cadeado) é restabelecido.
 
@@ -332,8 +341,10 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >[!NOTE]
 >
 >* Os predicados de pesquisa comuns são definidos em:
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Os predicados de pesquisa relacionados somente ao siteadmin (interface clássica) estão localizados em:
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Eles estão obsoletos e só estão disponíveis para compatibilidade com versões anteriores.
 >
 >Essas informações são somente para referência. Não alterar `/libs`.

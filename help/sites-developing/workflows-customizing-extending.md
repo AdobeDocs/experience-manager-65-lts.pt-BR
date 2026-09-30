@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3619'
 ht-degree: 1%
-
 ---
-
 # Ampliação da funcionalidade do fluxo de trabalho{#extending-workflow-functionality}
 
 Este tópico descreve como desenvolver componentes de etapa personalizados para seus workflows e, em seguida, como interagir programaticamente com workflows.
@@ -63,8 +72,8 @@ O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais
 
   Uma caixa de diálogo com as seguintes guias:
 
-   * **Comum**: para editar o título e a descrição.
-   * **Avançado**: para editar propriedades de notificação por email.
+  * **Comum**: para editar o título e a descrição.
+  * **Avançado**: para editar propriedades de notificação por email.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -76,9 +85,9 @@ O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais
 
 Os seguintes objetos estão disponíveis (dependendo do tipo de etapa) nos scripts ECMA:
 
-* [ItemDeTrabalho](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html)
-* [WorkflowSession](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [DadosFluxoDeTrabalho](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) DadosFluxoDeTrabalho
+* [ItemDeTrabalho](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html)
+* [WorkflowSession](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [DadosFluxoDeTrabalho](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) DadosFluxoDeTrabalho
 * `args`: matriz com os argumentos do processo.
 
 * `sling`: para acessar outros serviços osgi.
@@ -104,9 +113,9 @@ Para herdar de um dos componentes da etapa base (existentes), adicione a seguint
 * Tipo: `String`
 * Valor: um dos seguintes caminhos que são resolvidos para um componente base:
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### Especificando o Título e a Descrição Default para Instâncias da Etapa {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo, adicione 
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
-   * Tipo: `Boolean`
-   * Valor:
+  * Tipo: `Boolean`
+  * Valor:
 
-      * quando definido como `true`, o fluxo de trabalho executará essa etapa e continuará. isso é padrão e também é recomendado
-      * quando `false`, o fluxo de trabalho será executado e interrompido; isso requer manipulação extra; portanto, `true` é recomendado
+    * quando definido como `true`, o fluxo de trabalho executará essa etapa e continuará. isso é padrão e também é recomendado
+    * quando `false`, o fluxo de trabalho será executado e interrompido; isso requer manipulação extra; portanto, `true` é recomendado
 
 * Nome: `DO_NOTIFY`
 
-   * Tipo: `Boolean`
-   * Value: indica se as notificações por email devem ser enviadas para as etapas de participação do usuário (e presume que o servidor de email esteja configurado corretamente)
+  * Tipo: `Boolean`
+  * Value: indica se as notificações por email devem ser enviadas para as etapas de participação do usuário (e presume que o servidor de email esteja configurado corretamente)
 
 ## Persistência e acesso a dados {#persisting-and-accessing-data}
 
@@ -257,7 +266,7 @@ Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo, adicione 
 
 Você pode usar metadados de fluxo de trabalho para manter as informações necessárias durante a vida útil do fluxo de trabalho - e entre etapas. Um requisito comum de etapas do fluxo de trabalho é criar dados persistentes para uso futuro ou recuperar os dados persistentes de etapas anteriores.
 
-Os metadados do fluxo de trabalho são armazenados em um objeto [`MetaDataMap`](#metadatamaps). A API Java fornece o método [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que forneça o objeto `MetaDataMap` apropriado. Este objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou script ECMA de um componente de etapa.
+Os metadados do fluxo de trabalho são armazenados em um objeto [`MetaDataMap`](#metadatamaps). A API Java fornece o método [`Workflow.getWorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que forneça o objeto `MetaDataMap` apropriado. Este objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou script ECMA de um componente de etapa.
 
 #### Java {#java}
 
@@ -662,8 +671,8 @@ function getParticipant() {
 >
 >As seguintes etapas do processo de fluxo de trabalho aceitam pacotes de fluxo de trabalho para ativação de página em massa:
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 Você pode desenvolver etapas de fluxo de trabalho que obtêm os recursos do pacote e os processam. Os seguintes membros do pacote `com.day.cq.workflow.collection` fornecem acesso aos pacotes de fluxo de trabalho:
@@ -832,18 +841,18 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
    * `cq:icon`
 
-     Usado para especificar um [ícone Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) para a etapa.
+     Usado para especificar um [ícone Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) para a etapa.
 
    * `componentGroup`
 
      Deve ser um dos seguintes:
 
-      * Fluxo de trabalho de colaboração
-      * Fluxo de trabalho DAM
-      * Fluxo de trabalho dos formulários
-      * Projetos
-      * WCM fluxo de trabalho
-      * Fluxo de trabalho
+     * Fluxo de trabalho de colaboração
+     * Fluxo de trabalho DAM
+     * Fluxo de trabalho dos formulários
+     * Projetos
+     * WCM fluxo de trabalho
+     * Fluxo de trabalho
 
    ![wf-35](assets/wf-35.png)
 

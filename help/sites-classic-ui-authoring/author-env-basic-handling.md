@@ -9,9 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1189'
 ht-degree: 4%
 ---
 # Manuseio básico{#basic-handling}
@@ -139,7 +150,7 @@ O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore
 >em:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin na API do Widget do CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
+>Consulte [SiteAdmin na API do Widget do CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
 
 ## Informações da página no console Sites {#page-information-on-the-websites-console}
 

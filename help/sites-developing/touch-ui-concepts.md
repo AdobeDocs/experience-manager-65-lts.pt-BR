@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2209'
 ht-degree: 0%
-
 ---
-
 # Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação projetado para operar em dispositivos de toque e desktop.
@@ -28,24 +37,24 @@ O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque c
 A interface habilitada para toque inclui:
 
 * O cabeçalho do conjunto que:
-   * Mostra o logotipo
-   * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
+  * Mostra o logotipo
+  * Fornece um link para a Navegação global
+  * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
-   * Linha do tempo
-   * Referências
-   * Filtros
+  * Linha do tempo
+  * Referências
+  * Filtros
 * O cabeçalho de navegação, que novamente é sensível ao contexto e pode mostrar:
-   * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
-   * Seleção para o painel esquerdo
-   * Navegações estruturais
-   * Acesso a **Criar** ações apropriadas
-   * Exibir seleções
+  * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
+  * Seleção para o painel esquerdo
+  * Navegações estruturais
+  * Acesso a **Criar** ações apropriadas
+  * Exibir seleções
 * A área de conteúdo que:
-   * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
-   * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
-   * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
-   * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
+  * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
+  * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
+  * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
+  * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -196,7 +205,7 @@ As diferenças entre a interface do Granite e a ExtJS (usada para a interface cl
 
 ### Componentes de base da interface de usuário do Granite {#granite-ui-foundation-components}
 
-Os [componentes de base da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos de construção básicos necessários para a compilação de qualquer interface do usuário. Incluem, entre outros:
+Os [componentes de base da interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos de construção básicos necessários para a compilação de qualquer interface do usuário. Incluem, entre outros:
 
 * Botão
 * Hiperlink
@@ -253,7 +262,7 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
 
-Os [componentes de administração da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) são compilados nos componentes de base para fornecer blocos de construção genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
+Os [componentes de administração da interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) são compilados nos componentes de base para fornecer blocos de construção genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
 
 * Barra de navegação global
 * Trilho (esqueleto)

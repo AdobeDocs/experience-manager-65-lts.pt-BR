@@ -1,18 +1,36 @@
 ---
 title: Migrar ativos em massa
-description: Descreve como trazer ativos para  [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
+description: Descreve como trazer ativos para [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 role: Developer,Admin
 feature: Migration,Renditions,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: b8328197-6d2a-493d-8098-db4f68f1fcb0
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 6%
-
+source-wordcount: '1858'
+ht-degree: 9%
 ---
-
 # Como migrar ativos em massa {#assets-migration-guide}
 
 Ao migrar ativos para o [!DNL Adobe Experience Manager], há várias etapas a serem consideradas. Extrair ativos e metadados de sua página inicial atual está fora do escopo deste documento, pois varia muito entre as implementações, mas este documento descreve como trazer esses ativos para [!DNL Experience Manager], aplicar seus metadados, gerar representações e ativá-los para publicar instâncias.

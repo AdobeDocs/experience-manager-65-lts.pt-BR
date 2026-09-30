@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f45ae3e8-f2e6-4c4a-9373-667441cb9fdc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5702'
+source-wordcount: '6045'
 ht-degree: 3%
-
 ---
-
 # Componentes para criação de página{#components-for-page-authoring}
 
 Os componentes a seguir são destinados ao uso durante a criação de conteúdo para uma página da Web padrão. Os componentes formam um subconjunto dos componentes disponíveis prontamente para uma instalação padrão do AEM.
@@ -179,7 +188,7 @@ Aqui você especifica como as páginas são incluídas no carrossel:
 
       * **Notação de predicado do Querybuilder**
         Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
-        Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
+        Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre expressões de consulta e mais exemplos.
 
   * **Ordenar por**
     Selecione `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` no menu suspenso.

@@ -10,14 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: ccd2ad37-7708-4422-9724-145628f36afc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 74%
-
 ---
-
-# Exportar para CSV  {#export-to-csv}
+# Exportar para CSV{#export-to-csv}
 
 **Criar relatórios de arquivos CSV** permite exportar informações sobre suas páginas para um arquivo CSV em seu sistema local.
 
@@ -32,23 +45,23 @@ ht-degree: 74%
 O assistente **Criar exportação de arquivos CSV** permite selecionar:
 
 * Propriedades para exportar
-   * Metadados
-      * Nome
-      * Modificado
-      * Publicado
-      * Modelo
-      * Fluxo de trabalho
-   * Tradução
-      * Traduzido
-   * Analytics
-      * Visualizações de página
-      * Visitantes únicos
-      * Tempo na página
+  * Metadados
+    * Nome
+    * Modificado
+    * Publicado
+    * Modelo
+    * Fluxo de trabalho
+  * Tradução
+    * Traduzido
+  * Analytics
+    * Visualizações de página
+    * Visitantes únicos
+    * Tempo na página
 * Profundidade
-   * Caminho principal
-   * Apenas filhos diretos
-   * Níveis adicionais de filhos
-   * Níveis
+  * Caminho principal
+  * Apenas filhos diretos
+  * Níveis adicionais de filhos
+  * Níveis
 
 O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro aplicativo compatível.
 

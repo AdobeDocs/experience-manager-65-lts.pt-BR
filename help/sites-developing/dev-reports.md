@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5298'
+source-wordcount: '5300'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento de relatórios {#developing-reports}
 
 O Adobe Experience Manager (AEM) fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md), a maioria dos quais baseada em uma estrutura de relatórios.
@@ -107,7 +116,7 @@ Cada coluna é uma instância do [`columnbase` componente](#column-base-componen
 A consulta:
 
 * É definido como parte do componente [`reportbase`](#report-base).
-* É baseado no [QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html) do CQ.
+* É baseado no [QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html) do CQ.
 * Recupera os dados usados como base do relatório. Cada linha do conjunto de resultados (tabela) está vinculada a um nó, conforme retornado pela consulta. As informações específicas de [colunas individuais](#column-base-component) são então extraídas deste conjunto de dados.
 
 * Geralmente consiste em:
@@ -381,7 +390,7 @@ N:charting
 
 Cada relatório pode ter uma caixa de diálogo de configuração, permitindo que o usuário especifique vários parâmetros para o relatório. Esta caixa de diálogo pode ser acessada por meio do botão **Editar** quando a página do relatório estiver aberta.
 
-Esta caixa de diálogo é uma [caixa de diálogo](/help/sites-developing/components-basics.md#dialogs) padrão do CQ e pode ser configurada como tal (consulte [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) para obter mais informações).
+Esta caixa de diálogo é uma [caixa de diálogo](/help/sites-developing/components-basics.md#dialogs) padrão do CQ e pode ser configurada como tal (consulte [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) para obter mais informações).
 
 Uma caixa de diálogo de exemplo pode ter esta aparência:
 

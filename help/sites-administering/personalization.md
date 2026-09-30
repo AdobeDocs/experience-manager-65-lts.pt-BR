@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1542'
 ht-degree: 2%
-
 ---
-
 # Personalização {#personalization}
 
 ## O que é o Personalization? {#what-is-personalization}
@@ -155,7 +166,7 @@ Vários componentes são fornecidos com o AEM para personalização. Alguns perm
 | Botão Enviar do Forms | Um botão de envio adicional para o formulário no qual o título é exibido como texto no botão. |
 | Campo de texto do Forms | Campo de texto que permite aos usuários inserir informações. |
 | Meus gadgets | Permite incluir um de uma seleção de gadgets disponíveis. |
-| Foto de avatar do perfil  | Permite a entrada de uma foto de avatar. |
+| Foto de avatar do perfil | Permite a entrada de uma foto de avatar. |
 | Nome detalhado de perfil | Entrada de detalhes do nome, incluindo elementos como título, nome do meio e sufixo, se necessário. |
 | Nome de exibição no perfil | Nome a ser exibido. |
 | E-mail do perfil | Entrada de um endereço de email. |

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1462'
 ht-degree: 0%
-
 ---
-
 # Mapeamento de dados do componente com propriedades do Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise e armazená-los na **variável CQ** apropriada. Ao adicionar esse componente a uma estrutura, a estrutura exibe a lista de variáveis CQ para que você possa mapear cada uma para a **variável do Analytics** apropriada.
@@ -180,19 +189,19 @@ Usando a imagem acima como exemplo, a **exibição do AEM** tem as seguintes pro
 
    * **Tráfego**:
 
-      * Variável de tráfego ( `prop1`) mapeada para uma variável do CQ ( `eventdata.downloadLink`)
+     * Variável de tráfego ( `prop1`) mapeada para uma variável do CQ ( `eventdata.downloadLink`)
 
-      * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
+     * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
 
    * **Conversão**:
 
-      * Variável de conversão ( `eVar1`) mapeada para uma variável do CQ ( `pagedata.title`)
+     * Variável de conversão ( `eVar1`) mapeada para uma variável do CQ ( `pagedata.title`)
 
-      * Variável de conversão ( `eVar3`) mapeada para uma expressão JavaScript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
+     * Variável de conversão ( `eVar3`) mapeada para uma expressão JavaScript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
 
    * **Evento**:
 
-      * Variável de evento ( `event1`) mapeada para um evento CQ ( `eventdata.events.pageView`)
+     * Variável de evento ( `event1`) mapeada para um evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >

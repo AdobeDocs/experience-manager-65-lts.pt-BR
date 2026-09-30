@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 59%
-
+source-wordcount: '1823'
+ht-degree: 58%
 ---
-
 # Layout responsivo{#responsive-layout}
 
 O AEM permite ter um layout responsivo para suas páginas usando o componente **Contêiner de layout**.
@@ -31,7 +44,7 @@ O container de layout:
 * Fornece a opção de encaixe horizontal na grade, juntamente com a capacidade de posicionar componentes lado a lado na grade e definir quando devem ser recolhidos/refluídos.
 * Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet e assim por diante) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientações relacionadas.
 
-   * Por exemplo, você pode personalizar o tamanho do componente ou se ele pode ser visualizado em dispositivos específicos.
+  * Por exemplo, você pode personalizar o tamanho do componente ou se ele pode ser visualizado em dispositivos específicos.
 
 * Pode ser aninhado para permitir o controle de coluna.
 
@@ -77,10 +90,10 @@ O AEM permite definir layouts dependendo da largura do dispositivo:
 * O emulador permite simular esses layouts em vários dispositivos. Além do tipo de dispositivo, a orientação, selecionada pela opção **Girar dispositivo**, pode afetar o ponto de interrupção selecionado à medida que a largura muda.
 * Os pontos de interrupção são pontos que separam as definições de layout.
 
-   * Eles definem efetivamente a largura máxima (em pixels) de qualquer dispositivo com um layout específico.
-   * Normalmente, os pontos de interrupção são válidos para alguns dispositivos, dependendo da largura das telas.
-   * O alcance do ponto de interrupção se estende da esquerda até o próximo ponto de interrupção.
-   * Não é possível selecionar um ponto de interrupção específico, pois o ponto de interrupção apropriado é selecionado quando você seleciona um dispositivo e uma orientação.
+  * Eles definem efetivamente a largura máxima (em pixels) de qualquer dispositivo com um layout específico.
+  * Normalmente, os pontos de interrupção são válidos para alguns dispositivos, dependendo da largura das telas.
+  * O alcance do ponto de interrupção se estende da esquerda até o próximo ponto de interrupção.
+  * Não é possível selecionar um ponto de interrupção específico, pois o ponto de interrupção apropriado é selecionado quando você seleciona um dispositivo e uma orientação.
 
 Um dispositivo de **desktop** que não possui uma largura específica utiliza o ponto de interrupção padrão (isto é, todos os itens acima do último ponto de interrupção configurado).
 
@@ -125,7 +138,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
-1. Depois que um dispositivo específico é selecionado, você pode: 
+1. Depois que um dispositivo específico é selecionado, você pode:
 
    * Visualizar o marcador ativo do dispositivo selecionado, como **iPad.**
    * Visualizar o marcador ativo do [ponto de interrupção apropriado](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) como **Tablet.**
@@ -199,13 +212,13 @@ O modo **Layout** pode ser iniciado de duas maneiras.
 
 * Ao usar o [modo de menu na barra de ferramentas](/help/sites-authoring/author-environment-tools.md#page-modes) e escolher o modo **Layout**
 
-   * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Direcionamento**.
-   * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
+  * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Direcionamento**.
+  * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
 
 * Ao [editar um componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Ao usar a opção **Layout** no menu de ação rápida do componente, é possível alternar para o modo **Layout**.
-   * O modo **Layout** persiste ao editar o componente e reverte para o modo **Editar** assim que o foco muda para outro componente.
+  * Ao usar a opção **Layout** no menu de ação rápida do componente, é possível alternar para o modo **Layout**.
+  * O modo **Layout** persiste ao editar o componente e reverte para o modo **Editar** assim que o foco muda para outro componente.
 
 Quando estiver no modo de layout, você poderá executar várias ações em uma grade:
 
@@ -219,17 +232,17 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
 * Clique em um componente de conteúdo, a barra de ferramentas permite:
 
-   * **Pai**
+  * **Pai**
 
-     Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
+    Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
 
-   * **Flutuar para a nova linha**
+  * **Flutuar para a nova linha**
 
-     O componente será movido para uma nova linha, dependendo do espaço disponível na grade.
+    O componente será movido para uma nova linha, dependendo do espaço disponível na grade.
 
-   * **Ocultar componente**
+  * **Ocultar componente**
 
-     O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
+    O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -237,33 +250,34 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
   A barra de ferramentas terá opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 
-   * **Pai** - seleciona o componente do pai.
+  * **Pai** - seleciona o componente do pai.
 
-     ![Pai](do-not-localize/screen_shot_2018-03-23at090823.png)
+    ![Pai](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes ocultos** - Revelar todos os componentes ou componentes individuais. O número indica quantos componentes ocultos há atualmente. o contador mostra quantos componentes estão ocultos.
+  * **Mostrar componentes ocultos** - Revelar todos os componentes ou componentes individuais. O número indica quantos componentes ocultos há atualmente. o contador mostra quantos componentes estão ocultos.
 
-     ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
+    ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Reverter layout do ponto de interrupção**: reverte para o layout padrão. Isso significa que nenhum layout personalizado será imposto.
+  * **Reverter layout do ponto de interrupção**: reverte para o layout padrão. Isso significa que nenhum layout personalizado será imposto.
 
-     ![Rever layout do ponto de interrupção](do-not-localize/screen_shot_2018-03-23at091013.png)
+    ![Rever layout do ponto de interrupção](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **Flutuar para uma nova linha** - move o componente uma posição acima, se o espaço permitir.
+  * **Flutuar para uma nova linha** - move o componente uma posição acima, se o espaço permitir.
 
-     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Ocultar componente** - oculta o componente atual.
+  * **Ocultar componente** - oculta o componente atual.
 
-     ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
+    ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-     >[!NOTE]
-     >
-     >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
+    >[!NOTE]
+    >
+    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
+  * **Revelar componentes**
+    Selecione os componentes principais para mostrar a barra de ferramentas de ação com a opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
 
-     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
 

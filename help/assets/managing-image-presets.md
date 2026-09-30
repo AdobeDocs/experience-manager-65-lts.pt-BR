@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3996'
 ht-degree: 7%
-
 ---
-
 # Gerenciamento de predefinições da imagem do Dynamic Media{#managing-image-presets}
 
 As Predefinições de imagem permitem que o Adobe Experience Manager Assets forneça imagens dinamicamente em diferentes tamanhos, formatos ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de dimensionamento e formatação para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando ela for entregue para visualização.

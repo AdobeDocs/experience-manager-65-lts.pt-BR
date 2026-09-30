@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4975'
 ht-degree: 0%
-
 ---
-
 # Recursos do Monitoring Server usando a console JMX{#monitoring-server-resources-using-the-jmx-console}
 
 A Console JMX permite que você monitore e gerencie serviços no servidor do CRX. As seções a seguir resumem os atributos e operações que são expostos por meio da estrutura JMX.
@@ -53,37 +64,37 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as seguintes colunas:
 
-   * Tarefas
-   * Nome da Fila
-   * Tarefas ativas
-   * Tempo Médio de Processamento
-   * Tempo médio de espera
-   * Trabalhos cancelados
-   * Trabalhos com falhas
-   * Trabalhos Concluídos
-   * Trabalhos processados
-   * Trabalhos em fila
+  * Tarefas
+  * Nome da Fila
+  * Tarefas ativas
+  * Tempo Médio de Processamento
+  * Tempo médio de espera
+  * Trabalhos cancelados
+  * Trabalhos com falhas
+  * Trabalhos Concluídos
+  * Trabalhos processados
+  * Trabalhos em fila
 
 **returnWorkflowJobTopicInfo** Lista as informações de processamento dos trabalhos de fluxo de trabalho, organizadas por tópico.
 
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as seguintes colunas:
 
-   * Nome do tópico
-   * Tempo Médio de Processamento
-   * Tempo médio de espera
-   * Trabalhos cancelados
-   * Trabalhos com falhas
-   * Trabalhos Concluídos
-   * Trabalhos processados
+  * Nome do tópico
+  * Tempo Médio de Processamento
+  * Tempo médio de espera
+  * Trabalhos cancelados
+  * Trabalhos com falhas
+  * Trabalhos Concluídos
+  * Trabalhos processados
 
 **returnFailedWorkflowCount** Mostra o número de instâncias de fluxo de trabalho que falharam. Você pode especificar um modelo de fluxo de trabalho para consultar ou recuperar informações de todos os modelos de fluxo de trabalho.
 
 * Argumentos:
 
-   * model: a ID do modelo a ser consultado. Para ver uma contagem de instâncias de fluxo de trabalho com falha para todos os modelos de fluxo de trabalho, não especifique nenhum valor. A ID é o caminho para o nó do modelo, por exemplo:
+  * model: a ID do modelo a ser consultado. Para ver uma contagem de instâncias de fluxo de trabalho com falha para todos os modelos de fluxo de trabalho, não especifique nenhum valor. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho com falha.
 
@@ -96,65 +107,65 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * Reiniciar a instância: (Opcional) Especifique um valor de `true` para reiniciar as instâncias após serem encerradas. O valor padrão de `false` não causa a reinicialização de instâncias de fluxo de trabalho encerradas.
-   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Reiniciar a instância: (Opcional) Especifique um valor de `true` para reiniciar as instâncias após serem encerradas. O valor padrão de `false` não causa a reinicialização de instâncias de fluxo de trabalho encerradas.
+  * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: dados tabulares sobre as instâncias terminadas, contendo as seguintes colunas:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Conteúdo
-   * IniciarComentário
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Conteúdo
+  * IniciarComentário
+  * WorkflowTitle
 
 **retryFailedWorkItems** Tentativas de executar etapas de item de trabalho que falharam. Você pode repetir todos os itens de trabalho com falha ou somente os itens de trabalho com falha de um modelo de fluxo de trabalho específico. Opcionalmente, você testa a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
-   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação aos itens de trabalho com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação aos itens de trabalho com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: dados tabulares sobre os itens de trabalho com falha que são repetidos, incluindo as seguintes colunas:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Conteúdo
-   * IniciarComentário
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Conteúdo
+  * IniciarComentário
+  * WorkflowTitle
 
 **PurgeActive** remove as instâncias de fluxo de trabalho ativas de uma página específica. Você pode remover as instâncias ativas de todos os modelos ou apenas as instâncias de um modelo específico. Opcionalmente, você pode testar a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de dias desde o início do workflow: a idade das instâncias de workflow a serem removidas, em dias.
-   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Número de dias desde o início do workflow: a idade das instâncias de workflow a serem removidas, em dias.
+  * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: dados tabulares sobre as instâncias de fluxo de trabalho ativas que são removidas, incluindo as seguintes colunas:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Conteúdo
-   * IniciarComentário
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Conteúdo
+  * IniciarComentário
+  * WorkflowTitle
 
 **countStaleWorkflows** Retorna o número de instâncias de fluxo de trabalho obsoletas. Você pode recuperar o número de instâncias obsoletas para todos os modelos de fluxo de trabalho ou para um modelo específico.
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho obsoletas.
 
@@ -162,10 +173,10 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias obsoletas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias obsoletas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: uma lista de instâncias de fluxo de trabalho que são reiniciadas.
 
@@ -178,9 +189,9 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo para o qual o número de instâncias em execução é retornado. Especifique nenhum modelo para retornar o número de instâncias em execução de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo para o qual o número de instâncias em execução é retornado. Especifique nenhum modelo para retornar o número de instâncias em execução de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho em execução.
 
@@ -188,9 +199,9 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo para o qual o número de instâncias concluídas é retornado. Especifique nenhum modelo para retornar o número de instâncias concluídas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo para o qual o número de instâncias concluídas é retornado. Especifique nenhum modelo para retornar o número de instâncias concluídas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho concluídas.
 
@@ -198,20 +209,20 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
+  * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de dias desde a conclusão do fluxo de trabalho: o número de dias em que as instâncias de fluxo de trabalho estiveram no estado concluído.
-   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Número de dias desde a conclusão do fluxo de trabalho: o número de dias em que as instâncias de fluxo de trabalho estiveram no estado concluído.
+  * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: dados tabulares sobre as instâncias de fluxo de trabalho concluídas que são removidas, incluindo as seguintes colunas:
 
-   * Iniciador
-   * InstanceId
-   * ModelId
-   * Conteúdo
-   * IniciarComentário
-   * WorkflowTitle
+  * Iniciador
+  * InstanceId
+  * ModelId
+  * Conteúdo
+  * IniciarComentário
+  * WorkflowTitle
 
 ## Repositório {#repository}
 
@@ -251,7 +262,7 @@ Informações sobre o repositório do CRX
    <td>Indica se um nó e uma propriedade do nó podem ter o mesmo nome. true indica que há suporte para os mesmos nomes, false indica que não há suporte. </td>
   </tr>
   <tr>
-   <td>identifier.stability</td>
+   <td>identifier.stable</td>
    <td>Indica a estabilidade de identificadores de nó não referenciáveis. Os seguintes valores são possíveis:
     <ul>
      <li>identifier.stable.indefinite.duration: os identificadores não são alterados.</li>
@@ -289,7 +300,7 @@ Informações sobre o repositório do CRX
    <td>Indica se você pode substituir a propriedade herdada ou a definição de nó filho de um tipo de nó. true indica que há suporte para substituições e false indica que não há substituições.</td>
   </tr>
   <tr>
-   <td>option.observation.supported</td>
+   <td>option.observed.supported</td>
    <td>true indica que a observação assíncrona de alterações no repositório é suportada. O suporte à observação assíncrona permite que os aplicativos recebam e respondam às notificações sobre cada alteração à medida que elas ocorrem.</td>
   </tr>
   <tr>
@@ -329,7 +340,7 @@ Informações sobre o repositório do CRX
    <td>A versão da especificação do JCR que o repositório implementa.</td>
   </tr>
   <tr>
-   <td>option.journaled.observation.supported</td>
+   <td>option.journaled.observed.supported</td>
    <td>true indica que os aplicativos podem executar a observação registrada do repositório. com a observação registrada, um conjunto de notificações de alteração pode ser obtido por um período específico. </td>
   </tr>
   <tr>
@@ -385,7 +396,7 @@ Informações sobre o repositório do CRX
    <td>O URL do fornecedor do repositório.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
+   <td>node.type.management.value.restrictions.supported</td>
    <td>true indica que o repositório aceita restrições de valor para propriedades do nó.</td>
   </tr>
   <tr>
@@ -446,7 +457,7 @@ Informações sobre o repositório do CRX
    <td>true indica que option.xml.export.support é true e query.languages tem comprimento diferente de zero.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfield.content.supported</td>
    <td>true indica que o repositório suporta conteúdo não arquivado. Nós não arquivados não fazem parte da hierarquia do repositório.</td>
   </tr>
   <tr>
@@ -532,7 +543,7 @@ Somente leitura.
 
 * Argumentos:
 
-   * name: um valor de string que representa o nome do novo espaço de trabalho.
+  * name: um valor de string que representa o nome do novo espaço de trabalho.
 
 * Valor retornado: nenhum
 
@@ -540,7 +551,7 @@ Somente leitura.
 
 * Argumentos:
 
-   * excluir: um valor booleano que indica se os itens do repositório não utilizados devem ser excluídos. Um valor true causa a exclusão de nós e propriedades não usados. Um valor false faz com que todos os nós sejam verificados, mas nenhum é excluído.
+  * excluir: um valor booleano que indica se os itens do repositório não utilizados devem ser excluídos. Um valor true causa a exclusão de nós e propriedades não usados. Um valor false faz com que todos os nós sejam verificados, mas nenhum é excluído.
 
 * Valor retornado: nenhum
 
@@ -553,13 +564,13 @@ Somente leitura.
 
 * Argumentos:
 
-   * `target`: (Opcional) Um valor `String` que representa o nome do arquivo ZIP ou diretório em que os dados do repositório serão arquivados. Para usar um arquivo ZIP, inclua a extensão de nome de arquivo ZIP. Para usar um diretório, inclua nenhuma extensão de nome de arquivo.
+  * `target`: (Opcional) Um valor `String` que representa o nome do arquivo ZIP ou diretório em que os dados do repositório serão arquivados. Para usar um arquivo ZIP, inclua a extensão de nome de arquivo ZIP. Para usar um diretório, inclua nenhuma extensão de nome de arquivo.
 
-     Para executar um backup incremental, especifique o diretório usado anteriormente para o backup.
+    Para executar um backup incremental, especifique o diretório usado anteriormente para o backup.
 
-     Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
+    Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
 
-     Quando você não especifica nenhum valor, o valor padrão de `backup-currentdate.zip` é usado, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
+    Quando você não especifica nenhum valor, o valor padrão de `backup-currentdate.zip` é usado, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
 
 * Valor retornado: nenhum
 
@@ -592,7 +603,7 @@ Somente leitura.
 
 * Argumentos:
 
-   * `background`: um valor booliano que indica se a operação deve ser executada em segundo plano para que o Console da Web possa ser usado durante a execução. Um valor true executa a operação em segundo plano.
+  * `background`: um valor booliano que indica se a operação deve ser executada em segundo plano para que o Console da Web possa ser usado durante a execução. Um valor true executa a operação em segundo plano.
 
 * Valor retornado: nenhum
 
@@ -605,9 +616,9 @@ Somente leitura.
 
 * Argumentos:
 
-   * `master`: um valor de cadeia de caracteres que representa o endereço IP ou o nome do computador que executa o nó de repositório mestre.
-   * `username`: O nome a ser usado para autenticar com o cluster.
-   * `password`: A senha a ser usada para autenticação.
+  * `master`: um valor de cadeia de caracteres que representa o endereço IP ou o nome do computador que executa o nó de repositório mestre.
+  * `username`: O nome a ser usado para autenticar com o cluster.
+  * `password`: A senha a ser usada para autenticação.
 
 * Valor retornado: nenhum
 
@@ -623,28 +634,28 @@ O valor do campo TimeSeries para cada tipo de estatística definido por `org.apa
 * Tipo: `TimeSeries`
 * Nome: um dos seguintes valores da classe Enum `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * BUNDLE_WRITE_COUNTER
-   * BUNDLE_WRITE_DURATION
-   * BUNDLE_WS_SIZE_COUNTER
-   * QUERY_AVERAGE
-   * QUERY_COUNT
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * BUNDLE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * BUNDLE_COUNTER
+  * BUNDLE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * BUNDLE_WRITE_COUNTER
+  * BUNDLE_WRITE_DURATION
+  * BUNDLE_WS_SIZE_COUNTER
+  * QUERY_AVERAGE
+  * QUERY_COUNT
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### Atributos {#attributes-1}
 
@@ -816,7 +827,7 @@ Chama o método startupFinished do inicializador de servidor. O método tenta ab
 Define o valor de conclusão do processo de inicialização do servidor. A barra de progresso na janela QuickStart representa o valor de conclusão.
 
 * Argumentos:
-   * p1: um valor flutuante que representa quanto do processo de inicialização está concluído, como uma fração. O valor deve estar entre zero e um. Por exemplo, 0,3 indica 30% concluído.
+  * p1: um valor flutuante que representa quanto do processo de inicialização está concluído, como uma fração. O valor deve estar entre zero e um. Por exemplo, 0,3 indica 30% concluído.
 * Valor retornado: nenhum.
 
 ## Serviços de terceiros {#third-party-services}

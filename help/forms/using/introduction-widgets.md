@@ -8,13 +8,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 exl-id: 9d80bc0a-f2b0-4b27-9417-639531cb8415
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 2%
-
 ---
-
 # Estrutura de aparência para formulários adaptáveis e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 O Forms (formulários adaptáveis e formulários HTML5) usa as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins jQuery disponíveis no Forms. Você também pode implementar a lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementa cláusulas de figura. Os desenvolvedores de formulários podem criar e usar aparências personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.

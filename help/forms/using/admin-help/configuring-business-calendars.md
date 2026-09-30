@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1949'
 ht-degree: 0%
-
 ---
-
 # Configuração de calendários de negócios {#configuring-business-calendars}
 
 *Calendários comerciais* definem dias úteis e não úteis (por exemplo, feriados oficiais, finais de semana e dias de desligamento da empresa) para sua organização. Ao usar calendários comerciais, os formulários do AEM ignoram dias não úteis ao executar determinados cálculos de data. No Workbench, você pode especificar se usará calendários de negócios para eventos associados ao usuário, como lembretes de tarefa, prazos e escalonamentos, ou para ações não associadas a usuários, como Eventos de Timer e o Serviço de Espera.
@@ -25,7 +40,7 @@ Por exemplo, um lembrete de tarefa é configurado para ocorrer três dias úteis
 
 >[!NOTE]
 >
->Ao calcular datas e horas usando calendários comerciais, o AEM Forms usa a data e a hora do servidor em que está sendo executado e não ajusta a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver agendado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5:00 da manhã, horário local.:00
+>Ao calcular datas e horas usando calendários comerciais, o AEM Forms usa a data e a hora do servidor em que está sendo executado e não ajusta a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5h da hora local.
 
 ## Uso do calendário comercial padrão {#using-the-default-business-calendar}
 
@@ -78,7 +93,7 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
    Se você selecionar essa opção, um evento que ocorre antes do intervalo de tempo especificado será movido para o início do intervalo de tempo, e um evento que ocorre após o intervalo de tempo será movido para a hora inicial do próximo dia útil.
 
-   Por exemplo, considere uma situação em que um usuário receba uma tarefa às 2:00 da manhã de uma terça-feira e o lembrete para essa tarefa seja definido como dois dias úteis. Sem o horário comercial, o lembrete ocorreria às 2:00 da manhã na quinta-feira. Se o horário comercial estiver definido como 8:00 às 17:00, o lembrete será enviado por push para 8:00 na quinta-feira. :00Sem horário comercial, se um evento de lembrete fosse criado às 18h00 na terça-feira, o lembrete ocorreria depois do horário comercial na quinta-feira. :00Com o horário comercial definido para as 8h00 às 17h00, o lembrete ocorreria às 8h00 da sexta-feira.:00:00:00
+   Por exemplo, considere uma situação em que um usuário recebe uma tarefa às 2h de uma terça-feira e o lembrete dessa tarefa é definido como dois dias úteis. Sem horário comercial, o lembrete ocorreria às 2:00 da manhã da quinta-feira. Se o horário comercial estiver definido como 8h às 17h, o lembrete será encaminhado para 8h na quinta-feira. Sem horário comercial, se um evento de lembrete fosse criado às 18h de terça-feira, o lembrete ocorreria depois do horário comercial de quinta-feira. Com o horário comercial definido para 8:00 às 17:00, o lembrete ocorreria às 8:00 na sexta-feira.
 
 1. No calendário à esquerda, clique duas vezes em qualquer outro dia não útil, como feriados. Não é possível selecionar dias no passado. Os dias não-úteis selecionados são exibidos em uma lista à direita, com a data aparecendo duas vezes em uma linha. Selecione a data à esquerda para digitar o nome ou a descrição do dia não útil.
 

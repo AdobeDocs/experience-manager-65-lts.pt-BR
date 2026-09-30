@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 1%
-
+source-wordcount: '2007'
+ht-degree: 2%
 ---
-
 # Gerenciar metadados de formulário{#manage-form-metadata}
 
 ## Aplica-se a {#applies-to}
@@ -296,11 +310,11 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
 1. Clique em um componente que você acabou de arrastar. Na guia Configurações que é aberta no painel direito, preencha as informações dos seguintes campos:
 
    1. Especifique um Rótulo de campo que seja usado como um nome de exibição acima do campo colocado no esquema (Por exemplo: Departamento)
-   1. Em Mapear para campo de propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere ‘**default**’ para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. No campo Mapear para propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere ‘**default**’ para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Não altere o prefixo ‘./jcr:content/metadata/&#39;, pois define o caminho onde a propriedade está armazenada.
+      >Não altere o prefixo ‘./jcr:content/metadata/’, pois ele define o caminho onde a propriedade está armazenada.
       >
       >Além disso, o nome da propriedade deve ser exclusivo para evitar a gravação de valores para duas ou mais propriedades no mesmo local no repositório. Portanto, é recomendável alterar o valor &quot;padrão&quot;.
 

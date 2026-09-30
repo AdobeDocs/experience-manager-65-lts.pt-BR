@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1935'
 ht-degree: 0%
-
 ---
-
 # Configuração do OSGi{#configuring-osgi}
 
 O [OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos do AEM e sua configuração.
@@ -34,22 +43,22 @@ Qualquer um dos métodos pode ser usado, embora existam diferenças sutis, princ
 
 * [Console da Web do Adobe CQ](#osgi-configuration-with-the-web-console)
 
-   * O Console da Web é a interface padrão para a configuração do OSGi. Ela fornece uma interface para editar as várias propriedades, onde os valores possíveis podem ser selecionados nas listas predefinidas.
+  * O Console da Web é a interface padrão para a configuração do OSGi. Ela fornece uma interface para editar as várias propriedades, onde os valores possíveis podem ser selecionados nas listas predefinidas.
 
-     Como tal, é o método mais fácil de usar.
+    Como tal, é o método mais fácil de usar.
 
-   * Quaisquer configurações feitas com o Console da Web são aplicadas imediatamente e aplicáveis à instância atual, independentemente do modo de execução atual ou de qualquer alteração subsequente no modo de execução.
+  * Quaisquer configurações feitas com o Console da Web são aplicadas imediatamente e aplicáveis à instância atual, independentemente do modo de execução atual ou de qualquer alteração subsequente no modo de execução.
 
 * [arquivos de configuração](#osgi-configuration-with-configuration-files)
 
-   * Contêm configurações definidas no console da Web.
-   * Podem ser incluídos em pacotes de conteúdo para uso em outras instâncias.
+  * Contêm configurações definidas no console da Web.
+  * Podem ser incluídos em pacotes de conteúdo para uso em outras instâncias.
 
-* [nós de conteúdo (sling:osgiConfig) no repositório](#osgi-configuration-in-the-repository)
+* [content-nodes (sling:osgiConfig) no repositório](#osgi-configuration-in-the-repository)
 
-   * Requer configuração manual usando CRXDE Lite.
-   * Devido às convenções de nomenclatura dos nós `sling:OsgiConfig`, você pode vincular a configuração a um [modo de execução](/help/sites-deploying/configure-runmodes.md) específico. Você pode até mesmo salvar configurações para mais de um modo de execução no mesmo repositório.
-   * Todas as configurações apropriadas são aplicadas imediatamente (dependendo do modo de execução).
+  * Requer configuração manual usando CRXDE Lite.
+  * Devido às convenções de nomenclatura dos nós `sling:OsgiConfig`, você pode vincular a configuração a um [modo de execução](/help/sites-deploying/configure-runmodes.md) específico. Você pode até mesmo salvar configurações para mais de um modo de execução no mesmo repositório.
+  * Todas as configurações apropriadas são aplicadas imediatamente (dependendo do modo de execução).
 
 Qualquer que seja o método usado, todos esses métodos de configuração:
 
@@ -317,17 +326,17 @@ Para listar todos os nós de configuração na sua instância, use a funcionalid
 
   `/apps/{somewhere}`
 
-   * Por padrão, `{somewhere}` é `system/config`, portanto, a configuração é gravada em
+  * Por padrão, `{somewhere}` é `system/config`, portanto, a configuração é gravada em
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * No entanto, se você estiver editando uma configuração que veio inicialmente de outro lugar no repositório: por exemplo:
+  * No entanto, se você estiver editando uma configuração que veio inicialmente de outro lugar no repositório: por exemplo:
 
-     /libs/foo/config/Someconfig
+    /libs/foo/config/Someconfig
 
-     Em seguida, a configuração atualizada é gravada no local original; por exemplo:
+    Em seguida, a configuração atualizada é gravada no local original; por exemplo:
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * As configurações alteradas por `admin` são salvas em `*.config` arquivos em:
 
@@ -335,17 +344,17 @@ Para listar todos os nós de configuração na sua instância, use a funcionalid
      /crx-quickstart/launchpad/config
   ```
 
-   * Esta área são os dados privados do administrador de configuração OSGi e contém todos os detalhes de configuração especificados por `admin`, independentemente de como eles entraram no sistema.
-   * Essa área é um detalhe de implementação e você nunca deve editar esse diretório diretamente.
-   * No entanto, é útil saber o local desses arquivos de configuração para que as cópias possam ser feitas para backup, várias instalações ou ambas:
+  * Esta área são os dados privados do administrador de configuração OSGi e contém todos os detalhes de configuração especificados por `admin`, independentemente de como eles entraram no sistema.
+  * Essa área é um detalhe de implementação e você nunca deve editar esse diretório diretamente.
+  * No entanto, é útil saber o local desses arquivos de configuração para que as cópias possam ser feitas para backup, várias instalações ou ambas:
 
-      * Console de gerenciamento do Apache Felix OSGi
+    * Console de gerenciamento do Apache Felix OSGi
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * Repositório do cliente do CRX Sling
+    * Repositório do cliente do CRX Sling
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

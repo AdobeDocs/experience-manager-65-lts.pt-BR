@@ -1,6 +1,6 @@
 ---
-title: Autenticação do Adobe IMS e  [!DNL Admin Console] Suporte para o Adobe Experience Manager Managed Services
-description: Saiba como usar o  [!DNL Admin Console] no Adobe Experience Manager.
+title: Autenticação do Adobe IMS e suporte [!DNL Admin Console] para o Adobe Experience Manager Managed Services
+description: Saiba como usar o [!DNL Admin Console] no Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 6%
-
+source-wordcount: '1702'
+ht-degree: 10%
 ---
-
 # Autenticação do Adobe IMS e suporte [!DNL Admin Console] para o AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -26,7 +38,7 @@ ht-degree: 6%
 
 O AEM 6.4.3.0 apresenta o suporte [!DNL Admin Console] para instâncias do AEM e autenticação baseada no Adobe IMS (Identity Management System) para clientes do **AEM Managed Services**.
 
-A integração do AEM ao [!DNL Admin Console] permitirá que os clientes do AEM Managed Services gerenciem todos os usuários do Experience Cloud em um único console. Os usuários podem ser atribuídos a perfis de produtos associados a instâncias do AEM, permitindo que façam logon em uma instância específica.
+A integração do AEM ao [!DNL Admin Console] permitirá que os clientes do AEM Managed Services gerenciem todos os usuários da Experience Cloud em um único console. Os usuários podem ser atribuídos a perfis de produtos associados a instâncias do AEM, permitindo que façam logon em uma instância específica.
 
 ## Destaques principais {#key-highlights}
 

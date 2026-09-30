@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 0%
-
 ---
-
 # Administração de usuários, grupos e direitos de acesso{#user-group-and-access-rights-administration}
 
 A habilitação do acesso a um repositório do CRX envolve vários tópicos:
@@ -60,7 +72,7 @@ O CRX permite configurar os direitos de acesso para contas de usuário e de grup
 
 >[!NOTE]
 >
->O CRX implementa o controle de acesso [&#x200B; conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>O CRX implementa o controle de acesso [&#x200B; conforme definido pela JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Uma instalação padrão de um repositório do CRX é configurada para usar listas de controle de acesso baseadas em recursos. Esta é uma possível implementação do controle de acesso JSR-283 e uma das implementações presentes com Jackrabbit.
 
@@ -491,7 +503,7 @@ As políticas podem ser selecionadas para:
 
 ### Privilégios {#privileges}
 
-Os seguintes privilégios estão disponíveis para seleção ao adicionar uma entrada de controle de acesso (consulte a [API de Segurança](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obter detalhes completos):
+Os seguintes privilégios estão disponíveis para seleção ao adicionar uma entrada de controle de acesso (consulte a [API de Segurança](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obter detalhes completos):
 
 <table>
  <tbody>

@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1673'
 ht-degree: 0%
-
 ---
-
 # Integração de serviços com o console JMX{#integrating-services-with-the-jmx-console}
 
 Crie e implante MBeans para gerenciar serviços usando o Console JMX. Expor atributos e operações do serviço para permitir que as tarefas administrativas sejam executadas.
@@ -38,11 +47,11 @@ Além de definir a interface de gerenciamento, a interface também define a inte
 
 ### Usando anotações para fornecer informações sobre o MBean {#using-annotations-to-provide-mbean-information}
 
-O pacote [com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornece várias anotações e classes para fornecer facilmente metadados MBean ao console JMX. Use essas anotações e classes em vez de adicionar informações diretamente ao objeto MBeanInfo do MBean.
+O pacote [com.adobe.granite.jmx.annotation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) fornece várias anotações e classes para fornecer facilmente metadados MBean ao console JMX. Use essas anotações e classes em vez de adicionar informações diretamente ao objeto MBeanInfo do MBean.
 
 **Anotações**
 
-Adicione anotações à interface de gerenciamento para especificar metadados MBean. As informações aparecem no console JMX para cada classe de implementação implantada. As seguintes anotações estão disponíveis (para obter informações completas, consulte o [com.adobe.granite.jmx.annotation JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Adicione anotações à interface de gerenciamento para especificar metadados MBean. As informações aparecem no console JMX para cada classe de implementação implantada. As seguintes anotações estão disponíveis (para obter informações completas, consulte o [com.adobe.granite.jmx.annotation JavaDocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Descrição:** fornece uma descrição da classe ou do método MBean. Quando usada na declaração da classe, a descrição aparece na página Console JMX para o MBean. Quando usada em um método, a descrição aparece como texto em foco para o atributo ou operação correspondente.
 * **Impacto:** o impacto de um método. Valores de parâmetro válidos são os campos definidos por [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
@@ -431,7 +440,7 @@ Para sua conveniência, você pode copiar e colar o seguinte código XML no arqu
 * Plug-in de pacote Apache Felix Maven: cria o pacote e o manifesto
 * Plug-in SCR Apache Felix Maven: cria o arquivo de descritor do componente e configura o cabeçalho de manifesto do componente de serviço.
 
-**Observação:** no momento da gravação, o plug-in maven scr não é compatível com o plug-in m2e para Eclipse. (Consulte [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Para usar o Eclipse IDE, instale o Maven e use a interface de linha de comando para executar compilações.
+**Observação:** no momento da gravação, o plug-in maven scr não é compatível com o plug-in m2e para Eclipse. (Consulte [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Para usar o Eclipse IDE, instale o Maven e use a interface de linha de comando para executar builds.
 
 #### Exemplo de arquivo POM {#example-pom-file}
 

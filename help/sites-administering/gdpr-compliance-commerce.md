@@ -6,13 +6,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # AEM Commerce - Disponibilidade do GDPR{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -40,7 +58,7 @@ Para a integração do Salesforce Commerce Cloud, a AEM Commerce não armazena i
 Para as integrações hybris e HCL WebSphere® Commerce, há alguns dados no AEM. Use as [instruções do GDPR da Plataforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) e considere estas perguntas:
 
 1. **Onde meus dados são armazenados/usados?** Informações de perfil de usuário em cache, como nome, identificador de usuário de comércio, token, senha e dados de endereço, conforme mostrado no AEM.
-1. **Com quem compartilho os dados do GDPR cobertos?** As atualizações de dados relevantes ao GDPR na AEM Commerce não são armazenadas (exceto as informações de perfil relevantes, como mencionado acima), mas retornam por proxy para a plataforma de comércio.
+1. **Com quem compartilho os dados cobertos do GDPR?** Nenhuma atualização de dados relevantes para o GDPR na AEM Commerce é armazenada (exceto as informações de perfil relevantes, como mencionado acima), mas é enviada por proxy para a plataforma de comércio.
 1. **Como excluir meus dados de usuário**? Exclua o perfil de usuário no AEM e chame a exclusão de usuário na plataforma de comércio.
 
 >[!NOTE]

@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3540'
+source-wordcount: '3552'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento de componentes do AEM{#developing-aem-components}
 
 Os componentes do AEM são usados para reter, formatar e renderizar o conteúdo disponibilizado em suas páginas da Web.
@@ -110,13 +119,13 @@ O comportamento de edição [de um componente é configurado](/help/sites-develo
 
 ## Configuração do comportamento de visualização {#configuring-the-preview-behavior}
 
-O cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo **Visualização** mesmo quando a página não é atualizada.
+O cookie [WCM Mode](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo **Visualização** mesmo quando a página não é atualizada.
 
 Para componentes com uma renderização sensível ao Modo WCM, eles precisam ser definidos para se atualizarem especificamente e, em seguida, confiar no valor do cookie.
 
 >[!NOTE]
 >
->Na interface habilitada para toque, somente os valores `EDIT` e `PREVIEW` são usados para o cookie [WCM Mode](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>Na interface habilitada para toque, somente os valores `EDIT` e `PREVIEW` são usados para o cookie [WCM Mode](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Criando e configurando uma caixa de diálogo {#creating-and-configuring-a-dialog}
 
@@ -124,9 +133,9 @@ As caixas de diálogo são usadas para permitir que o autor interaja com o compo
 
 ### Interface do usuário do Coral e do Granite {#coral-ui-and-granite-ui}
 
-A [Interface do usuário do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) e a [Interface do usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) definem a aparência moderna do AEM.
+A [Interface do usuário do Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html) e a [Interface do usuário do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) definem a aparência moderna do AEM.
 
-A [Interface do usuário do Granite fornece uma grande variedade de componentes básicos (widgets)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) necessários para criar sua caixa de diálogo no ambiente de criação. Quando necessário, você pode estender esta seleção e [criar seu próprio widget](#creatinganewwidget).
+A [Interface do usuário do Granite fornece uma grande variedade de componentes básicos (widgets)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) necessários para criar sua caixa de diálogo no ambiente de criação. Quando necessário, você pode estender esta seleção e [criar seu próprio widget](#creatinganewwidget).
 
 Para obter detalhes completos, consulte:
 
@@ -134,13 +143,13 @@ Para obter detalhes completos, consulte:
 
   * Fornece uma interface consistente em todas as soluções em nuvem
   * [Conceitos da interface habilitada para toque do AEM - interface do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-  * [Guia da interface de usuário do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * [Guia da interface de usuário do Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html)
 
 * Interface do Granite
 
   * Fornece marcação da interface Coral encapsulada em componentes Sling para construir consoles e caixas de diálogo da interface
   * [Conceitos da interface do usuário habilitada para toque do AEM - interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-  * [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * [Documentação da interface de usuário do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -203,13 +212,13 @@ Para criar um widget para usar em uma caixa de diálogo de componente para a int
 
 >[!NOTE]
 >
->Para obter detalhes completos sobre a interface do Granite, consulte a [documentação sobre a interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Para obter detalhes completos sobre a interface do Granite, consulte a [documentação sobre a interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Se você considerar sua caixa de diálogo como um contêiner simples para um elemento de formulário, também poderá ver o conteúdo principal do seu conteúdo da caixa de diálogo como campos de formulário. A criação de um campo de formulário requer a criação de um tipo de recurso; é equivalente à criação de um componente. Para ajudá-lo nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Mais especificamente, a interface do usuário do Granite fornece uma variedade de componentes de campo adequados para uso em caixas de diálogo (ou, de modo mais geral, em [formulários](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+Mais especificamente, a interface do usuário do Granite fornece uma variedade de componentes de campo adequados para uso em caixas de diálogo (ou, de modo mais geral, em [formulários](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -261,7 +270,7 @@ Para inserir lógica no campo, você deve:
 1. Marque seu campo com uma determinada classe CSS (o *gancho*).
 1. Defina, na biblioteca do cliente, um ouvinte JS conectado a esse nome de classe CSS (isso garante que a lógica personalizada tenha escopo somente para o campo e não afete outros campos do mesmo tipo).
 
-Para fazer isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [documentação da interface do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você teve que executar com ExtJS no passado: localize a página de documentação de um determinado widget e, em seguida, verifique os detalhes da API de evento.
+Para fazer isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [documentação da interface do Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você teve que executar com ExtJS no passado: localize a página de documentação de um determinado widget e, em seguida, verifique os detalhes da API de evento.
 
 Para ver um exemplo, consulte:
 
@@ -300,7 +309,7 @@ Para ver um exemplo, consulte:
 
 #### Validação de campo (interface do usuário do Granite) {#field-validation-granite-ui}
 
-A validação de campo na interface do usuário do Granite e nos Componentes da interface do usuário do Granite (equivalentes a widgets) é feita usando a API `foundation-validation`. [Consulte a documentação do Granite `foundation-valdiation` para obter detalhes.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+A validação de campo na interface do usuário do Granite e nos Componentes da interface do usuário do Granite (equivalentes a widgets) é feita usando a API `foundation-validation`. [Consulte a documentação do Granite `foundation-valdiation` para obter detalhes.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Para obter exemplos, consulte:
 
@@ -458,7 +467,7 @@ Ao migrar um componente projetado para uso com a interface clássica para um com
   * As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) são fornecidas para ajudar a estender os componentes existentes.
   * [O mapeamento de ExtJS para componentes de interface do Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos de interface do Granite equivalentes.
   * Personalizando campos, para obter mais informações, consulte a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
-  * Migrar de vtypes para [validação da interface do usuário para Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Migrar de vtypes para [validação da interface do usuário para Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
   * Usando ouvintes JS, para obter mais informações, consulte [Manipulando eventos de campo](#handling-field-events) e a sessão do AEM Gems em [Personalizando campos de caixa de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
 
 ### Migrando código cq:listener {#migrating-cq-listener-code}

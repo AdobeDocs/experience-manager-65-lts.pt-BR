@@ -9,9 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: a8b1fab9-1a63-4f99-87e1-48f6167e9953
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # Inicialização de fluxos de trabalho{#starting-workflows}
@@ -172,7 +183,7 @@ Um pacote de workflow:
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
      * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
-     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 

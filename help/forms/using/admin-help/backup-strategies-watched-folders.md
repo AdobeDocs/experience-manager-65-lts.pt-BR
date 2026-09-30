@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5955deb0-9d1c-4b61-a202-41ef03a23cf8
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 0%
-
 ---
-
 # Estratégias de backup para pastas monitoradas {#backup-strategies-for-watched-folders}
 
 Esse conteúdo descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
@@ -68,7 +83,7 @@ A tabela a seguir descreve a manipulação de cinco arquivos de amostra (file1, 
    <td><p>vazio</p></td>
   </tr>
   <tr>
-   <td><p>Preparo</p></td>
+   <td><p>Fase</p></td>
    <td><p>vazio</p></td>
    <td><p>arquivo1</p></td>
    <td><p>arquivo2</p></td>
@@ -160,11 +175,11 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e d
 * Se o backup de pasta monitorada disponível for mais antigo do que o tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
 * Se o último backup disponível não for suficientemente recente, o tempo de backup for menor que o tempo necessário para processar os arquivos e a pasta monitorada for restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
 
-   * **Estágio 1:** na pasta de entrada
-   * **Estágio 2:** Copiado para a pasta de preparo, mas o processo ainda não foi chamado
-   * **Estágio 3:** Copiado para a pasta de preparo e o processo é chamado
-   * **Estágio 4:** Manipulação em andamento
-   * **Estágio 5:** Resultados retornados
+  * **Estágio 1:** na pasta de entrada
+  * **Estágio 2:** Copiado para a pasta de preparo, mas o processo ainda não foi chamado
+  * **Estágio 3:** Copiado para a pasta de preparo e o processo é chamado
+  * **Estágio 4:** Manipulação em andamento
+  * **Estágio 5:** Resultados retornados
 
   Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
 

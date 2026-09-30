@@ -9,9 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 0%
 ---
 # Criação de um novo componente de campo da interface de usuário do Granite{#creating-a-new-granite-ui-field-component}
@@ -26,7 +37,7 @@ A interface do usuário do Granite fornece uma variedade de componentes projetad
 
 >[!NOTE]
 >
->Para obter detalhes completos sobre campos, consulte a [documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Para obter detalhes completos sobre campos, consulte a [documentação da interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Use a estrutura do Granite UI Foundation para desenvolver e/ou estender componentes do Granite. Isso tem dois elementos:
 
@@ -48,7 +59,7 @@ O componente genérico da interface do usuário do Granite `field` é composto d
 * `init.jsp`: manipula o processamento genérico; rotulagem, descrição e fornece o valor de formulário necessário ao renderizar o campo.
 * `render.jsp`: é aqui que a renderização real do campo é executada e deve ser substituída para seu campo personalizado; está incluída por `init.jsp`.
 
-Consulte a [documentação da interface do usuário do Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) para obter detalhes.
+Consulte a [documentação da interface do usuário do Granite - Campo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) para obter detalhes.
 
 Para obter exemplos, consulte:
 

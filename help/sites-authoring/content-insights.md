@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
-
 ---
-
 # Content Insight{#content-insight}
 
 O Insight de conteúdo fornece informações sobre o desempenho da página usando análises da Web e recomendações de SEO. Use o Insight de conteúdo para tomar decisões sobre como modificar páginas ou saber como as alterações anteriores alteraram o desempenho. Para cada página criada, você pode abrir o Insight de conteúdo para analisar a página.
@@ -30,9 +43,9 @@ A página Insight de conteúdo inclui relatórios que usam dados do Adobe SiteCa
 
 * SiteCatalyst: estão disponíveis relatórios para as seguintes métricas:
 
-   * Visualizações da página
-   * Tempo médio gasto na página
-   * Fontes
+  * Visualizações da página
+  * Tempo médio gasto na página
+  * Fontes
 
 * Target: relatórios sobre as atividades de campanha para as quais a página inclui ofertas.
 * BrightEdge: Relatórios sobre os recursos da página que melhoram a visibilidade da página para os mecanismos de pesquisa e recomenda os recursos que devem ser implementados.
@@ -62,8 +75,8 @@ O relatório Exibições inclui os seguintes recursos para avaliar o tráfego da
 * O número total de exibições de uma página para o período do relatório.
 * Um gráfico do número de exibições no período do relatório:
 
-   * Total de visualizações.
-   * Visitantes únicos.
+  * Total de visualizações.
+  * Visitantes únicos.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

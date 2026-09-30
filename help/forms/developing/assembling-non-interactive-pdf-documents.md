@@ -10,14 +10,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fc5ea2a6-79b4-436e-b5bc-c4beaf3619ee
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 0%
-
 ---
-
 # Montagem de documentos não interativos do PDF {#assembling-non-interactive-pdf-documents}
 
 É possível montar um documento PDF não interativo ao usar um formulário PDF interativo como entrada. Ou seja, suponha que você tenha um formulário que os usuários possam usar para inserir dados em seus campos. Você pode passar esse formulário para o serviço Assembler, resultando no serviço Assembler retornando um documento PDF que impede que os usuários insiram dados em seus campos. Este documento é um formulário não interativo do PDF. Por exemplo, a ilustração a seguir mostra um aplicativo de hipoteca que representa um formulário interativo.
@@ -177,10 +192,10 @@ Montar um documento não interativo do PDF usando a API de serviço do Assembler
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 

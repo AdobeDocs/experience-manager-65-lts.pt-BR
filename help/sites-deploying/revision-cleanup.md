@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5313'
+source-wordcount: '5314'
 ht-degree: 0%
-
 ---
-
 # Limpeza de revisão{#revision-cleanup}
 
 ## Introdução {#introduction}
@@ -557,7 +566,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Além dos métodos apresentados acima, você também pode acionar o mecanismo de limpeza de revisão usando o console JMX da seguinte maneira:
 
-1. Abra o Console JMX em [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Abra o Console JMX acessando [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Clique no **RevisionGarbageCollection** MBean.
 1. Na próxima janela, clique em **startRevisionGC()** e em **Invoke** para iniciar o trabalho de Coleta de Lixo de Revisão.
 

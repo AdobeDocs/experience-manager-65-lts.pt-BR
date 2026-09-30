@@ -5,13 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
-
+source-wordcount: '1204'
+ht-degree: 0%
 ---
-
 # Trabalhar com o gerente de campanha de marketing{#working-with-the-marketing-campaign-manager}
 
 No AEM, o Gerenciador de campanhas de marketing (MCM) é um console que ajuda você a gerenciar campanhas com vários canais. Com esse software de automação de marketing, você pode gerenciar todas as suas marcas, campanhas e experiências, juntamente com os segmentos, listas, clientes potenciais e relatórios relacionados.
@@ -31,27 +42,27 @@ No MCM, você pode acessar:
 * **[Painel](#dashboard)**
 Ela é dividida em quatro painéis:
 
-   * [Listas](#lists)
-Esse painel mostra as listas que você já criou, juntamente com o número de clientes potenciais nessa lista. Nesse painel, é possível criar uma lista diretamente ou importar clientes em potencial para criar uma lista.
-Selecionar uma lista específica o levará à seção [Listas](#lists) mostrando os detalhes da sua lista.
+  * [Listas](#lists)
+    Esse painel mostra as listas que você já criou, juntamente com o número de clientes potenciais nessa lista. Nesse painel, é possível criar uma lista diretamente ou importar clientes em potencial para criar uma lista.
+    Selecionar uma lista específica o levará à seção [Listas](#lists) mostrando os detalhes da sua lista.
 
-   * [Segmentos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
-Esse painel mostra os segmentos que você definiu. Os segmentos permitem caracterizar uma coleção de visitantes que compartilham certas características.
-Selecionar um segmento específico abre a página de definição de segmento.
+  * [Segmentos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+    Esse painel mostra os segmentos que você definiu. Os segmentos permitem caracterizar uma coleção de visitantes que compartilham certas características.
+    Selecionar um segmento específico abre a página de definição de segmento.
 
-   * [Relatórios](/help/sites-administering/reporting.md)
-O AEM fornece relatórios diferentes para ajudar você a analisar e monitorar o estado da sua instância. Esse painel MCM lista os relatórios.
-Selecionar um relatório abre a página do relatório.
+  * [Relatórios](/help/sites-administering/reporting.md)
+    O AEM fornece relatórios diferentes para ajudar você a analisar e monitorar o estado da sua instância. Esse painel MCM lista os relatórios.
+    Selecionar um relatório abre a página do relatório.
 
-   * [Campanhas](#campaigns)
-Este painel lista suas experiências de campanha, como [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+  * [Campanhas](#campaigns)
+    Este painel lista suas experiências de campanha, como [informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Clientes Potenciais](#leads)**
+* **[Clientes potenciais](#leads)**
 Aqui você pode gerenciar seus leads. Você pode criar ou importar clientes potenciais, editar detalhes específicos de clientes potenciais individuais ou excluir quando não for mais necessário. Você também pode colocar leads em grupos diferentes, chamados de Listas. **Observação:** a Adobe não está planejando aprimorar ainda mais esse recurso.
 A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **[Listas](#lists)**
-Aqui você pode gerenciar suas listas (de clientes potenciais).**Observação:** a Adobe não está planejando aprimorar ainda mais esse recurso.
+Aqui você pode gerenciar suas listas (de clientes potenciais).**Observação:** a Adobe não pretende aprimorar esse recurso.
 A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **[Campanhas](#campaigns)**
@@ -128,8 +139,8 @@ Aqui é possível:
 
 * Selecione uma campanha (no painel direito) para:
 
-   * Editar as **Propriedades...**
-   * **Excluir** a campanha.
+  * Editar as **Propriedades...**
+  * **Excluir** a campanha.
 
 * Abra a visão geral da campanha (clique duas vezes em uma campanha no painel direito ou clique uma vez no painel esquerdo).
 
@@ -171,7 +182,7 @@ Para as campanhas individuais, há duas visualizações disponíveis:
    * **Edite** os detalhes de uma página de teaser ou boletim informativo específico (um clique duplo também pode ser usado).
    * Defina as **Propriedades...** de uma página de teaser ou boletim informativo específico.
    * **Simular** a aparência de uma experiência (página de teaser ou informativo).
-Quando a página simulada estiver aberta, você pode abrir o sidekick para alternar para o modo de edição para essa página.
+     Quando a página simulada estiver aberta, você pode abrir o sidekick para alternar para o modo de edição para essa página.
 
    * **Analisar...** as impressões geradas para uma página.
 

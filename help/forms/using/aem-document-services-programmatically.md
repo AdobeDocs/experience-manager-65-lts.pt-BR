@@ -5,7 +5,27 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 1%
@@ -4508,14 +4528,14 @@ O GeneratePDFService fornece APIs para converter vários formatos de arquivo, co
 
 #### createPDF {#createpdf}
 
-The createPDF API converts a supported file type to a PDF document. It supports various file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third-party generic PDF generating application type can also be plugged into the API.
+A API createPDF converte um tipo de arquivo compatível em um documento PDF. É compatível com vários formatos de arquivo, como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
 
-For the conversion, only a few parameters are mandatory. An input document is mandatory parameter. You can apply the security permissions, PDF Output Settings, and Metadata information later to the output PDF document.
+Para a conversão, somente alguns parâmetros são obrigatórios. Um documento de entrada é um parâmetro obrigatório. Posteriormente, você poderá aplicar as permissões de segurança, as Configurações de saída do PDF e as informações de metadados ao documento de saída do PDF.
 
-The createPDF service returns a java.util.Map with results. As chaves do mapa são:
+O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
 * ConvertedDoc: contém o documento PDF recém-criado.
-* LogDoc: It contains the log file.
+* LogDoc: contém o arquivo de log.
 
 O serviço createPDF gera as seguintes exceções:
 

@@ -6,16 +6,33 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 hide: true
+removedfrom6.5.2025: 'yes'
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7800'
 ht-degree: 1%
-
 ---
-
 # Fortalecimento do AEM Forms no ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
 Conheça uma variedade de configurações de fortalecimento de segurança para melhorar a segurança do AEM Forms no JEE executado em uma intranet corporativa.
@@ -191,12 +208,12 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
    * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
    * **diretórios temporários do AEM Forms**:
-      * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
-Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
-      * (Linux) /var/tmp ou /usr/tmp
-      * (AIX) /tmp ou /usr/tmp
-      * (Solaris) /var/tmp ou /usr/tmp
+     * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
+     * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+       Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
+     * (Linux) /var/tmp ou /usr/tmp
+     * (AIX) /tmp ou /usr/tmp
+     * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
    * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\
@@ -263,7 +280,7 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 1. Inicie o servidor do AEM Forms.
 1. Digite o URL abaixo em um navegador para testar a alteração e garantir que ela não funcione mais.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloquear acesso remoto ao Armazenamento Confiável**
 
@@ -394,7 +411,7 @@ No WebSphere, você pode configurar a segurança integrada somente quando usar u
 1. No painel direito, em Propriedades adicionais, clique em **Propriedades personalizadas** e em **Novo**.
 1. Na caixa **Nome**, digite `integratedSecurity` e, na caixa **Valor**, digite `true`.
 1. No computador em que o WebSphere está instalado, adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows (C:\Windows). O arquivo sqljdbc_auth.dll está no mesmo local da instalação do driver Microsoft SQL JDBC 1.2 (o padrão é *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Selecione **Iniciar** > **Painel de Controle** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) e selecione **Propriedades**.
+1. Selecione **Iniciar** > **Painel de Controle** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;versão> - &lt;nó>) e selecione **Propriedades**.
 1. Na caixa de diálogo Propriedades, clique na guia **Logon**.
 1. Selecione **Esta conta** e forneça as informações necessárias para definir a conta de logon que você deseja usar.
 1. Defina a Segurança no SQL Server do modo **Misto** para **Somente Autenticação do Windows**.
@@ -708,7 +725,7 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
 ### Gerenciando a filtragem do referenciador {#managing-referer-filtering}
 
-O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
+O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como true. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
 Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), o incluo na lista de permissões não é atualizado. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
 
@@ -751,7 +768,7 @@ Inclua o argumento JAVA `-Dlc.um.csrffilter.disabled=true` no script de iniciali
 
 Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE para atender aos requisitos da sua empresa. Para ativar a Filtragem de referenciador para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para o WAR e inclua uma entrada de filtro no arquivo * web.xml* com os seguintes parâmetros:
 
-**CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações do GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar as solicitações do GET.
+**CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações GET.
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS** é a identificação da lista de Exceções de Referenciador Permitidas. O Filtro referenciador impede que as solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no Forms Server.
 
@@ -821,7 +838,7 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
  <thead> 
   <tr> 
    <th><p>Protocolo</p> </th> 
-   <th><p>Usar</p> </th> 
+   <th><p>Utilização</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -1017,12 +1034,12 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
    * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
    * **diretórios temporários do AEM Forms**:
-      * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
-Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
-      * (Linux) /var/tmp ou /usr/tmp
-      * (AIX) /tmp ou /usr/tmp
-      * (Solaris) /var/tmp ou /usr/tmp
+     * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
+     * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+       Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
+     * (Linux) /var/tmp ou /usr/tmp
+     * (AIX) /tmp ou /usr/tmp
+     * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
    * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\

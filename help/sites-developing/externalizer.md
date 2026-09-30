@@ -10,20 +10,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '506'
 ht-degree: 0%
-
 ---
-
 # Externalizar URLs{#externalizing-urls}
 
 No Adobe Experience Manager (AEM), o **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em uma URL externa e absoluta (por exemplo, `https://www.mycompany.com/path/to/my/page`), prefixando o caminho com um DNS pré-configurado.
 
 Como uma instância não pode saber seu URL visível externamente se estiver sendo executada por trás de uma camada da Web e porque, às vezes, um link precisa ser criado fora do escopo de solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
 
-Esta página explica como configurar o serviço **Externalizador** e como usá-lo. Para obter mais detalhes, consulte os [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
+Esta página explica como configurar o serviço **Externalizador** e como usá-lo. Para obter mais detalhes, consulte os [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurar o serviço Externalizador {#configuring-the-externalizer-service}
 
@@ -51,8 +60,8 @@ Para definir um mapeamento de domínio para o serviço **Externalizador**:
 
    * **o esquema** é http ou https, mas também pode ser ftp e assim por diante.
 
-      * use https para aplicar links https, se desejado
-      * ele é usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
+     * use https para aplicar links https, se desejado
+     * ele é usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
 
    * **servidor** é o nome do host (pode ser um nome de domínio ou endereço ip).
    * **porta** (opcional) é o número da porta.
@@ -128,4 +137,4 @@ Esta seção mostra alguns exemplos de como o serviço **Externalizador** pode s
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Você pode encontrar mais exemplos nos [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
+1. Você pode encontrar mais exemplos nos [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).

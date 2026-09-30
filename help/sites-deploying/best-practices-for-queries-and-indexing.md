@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4374'
 ht-degree: 7%
-
 ---
-
 # Práticas recomendadas para consultas e indexação{#best-practices-for-queries-and-indexing}
 
 Juntamente com a transição para o Oak no AEM 6, foram feitas algumas alterações importantes na forma como as consultas e os índices são gerenciados. Em Jackrabbit 2, todo o conteúdo era indexado por padrão e podia ser consultado livremente. No Oak, os índices devem ser criados manualmente no nó `oak:index`. Uma consulta pode ser executada sem um índice, mas, para conjuntos de dados grandes, ela será executada lentamente ou até mesmo anulada.

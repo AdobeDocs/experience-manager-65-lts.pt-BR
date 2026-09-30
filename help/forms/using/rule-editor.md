@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 0%
-
 ---
-
 # Editor de regras de formulários adaptáveis{#adaptive-forms-rule-editor}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -598,10 +614,10 @@ Como alternativa, você pode usar: `@argument` `{type} name <Parameter Descripti
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. string
-   1. número
-   1. booleano
-   1. escopo
+  1. string
+  1. número
+  1. booleano
+  1. escopo
 
   O escopo é usado para campos de referência de um Formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
@@ -613,9 +629,9 @@ Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
   {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. string
-   1. número
-   1. booleano
+  1. string
+  1. número
+  1. booleano
 
   Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 

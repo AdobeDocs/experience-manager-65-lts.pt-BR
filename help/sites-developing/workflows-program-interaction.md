@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 0%
-
+source-wordcount: '2058'
+ht-degree: 1%
 ---
-
 # Interação programática com fluxos de trabalho{#interacting-with-workflows-programmatically}
 
 Ao [personalizar e estender seus fluxos de trabalho](/help/sites-developing/workflows-customizing-extending.md), você pode acessar objetos de fluxo de trabalho:
@@ -26,7 +35,7 @@ Ao [personalizar e estender seus fluxos de trabalho](/help/sites-developing/work
 
 ## Uso da API Java do fluxo de trabalho {#using-the-workflow-java-api}
 
-A API Java do fluxo de trabalho consiste no pacote [`com.adobe.granite.workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html) e em vários pacotes secundários. O membro mais significativo da API é a classe `com.adobe.granite.workflow.WorkflowSession`. A classe `WorkflowSession` fornece acesso aos objetos de fluxo de trabalho de tempo de design e de tempo de execução:
+A API Java do fluxo de trabalho consiste no pacote [`com.adobe.granite.workflow`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html) e em vários pacotes secundários. O membro mais significativo da API é a classe `com.adobe.granite.workflow.WorkflowSession`. A classe `WorkflowSession` fornece acesso aos objetos de fluxo de trabalho de tempo de design e de tempo de execução:
 
 * modelos de fluxo de trabalho
 * itens de trabalho
@@ -40,10 +49,10 @@ A tabela a seguir fornece links para a documentação de referência de vários 
 
 | Recursos | Objetos |
 |---|---|
-| Acesso a um workflow | [`WorkflowSession`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
-| Execução e consulta de uma instância de fluxo de trabalho | [`Workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
-| Gerenciamento de um modelo de fluxo de trabalho | [`WorkflowModel`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
-| Informações de um nó que está no workflow (ou não) | [`WorkflowStatus`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
+| Acesso a um workflow | [`WorkflowSession`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Execução e consulta de uma instância de fluxo de trabalho | [`Workflow`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Gerenciamento de um modelo de fluxo de trabalho | [`WorkflowModel`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informações de um nó que está no workflow (ou não) | [`WorkflowStatus`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Obtenção de Objetos de Workflow em Scripts ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -131,7 +140,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância terminada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
+   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância finalizada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +163,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta de <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
+   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
   </tr>
  </tbody>
 </table>
@@ -243,7 +252,7 @@ Onde `*{uri}*` é o caminho para o nó do modelo no repositório.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Mesmo comportamento do PUT. Necessário porque os widgets do AEM não dão suporte a operações <code>PUT</code>.</td>
+   <td>Mesmo comportamento que com PUT. Necessário porque os widgets do AEM não dão suporte a operações <code>PUT</code>.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +367,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho de acordo para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de uma etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
+   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho correspondente para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +386,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
 
 ### Como obter uma lista de todos os fluxos de trabalho em execução com suas IDs {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Para obter uma lista de todos os workflows em execução, execute um GET para:
+Para obter uma lista de todos os workflows em execução, faça uma GET para:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -409,8 +418,8 @@ Para alterar o **Título do Fluxo de Trabalho** exibido na guia **Instâncias** 
 
 * com os seguintes parâmetros:
 
-   * `action`: seu valor deve ser: `UPDATE`
-   * `workflowTitle`: o título do fluxo de trabalho
+  * `action`: seu valor deve ser: `UPDATE`
+  * `workflowTitle`: o título do fluxo de trabalho
 
 #### Como alterar o título do fluxo de trabalho - REST usando curl {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -425,7 +434,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### Como listar todos os modelos de fluxo de trabalho {#how-to-list-all-workflow-models}
 
-Para obter uma lista de todos os modelos de fluxo de trabalho disponíveis, execute uma GET para:
+Para obter uma lista de todos os modelos de fluxo de trabalho disponíveis, faça uma GET para:
 
 `http://localhost:4502/etc/workflow/models.json`
 
@@ -491,8 +500,8 @@ Ao criar um modelo:
 
 * O editor de modelo de fluxo de trabalho exige que os modelos usem uma estrutura de nó específica abaixo de `/var/workflow/models`. O nó pai do modelo deve ser do tipo `cq:Page` com um nó `jcr:content` com os seguintes valores de propriedade:
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Ao criar um modelo, você deve primeiro criar este nó `cq:Page` e usar seu nó `jcr:content` como o pai do nó do modelo.
 
@@ -558,7 +567,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### Filtrar fluxos de trabalho do sistema ao verificar o status do fluxo de trabalho {#filtering-out-system-workflows-when-checking-workflow-status}
 
-Você pode usar a [API WorkflowStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) para recuperar informações sobre o status do fluxo de trabalho de um nó.
+Você pode usar a [API WorkflowStatus](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) para recuperar informações sobre o status do fluxo de trabalho de um nó.
 
 Vários métodos têm o parâmetro:
 
@@ -809,7 +818,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Acompanhamento de eventos de fluxo de trabalho {#listening-for-workflow-events}
 
-Use a estrutura de eventos OSGi para acompanhar eventos definidos pela classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Esta classe também fornece vários métodos úteis para obter informações sobre o assunto do evento. Por exemplo, o método `getWorkItem` retorna o objeto `WorkItem` para o item de trabalho envolvido no evento.
+Use a estrutura de eventos OSGi para acompanhar eventos definidos pela classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Esta classe também fornece vários métodos úteis para obter informações sobre o assunto do evento. Por exemplo, o método `getWorkItem` retorna o objeto `WorkItem` para o item de trabalho envolvido no evento.
 
 O código de exemplo a seguir define um serviço que escuta eventos de fluxo de trabalho e executa tarefas de acordo com o tipo de evento.
 

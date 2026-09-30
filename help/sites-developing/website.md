@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5034'
 ht-degree: 1%
-
 ---
-
 # Criar um site completo (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +149,7 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   O valor da propriedade de caminho permitida é uma expressão regular *.* As páginas com um caminho correspondente à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as subpáginas.
+   O valor da propriedade de caminho permitida é uma *expressão regular.* As páginas que têm um caminho que corresponde à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as subpáginas.
 
    Quando um autor cria uma página abaixo de /content, o modelo **contentpage** aparece em uma lista de modelos disponíveis para uso.
 
@@ -329,7 +338,7 @@ Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo
 
 1. No CRXDE Lite, crie o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar &#x200B;** depois **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar** depois **Criar arquivo**.
 
    1. Na janela, digite `left.jsp` como o **Nome** e clique em **OK**.
 
@@ -523,9 +532,9 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
    * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
-   * O [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
+   * O [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;

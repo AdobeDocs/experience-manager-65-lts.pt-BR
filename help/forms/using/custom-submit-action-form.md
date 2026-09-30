@@ -5,13 +5,31 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 0%
-
+source-wordcount: '1698'
+ht-degree: 1%
 ---
-
 # Gravação da ação enviar personalizada para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
 
 ## Aplica-se a {#applies-to}
@@ -96,10 +114,10 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 * **dialog.xml**: este script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar ações na caixa de diálogo Editar formulário adaptável ao selecionar a ação Enviar.
 * **post.POST.jsp**: o servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção à execução de uma ação nesta página implica em executar o script post.POST.jsp. Para registrar a ação Enviar com os formulários adaptáveis a serem exibidos na caixa de diálogo Editar formulário adaptável, adicione essas propriedades à `sling:Folder`:
 
-   * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
-   * **guideDataModel** do tipo String que especifica o tipo de formulário adaptável ao qual a ação Enviar se aplica. **xfa** é compatível com formulários adaptáveis baseados em XFA, enquanto **xsd** é compatível com formulários adaptáveis baseados em XSD. **básico** tem suporte para formulários adaptáveis que não usam XDP ou XSD. Para exibir a ação em vários tipos de formulários adaptáveis, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em formulários adaptáveis baseados em XFA e XSD, especifique os valores **xfa** e **xsd** respectivamente.
+  * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
+  * **guideDataModel** do tipo String que especifica o tipo de formulário adaptável ao qual a ação Enviar se aplica. **xfa** é compatível com formulários adaptáveis baseados em XFA, enquanto **xsd** é compatível com formulários adaptáveis baseados em XSD. **básico** tem suporte para formulários adaptáveis que não usam XDP ou XSD. Para exibir a ação em vários tipos de formulários adaptáveis, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em formulários adaptáveis baseados em XFA e XSD, especifique os valores **xfa** e **xsd** respectivamente.
 
-   * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações predefinidas estão presentes no repositório do CRX no local **/libs/fd/af/components/guidesubmittype**.
+  * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações predefinidas estão presentes no repositório do CRX no local **/libs/fd/af/components/guidesubmittype**.
 
 ## Criar uma ação enviar personalizada {#creating-a-custom-submit-action}
 
@@ -139,7 +157,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
    Adicione o script post.POST.jsp à ação. (/apps/custom_submit_action/store_and_mail/).
 
-   Execute a ação Armazenar predefinida (script post.POST.jsp). Use a API [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
+   Execute a ação Armazenar predefinida (script post.POST.jsp). Use a API [FormsHelper.runAction](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -149,7 +167,7 @@ Execute as seguintes etapas para criar uma ação enviar personalizada que salve
 
    `String mailTo = properties.get("mailTo");`
 
-   Por fim, use a API de email do CQ para enviar o email. Use a classe [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de Email conforme mostrado abaixo:
+   Por fim, use a API de email do CQ para enviar o email. Use a classe [SimpleEmail](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de Email conforme mostrado abaixo:
 
    >[!NOTE]
    >

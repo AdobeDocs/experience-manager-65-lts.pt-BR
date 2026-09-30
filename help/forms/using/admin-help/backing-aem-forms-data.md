@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
-
 ---
-
 # Backup dos dados do Forms do Adobe Experience Manager (AEM) {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ Além disso, observe as seguintes diretrizes para o processo de backup/restaura�
 
   Considere os seguintes pontos ao fazer backup das instâncias de autor e publicação:
 
-   * Certifique-se de que o backup das instâncias do autor e de publicação esteja sincronizado para iniciar ao mesmo tempo. Embora seja possível continuar a usar as instâncias de criação e publicação enquanto o backup está sendo executado, é recomendável não publicar nenhum ativo durante o backup para evitar alterações não capturadas. Aguarde o término do backup das instâncias do autor e de publicação antes de publicar novos ativos.
-   * O backup completo do nó Author inclui o backup do Forms Manager e dos dados do AEM Forms Workspace.
-   * Os desenvolvedores do Workbench podem continuar trabalhando em seus processos localmente. Eles não devem implantar novos processos durante a fase de backup.
-   * A decisão sobre a duração de cada sessão de backup (para o modo de backup contínuo) deve ser baseada no tempo total gasto para fazer backup de todos os dados no AEM Forms (BD, GDS, repositório do AEM e quaisquer outros dados personalizados adicionais).
+  * Certifique-se de que o backup das instâncias do autor e de publicação esteja sincronizado para iniciar ao mesmo tempo. Embora seja possível continuar a usar as instâncias de criação e publicação enquanto o backup está sendo executado, é recomendável não publicar nenhum ativo durante o backup para evitar alterações não capturadas. Aguarde o término do backup das instâncias do autor e de publicação antes de publicar novos ativos.
+  * O backup completo do nó Author inclui o backup do Forms Manager e dos dados do AEM Forms Workspace.
+  * Os desenvolvedores do Workbench podem continuar trabalhando em seus processos localmente. Eles não devem implantar novos processos durante a fase de backup.
+  * A decisão sobre a duração de cada sessão de backup (para o modo de backup contínuo) deve ser baseada no tempo total gasto para fazer backup de todos os dados no AEM Forms (BD, GDS, repositório do AEM e quaisquer outros dados personalizados adicionais).
 
 Fazer backup do banco de dados do AEM Forms, incluindo todos os logs de transações. Consulte [banco de dados AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 

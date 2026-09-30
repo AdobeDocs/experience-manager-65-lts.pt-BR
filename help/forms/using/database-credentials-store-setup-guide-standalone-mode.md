@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '844'
 ht-degree: 0%
-
 ---
-
 # Guia de Configuração da Database Credential Store (Modo Independente)
 
 ## Visão geral
@@ -44,11 +52,11 @@ Antes de executar esses scripts, verifique se:
    - Os scripts usam `embed-server`, que requer que o servidor seja parado
    - Se JBoss estiver em execução, os scripts falharão
    - Verifique se o JBoss está em execução:
-      - Windows: verifique o processo `java.exe` no Gerenciador de Tarefas
-      - Linux: `ps aux | grep jboss` ou `ps aux | grep java`
+     - Windows: verifique o processo `java.exe` no Gerenciador de Tarefas
+     - Linux: `ps aux | grep jboss` ou `ps aux | grep java`
    - Interromper JBoss se estiver em execução:
-      - Pressione `Ctrl+C` no terminal onde o JBoss está em execução
-      - Ou elimine o processo manualmente
+     - Pressione `Ctrl+C` no terminal onde o JBoss está em execução
+     - Ou elimine o processo manualmente
 
 2. **A senha do banco de dados está pronta**
 
@@ -82,10 +90,10 @@ Baixe o script `create-elytron-cred-standalone.bat` do [Portal de Distribuição
 - Cria um repositório de credenciais em: `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - Modifica temporariamente o arquivo de configuração para habilitar a criação do repositório de credenciais
 - Adiciona os seguintes aliases com a senha do banco de dados:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaura o arquivo de configuração ao seu estado original
 - Verifica se todos os aliases foram adicionados com êxito
 
@@ -107,10 +115,10 @@ Baixe o script `create-elytron-cred-standalone.sh` do [Portal de Distribuição 
 - Cria um repositório de credenciais em: `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - Modifica temporariamente o arquivo de configuração para habilitar a criação do repositório de credenciais
 - Adiciona os seguintes aliases com a senha do banco de dados:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaura o arquivo de configuração ao seu estado original
 - Verifica se todos os aliases foram adicionados com êxito
 
@@ -225,7 +233,7 @@ ERROR Unable to load credential store - Invalid password
 Verifique se a senha em `standalone.conf.bat` / `standalone.conf` (Etapa 2) corresponde à senha usada ao criar o repositório de credenciais (Etapa 1).
 
 **Para Corrigir:**
-Editar `standalone.conf.bat` / `standalone.conf` e atualizar a senha:
+Edite `standalone.conf.bat` / `standalone.conf` e atualize a senha:
 
 ```
 set "JAVA_OPTS=%JAVA_OPTS% -DCS_PASS=CorrectPassword"
