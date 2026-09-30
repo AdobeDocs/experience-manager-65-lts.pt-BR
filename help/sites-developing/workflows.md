@@ -1,5 +1,5 @@
 ---
-title: Desenvolvimento e extensão de workflows
+title: Desenvolvimento e extensão de fluxos de trabalho
 description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1478'
 ht-degree: 3%
-
 ---
-
-# Desenvolvimento e extensão de workflows{#developing-and-extending-workflows}
+# Desenvolvimento e extensão de fluxos de trabalho{#developing-and-extending-workflows}
 
 O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho.
 
@@ -89,7 +98,7 @@ Um `WorkflowTransition` representa uma transição entre dois `WorkflowNodes` de
 * O `WorkItem` faz referência à instância do fluxo de trabalho.
 * No repositório, o `WorkItem` é armazenado abaixo da instância do fluxo de trabalho.
 
-### Carga útil {#payload}
+### Conteúdo {#payload}
 
 Faz referência ao recurso que deve ser avançado por meio de um workflow.
 
@@ -132,7 +141,7 @@ Há vários tipos de fluxo de trabalho, conforme indicado no console Modelos de 
 
   Fluxos de trabalho criados em uma versão anterior do AEM. Esses workflows podem ser retidos durante uma atualização ou exportados como um pacote de workflow da versão anterior e, em seguida, importados para a nova versão.
 
-### Workflows transitórios {#transient-workflows}
+### Fluxos de trabalho transitórios {#transient-workflows}
 
 Os workflows padrão salvam as informações de tempo de execução (histórico) durante a execução. Você também pode definir um modelo de fluxo de trabalho como **Temporário** para evitar que esse histórico seja mantido. Esse workflow é usado para ajuste de desempenho porque economiza tempo e recursos usados para a persistência das informações.
 
@@ -204,7 +213,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
 
 ### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=pt-BR) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Ao criar um formulário, o envio dele pode ser facilmente associado a um modelo de fluxo de trabalho. Por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 

@@ -11,13 +11,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3747'
 ht-degree: 5%
-
 ---
-
 # Perfis de vídeo {#video-profiles}
 
 O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido. As configurações desse perfil pronto para uso são otimizadas para fornecer aos clientes a melhor experiência de visualização possível. Ao codificar os vídeos de origem primária usando o perfil Codificação de vídeo adaptável, o reprodutor de vídeo otimiza a qualidade da reprodução. Ele ajusta automaticamente o fluxo de vídeo com base na velocidade de conexão de Internet dos clientes. Essa funcionalidade é conhecida como transmissão adaptável de taxa de bits.
@@ -99,7 +113,7 @@ A tabela a seguir identifica os perfis de codificação de práticas recomendada
 
 ## Sobre o uso de recorte inteligente em perfis de vídeo {#about-smart-crop-video}
 
-O Corte inteligente para vídeo (um recurso opcional disponível em Perfis de vídeo) é uma ferramenta que usa o potencial da inteligência artificial do Adobe AI. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
+O Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial do Adobe AI. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -109,7 +123,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho de arquivo de 300 MB.
 
-A IA do Adobe é limitada a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, a IA do Adobe e o recorte inteligente oferecem suporte a um vídeo de 60 quadros/s somente se ele tiver pelo menos dois minutos e meio de duração.
+O Adobe AI é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, o Adobe AI e o recorte inteligente suportam um vídeo de 60 quadros/s somente se ele tiver pelo menos dois minutos e meio de duração.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
@@ -221,13 +235,13 @@ Selecione o ícone de informações ao lado de cada opção. Você pode ler sobr
 1. Faça o seguinte:
    * No campo **[!UICONTROL Largura]**, digite **[!UICONTROL auto]**.
    * No campo **[!UICONTROL Altura]**, digite um valor em pixels.
-Para ajudá-lo a visualizar o tamanho do vídeo, selecione o ícone Informações de altura para abrir a página **[!UICONTROL Calculadora de tamanho]**. Use a página **[!UICONTROL Calculadora de tamanho]** para definir ainda mais a dimensão do vídeo (caixa azul) como desejar. Quando terminar, no canto superior direito da caixa de diálogo, selecione **[!UICONTROL X]**.
+     Para ajudá-lo a visualizar o tamanho do vídeo, selecione o ícone Informações de altura para abrir a página **[!UICONTROL Calculadora de tamanho]**. Use a página **[!UICONTROL Calculadora de tamanho]** para definir ainda mais a dimensão do vídeo (caixa azul) como desejar. Quando terminar, no canto superior direito da caixa de diálogo, selecione **[!UICONTROL X]**.
 1. (Opcional) Siga um destes procedimentos:
 
    * Selecione a guia **[!UICONTROL Avançado]** e verifique se a caixa de seleção **[!UICONTROL Usar Valores Padrão]** está marcada (recomendado).
 
    * Desmarque a caixa de seleção **[!UICONTROL Usar Valores Padrão]** e especifique as configurações de vídeo e áudio desejadas.
-Selecione o ícone de informações ao lado de cada opção. Você pode ler sobre descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
+     Selecione o ícone de informações ao lado de cada opção. Você pode ler sobre descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 
 1. No canto superior direito da página, selecione **[!UICONTROL Salvar]** para salvar a predefinição.
 1. Siga uma das seguintes opções:
@@ -281,7 +295,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro principal deve ser de 60 a 300.<br /> <br /> Os intervalos de quadro-chave mais baixos melhoram a busca por transmissão e o comportamento de comutação de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos com alta movimentação. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadro-chave menor geralmente resulta em uma qualidade geral de vídeo mais baixa em uma determinada taxa de bits.</td>
+   <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro principal deve ser de 60 a 300.<br /> <br /> Intervalos de quadro-chave mais baixos melhoram a busca por transmissão e o comportamento de comutação de fluxo para codificações de vídeo adaptáveis, além de melhorar a qualidade de vídeos com movimentos altos. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadro-chave menor geralmente resulta em uma qualidade geral de vídeo mais baixa em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
    <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é 60-90.</p> </td>
   </tr>
@@ -399,7 +413,7 @@ Consulte também [Reprocessar ativos em uma pasta depois de editar seu perfil de
 1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione o perfil no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. A interface do usuário do exibe o nome do perfil no nome do cartão para indicar pastas com um perfil atribuído.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
+   Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 ### Aplicar um perfil de vídeo globalmente {#applying-a-video-profile-globally}
 

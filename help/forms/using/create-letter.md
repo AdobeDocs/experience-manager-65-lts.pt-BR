@@ -7,13 +7,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
-
 ---
-
 # Criar carta {#create-letter}
 
 ## Fluxo de trabalho do Gerenciamento de correspondência {#correspondence-management-workflow}
@@ -152,10 +165,10 @@ Analise cada letra para descobrir as várias partes que compõem a letra. O espe
 * Com que frequência o modelo de correspondência é alterado? Ele será atualizado anualmente, trimestralmente ou somente quando uma determinada legislação for alterada? Que tipo de alterações são esperadas? É uma alteração para corrigir erros tipográficos, uma alteração de layout, adicionar mais campos, adicionar parágrafos e assim por diante.
 * Ao planejar suas necessidades de correspondência, monte a lista de novos modelos de correspondência. Para cada modelo de correspondência, você exige:
 
-   * Cláusulas de texto, imagens e tabelas
-   * Valores de dados de sistemas de back-end
-   * O layout e os layouts de fragmento da correspondência
-   * A ordem em que o conteúdo aparece na carta e as regras para inclusão e exclusão de conteúdo
+  * Cláusulas de texto, imagens e tabelas
+  * Valores de dados de sistemas de back-end
+  * O layout e os layouts de fragmento da correspondência
+  * A ordem em que o conteúdo aparece na carta e as regras para inclusão e exclusão de conteúdo
 
 * As condições sob as quais os usuários empresariais, como ajustadores de sinistros ou trabalhadores de processos, modificam o conteúdo ou partes na carta.
 * Os cenários são narrativas que descrevem a experiência do usuário, os requisitos e os benefícios de usar a solução Letters.

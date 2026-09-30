@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # Sincronização de diretórios {#synchronizing-directories}
 
 >[!NOTE]
@@ -76,7 +91,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
 1. Em Sincronizar Expressão Cron do Terminador de Sincronização, insira uma expressão cron que represente o intervalo em que o Gerenciamento de Usuários tenta novamente sincronizações com falha. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
-   O padrão é 0 0/13 &ast; ? &ast; , que significa que a verificação ocorre a cada 13 minutos.
+   O padrão é 0 0/13 &amp;ast; ? &amp;ast; , que significa que a verificação ocorre a cada 13 minutos.
 
 ## Sincronizar diretórios manualmente {#manually-synchronize-directories}
 
@@ -92,7 +107,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. Agendar sincronização:
 
    * Para ativar a sincronização automática diariamente, em Scheduler, selecione Ocorre. Selecione Diariamente na lista e digite a hora no formato de 24 horas na caixa correspondente. Quando você salva suas configurações, esse valor é convertido em uma expressão CRON, que é exibida na caixa Expressão CRON.
-   * Para agendar a sincronização em um dia da semana ou mês específico ou em um mês específico, selecione Expressão Cron e digite a expressão apropriada na caixa. Por exemplo, sincronize às 1:30 da manhã na última sexta-feira do mês.
+   * Para agendar a sincronização em um dia da semana ou mês específico ou em um mês específico, selecione Expressão Cron e digite a expressão apropriada na caixa. Por exemplo, sincronize à 1h30 da última sexta-feira do mês.
 
 O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 

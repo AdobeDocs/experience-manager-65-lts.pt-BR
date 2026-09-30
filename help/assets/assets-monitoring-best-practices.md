@@ -1,18 +1,29 @@
 ---
-title: 'Práticas recomendadas para monitorar a implantação [!DNL Assets] '
-description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua implantação [!DNL Adobe Experience Manager] após sua implantação.
+title: Práticas recomendadas para monitorar a implantação do [!DNL Assets]
+description: Práticas recomendadas para monitorar o ambiente e o desempenho da implantação do [!DNL Adobe Experience Manager] após sua implantação.
 contentOwner: AG
 role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1704'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para monitorar a implantação do [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Do ponto de vista do [!DNL Experience Manager Assets], o monitoramento deve incluir a observação e os relatórios dos seguintes processos e tecnologias:
@@ -143,58 +154,58 @@ As verificações de integridade disponíveis no [painel de operações](/help/s
 Estas são algumas verificações de integridade prontas para uso que são úteis para monitorar:
 
 * Verificações do sistema
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a causa do problema.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a causa do problema.
 
 * Fila de replicação
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
 
 * Desempenho da resposta
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Duração do alarme: Quando o estado não estiver OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Duração do alarme: Quando o estado não estiver OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
 
 * Desempenho da consulta
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: uma ou mais consultas são executadas lentamente no sistema. Verifique o atributo de log para obter mais informações sobre as consultas que causaram o problema.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: uma ou mais consultas são executadas lentamente no sistema. Verifique o atributo de log para obter mais informações sobre as consultas que causaram o problema.
 
 * Pacotes ativos
 
-   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: Presença de pacotes OSGi inativos ou não resolvidos no sistema. Verifique o atributo de log para obter mais informações sobre os pacotes que causaram o problema.
+  * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: Presença de pacotes OSGi inativos ou não resolvidos no sistema. Verifique o atributo de log para obter mais informações sobre os pacotes que causaram o problema.
 
 * Erros de log
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: Existem erros nos arquivos de registro. @ info: whatsthis Verifique o atributo de log para obter mais informações sobre a causa do problema.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: Existem erros nos arquivos de registro. @ info: whatsthis Verifique o atributo de log para obter mais informações sobre a causa do problema.
 
 ## Problemas comuns e resoluções  {#common-issues-and-resolutions}
 
 No processo de monitoramento, se você encontrar problemas, veja a seguir algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com [!DNL Experience Manager] implantações:
 
 * Se estiver usando TarMK, execute a compactação Tar com frequência. Para obter mais detalhes, consulte [Manter o repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR).
+* Verificar `OutOfMemoryError` logs. Para obter mais informações, consulte [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Verifique nos logs se há referências a consultas não indexadas, percursos de árvore ou percursos de índice. Isso indica consultas não indexadas ou indexadas inadequadamente. Para obter as práticas recomendadas de otimização do desempenho de consulta e indexação, consulte [Práticas recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Use o console de workflows para verificar se seus workflows funcionam conforme esperado. Se possível, condensar vários workflows em um único workflow.

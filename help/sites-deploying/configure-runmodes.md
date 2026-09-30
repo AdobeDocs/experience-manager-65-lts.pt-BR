@@ -5,13 +5,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 1%
-
+source-wordcount: '692'
+ht-degree: 2%
 ---
-
 # Modos de execução{#run-modes}
 
 Os modos de execução permitem ajustar a instância do AEM para um propósito específico; por exemplo, criar ou publicar, testar, desenvolver, intranet ou outros.
@@ -102,9 +111,9 @@ Estas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 
 Se você tiver definido as configurações para vários modos de execução, será necessário definir qual será usado na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
-1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [propriedades do sistema (`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties` arquivo](#using-the-sling-properties-file)
+1. [Opção `-r`](#using-the-r-option)
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
 Quando estiver usando um servidor de aplicativos, você também pode [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

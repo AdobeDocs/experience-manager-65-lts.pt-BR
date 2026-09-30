@@ -9,20 +9,34 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
-
 ---
-
 # Arquitetura e topologias de implantação do AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Aplica-se a {#applies-to}
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html).
 
 ## Arquitetura {#architecture}
 
@@ -36,9 +50,9 @@ A arquitetura do AEM Forms inclui os seguintes componentes:
 * **Serviços do Forms:** forneça funcionalidades relacionadas a formulários, como criar, reunir, distribuir e arquivar documentos do PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar formulários com código de barras. Esses serviços estão disponíveis publicamente para consumo por código personalizado coimplantado no AEM.
 * **Camada da Web:** JSPs ou servlets, criados sobre serviços comuns e de formulários, que fornecem as seguintes funcionalidades:
 
-   * **Front-end de criação**: uma interface de usuário de criação e gerenciamento de formulários para criação e gerenciamento de formulários.
-   * **Front-end de representação e envio de formulário**: uma interface para o usuário final a ser usada pelos usuários finais da AEM Forms (por exemplo, cidadãos que acessam um site do governo). Isso fornece funcionalidades de representação de formulário (formulário de exibição em um navegador da Web) e envio.
-   * **REST APIs**: JSPs e servlets exportam um subconjunto de serviços de formulários para consumo remoto por clientes baseados em HTTP, como o SDK móvel de formulários.
+  * **Front-end de criação**: uma interface de usuário de criação e gerenciamento de formulários para criação e gerenciamento de formulários.
+  * **Front-end de representação e envio de formulário**: uma interface para o usuário final a ser usada pelos usuários finais da AEM Forms (por exemplo, cidadãos que acessam um site do governo). Isso fornece funcionalidades de representação de formulário (formulário de exibição em um navegador da Web) e envio.
+  * **REST APIs**: JSPs e servlets exportam um subconjunto de serviços de formulários para consumo remoto por clientes baseados em HTTP, como o SDK móvel de formulários.
 
 **AEM Forms no OSGi:** um ambiente do AEM Forms no OSGi é um Autor padrão do AEM ou uma Publicação do AEM com o pacote do AEM Forms implantado nele. Você pode executar o AEM Forms no OSGi em um [ambiente de servidor único, Farm e configurações em cluster](/help/sites-deploying/recommended-deploys.md). A configuração do cluster está disponível somente para instâncias do AEM Author.
 

@@ -1,17 +1,25 @@
 ---
-title: Migração para o complemento do AEM Commerce integration framework (CIF)
-description: Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF).
+title: Migração para o complemento da Estrutura de integração do AEM Commerce (CIF)
+description: Como migrar de uma versão antiga para o complemento Estrutura de integração do AEM Commerce (CIF).
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 4%
-
+source-wordcount: '320'
+ht-degree: 5%
 ---
-
 # Guia de migração para o complemento do Experience Manager {#cif-migration}
 
 Este guia ajuda a identificar as áreas que você precisa atualizar para a migração de complementos do Experience Manager.
@@ -30,7 +38,7 @@ A importação de dados do catálogo de produtos não é suportada pelo compleme
 
 >[!TIP]
 >
->Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [código aberto do Magento](https://business.adobe.com/br/products/magento/open-source.html).
+>Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [código aberto do Magento](https://business.adobe.com/products/magento/open-source.html).
 
 ## Experiências do catálogo de produtos com renderização do AEM
 

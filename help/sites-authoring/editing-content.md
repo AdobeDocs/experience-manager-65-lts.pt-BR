@@ -10,18 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3030'
 ht-degree: 46%
-
 ---
-
 # Editar conteúdo da página{#editing-page-content}
 
 Depois que a página é criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
-O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-components-console.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-components-console.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 
 >[!NOTE]
 >
@@ -164,7 +177,7 @@ Você pode adicionar um componente usando a caixa **Arraste componentes aqui** d
 
 1. O componente selecionado será adicionado à parte inferior da página. [Edite-o](#editmovecopypastedelete), conforme necessário.
 
-### Inserir um componente usando o Navegador de ativos   {#inserting-a-component-using-the-assets-browser}
+### Inserir um componente usando o Navegador de ativos {#inserting-a-component-using-the-assets-browser}
 
 Você também pode adicionar um componente à página arrastando um ativo do [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser). Isso cria automaticamente um componente do tipo apropriado (e que contém o ativo).
 
@@ -269,9 +282,9 @@ As ações de fato disponíveis para o usuário serão mostradas conforme apropr
 
   Isso cola o componente da área de transferência na página. O restante do original depende se você usou copiar ou recortar.
 
-   * É possível colar para a mesma página para outra.
-   * O item colado será posicionado acima do item onde você usou a ação de colagem.
-   * A ação Colar só será exibida se houver conteúdo na área de transferência.
+  * É possível colar para a mesma página para outra.
+  * O item colado será posicionado acima do item onde você usou a ação de colagem.
+  * A ação Colar só será exibida se houver conteúdo na área de transferência.
 
   ![Colar](assets/screen_shot_2018-03-22at113553.png)
 
@@ -310,7 +323,7 @@ Há dois métodos de adição ou edição do conteúdo dos componentes:
 * Abra a [caixa de diálogo do componente para edição](#component-edit-dialog).
 * [Arraste e solte um ativo](#draganddropintocomponent) do navegador de ativos para adicionar conteúdo diretamente.
 
-### Caixa de diálogo de edição de componente   {#component-edit-dialog}
+### Caixa de diálogo de edição de componente {#component-edit-dialog}
 
 Abra um componente para editar o conteúdo usando o ícone de [Editar (lápis) da barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -456,7 +469,7 @@ Se a página for baseada em um [modelo estático](/help/sites-authoring/template
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy   {#live-copy-status}
+## Status da Live Copy {#live-copy-status}
 
 O [Modo de página Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados:
 
@@ -471,7 +484,7 @@ Por exemplo:
 
 As [anotações](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Eles são usados com frequência para fins de revisão e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -506,7 +519,7 @@ Ao criar, o modo de visualização está disponível usando o ícone na parte su
 
 A opção **Exibir como publicado** está disponível no menu [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information). Isso abre a página em uma nova guia, atualiza o conteúdo e mostra a página exatamente como aparece quando é publicada.
 
-## Bloquear uma página   {#locking-a-page}
+## Bloquear uma página {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo várias edições em uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -514,15 +527,15 @@ Uma página pode ser bloqueada a partir do:
 
 * Console do **Sites**
 
-   1. Selecione a página com o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Selecione o ícone de bloqueio.
+  1. Selecione a página com o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Selecione o ícone de bloqueio.
 
   ![Ícone de bloqueio](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
-   1. Para abrir o menu, selecione o ícone **Informações da página**.
-   1. Selecione a opção **Bloquear página**.
+  1. Para abrir o menu, selecione o ícone **Informações da página**.
+  1. Selecione a opção **Bloquear página**.
 
 Uma vez bloqueadas, as informações de exibição do console são atualizadas e, ao editar, um símbolo de cadeado é apresentado na barra de ferramentas.
 

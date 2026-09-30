@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 0%
-
+source-wordcount: '1075'
+ht-degree: 2%
 ---
-
 # Introdução à publicação de formulários em um portal{#introduction-to-publishing-forms-on-a-portal}
 
 ## Aplica-se a {#applies-to}
@@ -52,11 +65,11 @@ Os componentes do portal de formulários permitem que você adicione a seguinte 
 
 A AEM Forms fornece os seguintes componentes de portal prontos para uso, agrupados em **Serviços de Documento** e **Predicados de Serviços de Documento** grupos de componentes:
 
-### Pesquisa e Lister {#search-amp-lister}
+### Pesquisar &amp; Lister {#search-amp-lister}
 
 O componente de Pesquisa e Lister permite listar formulários do repositório de formulários na página do portal e fornece opções de configuração para listar formulários com base em critérios especificados. Também permite especificar critérios de pesquisa para permitir que os usuários do portal pesquisem na lista de formulários.
 
-### Rascunhos e envios {#drafts-amp-submissions}
+### Rascunhos &amp; Envios {#drafts-amp-submissions}
 
 Enquanto o componente Pesquisa e Lister exibe formulários que são tornados públicos pelo autor do Forms, o componente Rascunhos e envios exibe formulários que são salvos como rascunho para concluir formulários posteriores e enviados. Este componente fornece experiência personalizada para qualquer usuário conectado.
 
@@ -77,7 +90,7 @@ O Forms Portal permite listar formulários do repositório de formulários na p�
 
 1. **Listar rascunhos e formulários enviados em uma página do Forms Portal**: adicione e configure o componente Rascunhos e Envios à página do Forms Portal. O componente lista todos os formulários que estão no estado de rascunho e os formulários que já foram enviados.
 
-   Para habilitar a exibição de um formulário adaptável enviado na guia envios, defina a **Ação de envio** como **[Ação de envio do portal do Forms](configuring-submit-actions.md).** Como alternativa, habilite a opção Enviar do Portal Forms. Sempre que um usuário enviar o formulário, ele será adicionado à guia Envios.
+   Para habilitar a exibição de um formulário adaptável enviado na guia envios, defina a **Ação de envio** como **[Ação de envio do Forms Portal](configuring-submit-actions.md).** Como alternativa, ative a opção Enviar do Forms Portal. Sempre que um usuário enviar o formulário, ele será adicionado à guia Envios.
 
 1. **Configure o armazenamento para os dados de rascunho e de formulários enviados:** Por padrão, os dados de rascunho e de envio são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário de rascunho ou enviados no repositório do AEM. [Configure o componente Forms Portal para salvar dados em um local seguro](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalização dos componentes do Portal do Forms:** [Personalize seus modelos de página do Portal do Forms](../../forms/using/customizing-templates-forms-portal-components.md) para fornecer uma aparência distinta aos componentes.

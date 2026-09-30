@@ -9,20 +9,34 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2210'
 ht-degree: 0%
-
 ---
-
 # Variáveis em workflows do AEM Forms{#variables-in-aem-forms-workflows}
 
 ## Aplica-se a {#applies-to}
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html).
 
 Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados. Em seguida, você pode usar o nome da variável em qualquer etapa do fluxo de trabalho para recuperar o valor armazenado na variável. Você também pode usar nomes de variáveis para definir expressões para tomar decisões de roteamento.
 
@@ -39,13 +53,13 @@ As variáveis são uma extensão da interface [MetaDataMap](https://developer.ad
 Você cria variáveis usando a seção Variáveis disponível no sidekick do modelo de fluxo de trabalho. As variáveis de fluxo de trabalho do AEM são compatíveis com os seguintes tipos de dados:
 
 * **Tipos de dados primitivos**: Long, Double, Boolean, Date e String
-* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
+* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
 
 >[!NOTE]
 >
 >Os fluxos de trabalho são compatíveis apenas com o formato ISO8601 para variáveis do tipo Date.
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
 
 Execute as seguintes etapas para criar uma variável:
 
@@ -197,7 +211,7 @@ Use as seguintes APIs no Script ECMA para recuperar valores para variáveis exis
 | Modelo de dados de formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
 
 **Exemplo**
 
@@ -267,7 +281,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ### Armazene dados sigilosos do usuário fora do JCR usando variáveis de fluxo de trabalho {#jcr-independent-persistance}
 
 Os dados processados usando o Forms Workflow podem conter dados confidenciais do usuário, como Informações pessoais identificáveis e Informações pessoais confidenciais. As empresas podem optar por armazenar os dados, que são processados por várias etapas do fluxo de trabalho (e transmitidos usando variáveis de fluxo de trabalho), fora do armazenamento JCR em um armazenamento de dados externo de propriedade e gerenciado por elas. Para saber mais sobre a persistência de dados de fluxo de trabalho em um armazenamento externo, consulte [Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] fornece a API de Fluxo de Trabalho [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis de fluxo de trabalho em armazenamentos de blobs externos do Azure. Para obter detalhes sobre como usar a API, consulte [Usar variáveis de fluxo de trabalho para parametrizar dados confidenciais e armazenar em armazenamentos de dados externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+[!DNL Adobe Experience Manager] fornece a API de Fluxo de Trabalho [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis de fluxo de trabalho em armazenamentos externos de blobs do Azure. Para obter detalhes sobre como usar a API, consulte [Usar variáveis de fluxo de trabalho para parametrizar dados confidenciais e armazenar em armazenamentos de dados externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Editar uma variável {#edit-a-variable}
 

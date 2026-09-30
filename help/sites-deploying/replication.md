@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3367'
 ht-degree: 3%
-
 ---
-
 # Replicação{#replication}
 
 Os agentes de replicação são fundamentais para o Adobe Experience Manager (AEM), pois o mecanismo é usado para:
@@ -69,7 +78,9 @@ Para seguir este exemplo e usar os agentes de replicação padrão, [instale o A
 Essa replicação é ativada no ambiente do Autor pelo:
 
 * **Agente padrão (publicação)**
-Esse agente replica o conteúdo na instância de publicação padrão.Detalhes disso (configuração e logs) podem ser acessados no console Ferramentas do ambiente Autor ou:  `http://localhost:4502/etc/replication/agents.author/publish.html`.
+Esse agente replica o conteúdo na instância de publicação padrão.
+Detalhes disso (configuração e logs) podem ser acessados no console Ferramentas do ambiente Autor ou:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
@@ -82,7 +93,8 @@ Esse agente replica o conteúdo na instância de publicação padrão.Detalhes d
 >* Agentes no Autor : Agente de replicação reversa (publish_reverse)
 >* Agentes na Publicação : Replicação Inversa (caixa de saída)
 >
->Para verificar o status do agente ou da fila, use o console **Ferramentas**.Consulte [Monitoramento de Agentes de Replicação](#monitoring-your-replication-agents).
+>Para verificar o status do agente ou da fila, use o console **Ferramentas**.
+>Consulte [Monitoramento de Agentes de Replicação](#monitoring-your-replication-agents).
 
 #### Replicação (Autor para publicar) {#replication-author-to-publish}
 
@@ -103,13 +115,15 @@ Os seguintes agentes estão disponíveis em uma instalação padrão do AEM:
 Usado para replicar de Autor para Publicação.
 
 * Limpeza do Dispatcher
-Isso é usado para gerenciar o cache do Dispatcher. Consulte [Invalidação do cache do Dispatcher do ambiente de criação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidação do cache do Dispatcher de uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
+Isso é usado para gerenciar o cache do Dispatcher. Consulte [Invalidação do cache do Dispatcher do ambiente de criação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidação do cache do Dispatcher de uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
 
 * [Replicação reversa](#configuring-reverse-replication)
 Usado para replicação de Publicar para Autor. A replicação reversa não é usada para recursos das Comunidades, como fóruns, blogs e comentários. Ela é efetivamente desativada, pois a caixa de saída não está ativada. O uso da replicação reversa exigiria uma configuração personalizada.
 
 * Agente estático
-Este é um &quot;Agente que armazena uma representação estática de um nó no sistema de arquivos&quot;.Por exemplo, com as configurações padrão, as páginas de conteúdo e os ativos DAM são armazenados em `/tmp`, como HTML ou o formato de ativo apropriado. Consulte as guias `Settings` e `Rules` para obter a configuração.Isso foi solicitado para que, quando a página for solicitada diretamente do servidor de aplicativos, o conteúdo possa ser visto. Esse é um agente especializado e (provavelmente) não é necessário para a maioria das instâncias.
+Este é um &quot;Agente que armazena uma representação estática de um nó no sistema de arquivos&quot;.
+Por exemplo, com as configurações padrão, as páginas de conteúdo e os ativos DAM são armazenados em `/tmp`, como HTML ou o formato de ativo apropriado. Consulte as guias `Settings` e `Rules` para obter a configuração.
+Isso foi solicitado para que, quando a página for solicitada diretamente do servidor de aplicativos, o conteúdo possa ser visto. Esse é um agente especializado e (provavelmente) não é necessário para a maioria das instâncias.
 
 ## Agentes de replicação - Parâmetros de configuração {#replication-agents-configuration-parameters}
 
@@ -131,16 +145,16 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Quando o agente está **habilitado**, a fila é mostrada como:
 
-   * **Ativo** quando os itens estão sendo processados.
-   * **Ocioso** quando a fila está vazia.
-   * **Bloqueado** quando itens estiverem na fila, mas não puder ser processado; por exemplo, quando a fila de recebimento estiver desabilitada.
+  * **Ativo** quando os itens estão sendo processados.
+  * **Ocioso** quando a fila está vazia.
+  * **Bloqueado** quando itens estiverem na fila, mas não puder ser processado; por exemplo, quando a fila de recebimento estiver desabilitada.
 
 * **Tipo de Serialização**
 
   O tipo de serialização:
 
-   * **Padrão**: defina se o agente deve ser selecionado automaticamente.
-   * **Liberação do Dispatcher**: selecione esta opção se o agente for usado para liberar o cache do Dispatcher.
+  * **Padrão**: defina se o agente deve ser selecionado automaticamente.
+  * **Liberação do Dispatcher**: selecione esta opção se o agente for usado para liberar o cache do Dispatcher.
 
 * **Repetir atraso**
 
@@ -152,8 +166,8 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Dependendo do ambiente, o agente usa essa conta de usuário para:
 
-   * coletar e empacotar o conteúdo do ambiente do Autor
-   * criar e gravar o conteúdo no ambiente de publicação
+  * coletar e empacotar o conteúdo do ambiente do Autor
+  * criar e gravar o conteúdo no ambiente de publicação
 
   Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador; por padrão, é `admin`).
 
@@ -173,9 +187,9 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Especifica o nível de detalhes a ser usado para mensagens de log.
 
-   * `Error`: somente erros são registrados em log
-   * `Info`: erros, avisos e outras mensagens informativas estão registrados em log
-   * `Debug`: um alto nível de detalhes é usado nas mensagens, principalmente para fins de depuração
+  * `Error`: somente erros são registrados em log
+  * `Info`: erros, avisos e outras mensagens informativas estão registrados em log
+  * `Debug`: um alto nível de detalhes é usado nas mensagens, principalmente para fins de depuração
 
   Padrão: `Info`
 
@@ -195,8 +209,8 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Por exemplo:
 
-   * Um Agente Padrão pode replicar para `https://localhost:4503/bin/receive`
-   * Um agente de limpeza do Dispatcher pode replicar para `https://localhost:8000/dispatcher/invalidate.cache`
+  * Um Agente Padrão pode replicar para `https://localhost:4503/bin/receive`
+  * Um agente de limpeza do Dispatcher pode replicar para `https://localhost:8000/dispatcher/invalidate.cache`
 
   O protocolo especificado aqui (HTTP ou HTTPS) determina o método de transporte.
 
@@ -274,21 +288,22 @@ As seguintes configurações só serão necessárias se um proxy for necessário
 
   Para um agente de limpeza do Dispatcher, as três entradas padrão não devem precisar ser alteradas:
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   Eles são usados, conforme apropriado, para indicar a ação a ser usada ao limpar a alça ou o caminho. Os subparâmetros são dinâmicos:
 
-   * `{action}` indica uma ação de replicação
+  * `{action}` indica uma ação de replicação
 
-   * `{path}` indica um caminho
+  * `{path}` indica um caminho
 
   Eles são substituídos pelo caminho/ação relevante para a solicitação e, portanto, não precisam ser &quot;codificados&quot;:
 
   >[!NOTE]
   >
-  >Se você tiver instalado o AEM em um contexto diferente do contexto padrão recomendado, deverá registrar o contexto nos Cabeçalhos HTTP. Por exemplo:  >`CQ-Handle:/<*yourContext*>{path}`
+  >Se você tiver instalado o AEM em um contexto diferente do contexto padrão recomendado, deverá registrar o contexto nos Cabeçalhos HTTP. Por exemplo:
+  >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Fechar Conexão**
 
@@ -346,7 +361,7 @@ Na guia Ferramentas do ambiente de Autor, você pode configurar agentes de repli
 
 >[!NOTE]
 >
->Quando um Dispatcher lida com solicitações HTTP para instâncias de Autor ou Publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista Dispatcher de cabeçalhos de clientes. Consulte [/clientheaders (Cabeçalhos do Cliente)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#specifying-the-http-headers-to-pass-through-clientheaders).
+>Quando um Dispatcher lida com solicitações HTTP para instâncias de Autor ou Publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista Dispatcher de cabeçalhos de clientes. Consulte [/clientheaders (Cabeçalhos do Cliente)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Acesse a guia **Ferramentas** no AEM.
@@ -410,19 +425,19 @@ Para configurar a replicação de conteúdo para uma instância de publicação 
 
    * Na guia **Configurações**:
 
-      * Ativar **Habilitado**.
-      * Insira uma **Descrição**.
-      * Defina **Repetir Atraso** como `60000`.
+     * Ativar **Habilitado**.
+     * Insira uma **Descrição**.
+     * Defina **Repetir Atraso** como `60000`.
 
-      * Deixe o **Tipo de Serialização** como `Default`.
+     * Deixe o **Tipo de Serialização** como `Default`.
 
    * Na guia **Transporte**:
 
-      * Insira o URI necessário para a nova instância de publicação; por exemplo,
-        `https://localhost:4504/bin/receive`.
+     * Insira o URI necessário para a nova instância de publicação; por exemplo,
+       `https://localhost:4504/bin/receive`.
 
-      * Insira a conta de usuário específica do site usada para replicação.
-      * Você pode configurar outros parâmetros conforme necessário.
+     * Insira a conta de usuário específica do site usada para replicação.
+     * Você pode configurar outros parâmetros conforme necessário.
 
 1. Clique em **OK**.
 
@@ -453,19 +468,19 @@ Os agentes padrão estão incluídos na instalação. No entanto, uma determinad
 
    * Na guia **Configurações**:
 
-      * Ativar **Habilitado**.
-      * Insira uma **Descrição**.
-      * Deixe o **Tipo de Serialização** como `Dispatcher Flush` ou defina-o como tal se estiver criando um agente.
+     * Ativar **Habilitado**.
+     * Insira uma **Descrição**.
+     * Deixe o **Tipo de Serialização** como `Dispatcher Flush` ou defina-o como tal se estiver criando um agente.
 
-      * (Opcional) Selecione **Atualização de alias** para habilitar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
+     * (Opcional) Selecione **Atualização de alias** para habilitar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
 
    * Na guia **Transporte**:
 
-      * Insira o URI necessário para a nova instância de publicação; por exemplo,
-        `https://localhost:80/dispatcher/invalidate.cache`.
+     * Insira o URI necessário para a nova instância de publicação; por exemplo,
+       `https://localhost:80/dispatcher/invalidate.cache`.
 
-      * Insira a conta de usuário específica do site usada para replicação.
-      * Você pode configurar outros parâmetros conforme necessário.
+     * Insira a conta de usuário específica do site usada para replicação.
+     * Você pode configurar outros parâmetros conforme necessário.
 
    Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
 

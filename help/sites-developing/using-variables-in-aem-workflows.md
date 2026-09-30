@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1999'
 ht-degree: 0%
-
 ---
-
 # Variáveis em workflows do AEM{#variables-in-aem-workflows}
 
 Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados. Em seguida, você pode usar o nome da variável em qualquer etapa do fluxo de trabalho para recuperar o valor armazenado na variável. Você também pode usar nomes de variáveis para definir expressões para tomar decisões de roteamento.
@@ -86,7 +95,7 @@ Para adicionar o mapeamento entre variáveis, faça o seguinte:
 1. Arraste e solte a etapa **Definir Variável** no editor de fluxo de trabalho, selecione a etapa e selecione ![Configurar ícone indicado por uma chave inglesa.](assets/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável, selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. Na seção **Mapear Variável**, selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor para armazenar na variável. Os modos de mapeamento variam de acordo com o tipo de variável.
-1. Mapeie mais variáveis para poder fazer uma expressão significativa. Selecione o ícone Salvar ![indicado por uma marca de seleção dentro de uma caixa.](assets/Done_Icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para poder fazer uma expressão significativa. Selecione o ícone ![Salvar indicado por uma marca de seleção dentro de uma caixa.](assets/Done_Icon.png) para salvar as alterações.
 
 ### Exemplo 1: consultar uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -231,7 +240,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar uma variável {#edit-a-variable}
 
 1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Selecione o ícone ![Editar indicado por um lápis.Ícone &#x200B;](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
+1. Selecione o ícone ![Editar indicado por um símbolo de lápis.](assets/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
 1. Edite as informações da variável e selecione ![Ícone Salvar indicado por uma marca de seleção.](assets/Done_Icon.png) para salvar as alterações. Não é possível editar os campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}

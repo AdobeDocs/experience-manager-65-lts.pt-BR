@@ -9,29 +9,38 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Administração de fluxos de trabalho{#administering-workflows}
 
 Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM). Fluxos de trabalhos:
 
 * Consiste em uma série de etapas executadas em uma ordem específica.
 
-   * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
+  * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
 
 * Pode interagir com ativos no repositório, contas de usuário e serviços da AEM.
 * Pode coordenar atividades complicadas que envolvem qualquer aspecto do AEM.
 
 Os processos de negócios que sua organização estabeleceu podem ser representados como workflows. Por exemplo, o processo de publicação do conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como fluxos de trabalho do AEM e aplicados a páginas de conteúdo e ativos.
 
-* [Inicialização de workflows](/help/sites-administering/workflows-starting.md)
+* [Inicialização de fluxos de trabalho](/help/sites-administering/workflows-starting.md)
 * [Administração de instâncias do fluxo de trabalho](/help/sites-administering/workflows-administering.md)
-* [Gerenciamento de acesso a workflows](/help/sites-administering/workflows-managing.md)
+* [Gerenciamento de acesso a fluxos de trabalho](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >

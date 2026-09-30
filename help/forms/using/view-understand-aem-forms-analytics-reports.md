@@ -9,7 +9,25 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: b38fac48-04e7-4f10-930d-60107658a1f1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -90,7 +108,7 @@ A seção de resumo no nível do formulário fornece uma insight sobre o desempe
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
 * **Envios**: número de vezes que o formulário foi enviado
 * **Abortar**: número de vezes que os usuários começaram a preencher o formulário e depois saíram sem preenchê-lo
-* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/br/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Relatório de análise resumida em nível de formulário expandido](assets/analytics-report.png)
 
@@ -124,7 +142,7 @@ As tabelas Distribuição do navegador, Distribuição do sistema operacional e 
 
 Para filtrar ainda mais os dados de análise, você pode clicar em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela Distribuição de navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome, da seguinte maneira:
 
-![Filtro aplicado ao relatório do Analytics - Google Chrome &#x200B;](assets/filter-1.png)
+![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter-1.png)
 
 Se você exibir o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também serão exibidos de acordo com o filtro aplicado.
 

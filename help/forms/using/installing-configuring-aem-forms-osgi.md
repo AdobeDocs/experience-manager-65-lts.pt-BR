@@ -8,13 +8,31 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 1%
-
+source-wordcount: '1962'
+ht-degree: 4%
 ---
-
 # Instalar e configurar recursos de captura de dados{#install-and-configure-data-capture-capabilities}
 
 ## Introdução {#introduction}
@@ -44,18 +62,18 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 * O caminho de instalação da instância do AEM não contém espaços em branco.
 * Uma instância do AEM está em execução. Para usuários do Windows, instale a instância do AEM no modo elevado. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM executada em um servidor no modo de criação ou publicação. Você precisa de pelo menos duas [instâncias do AEM (um Autor e uma Publicação)](/help/sites-deploying/deploy.md) para executar os recursos de captura de dados do AEM Forms:
 
-   * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **Publicar**: uma instância do AEM que serve o conteúdo publicado para o público através da Internet ou de uma rede interna.
+  * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
+  * **Publicar**: uma instância do AEM que serve o conteúdo publicado para o público através da Internet ou de uma rede interna.
 
 * Os requisitos de memória são atendidos. O pacote complementar do AEM Forms exige:
 
-   * 15 GB de espaço temporário para instalações baseadas no Microsoft Windows.
-   * 6 GB de espaço temporário para instalações baseadas em UNIX.
+  * 15 GB de espaço temporário para instalações baseadas no Microsoft Windows.
+  * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * A replicação e a replicação inversa das instâncias de autor e publicação estão definidas. Para obter detalhes, consulte [Replicação](/help/sites-deploying/replication.md).
 * Para sistemas baseados em UNIX:
 
-   * Instale os seguintes pacotes de 32 bits da mídia de instalação:
+  * Instale os seguintes pacotes de 32 bits da mídia de instalação:
 
 <table>
  <tbody>
@@ -100,7 +118,7 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 
 * Instale o seguinte pacote de 64 bits a partir da mídia de instalação:
 
-   * libicu
+  * libicu
 
 * Instalar o [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
@@ -118,8 +136,8 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log fique estável.
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log fique estável.
 
    >[!NOTE]
    >
@@ -171,16 +189,16 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicionar o pacote ao arquivo de inclui na lista de permissões:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote ao incluo na lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. A URL padrão é `https://'[server]:[port]'/system/console/configMgr`.
 1. Pesquise por **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e abra a configuração.
-1. Adicione o pacote **sun.util.calendar** ao campo **incluir na lista de permissões**. Clique em **Salvar**.
+1. Adicione o pacote **sun.util.calendar** ao campo **incluo na lista de permissões**. Clique em **Salvar**.
 1. Repita as etapas 1 a 3 em todas as instâncias Autor e Publicar.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 
-#### Configurar Dispatcher {#configure-dispatcher}
+#### Configurar o Dispatcher {#configure-dispatcher}
 
 O Dispatcher é uma ferramenta de balanceamento de carga e/ou cache do Adobe Experience Manager que pode ser usada em conjunto com um servidor Web de classe empresarial. Se você usa o [Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html), execute as seguintes configurações para o AEM Forms:
 

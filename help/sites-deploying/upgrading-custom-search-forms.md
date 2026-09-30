@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 2%
-
 ---
-
 # Atualização do Forms de pesquisa personalizada{#upgrading-custom-search-forms}
 
 No AEM 6.2, o local onde as Forms de pesquisa personalizada são armazenadas no repositório foi alterado. Ao atualizar, eles são movidos de seu local no 6.1 em:
@@ -73,7 +82,7 @@ No AEM 6.1, o predicado padrão de texto completo fazia parte do formulário de 
  <tbody>
   <tr>
    <td>Nó(s) na pesquisa padrão de no 6.1</td>
-   <td>n/a</td>
+   <td>n/d</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso no 6.1</p> </td>
@@ -156,13 +165,13 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
 * Remover o nó `pagestatuspredicate`
 * Copiar nó
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Copiar nó
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * para `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Defina a propriedade `listOrder` do nó `analyticspredicate` como &quot;**8**&quot;. Isso é necessário para evitar conflitos.
 

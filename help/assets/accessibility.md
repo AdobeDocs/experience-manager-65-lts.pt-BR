@@ -1,17 +1,30 @@
 ---
-title: Recursos e interfaces acessíveis do  [!DNL Adobe Experience Manager Assets]
+title: Recursos e interfaces acessíveis do [!DNL Adobe Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade do [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] ajudam usuários portadores de deficiências.
 feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1935'
 ht-degree: 1%
-
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -205,9 +218,9 @@ Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:
 
 * Na caixa de diálogo de compartilhamento de links, no modo de navegação, os leitores de tela
 
-   * Não narre as informações da tabela quando a caixa de diálogo for carregada.
-   * Navegue até todas as sugestões listadas.
-   * Narre as sugestões exibidas para Adicionar endereço de email e Pesquisar campos.
+  * Não narre as informações da tabela quando a caixa de diálogo for carregada.
+  * Navegue até todas as sugestões listadas.
+  * Narre as sugestões exibidas para Adicionar endereço de email e Pesquisar campos.
 
 ## Documentação acessível {#accessible-docs}
 

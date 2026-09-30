@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3973'
 ht-degree: 0%
-
 ---
-
 # Atribuição de direitos de uso {#assigning-usage-rights}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -125,14 +142,14 @@ Aplique direitos de uso a um documento do PDF usando a API de extensões do Acro
 
    * Crie um objeto `ReaderExtensionsOptionSpec` usando seu construtor. Esse objeto contém opções de tempo de execução que são exigidas pelo serviço de extensões do Acrobat Reader DC. Ao chamar esse construtor, você deve especificar os seguintes valores:
 
-      * O objeto `UsageRights` que contém os direitos de uso a serem aplicados ao documento.
-      * Um valor de string que especifica uma mensagem que um usuário vê quando o documento do PDF com direitos ativados é aberto no Adobe Reader 7.x. Esta mensagem não é exibida no Adobe Reader 8.0.
+     * O objeto `UsageRights` que contém os direitos de uso a serem aplicados ao documento.
+     * Um valor de string que especifica uma mensagem que um usuário vê quando o documento do PDF com direitos ativados é aberto no Adobe Reader 7.x. Esta mensagem não é exibida no Adobe Reader 8.0.
 
    * Aplique direitos de uso ao documento PDF invocando o método `applyUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo os seguintes valores:
 
-      * O objeto `com.adobe.idp.Document` que contém o documento PDF ao qual os direitos de uso são aplicados.
-      * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
-      * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
+     * O objeto `com.adobe.idp.Document` que contém o documento PDF ao qual os direitos de uso são aplicados.
+     * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
+     * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
 
    * O objeto `ReaderExtensionsOptionSpec` que contém opções de tempo de execução.
 
@@ -173,10 +190,10 @@ Aplique direitos de uso a um documento do PDF usando a API de extensões do Acro
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento do PDF.
 
@@ -198,9 +215,9 @@ Aplique direitos de uso a um documento do PDF usando a API de extensões do Acro
    * Atribua um valor de cadeia de caracteres que especifique a mensagem que um usuário vê quando o documento PDF com direitos habilitados é aberto no Adobe Reader para o membro de dados `message` do objeto `ReaderExtensionsOptionSpec`.
    * Aplique direitos de uso ao documento PDF invocando o método `applyUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo os seguintes valores:
 
-      * O objeto `BLOB` que contém o documento PDF ao qual os direitos de uso são aplicados.
-      * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
-      * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
+     * O objeto `BLOB` que contém o documento PDF ao qual os direitos de uso são aplicados.
+     * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
+     * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
 
    * O objeto `ReaderExtensionsOptionSpec` que contém opções de tempo de execução.
 
@@ -329,10 +346,10 @@ Remova os direitos de uso de um documento do PDF habilitado para direitos usando
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento do PDF.
 
@@ -464,10 +481,10 @@ Recupere informações de credenciais usando a API de extensões do Acrobat Read
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento do PDF.
 

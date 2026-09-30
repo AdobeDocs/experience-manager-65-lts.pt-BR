@@ -8,20 +8,33 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 0%
-
+source-wordcount: '2195'
+ht-degree: 1%
 ---
-
 # Configurar fontes de dados{#configure-data-sources}
 
 ## Aplica-se a {#applies-to}
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Integração de dados](do-not-localize/data-integeration.png)
@@ -132,10 +145,10 @@ Faça o seguinte para configurar os serviços RESTful:
    * Selecione URL ou Arquivo no menu suspenso Swagger Source e especifique o URL do Swagger para o arquivo de definição do Swagger ou faça upload do arquivo Swagger a partir do seu sistema de arquivos local.
    * Com base na entrada do Source Swagger, os seguintes campos são pré-preenchidos com valores:
 
-      * Esquema: os protocolos de transferência usados pela API REST. O número de tipos de esquema exibidos na lista suspensa depende dos esquemas definidos na origem do Swagger.
-      * Host: o nome do domínio ou endereço IP do host que serve a API REST. É um campo obrigatório.
-      * Caminho base: o prefixo do URL para todos os caminhos da API. É um campo opcional.\
-        Se necessário, edite os valores pré-preenchidos nesses campos.
+     * Esquema: os protocolos de transferência usados pela API REST. O número de tipos de esquema exibidos na lista suspensa depende dos esquemas definidos na origem do Swagger.
+     * Host: o nome do domínio ou endereço IP do host que serve a API REST. É um campo obrigatório.
+     * Caminho base: o prefixo do URL para todos os caminhos da API. É um campo opcional.\
+       Se necessário, edite os valores pré-preenchidos nesses campos.
 
    * Selecione o tipo de autenticação — None, OAuth2.0([Código de Autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do Cliente](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, Custom Authentication ou Mutual Authentication — para acessar o serviço RESTful e fornecer os detalhes de autenticação de acordo.
 
@@ -162,7 +175,7 @@ Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de
 
    * Especifique a duração, para a qual uma conexão HTTP persistente é mantida ativa, no campo **[!UICONTROL Keep alive]**. O valor padrão é de 15 segundos.
 
-   * No campo [!DNL Experience Manager Forms]Tempo limite de conexão **[!UICONTROL , especifique a duração pela qual o servidor]** aguarda o estabelecimento de uma conexão. O valor padrão é de 10 segundos.
+   * No campo **[!UICONTROL Tempo limite de conexão]**, especifique a duração pela qual o servidor [!DNL Experience Manager Forms] aguarda o estabelecimento de uma conexão. O valor padrão é de 10 segundos.
 
    * Especifique o período máximo de inatividade entre dois pacotes de dados no campo **[!UICONTROL Tempo limite do soquete]**. O valor padrão é de 30 segundos.
 
@@ -182,7 +195,7 @@ Os serviços Web baseados em SOAP são descritos usando as [especificações WSD
    * Selecione o tipo de autenticação — None, OAuth2.0([Código de Autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do Cliente](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, Custom Authentication, X509 Token ou Mutual Authentication — para acessar o serviço SOAP e fornecer os detalhes de autenticação de acordo.
 
      Se você selecionar **[!UICONTROL X509 Token]** como o Tipo de autenticação, configure o Certificado X509. Para obter mais informações, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Especifique o alias do KeyStore para o certificado X509 no campo **[!UICONTROL Alias da Chave]**. Especifique o tempo, em segundos, até que a solicitação de autenticação permaneça válida, no campo **[!UICONTROL Tempo de vida]**. Opcionalmente, selecione para assinar o corpo da mensagem ou o cabeçalho do carimbo de data e hora, ou ambos.
+     Especifique o alias do KeyStore para o certificado X509 no campo **[!UICONTROL Alias da Chave]**. Especifique o tempo, em segundos, até que a solicitação de autenticação permaneça válida, no campo **[!UICONTROL Tempo de vida]**. Opcionalmente, selecione para assinar o corpo da mensagem ou o cabeçalho do carimbo de data e hora, ou ambos.
 
      Se você selecionar **[!UICONTROL Autenticação Mútua]** como o tipo de autenticação, consulte [Autenticação mútua baseada em certificado para serviços Web RESTful e SOAP](#mutual-authentication).
 
@@ -195,7 +208,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 >[!NOTE]
 >
 >O modelo de dados de formulário dá suporte a [OData versão 4](https://www.odata.org/documentation/).
->&#x200B;>Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Para obter um guia passo a passo para configurar o Microsoft Dynamics 365, online ou no local, consulte [Configuração do Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Acesse **[!UICONTROL Ferramentas > Serviços da nuvem > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 

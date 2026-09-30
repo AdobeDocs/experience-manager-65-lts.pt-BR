@@ -11,23 +11,32 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
-source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 3%
-
+source-wordcount: '323'
+ht-degree: 4%
 ---
-
 # Guias da API {#api-guides}
 
 O Adobe Experience Manager (AEM) fornece várias APIs para desenvolver aplicativos e estender o AEM. A lista a seguir fornece a documentação para APIs compatíveis com o AEM:
 
-* [API LTS do Adobe AEM 6.5](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [API Adobe AEM 6.5 LTS](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [Documentação da API da interface de usuário do Granite (habilitada para toque)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [Guia da interface do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [Guia de Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Documentação da API de widgets (interface de usuário clássica)](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [Referência de API de JavaScript da estrutura de teste da interface do usuário](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
-* [Referência da API principal do JavaScript do editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [Referência da API do JavaScript da estrutura de testes da interface](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
+* [Referência da API JavaScript principal do editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 Editor de aplicativo de página única (SPA) do AEM SDK framework Referências da API JavaScript:
 
@@ -40,9 +49,9 @@ APIs de entrega e gerenciamento de conteúdo do AEM:
 
 * Componentes principais (JSON)
 
-   * [Exportador JSON](/help/sites-developing/json-exporter.md)
-   * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
-   * Consulte a seção [Componentes do Guia do Usuário para Desenvolvimento](/help/sites-developing/getting-started.md) para obter mais informações
+  * [Exportador JSON](/help/sites-developing/json-exporter.md)
+  * [Habilitação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
+  * Consulte a seção [Componentes do Guia do Usuário para Desenvolvimento](/help/sites-developing/getting-started.md) para obter mais informações
 
 * **Assets**: a API HTTP do Assets permite operações create-read-update-delete (CRUD) no Assets, incluindo binários, metadados, representações e comentários. Consulte [API HTTP do AEM Assets](/help/assets/mac-api-assets.md)
 
@@ -51,6 +60,6 @@ APIs de entrega e gerenciamento de conteúdo do AEM:
 Os seguintes recursos externos são apenas para referência:
 
 * [API do Apache Sling 11](https://sling.apache.org/apidocs/sling11/)
-* [API Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
+* [API do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
 * [API do repositório de conteúdo Java](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [API Apache Jackrabbit](https://jackrabbit.apache.org/api)

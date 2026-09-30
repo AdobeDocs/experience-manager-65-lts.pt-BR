@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 8%
-
+source-wordcount: '2175'
+ht-degree: 9%
 ---
-
 # Configuração da notificação por e-mail{#configuring-email-notification}
 
 O AEM envia notificações por email para usuários que:
@@ -206,7 +215,7 @@ subject=<text_1>
 >
 >Mais informações sobre o formato do modelo podem ser encontradas no [javadocs do método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-O método `${payload.path.open}` revela o caminho para a carga útil do item de trabalho. Por exemplo, para uma página no Sites, então `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`.; isso ocorre sem o nome do servidor, razão pela qual o modelo anexa isso com `${host.prefix}`.
+O método `${payload.path.open}` revela o caminho para a carga útil do item de trabalho. Por exemplo, para uma página no Sites, então `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`. Isso ocorre sem o nome do servidor, por isso o modelo anexa isso com `${host.prefix}`.
 
 As seguintes variáveis podem ser usadas no template de email:
 
@@ -403,11 +412,11 @@ Em seguida, integre suas configurações do OAuth2 ao AEM:
    * Preencha o URL de Autorização, URL do Token e URL do Token de Atualização construindo-os conforme descrito em [o fim deste procedimento](#microsoft-outlook)
    * ID do cliente e Segredo do cliente: configure esses campos com os valores que você recuperou, conforme descrito acima.
    * Adicione os seguintes escopos à configuração:
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * URL de Redirecionamento AuthCode: `http://localhost:4503/services/mailer/oauth2/token`
    * URL do token de atualização: deve ter o mesmo valor que o URL do token acima
 1. Clique em **Salvar**.

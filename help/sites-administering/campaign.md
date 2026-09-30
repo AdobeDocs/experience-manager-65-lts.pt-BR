@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: de6cd8e2-d295-46b2-9068-feb1ff7d15d3
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 9%
-
+source-wordcount: '346'
+ht-degree: 12%
 ---
-
 # Integração do AEM 6.5 com o Adobe Campaign{#integrating-with-adobe-campaign}
 
 Saiba mais sobre o suporte do AEM 6.5 para integrações com o Adobe Campaign.
@@ -26,7 +35,7 @@ O Adobe Campaign é um conjunto de soluções que permite personalizar e entrega
 >
 >Este documento descreve a integração do Adobe Campaign com o AEM 6.5, a solução local ou hospedada pelo AMS AEM.
 >
->Para obter detalhes sobre a integração do Adobe Campaign com o AEM as a Cloud Service, a solução AEM nativa em nuvem, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=pt-BR)
+>Para obter detalhes sobre a integração do Adobe Campaign com o AEM as a Cloud Service, a solução AEM nativa em nuvem, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
 
 ## Integração com o Adobe Campaign Classic {#acc}
 
@@ -43,7 +52,7 @@ A documentação a seguir descreve como integrar o AEM com o Adobe Campaign Clas
 
 A documentação adicional a seguir descreve como usar a integração.
 
-* [Componentes principais de email](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=pt-BR) - Saiba mais sobre os componentes de email padrão que você pode usar para criar conteúdo do Campaign no AEM.
+* [Componentes principais de email](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - Saiba mais sobre os componentes de email padrão que você pode usar para criar conteúdo do Campaign no AEM.
 * [Solução de problemas da integração do Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md) - Saiba como corrigir os problemas mais comuns com a integração AEM-ACC.
 
 ## Integração com o Adobe Campaign Standard {#acs}
@@ -61,4 +70,4 @@ A documentação a seguir descreve como integrar o AEM com o Adobe Campaign Stan
 
 A documentação adicional a seguir descreve como usar a integração.
 
-* [Componentes principais de email](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=pt-BR)
+* [Componentes principais de email](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: bf4fa6e4-25c7-46a8-9bae-4af7bfc14426
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Definindo Configurações de Ausência Temporária {#configuring-out-of-office-settings}
 
 O recurso Out of Office permite que os usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas pelo AEM Forms. Embora um usuário esteja definido como Fora do escritório, suas tarefas são atribuídas a um ou mais usuários designados. Os usuários podem alterar suas configurações de Ausência temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho de formulários.
@@ -66,11 +81,11 @@ Enquanto um usuário estiver fora do escritório, você poderá atribuir um ou m
 * Atribua um usuário padrão que receberá a maioria das tarefas do usuário, mas especifique que as tarefas de determinados processos sejam reatribuídas a outros usuários ou permaneçam atribuídas ao usuário que está fora do escritório.
 * Não atribua um usuário padrão, mas atribua determinadas tarefas de determinados processos a usuários específicos.
 
-   1. Localize o usuário, conforme descrito em [Exibir as informações de Ausência Temporária de um usuário](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-   1. Clique no nome do usuário que deseja alterar.
-   1. Na lista Usuário Padrão para Tarefas de Ausência Temporária, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
+  1. Localize o usuário, conforme descrito em [Exibir as informações de Ausência Temporária de um usuário](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+  1. Clique no nome do usuário que deseja alterar.
+  1. Na lista Usuário Padrão para Tarefas de Ausência Temporária, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
 
-      Se o nome de usuário apropriado não for exibido na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Exibir Cronograma do Usuário na caixa de diálogo Localizar Usuário para ver o cronograma de ausência do usuário selecionado.
+     Se o nome de usuário apropriado não for exibido na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Exibir Cronograma do Usuário na caixa de diálogo Localizar Usuário para ver o cronograma de ausência do usuário selecionado.
 
-   1. Se houver processos que não devem ser enviados ao usuário padrão, clique em Adicionar uma exceção, selecione o processo e selecione outro usuário na lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
-   1. Clique em Salvar.
+  1. Se houver processos que não devem ser enviados ao usuário padrão, clique em Adicionar uma exceção, selecione o processo e selecione outro usuário na lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
+  1. Clique em Salvar.

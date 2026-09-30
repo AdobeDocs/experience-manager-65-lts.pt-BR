@@ -8,7 +8,24 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 0%
@@ -85,7 +102,7 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
    >
    >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
-   ![Opções do AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
@@ -109,7 +126,7 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
 
 O Designer permite visualizar e testar o formulário usando dados XML de amostra. É recomendável testar frequentemente seu formulário com dados de amostra para garantir que ele seja renderizado corretamente.
 
-Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de exemplo para visualizar o formulário](https://help.adobe.com/pt_BR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Criar dados de exemplo para visualizar o formulário](https://help.adobe.com/pt_BR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Criar dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Testar o formulário usando uma fonte de dados de amostra garante que os dados e campos sejam mapeados e que os subformulários de repetição sejam repetidos conforme esperado. Você pode criar um layout de formulário equilibrado que forneça o espaço apropriado para cada objeto exibir os dados mesclados.
 

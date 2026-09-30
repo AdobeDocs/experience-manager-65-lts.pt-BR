@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 0%
-
+source-wordcount: '992'
+ht-degree: 2%
 ---
-
 # O Verificador de links {#the-link-checker}
 
 Os autores de conteúdo não devem se preocupar em validar cada link incluído em suas páginas de conteúdo.
@@ -35,7 +44,7 @@ O Verificador de links valida [links internos](#internal) e [links externos.](#e
 Links internos são links para outro conteúdo no repositório do AEM. Links internos podem ser adicionados usando o seletor de caminho do RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `/content/wknd/us/en/adventures/extreme-ironing.html` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links internos são validados assim que o autor de conteúdo adiciona um link interno a uma página. Se o link se tornar inválido:
 
@@ -49,7 +58,7 @@ Os links internos são validados assim que o autor de conteúdo adiciona um link
 Links externos são links para conteúdo fora do repositório do AEM. Links externos podem ser adicionados usando o RTE ou usando um componente personalizado. Por exemplo:
 
 * Sua página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR)
+* Contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Os links externos são validados para sintaxe e por meio da verificação de sua disponibilidade. Essa verificação é feita de forma assíncrona em um local interno configurável. Se o Verificador de links encontrar um link externo inválido:
 
@@ -72,14 +81,14 @@ Para usar o Verificador de links externos:
 As seguintes informações são exibidas:
 
 * **Status** - O status de validação do link que pode ser um dos seguintes:
-   * **Válido** - O link externo pode ser acessado pelo Verificador de Links
-   * **Pendente** - O link externo foi adicionado ao conteúdo do site, mas ainda não foi validado pelo Verificador de Links
-   * **Inválido** - O link externo não pode ser acessado pelo Verificador de Links
+  * **Válido** - O link externo pode ser acessado pelo Verificador de Links
+  * **Pendente** - O link externo foi adicionado ao conteúdo do site, mas ainda não foi validado pelo Verificador de Links
+  * **Inválido** - O link externo não pode ser acessado pelo Verificador de Links
 * **URL** - O link externo
 * **Referenciador** - A página de conteúdo que contém o link externo
-   * Isto é populado somente [se configurado.](#configuring)
+  * Isto é populado somente [se configurado.](#configuring)
 * **Última Verificação** - A última vez que o Verificador de Links validou o link externo
-   * A frequência com que os links são verificados [é configurável.](#configuring)
+  * A frequência com que os links são verificados [é configurável.](#configuring)
 * **Último status** - O último código de status do HTML retornado quando o link foi verificado pela última vez no link externo
 * **Último disponível** - Tempo desde que o link ficou disponível pela última vez para o Verificador de links
 * **Último acesso** - tempo desde que a página com o link externo foi acessada pela última vez na interface de criação
@@ -97,8 +106,8 @@ Embora fácil de usar, o Verificador de links externos depende de vários servi�
 1. O manipulador de eventos percorre todo o conteúdo em `/content`, verifica se há links novos ou atualizados e os adiciona a um cache para o Verificador de links.
 1. O **Serviço Verificador de Links CQ do Dia** é executado em um agendamento regular para verificar se as entradas no cache têm sintaxe válida.
 1. Os links validados por sintaxe aparecem na janela [Verificador de links externos](#external-link-checker). No entanto, eles estarão em um estado **Pendente**.
-1. A **Tarefa do Verificador de Links do CQ de Dias** é executada regularmente para validar os links fazendo uma chamada de GET.
-1. A **Tarefa do Verificador de Links CQ do Dia** atualiza as entradas na janela Verificador de Links Externos com os resultados das chamadas de GET.
+1. A **Tarefa do Verificador de Links do CQ de Dias** é executada regularmente para validar os links fazendo uma chamada GET.
+1. A **Tarefa do Verificador de Links CQ do Dia** atualiza as entradas na janela Verificador de Links Externos com os resultados das chamadas GET.
 
 ## Configuração do Verificador de links {#configuring}
 
@@ -106,7 +115,7 @@ O Verificador de links está disponível automaticamente e pronto para uso no AE
 
 * **Serviço de Armazenamento de Informações do Verificador de Links CQ do Dia** - Esse serviço define o tamanho do cache do Verificador de Links no repositório.
 * **Serviço Day CQ Verificador de Links** - Esse serviço executa a verificação assíncrona da sintaxe de links externos. Você pode definir o período de verificação e quais tipos de links são ignorados pelo verificador entre outras opções.
-* **Tarefa do Verificador de Links CQ do Dia** - Este serviço executa a validação de links externos do GET. Ela permite definições separadas de intervalos para verificar links ruins e bons entre outras opções.
+* **Tarefa do Verificador de Links CQ de Dias** - Esse serviço executa a validação GET de links externos. Ela permite definições separadas de intervalos para verificar links ruins e bons entre outras opções.
 * **Transformador do Verificador de Links CQ de Dias** - Permite converter links com base em um conjunto de regras definido pelo usuário.
 
 Consulte o documento [Configurações de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obter mais detalhes sobre como alterar configurações de OSGi.

@@ -11,13 +11,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1104'
 ht-degree: 0%
-
 ---
-
 # Atualização de código e personalizações{#upgrading-code-and-customizations}
 
 Ao planejar uma atualização, as seguintes áreas de uma implementação devem ser investigadas e abordadas.
@@ -130,7 +139,7 @@ Abaixo estão áreas críticas de qualquer implementação do AEM que devem ser 
   </tr>
   <tr>
    <td>Autenticação, segurança e permissões</td>
-   <td>Todos os mecanismos de autenticação, como LDAP/SAML, devem ser validados.<br /> Permissões e grupos devem ser testados nos níveis Autor e Publicação<br />.</td>
+   <td>Qualquer mecanismo de autenticação, como LDAP/SAML, deve ser validado.<br /> As permissões e os grupos devem ser testados nos níveis Autor e Publicação<br />.</td>
   </tr>
   <tr>
    <td>Consultas</td>

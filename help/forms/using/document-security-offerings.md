@@ -10,7 +10,22 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6653649a-5076-48e3-a7ed-5b74d4d2e8e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 2%
@@ -35,7 +50,7 @@ O Servidor de segurança de documentos é o componente central por meio do qual 
 
 O servidor de Segurança de documentos fornece uma interface baseada na Web (página da Web) para criar políticas, gerenciar documentos protegidos por política e monitorar eventos associados a documentos protegidos por política. Os administradores também podem configurar opções globais, como autenticação de usuário, auditoria e mensagens para usuários convidados, e gerenciar contas de usuários convidados.
 
-O servidor está incluído na oferta complementar de Segurança de documentos do AEM Forms. Você pode entrar em contato com a [equipe de vendas](https://business.adobe.com/br/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) da AEM Forms para adquirir o complemento Segurança de documentos.
+O servidor está incluído na oferta complementar de Segurança de documentos do AEM Forms. Você pode entrar em contato com a [equipe de vendas](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) da AEM Forms para adquirir o complemento Segurança de documentos.
 
 ### Proteger documentos {#protect-documents}
 
@@ -47,11 +62,11 @@ Você pode usar o Document Security SDK, Adobe Acrobat, Document Security Extens
 
 * **SDK de Segurança de Documentos:** O SDK é um cliente rico em recursos. Você pode usar o Document Security SDK para acessar a funcionalidade do servidor de documentos, abrir documentos protegidos por política e desenvolver extensões, plug-ins ou aplicativos personalizados. Por exemplo, você pode desenvolver extensões para proteger formatos de arquivo personalizados ou integrar o SDK com soluções de Prevenção de perda de dados (DLP). Extensões, aplicativos e plug-ins desenvolvidos com o uso do Document Security SDK para enviar documentos para o AEM Forms Server designado, e as políticas são aplicadas no servidor. O AEM Forms Document Security Client SDK (CSDK) não pode desproteger os documentos protegidos usando a Portable Protection Library (PPL) e vice-versa.
 
-  O Document Security SDK está disponível para Java™ e C++. O Java™ SDK está incluído na oferta de Segurança de documentos da AEM Forms e é instalado na implantação do AEM Forms no JEE. Entre em contato com o [Suporte ao Cliente da AEM](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para adquirir o SDK C++. O SDK C++ pode ser compilado com o Microsoft® Visual Studio 2013. Visite o site [Documentação da API de Segurança de documentos](https://help.adobe.com/pt_BR/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html), onde você pode aprender e usar os recursos do SDK.
+  O Document Security SDK está disponível para Java™ e C++. O Java™ SDK está incluído na oferta de Segurança de documentos da AEM Forms e é instalado na implantação do AEM Forms no JEE. Entre em contato com o [Suporte ao Cliente da AEM](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para adquirir o SDK C++. O SDK C++ pode ser compilado com o Microsoft® Visual Studio 2013. Visite o site [Documentação da API de Segurança de documentos](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html), onde você pode aprender e usar os recursos do SDK.
 
 * **Adobe Acrobat:** Você pode usar o Adobe Acrobat para aplicar políticas de segurança a documentos do PDF criados com aplicativos de desktop populares, como o Microsoft® Office, navegadores da Web ou qualquer aplicativo que ofereça suporte para impressão no formato PDF.
 
-  Você pode comprar e baixar o Adobe Acrobat do [site do Adobe](https://www.adobe.com/acrobat/free-trial-download.html). O artigo [configuração de políticas de segurança para PDFs](https://helpx.adobe.com/br/acrobat/using/setting-security-policies-pdfs.html) da Adobe Acrobat fornece informações detalhadas sobre como criar e aplicar políticas no Adobe Acrobat.
+  Você pode comprar e baixar o Adobe Acrobat do [site do Adobe](https://www.adobe.com/acrobat/free-trial-download.html). O artigo [configuração de políticas de segurança para PDFs](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) da Adobe Acrobat fornece informações detalhadas sobre como criar e aplicar políticas no Adobe Acrobat.
 
 * **Document Security Extension for Microsoft® Office**: você pode usar o Document Security Extension for Microsoft® Office para aplicar políticas predefinidas a seus arquivos do Microsoft® Office de dentro dos programas do Microsoft® Office. A extensão garante que somente pessoas autorizadas possam usar arquivos do Microsoft® Word, Excel e PowerPoint protegidos por política. Somente os usuários autorizados que têm o plug-in instalado podem usar os arquivos protegidos por política.
 
@@ -61,7 +76,7 @@ Você pode usar o Document Security SDK, Adobe Acrobat, Document Security Extens
 
   Além disso, o PPL tem todos os recursos do Document Security SDK. Você pode usar o Document Security SDK para acessar a funcionalidade do servidor de documentos, abrir documentos protegidos por política e desenvolver extensões, plug-ins ou aplicativos personalizados. O PPL não pode desproteger os documentos protegidos usando o AEM Forms document security client SDK (CSDK) e vice-versa.
 
-  O PPL está disponível para as linguagens Java™ e C++ nas versões de 32 e 64 bits. Também está disponível como um pacote OSGi para o AEM Forms no OSGi. A PPL do C++ pode ser compilada com o Microsoft® Visual Studio 2013. Se você tiver licenciado o complemento Segurança de documentos do AEM Forms, poderá entrar em contato com a equipe de suporte da [Segurança de documentos da AEM Forms](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter o PPL. Posteriormente, você poderá usar a Ajuda da PPL (fornecida com a biblioteca) para configurar e usar a PPL.
+  O PPL está disponível para as linguagens Java™ e C++ nas versões de 32 e 64 bits. Também está disponível como um pacote OSGi para o AEM Forms no OSGi. A PPL do C++ pode ser compilada com o Microsoft® Visual Studio 2013. Se você tiver licenciado o complemento Segurança de documentos do AEM Forms, poderá entrar em contato com a equipe de suporte da [Segurança de documentos da AEM Forms](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para obter o PPL. Posteriormente, você poderá usar a Ajuda da PPL (fornecida com a biblioteca) para configurar e usar a PPL.
 
 ### Exibir ou editar documentos protegidos {#view-or-edit-protected-documents}
 

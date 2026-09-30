@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
-
 ---
-
 # Início rápido da API Java do serviço de saída (SOAP) {#output-service-java-api-quick-start-soap}
 
 O Java API Quick Start (SOAP) está disponível para o serviço de saída.
@@ -173,7 +190,7 @@ O código Java a seguir cria um documento PDF chamado *Loan.pdf*. Este documento
 
 >[!NOTE]
 >
->Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento do PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
+>Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento do PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
-
 ---
-
 # Estratégia de backup e restauração em um ambiente em cluster {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -130,7 +145,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log no nó.
    1. Exclua o arquivo .lock no nó, se existir.
    1. Exclua o repository/system.id no nó, se existir.
-   1. Exclua os arquivos &ast;&ast;/listener.properties no nó, se existir.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties no nó, se existir.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]
@@ -160,7 +175,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
    1. Exclua o arquivo clusterNode/revision.log em todos os nós de cluster.
    1. Exclua o .lock em todos os nós de cluster, se existir.
    1. Exclua os nós de cluster repository/system.id, se existirem.
-   1. Exclua os arquivos &ast;&ast;/listener.properties em todos os nós do cluster, se existirem.
+   1. Exclua os arquivos &amp;ast;&amp;ast;/listener.properties em todos os nós do cluster, se existirem.
    1. Restaure repository/cluster_node.id para nós de cluster individuais.
 
 >[!NOTE]

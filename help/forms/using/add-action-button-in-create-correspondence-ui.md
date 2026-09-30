@@ -9,13 +9,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1901'
 ht-degree: 1%
-
 ---
-
 # Adicionar um botão de ação personalizado na interface de Criar correspondência {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Visão geral {#overview}
@@ -168,7 +181,7 @@ Depois de fazer cada alteração no lado do servidor, reinicie o pacote de bloco
 >
 >Talvez seja necessário limpar o cache do navegador.
 
-1. Ir para `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
+1. Acesse `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
 
 1. Localize o pacote de blocos de construção do Adobe Asset Composer. Reinicie o pacote: clique em Stop e em Start.
 
@@ -190,7 +203,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 * Ativar/desativar a ação recém-adicionada: feito substituindo a função actionEnabled().
 * Manuseio real da ação quando o usuário clica no botão: feito substituindo a implementação da função handleAction().
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
 
 1. Na pasta de aplicativos, crie uma pasta chamada `js` na ramificação /apps do CRX com estrutura semelhante à seguinte pasta:
 

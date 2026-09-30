@@ -10,14 +10,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 40fbbef6-3a2e-455d-81a3-23c7e322c0fb
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 0%
-
 ---
-
 # Montagem de documentos do PDF com marcadores {#assembling-pdf-documents-with-bookmarks}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -206,13 +221,13 @@ Montar um documento do PDF com marcadores usando a API de serviço do Assembler 
    * Crie um objeto `java.util.Map` que seja usado para armazenar o documento PDF de entrada e o documento XML de marcador.
    * Adicione o documento PDF de entrada invocando o método `put` do objeto `java.util.Map` e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
-      * Um objeto `com.adobe.idp.Document` que contém o documento PDF de entrada.
+     * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
+     * Um objeto `com.adobe.idp.Document` que contém o documento PDF de entrada.
 
    * Adicione o documento XML de indicador invocando o método `put` do objeto `java.util.Map` e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem Marcadores especificado no documento DDX.
-      * Um objeto `com.adobe.idp.Document` que contém o documento XML do indicador.
+     * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem Marcadores especificado no documento DDX.
+     * Um objeto `com.adobe.idp.Document` que contém o documento XML do indicador.
 
 1. Definir opções de tempo de execução.
 
@@ -265,10 +280,10 @@ Montar um documento do PDF com marcadores usando a API de serviço do Assembler 
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 

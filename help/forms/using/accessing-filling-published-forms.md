@@ -9,7 +9,22 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 10764131-21e9-4c1c-b9d1-e878cc927fb6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -30,7 +45,7 @@ Navegue até a página do Forms Portal publicada. Para obter mais informações 
 
 O componente de Pesquisa e Lister do Forms Portal exibe os formulários disponíveis na instância de Publicação do servidor do AEM. Essa lista inclui todos os formulários ou os formulários definidos no filtro no momento da criação da página do Forms Portal. Uma página do Forms Portal é semelhante à exibida na imagem a seguir:
 
-![Um exemplo de página de portal de formulários &#x200B;](assets/forms-portal-page.png)
+![Um exemplo de página de portal de formulários ](assets/forms-portal-page.png)
 
 Um exemplo de página do Forms Portal
 

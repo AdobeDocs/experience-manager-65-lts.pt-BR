@@ -10,13 +10,27 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3048'
 ht-degree: 3%
-
 ---
-
 # Lista de verificação de segurança {#security-checklist}
 
 Esta seção trata de várias etapas necessárias para garantir que sua instalação do AEM esteja segura quando for implantada. A lista de verificação deve ser aplicada de cima para baixo.
@@ -49,7 +63,7 @@ Verifique se você instalou os [Hotfixes de Segurança mais recentes fornecidos 
 
 ### Alterar senhas padrão para as contas de administrador do AEM e do console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do &lbrace;AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
+A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do {AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
 
 Essas contas incluem:
 
@@ -110,11 +124,11 @@ A Adobe recomenda definir páginas de manipulador de erros personalizadas, espec
 
 >[!NOTE]
 >
->Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=pt-BR) para obter mais detalhes.
+>Consulte [Como posso criar scripts personalizados ou manipuladores de erros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) para obter mais detalhes.
 
 ### Lista de verificação de segurança completa do Dispatcher {#complete-dispatcher-security-checklist}
 
-O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda concluir a [lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR).
+O AEM Dispatcher é uma parte essencial de sua infraestrutura. A Adobe recomenda concluir a [lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -324,7 +338,7 @@ Para ajudar a evitar o uso indevido de DoS, você pode fazer o seguinte:
 >
 >Essa mitigação deve ser executada somente em ambientes AEM que não estejam usando o Forms.
 
-Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença da cadeia de caracteres **&ast;.form.&ast;** em consultas.
+Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença da cadeia de caracteres **&amp;ast;.form.&amp;ast;** em consultas.
 
 Para atenuar esse problema, você pode executar as seguintes etapas:
 

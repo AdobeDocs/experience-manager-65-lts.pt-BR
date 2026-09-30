@@ -9,13 +9,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
 role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 4%
-
+source-wordcount: '655'
+ht-degree: 5%
 ---
-
 # Visualização de dados de análise de página{#seeing-page-analytics-data}
 
 Use os dados de análise da página para medir a eficácia do conteúdo da página.
@@ -137,23 +152,23 @@ A caixa de diálogo **Configurações do Activity Map** fornece um intervalo de 
 
 * Geral
 
-   * Conjunto de relatórios
-   * Nome da Página
-   * Idioma
-   * Sobreposições de Rótulo com
-   * Tamanho da fonte do rótulo
-   * Cor do gradiente
-   * Cor da bolha
-   * Gradiente colorido com base em
-   * Transparência do gradiente
+  * Conjunto de relatórios
+  * Nome da Página
+  * Idioma
+  * Sobreposições de Rótulo com
+  * Tamanho da fonte do rótulo
+  * Cor do gradiente
+  * Cor da bolha
+  * Gradiente colorido com base em
+  * Transparência do gradiente
 
 * Padrão
 
-   * Exibição (tipo e número de links)
-   * Ocultar as sobreposições para links que não receberam visitas
+  * Exibição (tipo e número de links)
+  * Ocultar as sobreposições para links que não receberam visitas
 
 * Ativo
 
-   * Exibir os principais (ganhadores ou perdedores)
-   * Excluir % inferior
-   * Atualização automática (dados e período)
+  * Exibir os principais (ganhadores ou perdedores)
+  * Excluir % inferior
+  * Atualização automática (dados e período)

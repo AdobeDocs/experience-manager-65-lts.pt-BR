@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1004'
+ht-degree: 3%
 ---
-
 # Componentes para fragmentos de conteúdo{#components-for-content-fragments}
 
 ## Componentes para criação de fragmentos {#components-for-fragment-authoring}
@@ -32,7 +46,7 @@ Consulte a [API de gerenciamento de fragmento de conteúdo - lado do cliente](/h
 
 >[!CAUTION]
 >
->O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) agora é recomendado. Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
+>O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) agora é recomendado. Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
 >
 >Esta seção detalha o componente original entregue para uso com fragmentos de conteúdo (**Fragmento de Conteúdo** no grupo **Geral**).
 
@@ -81,21 +95,21 @@ Para ilustrar isso, considere que você tem o seguinte:
 * Uma instância de um fragmento de conteúdo composto por três parágrafos
 * E que parte do conteúdo já foi inserido após o segundo parágrafo
 
-   * Isso significa que o conteúdo é armazenado no segundo parsys.
+  * Isso significa que o conteúdo é armazenado no segundo parsys.
 
 Basicamente, se a estrutura de parágrafo dessa ocorrência for alterada (alterando a variação, o elemento ou o intervalo de parágrafos exibidos), isso poderá afetar o conteúdo intermediário exibido quando o conteúdo do fragmento de conteúdo:
 
 * É editado e outro parágrafo é adicionado antes do segundo parágrafo:
 
-   * O conteúdo intermediário é exibido após o parágrafo recém-criado (o segundo parsys agora contém o parágrafo recém-criado).
+  * O conteúdo intermediário é exibido após o parágrafo recém-criado (o segundo parsys agora contém o parágrafo recém-criado).
 
 * É editado e o segundo parágrafo é removido:
 
-   * O conteúdo intermediário é exibido após o parágrafo que era o terceiro (o segundo parsys agora contém o terceiro parágrafo anterior).
+  * O conteúdo intermediário é exibido após o parágrafo que era o terceiro (o segundo parsys agora contém o terceiro parágrafo anterior).
 
 * Está configurado para que somente o primeiro parágrafo seja exibido:
 
-   * O conteúdo intermediário não é exibido (o segundo parsys não é mais renderizado devido à nova configuração).
+  * O conteúdo intermediário não é exibido (o segundo parsys não é mais renderizado devido à nova configuração).
 
 ### Personalização do componente Fragmento de Conteúdo {#customizing-the-content-fragment-component}
 
@@ -104,9 +118,9 @@ Para usar o componente Fragmento de conteúdo pronto para uso como um blueprint 
 * Reutilize o script de renderização HTL e seu POJO associado para que você possa ver como o recurso de conteúdo intermediário é implementado.
 * Reutilizar o nó do fragmento de conteúdo: `cq:editConfig`
 
-   * Os ouvintes `afterinsert`/ `afteredit`/ `afterdelete` são usados para acionar eventos JS. Esses eventos são manipulados na biblioteca do cliente `cq.authoring.editor.plugin.cfm` para exibir o conteúdo associado no painel lateral.
-   * Os `cq:dropTargets` estão configurados para serem compatíveis com a ação de arrastar ativos do fragmento de conteúdo.
-   * O `cq:inplaceEditing` está configurado para oferecer suporte à criação de um fragmento de conteúdo no editor de páginas. O editor local de fragmentos está definido na biblioteca cliente `cq.authoring.editor.plugin.cfm` e permite que um link rápido abra o [elemento/variação](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) atual no [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
+  * Os ouvintes `afterinsert`/ `afteredit`/ `afterdelete` são usados para acionar eventos JS. Esses eventos são manipulados na biblioteca do cliente `cq.authoring.editor.plugin.cfm` para exibir o conteúdo associado no painel lateral.
+  * Os `cq:dropTargets` estão configurados para serem compatíveis com a ação de arrastar ativos do fragmento de conteúdo.
+  * O `cq:inplaceEditing` está configurado para oferecer suporte à criação de um fragmento de conteúdo no editor de páginas. O editor local de fragmentos está definido na biblioteca cliente `cq.authoring.editor.plugin.cfm` e permite que um link rápido abra o [elemento/variação](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) atual no [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Regravação de ativos antes da renderização {#asset-rewriting-before-rendering}
 

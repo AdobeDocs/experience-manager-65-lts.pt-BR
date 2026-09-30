@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
@@ -99,10 +110,10 @@ Para corrigir o problema, tente o seguinte:
 * Verificar ACLs em `/etc/cloudservices`. As ACLs devem ser:
 
   * allow; jcr:read; webservice-support-servicelibfinder
-  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
-  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
-  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
-  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/defaults`
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * permitir; jcr:read; todos; `rep:glob:`&amp;ast;`/public`
 
 Para obter mais informações sobre o gerenciamento de ACLs, leia a página [Administração e Segurança do Usuário](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -164,7 +175,7 @@ Esse problema pode ter várias causas:
 Você pode experimentar as seguintes soluções:
 
 * Verifique se o código do cliente que carrega as bibliotecas do tipo DTM (que por sua vez carregam as bibliotecas do Target) é executado de forma síncrona no [cabeçalho da página](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
+* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
 
 ### Uma oferta padrão é sempre exibida em vez da oferta correta ao usar AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -209,7 +220,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/contact.html) para provisionar sua conta corretamente.
+Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/contact.html) para provisionar sua conta corretamente.
 
 ### APIs úteis do Target {#helpful-target-apis}
 

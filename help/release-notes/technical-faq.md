@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 59%
-
 ---
-
 # Perguntas frequentes técnicas sobre o AEM 6.5 LTS {#technical-faq}
 
 Esta página tem como objetivo responder a algumas perguntas técnicas frequentes sobre o AEM 6.5 LTS.
@@ -50,7 +64,7 @@ Verifique se você está usando o Uber JAR com o classificador `apis`. Observe q
 
 Não. O AEM 6.5 LTS não oferece suporte a artefatos do Sling migrados para os namespaces do pacote `jakarta.*`. Use os equivalentes `javax.*` em seu código e dependências — por exemplo, `javax.annotation.PostConstruct` em vez de `jakarta.annotation.PostConstruct` em Modelos Sling. A implementação dos Modelos Sling no AEM 6.5 LTS reconhece apenas as `javax.*` anotações, portanto, `jakarta.*` anotações são ignoradas silenciosamente durante a inicialização.
 
-Para obter mais informações, consulte o artigo da base de dados de conhecimento [Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-30339).
+Para obter mais informações, consulte o artigo da base de dados de conhecimento [Sling Models with `jakarta.annotation.PostConstruct` fail on AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339).
 
 ## Como obter mais ajuda
 

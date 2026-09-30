@@ -6,13 +6,27 @@ role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2530'
 ht-degree: 0%
-
 ---
-
 # Definir configurações gerais do Dynamic Media
 
 A definição de **[!UICONTROL Configurações Gerais do Dynamic Media]** só estará disponível se:
@@ -48,7 +62,7 @@ Consulte também [Opcional - Configuração do Dynamic Media - Configurações d
    * Guia [Illustrator](#illustrator-tab)
 
    ![Página de configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**&#x200B;selecionada.*<br><br>
+   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
@@ -82,7 +96,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
   Controla a preservação de qualquer definição de corte manual existente.
 
-  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=pt-BR) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=pt-BR), ambos no Guia de Referência de Visualizadores do Dynamic Media.
+  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Opções de upload padrão {#default-upload-options}
 
@@ -96,8 +110,8 @@ O efeito Tirar nitidez da máscara usa as mesmas opções do filtro Tirar nitide
 | --- | --- |
 | **[!UICONTROL Valor]** | Obrigatório.<br>Controla a quantidade de contraste aplicada aos pixels de borda.<br>Pense nisso como a intensidade do efeito. A principal diferença entre os valores de quantidade de Tirar nitidez da máscara no Adobe Dynamic Media e os valores de quantidade no Adobe Photoshop é que o Photoshop tem um intervalo de quantidade de 1% a 500%. Já no Adobe Dynamic Media, o intervalo de valores é de `0.0` a `5.0`. Um valor de 5,0 no Adobe Dynamic Media é o equivalente aproximado de 500% no Photoshop; um valor de 0,9 é o equivalente de 90% e assim por diante. |
 | **[!UICONTROL Raio]** | Obrigatório.<br>Controla o raio do efeito.<br>O intervalo de valores é de `0` a `250`. O efeito é executado em todos os pixels em uma imagem e irradia de todos os pixels em todas as direções. O raio é medido em pixels. Por exemplo, para obter um efeito de nitidez semelhante para uma imagem de 2000 x 2000 pixels e uma imagem de 500 x 500 pixels, você definiria um raio de dois pixels na imagem de 2000 x 2000 pixels. Em seguida, defina um valor de raio de um pixel na imagem de 500 x 500 pixels. Um valor maior é usado para uma imagem com mais pixels. |
-| **[!UICONTROL Limite]** | Obrigatório.<br>O limite é um intervalo de contraste ignorado quando o filtro Tirar nitidez da máscara é aplicado. Esse efeito é importante para que nenhum &quot;ruído&quot; seja introduzido em uma imagem quando esse filtro for usado. O intervalo de valores é `0` - `255`, que é o número de etapas de brilho em uma imagem em tons de cinza. `0`=preto, `128`=50% cinza e `255`=branco.<br>Um valor limite de `12` ignora pequenas variações no brilho do tom da pele para evitar a adição de ruído, mas ainda adiciona o contraste da borda a áreas de contraste, como onde as pálpebras tocam a pele.<br>Se você tiver uma foto do rosto de alguém, a Máscara de Nitidez afetará as partes contrastadas da imagem. Por exemplo, onde pestanas e pele se encontram para criar uma área óbvia de contraste e a própria pele lisa. Mesmo a pele mais suave exibe alterações sutis nos valores de brilho. Se você não usar um valor de limite, o filtro acentua essas alterações sutis nos pixels de capa. Por sua vez, um efeito ruidoso e indesejável é criado enquanto o contraste das pálpebras é aumentado, aumentando a nitidez.<br>Para evitar esse problema, é introduzido um valor limite que informa ao filtro para ignorar os pixels que não alteram drasticamente o contraste, como a capa lisa.<br>No gráfico de zíper mostrado anteriormente, observe a textura ao lado dos zíperes. O ruído da imagem é exibido porque os valores de limite eram muito baixos para suprimir o ruído. |
-| **[!UICONTROL Monocromático]** | Selecione para desfazer a nitidez da imagem de brilho (intensidade).<br>Desmarque para remover a nitidez de cada componente de cor separadamente. |
+| **[!UICONTROL Limite]** | Obrigatório.<br>O limite é um intervalo de contraste ignorado quando o filtro Tirar nitidez da máscara é aplicado. Esse efeito é importante para que nenhum &quot;ruído&quot; seja introduzido em uma imagem quando esse filtro for usado. O intervalo de valores é `0` - `255`, que é o número de etapas de brilho em uma imagem em tons de cinza. `0`=preto, `128`=50% cinza e `255`=branco.<br>Um valor limite de `12` ignora pequenas variações no brilho do tom da pele para evitar a adição de ruído, mas ainda adiciona o contraste da borda a áreas contrastadas, como onde as pálpebras tocam a pele.<br>Se você tiver uma foto do rosto de alguém, a Máscara de Nitidez afetará as partes contrastadas da imagem. Por exemplo, onde pestanas e pele se encontram para criar uma área óbvia de contraste e a própria pele lisa. Mesmo a pele mais suave exibe alterações sutis nos valores de brilho. Se você não usar um valor de limite, o filtro acentua essas alterações sutis nos pixels de capa. Por sua vez, um efeito ruidoso e indesejável é criado enquanto o contraste das pálpebras é aumentado, aumentando a nitidez.<br>Para evitar esse problema, é introduzido um valor limite que informa ao filtro para ignorar os pixels que não alteram drasticamente o contraste, como a capa lisa.<br>No gráfico de zíper mostrado anteriormente, observe a textura ao lado dos zíperes. O ruído da imagem é exibido porque os valores de limite eram muito baixos para suprimir o ruído. |
+| **[!UICONTROL Monocromático]** | Selecione para desfazer a máscara de nitidez do brilho da imagem (intensidade).<br>Desmarque para desfazer a máscara de nitidez de cada componente de cor separadamente. |
 
 Consulte também [Nitidez de imagens no Adobe Dynamic Media e no Servidor de Imagens](/help/assets/assets/sharpening_images.pdf).
 
@@ -114,7 +128,7 @@ Ao fazer upload de arquivos de imagem do PostScript (EPS), você pode formatá-l
 | **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
 | **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência de fundo do arquivo. |
 | **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
-| **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Retém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como Tons de Cinza]** - Converte para o espaço de cores Tons de Cinza. |
+| **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como Tons de Cinza]** - Converte para o espaço de cores Tons de Cinza. |
 
 ### Guia Photoshop {#photoshop-tab}
 
@@ -126,7 +140,7 @@ Ao fazer upload de arquivos de imagem do PostScript (EPS), você pode formatá-l
 | **[!UICONTROL Criar modelo]** | Cria um modelo a partir das camadas no arquivo PSD. |
 | **[!UICONTROL Extrair texto]** | Extrai o texto para que os usuários possam pesquisar texto em um Visualizador. |
 | **[!UICONTROL Estender camadas para o tamanho do plano de fundo]** | Estende o tamanho das camadas de imagem extraídas para o tamanho da camada de plano de fundo. |
-| **[!UICONTROL Nomeação da camada]** | Estende o tamanho das camadas de imagem extraídas para o tamanho da camada de plano de fundo.<br>· **[!UICONTROL Nome da camada]** - Nomeia as imagens de acordo com seus nomes de camadas no arquivo PSD. Por exemplo, uma camada chamada Etiqueta de preço no arquivo original do PSD se torna uma imagem chamada Etiqueta de preço. No entanto, se os nomes das camadas no arquivo do PSD forem nomes de camadas padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo do PSD. <br>· **[!UICONTROL Photoshop e número da camada]** - Nomeia as imagens de acordo com seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado `Spring Ad.psd` é chamada `Spring Ad_2` mesmo se tiver um nome não padrão no Photoshop.<br>· **[!UICONTROL Photoshop e nome da camada]** - Nomeia as imagens após o arquivo PSD seguido pelo nome ou número da camada. O número da camada é usado se os nomes das camadas no arquivo do PSD forem nomes de camadas padrão do Photoshop. Por exemplo, uma camada chamada `Price Tag` em um arquivo PSD chamado `SpringAd` é chamada `Spring Ad_Price Tag`. Uma camada com o nome padrão Layer 2 é chamada `Spring Ad_2`. |
+| **[!UICONTROL Nomeação da camada]** | Estende o tamanho das camadas de imagem extraídas para o tamanho da camada de plano de fundo.<br>· **[!UICONTROL Nome da camada]** - Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada Etiqueta de preço no arquivo original do PSD se torna uma imagem chamada Etiqueta de preço. No entanto, se os nomes das camadas no arquivo do PSD forem nomes de camadas padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo do PSD. <br>· **[!UICONTROL Photoshop e número da camada]** - Nomeia as imagens de acordo com seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado `Spring Ad.psd` é chamada `Spring Ad_2` mesmo que ela tenha um nome não padrão no Photoshop.<br>· **[!UICONTROL Photoshop e nome da camada]** - Nomeia as imagens após o arquivo PSD seguido pelo nome ou número da camada. O número da camada é usado se os nomes das camadas no arquivo do PSD forem nomes de camadas padrão do Photoshop. Por exemplo, uma camada chamada `Price Tag` em um arquivo PSD chamado `SpringAd` é chamada `Spring Ad_Price Tag`. Uma camada com o nome padrão Layer 2 é chamada `Spring Ad_2`. |
 | **[!UICONTROL Âncora]** | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. As imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar a substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se seu aplicativo exigir que as imagens de substituição preencham o espaço alocado no modelo. |
 
 ### Guia PDF {#pdf-tab}
@@ -135,8 +149,8 @@ Ao fazer upload de arquivos de imagem do PostScript (EPS), você pode formatá-l
 
 | opção PDF | Descrição |
 | --- | --- |
-| **[!UICONTROL Processando]** | · **[!UICONTROL Nenhum]** - Nenhum processamento do PDF foi concluído.<br>· **[!UICONTROL Miniatura]** - Extrai cada página do arquivo PDF e a converte em uma imagem de miniatura.<br> · **[!UICONTROL Rasterizar]** - Extrai as páginas no arquivo PDF e converte gráficos de vetor em imagens bitmap. Para criar um eCatalog, escolha essa opção. |
-| **[!UICONTROL Extrair]** | · **[!UICONTROL Nenhum]** - Nenhuma palavra de pesquisa ou link extraído do PDF.<br>· **[!UICONTROL Palavras de pesquisa]** - Extrai palavras de pesquisa do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um Visualizador de eCatalog.<br>· **[!UICONTROL Links]** - Extrai links dos arquivos PDF e os converte em Mapas de Imagens usados em um Visualizador de eCatalog.<br>· **[!UICONTROL Pesquisar palavras e links]** - Extrai palavras de pesquisa e links para uso em um visualizador de eCatalog. |
+| **[!UICONTROL Processando]** | · **[!UICONTROL Nenhum]** - Nenhum processamento do PDF foi concluído.<br>· **[!UICONTROL Miniatura]** - Copia cada página do arquivo PDF e converte-a em uma imagem de miniatura.<br> · **[!UICONTROL Rasterizar]** - Extrai as páginas no arquivo PDF e converte gráficos de vetor em imagens bitmap. Para criar um eCatalog, escolha essa opção. |
+| **[!UICONTROL Extrair]** | · **[!UICONTROL Nenhum]** - Nenhuma palavra de pesquisa ou link é extraído do PDF.<br>· **[!UICONTROL Palavras de pesquisa]** - Extrai palavras de pesquisa do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um Visualizador de eCatalog.<br>· **[!UICONTROL Links]** - Extrai links dos arquivos do PDF e os converte em Mapas de Imagens usados em um Visualizador de eCatalog.<br>· **[!UICONTROL Palavras de pesquisa e links]** - Extrai palavras de pesquisa e links para uso em um visualizador de eCatalog. |
 | **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
 | **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo PDF.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como Tons de Cinza]** - Converte para o espaço de cores Tons de Cinza. |
 
@@ -154,4 +168,4 @@ Ao fazer upload de arquivos de imagem do Illustrator (AI), você pode formatá-l
 | **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
 | **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência de fundo do arquivo. |
 | **[!UICONTROL Resolução (pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
-| **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Retém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como Tons de Cinza]** - Converte para o espaço de cores Tons de Cinza. |
+| **[!UICONTROL Espaço de cor]** | · **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>· **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores do RGB.<br>· **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>· **[!UICONTROL Forçar como Tons de Cinza]** - Converte para o espaço de cores Tons de Cinza. |

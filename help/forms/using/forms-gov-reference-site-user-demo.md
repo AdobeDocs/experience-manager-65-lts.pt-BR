@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 1%
-
 ---
-
 # Apresentação do site de referência do We.Gov e We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Pré-requisitos {#pre-requisites}
@@ -24,22 +42,22 @@ Configure o site de referência conforme descrito em [Configurar o site de refer
 
 * AEM Forms
 
-   * Conversão automática dos formulários
-   * Criação
-   * Modelos de dados de formulário/Fontes de dados
+  * Conversão automática dos formulários
+  * Criação
+  * Modelos de dados de formulário/Fontes de dados
 
 * AEM Forms
 
-   * Captura de dados
-   * (Opcional) Integração de dados (MS® Dynamics)
-   * (Opcional) Adobe Sign
+  * Captura de dados
+  * (Opcional) Integração de dados (MS® Dynamics)
+  * (Opcional) Adobe Sign
 
 * Fluxo de trabalho
 * Notificações por email
 * (Opcional) Comunicações ao cliente
 
-   * Canal de impressão
-   * Canal da Web
+  * Canal de impressão
+  * Canal da Web
 
 * Adobe Analytics
 * Integrações do Data Source
@@ -64,14 +82,14 @@ Os seguintes grupos também estão incluídos:
 
 * **Usuários do We.Gov no Forms**
 
-   * George Lang (membro)
-   * Camila Santos (membro)
+  * George Lang (membro)
+  * Camila Santos (membro)
 
 * **Usuários Do We.Gov**
 
-   * George Lang (membro)
-   * Camila Santos (membro)
-   * Aya Tan (membro)
+  * George Lang (membro)
+  * Camila Santos (membro)
+  * Aya Tan (membro)
 
 ### Legenda dos termos da visão geral da demonstração {#demo-overview-terms-legend}
 
@@ -227,7 +245,7 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
    1. **Casado**: mostrar painel dependente conjugal
    1. **Divorciado**: mostrar próximo do painel parente
    1. **Viúvo**: mostrar próximo do painel parente
-   1. **Você tem Filhos?**: Botão de opção (Sim/Não) para mostrar o painel dependente filho.
+   1. **Você tem Filhos?**: botão de opção (Sim/Não) para mostrar o painel dependente filho.
 
       1. Botão (Adicionar/Remover) para adicionar/remover vários painéis dependentes filhos.
 

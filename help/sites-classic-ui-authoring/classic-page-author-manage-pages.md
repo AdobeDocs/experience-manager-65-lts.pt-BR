@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 16%
-
+source-wordcount: '1916'
+ht-degree: 15%
 ---
-
 # Criar e organizar páginas{#creating-and-organizing-pages}
 
 Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois [criar conteúdo](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) nessas páginas.
@@ -79,13 +88,13 @@ Ao criar uma página, há dois campos principais:
 
 * **[Título](#title)**:
 
-   * O título é exibido ao usuário no console, na parte superior do conteúdo da página ao editar.
-   * Esse campo é obrigatório.
+  * O título é exibido ao usuário no console, na parte superior do conteúdo da página ao editar.
+  * Esse campo é obrigatório.
 
 * **[Nome](#name)**:
 
-   * Usado para gerar o URI.
-   * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título.
+  * Usado para gerar o URI.
+  * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título.
 
 Ao criar uma página, o AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
@@ -106,7 +115,7 @@ Se você fornecer apenas uma página **Título** ao criar uma página, a AEM der
 | Título | Nome derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc—c-.html |
 
 #### Nome {#name}
 
@@ -127,15 +136,18 @@ Na interface clássica, você **não pode inserir caracteres inválidos** no cam
 
 No AEM, um modelo especifica um tipo especializado de página. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
-O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
+O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas do produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
 O AEM vem com vários modelos prontos para uso. Os modelos oferecidos dependem do site individual e as informações que precisam ser fornecidas (ao criar a nova página) dependem da interface do usuário que está sendo usada. Os campos principais são:
 
-* **Título** O título exibido na página da Web resultante.
+* **Título**
+O título exibido na página da Web resultante.
 
-* **Nome** Usado ao nomear a página.
+* **Nome**
+Usado ao nomear a página.
 
-* **Modelo** Uma lista de modelos disponíveis para uso ao gerar a nova página.
+* **Modelo**
+Uma lista de modelos disponíveis para uso ao gerar a nova página.
 
 ### Componentes {#components}
 
@@ -170,8 +182,8 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    * Forneça um **Título**; isto é exibido ao usuário.
    * Forneça um **Nome**; ele é usado para gerar o URI. Se não especificado, o nome será derivado do título.
 
-      * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
-      * Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
+     * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+     * Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
 
    * Clique no template que deseja usar para criar a nova página.
 
@@ -207,7 +219,7 @@ Você pode abrir a página para ser [editada](/help/sites-classic-ui-authoring/c
 
 * Depois de abrir uma página, você pode navegar para outras páginas do site (para editá-las) clicando em hiperlinks.
 
-### Copiar e colar uma página      {#copying-and-pasting-a-page}
+### Copiar e colar uma página {#copying-and-pasting-a-page}
 
 Ao copiar, é possível copiar:
 
@@ -319,7 +331,7 @@ Para mover ou renomear uma página:
 >
 >Se uma página já estiver ativada, ela será automaticamente desativada antes da exclusão.
 
-### Bloquear uma página   {#locking-a-page}
+### Bloquear uma página {#locking-a-page}
 
 É possível [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) a partir de um console ou ao editar uma página individual. As informações sobre páginas bloqueadas também são mostradas em ambos os locais.
 

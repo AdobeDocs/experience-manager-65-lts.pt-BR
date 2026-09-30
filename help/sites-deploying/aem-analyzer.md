@@ -6,13 +6,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2098'
 ht-degree: 15%
-
 ---
-
 # Avaliação da complexidade da atualização com o AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
 ## Visão geral {#overview}
@@ -88,10 +97,10 @@ O formato do relatório é:
 
 * **Visão geral do relatório**: informações sobre o relatório propriamente dito, que incluem as seguintes informações:
 
-   * **Hora do Relatório**: quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez
-   * **Hora de Expiração**: quando o cache do conteúdo do relatório expirará
-   * **Período de Geração**: a quantidade de tempo em que o relatório foi gerado
-   * **Contagem de conclusões**: o número total de conclusões incluídas no relatório
+  * **Hora do Relatório**: quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez
+  * **Hora de Expiração**: quando o cache do conteúdo do relatório expirará
+  * **Período de Geração**: a quantidade de tempo em que o relatório foi gerado
+  * **Contagem de conclusões**: o número total de conclusões incluídas no relatório
 
 * **Visão geral do sistema**: informações sobre o sistema AEM no qual o Analyzer foi executado
 * **Categorias de conclusão**: várias seções que abordam uma ou mais conclusões da mesma categoria. Cada seção inclui o seguinte: nome da categoria, subtipos, contagem e importância das conclusões, resumo, link para a documentação da categoria e informações de conclusões individuais.
@@ -102,7 +111,7 @@ O formato do relatório é:
 
 >[!NOTE]
 >
->Para saber mais sobre cada Categoria de Achados, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Para saber mais sobre cada Categoria de Achados, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Para entender os níveis de importância, siga a tabela abaixo:
 
@@ -232,5 +241,5 @@ O tempo de expiração restante para o relatório do AEM Analyzer é mostrado no
 
 ### Problemas conhecidos {#known-issues}
 
-* Às vezes, a operação Remover pode exibir a notificação: *&quot;Alguns caminhos não foram removidos com êxito. Verifique os logs e tente novamente.*&quot;. No entanto, se os caminhos tiverem sido realmente removidos, você poderá ignorar essa mensagem com segurança
-* Da mesma forma, a operação Package pode falhar com o erro: *&quot;Erro ao executar a operação desejada. Verifique os logs e tente novamente.*&quot;. Isso provavelmente ocorre devido à expiração da sessão. Nesses casos, tentar novamente a operação deve resolver o problema.
+* Às vezes, a operação Remover pode exibir a notificação: *&quot;Alguns caminhos não foram removidos com êxito, verifique os logs e tente novamente.*&quot;. No entanto, se os caminhos tiverem sido realmente removidos, você poderá ignorar essa mensagem com segurança
+* Da mesma forma, a operação Package pode falhar com o erro: *&quot;Erro ao executar a operação desejada, verifique os logs e tente novamente.*&quot;. Isso provavelmente ocorre devido à expiração da sessão. Nesses casos, tentar novamente a operação deve resolver o problema.

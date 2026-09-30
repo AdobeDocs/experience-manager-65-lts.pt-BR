@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 0%
-
 ---
-
 # Sobre a segurança de documentos {#about-document-security}
 
 A segurança de documentos garante que somente usuários autorizados possam usar seus documentos. Com a segurança de documentos, você pode distribuir com segurança qualquer informação que tenha sido salva em um formato compatível. Os formatos de arquivo compatíveis incluem:
@@ -71,15 +83,15 @@ Vários tipos de usuários trabalham com segurança de documentos para realizar 
 
   Os usuários com essa função têm acesso a todas as configurações de segurança de documentos no console de administração. Estas permissões estão associadas à função:
 
-   * Gerenciar configuração
-   * Gerenciar política
-   * Gerenciar conjuntos de políticas
-   * Gerenciar documentos
-   * Gerenciar editores de documento
-   * Gerenciar usuários convidados e locais
-   * Exibir eventos
-   * Delegar
-   * Convidar usuários externos
+  * Gerenciar configuração
+  * Gerenciar política
+  * Gerenciar conjuntos de políticas
+  * Gerenciar documentos
+  * Gerenciar editores de documento
+  * Gerenciar usuários convidados e locais
+  * Exibir eventos
+  * Delegar
+  * Convidar usuários externos
 
   **Administrador de segurança de documentos**
 
@@ -93,12 +105,12 @@ Vários tipos de usuários trabalham com segurança de documentos para realizar 
 
   Os usuários com essa função podem usar a seção de segurança de documentos do console de administração para editar as políticas de outros usuários e para criar, editar e excluir conjuntos de políticas. Quando um administrador de conjunto de políticas cria um conjunto de políticas, ele pode atribuir um coordenador de conjunto de políticas a esse conjunto de políticas. Estas permissões estão associadas à função:
 
-   * Gerenciar política
-   * Gerenciar conjuntos de políticas
-   * Gerenciar documentos
-   * Gerenciar editores de documento
-   * Exibir eventos
-   * Delegar
+  * Gerenciar política
+  * Gerenciar conjuntos de políticas
+  * Gerenciar documentos
+  * Gerenciar editores de documento
+  * Exibir eventos
+  * Delegar
 
   >[!NOTE]
   >
@@ -108,9 +120,9 @@ Vários tipos de usuários trabalham com segurança de documentos para realizar 
 
   Os usuários com essa função podem executar tarefas necessárias para gerenciar todos os usuários convidados e locais nas páginas da Web de segurança de documentos relevantes. Estas permissões estão associadas à função:
 
-   * Gerenciar usuários convidados e locais
-   * Convidar usuários externos
-   * Acessar páginas da Web do usuário final
+  * Gerenciar usuários convidados e locais
+  * Convidar usuários externos
+  * Acessar páginas da Web do usuário final
 
   >[!NOTE]
   >
@@ -120,8 +132,8 @@ Vários tipos de usuários trabalham com segurança de documentos para realizar 
 
   Os usuários com essa função podem convidar usuários. Estas permissões estão associadas à função:
 
-   * Convidar usuários externos
-   * Acessar páginas da Web do usuário final
+  * Convidar usuários externos
+  * Acessar páginas da Web do usuário final
 
   **Usuário final de segurança de documentos**
 
@@ -247,27 +259,27 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   Usar conjuntos de políticas facilita a atribuição e o gerenciamento de políticas relacionadas a usuários específicos em uma organização ou departamento. Por exemplo, conjuntos de políticas separados para o departamento de finanças e recursos humanos podem ajudar a gerenciar e aplicar políticas relacionadas facilmente a documentos designados para departamentos correspondentes.
 
-* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
+* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
 
-   * Forneça controle de acesso centralizado para documentos em sua organização.
+  * Forneça controle de acesso centralizado para documentos em sua organização.
 
-   * Controlar o acesso a documentos protegidos por política determinando dinamicamente se um usuário pode acessar um documento protegido por política. Por exemplo, decide dinamicamente se um usuário pode imprimir um documento protegido por política.
+  * Controlar o acesso a documentos protegidos por política determinando dinamicamente se um usuário pode acessar um documento protegido por política. Por exemplo, decide dinamicamente se um usuário pode imprimir um documento protegido por política.
 
-   * Use um mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa, além do processo padrão de avaliação de políticas. Por exemplo, quando o serviço determina se um usuário pode imprimir um documento protegido por política, ele pode usar o processo padrão de avaliação de política. E também pode usar o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa.
+  * Use um mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa, além do processo padrão de avaliação de políticas. Por exemplo, quando o serviço determina se um usuário pode imprimir um documento protegido por política, ele pode usar o processo padrão de avaliação de política. E também pode usar o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa.
 
-  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/pt_BR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantenha os conjuntos de políticas em um número limitado:** Vários fatores levam ao crescimento constante de políticas e conjuntos de políticas. Alguns fatores comuns são:
 
-   * Aumento nas funções de usuário, departamentos e documentos em uma organização durante um período.
-   * Os departamentos de uma organização trabalham isoladamente e mantêm um controle rígido sobre as políticas específicas do departamento. Ele leva a políticas idênticas dentro de uma organização.
+  * Aumento nas funções de usuário, departamentos e documentos em uma organização durante um período.
+  * Os departamentos de uma organização trabalham isoladamente e mantêm um controle rígido sobre as políticas específicas do departamento. Ele leva a políticas idênticas dentro de uma organização.
 
   A Adobe recomenda manter o número mínimo de políticas e conjuntos de políticas. Ele ajuda a gerenciar facilmente políticas e conjuntos de políticas e a fornecer melhor desempenho. Para manter o número no mínimo:
 
-   * Criar políticas reutilizáveis. Essas políticas podem ser compartilhadas em vários departamentos.
-   * Considere criar conjuntos de políticas em toda a organização, se algumas políticas se aplicarem a vários departamentos em vez de um conjunto de políticas individual para cada departamento.
-   * Políticas relacionadas a grupos em um conjunto de políticas. Não crie um conjunto de políticas separado para cada política.
-   * Use um autorizador externo para controlar dinamicamente as permissões do usuário.
+  * Criar políticas reutilizáveis. Essas políticas podem ser compartilhadas em vários departamentos.
+  * Considere criar conjuntos de políticas em toda a organização, se algumas políticas se aplicarem a vários departamentos em vez de um conjunto de políticas individual para cada departamento.
+  * Políticas relacionadas a grupos em um conjunto de políticas. Não crie um conjunto de políticas separado para cada política.
+  * Use um autorizador externo para controlar dinamicamente as permissões do usuário.
 
   >[!NOTE]
   >

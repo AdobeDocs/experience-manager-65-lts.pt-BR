@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
-
 ---
-
 # Práticas recomendadas de workflow{#workflow-best-practices}
 
 Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM).
@@ -239,8 +248,8 @@ Salvando uma sessão:
 * Em um processo de fluxo de trabalho, se o `WorkflowSession` estiver sendo usado para modificar o repositório, não salve explicitamente a sessão. O fluxo de trabalho salvará a sessão quando ela for concluída.
 * `Session.Save` não deve ser chamado de dentro de uma etapa do fluxo de trabalho:
 
-   * é recomendável adaptar a sessão JCR do fluxo de trabalho; então, `save` não é necessário, pois o mecanismo de fluxo de trabalho salva a sessão automaticamente após a conclusão da execução do fluxo de trabalho.
-   * não é recomendado que uma etapa do processo crie sua própria sessão JCR.
+  * é recomendável adaptar a sessão JCR do fluxo de trabalho; então, `save` não é necessário, pois o mecanismo de fluxo de trabalho salva a sessão automaticamente após a conclusão da execução do fluxo de trabalho.
+  * não é recomendado que uma etapa do processo crie sua própria sessão JCR.
 
 * Ao eliminar salvamentos desnecessários, você pode reduzir a sobrecarga e, assim, tornar os workflows mais eficientes.
 
@@ -303,7 +312,7 @@ Ao atualizar sua instância:
 * verifique se foi feito backup de todos os modelos de fluxo de trabalho personalizados antes de atualizar uma instância.
 * confirme se nenhum dos seus fluxos de trabalho personalizados está armazenado no [local](#locations):
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 ## Ferramentas do sistema {#system-tools}
 

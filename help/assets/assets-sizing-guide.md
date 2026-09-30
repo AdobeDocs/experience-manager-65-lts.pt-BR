@@ -1,18 +1,29 @@
 ---
 title: Guia de dimensionamento de [!DNL Assets]
-description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar [!DNL Adobe Experience Manager Assets].
+description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar o [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d88e3ca9-f80d-48f5-857a-eaf71dcb9226
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1645'
 ht-degree: 0%
-
 ---
-
 # Guia de dimensionamento de [!DNL Assets] {#assets-sizing-guide}
 
 Ao dimensionar o ambiente para uma implementação do [!DNL Adobe Experience Manager Assets], é importante garantir que haja recursos suficientes disponíveis em termos de disco, CPU, memória, E/S e taxa de transferência de rede. O dimensionamento de muitos desses recursos requer a compreensão de quantos ativos estão sendo carregados no sistema. Se uma métrica melhor não estiver disponível, você poderá dividir o tamanho da biblioteca existente pela idade da biblioteca para encontrar a taxa em que os ativos são criados.

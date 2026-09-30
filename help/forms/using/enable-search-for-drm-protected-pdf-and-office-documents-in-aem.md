@@ -6,13 +6,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '672'
 ht-degree: 0%
-
 ---
-
 # Permitir que o AEM pesquise documentos do PDF e do Microsoft Office protegidos por segurança de documentos{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
 O Adobe Experience Manager fornece uma interface para pesquisar e localizar vários ativos armazenados no AEM. A pesquisa nativa é capaz de pesquisar e localizar ativos do AEM e executar pesquisa de texto em vários formatos de documento usados com frequência, como arquivos de texto simples, documentos do Microsoft Office e documentos do PDF. Você também pode estender e habilitar a pesquisa nativa para executar a pesquisa de texto completo em documentos do PDF e do Microsoft Office protegidos por DRM.
@@ -22,7 +35,7 @@ Execute as seguintes etapas para permitir que o AEM pesquise documentos protegid
 ## Antes de começar {#before-you-start}
 
 * Instale e configure a Segurança de documentos do AEM Forms.
-* Incluir na lista de permissões Adicione o pacote sun.util.calendar ao arquivo da **Configuração do firewall de desserialização.** Configuração listada em `https://'[server]:[port]'/system/console/configMgr`.
+* Adicione o pacote sun.util.calendar ao incluo na lista de permissões da **Configuração do firewall de desserialização.** Configuração listada em `https://'[server]:[port]'/system/console/configMgr`.
 * Verifique se todos os pacotes do AEM estão em funcionamento. Os pacotes estão listados em `https://'[server]:[port]'/system/console/bundles`. Se todos os pacotes não estiverem ativos, aguarde e verifique o status dos pacotes depois de por alguns minutos.
 
 ## Estabelecer uma conexão segura no fluxo de trabalho do AEM Forms (AEM Forms no JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}

@@ -11,13 +11,30 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
 index: false
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2879'
 ht-degree: 4%
-
 ---
-
 
 # Componentes do Adobe Campaign{#adobe-campaign-components}
 
@@ -220,20 +237,20 @@ Arraste uma imagem do localizador de conteúdo ou clique em para navegar até um
 * **Propriedades da Imagem** (**Propriedades Avançadas da Imagem**)
 Permite especificar o seguinte:
 
-   * **Título**
-O título do bloco; é mostrado por mouseover.
+  * **Título**
+    O título do bloco; é mostrado por mouseover.
 
-   * **Texto Alternativo**
-Texto alternativo a ser mostrado se a imagem não puder ser exibida.
+  * **Texto Alternativo**
+    Texto alternativo a ser mostrado se a imagem não puder ser exibida.
 
-   * **Vincular a**
-Crie um link para ativos ou outras páginas no seu site.
+  * **Vincular a**
+    Crie um link para ativos ou outras páginas no seu site.
 
-   * **Descrição**
-Uma descrição da imagem.
+  * **Descrição**
+    Uma descrição da imagem.
 
-   * **Tamanho**
-Define a altura e a largura da imagem.
+  * **Tamanho**
+    Define a altura e a largura da imagem.
 
 >[!NOTE]
 >

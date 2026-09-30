@@ -5,13 +5,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6927'
 ht-degree: 0%
-
 ---
-
 # Fragmentos do documento{#document-fragments}
 
 ## Fragmentos do documento {#document-fragments-1}
@@ -195,10 +208,10 @@ O recurso Localizar e substituir permite procurar (e substituir) qualquer cadeia
 * Use a vinculação apropriada do dicionário de dados em módulos de texto.
 * As seguintes regras se aplicam ao usar o Editor de texto ao alterar um ativo de texto:
 
-   * **Adição de variável:** permitida
-   * **Remoção da variável:** permitida
-   * **Atualização de propriedades:** Permitida
-   * **Alteração do dicionário de dados:** Permitida até que o elemento do dicionário de dados não seja usado. Não é possível alterar o dicionário de dados na atualização.
+  * **Adição de variável:** permitida
+  * **Remoção da variável:** permitida
+  * **Atualização de propriedades:** Permitida
+  * **Alteração do dicionário de dados:** Permitida até que o elemento do dicionário de dados não seja usado. Não é possível alterar o dicionário de dados na atualização.
 
 ## Lista {#list}
 
@@ -242,7 +255,8 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 
    ![Selecionar ativos para adicionar à lista](assets/selectassets.png)
 
-1. Os ativos são adicionados à página Itens de lista.Para alterar a ordem dos ativos na lista, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+1. Os ativos são adicionados à página Itens de lista.
+Para alterar a ordem dos ativos na lista, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
 
    ![Reordenar e configurar ativos em uma lista](assets/listitems.png)
 
@@ -275,8 +289,8 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 * Usar a vinculação de dicionário de dados apropriada
 * As seguintes regras se aplicam ao usar o Editor de lista para alterar uma lista:
 
-   * Atualização de propriedades: permitido
-   * **Alteração do dicionário de dados:** Permitida até que nenhum item que use o dicionário de dados seja associado a ela. Não é possível alterar o dicionário de dados na atualização.
+  * Atualização de propriedades: permitido
+  * **Alteração do dicionário de dados:** Permitida até que nenhum item que use o dicionário de dados seja associado a ela. Não é possível alterar o dicionário de dados na atualização.
 
 ## Condições {#conditions}
 
@@ -332,10 +346,10 @@ O Editor de condições permite especificar uma condição padrão. Se o valor d
 * Usar a vinculação de dicionário de dados apropriada
 * As seguintes regras se aplicam ao usar o Editor de condições para editar uma condição:
 
-   * **Adição de variável:** permitida
-   * **Remoção da variável:** permitida
-   * **Atualização de propriedades:** Permitida
-   * **Alteração do dicionário de dados:** Permitida até que o elemento do dicionário de dados não seja usado.
+  * **Adição de variável:** permitida
+  * **Remoção da variável:** permitida
+  * **Atualização de propriedades:** Permitida
+  * **Alteração do dicionário de dados:** Permitida até que o elemento do dicionário de dados não seja usado.
 
 ## Fragmentos de layout {#layoutfragments}
 
@@ -367,18 +381,18 @@ Considere os seguintes pontos ao criar tabelas:
 
 * Para tabelas de espaços reservados, é possível personalizar as seguintes propriedades no momento da criação do fragmento.
 
-   * contagem de linhas
-   * contagem de colunas
-   * cabeçalho e rodapé para cada coluna
-   * tipo (área/campo de destino) de cada coluna
-   * proporção de largura para cada coluna
+  * contagem de linhas
+  * contagem de colunas
+  * cabeçalho e rodapé para cada coluna
+  * tipo (área/campo de destino) de cada coluna
+  * proporção de largura para cada coluna
 
 * Para uma tabela que não seja de espaço reservado, você pode personalizar as seguintes propriedades:
 
-   * contagem de linhas
-   * contagem de colunas
-   * cabeçalho e rodapé da coluna adicional
-   * proporção de largura para cada coluna
+  * contagem de linhas
+  * contagem de colunas
+  * cabeçalho e rodapé da coluna adicional
+  * proporção de largura para cada coluna
 
 Você pode aninhar fragmentos em uma letra. Isso implica que você pode adicionar um fragmento em um fragmento. A solução de Gerenciamento de Correspondências oferece suporte a até quatro níveis de aninhamento dentro de uma letra: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
 
@@ -476,7 +490,8 @@ Muitos modelos de correspondência contêm tabelas. As tabelas podem ser estáti
 * **Tabelas estáticas**: às vezes, tabelas são criadas com linhas que têm um número diferente de colunas, como para uma tabela de termos e condições. Onde cada linha representa uma condição e cada condição pode ter subpartes diferentes. Cada parte é mostrada em uma coluna separada.
 * **Tabelas dinâmicas**: os fragmentos de layout fornecem a capacidade de associar campos de uma tabela dinâmica a DDEs de coleção. No momento da geração da correspondência, as linhas da tabela são geradas de acordo com o tamanho da coleção DDEs.
 
-O DD tem um elemento de coleta Nominee_details que tem um elemento composto com três elementos primitivos: Nominee_name, Nominee_address e Nominee_gender.O XDP dinâmico também tem os mesmos cabeçalhos. Assim, você pode mapear os campos XDP dinâmicos com os campos de DD mencionados acima.
+O DD tem um elemento de coleta Nominee_details que tem um elemento composto com três elementos primitivos: Nominee_name, Nominee_address e Nominee_gender.
+O XDP dinâmico também tem os mesmos cabeçalhos. Assim, você pode mapear os campos XDP dinâmicos com os campos de DD mencionados acima.
 
 ### Exemplo com arquivos de amostra: Uso de tabelas estáticas e dinâmicas em uma correspondência {#examplewithsamplefiles}
 
@@ -499,7 +514,8 @@ Este exemplo mostra como criar uma tabela dinâmica e uma tabela estática, vinc
 
    Ou use os XDPs estáticos e dinâmicos anexados a esta etapa.
 
-   Para obter mais informações sobre como trabalhar com fragmentos de layout, consulte [Fragmentos de layout](#layoutfragments).Para obter mais informações sobre design de layouts, consulte a [Ajuda do Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Para obter mais informações sobre como trabalhar com fragmentos de layout, consulte [Fragmentos de layout](#layoutfragments).
+   Para obter mais informações sobre design de layouts, consulte a [Ajuda do Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Obter arquivo](assets/static.xdp.zip)
 
@@ -516,7 +532,8 @@ Este exemplo mostra como criar uma tabela dinâmica e uma tabela estática, vinc
 
 1. Crie um fragmento de layout com base no XDP estático. A guia Table das propriedades exibe que a tabela é estática (campo Configuration For ). O número de linhas (1) e colunas (3) é derivado do XDP/Fragmento de layout.
 
-   Você pode alterar o número de colunas e linhas aqui. De acordo com o que você escolhe nesta tela, o número de linhas e colunas de uma tabela estática permanece fixo na letra criada com este layout.   [![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   Você pode alterar o número de colunas e linhas aqui. De acordo com o que você escolhe nesta tela, o número de linhas e colunas de uma tabela estática permanece fixo na letra criada com este layout.
+   [![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Criar uma correspondência usando ambos os fragmentos de layout nela. Ao inserir o XDP dinâmico na correspondência, defina a vinculação de seus campos para os elementos de coleção do dicionário de dados.
 

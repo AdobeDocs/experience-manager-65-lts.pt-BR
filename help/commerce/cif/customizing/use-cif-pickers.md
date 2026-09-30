@@ -9,13 +9,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
-source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
-
 ---
-
 # Seletores de criação de conteúdo e Commerce do AEM {#cif-pickers}
 
 A Criação de conteúdo e Commerce do AEM oferece um conjunto de ferramentas de criação para ajudar os autores e profissionais de marketing da AEM a trabalhar com eficiência com dados de produtos e catálogos comerciais. O Seletor de produto e o Seletor de categoria fazem parte do complemento CIF e são usados pelos Componentes principais do CIF. Os projetos podem usar esses seletores em qualquer caixa de diálogo de componente para selecionar produtos ou categorias.
@@ -52,7 +60,7 @@ Além disso, propriedades de campos de diálogo padrão como `name`, `fieldLabel
 >
 >A partir da versão 2.0.0 dos Componentes Principais do CIF, o suporte para `id` foi removido e substituído por `uid`. A Adobe recomenda usar `sku` ou `slug` como identificador de produto. A Adobe continua a oferecer suporte ao `id` somente para projetos que usam os Componentes principais do CIF versão 1.x.
 
-Um exemplo completo de trabalho do `cifproductfield` pode ser encontrado no projeto [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte também [Personalizar caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR#customizing-dialogs) da documentação dos Componentes principais do AEM.
+Um exemplo completo de trabalho do `cifproductfield` pode ser encontrado no projeto [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte também [Personalizar caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) da documentação dos Componentes principais do AEM.
 
 ## Seletor de Categoria {#category-picker}
 
@@ -77,7 +85,7 @@ Além disso, as propriedades de campo de diálogo padrão como `name`, `fieldLab
 
 >[!CAUTION]
 >
->Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer o clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs`. Consulte [Personalizar caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR#customizing-dialogs) da documentação dos Componentes principais do AEM.
+>Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer o clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs`. Consulte [Personalizar caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) da documentação dos Componentes principais do AEM.
 >[!CAUTION]
 >
 >A partir da versão 2.0.0 dos Componentes Principais do CIF, o suporte para `id` foi removido e substituído por `uid`. A Adobe recomenda usar `uid` ou `urlPath` como identificador de categoria. A Adobe continua a oferecer suporte a `id` e `idAndUrlPath` somente para projetos que usam a versão 1.x dos Componentes principais do CIF.

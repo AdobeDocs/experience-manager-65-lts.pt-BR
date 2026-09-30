@@ -7,14 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário {#forms-jee-workflows-handling-user-data}
 
 Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos de negócios. Um processo de fluxo de trabalho consiste em uma série de etapas executadas em uma ordem especificada. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Um processo pode interagir com ativos, contas de usuário e serviços e pode ser acionado usando qualquer um dos seguintes métodos:
@@ -25,7 +40,7 @@ Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar
 * Usar pasta monitorada
 * Usar email
 
-Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
@@ -128,7 +143,7 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
 1. Crie uma instância do cliente `ProcessManager` público ( `com.adobe.idp.workflow.client.ProcessManager`) usando uma instância `ServiceClientFactory` com as configurações de conexão corretas.
 
-   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/br/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Verifique o status da instância do workflow. Se o status for diferente de 2 (CONCLUÍDO) ou 4 (ENCERRADO), encerre a instância primeiro chamando o seguinte método:
 

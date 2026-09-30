@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 2%
-
+source-wordcount: '2529'
+ht-degree: 1%
 ---
-
 # Uso de adaptadores Sling{#using-sling-adapters}
 
 O [Sling](https://sling.apache.org) oferece um [Padrão de adaptador](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para traduzir convenientemente objetos que implementam a interface [Adaptável](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Esta interface fornece um método [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) genérico que traduz o objeto para o tipo de classe que está sendo passado como argumento.
@@ -299,7 +308,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
    <td>Nó da página.</td>
   </tr>
   <tr>
-   <td>..</td>
+   <td>...</td>
    <td>Tudo ao qual o recurso da página pode ser adaptado.</td>
   </tr>
  </tbody>
@@ -311,7 +320,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 | --- | --- |
 | [RecursoRotulado](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html) | O recurso rotulado é o recurso atual. Ou seja, o mesmo objeto que você está olhando. |
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do componente. |
-| .. | Tudo ao qual o recurso do componente pode ser adaptado. |
+| ... | Tudo ao qual o recurso do componente pode ser adaptado. |
 
 **O [modelo](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html)** adapta-se a:
 
@@ -330,7 +339,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
    <td>Nó deste modelo.</td>
   </tr>
   <tr>
-   <td>..</td>
+   <td>...</td>
    <td>Tudo ao qual o recurso do modelo pode ser adaptado.</td>
   </tr>
  </tbody>
@@ -338,7 +347,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 
 #### Segurança {#security}
 
-**Autorizável**, **Usuário e &#x200B;** Grupo** adaptam-se a:
+**Autorizável**, **Usuário e** Grupo** adaptam-se a:
 
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Retorna o nó inicial do usuário/grupo. |
 | --- | --- |
@@ -351,7 +360,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
 | --- | --- |
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do ativo. |
-| .. | Tudo ao qual o recurso do ativo pode ser adaptado. |
+| ... | Tudo ao qual o recurso do ativo pode ser adaptado. |
 
 #### Tag {#tagging}
 
@@ -360,7 +369,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag. |
 | --- | --- |
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó da tag. |
-| .. | Tudo ao qual o recurso da tag pode ser adaptado. |
+| ... | Tudo ao qual o recurso da tag pode ser adaptado. |
 
 #### Outro {#other}
 

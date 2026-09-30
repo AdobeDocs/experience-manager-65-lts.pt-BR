@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento de relatórios {#developing-reports}
 
 O Adobe Experience Manager (AEM) fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md), a maioria dos quais baseada em uma estrutura de relatórios.
@@ -86,7 +95,7 @@ A página do relatório é:
 
 ### Base de Relatório {#report-base}
 
-O componente [`reportbase` &#x200B;](#report-base-component) forma a base de qualquer relatório porque ele:
+O componente [`reportbase` ](#report-base-component) forma a base de qualquer relatório porque ele:
 
 * Preserva a definição da [consulta](#the-query-and-data-retrieval) que fornece o conjunto de resultados subjacente de dados.
 

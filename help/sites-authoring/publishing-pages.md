@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1706'
 ht-degree: 63%
-
 ---
-
 
 # Publicar páginas {#publishing-pages}
 
@@ -25,13 +38,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
->* **Publicar/Desfazer a publicação**
+>* **Publicar/Desfazer publicação**
 >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
 >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
->* **Replicar / Replicação**
+>* **Replicar/Replicar**
 >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 
 ## Privilégios Insuficientes {#insufficient-privileges}
@@ -62,9 +75,9 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
    * A página será publicada diretamente se não existirem referências a serem publicadas.
    * Caso a página tenha referências que precisam ser publicadas, elas serão listadas no **Assistente de publicação,** onde é possível:
 
-      * Especifique quais dos ativos ou tags você deseja publicar junto com a página e use **Publicar** para concluir o processo.
+     * Especifique quais dos ativos ou tags você deseja publicar junto com a página e use **Publicar** para concluir o processo.
 
-      * Usar a opção **Cancelar** para suspender a ação.
+     * Usar a opção **Cancelar** para suspender a ação.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -88,10 +101,10 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console do Sites, há duas opções para publicação:
 
-* [Publicação rápida   &#x200B;](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Gerenciar publicação   &#x200B;](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicação rápida](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Gerenciar publicação](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Publicação rápida    {#quick-publish}
+#### Publicação rápida {#quick-publish}
 
 A **Publicação rápida** serve para casos simples e publica as páginas selecionadas imediatamente, sem qualquer outra interação. Por esse motivo, qualquer referências que ainda não tiver sido publicada, será automaticamente.
 
@@ -111,7 +124,7 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página filha que houver não será.
 
-#### Gerenciar publicação    {#manage-publication}
+#### Gerenciar publicação {#manage-publication}
 
 **Gerenciar Publicação** oferece mais opções do que a Publicação Rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
@@ -184,7 +197,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A etapa **Fluxos de trabalho** é mostrada com base em quais direitos seu usuário pode ou não ter.
+   >A etapa **Fluxos de trabalho** é mostrada com base nos direitos que seu usuário pode ou não ter.
    >
    >Consulte as seções [Privilégios Insuficientes](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gerenciando o Acesso aos Fluxos de Trabalho](/help/sites-administering/workflows-managing.md) e [Aplicando Fluxos de Trabalho a Páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
 
@@ -211,7 +224,7 @@ De uma [maneira semelhante à publicação](/help/sites-authoring/publishing-pag
 * [No editor de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Do console do Sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
@@ -219,7 +232,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 >
 >Páginas acessadas por [aliases](/help/sites-authoring/editing-page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
-### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
+### Desfazer a publicação por meio do Console {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), também pode usá-la para desfazer a publicação.
 

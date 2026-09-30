@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 0%
-
+source-wordcount: '2047'
+ht-degree: 1%
 ---
-
 # Interação programática com fluxos de trabalho{#interacting-with-workflows-programmatically}
 
 Ao [personalizar e estender seus fluxos de trabalho](/help/sites-developing/workflows-customizing-extending.md), você pode acessar objetos de fluxo de trabalho:
@@ -131,7 +140,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância terminada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
+   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância finalizada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +163,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta de <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
+   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
   </tr>
  </tbody>
 </table>
@@ -243,7 +252,7 @@ Onde `*{uri}*` é o caminho para o nó do modelo no repositório.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Mesmo comportamento do PUT. Necessário porque os widgets do AEM não dão suporte a operações <code>PUT</code>.</td>
+   <td>Mesmo comportamento que com PUT. Necessário porque os widgets do AEM não dão suporte a operações <code>PUT</code>.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +367,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho de acordo para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de uma etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
+   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho correspondente para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +386,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
 
 ### Como obter uma lista de todos os fluxos de trabalho em execução com suas IDs {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Para obter uma lista de todos os workflows em execução, execute um GET para:
+Para obter uma lista de todos os workflows em execução, faça uma GET para:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -409,8 +418,8 @@ Para alterar o **Título do Fluxo de Trabalho** exibido na guia **Instâncias** 
 
 * com os seguintes parâmetros:
 
-   * `action`: seu valor deve ser: `UPDATE`
-   * `workflowTitle`: o título do fluxo de trabalho
+  * `action`: seu valor deve ser: `UPDATE`
+  * `workflowTitle`: o título do fluxo de trabalho
 
 #### Como alterar o título do fluxo de trabalho - REST usando curl {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -425,7 +434,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### Como listar todos os modelos de fluxo de trabalho {#how-to-list-all-workflow-models}
 
-Para obter uma lista de todos os modelos de fluxo de trabalho disponíveis, execute uma GET para:
+Para obter uma lista de todos os modelos de fluxo de trabalho disponíveis, faça uma GET para:
 
 `http://localhost:4502/etc/workflow/models.json`
 
@@ -491,8 +500,8 @@ Ao criar um modelo:
 
 * O editor de modelo de fluxo de trabalho exige que os modelos usem uma estrutura de nó específica abaixo de `/var/workflow/models`. O nó pai do modelo deve ser do tipo `cq:Page` com um nó `jcr:content` com os seguintes valores de propriedade:
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Ao criar um modelo, você deve primeiro criar este nó `cq:Page` e usar seu nó `jcr:content` como o pai do nó do modelo.
 

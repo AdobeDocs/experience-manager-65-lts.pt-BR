@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '521'
 ht-degree: 3%
-
 ---
-
 # Pré-requisitos para integração com o Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 Como parte da [integração do AEM e do Adobe Target](/help/sites-administering/target.md), é necessário se registrar no Adobe Target, definir o agente de replicação e as configurações de atividade segura no nó de publicação.
@@ -31,7 +40,7 @@ O código de cliente identifica a conta de cliente do Adobe Target ao chamar o s
 >
 >A equipe do Target deve habilitar sua conta para usar a integração.
 >
->Se esse não for o caso, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/target/using/cmp-resources-and-contact-information).
+>Se esse não for o caso, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
 
 ## Habilitar o agente de replicação de destino {#enabling-the-target-replication-agent}
 

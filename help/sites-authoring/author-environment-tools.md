@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 47%
-
+source-wordcount: '2223'
+ht-degree: 46%
 ---
-
 # Criação - o ambiente e as ferramentas{#authoring-the-environment-and-tools}
 
 O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
@@ -43,7 +56,7 @@ Por exemplo, exibição de coluna:
 >
 >Se desejar, é possível ignorar o tour e repeti-lo a qualquer momento, selecionando-o no menu **Informações da página**.
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
@@ -52,7 +65,7 @@ Ao editar uma página, a **Ajuda** pode ser acessada de:
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes   {#components-browser}
+## Navegador de componentes {#components-browser}
 
 O navegador de componentes mostra todos os componentes que estão disponíveis para uso em sua página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
 
@@ -86,17 +99,17 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 
   Os componentes são representados por
 
-   * Nome do componente
-   * Grupo do componente (em cinza)
-   * Ícone ou abreviação
+  * Nome do componente
+  * Grupo do componente (em cinza)
+  * Ícone ou abreviação
 
-      * Os ícones dos componentes padrão são monocromáticos.
-      * As abreviações são sempre os dois primeiros caracteres do nome do componente.
+    * Os ícones dos componentes padrão são monocromáticos.
+    * As abreviações são sempre os dois primeiros caracteres do nome do componente.
 
   Na barra de ferramentas superior, no navegador **Componentes**, você pode fazer o seguinte:
 
-   * Filtrar componentes por nome.
-   * Limitar a exibição para um grupo específico usando a seleção suspensa.
+  * Filtrar componentes por nome.
+  * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
   Para obter uma descrição mais detalhada do componente, clique no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
 
@@ -124,11 +137,11 @@ Para adicionar um ativo à sua página, selecione-o e arraste-o até o local des
 
 * Um componente existente do tipo apropriado.
 
-   * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
+  * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
 
 * Um [espaço reservado](/help/sites-authoring/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
 
-   * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
+  * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ Na barra de ferramentas superior do navegador de ativos, é possível filtrar os
 * Tipo de ativo, como imagens, manuscritos, documentos, vídeos, páginas, parágrafos e produtos
 * Características do ativo, como Orientação (Retrato, Paisagem, Quadrado) e Estilo (Cor, Monocromático, Tons de cinza)
 
-   * Disponível somente para certos tipos de ativos
+  * Disponível somente para certos tipos de ativos
 
 A aparência e o manuseio real dependem do tipo de dispositivo que você está usando:
 
@@ -238,7 +251,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 * **Links de Entrada** fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
 
-   * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
+  * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
 
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 
@@ -288,7 +301,7 @@ Por exemplo, quando apropriado, as **Informações da página** também têm as 
 
 Além disso, as **Informações da página** podem fornecer acesso a análises e recomendações, quando apropriado.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Há vários modos ao editar uma página o que permite diversas ações:
 
@@ -324,7 +337,7 @@ Você pode acessá-los usando os ícones no canto superior direito. O ícone rea
 
 Geralmente, durante a criação, é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar facilmente um caminho, os [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) oferecem preenchimento automático e o [navegador de caminhos](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho   {#path-fields}
+### Campos de caminho {#path-fields}
 
 O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre o uso e a edição de componentes, consulte [Componentes para Criação de Página](/help/sites-authoring/default-components.md).
 

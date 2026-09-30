@@ -9,20 +9,36 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '878'
 ht-degree: 0%
-
 ---
-
 # Suporte a novos códigos de idiomas para localização de formulários adaptáveis{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## Aplica-se a {#applies-to}
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Sobre dicionários de local {#about-locale-dictionaries}
 
@@ -40,18 +56,18 @@ Há dois métodos para identificar o local do formulário adaptável. Quando um 
 
 * observando os seguintes parâmetros na ordem especificada:
 
-   * Parâmetro de solicitação `afAcceptLang`
+  * Parâmetro de solicitação `afAcceptLang`
 Para substituir a localidade do navegador dos usuários, você pode passar o parâmetro de solicitação `afAcceptLang` para forçar a localidade. Por exemplo, a URL a seguir foi forçada a renderizar o formulário no local japonês:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o cabeçalho `Accept-Language`.
+  * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o cabeçalho `Accept-Language`.
 
-   * Configuração de idioma do usuário especificado no AEM.
+  * Configuração de idioma do usuário especificado no AEM.
 
-   * A localidade do navegador é ativada por padrão. Para alterar a configuração do local do navegador,
-      * Abra o gerenciador de configurações. A URL é `http://[server]:[port]/system/console/configMgr`
-      * Localize e abra a configuração **[!UICONTROL Canal da Web do Formulário adaptável e da Comunicação Interativa]**.
-      * Altere o status da opção **[!UICONTROL Usar localidade do navegador]** e **[!UICONTROL Salve]** a configuração.
+  * A localidade do navegador é ativada por padrão. Para alterar a configuração do local do navegador,
+    * Abra o gerenciador de configurações. A URL é `http://[server]:[port]/system/console/configMgr`
+    * Localize e abra a configuração **[!UICONTROL Canal da Web do Formulário adaptável e da Comunicação Interativa]**.
+    * Altere o status da opção **[!UICONTROL Usar localidade do navegador]** e **[!UICONTROL Salve]** a configuração.
 
 Depois que a localidade é identificada, os formulários adaptáveis escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário do idioma no qual o formulário adaptável foi criado.
 

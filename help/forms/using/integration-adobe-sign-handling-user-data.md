@@ -7,14 +7,29 @@ feature: Acrobat Sign
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 90521ad8-703e-402b-81dd-4c06f5894358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
 ---
 # Integração com o Adobe Sign | Manipulação de dados do usuário {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] integra-se com [!DNL &#x200B; Adobe Sign] para habilitar fluxos de trabalho de assinatura eletrônica em formulários adaptáveis para processar formulários ou contratos para fluxos de trabalho jurídicos, de vendas, de folha de pagamento e de gerenciamento de recursos humanos. Ele permite assinar formulários com um único usuário e vários usuários, fluxos de trabalho de assinatura sequenciais e simultâneas, assinar formulários como um usuário anônimo ou conectado e várias maneiras de autenticar usuários.
+[!DNL AEM Forms] integra-se com [!DNL  Adobe Sign] para habilitar fluxos de trabalho de assinatura eletrônica em formulários adaptáveis para processar formulários ou contratos para fluxos de trabalho jurídicos, de vendas, de folha de pagamento e de gerenciamento de recursos humanos. Ele permite assinar formulários com um único usuário e vários usuários, fluxos de trabalho de assinatura sequenciais e simultâneas, assinar formulários como um usuário anônimo ou conectado e várias maneiras de autenticar usuários.
 
 Quando um signatário ou vários signatários assinam e enviam um formulário adaptável, é gerado um contrato [!DNL Adobe Sign] que inclui informações sobre os signatários.
 
@@ -28,6 +43,6 @@ O formulário adaptável habilitado para [!DNL Adobe Sign] inclui informações 
 
 Os dados do usuário são coletados no contrato, mas não são salvos em nenhuma tabela de serviço. O [!DNL Adobe Sign] permite que os administradores façam suas próprias escolhas no gerenciamento dos dados que controlam no serviço. Os administradores de privacidade no serviço [!DNL Adobe Sign] podem listar ou remover contratos com base no endereço de email de um solicitante.
 
-[!DNL Adobe Sign] oferece um aplicativo Web que permite a pesquisa de contratos pelos participantes e, se necessário, a exclusão deles. Para obter mais informações, consulte [Adobe Sign - Recurso: excluir informações do usuário](https://helpx.adobe.com/br/sign/help/adobesign_gdpr_user_deletion.html).
+[!DNL Adobe Sign] oferece um aplicativo Web que permite a pesquisa de contratos pelos participantes e, se necessário, a exclusão deles. Para obter mais informações, consulte [Adobe Sign - Recurso: excluir informações do usuário](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
 Os dados de contratos para formulários adaptáveis configurados para usar a ação de envio do Forms Portal também são salvos no armazenamento de dados do Forms Portal. Para acessar e excluir dados do armazenamento de dados do Forms Portal, consulte [Forms Portal | Manipulando dados do usuário](/help/forms/using/forms-portal-handling-user-data.md).

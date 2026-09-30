@@ -8,7 +8,23 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2ac51487-42e0-4b8a-b224-2858f26e85ef
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -21,7 +37,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 O AEM Forms permite que os desenvolvedores de formulários incorporem formulários adaptáveis e comunicações interativas em um aplicativo de página única (SPA) da AEM Sites. O formulário adaptável incorporado e a Comunicação interativa são totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário adaptável ou a Comunicação interativa.
 
-No Aplicativo de Página Única do AEM Sites, é possível adicionar um formulário adaptável ou a Comunicação Interativa usando o [componente de Contêiner SPA do AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) É um componente do AEM Forms para SPAs do AEM Sites que pode ser adicionado à página Sites.
+No Aplicativo de Página Única do AEM Sites, é possível adicionar um formulário adaptável ou a Comunicação Interativa usando o [componente de Contêiner SPA do AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) É um componente do AEM Forms para SPAs do AEM Sites que pode ser adicionado à página Sites.
 
 Para obter informações sobre como incorporar um formulário adaptável em um AEM Sites não SPA, consulte [Incorporar um formulário adaptável ou comunicação interativa na página do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -32,7 +48,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa em um SP
 * Java SE Development Kit 8 ou mais recente
 * Apache Maven 3.3.1 ou mais recente
 * Instância do autor do AEM
-* [pacote complementar do AEM Forms 6.4.2](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) na instância do autor
+* [pacote complementar do AEM Forms 6.4.2](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) na instância do autor
 
 ## Instalar o componente de Contêiner SPA do AEM Forms {#install-aem-forms-spa-container-component}
 

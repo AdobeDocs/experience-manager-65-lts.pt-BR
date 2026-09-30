@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 15471908-feb1-4178-a24d-7cefe7717820
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 16%
@@ -18,7 +29,7 @@ ht-degree: 16%
 
 A Equipe de serviços da Adobe Consulting gerou uma série de amostras de código do Adobe Experience Manager (AEM). Essas amostras são pedaços de código bem comentados para ajudar os desenvolvedores do AEM a entender os componentes principais do AEM. Os exemplos estão disponíveis aqui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Um tutorial em várias partes projetado para desenvolvedores novos no AEM que abrange tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
+Um tutorial em várias partes projetado para desenvolvedores novos no AEM que abrange tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 Um modelo Maven para criar um projeto do AEM como ponto de partida para desenvolver sua própria funcionalidade está disponível [no GitHub - Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype).
 

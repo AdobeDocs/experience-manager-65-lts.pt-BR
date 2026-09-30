@@ -1,17 +1,31 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager]  6.5 LTS
+title: Notas de versão do [!DNL Adobe Experience Manager] 6.5 LTS
 description: Encontre informações sobre a versão atual do Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '1160'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 99%
 ---
-
 # Notas de versão atuais do Adobe Experience Manager 6.5 LTS {#release-notes}
 
 ## Informações da versão {#release-information}
@@ -86,7 +100,7 @@ Clientes devem analisar se usam o recurso/funcionalidade em sua implementação 
 
 | Área | Destaque | Substituição | Versão (SP) |
 |---|---|---|---|
-| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Os editores recomendados para gerenciar conteúdo headless no AEM são:<br>- [o Editor universal](/help/sites-developing/universal-editor/introduction.md) para edição visual.<br>- [o Editor de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulários. | 6.5 LTS GA |
+| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Os editores recomendados para gerenciar conteúdo headless no AEM são:<br>- [O Editor Universal](/help/sites-developing/universal-editor/introduction.md) para edição visual.<br>- [O Editor de Fragmentos de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulários. | 6.5 LTS GA |
 
 ### Recursos removidos {#removed-features}
 
@@ -97,7 +111,7 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 | Commerce | O AEM CIF Classic não é compatível. | Migre para o [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluções | Redes sociais/comunidades não são compatíveis. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
 | Screens | Telas não são compatíveis. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
-| Ativos | `dam-pim` e `dam-rating` não são compatíveis, pois esses conjuntos dependem de redes sociais. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
+| Ativos | `dam-pim` e `dam-rating` não são compatíveis, pois esses pacotes dependem de redes sociais. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
 | Ativos | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` foi removido. | Use a API alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` que foi adicionada. | 6.5 LTS GA |
 | Portal | O AEM Portal Diretor não é compatível. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
 | Granite | O pacote `com.adobe.granite.socketio` foi removido. | Não há nenhuma substituição disponível. | 6.5 LTS GA |
@@ -147,7 +161,7 @@ Ao habilitar o recurso de somente SSL em implantações do AEM, há um problema 
 * Configurações do Dispatcher, usando-se o método de conexão `https + IP` com instâncias do AEM
 
 **Solução:**
-Se você tiver esse problema, entre em contato com o Suporte ao Cliente da Adobe. Uma hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) está disponível para resolver esse problema. Não tente habilitar recursos de somente SSL até aplicar a hotfix necessária.
+Se você se deparar com esse problema, entre em contato com o Suporte ao cliente da Adobe. Uma hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) está disponível para resolver esse problema. Não tente habilitar recursos de somente SSL até aplicar a hotfix necessária.
 
 ## Sites restritos{#restricted-sites}
 

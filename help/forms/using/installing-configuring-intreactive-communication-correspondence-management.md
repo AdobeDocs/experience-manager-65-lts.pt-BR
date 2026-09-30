@@ -5,13 +5,31 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 1%
-
+source-wordcount: '1450'
+ht-degree: 3%
 ---
-
 # Instalar e configurar as Comunicações interativas{#install-and-configure-interactive-communications}
 
 ## Introdução {#introduction}
@@ -41,15 +59,15 @@ Antes de começar a instalar e configurar a comunicação interativa e os recurs
 * O caminho de instalação da instância do AEM não contém espaços em branco.
 * Uma instância do AEM está em execução. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM executada em um servidor no modo de criação ou publicação. Você precisa de pelo menos uma instância do AEM (Autor ou Processamento) para executar a comunicação interativa do AEM Forms e os recursos de gerenciamento de correspondência:
 
-   * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **Processando:** uma instância de processamento é uma instância de [AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) avançada. Você pode configurar uma instância de Autor e fortalecê-la após executar a instalação.
+  * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
+  * **Processando:** uma instância de processamento é uma instância de [AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) avançada. Você pode configurar uma instância de Autor e fortalecê-la após executar a instalação.
 
-   * **Publicar**: uma instância do AEM que fornece o conteúdo publicado ao público pela Internet ou por uma rede interna.
+  * **Publicar**: uma instância do AEM que fornece o conteúdo publicado ao público pela Internet ou por uma rede interna.
 
 * Os requisitos de memória são atendidos. O pacote complementar do AEM Forms exige:
 
-   * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
-   * 6 GB de espaço temporário para instalações baseadas em UNIX.
+  * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
+  * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * Requisitos adicionais para sistemas baseados em UNIX: Se você estiver usando o sistema operacional baseado em UNIX, instale os seguintes pacotes da mídia de instalação do respectivo sistema operacional.
 
@@ -95,7 +113,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Abra o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log fique estável.
 
@@ -131,11 +149,11 @@ Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicia
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias Autor e Publicar para adicionar o pacote ao arquivo de inclui na lista de permissões:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote ao incluo na lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. A URL padrão é https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Pesquise e abra a **Configuração do Firewall de Desserialização**.
-1. Adicione o pacote **sun.util.calendar** ao campo **incluir na lista de permissões**. Clique em Salvar.
+1. Adicione o pacote **sun.util.calendar** ao campo **incluo na lista de permissões**. Clique em Salvar.
 1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publicação.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
@@ -151,7 +169,7 @@ O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4
 * Dicionários de dados
 * Modelos e páginas obsoletas dos formulários adaptáveis
 
-#### Configurar Dispatcher {#configure-dispatcher}
+#### Configurar o Dispatcher {#configure-dispatcher}
 
 O Dispatcher é a ferramenta de armazenamento em cache e balanceamento de carga do Adobe Experience Manager usada com um servidor Web de classe empresarial. Se você usa o [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR), execute as seguintes configurações para o AEM Forms:
 

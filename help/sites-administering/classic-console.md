@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
-
 ---
-
 # Console de marcação da interface clássica{#classic-ui-tagging-console}
 
 Esta seção é para o Console de marcação da interface do usuário clássica.
@@ -178,7 +187,7 @@ Por padrão, a tag `titles` nas propriedades da página é exibida no idioma da 
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles` de acordo com o idioma da página.
 
-Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 >[!NOTE]
 >

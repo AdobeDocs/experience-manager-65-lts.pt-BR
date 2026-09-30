@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
 # Redução de problemas de serialização no AEM{#mitigating-serialization-issues-in-aem}
 
 ## Visão geral {#overview}
@@ -24,7 +36,7 @@ A equipe do AEM na Adobe trabalhou em conjunto com o projeto de código aberto [
 
 O jar do agente incluído neste pacote é a distribuição modificada do NotSoSerial pela Adobe.
 
-NotSoSerial é uma solução em nível Java™ para um problema em nível Java™ e não é específica da AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a um incluir na lista de permissões incluo na lista de bloqueios de estilo firewall, ou, ou ambos. Devido ao número limitado de classes no incluo na lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
+NotSoSerial é uma solução em nível Java™ para um problema em nível Java™ e não é específica da AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a um incluo na lista de permissões de estilo firewall, ou, ou ambos. Devido ao número limitado de classes no incluo na lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
 
 Por padrão, o agente executa uma verificação de inclui na lista de bloqueios em relação às classes vulneráveis conhecidas no momento. Essa inclui na lista de bloqueios destina-se a protegê-lo da lista atual de explorações que usam esse tipo de vulnerabilidade.
 
@@ -71,7 +83,7 @@ O agente NotSoSerial não está incluído na distribuição padrão do AEM para 
 
 ## Configurar o agente {#configuring-the-agent}
 
-A configuração padrão é adequada para a maioria das instalações. Incluir na lista de bloqueios Essa configuração inclui um incluo na lista de permissões de classes vulneráveis conhecidas de execução remota e um grupo de pacotes em que a desserialização de dados confiáveis é segura.
+A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui um incluo na lista de permissões de classes vulneráveis conhecidas de execução remota e um grupo de pacotes em que a desserialização de dados confiáveis é segura.
 
 A configuração do firewall é dinâmica e pode ser alterada a qualquer momento por:
 

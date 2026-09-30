@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 1%
@@ -122,7 +133,7 @@ Para identificar e corrigir um processo de reindexação paralisado, faça o seg
 1. Depois de coletar todas as informações descritas na Etapa 1, reinicie o AEM.
 
    * Reiniciar o AEM pode resolver o problema se houver uma alta carga simultânea (estouro da fila de observação ou algo semelhante).
-   * Se uma reinicialização não resolver o problema, abra um problema no [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
+   * Se uma reinicialização não resolver o problema, abra um problema no [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
 
 ## Anular com segurança a reindexação assíncrona {#safely-aborting-asynchronous-re-indexing}
 

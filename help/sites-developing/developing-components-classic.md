@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 0%
-
+source-wordcount: '2446'
+ht-degree: 1%
 ---
-
 # Desenvolvimento de componentes do Adobe Experience Manager (AEM) (Interface clássica){#developing-aem-components-classic-ui}
 
 A interface clássica usa ExtJS para criar dispositivos que fornecem a aparência dos componentes. Devido à natureza desses widgets, há algumas diferenças entre a forma como os componentes interagem com a interface clássica e a [interface habilitada para toque](/help/sites-developing/developing-components.md).
@@ -63,20 +72,20 @@ Resumo:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - O Objeto De Solicitação Encapsulado ( `SlingHttpServletRequest`).
-   * `slingResponse` - O Objeto De Resposta Disposto ( `SlingHttpServletResponse`).
-   * `resource` - O Objeto De Recurso Do Sling ( `slingRequest.getResource();`).
-   * `resourceResolver` - O Objeto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
-   * `currentNode` - O nó JCR resolvido para a solicitação.
-   * `log` - O agente de log padrão ().
-   * `sling` - O auxiliar do script Sling.
-   * `properties` - As propriedades do recurso endereçado ( `resource.adaptTo(ValueMap.class);`).
-   * `pageProperties` - As propriedades da página do recurso endereçado.
-   * `pageManager` - Gerenciador de páginas para acessar páginas de conteúdo do AEM ( `resourceResolver.adaptTo(PageManager.class);`).
-   * `component` - O objeto do componente do componente AEM atual.
-   * `designer` - O objeto Designer para recuperar informações de design ( `resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign` - O design do recurso endereçado.
-   * `currentStyle` - O estilo do recurso endereçado.
+  * `slingRequest` - O Objeto De Solicitação Encapsulado ( `SlingHttpServletRequest`).
+  * `slingResponse` - O Objeto De Resposta Disposto ( `SlingHttpServletResponse`).
+  * `resource` - O Objeto De Recurso Do Sling ( `slingRequest.getResource();`).
+  * `resourceResolver` - O Objeto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
+  * `currentNode` - O nó JCR resolvido para a solicitação.
+  * `log` - O agente de log padrão ().
+  * `sling` - O auxiliar do script Sling.
+  * `properties` - As propriedades do recurso endereçado ( `resource.adaptTo(ValueMap.class);`).
+  * `pageProperties` - As propriedades da página do recurso endereçado.
+  * `pageManager` - Gerenciador de páginas para acessar páginas de conteúdo do AEM ( `resourceResolver.adaptTo(PageManager.class);`).
+  * `component` - O objeto do componente do componente AEM atual.
+  * `designer` - O objeto Designer para recuperar informações de design ( `resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign` - O design do recurso endereçado.
+  * `currentStyle` - O estilo do recurso endereçado.
 
 ### Acesso ao conteúdo {#accessing-content}
 
@@ -164,8 +173,8 @@ Para desenvolver novos componentes para o AEM com base em um componente existent
 
    * adição de um campo na caixa de diálogo
 
-      * `cq:dialog` - caixa de diálogo para a interface habilitada para toque
-      * `dialog` - caixa de diálogo para a interface clássica
+     * `cq:dialog` - caixa de diálogo para a interface habilitada para toque
+     * `dialog` - caixa de diálogo para a interface clássica
 
    * substituindo o arquivo `.jsp` (nomeie-o com o novo componente)
    * ou retrabalhando completamente o componente inteiro, se desejar
@@ -278,16 +287,16 @@ Para criar o componente, use o componente textimage padrão como uma base e modi
 
    * Nome do componente
 
-      * Configurar `jcr:description` para `Text Image Component (Extended)`
-      * Configurar `jcr:title` para `Text Image (Extended)`
+     * Configurar `jcr:description` para `Text Image Component (Extended)`
+     * Configurar `jcr:title` para `Text Image (Extended)`
 
    * Grupo, onde o componente está listado no sidekick (deixe como está)
 
-      * Deixar `componentGroup` definido como `General`
+     * Deixar `componentGroup` definido como `General`
 
    * O componente principal do novo componente (o componente textimage padrão)
 
-      * Configurar `sling:resourceSuperType` para `foundation/components/textimage`
+     * Configurar `sling:resourceSuperType` para `foundation/components/textimage`
 
    Após esta etapa, o nó do componente terá esta aparência:
 
@@ -305,24 +314,24 @@ Para criar o componente, use o componente textimage padrão como uma base e modi
 
    * Para as duas primeiras guias (tab1 e tab2):
 
-      * Altere xtype para cqinclude (para herdar do componente padrão).
-      * Adicione uma propriedade de caminho com valores `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivamente.
-      * Remova todas as outras propriedades ou nós secundários.
+     * Altere xtype para cqinclude (para herdar do componente padrão).
+     * Adicione uma propriedade de caminho com valores `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivamente.
+     * Remova todas as outras propriedades ou nós secundários.
 
    * Para tab3:
 
-      * Deixar as propriedades e os subnós sem alterações
-      * Adicionar uma definição de campo a `tab3/items`, posição do nó do tipo `cq:Widget`
-      * Defina as seguintes propriedades (do tipo Cadeia de Caracteres) para o novo nó `tab3/items/position`:
+     * Deixar as propriedades e os subnós sem alterações
+     * Adicionar uma definição de campo a `tab3/items`, posição do nó do tipo `cq:Widget`
+     * Defina as seguintes propriedades (do tipo Cadeia de Caracteres) para o novo nó `tab3/items/position`:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Adicione o subnó `position/options` do tipo `cq:WidgetCollection` para representar as duas opções para posicionamento de imagem e, sob ele, crie dois nós, o1 e o2 do tipo `nt:unstructured`.
-      * Para o nó `position/options/o1`, defina as propriedades: `text` como `Left` e `value` como `left.`
-      * Para o nó `position/options/o2`, defina as propriedades: `text` como `Right` e `value` como `right`.
+     * Adicione o subnó `position/options` do tipo `cq:WidgetCollection` para representar as duas opções para posicionamento de imagem e, sob ele, crie dois nós, o1 e o2 do tipo `nt:unstructured`.
+     * Para o nó `position/options/o1`, defina as propriedades: `text` como `Left` e `value` como `left.`
+     * Para o nó `position/options/o2`, defina as propriedades: `text` como `Right` e `value` como `right`.
 
    * Excluir guia 4.
 
@@ -339,7 +348,7 @@ Para criar o componente, use o componente textimage padrão como uma base e modi
         image.loadStyleData(currentStyle);
    ```
 
-   Você substituirá o fragmento de código enfatizado *%>&lt;div class=&quot;image&quot;>&lt;%* pelo novo código que gera um estilo personalizado para esta marca.
+   Você substituirá o fragmento de código enfatizado *%>&lt;div class=&quot;image&quot;>&lt;%* pelo novo código que gera um estilo personalizado para esta tag.
 
    ```xml
    // todo: add new CSS class for the 'right image' instead of using

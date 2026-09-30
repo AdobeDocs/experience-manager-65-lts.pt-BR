@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1740'
 ht-degree: 0%
-
 ---
-
 # Habilitar logon único nos formulários do AEM{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
@@ -85,13 +102,13 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
    * Adicione o LDAP como um provedor de autenticação.
    * Adicione o Kerberos como um provedor de autenticação. Forneça as seguintes informações na página Nova ou Editar Autenticação do Kerberos:
 
-      * **Provedor de Autenticação:** Kerberos
-      * **IP do DNS:** O endereço IP do DNS do servidor onde o AEM Forms está em execução. Você pode determinar este endereço IP executando `ipconfig/all` na linha de comando.
-      * **Host KDC:** Nome de host ou endereço IP totalmente qualificado do servidor do Ative Diretory usado para autenticação
-      * **Usuário do Serviço:** o SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
-      * **Realm de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o nome do Domínio é `UM.LC.COM.`
-      * **Senha do serviço:** Senha do usuário do serviço. No exemplo usado anteriormente, a senha do serviço é `password`.
-      * **Habilitar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
+     * **Provedor de Autenticação:** Kerberos
+     * **IP do DNS:** O endereço IP do DNS do servidor onde o AEM Forms está em execução. Você pode determinar este endereço IP executando `ipconfig/all` na linha de comando.
+     * **Host KDC:** Nome de host ou endereço IP totalmente qualificado do servidor do Ative Diretory usado para autenticação
+     * **Usuário do Serviço:** o SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
+     * **Realm de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o nome do Domínio é `UM.LC.COM.`
+     * **Senha do serviço:** Senha do usuário do serviço. No exemplo usado anteriormente, a senha do serviço é `password`.
+     * **Habilitar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
 
 1. Defina as configurações do navegador do cliente SPNEGO. (Consulte [Definindo as configurações do navegador do cliente SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 

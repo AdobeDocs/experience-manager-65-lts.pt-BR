@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1942'
 ht-degree: 0%
-
 ---
-
 # Usuários de serviço no Adobe Experience Manager (AEM) {#service-users-in-aem}
 
 ## Visão geral {#overview}
@@ -40,31 +49,31 @@ Muitos problemas podem ser resolvidos reestruturando o conteúdo. Lembre-se dess
 
 * **Alterar controle de acesso**
 
-   * Certifique-se de que os usuários ou grupos que realmente precisam de acesso tenham acesso;
+  * Certifique-se de que os usuários ou grupos que realmente precisam de acesso tenham acesso;
 
 * **Refinar estrutura de conteúdo**
 
-   * Movê-lo para outros locais, por exemplo, onde o controle de acesso corresponde às sessões de solicitação disponíveis;
-   * Alterar a granularidade do conteúdo;
+  * Movê-lo para outros locais, por exemplo, onde o controle de acesso corresponde às sessões de solicitação disponíveis;
+  * Alterar a granularidade do conteúdo;
 
 * **Refatorar seu código para que seja um serviço adequado**
 
-   * Mova a lógica de negócios do código JSP para o serviço. Isso permite modelagem de conteúdo diferente.
+  * Mova a lógica de negócios do código JSP para o serviço. Isso permite modelagem de conteúdo diferente.
 
 Além disso, verifique se os novos recursos desenvolvidos seguem estes princípios:
 
 * **Os requisitos de segurança devem orientar a estrutura do conteúdo**
 
-   * O gerenciamento do controle de acesso deve parecer natural
-   * O controle de acesso deve ser aplicado pelo repositório, não pelo aplicativo
+  * O gerenciamento do controle de acesso deve parecer natural
+  * O controle de acesso deve ser aplicado pelo repositório, não pelo aplicativo
 
 * **Usar tipos de nós**
 
-   * Restringir o conjunto de propriedades que podem ser definidas
+  * Restringir o conjunto de propriedades que podem ser definidas
 
 * **Respeitar configurações de privacidade**
 
-   * Se houver perfis privados, um exemplo seria não expor a imagem do perfil, o email ou o nome completo encontrado no nó `/profile` privado.
+  * Se houver perfis privados, um exemplo seria não expor a imagem do perfil, o email ou o nome completo encontrado no nó `/profile` privado.
 
 ## Controle de acesso estrito {#strict-access-control}
 
@@ -77,7 +86,7 @@ Se você aplicar o controle de acesso ao reestruturar o conteúdo ou quando o fi
 * Aplicar ACLs para tipos de nó
 * Limitar permissões
 
-   * por exemplo, quando precisar apenas gravar propriedades, não dê a permissão `jcr:write`; use `jcr:modifyProperties`
+  * por exemplo, quando precisar apenas gravar propriedades, não dê a permissão `jcr:write`; use `jcr:modifyProperties`
 
 ## Usuários e Mapeamentos do Serviço {#service-users-and-mappings}
 

@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
+source-wordcount: '6255'
 ht-degree: 0%
-
 ---
-
 # Definição das configurações de tipo de arquivo {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -127,7 +139,7 @@ As opções a seguir determinam como os arquivos de imagem são convertidos para
 
 **Usar OCR:** Especifica se o OCR (reconhecimento óptico de caracteres) deve ser aplicado à PDF. O software de OCR permite pesquisar, corrigir e copiar o texto no PDF.
 
-***observação &#x200B;**: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
+***observação **: o recurso OCR PDF (PDF pesquisável) só tem suporte no Microsoft Windows.*
 
 **Idioma de OCR Primário:** Especifica o idioma a ser usado pelo mecanismo de OCR para identificar os caracteres.
 
@@ -266,7 +278,7 @@ Para obter instruções sobre como acessar esta configuração, consulte [Criar 
 
    >[!NOTE]
    >
-   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**&#x200B;ainda serão completamente desincorporadas.*
+   >*Se você estiver usando esta opção em combinação com **Desincorporar algumas fontes**, as fontes da lista **Adicionar fontes a desincorporar**ainda serão completamente desincorporadas.*
 
    >[!NOTE]
    >
@@ -502,7 +514,7 @@ Essas opções determinam como os arquivos do Microsoft Word são convertidos. P
 
 **[!UICONTROL Habilitar Acessibilidade E Refluxo Com Adobe PDF Marcado]**: Incorpora marcas no arquivo PDF. Essa opção é selecionada por padrão.
 
-**[!UICONTROL Criar arquivo compatível com PDF/A-1a]**: se selecionado, força a configuração de Adobe PDF do PDF/A-1b:2005 RGB a ser usada.
+**[!UICONTROL Criar arquivo compatível com PDF/A-1a]**: se selecionado, força a configuração PDF/A-1b:2005 do RGB Adobe PDF a ser usada.
 
 **[!UICONTROL Executar Macros Automaticamente]**: executa todas as macros no documento do Word (como uma macro que insere a hora atual) antes de converter o documento.
 
@@ -621,7 +633,7 @@ Você também pode especificar como os formulários são enviados. As opções s
 
 ## Outras configurações do aplicativo (somente Windows) {#other-applications-settings-windows-only}
 
-Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/pt_BR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker da Adobe: `pmd, pm6, p65, pm`

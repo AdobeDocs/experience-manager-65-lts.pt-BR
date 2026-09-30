@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 0%
-
 ---
-
 # Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação projetado para operar em dispositivos de toque e desktop.
@@ -28,24 +37,24 @@ O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque c
 A interface habilitada para toque inclui:
 
 * O cabeçalho do conjunto que:
-   * Mostra o logotipo
-   * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
+  * Mostra o logotipo
+  * Fornece um link para a Navegação global
+  * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
-   * Linha do tempo
-   * Referências
-   * Filtros
+  * Linha do tempo
+  * Referências
+  * Filtros
 * O cabeçalho de navegação, que novamente é sensível ao contexto e pode mostrar:
-   * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
-   * Seleção para o painel esquerdo
-   * Navegações estruturais
-   * Acesso a **Criar** ações apropriadas
-   * Exibir seleções
+  * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
+  * Seleção para o painel esquerdo
+  * Navegações estruturais
+  * Acesso a **Criar** ações apropriadas
+  * Exibir seleções
 * A área de conteúdo que:
-   * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
-   * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
-   * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
-   * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
+  * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
+  * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
+  * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
+  * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -241,14 +250,14 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo de nó** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
