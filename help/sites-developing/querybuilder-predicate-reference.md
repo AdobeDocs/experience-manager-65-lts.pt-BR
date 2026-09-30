@@ -380,7 +380,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 * **profundidade**
 
-  Um número de níveis curinga sob os quais a propriedade e o caminho relativo podem existir. Por exemplo, o `property=size depth=2` verifica o nó e o tamanho, o nó/&amp;ast;/tamanho e o nó/&amp;ast;/&amp;ast;/tamanho.
+  Um número de níveis curinga sob os quais a propriedade e o caminho relativo podem existir. Por exemplo, o `property=size depth=2` verifica o nó e o tamanho, o nó/&ast;/tamanho e o nó/&ast;/&ast;/tamanho.
 
 ### `rangeproperty` {#rangeproperty}
 
