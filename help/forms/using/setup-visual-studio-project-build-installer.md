@@ -9,11 +9,9 @@ role: User, Developer
 exl-id: c2e9200f-a4b7-46fc-9dde-425329e5365d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '953'
 ht-degree: 2%
-
 ---
-
 # Configurar o projeto do Visual Studio e criar o aplicativo do Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
 O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo de espaço de trabalho personalizado. O arquivo morto de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`, faz parte do pacote `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de Software.
