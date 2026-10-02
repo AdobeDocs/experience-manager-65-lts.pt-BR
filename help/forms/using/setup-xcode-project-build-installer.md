@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '815'
 ht-degree: 2%
-
 ---
-
 # Configurar o projeto Xcode e criar o aplicativo iOS{#set-up-the-xcode-project-and-build-the-ios-app}
 
 O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo morto de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`, é parte do pacote `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de Software.

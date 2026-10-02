@@ -1,6 +1,6 @@
 ---
-title: Configurar o projeto do Android&trade; studio e criar o aplicativo do Android&trade;
-description: Etapas para configurar o projeto Android&trade; Studio e criar o instalador para o aplicativo Adobe Experience Manager (AEM) Forms
+title: Configurar o projeto do Android&trade; studio e criar o aplicativo Android&trade;
+description: Etapas para configurar o projeto do Android&trade; Studio e criar o instalador para o aplicativo do Adobe Experience Manager (AEM) Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
-
+source-wordcount: '589'
+ht-degree: 3%
 ---
-
 # Configure o projeto Android™ studio e crie o aplicativo Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
 
 Este artigo é para a criação do Aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
