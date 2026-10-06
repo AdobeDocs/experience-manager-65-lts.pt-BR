@@ -27,12 +27,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2414'
 ht-degree: 1%
 ---
 # Introdução ao aplicativo AEM Forms {#aem-forms-app}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Visão geral {#overview}
 
@@ -40,13 +45,9 @@ O aplicativo AEM Forms permite a sincronização de formulários adaptáveis, fo
 
 O código-fonte do aplicativo AEM Forms está disponível para os clientes por meio da Distribuição de software. O pacote de código-fonte na Distribuição de Software está disponível como: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-O aplicativo AEM Forms é compatível com dispositivos iOS, Android e Windows. Você pode instalar o aplicativo AEM Forms para Android do Google Play, iOS do App Store e Windows da Windows Store.
+O suporte ao aplicativo AEM Forms para Android e iOS foi descontinuado. Os aplicativos Android e iOS não estão mais disponíveis no Google Play ou no Apple App Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
-    
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt))
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar e distribuir o aplicativo em dispositivos iOS, Android ou Windows, consulte [Personalizar, compilar e distribuir o aplicativo AEM Forms](#customize-build-distribute).
 

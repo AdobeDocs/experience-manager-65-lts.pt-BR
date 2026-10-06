@@ -8,12 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '646'
+ht-degree: 2%
 ---
 # Configure o projeto Android™ studio e crie o aplicativo Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Este artigo é para a criação do Aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -50,9 +55,9 @@ A imagem a seguir exibe a estrutura de diretório da pasta `android` na pasta `s
 
    **Para usuários do Windows®**: `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >No Windows®, é recomendável manter o projeto Android™ na unidade do sistema.
+>[!NOTE]
+>
+>No Windows®, é recomendável manter o projeto Android™ na unidade do sistema.
 
 1. Extraia o arquivo no seguinte diretório:
 
@@ -60,9 +65,9 @@ A imagem a seguir exibe a estrutura de diretório da pasta `android` na pasta `s
 
    **Para usuários do Windows®**: `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >É recomendável manter o projeto Android extraído na unidade do sistema antes de importar o projeto para o Android™ Studio.
+>[!NOTE]
+>
+>É recomendável manter o projeto Android extraído na unidade do sistema antes de importar o projeto para o Android™ Studio.
 
 1. Inicie o Android™ Studio.
 

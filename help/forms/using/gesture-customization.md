@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '371'
 ht-degree: 0%
 ---
 # Personalização de gesto {#gesture-customization}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 É possível personalizar os gestos do aplicativo AEM Forms para fornecer um método distinto de interação com o aplicativo. Por exemplo, é possível adicionar novos gestos para abrir ou fechar uma tarefa ou um ponto inicial.
 
@@ -50,9 +55,9 @@ No aplicativo AEM Forms, o deslizamento para a esquerda abre uma nova tarefa ou 
    * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > runtime > views**.
    * No Visual Studio, navegue até a pasta **MWSWindows > www > wsmobile > js > runtime > views**.
 
-   >[!NOTE]
-   >
-   >O arquivo task.js contém a exibição de backbone associada a cada tarefa ou Startpoint listado nas listas tarefa ou Startpoint.
+>[!NOTE]
+>
+>O arquivo task.js contém a exibição de backbone associada a cada tarefa ou Startpoint listado nas listas tarefa ou Startpoint.
 
 1. No arquivo `task.js`, pesquise a propriedade events da exibição.
 

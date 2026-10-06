@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '953'
 ht-degree: 1%
 ---
 # Personalização da marca {#branding-customization}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 É possível personalizar o ícone do aplicativo, o nome do aplicativo, as imagens de inicialização e a página de logon para fornecer uma aparência distinta e específica da organização para o aplicativo AEM Forms. Por exemplo, você pode alterar as imagens para usar logotipos da sua organização. O aplicativo AEM Forms é compatível com as seguintes personalizações:
 
@@ -60,9 +65,9 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 
    Faça upload deles para o projeto Capture para substituir arquivos existentes no projeto.
 
-   >[!NOTE]
-   >
-   >Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
+>[!NOTE]
+>
+>Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
 
 1. Crie e execute o aplicativo AEM Forms no dispositivo iOS ou no simulador iOS.
 
@@ -80,9 +85,9 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
 
-   >[!NOTE]
-   >
-   >Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
+>[!NOTE]
+>
+>Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
 
 1. Recrie o aplicativo AEM Forms.
 
@@ -96,9 +101,9 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
-   >[!NOTE]
-   >
-   >Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
+>[!NOTE]
+>
+>Verifique se o nome e a resolução da imagem correspondem à imagem substituída no projeto.
 
 1. Recrie o aplicativo AEM Forms.
 

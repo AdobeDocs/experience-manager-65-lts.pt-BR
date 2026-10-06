@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '449'
 ht-degree: 1%
 ---
 # Atualização de configurações gerais{#updating-general-settings}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 As configurações gerais do aplicativo AEM Forms permitem especificar configurações como busca de anexos, modo offline, tela de aterrissagem, categoria padrão e frequência de salvamento automático.
 
@@ -51,9 +56,9 @@ Na guia General, altere as configurações de download de anexos, modo offline, 
 
    tela Configurações gerais
 
-   >[!NOTE]
-   >
-   >As opções podem ser exibidas de forma diferente em diferentes dispositivos móveis.
+>[!NOTE]
+>
+>As opções podem ser exibidas de forma diferente em diferentes dispositivos móveis.
 
 ### Configurações gerais {#general-settings}
 

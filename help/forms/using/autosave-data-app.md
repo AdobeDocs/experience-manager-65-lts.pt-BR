@@ -26,12 +26,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '352'
 ht-degree: 0%
 ---
 # Uso do salvamento automático no aplicativo AEM Forms{#using-autosave-in-aem-forms-app}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Quando um usuário insere dados no aplicativo Adobe Experience Manager Forms, o recurso de salvamento automático os salva em intervalos regulares. O recurso de salvamento automático no aplicativo AEM Forms ajuda a evitar a perda de dados se o aplicativo for fechado acidentalmente.
 
@@ -56,4 +61,4 @@ Execute as seguintes etapas para usar o recurso de salvamento automático no apl
 1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você será solicitado a restaurar a tarefa com a caixa de diálogo Recuperar tarefa não salva. Clique em **OK** na caixa de diálogo Recuperar tarefa não salva para continuar a trabalhar com a tarefa salva. Você pode clicar em **Cancelar** para excluir os dados salvos correspondentes ao último salvamento automático acionado e começar a trabalhar com uma nova tarefa.
 
    Ao clicar em **OK**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionados antes da falha do aplicativo. Inclui os dados de formulário e todos os anexos associados à tarefa.
-   [![Recuperando uma tarefa &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** O aplicativo foi fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais
+   [![Recuperando uma tarefa ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** O aplicativo foi fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar Tarefa Não Salva **D.** Formulário restaurado com dados originais

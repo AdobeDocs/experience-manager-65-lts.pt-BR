@@ -8,12 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 840dadca-6691-4244-9383-7dbc8e14f0a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d8150dc7cb8ec161b875263ecfaaca6424ff629f
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '302'
 ht-degree: 0%
 ---
 # Distribuir o aplicativo AEM Forms {#distribute-aem-forms-app}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 O Gerenciamento de dispositivos móveis (MDM) permite a implantação em larga escala de aplicativos em dispositivos móveis.
 
