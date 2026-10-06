@@ -47,7 +47,7 @@ O código-fonte do aplicativo AEM Forms está disponível para os clientes por m
 
 O suporte ao aplicativo AEM Forms para Android e iOS foi descontinuado. Os aplicativos Android e iOS não estão mais disponíveis no Google Play ou no Apple App Store.
 
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar e distribuir o aplicativo em dispositivos iOS, Android ou Windows, consulte [Personalizar, compilar e distribuir o aplicativo AEM Forms](#customize-build-distribute).
 
