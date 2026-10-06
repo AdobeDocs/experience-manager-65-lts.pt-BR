@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '214'
 ht-degree: 0%
 ---
 # Logon no aplicativo Adobe Experience Manager Forms{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>As versões Android e iOS do aplicativo AEM Forms foram descontinuadas. A publicação do aplicativo Android na Google Play foi desfeita em setembro de 2026, e o aplicativo iOS foi removido do Apple App Store.
+>Estes aplicativos não estão mais disponíveis para instalação. Para obter ajuda com o aplicativo Android, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Ao iniciar o aplicativo Adobe Experience Manager (AEM) Forms, primeiro você deve fornecer suas credenciais de logon e um URL do servidor do AEM Forms.
 
@@ -39,12 +44,12 @@ Ao iniciar o aplicativo Adobe Experience Manager (AEM) Forms, primeiro você dev
 1. Selecione o ícone do aplicativo AEM Forms no seu dispositivo móvel.
 1. Para fazer logon no aplicativo, digite um nome de usuário, senha e URL do AEM Forms Server.
 
-   >[!NOTE]
-   >
-   >O aplicativo móvel armazena em cache todos os URLs do AEM Forms Server inseridos.
-   >
-   >    * Para exibir a lista de URLs do servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor.
-   >    * Selecione um URL do AEM Forms Server para fazer logon no por meio do aplicativo.
+>[!NOTE]
+>
+>O aplicativo móvel armazena em cache todos os URLs do AEM Forms Server inseridos.
+>
+>    * Para exibir a lista de URLs do servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor.
+>    * Selecione um URL do AEM Forms Server para fazer logon no por meio do aplicativo.
 
 Ao fazer logon no aplicativo, você é direcionado à [**tela inicial**](../../forms/using/home-screen.md).
 

@@ -9,12 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '838'
 ht-degree: 2%
 ---
 # Configurar o projeto Xcode e criar o aplicativo iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms para iOS foi descontinuado e removido do Apple App Store.
+>Ele não está mais disponível para instalação.
 
 O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo morto de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`, é parte do pacote `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de Software.
 
@@ -120,9 +125,9 @@ Para obter informações detalhadas sobre Assinatura de Código e adicionar disp
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >Esta etapa é necessária somente se o aplicativo AEM Forms precisar se conectar a um servidor que não siga os requisitos do App Transport Security.
+>[!NOTE]
+>
+>Esta etapa é necessária somente se o aplicativo AEM Forms precisar se conectar a um servidor que não siga os requisitos do App Transport Security.
 
 1. Em **PROJETO**, selecione **AEM Forms** e verifique se a assinatura apropriada está selecionada para a **Identidade de Assinatura do Código**, **Depuração**, **Versão** e **Qualquer iOS SDK**.
 1. Conectar um iPad provisionado a um computador Mac.
