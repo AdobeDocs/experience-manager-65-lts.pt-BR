@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **Hotfix Obrigatório** - Para evitar problemas de SNFE (SegmentNotFoundException) durante a compactação online no modo de espera, instale o hotfix descrito em [Problemas conhecidos - Corrupção do repositório durante a compactação online](#repository-corruption-during-online-compaction-granite-73045).
 
 ## O que está incluído no [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -645,6 +647,20 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 | Fonte aberta | `com.github.jknack.handlebars` não é compatível. | Escolha a [versão](https://mvnrepository.com/artifact/com.github.jknack/handlebars) adequada | 6.5 LTS GA |
 
 ## Problemas conhecidos {#known-issues}
+
+### Corrupção do repositório durante a compactação online no modo de espera (GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+Os usuários podem sofrer corrupção do repositório durante a compactação online se a instância estava em execução anteriormente como um Modo de espera forçado TarMK e foi posteriormente promovida para o principal. Um `SegmentNotFoundException` (SNFE) pode ocorrer neste cenário e pode levar à corrupção do repositório.
+
+Para resolver o problema, instale o Hotfix de [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip). Como o hotfix inclui um pacote de baixo nível `oak-segment-tar`, a instância é reiniciada após a instalação.
+
+Planeje o tempo de inatividade da instância ao aplicá-la. Para compactação offline, use o [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) correspondente, também disponível na Distribuição de Software.
+
+>[!NOTE]
+>
+> * Para qualquer operação `oak-run`, use o [`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar).
+>
+> * Inicie o AEM definindo a propriedade do sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true`.
 
 ### AEM Forms
 
