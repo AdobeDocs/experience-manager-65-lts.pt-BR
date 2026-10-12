@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **Hotfix Obrigatório** - Para evitar problemas de SNFE (SegmentNotFoundException) durante a compactação online no modo de espera, instale o hotfix descrito em [Problemas conhecidos - Corrupção do repositório durante a compactação online](#repository-corruption-during-online-compaction-granite-73045).
 
 ## O que está incluído no [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -373,8 +375,8 @@ Os seguintes problemas foram corrigidos para o AEM Forms no JEE no 6.5 LTS Servi
 
 Para instalar o AEM Forms 6.5 LTS SP3 no JEE, siga estas etapas para:
 
-1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
-1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
+1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
+1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
 1. Se seu projeto usa a biblioteca do cliente SDK `adobe-livecycle-client.jar`, atualize-a no classpath do projeto. A última versão está disponível em `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
@@ -522,7 +524,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -646,6 +648,20 @@ Esta seção lista os recursos e funcionalidades que foram removidas do AEM 6.5 
 
 ## Problemas conhecidos {#known-issues}
 
+### Corrupção do repositório durante a compactação online no modo de espera (GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+Os usuários podem sofrer corrupção do repositório durante a compactação online se a instância estava em execução anteriormente como um Modo de espera forçado TarMK e foi posteriormente promovida para o principal. Um `SegmentNotFoundException` (SNFE) pode ocorrer neste cenário e pode levar à corrupção do repositório.
+
+Para resolver o problema, instale o Hotfix de [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip). Como o hotfix inclui um pacote de baixo nível `oak-segment-tar`, a instância é reiniciada após a instalação.
+
+Planeje o tempo de inatividade da instância ao aplicá-la. Para compactação offline, use o [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) correspondente, também disponível na Distribuição de Software.
+
+>[!NOTE]
+>
+> * Para qualquer operação `oak-run`, use o [`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar).
+>
+> * Inicie o AEM definindo a propriedade do sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true`.
+
 ### AEM Forms
 
 * No Configuration Manager, a inicialização do banco de dados falha durante o bootstrap no AEM Forms 6.5 LTS JEE Turnkey no modo personalizado quando nenhum módulo ou apenas componentes limitados são selecionados. A falha se deve a uma dependência ausente (xalan-2.7.2.jar), resultando em um erro. Adicionar o arquivo JAR ao Adobe-livecycle-jboss.ear\lib resolve o problema. (FORMS-24690)
@@ -698,7 +714,7 @@ Baixe o pacote de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/do
 
 -->
 
-&#x200B;###
+###
 
 ### Falha de conexão do Dispatcher com o recurso somente SSL (corrigido no AEM 6.5 LTS SP1 e posterior){#ssl-only-feature}
 
@@ -738,5 +754,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
