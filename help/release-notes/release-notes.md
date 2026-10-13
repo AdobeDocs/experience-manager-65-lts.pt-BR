@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,23 @@ Para instalar o AEM Forms 6.5 LTS SP3 no JEE, siga estas etapas para:
 #### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
 
 * No **AEM Forms no JEE 6.5 LTS SP3**, a conversão de arquivos **PostScript (PS), EPS e PRN para o PDF** falha. O processo nativo `PsToPdfSvc` pode terminar inesperadamente, causando falha no trabalho de conversão com erros como `ALC-PDG-003-011` e `ALC-PDG-001-028`. Entre em contato com o Suporte ao cliente da Adobe para obter assistência. (FORMS-28152)
+
+No AEM Forms no JEE, as extensões do Reader não funcionam na plataforma WebSphere® Liberty Profile (WLP). O arquivo EAR incluído com o LTS SP3 não tem as bibliotecas obrigatórias do Bouncy Castle em seu classpath.
+
+**Solução alternativa**
+
+1. Acesse `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`.
+1. Abra `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF` e anexe essas entradas ao elemento `Class-Path`:
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. Reimplante o arquivo EAR modificado na pasta `dropins` do Perfil do WebSphere® Liberty:
+   1. Pare o servidor de Perfil do WebSphere® Liberty e exclua `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Exclua o diretório `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
+   1. Copie o arquivo EAR modificado da etapa 2 para `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Inicie o servidor de Perfil do WebSphere® Liberty.
 
 #### Correções de segurança {#forms-security-fixes-65-lts-sp3}
 
