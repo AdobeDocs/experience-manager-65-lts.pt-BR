@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
+source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
 workflow-type: tm+mt
-source-wordcount: '7882'
+source-wordcount: '7815'
 ht-degree: 21%
 ---
 
@@ -694,27 +694,6 @@ A falha é silenciosa: os nós de conteúdo não são carregados na ativação d
 >[!CAUTION]
 >
 > Para evitar falhas de carregamento de conteúdo após a atualização para o AEM 6.5 LTS SP2, remova todos os comentários dos arquivos JSON em seus pacotes `Sling-Initial-Content`.
-
-<!--
-### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-O AEM 6.5 LTS SP3 atualiza o pacote `jackson`. Essa alteração afeta implantações que usam o conector de tradução GlobalLink.
-
-Se você usar o pacote `gs4tr-globallink-adaptors-aem.core` em uma versão anterior à 3.4.0, atualize o pacote para uma versão compatível. A versão 3.4.0 ou posterior funciona com o pacote `jackson` atualizado no SP3.
-
->[!NOTE]
->
-> Atualize o pacote `gs4tr-globallink-adaptors-aem.core` para a versão 3.4.0 ou posterior, antes ou durante a atualização do SP3, para evitar problemas de compatibilidade com o conector GlobalLink.
-
 
 ### Instale os índices Oak necessários para as APIs do Sites Headless{#site-headless-api}
 
