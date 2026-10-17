@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 1%
@@ -256,4 +256,4 @@ Faça o seguinte para executar o teste:
 
 >[!NOTE]
 >
-> Você pode criar e usar a configuração da Lista do SharePoint usando o Modelo de dados de formulário em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Consulte [Conectar um formulário adaptável à Lista do Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) para ver as etapas detalhadas.
+> Você pode criar e usar a configuração da Lista do SharePoint usando o Modelo de dados de formulário em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Consulte [Conectar um formulário adaptável à Lista do Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list) para ver as etapas detalhadas.

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 4%
@@ -45,8 +45,8 @@ Este artigo discute como os autores de formulários podem adicionar ajuda em con
 
 Você pode especificar a ajuda em contexto usando as seguintes opções na seção Conteúdo da Ajuda da guia de propriedades na barra lateral.
 
-* [Descrição curta](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [Descrição longa](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [Descrição curta](../../forms/using/authoring-in-field-help.md#short-description)
+* [Descrição longa](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![Ajuda em contexto para campos de formulário](assets/descriptions.png)
 

@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
@@ -94,7 +94,7 @@ O **Parâmetro** é uma lista de argumentos usados por funções personalizadas.
   * date[]: representa uma matriz de valores de data.
   * array: representa uma matriz genérica contendo valores de vários tipos.
   * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
-  * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário nas funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível para o editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário nas funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível para o editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects)
 
 O tipo Parameter é **não diferencia maiúsculas de minúsculas** e espaços não são permitidos no nome do parâmetro.
 
@@ -543,7 +543,7 @@ Agora, é possível criar uma regra para usar funções personalizadas no editor
 
 ![Adicionando a biblioteca cliente de função personalizada](/help/forms/using//assets/calculateage-customfunction.png)
 
-Agora, vamos entender como configurar e usar uma função personalizada usando o serviço Chamar do [Editor de regras no AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+Agora, vamos entender como configurar e usar uma função personalizada usando o serviço Chamar do [Editor de regras no AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke)
 
 ## Utilização da função personalizada em um formulário adaptável {#use-custom-functions}
 

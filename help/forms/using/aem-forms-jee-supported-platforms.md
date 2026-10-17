@@ -27,7 +27,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 1%
@@ -314,7 +314,7 @@ Além disso, considere os seguintes pontos ao escolher o software para Adobe AEM
 
 - Atualizações de suporte e fix packs do AEM Forms no JEE sobre a versão principal e secundária do software compatível. No entanto, não há suporte para a atualização para a próxima versão principal ou secundária, a menos que especificado.
 - Instalações baseadas em cluster não dão suporte à persistência TarMK. Para obter informações sobre a persistência com suporte, consulte [Escolha de um tipo de persistência para uma instalação do AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- O AEM Forms no JEE oferece suporte a vários softwares de terceiros de acordo com a [Política de suporte a software de terceiros](#third-party-patch-support-policy-third-party-patch-support-policy) da Adobe.
+- O AEM Forms no JEE oferece suporte a vários softwares de terceiros de acordo com a [Política de suporte a software de terceiros](#third-party-patch-support-policy) da Adobe.
 - AEM Forms em plataformas de suporte JEE de acordo com o suporte fornecido por fornecedores terceirizados. Algumas combinações podem não ser permitidas por fornecedores de terceiros. Por exemplo, muitos fornecedores não certificaram seus servidores de aplicativos com o Oracle. Como resultado, o AEM Forms no JEE também não é compatível com essas combinações. Para garantir que você escolha as versões de software compatíveis, verifique também a matriz de suporte para outros fornecedores.
 - O AEM Forms no JEE não é compatível com TarMK Cold Standby.
 - O AEM Forms no JEE não é compatível com clustering vertical.

@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Você também pode configurar o cache de formulários adaptáveis no Dispatcher 
   * Use o formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [Desabilitar usando localidade do navegador](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
   * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está desabilitado, a versão não localizada do formulário adaptável é fornecida. O idioma não localizado é o idioma usado no desenvolvimento do formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é considerada e uma versão não localizada do formulário adaptável é fornecida.
-  * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está habilitado, uma versão localizada do formulário adaptável é fornecida, se disponível. O idioma do formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Isso pode levar ao [armazenamento em cache somente a primeira instância de um formulário adaptável]. Para evitar que o problema ocorra em sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está habilitado, uma versão localizada do formulário adaptável é fornecida, se disponível. O idioma do formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Isso pode levar ao [armazenamento em cache somente a primeira instância de um formulário adaptável]. Para evitar que o problema ocorra em sua instância, consulte [solução de problemas](#only-first-instance-of-adaptive-forms-is-cached).
 
 ### Ativar o armazenamento em cache no Dispatcher
 

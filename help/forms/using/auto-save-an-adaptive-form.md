@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Para um formulário adaptável, a opção de salvamento automático não é ativ
    * Especifique um intervalo se você selecionar o acionador **[!UICONTROL Baseado em tempo]**.
    * Especifique um nome de evento se você selecionar o acionador **[!UICONTROL Baseado em evento]**.
 
-   Você também pode criar e adicionar sua própria estratégia personalizada à lista. Para obter detalhes, consulte [Implementar uma estratégia personalizada para salvar automaticamente os formulários](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   Você também pode criar e adicionar sua própria estratégia personalizada à lista. Para obter detalhes, consulte [Implementar uma estratégia personalizada para salvar automaticamente os formulários](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms).
 
 1. (Somente salvamento automático baseado em tempo) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em tempo.
 

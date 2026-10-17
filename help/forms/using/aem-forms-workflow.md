@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 1%
@@ -288,7 +288,7 @@ Você pode usar as etapas Atribuir tarefa e Enviar email dos fluxos de trabalho 
 
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) limpeza de instâncias de fluxo de trabalho.
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances) limpeza de instâncias de fluxo de trabalho.
 
 ## Parametrizar dados sigilosos para variáveis de fluxo de trabalho e armazená-los em armazenamentos de dados externos {#externalize-wf-variables}
 

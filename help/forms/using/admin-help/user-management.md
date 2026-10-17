@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 O Gerenciamento de usuários permite habilitar o logon único (SSO) entre módulos de formulários do AEM e aplicativos protegidos pelo Netegrity SiteMinder usando a SAML (Security Assertion Markup Language). Quando o SSO é implementado, as páginas de logon do usuário dos formulários do AEM não são necessárias e não são exibidas se o usuário já estiver autenticado por meio do portal da empresa.
 
-Para obter informações sobre como melhorar o desempenho da sincronização de diretório e banco de dados para DB2, consulte [Banco de dados IBM DB2: Executando comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Para obter informações sobre como melhorar o desempenho da sincronização de diretório e banco de dados para DB2, consulte [Banco de dados IBM DB2: Executando comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance).
 
 ## Configurando o Gerenciamento de Usuários para um servidor LDAP habilitado para SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

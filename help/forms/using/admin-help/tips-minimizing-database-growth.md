@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -50,4 +50,4 @@ Use tipos de variáveis simples (por exemplo, string ou int) e evite usar tipos 
 
 Use o armazenamento global de documentos (GDS) com eficiência. O diretório GDS no servidor do Forms é usado para armazenar, entre outras coisas, arquivos que são passados para serviços que fazem parte de formulários do AEM em processos. Para melhorar o desempenho, documentos menores são armazenados na memória e mantidos no banco de dados.
 
-O console de administração expõe a propriedade Default Document Max Inline Size para configurar o tamanho máximo de documentos armazenados na memória e mantidos no banco de dados. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Se você definir essa propriedade com um valor baixo, a maioria dos documentos será mantida no diretório GDS em vez de no banco de dados. A vantagem é que você pode excluir mais facilmente os arquivos quando eles não são mais necessários quando eles são armazenados no diretório GDS.
+O console de administração expõe a propriedade Default Document Max Inline Size para configurar o tamanho máximo de documentos armazenados na memória e mantidos no banco de dados. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).) Se você definir essa propriedade com um valor baixo, a maioria dos documentos será mantida no diretório GDS em vez de no banco de dados. A vantagem é que você pode excluir mais facilmente os arquivos quando eles não são mais necessários quando eles são armazenados no diretório GDS.

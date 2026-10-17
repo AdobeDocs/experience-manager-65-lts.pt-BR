@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -58,6 +58,6 @@ Se você excluir um ativo da instância do Autor, o ativo também será excluíd
 
 No AEM Forms, um modelo de formulário XFA pode ser referenciado por um formulário adaptável ou outro modelo de formulário XFA. Além disso, um modelo pode se referir a um recurso ou outro modelo XFA.
 
-Não é aconselhável excluir um formulário XFA que esteja sendo referenciado por um formulário adaptável, pois ele pode corromper o formulário adaptável. Quando um formulário adaptável se refere a um formulário XFA, seus campos são vinculados. Após a exclusão de XFA, o formulário adaptável não pode sincronizar seus campos com os campos XFA e exibe uma mensagem de erro para esses campos. Para saber mais sobre o impacto da exclusão XFA referenciada e sobre AFs sujos, consulte [Atualização de formulários XFA referenciados](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+Não é aconselhável excluir um formulário XFA que esteja sendo referenciado por um formulário adaptável, pois ele pode corromper o formulário adaptável. Quando um formulário adaptável se refere a um formulário XFA, seus campos são vinculados. Após a exclusão de XFA, o formulário adaptável não pode sincronizar seus campos com os campos XFA e exibe uma mensagem de erro para esses campos. Para saber mais sobre o impacto da exclusão XFA referenciada e sobre AFs sujos, consulte [Atualização de formulários XFA referenciados](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms).
 
 Para excluir esse formulário XFA, atualize o formulário adaptável e remova as associações com os campos XFA.

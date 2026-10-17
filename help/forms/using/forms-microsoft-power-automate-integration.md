@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Você pode configurar um Formulário adaptável para executar um fluxo da nuvem 
 * Realizar cálculos complexos em dados capturados
 * Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
 
-O editor Forms adaptável fornece a **ação de envio Chamar um fluxo do Microsoft® Power Automate** para enviar dados de formulários adaptáveis, anexos e Documentos de Registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância de autor do AEM Forms com o Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+O editor Forms adaptável fornece a **ação de envio Chamar um fluxo do Microsoft® Power Automate** para enviar dados de formulários adaptáveis, anexos e Documentos de Registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância de autor do AEM Forms com o Microsoft® Power Automate](#connect-forms-server-with-power-automate)
 
 ## Pré-requisitos
 

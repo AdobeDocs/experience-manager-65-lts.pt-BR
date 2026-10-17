@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 2%
@@ -433,7 +433,7 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
   * **Cor de Ênfase:** Você pode predefinir a Cor do modelo do [!UICONTROL Documento de Registro].
   * **Família da Fonte:** Selecione o tipo de fonte para os textos do [!UICONTROL Documento de Registro].
   * **Incluir campos não associados em DoR:** A configuração da propriedade inclui campos não associados do formulário adaptável baseado em esquema no [!UICONTROL Documento de Registro]. Por padrão, é verdadeiro.
-  * **Excluir campos do DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do [!UICONTROL Documento de Registro] no envio do formulário. Ao habilitar [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos do [!UICONTROL Documento de Registro]
+  * **Excluir campos do DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do [!UICONTROL Documento de Registro] no envio do formulário. Ao habilitar [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos do [!UICONTROL Documento de Registro]
 * **[!UICONTROL PROPRIEDADES DO CAMPO DE FORMULÁRIO]**
   * Se você marcar a opção **Para os componentes Caixa de Seleção e Botão de Opção, mostrar somente os valores selecionados**, ela gerará a saída do DoR somente com os valores selecionados.
   * Você pode selecionar Separador para vários valores selecionados ou escolher qualquer outro tipo de separador.

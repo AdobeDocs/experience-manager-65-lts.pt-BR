@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 2%
@@ -289,7 +289,7 @@ Clique no título a qualquer momento para voltar à tela inicial.
 
 A Hora da Última Atualização exibe a última data e hora até as quais as atualizações de dados foram enviadas para o repositório do Process Reporting.
 
-Para obter detalhes sobre o serviço de publicação de dados e como agendar esse serviço, consulte [Agendar publicação de dados do processo](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) no artigo Introdução aos relatórios do processo.
+Para obter detalhes sobre o serviço de publicação de dados e como agendar esse serviço, consulte [Agendar publicação de dados do processo](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing) no artigo Introdução aos relatórios do processo.
 
 **Usuário do Process Reporting:** O nome de usuário conectado é exibido à direita do horário Última Atualização.
 

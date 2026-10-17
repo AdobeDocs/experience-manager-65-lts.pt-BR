@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 2%
@@ -181,7 +181,7 @@ Após executar o utilitário de migração, cuide das seguintes tarefas de manut
 
 1. Verifique se a versão XFA de layouts e layouts de fragmento é a 3.3 ou posterior. Se estiver usando layouts e layouts de fragmento de uma versão mais antiga, pode haver problemas na renderização da correspondência. Para atualizar uma versão de um XFA mais antigo para a versão mais recente, siga estas etapas:
 
-   1. [Baixe o XFA como um arquivo zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) da interface do usuário do Forms.
+   1. [Baixe o XFA como um arquivo zip](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management) da interface do usuário do Forms.
    1. Extraia o arquivo.
    1. Abra o arquivo XFA na Designer mais recente e salve-o. A versão do XFA é atualizada para a mais recente.
    1. Faça upload do XFA na interface do usuário do Forms.

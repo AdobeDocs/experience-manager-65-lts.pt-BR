@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Para obter as etapas para configurar referenciadores permitidos, consulte [Confi
 
 ### Atribuir funções a usuários e grupos
 
-Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups).
 
 ## Habilitar SSO usando SPNEGO {#enable-sso-using-spnego}
 
@@ -198,7 +198,7 @@ Se o servidor for acessado usando o nome do computador, como https://lcserver:80
 
 1. Teste a configuração acessando o aplicativo. A página de boas-vindas do aplicativo de destino deve ser exibida.
 
-Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups).
 
 ## Atribuir funções a usuários e grupos {#assign-roles-to-users-groups}
 

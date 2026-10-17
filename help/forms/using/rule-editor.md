@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 0%
@@ -215,7 +215,7 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 **Remover instância** Remove uma instância do painel ou linha de tabela repetível especificado.
 
-**Navegar até** Navega até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. Para obter mais informações, consulte [Adicionar botão à Comunicação Interativa](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegar até** Navega até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. Para obter mais informações, consulte [Adicionar botão à Comunicação Interativa](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel).
 
 ### Definir valor de {#set-value-of}
 

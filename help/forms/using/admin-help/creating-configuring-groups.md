@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 0%
@@ -42,7 +42,7 @@ A criação de grupos de usuários permite atribuir funções ao grupo em vez de
 
 Dois tipos diferentes de grupos estão disponíveis. Você pode criar um grupo manualmente e adicionar usuários e outros grupos a ele. Você também pode criar grupos dinâmicos que incluam automaticamente todos os usuários que atendam a um conjunto específico de regras.
 
-Os usuários podem enfrentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem aninhados profundamente (por exemplo, 30 níveis). Se você estiver com esse problema, poderá configurar o AEM Forms para buscar previamente informações de determinados domínios. (Consulte [Configurar formulários do AEM para realizar uma busca prévia por informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
+Os usuários podem enfrentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem aninhados profundamente (por exemplo, 30 níveis). Se você estiver com esse problema, poderá configurar o AEM Forms para buscar previamente informações de determinados domínios. (Consulte [Configurar formulários do AEM para realizar uma busca prévia por informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetchdomain-information).)
 
 ## Criar um grupo manualmente {#create-a-group-manually}
 

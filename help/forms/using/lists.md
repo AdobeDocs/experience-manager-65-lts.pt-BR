@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6927'
 ht-degree: 0%
@@ -65,7 +65,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 
    O verificador ortográfico padrão do navegador verifica a ortografia no editor de texto. Para gerenciar a verificação ortográfica e gramatical, você pode editar as configurações do verificador ortográfico do navegador ou instalar plug-ins/complementos do navegador para verificar a ortografia e a gramática.
 
-   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar texto. Para obter mais informações sobre [Atalhos de teclado do Editor de Texto](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) em Atalhos de Teclado do Gerenciamento de Correspondências.
+   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar texto. Para obter mais informações sobre [Atalhos de teclado do Editor de Texto](/help/forms/using/keyboard-shortcuts.md#formatting) em Atalhos de Teclado do Gerenciamento de Correspondências.
 
 1. Um editor de texto é aberto, insira o texto. Use a barra de ferramentas na parte superior da página para formatar o texto, inserir condições, links e quebras de página.
 
@@ -501,7 +501,7 @@ Este exemplo mostra como criar uma tabela dinâmica e uma tabela estática, vinc
 
    Em seguida, selecione DD e exporte dados de amostra. O arquivo XML que você obtém contém dados de Funcionário e três instâncias para Nominee_details (por padrão, são baixadas 3 instâncias. É possível adicionar ou excluir de acordo com sua necessidade). Atualize os valores e importe os dados de teste em DD. O arquivo CMP é o pacote e contém o DD. Portanto, importe o DD para o Gerenciamento de correspondência.
 
-   Para obter mais informações sobre como trabalhar com o Dicionário de Dados e dados de teste, consulte [Dicionário de Dados](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Para obter mais informações sobre como trabalhar com o Dicionário de Dados e dados de teste, consulte [Dicionário de Dados](/help/forms/using/data-dictionary.md#working-with-test-data).
 
    ![Estrutura do dicionário de dados](assets/dd.jpeg)
 

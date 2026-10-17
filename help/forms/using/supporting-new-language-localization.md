@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -81,13 +81,13 @@ Atualmente, o AEM Forms oferece suporte à localização de conteúdo de formul�
 
 Para adicionar suporte para um novo local no tempo de execução dos formulários adaptáveis:
 
-1. [Adicionar uma localidade ao serviço GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [Adicionar uma localidade ao serviço GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [Adicionar biblioteca do cliente XFA para uma localidade](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [Adicionar biblioteca do cliente XFA para uma localidade](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [Adicionar biblioteca de cliente de formulário adaptável para uma localidade](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Adicionar suporte de localidade para o dicionário](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Reiniciar o servidor](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [Adicionar biblioteca de cliente de formulário adaptável para uma localidade](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [Adicionar suporte de localidade para o dicionário](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [Reiniciar o servidor](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### Adicionar uma localidade ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
 

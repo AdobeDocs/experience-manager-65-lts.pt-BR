@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Os administradores do AEM Forms personalizam o espaço de trabalho para criar do
 
 Siga estas etapas para configurar o espaço de trabalho do AEM Forms.
 
-1. Instale o pacote dev do espaço de trabalho do AEM Forms em seu servidor. Consulte [pacote dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), para obter instruções sobre como criá-lo.
+1. Instale o pacote dev do espaço de trabalho do AEM Forms em seu servidor. Consulte [pacote dev](/help/forms/using/introduction-customizing-html-workspace.md#crx-package), para obter instruções sobre como criá-lo.
 1. Faça logon no CRXDE Lite como administrador acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie o nó ws em /content e cole em /content. Renomeie o nó para ws2. Clique em **[!UICONTROL Salvar tudo]**. Nas propriedades deste nó, altere o valor de `sling:resourceType` para ws2. Clique em **[!UICONTROL Salvar tudo]**.
 

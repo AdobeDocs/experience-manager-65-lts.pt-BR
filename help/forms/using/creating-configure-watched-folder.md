@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Antes de configurar uma pasta monitorada, verifique o seguinte:
 
 * As pastas monitoradas são um recurso avançado dos formulários do AEM. Ele requer o pacote complementar do AEM Forms para funcionar. Verifique se o pacote complementar apropriado do AEM Forms está instalado e configurado.
 * Você pode criar a pasta monitorada em um armazenamento compartilhado ou em um armazenamento local. Verifique se o usuário do AEM Forms configurado para executar a pasta monitorada tem permissões de leitura e gravação nessa pasta.
-* Você pode usar um Serviço, Fluxo de trabalho ou Script para automatizar uma operação com a pasta monitorada. Verifique se o Serviço, Fluxo de trabalho ou Script correspondente foi criado e está pronto para ser executado. Para obter informações sobre como criar um Serviço, Fluxo de Trabalho e Script, consulte [Vários métodos de processamento de arquivos](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Você pode usar um Serviço, Fluxo de trabalho ou Script para automatizar uma operação com a pasta monitorada. Verifique se o Serviço, Fluxo de trabalho ou Script correspondente foi criado e está pronto para ser executado. Para obter informações sobre como criar um Serviço, Fluxo de Trabalho e Script, consulte [Vários métodos de processamento de arquivos](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles).
 * Uma pasta monitorada tem várias propriedades, consulte [Propriedades da pasta monitorada](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Execute as seguintes etapas para criar uma pasta monitorada:

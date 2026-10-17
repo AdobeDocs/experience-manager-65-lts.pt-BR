@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
   * Para personalizar o layout dos componentes de formulário adaptáveis prontos para uso em /libs, [crie componentes de layout personalizados](/help/forms/using/custom-layout-components-forms.md), além dos [layouts padrão](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Introduza interatividades personalizadas criando widgets ou aparências personalizados. Não é recomendável modificar componentes padrão. Para obter mais informações, consulte [Estrutura de aparência](/help/forms/using/introduction-widgets.md).
 
-* Consulte [Manipulando informações de identificação pessoal](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) para obter recomendações sobre como manipular dados de PII.
+* Consulte [Manipulando informações de identificação pessoal](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information) para obter recomendações sobre como manipular dados de PII.
 
 ### Criação de modelos de formulário
 
@@ -288,7 +288,7 @@ Para obter mais informações, consulte [Plug-in do AEM Chrome - Formulário ada
 
 As validações do lado do servidor são necessárias para impedir qualquer tentativa de ignorar validações no cliente e qualquer possível comprometimento de envios de dados e violações de regras de negócios. As validações do lado do servidor são executadas no servidor carregando a biblioteca do cliente necessária.
 
-* Inclua funções em uma biblioteca do cliente para validar expressões em formulários adaptáveis e especifique a biblioteca do cliente na caixa de diálogo do contêiner de formulários adaptáveis. Para obter mais informações, consulte [Revalidação do lado do servidor](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Inclua funções em uma biblioteca do cliente para validar expressões em formulários adaptáveis e especifique a biblioteca do cliente na caixa de diálogo do contêiner de formulários adaptáveis. Para obter mais informações, consulte [Revalidação do lado do servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como o estilo do HTML e a manipulação de DOM na mesma biblioteca do cliente.
 
 ### Localização de formulários adaptáveis {#localizing-adaptive-forms}

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Por padrão, o AEM Forms armazena dados do usuário associados ao rascunho e ao 
 
 No entanto, os componentes do AEM Forms Portal fornecem serviços de dados que permitem personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
 
-Para personalizar o armazenamento de dados do usuário, você deve implementar os serviços [Dados de Rascunho](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dados de Envio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Para personalizar o armazenamento de dados do usuário, você deve implementar os serviços [Dados de Rascunho](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) e [Dados de Envio](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service).
 
 ## Pré-requisitos {#prerequisites}
 

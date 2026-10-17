@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 14%
@@ -32,7 +32,7 @@ ht-degree: 14%
 
 A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5 LTS. Para continuar usando as letras no AEM Forms 6.5 LTS, é necessário instalar o [pacote de Compatibilidade do AEMFD](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) mais recente.
 
-O pacote de Compatibilidade do AEMFD também permite [usar os seguintes ativos do AEM Forms 6.5.22.0, 6.4, 6.3 e 6.2 no AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+O pacote de Compatibilidade do AEMFD também permite [usar os seguintes ativos do AEM Forms 6.5.22.0, 6.4, 6.3 e 6.2 no AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts)
 
 * Fragmentos do documento
 * Cartas

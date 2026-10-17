@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -136,7 +136,7 @@ Para compartilhar ativos, como dicionários de dados, cartas e fragmentos de doc
 
 Use essa opção para baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote de uma instância do AEM Forms.
 
-Por exemplo, se o Gerenciamento de correspondências tiver uma correspondência que use uma imagem e texto, o pacote baixado também conterá a imagem e o texto relacionado à correspondência. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas. Depois de baixar o pacote (.cmp), você pode [importar o pacote para outra instância do AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Por exemplo, se o Gerenciamento de correspondências tiver uma correspondência que use uma imagem e texto, o pacote baixado também conterá a imagem e o texto relacionado à correspondência. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas. Depois de baixar o pacote (.cmp), você pode [importar o pacote para outra instância do AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 Para baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote, siga estas etapas:
 
@@ -161,7 +161,7 @@ Para baixar todos os ativos do Gerenciamento de correspondências e dependência
 
 1. Selecione o link **Baixar Pacote Exportado** para baixar o arquivo de pacote.
 
-   Para adicionar os ativos do pacote a outra instância do Gerenciamento de Correspondências, [importe o pacote para uma instância do AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Para adicionar os ativos do pacote a outra instância do Gerenciamento de Correspondências, [importe o pacote para uma instância do AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 ### Importar fragmentos de documento, cartas e/ou dicionários de dados para o gerenciamento de correspondência {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
