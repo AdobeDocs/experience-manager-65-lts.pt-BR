@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Além do servidor JBoss®, você pode adicionar o argumento -Dabtesting.enabled=
 
 >[!NOTE]
 >
->Se você atualizar os URLs do Target configurados posteriormente, atualize todos os testes A/B em execução para que eles apontem para os URLs atuais. Para obter informações sobre como atualizar testes A/B, consulte [Atualizar teste A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>Se você atualizar os URLs do Target configurados posteriormente, atualize todos os testes A/B em execução para que eles apontem para os URLs atuais. Para obter informações sobre como atualizar testes A/B, consulte [Atualizar teste A/B](/help/forms/using/ab-testing-adaptive-forms.md#update-a-b-test).
 >
 
 ## Criar públicos-alvo no AEM {#create-audiences-within-aem}

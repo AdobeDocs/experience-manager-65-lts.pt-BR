@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 2%
@@ -39,7 +39,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html).
 
 ## Introdução ao carregamento lento {#introduction-to-lazy-loading}
 
@@ -59,7 +59,7 @@ Você pode configurar apenas fragmentos de formulário adaptáveis para carregam
 * **Identificar e marcar valores globais**
 As transações baseadas em Forms envolvem elementos dinâmicos para capturar dados relevantes de usuários e processá-los para simplificar a experiência de preenchimento de formulário. Por exemplo, o formulário tem o campo A no fragmento X cujo valor determina a validade do campo B em outro fragmento. Nesse caso, se o fragmento X estiver marcado para carregamento lento, o valor do campo A deverá estar disponível para validar o campo B, mesmo quando o fragmento X não estiver carregado. Para isso, você pode marcar o campo A como global, o que garante que seu valor esteja disponível para validar o campo B quando o fragmento X não estiver carregado.
 
-  Para obter informações sobre como tornar global um valor de campo, consulte [Configurando carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Para obter informações sobre como tornar global um valor de campo, consulte [Configurando carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading).
 
 * **Escreva regras para controlar a visibilidade dos campos**
 O Forms inclui alguns campos e seções que não se aplicam a todos os usuários e em todas as condições. Os autores e desenvolvedores do Forms usam as regras de visibilidade ou mostrar-ocultar para controlar sua visibilidade com base nas entradas do usuário. Por exemplo, o campo Endereço Comercial não é exibido para os usuários que escolhem Desempregado no campo Status do Emprego em um formulário. Para obter mais informações sobre como gravar regras, consulte [Usando o editor de regras](../../forms/using/rule-editor.md).

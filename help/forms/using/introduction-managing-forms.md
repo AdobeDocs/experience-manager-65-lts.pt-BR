@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 1%
@@ -114,8 +114,8 @@ O painel Ferramentas do AEM contém ferramentas para vários componentes. Para n
   ![Ferramentas do AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurar o PDF Generator:** Um administrador pode definir as configurações do PDF Generator do AEM [!DNL Forms], adicionar contas de usuário e importar ou exportar a configuração para o PDF Generator.
-* **O Gerenciamento de Correspondências de Publicação Assets:** O AEM [!DNL Forms] permite que você publique de uma só vez todas as Cartas, Fragmentos de Documento e Dicionários de Dados, bem como todas as dependências relacionadas de uma instância de autor. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas. Para obter informações detalhadas, consulte [Publicar e desfazer a publicação de formulários e documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Exportar Assets do Gerenciamento de Correspondências:** você pode baixar todos os ativos do Gerenciamento de Correspondências e dependências relacionadas como um pacote de uma instância do AEM [!DNL Forms]. Para obter etapas detalhadas, consulte [Importar e exportar ativos para o AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **O Gerenciamento de Correspondências de Publicação Assets:** O AEM [!DNL Forms] permite que você publique de uma só vez todas as Cartas, Fragmentos de Documento e Dicionários de Dados, bem como todas as dependências relacionadas de uma instância de autor. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas. Para obter informações detalhadas, consulte [Publicar e desfazer a publicação de formulários e documentos](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets).
+* **Exportar Assets do Gerenciamento de Correspondências:** você pode baixar todos os ativos do Gerenciamento de Correspondências e dependências relacionadas como um pacote de uma instância do AEM [!DNL Forms]. Para obter etapas detalhadas, consulte [Importar e exportar ativos para o AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## Elementos comuns da interface do usuário {#commonelements}
 

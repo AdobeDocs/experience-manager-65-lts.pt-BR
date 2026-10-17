@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 0%
@@ -146,9 +146,9 @@ Depois que o modelo do projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">&lbrace;
+   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
+      }</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -179,7 +179,7 @@ Depois que o modelo do projeto for criado, faça as seguintes alterações, conf
    * O método `getEventMap` mapeia eventos acionados pelo widget, com os eventos exigidos pelo modelo de formulário adaptável. O valor padrão mapeia eventos HTML padrão para o widget padrão e precisa ser atualizado se um evento alternativo for acionado.
    * `showDisplayValue` e `showValue` aplicam a cláusula de exibição e edição de imagem e podem ser substituídas para terem um comportamento alternativo.
 
-   * O método `getCommitValue` é chamado pela estrutura de formulários adaptáveis quando o evento `commit` ocorre. Geralmente, é o evento de saída, exceto os elementos de lista suspensa, botão de opção e caixa de seleção (onde ocorre na alteração). Para obter mais informações, consulte [Expressões Forms adaptáveis](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * O método `getCommitValue` é chamado pela estrutura de formulários adaptáveis quando o evento `commit` ocorre. Geralmente, é o evento de saída, exceto os elementos de lista suspensa, botão de opção e caixa de seleção (onde ocorre na alteração). Para obter mais informações, consulte [Expressões Forms adaptáveis](../../forms/using/adaptive-form-expressions.md#value-commit-script).
 
    * O arquivo de modelo fornece uma implementação de amostra para vários métodos. Remova os métodos que não devem ser estendidos.
 

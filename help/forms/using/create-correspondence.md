@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    >[!NOTE]
    >
-   >Se um dicionário de dados não estiver associado à correspondência, a pré-visualização da correspondência será aberta. Caso contrário, se a correspondência for baseada no dicionário de dados, o Gerenciamento de correspondências exibirá as opções Visualizar e Personalizar no menu Visualizar e você poderá selecionar uma das duas opções. Você também pode associar dados de teste a um dicionário de dados. Quando o [Dicionário de Dados tem dados de teste associados](../../forms/using/data-dictionary.md#p-working-with-test-data-p), ao selecionar a opção de visualização, a visualização normal é aberta com os dados de teste preenchidos.
+   >Se um dicionário de dados não estiver associado à correspondência, a pré-visualização da correspondência será aberta. Caso contrário, se a correspondência for baseada no dicionário de dados, o Gerenciamento de correspondências exibirá as opções Visualizar e Personalizar no menu Visualizar e você poderá selecionar uma das duas opções. Você também pode associar dados de teste a um dicionário de dados. Quando o [Dicionário de Dados tem dados de teste associados](../../forms/using/data-dictionary.md#working-with-test-data), ao selecionar a opção de visualização, a visualização normal é aberta com os dados de teste preenchidos.
 
 1. Para poder renderizar uma correspondência ao pré-visualizá-la, você deve ser um administrador ou parte de um dos seguintes grupos:
 
@@ -58,7 +58,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    Se você não tiver as permissões necessárias, solicite o acesso apropriado ao administrador. Para obter mais informações sobre como criar e adicionar usuários a grupos, consulte [Adicionando Usuários ou Grupos a um Grupo](/help/sites-administering/security.md). Se você tentar renderizar uma correspondência sem ter as permissões apropriadas, a página de erro 404 é exibida.
 
-1. Se você selecionou **Visualizar** > **Personalizar**, uma caixa de diálogo será aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para visualizar a correspondência com e, em seguida, selecione **Visualizar**. Um arquivo de dados é criado com base em um dicionário de dados de uma correspondência específica. Para obter mais informações sobre o arquivo de dados, consulte [Dicionário de Dados](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Se você selecionou **Visualizar** > **Personalizar**, uma caixa de diálogo será aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para visualizar a correspondência com e, em seguida, selecione **Visualizar**. Um arquivo de dados é criado com base em um dicionário de dados de uma correspondência específica. Para obter mais informações sobre o arquivo de dados, consulte [Dicionário de Dados](../../forms/using/data-dictionary.md#working-with-test-data).
 
    ![Visualizar carta](assets/8_previewcustomdatafile.png)
 
@@ -70,7 +70,7 @@ Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Para obter mais informações sobre como alternar entre o modo de representação de pré-visualização de correspondência do HTML ou do PDF, consulte [Alterar modo de representação de carta](#changerenditionmode). Para obter mais informações sobre o suporte do PDF no Gerenciamento de correspondência e no AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Inserir dados {#enterdata}
 
@@ -254,7 +254,7 @@ Você pode fazer alterações no layout e no conteúdo para garantir que a corre
 
    ![Quebra de página explícita](assets/8_pagebreak.png)
 
-1. Para salvar a carta como rascunho, na qual você poderá continuar trabalhando posteriormente, selecione Salvar como rascunho. Para usar esta opção, sua carta precisa ser [publicada](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de cartas](#savingdrafts).
+1. Para salvar a carta como rascunho, na qual você poderá continuar trabalhando posteriormente, selecione Salvar como rascunho. Para usar esta opção, sua carta precisa ser [publicada](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de cartas](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ Quando uma correspondência é renderizada na interface do usuário Criar corres
 
 Há dois tipos de instâncias de correspondência que podem ser salvas: Instância de rascunho e Instância de envio.
 
-* **Instância de rascunho**: a instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). É necessário Publicar uma carta antes de salvá-la como rascunho, pois, ao publicá-la, você cria uma versão da carta, seus ativos dependentes e dados nesse ponto. A versão publicada de uma correspondência não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas em relação à versão publicada. Você pode retornar para essa instância mais tarde e continuar de onde parou.
+* **Instância de rascunho**: a instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). É necessário Publicar uma carta antes de salvá-la como rascunho, pois, ao publicá-la, você cria uma versão da carta, seus ativos dependentes e dados nesse ponto. A versão publicada de uma correspondência não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas em relação à versão publicada. Você pode retornar para essa instância mais tarde e continuar de onde parou.
 
 * **Enviar Instância**: as instâncias de envio capturam o estado da carta como foi enviada. A instância de envio armazena o estado PDF da instância de carta depois de ser pós-processada junto com os dados inseridos pelo usuário na interface do usuário Criar correspondência.
 
@@ -376,7 +376,7 @@ A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualiza
 * **Quebra de página**: na visualização do PDF, você pode visualizar exatamente como as quebras de página na correspondência afetam sua saída.
 * **Visualização final**: na visualização do PDF, você pode visualizar a formatação e a aparência exatas da letra, pois ela aparecerá na saída.
 
-Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/pt_BR/livecycle/11.0/ScriptingSupport/index.html).
+Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
 Para obter mais informações sobre suporte a script em formulários HTML5, consulte [Suporte a script para formulários HTML5](/help/forms/using/scripting-support.md).
 
@@ -384,7 +384,7 @@ Para obter mais informações sobre suporte a script em formulários HTML5, cons
 
 Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa da carta no PDF.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/br/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obter mais informações sobre a compatibilidade do navegador com a visualização de correspondência, consulte [Descontinuação de plug-ins de navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para alterar o modo de visualização da correspondência, conclua as seguintes etapas:
 

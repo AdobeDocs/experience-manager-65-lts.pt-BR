@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -223,7 +223,7 @@ Você cria um **modelo adaptável** e aplica o tema ao modelo. Você pode usar e
 
 Depois de criar um tema de formulário adaptável, execute as seguintes etapas para usar esse tema em um formulário adaptável:
 
-1. Para incluir o tema criado em [para criar uma seção de tema de formulário adaptável](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), crie uma página personalizada do tipo `cq:Component`.
+1. Para incluir o tema criado em [para criar uma seção de tema de formulário adaptável](/help/forms/using/creating-custom-adaptive-form-themes.md#to-create-an-adaptive-form-theme), crie uma página personalizada do tipo `cq:Component`.
 
    Por exemplo, `/apps/myAfCustomizations/myAfPages/forestPage`
 

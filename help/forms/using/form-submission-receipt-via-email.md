@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -68,7 +68,7 @@ A ação Enviar email permite que um autor envie emails automaticamente para um 
 
    Especifique o assunto e o corpo do email nos campos **[!UICONTROL Assunto]** e **[!UICONTROL Modelo de email]**, respectivamente.
 
-   Também é possível especificar espaços reservados para variáveis nos campos, nesse caso, os valores dos campos são processados quando o formulário é enviado com êxito por um usuário final. Para obter mais informações, consulte [Usar nomes de campos de formulário adaptáveis para criar conteúdo de email dinamicamente](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Também é possível especificar espaços reservados para variáveis nos campos, nesse caso, os valores dos campos são processados quando o formulário é enviado com êxito por um usuário final. Para obter mais informações, consulte [Usar nomes de campos de formulário adaptáveis para criar conteúdo de email dinamicamente](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content).
 
    Selecione **[!UICONTROL Incluir anexos]** se o formulário incluir anexos de arquivo e você quiser anexar esses arquivos no email.
 

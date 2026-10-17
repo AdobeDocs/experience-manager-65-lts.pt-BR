@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -148,11 +148,11 @@ As etapas de nível superior para personalização de CSS são:
 * Adicione itens de estilo a este CSS. Consulte Noções básicas sobre estilos CSS para obter mais informações.
 * Atualizar suas referências em `html.jsp`.
 
-Para obter as etapas exatas para fazer essas personalizações, consulte [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). O arquivo CSS fornecido com o espaço de trabalho do AEM Forms está em /libs/ws/css/. Para personalizações relacionadas a CSS, use o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Para obter exemplos específicos de personalizações relacionadas a CSS, consulte os tópicos de Ajuda relacionados no final deste artigo.
+Para obter as etapas exatas para fazer essas personalizações, consulte [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). O arquivo CSS fornecido com o espaço de trabalho do AEM Forms está em /libs/ws/css/. Para personalizações relacionadas a CSS, use o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#crx-package). Para obter exemplos específicos de personalizações relacionadas a CSS, consulte os tópicos de Ajuda relacionados no final deste artigo.
 
 #### Imagem {#image}
 
-É possível personalizar o espaço de trabalho do AEM Forms para adicionar avatares de usuários ou adicionar o logotipo da organização. Para essas personalizações, use [Enviar Pacote](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+É possível personalizar o espaço de trabalho do AEM Forms para adicionar avatares de usuários ou adicionar o logotipo da organização. Para essas personalizações, use [Enviar Pacote](../../forms/using/introduction-customizing-html-workspace.md#crx-package).
 
 As etapas de nível superior para personalizações das imagens são:
 
@@ -173,7 +173,7 @@ As etapas de nível superior para personalizações do modelo do HTML são:
 * Adicionar novos modelos na pasta definida pelo usuário.
 * Faça atualizações relevantes nos arquivos copiados, como o caminho do novo modelo.
 
-Para obter exemplos específicos dessas personalizações, consulte os tópicos da Ajuda fornecidos no final deste artigo. Escolha entre o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) ou o [Pacote de Desenvolvimento](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), dependendo do modelo a ser personalizado.
+Para obter exemplos específicos dessas personalizações, consulte os tópicos da Ajuda fornecidos no final deste artigo. Escolha entre o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#crx-package) ou o [Pacote de Desenvolvimento](../../forms/using/introduction-customizing-html-workspace.md#crx-package), dependendo do modelo a ser personalizado.
 
 ### Alterações semânticas {#semantic-changes}
 
@@ -202,7 +202,7 @@ O pacote contém o código-fonte do espaço de trabalho do AEM Forms. Pacote dis
 
 Destina-se principalmente a personalizações, pois fornece a capacidade de gerar:
 
-* Pacotes do CRX para perfis de Entrega, Depuração e Desenvolvimento (mencionados abaixo em [pacotes do CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* Pacotes do CRX para perfis de Entrega, Depuração e Desenvolvimento (mencionados abaixo em [pacotes do CRX](../../forms/using/introduction-customizing-html-workspace.md#crx-package)).
 * Versão minificada do código personalizado (para alterações semânticas).
 
 #### Conteúdo WS {#ws-content}

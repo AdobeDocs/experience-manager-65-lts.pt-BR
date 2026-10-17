@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 0%
@@ -125,6 +125,6 @@ Use o script `LCSetGDS` na pasta `[*aem-forms root]*\sdk\misc\Foundation\SetGDSC
 
 >[!NOTE]
 >
->Essa circunstância é a única sob a qual você deve usar esse script para alterar a localização do GDS. Para alterar a localização do GDS enquanto o AEM Forms estiver em execução, use o Console de Administração. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Essa circunstância é a única sob a qual você deve usar esse script para alterar a localização do GDS. Para alterar a localização do GDS enquanto o AEM Forms estiver em execução, use o Console de Administração. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)*.) *
 
 Depois de definir o caminho GDS, inicie o Forms Server no modo de manutenção e use o console de administração para atualizar os caminhos restantes do sistema de arquivos para o novo nó. Depois de verificar se todas as configurações necessárias foram atualizadas, reinicie e teste o AEM Forms.

@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7270'
 ht-degree: 0%
 ---
 # Pasta monitorada no AEM Forms{#watched-folder-in-aem-forms}
@@ -100,7 +100,7 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 >
 >Se o servidor que hospeda a Pasta monitorada não tiver nenhum dos modos de execução especificados, a Pasta monitorada sempre será ativada, independentemente dos modos de execução no servidor.
 
-* **outputFilePattern (String)**: padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo. [O padrão de arquivo e pasta](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
+* **outputFilePattern (String)**: padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo. [O padrão de arquivo e pasta](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
 
 * **stageFileExpirationDuration (Long, padrão -1)**: O número de segundos a ser aguardado antes que um arquivo/pasta de entrada que já foi selecionado para processamento seja tratado como tendo expirado e marcado como uma falha. Esse mecanismo de expiração só é ativado quando o valor dessa propriedade é um número positivo.
 
@@ -112,7 +112,7 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 
 * **pollInterval (Long)**: O intervalo em segundos para verificar a pasta monitorada para entrada. A menos que a configuração de Aceleração esteja ativada, o Intervalo de Sondagem deve ser maior que o tempo médio para processar um trabalho; caso contrário, o sistema pode ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do lote para obter informações adicionais. O valor de pollinterval deve ser maior ou igual a um.
 * **excludeFilePattern (String)**: uma lista delimitada por ponto-e-vírgula (;) de padrões que uma Pasta Monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com esse padrão não é examinado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta com um nome que é selecionado pela Pasta monitorada. Isso impede que a Pasta monitorada selecione uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.
-Você pode usar [padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) para excluir:
+Você pode usar [padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) para excluir:
 
   * Arquivos com extensões de nome de arquivo específicas; por exemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
   * Arquivos com nomes específicos; por exemplo, dados&#42; excluiriam arquivos e pastas denominados dados1, dados2 e assim por diante.
@@ -122,7 +122,7 @@ Você pode usar [padrões de arquivo](../../forms/using/watched-folder-in-aem-fo
     * &#42;.`[dD][Aa]`&#39;porta&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 * **includeFilePattern (String)**: uma lista de padrões delimitada por ponto-e-vírgula (;) que a Pasta Monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se IncludeFilePattern for input&#42;, todos os arquivos e pastas que corresponderem à input&#42; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante. O valor padrão é &#42; e indica todos os arquivos e pastas. Você pode usar padrões de arquivo para incluir:
 
@@ -136,7 +136,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
     * &#42;.`[dD][Aa]`&#39;porta&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)
 
 * **waitTime (Long)**: o tempo, em milissegundos, de espera antes de verificar uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0. Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&#42;60 &#42;1000 milissegundos. Isso impede que a Pasta monitorada verifique o arquivo se ele não tiver dez minutos.
 * **purgeDuration (Long)**: os arquivos e pastas na pasta de resultados são limpos quando são mais antigos que esse valor. Esse valor é medido em dias. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
@@ -159,7 +159,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
   Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20
 
-  Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da Pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Resultado dentro da Pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da Pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Resultado dentro da Pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
   Quando os arquivos são soltos na Pasta monitorada, ela lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver ocorrendo a cada segundo. O aumento do intervalo de verificação pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de amostragem de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir pollInterval como 1 segundo e o Tamanho do lote como 10
 
-* **throttleOn (Booleano)**: quando esta opção é selecionada, ela limita o número de trabalhos de Pasta Monitorada que o AEM Forms processa a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre limitação](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Booleano)**: quando esta opção é selecionada, ela limita o número de trabalhos de Pasta Monitorada que o AEM Forms processa a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é true. (Consulte [Sobre limitação](../../forms/using/watched-folder-in-aem-forms.md#about-throttling).)
 
 * **overwriteDuplicateFilename (Booleano)**: quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 * **preserveOnFailure (Booleano)**: preserva os arquivos de entrada se houver falha ao executar a operação em um serviço. O valor padrão é true.
@@ -260,9 +260,9 @@ Por exemplo, o código a seguir é uma implementação personalizada da interfac
 public class OutputWriter implements ContentProcessor {
 ```
 
-Ao [configurar uma Pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), se você especificar a propriedade inputProcessorId como (foo=bar) e a propriedade inputProcessorType como Serviço, o Serviço mencionado acima (implementação personalizada) será usado para processar os arquivos de entrada da Pasta monitorada.
+Ao [configurar uma Pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node), se você especificar a propriedade inputProcessorId como (foo=bar) e a propriedade inputProcessorType como Serviço, o Serviço mencionado acima (implementação personalizada) será usado para processar os arquivos de entrada da Pasta monitorada.
 
-O exemplo a seguir também é uma implementação personalizada da interface ContentProcessor. No exemplo, o Serviço aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto do documento é salvo na pasta de resultados. O caminho físico da pasta de resultados está configurado no [nó de configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+O exemplo a seguir também é uma implementação personalizada da interface ContentProcessor. No exemplo, o Serviço aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto do documento é salvo na pasta de resultados. O caminho físico da pasta de resultados está configurado no [nó de configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node).
 
 ```java
 @Component(immediate = true)
@@ -289,7 +289,7 @@ Os scripts são o código personalizado de reclamação do ECMAScript gravado pa
 * **getConfigParameters**: retorna um mapa imutável do tipo Map. O mapa contém os parâmetros de configuração de uma Pasta monitorada.
 * **setResult**: a implementação ContentProcessor usa a API para gravar o documento de saída na pasta de resultados. Você pode fornecer um nome para o arquivo de saída para a API setResult. A API pode optar por usar ou ignorar o arquivo fornecido, dependendo do padrão de pasta/arquivo de saída especificado. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo.
 
-O código a seguir é um exemplo de ECMAScript. Ele aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto do documento é salvo na pasta de resultados. O caminho físico da pasta de resultados está configurado no [nó de configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+O código a seguir é um exemplo de ECMAScript. Ele aceita arquivos de entrada, copia os arquivos para um local temporário e retorna um objeto de documento com o conteúdo do arquivo. O conteúdo do objeto do documento é salvo na pasta de resultados. O caminho físico da pasta de resultados está configurado no [nó de configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node).
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ O argumento para processWorkflowContext() é um objeto do tipo com.adobe.aemfd.w
 * getMetadata: retorna o valor da variável de Metadados. As variáveis são passadas para o método WorkflowContextService.execute().
 * getCommitedVariables: retorna um mapa de objetos somente leitura que representa variáveis definidas por etapas anteriores. Se uma variável não for modificada em nenhuma das etapas anteriores, o valor padrão especificado durante a configuração da Pasta monitorada será retornado.
 * getCommitedResults: retorna um mapa de Documento somente leitura. O mapa representa os arquivos de saída gerados pelas etapas anteriores.
-* setVariable: a implementação WorkflowContextProcessor usa a variável para manipular as variáveis que representam os dados dinâmicos personalizados que fluem entre as etapas. O nome e o tipo das variáveis são idênticos ao nome das variáveis especificadas durante a [configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Para alterar o valor de uma variável, chame a API setVariable com um valor não nulo. Para remover uma variável, chame setVariable() com um valor nulo.
+* setVariable: a implementação WorkflowContextProcessor usa a variável para manipular as variáveis que representam os dados dinâmicos personalizados que fluem entre as etapas. O nome e o tipo das variáveis são idênticos ao nome das variáveis especificadas durante a [configuração da Pasta Monitorada](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder). Para alterar o valor de uma variável, chame a API setVariable com um valor não nulo. Para remover uma variável, chame setVariable() com um valor nulo.
 
 As seguintes APIs ProcessorContext também estão disponíveis:
 
@@ -531,8 +531,8 @@ A Pasta monitorada verifica a pasta de entrada em cada pollInterval, seleciona o
 A limitação impede que a Pasta monitorada chame novos trabalhos quando os trabalhos anteriores não estiverem concluídos. A Pasta monitorada detecta trabalhos em andamento e processa novos trabalhos com base no tamanho do lote menos os trabalhos em andamento. Por exemplo, na segunda invocação, se o número de trabalhos concluídos for apenas três e um trabalho ainda estiver em andamento, a Pasta monitorada chamará apenas mais três trabalhos.
 
 * A Pasta monitorada depende do número de arquivos presentes na pasta de preparo para descobrir quantos trabalhos estão em andamento. Se os arquivos permanecerem não processados na pasta de preparo, a Pasta monitorada não chamará mais tarefas. Por exemplo, se o tamanho do lote for quatro e três trabalhos estiverem paralisados, a Pasta monitorada chamará apenas um trabalho em chamadas subsequentes. Há vários cenários que podem fazer com que os arquivos permaneçam não processados na pasta de preparo. Quando os processos são interrompidos, o administrador pode encerrar o processo na página de administração do Gerenciamento do Processo para que a Pasta monitorada mova os arquivos para fora da pasta de preparo.
-* Se o servidor do AEM Forms ficar inativo antes que a Pasta monitorada chame os trabalhos, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se o servidor do AEM Forms estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço do Gerenciador de trabalhos chamar de volta, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se o servidor do AEM Forms ficar inativo antes que a Pasta monitorada chame os trabalhos, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
+* Se o servidor do AEM Forms estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço do Gerenciador de trabalhos chamar de volta, o que ocorre quando os serviços não iniciam na sequência ordenada, o administrador poderá mover os arquivos para fora da pasta de preparo. Para obter informações, consulte [Pontos de falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
 
 ### Pontos de falha e recuperaçãoPontos de falha e recuperação {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -615,9 +615,9 @@ Você pode configurar uma Pasta monitorada para iniciar um fluxo de trabalho, se
 
 Execute as seguintes etapas para configurar uma Pasta monitorada com o PDF Generator:
 
-1. [Criar um ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [Criar um fluxo de trabalho](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Configurar a pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [Criar um ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#create-an-ecmascript)
+1. [Criar um fluxo de trabalho](../../forms/using/watched-folder-in-aem-forms.md#create-a-workflow)
+1. [Configurar a pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)
 
 ### Criar um ECMAScript {#create-an-ecmascript}
 
@@ -671,7 +671,7 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 
 1. Clique com o botão direito na Etapa do processo e selecione **Editar**. A janela Propriedades da etapa é exibida.
 
-1. Na guia Processo, selecione o ECMAScript. Por exemplo, o script pdfg-openOffice-sample.ecma criado em [Criar um ECMAScript](#p-create-an-ecmascript-p). Habilite a opção **Avanço do manipulador** e clique em **OK**.
+1. Na guia Processo, selecione o ECMAScript. Por exemplo, o script pdfg-openOffice-sample.ecma criado em [Criar um ECMAScript](#create-an-ecmascript). Habilite a opção **Avanço do manipulador** e clique em **OK**.
 
    ![criar-um-fluxo-de-trabalho3-pdf](assets/create-a-workflow3-pdf.png)
 

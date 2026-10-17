@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 7%
@@ -57,7 +57,7 @@ Siga estas etapas para criar um formulário adaptável.
    >Para uma instalação padrão, o logon é `admin` e a senha é `admin`.
 
 1. Selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Formulário adaptável]**.
-1. Uma opção para selecionar um modelo é exibida. Para obter mais informações sobre modelos, consulte [Modelos de formulário adaptável](creating-adaptive-form.md#p-adaptive-form-templates-p). Selecione um template para selecioná-lo e clique em Next.
+1. Uma opção para selecionar um modelo é exibida. Para obter mais informações sobre modelos, consulte [Modelos de formulário adaptável](creating-adaptive-form.md#adaptive-form-templates). Selecione um template para selecioná-lo e clique em Next.
 1. Uma opção para &quot;Adicionar propriedades&quot; é exibida. Especifique os valores para os seguintes campos de propriedade. Os campos Título e Nome são obrigatórios:
 
    * **[!UICONTROL Título:]** Especifica o nome de exibição do formulário. O título ajuda a identificar o formulário na interface do usuário do [!DNL Experience Manager Forms].
@@ -223,7 +223,7 @@ Por padrão, a opção de salvamento automático não está habilitada. Você po
 
 1. (Somente salvamento automático baseado em evento) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em evento.
 
-   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
+   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
 
 1. (Opcional) Para salvar automaticamente o conteúdo para usuários anônimos, selecione a opção **[!UICONTROL Habilitar salvamento automático para usuários anônimos]** e clique em **[!UICONTROL OK]**.
 

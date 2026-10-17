@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 11%
@@ -39,7 +39,7 @@ A AEM Forms oferece suporte às seguintes soluções CAPTCHA:
 
 O Captcha de torniquete da Cloudflare é uma medida de segurança que visa proteger formulários e sites contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440945?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha giratório {#prerequisite}
 
@@ -86,7 +86,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 1. Selecione um formulário adaptável e clique em **[!UICONTROL Propriedades]**. Em **[!UICONTROL Contêiner de Configuração]**, selecione o Contêiner de Configuração que contém a Configuração na Nuvem que conecta o AEM Forms com o Turnstile.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
 
-   Se você não tiver um Contêiner de Configuração para configurar o serviço Captcha, consulte a seção [Configurar Turnstile](#configure-turnstile-steps-to-configure-hcaptcha) para saber como criar um Contêiner de Configuração.
+   Se você não tiver um Contêiner de Configuração para configurar o serviço Captcha, consulte a seção [Configurar Turnstile](#steps-to-configure-hcaptcha) para saber como criar um Contêiner de Configuração.
 
    ![Selecionar Contêiner de Configuração](assets/captcha-properties.png)
 

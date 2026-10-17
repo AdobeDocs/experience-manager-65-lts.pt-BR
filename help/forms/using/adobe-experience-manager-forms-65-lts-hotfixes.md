@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 Este artigo lista as correções críticas implementadas para resolver problemas conhecidos, melhorar a estabilidade do sistema e aprimorar o desempenho geral do AEM Forms 6.5 LTS.
 
 
-Este artigo se aplica ao AEM Forms 6.5 LTS. Para implantações do AEM 6.5 (não-LTS), consulte [Adobe Experience Manager Forms Hotfixes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
+Este artigo se aplica ao AEM Forms 6.5 LTS. Para implantações do AEM 6.5 (não-LTS), consulte [Adobe Experience Manager Forms Hotfixes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Este artigo se aplica ao AEM Forms 6.5 LTS. Para implantações do AEM 6.5 (não
 
 Execute as seguintes etapas para baixar e instalar o Hotfix:
 
-1. Baixar [Hotfix](#hotfix-for-adaptive-forms) do link de Distribuição de Software.
+1. Baixar [Hotfix](#hotfix-for-aem-forms) do link de Distribuição de Software.
 1. Extraia o arquivo de Hotfix para obter um pacote do Experience Manager (.zip) e arquivos de pacote (.jar).
 1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Abra os pacotes do gerenciador de configurações `https://server:host/system/console/bundles`, carregue e instale o pacote (.jar). O hotfix do está instalado.

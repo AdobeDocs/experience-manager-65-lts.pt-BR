@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -148,7 +148,7 @@ As seguintes funções estão disponíveis por padrão com o componente de Gráf
 
 ### Funções personalizadas {#custom-functions}
 
-Além de usar as funções padrão em gráficos, você pode gravar [funções personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) no JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
+Além de usar as funções padrão em gráficos, você pode gravar [funções personalizadas](/help/forms/using/rule-editor.md#custom-functions) no JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
 
 Uma função assume uma matriz ou valores e um nome de categoria como entradas e retorna um valor. Por exemplo:
 

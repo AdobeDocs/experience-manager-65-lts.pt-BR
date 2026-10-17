@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Normalmente, os usuários empresariais não exigem conhecimento de representaç�
 1. Um Autor [cria o Dicionário de Dados](#createdatadictionary) carregando um esquema ou do zero.
 1. O Autor cria cartas e Comunicações interativas com base no dicionário de dados e associa os elementos do dicionário de dados em cartas e Comunicações interativas sempre que necessário.
 1. Um autor pode baixar um arquivo XML de dados de amostra, que se baseia no esquema de um dicionário de dados. O autor pode modificar o arquivo XML de dados de amostra, que pode ser associado como dados de teste ao dicionário de dados. O mesmo é usado durante a pré-visualização de cartas.
-1. Ao [visualizar uma correspondência](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), um Autor opta por visualizar a correspondência com dados (Visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface criar correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos nesta carta e pode enviar a carta final. Para obter mais informações sobre como criar cartas, consulte [Criar correspondência](../../forms/using/create-letter.md).
+1. Ao [visualizar uma correspondência](../../forms/using/create-letter.md#types-of-linkage-available-for-each-of-the-fields), um Autor opta por visualizar a correspondência com dados (Visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface criar correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos nesta carta e pode enviar a carta final. Para obter mais informações sobre como criar cartas, consulte [Criar correspondência](../../forms/using/create-letter.md).
 
 ## Pré-requisitos {#prerequisite}
 

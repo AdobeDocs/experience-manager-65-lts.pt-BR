@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Para criar um conjunto de formulários, faça o seguinte:
 
    * Ordem dos formulários: arraste e solte os formulários para reorganizá-los. A ordem do formulário define a ordem em que os formulários são mostrados ao usuário final no aplicativo AEM Forms e na representação independente.
    * Identificador de formulário: especifica uma identidade exclusiva para os formulários a serem usados em expressões de qualificação.
-   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML previamente para o conjunto de formulários](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML previamente para o conjunto de formulários](../../forms/using/formset-in-aem-forms.md#prefill-xml-for-form-set).
    * Expressão de elegibilidade: especifica uma expressão JavaScript que avalia um valor Booleano e indica se um formulário no conjunto de formulários é elegível para preenchimento. Se falso, o usuário não será solicitado ou nem receberá o formulário para preencher. Normalmente, a expressão é baseada nos valores dos campos capturados antes desse formulário. As expressões também contêm chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
 
    *fs.valueOf(&lt;Identificador de Formulário>, &lt;expressão de SomCampo>) > &lt;valor>*

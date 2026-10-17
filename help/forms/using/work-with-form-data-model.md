@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Esta documentação se aplica ao **AEM 6.5 LTS Forms**.
 
-Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=pt-BR).
+Para obter a documentação do AEM as a Cloud Service, consulte [AEM Forms no Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![integração de dados](do-not-localize/data-integeration.png)
 
@@ -122,7 +122,7 @@ Para criar uma propriedade secundária:
 
 1. Em um modelo de dados de formulário, selecione um objeto de modelo de dados e selecione **[!UICONTROL Criar Propriedade Filho]**.
 1. Na caixa de diálogo **[!UICONTROL Criar Propriedade Filho]**, especifique um nome e um tipo de dados para a propriedade nos campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]**, respectivamente. Opcionalmente, você pode especificar um título e uma descrição para a propriedade.
-1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
+1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou expressão. Para obter mais informações, consulte [Editar propriedades](#properties).
 1. Se o objeto de modelo de dados estiver vinculado a uma fonte de dados, a propriedade secundária adicionada será automaticamente vinculada à propriedade do objeto de modelo de dados pai com o mesmo nome e tipo de dados.
 
    Para vincular manualmente uma propriedade secundária a uma propriedade de objeto de modelo de dados, selecione o ícone de procura ao lado do campo **[!UICONTROL Referência de associação]**. A caixa de diálogo **[!UICONTROL Selecionar Objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade para vincular e selecione o ícone de marca de verificação. Observe que você só pode selecionar uma propriedade com o mesmo tipo de dados que a propriedade secundária.

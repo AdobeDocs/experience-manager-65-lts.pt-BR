@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 1%
@@ -219,7 +219,7 @@ Há vários padrões de validação prontos para uso disponíveis para um campo.
 
 ### Expressões de validação {#validation-expressions}
 
-A validação de um campo também pode ser calculada usando expressões em campos diferentes. Essas expressões são gravadas no campo **Script de Validação** da guia **Script** da caixa de diálogo **Editar** do componente. O status de validação de um campo depende do valor retornado pela expressão. Para obter informações sobre como gravar essas expressões, consulte [Validar expressão](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+A validação de um campo também pode ser calculada usando expressões em campos diferentes. Essas expressões são gravadas no campo **Script de Validação** da guia **Script** da caixa de diálogo **Editar** do componente. O status de validação de um campo depende do valor retornado pela expressão. Para obter informações sobre como gravar essas expressões, consulte [Validar expressão](../../forms/using/adaptive-form-expressions.md#validate-expression).
 
 ## Informações adicionais {#additional-information}
 

@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 9%
@@ -39,7 +39,7 @@ Este tutorial é uma etapa da série [Criar o primeiro formulário adaptável](h
 
 ## Sobre o tutorial  {#about-the-tutorial}
 
-É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
+É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
 
 No final do tutorial, você poderá fazer o seguinte:
 
@@ -126,7 +126,7 @@ Neste tutorial, você estiliza o cabeçalho e o rodapé, os componentes de texto
 
 1. Selecione **[!UICONTROL Criar]**. Um tema é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Selecione **[!UICONTROL Abrir]** para abrir o tema recém-criado em uma nova guia. O tema é aberto no editor de temas. Para o estilo, o editor de temas usa um formulário adaptável pronto para uso que acompanha o AEM [!DNL Forms].
 
-   Para obter informações sobre como usar a interface do editor de temas, consulte [Sobre o editor de temas](/help/forms/using/themes.md#aboutthethemeeditor).
+   Para obter informações sobre como usar a interface do editor de temas, consulte [Sobre o editor de temas](/help/forms/using/themes.md#about-the-theme-editor).
 
 1. Selecione **[!UICONTROL Opções de Tema]** ![opções de tema](assets/theme-options.png) > **[!UICONTROL Configurar]**. No campo **[!UICONTROL Visualizar Formulário]**, selecione o formulário adaptável **delivery-address-add-update-form**, selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) e **[!UICONTROL Salvar]**. Agora, o editor de temas é configurado para usar seu próprio formulário adaptável em vez do formulário adaptável padrão. Selecione **[!UICONTROL Cancelar]** para retornar ao editor de tema.
 
@@ -367,7 +367,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Histórico</td> 
+      <td>Fundo</td> 
       <td>Cor do Plano de Fundo</td> 
       <td>FFFFFF</td> 
      </tr> 

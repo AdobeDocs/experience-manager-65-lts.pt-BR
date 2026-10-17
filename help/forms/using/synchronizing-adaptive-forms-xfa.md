@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
@@ -37,7 +37,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 ## Introdução {#introduction}
 
-Você pode criar um Formulário adaptável com base em um modelo de formulário XFA (arquivo `*.XDP`). Essa reutilização permite que você preserve seu investimento em formulários XFA existentes. Para obter informações sobre como usar um modelo de formulário XFA para criar um formulário adaptável, [Crie um formulário adaptável com base em um modelo](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Você pode criar um Formulário adaptável com base em um modelo de formulário XFA (arquivo `*.XDP`). Essa reutilização permite que você preserve seu investimento em formulários XFA existentes. Para obter informações sobre como usar um modelo de formulário XFA para criar um formulário adaptável, [Crie um formulário adaptável com base em um modelo](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 
 Você pode reutilizar campos do arquivo XDP no formulário adaptável. Esses campos são chamados de campos vinculados. As propriedades dos campos vinculados (como scripts, rótulos e formato de exibição) são copiadas do arquivo XDP. Você também pode optar por substituir o valor de algumas dessas propriedades.
 
@@ -55,11 +55,11 @@ Para usar as informações deste artigo, é recomendável estar familiarizado co
 
 * XFA (XML Forms Architecture, arquitetura XML do)
 
-Para usar os ativos fornecidos para o exemplo no artigo, baixe o pacote de exemplo conforme explicado na próxima seção, [Pacote de exemplo](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Para usar os ativos fornecidos para o exemplo no artigo, baixe o pacote de exemplo conforme explicado na próxima seção, [Pacote de exemplo](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package).
 
 ## Pacote de exemplo {#sample-package}
 
-O artigo usa um exemplo para demonstrar como sincronizar o formulário adaptável com um modelo de formulário XFA atualizado. Os ativos usados no exemplo estão disponíveis em um pacote, que pode ser baixado da seção [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) deste artigo.
+O artigo usa um exemplo para demonstrar como sincronizar o formulário adaptável com um modelo de formulário XFA atualizado. Os ativos usados no exemplo estão disponíveis em um pacote, que pode ser baixado da seção [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads) deste artigo.
 
 Depois de fazer upload do pacote, é possível visualizar esses ativos na interface do usuário do AEM Forms.
 
@@ -122,7 +122,7 @@ Para atualizar as propriedades no formulário adaptável de exemplo, clique no l
 
 >[!NOTE]
 >
->O campo numérico de AF do rótulo não foi alterado porque você substituiu esta propriedade na caixa de diálogo de propriedades do componente, conforme descrito em [Adicionar conteúdo a formulários adaptáveis](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>O campo numérico de AF do rótulo não foi alterado porque você substituiu esta propriedade na caixa de diálogo de propriedades do componente, conforme descrito em [Adicionar conteúdo a formulários adaptáveis](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br).
 
 ### Adição de novos campos do arquivo XDP ao formulário adaptável   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
