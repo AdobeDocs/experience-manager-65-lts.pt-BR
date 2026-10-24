@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -375,13 +375,15 @@ Os seguintes problemas foram corrigidos para o AEM Forms no JEE no 6.5 LTS Servi
 
 Para instalar o AEM Forms 6.5 LTS SP3 no JEE, siga estas etapas para:
 
-1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
-1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
+1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
+1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
 1. Se seu projeto usa a biblioteca do cliente SDK `adobe-livecycle-client.jar`, atualize-a no classpath do projeto. A última versão está disponível em `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
 
 * No **AEM Forms no JEE 6.5 LTS SP3**, a conversão de arquivos **PostScript (PS), EPS e PRN para o PDF** falha. O processo nativo `PsToPdfSvc` pode terminar inesperadamente, causando falha no trabalho de conversão com erros como `ALC-PDG-003-011` e `ALC-PDG-001-028`. Entre em contato com o Suporte ao cliente da Adobe para obter assistência. (FORMS-28152)
+
+* No **AEM Forms no JEE 6.5 LTS SP3**, quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o carregamento permanece preso no estado de carregamento ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores do PDF assinados não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção para a versão atual, entre em contato com o Suporte da Adobe. (FORMS-28517)
 
 No AEM Forms no JEE, as extensões do Reader não funcionam na plataforma WebSphere® Liberty Profile (WLP). O arquivo EAR incluído com o LTS SP3 não tem as bibliotecas obrigatórias do Bouncy Castle em seu classpath.
 
@@ -541,7 +543,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -710,7 +712,7 @@ Baixe o pacote de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/do
 
 -->
 
-&#x200B;###
+###
 
 ### Falha de conexão do Dispatcher com o recurso somente SSL (corrigido no AEM 6.5 LTS SP1 e posterior){#ssl-only-feature}
 
@@ -750,5 +752,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
