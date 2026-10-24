@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,8 @@ Para instalar o AEM Forms 6.5 LTS SP3 no JEE, siga estas etapas para:
 #### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
 
 * No **AEM Forms no JEE 6.5 LTS SP3**, a conversão de arquivos **PostScript (PS), EPS e PRN para o PDF** falha. O processo nativo `PsToPdfSvc` pode terminar inesperadamente, causando falha no trabalho de conversão com erros como `ALC-PDG-003-011` e `ALC-PDG-001-028`. Entre em contato com o Suporte ao cliente da Adobe para obter assistência. (FORMS-28152)
+
+* No **AEM Forms no JEE 6.5 LTS SP3**, quando um PDF assinado digitalmente é anexado a uma tarefa no AEM Forms JEE Workspace, o carregamento permanece preso no estado de carregamento ou falha com um erro &quot;Arquivo inválido&quot;. Como resultado, anexos maiores do PDF assinados não podem ser adicionados à tarefa. Esse problema foi corrigido em uma versão posterior. Para obter uma correção para a versão atual, entre em contato com o Suporte da Adobe. (FORMS-28517)
 
 No AEM Forms no JEE, as extensões do Reader não funcionam na plataforma WebSphere® Liberty Profile (WLP). O arquivo EAR incluído com o LTS SP3 não tem as bibliotecas obrigatórias do Bouncy Castle em seu classpath.
 
