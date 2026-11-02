@@ -1,10 +1,10 @@
 ---
 title: Ajuda do Forms Designer
-description: O Forms Designer ajuda um usuário no envio do formulário.
+description: Saiba como acessar os recursos de ajuda do Forms Designer, incluindo tutoriais de início rápido, exemplos, noções básicas de script e referências de FormCalc e script.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-feature: Forms Designer,Designer
+feature: Forms Designer, Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9eaf253f-628b-4d80-bb83-388c5afcc457
@@ -23,16 +23,18 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2c3302cb43c45d2ff83409c31347406720dfccde
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 7%
+source-wordcount: '164'
+ht-degree: 0%
 ---
 # Ajuda do Forms Designer {#form-designer-help}
 
-[Usando o Designer](https://www.adobe.com/go/learn_aemforms_designer_65_pt)
-[Tutoriais do Designer Quick Start](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-[Exemplos do Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-[Noções básicas sobre scripts do Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_br)
-[Referência a script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_br)
-[Referência de FormCalc do Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_br)
+O AEM Forms Designer é um aplicativo de desktop para criação e gerenciamento de formulários adaptáveis baseados em PDF e XFA no Adobe Experience Manager Forms. Use os recursos abaixo para começar, explorar amostras e fazer referência aos recursos de script da Designer para esta versão 6.5 do LTS.
+
+* [Usando o Designer](https://www.adobe.com/go/learn_aemforms_designer_65_lts) - uma visão geral do espaço de trabalho do Designer e dos conceitos principais de criação.
+* [Tutoriais do Designer Quick Start](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - tutoriais passo a passo para começar a usar o Designer.
+* [Amostras do Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts) - formulários de amostra baixáveis que você pode abrir e adaptar no Designer.
+* [Noções básicas sobre scripts do Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_lts) - uma introdução aos scripts nos formulários do Designer.
+* [Referência de script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_lts) - a referência completa para objetos e métodos de script no Designer.
+* [Referência de FormCalc do Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_lts) - a referência completa para FormCalc, a linguagem de cálculo interna do Designer.
