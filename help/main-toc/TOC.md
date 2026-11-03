@@ -7,9 +7,9 @@ user-guide-description: Use a documentação do Adobe Experience Manager 6.5 LTS
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
+source-wordcount: '7768'
 ht-degree: 19%
 ---
 # Documentação do Adobe Experience Manager 6.5 LTS {#content}
@@ -773,12 +773,6 @@ ht-degree: 19%
     + [Proteger um documento em nome de outro usuário](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Designer do Forms {#use-forms-designer}
     + [Ajuda do Forms Designer](/help/forms/using/forms-designer-help.md)
-    + [Utilização do Designer](https://www.adobe.com/go/learn_aemforms_designer_65_pt)
-    + [Tutoriais de início rápido do Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-    + [Amostras do Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-    + [Noções básicas de script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_br)
-    + [Referência de script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_br)
-    + [Referência do Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65_br)
     + [Uso da Assinatura Escrita em Formulários HTML5](/help/forms/using/scribble-signature.md)
     + [Alteração do conteúdo da Página zero no Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Práticas recomendadas de acessibilidade {#accessibility-best-practices}
