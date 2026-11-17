@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -376,11 +376,13 @@ Os seguintes problemas foram corrigidos para o AEM Forms no JEE no 6.5 LTS Servi
 
 Para instalar o AEM Forms 6.5 LTS SP3 no JEE, siga estas etapas para:
 
-1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
-1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
+1. Instale o Service Pack usando o instalador do AEM Forms 6.5 LTS SP3 JEE para o seu servidor de aplicativos (baixe de [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) e siga os procedimentos padrão de instalação do AEM Forms no JEE.
+1. Atualize para o instalador mais recente do AEM Forms Workbench (disponível na mesma página [versões do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
 1. Se seu projeto usa a biblioteca do cliente SDK `adobe-livecycle-client.jar`, atualize-a no classpath do projeto. A última versão está disponível em `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problemas conhecidos {#forms-known-issues-65-lts-sp3}
+
+* No **AEM Forms 6.5 LTS SP3 em JEE e OSGi no Windows**, o PDF Generator (PDFG) trava ao exportar um documento do PDF existente para outro formato de arquivo com suporte. A operação de exportação não é concluída e o arquivo de saída convertido não é retornado. (FORMS-29849)
 
 * No **AEM Forms no JEE 6.5 LTS SP3**, a conversão de arquivos **PostScript (PS), EPS e PRN para o PDF** falha. O processo nativo `PsToPdfSvc` pode terminar inesperadamente, causando falha no trabalho de conversão com erros como `ALC-PDG-003-011` e `ALC-PDG-001-028`. Entre em contato com o Suporte ao cliente da Adobe para obter assistência. (FORMS-28152)
 
@@ -542,7 +544,7 @@ Veja também [Atualizar a versão do AEM Uber Jar](/help/sites-deploying/upgradi
 ### Atualizar {#upgrade}
 
 * Para mais detalhes sobre o procedimento de upgrade, consulte a [documentação de upgrade](/help/sites-deploying/upgrade.md).
-* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Para obter instruções detalhadas de atualização, consulte o [Guia de atualização do AEM Forms 6.5 LTS SP1 no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Práticas recomendadas para as atualizações do Pacote de serviços do AEM 6.5 LTS
 
@@ -706,7 +708,7 @@ Para usar os seguintes recursos, instale o pacote `cq-dam-cfm-indices`:
 Baixe o pacote de índice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) do Portal de Distribuição de Software da Adobe.
 
 
-&#x200B;###
+###
 
 ### Falha de conexão do Dispatcher com o recurso somente SSL (corrigido no AEM 6.5 LTS SP1 e posterior){#ssl-only-feature}
 
@@ -746,5 +748,5 @@ Os seguintes arquivos zip contêm os documentos de texto que listam os pacotes O
 Estes sites só estão disponíveis para clientes. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
