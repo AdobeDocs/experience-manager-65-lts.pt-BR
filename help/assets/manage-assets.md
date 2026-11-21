@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: adca0a252dc42816ac61dd402c9102796ad47ead
 workflow-type: tm+mt
-source-wordcount: '10238'
+source-wordcount: '10248'
 ht-degree: 3%
 ---
 # Organize seus ativos digitais {#manage-digital-assets}
@@ -35,11 +35,11 @@ ht-degree: 3%
 
 No [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e controlar seus ativos. O [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e controlar metadados, colaborar usando anotações e muito mais.
 
-Este artigo descreve as tarefas básicas de gerenciamento de ativos, como criar ou fazer upload; atualizações de metadados; copiar, mover e excluir; publicar, cancelar a publicação e pesquisar ativos. Para entender a interface do usuário, consulte [introdução à interface do usuário do assets](/help/sites-authoring/basic-handling.md). Para gerenciar Fragmentos de conteúdo, consulte [gerenciar Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) ativos.
+Este artigo descreve as tarefas básicas de gerenciamento de ativos: criar, fazer upload, atualizar metadados, copiar, mover, excluir, publicar, cancelar a publicação e pesquisar. Para entender a interface do usuário, consulte [introdução à interface do usuário do assets](/help/sites-authoring/basic-handling.md). Para gerenciar Fragmentos de conteúdo, consulte [gerenciar Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) ativos.
 
 ## Criar pastas {#creating-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens do `Nature`, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Experience Manager Assets] não requer que você organize os ativos nas pastas para que funcionem melhor.
+Para manter uma coleção de ativos, como `Nature` imagens, juntas, crie pastas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Experience Manager Assets] não requer que você organize os ativos nas pastas para que funcionem melhor.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Você pode carregar vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) de sua pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
+Você pode carregar vários ativos (incluindo imagens, PDF e arquivos RAW) de sua pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Você pode carregar vários tipos de ativos (incluindo imagens, arquivos PDF, ar
 >
 >O Assets que você carrega na Experience Manager com um nome de arquivo maior que 100 caracteres terá um nome encurtado quando for usado no Dynamic Media.
 >
->Os primeiros 100 caracteres no nome do arquivo são usados como estão; todos os caracteres restantes são substituídos por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
+>[!DNL Experience Manager] usa os primeiros 100 caracteres do nome do arquivo como está e substitui todos os caracteres restantes por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
 
 Você pode optar por fazer upload de ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -97,7 +97,7 @@ Antes de carregar um ativo, verifique se ele está em um [formato](/help/assets/
 
    ![Barra de progresso de carregar ativos](assets/upload-progress-bar.png)
 
-O tamanho acima do qual um ativo é considerado um ativo grande é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** aparece na barra de progresso quando ativos de tamanho superior a 1000 MB são carregados.
+O tamanho acima do qual um ativo é considerado um ativo grande é configurável. Para considerar ativos acima de 1000 MB (em vez de 500 MB) como grandes, configure o sistema. Nesse caso, **[!UICONTROL Pausar]** aparece na barra de progresso quando ativos de tamanho superior a 1000 MB são carregados.
 
 A opção [!UICONTROL Pausar] não mostra se um arquivo com mais de 1000 MB foi carregado com um arquivo com menos de 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, a opção **[!UICONTROL Pausar]** será exibida.
 
@@ -581,7 +581,11 @@ Para excluir ativos, um usuário precisa de permissões de exclusão em `dam/ass
 
 Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Para impedir que os usuários excluam ativos referenciados e deixem links desfeitos, desative a opção Forçar exclusão usando uma sobreposição.
 
-Para excluir um ativo ou uma pasta contendo ativo:
+>[!IMPORTANT]
+>
+>Quando o modo Dynamic Media - Scene7 é ativado, a exclusão de um ativo no Experience Manager também o exclui permanentemente do Dynamic Media. O ativo não é movido para a pasta Lixeira do Dynamic Media, portanto, não é possível restaurá-lo do Dynamic Media.
+
+**Para excluir o ativo:**
 
 1. Navegue até o local do ativo ou a pasta que deseja excluir.
 
