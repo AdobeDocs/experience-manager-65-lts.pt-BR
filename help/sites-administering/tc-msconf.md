@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: c1fbb8ea23a0d0b905f4739f7dea4843f6daaa48
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 64%
+source-wordcount: '478'
+ht-degree: 37%
 ---
 # Conectar ao Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -58,3 +58,18 @@ O procedimento a seguir cria uma configuração do Microsoft Translator.
 ## Publicar as configurações do serviço de tradução {#publishing-the-translator-service-configurations}
 
 Como etapa final, publique as configurações do Microsoft Translator para oferecer suporte ao conteúdo traduzido publicado, usando a ação [publicar uma árvore](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree).
+
+## Mapeamento de campos da API do Microsoft Translator {#microsoft-translator-api-field-mapping}
+
+A API v3 do Microsoft Translator aceita solicitações de tradução em `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. Consulte a [Referência da API do Microsoft Translate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) para obter os parâmetros necessários, incluindo o idioma de destino.
+
+A tabela a seguir relaciona os campos de configuração do AEM à API do Microsoft.
+
+| Campo do AEM | Finalidade no AEM | Relacionamento da API do Microsoft |
+|---|---|---|
+| ID do espaço de trabalho | Identifica o mecanismo personalizado do Microsoft Translator a ser usado. | Os sistemas de tradução personalizados são selecionados por meio do parâmetro de solicitação `category`. A API do Microsoft espera uma ID de categoria do tradutor personalizado, não uma ID de espaço de trabalho sozinha. Confirme o valor exigido pelo conector e pela configuração de modelo personalizado. |
+| Rótulo da tradução | Fornece um nome de exibição para o serviço de tradução. | Nenhum parâmetro de solicitação de tradução correspondente. |
+| Atribuição da tradução | Define a atribuição opcional ao lado do conteúdo traduzido gerado pelo usuário. | Nenhum parâmetro de solicitação de tradução correspondente. |
+| Chave de inscrição | Autentica o acesso à assinatura do Microsoft Translator. | Enviado no cabeçalho `Ocp-Apim-Subscription-Key` ao solicitar um token de acesso. O token é enviado no cabeçalho `Authorization: Bearer <access-token>` para solicitações de tradução. |
+
+Para um recurso global do Microsoft Translator, o ponto de extremidade do token é `https://api.cognitive.microsoft.com/sts/v1.0/issueToken`. Os recursos regionais e de vários serviços usam endpoints de token específicos da região. Consulte [Autenticação do Microsoft Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication) para obter os requisitos de ponto de extremidade e cabeçalho para o seu tipo de recurso.
